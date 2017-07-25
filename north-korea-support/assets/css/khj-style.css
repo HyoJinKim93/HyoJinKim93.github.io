@@ -21,16 +21,17 @@ html/notices.html*/
 }
 
 .notices-content th:last-child{
-	border:0;
+	border-right:0;
 }
 
 .notices-content td{
 	border-right: 1px solid #dbdbdb;
-	width:38px;
+	border-bottom: 1px solid #dbdbdb;
+	height:38px;
 }
 
 .notices-content td:last-child{
-	border:0;
+	border-right:0;
 }
 
 .notices-content td:first-child,

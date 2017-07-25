@@ -55,3 +55,52 @@ html/popup-notices.html*/
 .popup-notices-content table{
 	width:100%;
 }
+
+/*자료마당 > 자료실
+html/resources.html*/
+
+.resources-content{
+	width:100%;
+}
+
+.resources-content table{
+	width:100%;
+	border-top: 2px solid #45494d;
+}
+
+.resources-content th{
+	background-color:#f5f8fa;
+	height:38px;
+	border-right: 1px solid #dbdbdb;
+	border-bottom: 1px solid #c2c2c2;
+}
+
+.resources-content th:last-child{
+	border-right:0;
+}
+
+.resources-content td{
+	border-right: 1px solid #dbdbdb;
+	border-bottom: 1px solid #dbdbdb;
+	height:38px;
+}
+
+.resources-content span{
+	color:#003761;
+}
+
+.resources-content td:last-child{
+	border-right:0;
+}
+
+.resources-content td:first-child,
+.resources-content td:nth-child(2),
+.resources-content td:nth-child(4),
+.resources-content td:last-child{
+	text-align: center;
+}
+
+.resources-content td:nth-child(3){
+	text-align: left;
+	padding-left: 20px;
+}

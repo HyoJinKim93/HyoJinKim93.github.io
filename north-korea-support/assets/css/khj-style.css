@@ -8,10 +8,41 @@ html/notices.html*/
 	width:100%;
 }
 
-.notices-content th{
-	background-color:#f5f8fa;
+.notices-content table{
+	width:100%;
+	border-top: 2px solid #45494d;
 }
 
+.notices-content th{
+	background-color:#f5f8fa;
+	height:38px;
+	border-right: 1px solid #dbdbdb;
+	border-bottom: 1px solid #c2c2c2;
+}
+
+.notices-content th:last-child{
+	border:0;
+}
+
+.notices-content td{
+	border-right: 1px solid #dbdbdb;
+	width:38px;
+}
+
+.notices-content td:last-child{
+	border:0;
+}
+
+.notices-content td:first-child,
+.notices-content td:nth-child(3),
+.notices-content td:nth-child(4),
+.notices-content td:nth-child(5){
+	text-align: center;
+}
+
+.notices-content td:nth-child(2){
+	text-align: left;
+}
 /*자료마당 > 공지사항
 html/popup-notices.html*/
 

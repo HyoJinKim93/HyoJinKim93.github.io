@@ -28,6 +28,11 @@ html/notices.html*/
 	border-right: 1px solid #dbdbdb;
 	border-bottom: 1px solid #dbdbdb;
 	height:38px;
+	padding-left: 20px;
+}
+
+.notices-content span{
+	color:#003761;
 }
 
 .notices-content td:last-child{

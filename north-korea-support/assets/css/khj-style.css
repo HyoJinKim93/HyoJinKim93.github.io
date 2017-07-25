@@ -4,8 +4,12 @@
 /*자료마당 > 공지사항
 html/notices.html*/
 
-.notice-content{
+.notices-content{
 	width:100%;
+}
+
+.notices-content th{
+	background-color:#f5f8fa;
 }
 
 /*자료마당 > 공지사항

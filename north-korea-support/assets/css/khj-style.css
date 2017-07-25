@@ -28,7 +28,6 @@ html/notices.html*/
 	border-right: 1px solid #dbdbdb;
 	border-bottom: 1px solid #dbdbdb;
 	height:38px;
-	padding-left: 20px;
 }
 
 .notices-content span{
@@ -48,6 +47,7 @@ html/notices.html*/
 
 .notices-content td:nth-child(2){
 	text-align: left;
+	padding-left: 20px;
 }
 /*자료마당 > 공지사항
 html/popup-notices.html*/

@@ -1,2 +1,16 @@
 
 /*# sourceMappingURL=map/khj-style.css.map */
+
+/*자료마당 > 공지사항
+html/notices.html*/
+
+.notice-content{
+	width:100%;
+}
+
+/*자료마당 > 공지사항
+html/popup-notices.html*/
+
+.popup-notices-content table{
+	width:100%;
+}

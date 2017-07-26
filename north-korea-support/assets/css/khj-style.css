@@ -73,7 +73,6 @@ html/popup-notices.html*/
 	height:50px;
 	color:#fff;
 	font-weight: bold;
-	font-size:18px;
 	padding-left:30px;
 	background:url(../../assets/images/bg/popup-title.png);
 }
@@ -85,10 +84,13 @@ html/popup-notices.html*/
 	width:140px;
 	background-color:#f5f8fa;
 	border-bottom: 1px solid #dbdbdb;
+	text-align:left;
+	padding-left:20px;
 }
 .popup-notices-content th:last-child{
 	height:42px;
 	border-left:1px solid #dbdbdb;
+	text-align: center;
 }
 
 .popup-notices-content td{

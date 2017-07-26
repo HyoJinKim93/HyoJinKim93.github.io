@@ -61,6 +61,10 @@ html/popup-notices.html*/
 	width:140px;
 	background-color:#f5f8fa;
 }
+.popup-notices-content th:last-child{
+	height:42px;
+}
+
 .popup-notices-content td{
 	padding-left:20px;
 }

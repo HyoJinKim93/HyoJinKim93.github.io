@@ -162,3 +162,51 @@ html/resources.html*/
 	text-align: left;
 	padding-left: 20px;
 }
+
+/*자료마당 > 자료마당 > 팝업
+html/popup-resources.html*/
+
+
+.popup-resources-content table{
+	border:1px solid #d2d4d6;
+}
+
+.popup-resources-content th{
+	width:140px;
+	background-color:#f5f8fa;
+	border-bottom: 1px solid #dbdbdb;
+	text-align:left;
+	padding-left:20px;
+}
+.popup-resources-content th:nth-child(4){
+	border-left:1px solid #dbdbdb;
+}
+
+.popup-resources-content th:nth-child(5){
+	height:75px;
+}
+.popup-resources-content th:last-child{
+	height:42px;
+	text-align: center;
+}
+
+.popup-resources-content td{
+	padding-left:20px;
+	border-bottom: 1px solid #dbdbdb;
+}
+
+.popup-resources-content td:first-child,
+.popup-resources-content td:nth-child(2){
+	width:264px;
+	height: 42px;
+}
+
+.popup-resources-content td:nth-child(3),
+.popup-resources-content td:nth-child(4){
+	width:264px;
+}
+
+.popup-resources-content td:nth-child(5){
+	height:75px;
+}
+

@@ -84,10 +84,9 @@ html/popup-notices.html*/
 	border-left:1px solid #dbdbdb;
 }
 
-.popup-notices-content th:last-child{
-	border-left:1px solid #dbdbdb;
+.popup-notices-content th:nth-child(5){
+	height:75px;
 }
-
 .popup-notices-content th:last-child{
 	height:42px;
 	text-align: center;

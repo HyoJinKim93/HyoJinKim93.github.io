@@ -75,7 +75,7 @@ html/popup-notices.html*/
 	font-weight: bold;
 	font-size:18px;
 	padding-left:30px;
-	background:url(../assets/images/bg/popup-title.png);
+	background:url(../../assets/images/bg/popup-title.png);
 }
 .popup-notices-content table{
 	border:1px solid #d2d4d6;

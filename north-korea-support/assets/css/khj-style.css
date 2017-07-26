@@ -49,16 +49,17 @@ html/notices.html*/
 	text-align: left;
 	padding-left: 20px;
 }
-/*자료마당 > 공지사항
+/*자료마당 > 공지사항 > 팝업
 html/popup-notices.html*/
 
 .popup-notices-content table{
 	width:100%;
+	border:1px solid #d2d4d6;
 }
 
 .popup-notices-content th{
 	width:140px;
-	background:#f5f8fa url(../assets/images/);
+	background-color:#f5f8fa;
 }
 .popup-notices-content td{
 	padding-left:20px;

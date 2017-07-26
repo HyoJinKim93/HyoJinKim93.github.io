@@ -19,9 +19,25 @@ html/notices.html*/
 	border-right: 1px solid #dbdbdb;
 	border-bottom: 1px solid #c2c2c2;
 }
+.notices-content th:first-child{
+	width:54px;
+}
+
+.notices-content th:nth-child(2){
+	width:502px;
+}
+
+.notices-content th:nth-child(3){
+	width:140px;
+}
+
+.notices-content th:nth-child(4){
+	width:140px;
+}
 
 .notices-content th:last-child{
 	border-right:0;
+	width:70px;
 }
 
 .notices-content td{
@@ -60,6 +76,7 @@ html/popup-notices.html*/
 .popup-notices-content th{
 	width:140px;
 	background-color:#f5f8fa;
+	border-bottom: 1px solid #dbdbdb;
 }
 .popup-notices-content th:last-child{
 	height:42px;

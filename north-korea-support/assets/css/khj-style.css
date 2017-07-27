@@ -215,7 +215,7 @@ html/popup-resources.html*/
 	border-left:1px solid #dbdbdb;
 }
 
-.popup-resources-content table tr:nth-child(4) th{
+.popup-resources-content table tr:nth-child(4) th:nth-child(11){
 	height:75px;
 }
 
@@ -234,9 +234,6 @@ html/popup-resources.html*/
 	border-left:1px solid #dbdbdb;
 }
 
-.popup-resources-content th:nth-child(5){
-	height:75px;
-}
 .popup-resources-content th:last-child{
 	height:42px;
 	text-align: center;

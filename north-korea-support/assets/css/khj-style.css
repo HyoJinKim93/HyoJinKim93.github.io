@@ -80,7 +80,7 @@ html/popup-notices.html*/
 	text-align:left;
 	padding-left:20px;
 }
-.popup-notices-content table tr:nth-child(3) th:nth-child(2){
+.popup-notices-content table tr:nth-child(3) th:nth-child(3){
 	border-left:1px solid #dbdbdb;
 }
 

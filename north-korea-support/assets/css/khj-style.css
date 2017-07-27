@@ -221,6 +221,8 @@ html/popup-resources.html*/
 
 .popup-resources-content table tr:nth-child(4) button:last-child{
 	margin-top: 13px;
+	color:#003761;
+	font-weight: bold;
 }
 
 .popup-resources-content table tr:nth-child(4) td img{

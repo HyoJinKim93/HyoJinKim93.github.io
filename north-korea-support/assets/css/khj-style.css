@@ -84,9 +84,21 @@ html/popup-notices.html*/
 	border-left:1px solid #dbdbdb;
 }
 
-.popup-notices-content table tr:nth-child(4) th:first-child{
+.popup-notices-content table tr:nth-child(4) th{
 	height:75px;
 }
+
+.popup-notices-content table tr:nth-child(4) button{
+	margin-bottom: 13px;
+}
+
+.popup-notices-content table tr:nth-child(4) td img{
+	margin-right: 6px;
+	vertical-align: middle;
+	color:#003761;
+	font-weight: bold;
+}
+
 .popup-notices-content th:last-child{
 	height:42px;
 	text-align: center;

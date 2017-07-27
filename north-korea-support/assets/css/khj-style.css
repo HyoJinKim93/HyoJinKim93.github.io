@@ -210,6 +210,26 @@ html/popup-resources.html*/
 	text-align:left;
 	padding-left:20px;
 }
+
+.popup-resources-content table tr:nth-child(3) th:nth-child(3){
+	border-left:1px solid #dbdbdb;
+}
+
+.popup-resources-content table tr:nth-child(4) th{
+	height:75px;
+}
+
+.popup-resources-content table tr:nth-child(4) button:last-child{
+	margin-top: 13px;
+}
+
+.popup-resources-content table tr:nth-child(4) td img{
+	margin-right: 6px;
+	vertical-align: middle;
+	color:#003761;
+	font-weight: bold;
+}
+
 .popup-resources-content th:nth-child(4){
 	border-left:1px solid #dbdbdb;
 }

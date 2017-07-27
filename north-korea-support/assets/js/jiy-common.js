@@ -57,6 +57,14 @@
       $.popupId($popups, 'popup-resources').open();
     });
 
+     // qna 상세 팝업
+    $('.btn-popup-qna').on('click', function(e) {
+      e.preventDefault();
+      // 팝업 찾아 열기 (id)
+      $.popupId($popups, 'popup-qna').open();
+    });
+
+
     // 팝업 컨트롤 범위 지정
     $('.popup').draggable({
         containment: "body" //지정된 영역안에서만 이동

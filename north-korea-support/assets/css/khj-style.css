@@ -88,7 +88,7 @@ html/popup-notices.html*/
 	height:75px;
 }
 
-.popup-notices-content table tr:nth-child(4) button{
+.popup-notices-content table tr:nth-child(4) button:last-child{
 	margin-top: 13px;
 }
 

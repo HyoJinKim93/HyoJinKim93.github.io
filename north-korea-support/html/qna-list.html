@@ -200,7 +200,29 @@
             </header>
             <hr class="sub-title-bar"/>
             <div class="content">
-            이 곳에 컨텐츠 작성하시면 됩니다.
+            <section class="content notices-content">
+            <!-- 조회 select box -->
+            <ul class="search-area">
+                <li class="search-title"><span>검색</span></li>
+                <li class="select-box">
+                    <label for="search">제목</label>
+                    <select id="search" name="search-item">
+                        <option selected="selected">제목</option>
+                        <option>내용</option>
+                        <option>단어</option>
+                    </select>
+                </li>
+                <li class="input-type">
+                    <label class="search-keyword">
+                        <span>검색 키워드 입력하세요.</span>
+                        <input type="text"/>
+                    </label>
+                </li>
+                <li>
+                    <button class="btn-lookup">조회</button>
+                </li>
+            </ul>
+            </section>
             </div>
         </section>
     </main>

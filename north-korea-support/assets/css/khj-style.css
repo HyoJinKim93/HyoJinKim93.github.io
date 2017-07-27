@@ -84,7 +84,7 @@ html/popup-notices.html*/
 	border-left:1px solid #dbdbdb;
 }
 
-.popup-notices-content th:nth-child(5){
+.popup-notices-content th:nth-child(9){
 	height:75px;
 }
 .popup-notices-content th:last-child{
@@ -108,12 +108,9 @@ html/popup-notices.html*/
 	width:264px;
 }
 
-.popup-notices-content td:nth-child(5){
-	height:75px;
-}
-
 .popup-content-close{
 	width:104px;
+	border:0;
 }
 
 

@@ -261,3 +261,72 @@ html/popup-resources.html*/
 	height:75px;
 }
 
+/*커뮤니티 > Q&A 조회
+html/qna-list.html*/
+
+
+.qna-content{
+	width:100%;
+}
+
+.qna-content table{
+	width:100%;
+	border-top: 2px solid #45494d;
+}
+
+.qna-content th{
+	background-color:#f5f8fa;
+	height:38px;
+	border-right: 1px solid #dbdbdb;
+	border-bottom: 1px solid #c2c2c2;
+}
+.qna-content th:first-child{
+	width:54px;
+}
+
+.qna-content th:nth-child(2){
+	width:140px;
+}
+
+.qna-content th:nth-child(3){
+	width:341px;
+}
+
+.qna-content th:nth-child(4){
+	width:110px;
+}
+
+.qna-content th:nth-child(5){
+	width:140px;
+}
+
+.qna-content th:last-child{
+	border-right:0;
+	width:140px;
+}
+
+.qna-content td{
+	border-right: 1px solid #dbdbdb;
+	border-bottom: 1px solid #dbdbdb;
+	height:38px;
+}
+
+.qna-content span{
+	color:#003761;
+}
+
+.qna-content td:last-child{
+	border-right:0;
+}
+
+.qna-content td:first-child,
+.qna-content td:nth-child(2),
+.qna-content td:nth-child(4),
+.qna-content td:last-child{
+	text-align: center;
+}
+
+.qna-content td:nth-child(3){
+	text-align: left;
+	padding-left: 20px;
+}

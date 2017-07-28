@@ -377,7 +377,14 @@ html/popup-qna.html*/
 	border-left:1px solid #dbdbdb;
 }
 
+.popup-qna-content th:nth-child(5){
+	width: 808px;
+	height:42px;
+	text-align: center;
+}
+
 .popup-qna-content th:last-child{
+	width: 808px;
 	height:42px;
 	text-align: center;
 }
@@ -399,5 +406,5 @@ html/popup-qna.html*/
 }
 
 .popup-qna-content td:nth-child(5){
-	height:75px;
+	width:808px;
 }

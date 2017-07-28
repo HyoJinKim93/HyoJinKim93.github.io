@@ -431,6 +431,10 @@ html/popup-qna.html*/
 	margin-top:10px;
 }
 
+.popup-qna-content-li ul{
+	border:1px solid #d1d1d1;
+}
+
 .popup-qna-content-li ul li{
 	width:808px;
 	height:42px;
@@ -438,8 +442,13 @@ html/popup-qna.html*/
 
 .popup-qna-content-li ul li:first-child{
 	background-color:#f0f3f5;
+	text-align: center;
+	color:#333333;
 }
 
+.popup-qna-content-li ul li:last-child{
+	height:;
+}
 /* 팝업 수정,삭제 버튼 */
 .popup-qna-content .popup-qna-btn{
 	float:right;

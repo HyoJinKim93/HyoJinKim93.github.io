@@ -485,3 +485,44 @@ html/popup-qna.html*/
 	border: 1px solid #394147; 
 	background: #394a57;
 }
+
+
+/*자료마당 > 관련사이트
+html/relation-site.html*/
+
+.tablist [role="tab"][aria-selected='true'] span, 
+.tablist [role="tab"]:focus span { 
+	position: relative; 
+	font-weight: bold; 
+	color: #fff; 
+	line-height: 35px; 
+	background: #d14411; 
+	border: 0; 
+	box-shadow: 1px 1px 4px 3px rgba(209, 68, 17, 0.3) inset; 
+}
+
+.tablist [role="tab"][aria-selected='true'] span:before, 
+.tablist [role="tab"]:focus span:before { 
+	position: absolute; 
+	bottom: 0; 
+	left: 50%; 
+	margin-left: -5px; 
+	display: block; 
+	width: 0; 
+	height: 0; 
+	border-color: transparent; 
+	border-width: 6px; 
+	border-style: solid; 
+	border-bottom-color: #fff; 
+	content: ""; 
+}
+
+.panel-group { 
+	margin-top: 12px; 
+	width: 100%; 
+	min-height: 480px; 
+}
+
+.panel-group [role="tabpanel"][aria-hidden='true'] { 
+	display: none; 
+}

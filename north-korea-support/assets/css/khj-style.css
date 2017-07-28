@@ -41,8 +41,8 @@ html/notices.html*/
 }
 
 .notices-content td{
-	border-right: 1px solid # #d1d1d1;
-	border-bottom: 1px solid # #d1d1d1;
+	border-right: 1px solid #d1d1d1;
+	border-bottom: 1px solid #d1d1d1;
 	height:38px;
 }
 
@@ -76,7 +76,7 @@ html/popup-notices.html*/
 .popup-notices-content th{
 	width:140px;
 	background-color:#f0f3f5;
-	border-bottom: 1px solid # #d1d1d1;
+	border-bottom: 1px solid #d1d1d1;
 	text-align:left;
 	padding-left:20px;
 }

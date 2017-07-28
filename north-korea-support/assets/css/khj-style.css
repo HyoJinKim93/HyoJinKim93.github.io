@@ -424,9 +424,11 @@ html/popup-qna.html*/
 }
 
 /* 팝업 수정,삭제 버튼 */
+.popup-qna-content .popup-qna-btn{
+	float:right;
+}
 
 .popup-qna-content .btn-type-1-02{
-	float:right;
 	display: inline-block; 
 	min-width: 66px; 
 	height: 30px; 
@@ -440,5 +442,3 @@ html/popup-qna.html*/
 	border: 1px solid #394147; 
 	background: #394a57;
 }
-
-.btn-type-1-02 {  }

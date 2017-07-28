@@ -340,6 +340,7 @@ html/qna-list.html*/
 /*자료마당 > 자료마당 > 팝업
 html/popup-qna.html*/
 
+/* 제목,작성자,패스워드,첨부파일 테이블 */
 
 .popup-qna-content table{
 	border:1px solid #d2d4d6;
@@ -422,6 +423,21 @@ html/popup-qna.html*/
 
 .popup-qna-content td:nth-child(5){
 	width:808px;
+}
+
+/* 제목,작성자,패스워드,첨부파일 테이블 */
+
+.popup-qna-content-li{
+	margin-top:10px;
+}
+
+.popup-qna-content-li ul li{
+	width:808px;
+	height:42px;
+}
+
+.popup-qna-content-li ul li:first-child{
+	background-color:#f0f3f5;
 }
 
 /* 팝업 수정,삭제 버튼 */

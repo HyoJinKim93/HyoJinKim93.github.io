@@ -360,6 +360,11 @@ html/popup-qna.html*/
 	height:75px;
 }
 
+.popup-qna-content table:first-child tr:nth-child(3) button:first-child{
+	color:#003761;
+	font-weight: bold;
+}
+
 .popup-qna-content table:first-child tr:nth-child(3) button:last-child{
 	margin-top: 13px;
 	color:#003761;

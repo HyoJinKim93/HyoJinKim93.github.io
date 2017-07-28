@@ -343,7 +343,7 @@ html/popup-qna.html*/
 /* 제목,작성자,패스워드,첨부파일 테이블 */
 
 .popup-qna-content table{
-	border:1px solid #d2d4d6;
+	border:1px solid #d1d1d1;
 }
 
 .popup-qna-content table{
@@ -446,13 +446,14 @@ html/popup-qna.html*/
 	color:#333333;
 }
 
-.popup-qna-content-li ul li:nth-child(2){
+.popup-qna-content-li ul:first-child li:last-child{
 	height:133px;
 }
 
-.popup-qna-content-li ul li:last-child{
+.popup-qna-content-li ul:last-child li:last-child{
 	height:76px;
 }
+
 /* 팝업 수정,삭제 버튼 */
 .popup-qna-content .popup-qna-btn{
 	float:right;

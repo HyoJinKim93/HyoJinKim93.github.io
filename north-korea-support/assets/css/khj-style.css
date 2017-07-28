@@ -16,7 +16,7 @@ html/notices.html*/
 .notices-content th{
 	background-color:#f0f3f5;
 	height:38px;
-	border-right: 1px solid #dbdbdb;
+	border-right: 1px solid #d1d1d1;
 	border-bottom: 1px solid #c2c2c2;
 }
 .notices-content th:first-child{

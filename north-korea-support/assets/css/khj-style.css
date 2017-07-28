@@ -146,7 +146,7 @@ html/resources.html*/
 .resources-content th{
 	background-color:#f0f3f5;
 	height:38px;
-	border-right: 1px solid #dbdbdb;
+	border-right: 1px solid #d1d1d1;
 	border-bottom: 1px solid #c2c2c2;
 }
 .resources-content th:first-child{
@@ -175,8 +175,8 @@ html/resources.html*/
 }
 
 .resources-content td{
-	border-right: 1px solid #dbdbdb;
-	border-bottom: 1px solid #dbdbdb;
+	border-right: 1px solid #d1d1d1;
+	border-bottom: 1px solid #d1d1d1;
 	height:38px;
 }
 
@@ -211,13 +211,13 @@ html/popup-resources.html*/
 .popup-resources-content th{
 	width:140px;
 	background-color:#f0f3f5;
-	border-bottom: 1px solid #dbdbdb;
+	border-bottom: 1px solid #d1d1d1;
 	text-align:left;
 	padding-left:20px;
 }
 
 .popup-resources-content table tr:nth-child(3) th:nth-child(3){
-	border-left:1px solid #dbdbdb;
+	border-left:1px solid #d1d1d1;
 }
 
 .popup-resources-content table tr:nth-child(4) th:nth-child(11){
@@ -238,7 +238,7 @@ html/popup-resources.html*/
 }
 
 .popup-resources-content th:nth-child(4){
-	border-left:1px solid #dbdbdb;
+	border-left:1px solid #d1d1d1;
 }
 
 .popup-resources-content th:last-child{
@@ -248,7 +248,7 @@ html/popup-resources.html*/
 
 .popup-resources-content td{
 	padding-left:20px;
-	border-bottom: 1px solid #dbdbdb;
+	border-bottom: 1px solid #d1d1d1;
 }
 
 .popup-resources-content td:first-child,
@@ -282,7 +282,7 @@ html/qna-list.html*/
 .qna-content th{
 	background-color:#f0f3f5;
 	height:38px;
-	border-right: 1px solid #dbdbdb;
+	border-right: 1px solid #d1d1d1;
 	border-bottom: 1px solid #c2c2c2;
 }
 .qna-content th:first-child{
@@ -311,8 +311,8 @@ html/qna-list.html*/
 }
 
 .qna-content td{
-	border-right: 1px solid #dbdbdb;
-	border-bottom: 1px solid #dbdbdb;
+	border-right: 1px solid #d1d1d1;
+	border-bottom: 1px solid #d1d1d1;
 	height:38px;
 }
 
@@ -352,17 +352,17 @@ html/popup-qna.html*/
 .popup-qna-content th{
 	width:140px;
 	background-color:#f0f3f5;
-	border-bottom: 1px solid #dbdbdb;
+	border-bottom: 1px solid #d1d1d1;
 	text-align:left;
 	padding-left:20px;
 }
 
 .popup-qna-content table tr:nth-child(2) th:nth-child(3){
-	border-left:1px solid #dbdbdb;
+	border-left:1px solid #d1d1d1;
 }
 
 .popup-qna-content table tr:nth-child(2) td:nth-child(4){
-	border-right:1px solid #dbdbdb;
+	border-right:1px solid #d1d1d1;
 }
 
 .popup-qna-content table:first-child tr:nth-child(3) th:nth-child(1){
@@ -388,7 +388,7 @@ html/popup-qna.html*/
 }
 
 .popup-qna-content th:nth-child(4){
-	border-left:1px solid #dbdbdb;
+	border-left:1px solid #d1d1d1;
 }
 
 .popup-qna-content th:nth-child(5){
@@ -405,7 +405,7 @@ html/popup-qna.html*/
 
 .popup-qna-content td{
 	padding-left:20px;
-	border-bottom: 1px solid #dbdbdb;
+	border-bottom: 1px solid #d1d1d1;
 }
 
 .popup-qna-content td:first-child,

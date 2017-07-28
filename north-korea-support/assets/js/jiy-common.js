@@ -36,13 +36,6 @@
     // 팝업 플러그인 연결
     var $popups = $('.popup').a11y_popup();
 
-    // 버튼 컨트롤
-    $('.btn-popup-test').on('click', function(e) {
-      e.preventDefault();
-      // 팝업 찾아 열기 (id)
-      $.popupId($popups, 'login-area').open();
-    });
-
     // 공지사항 상세 팝업
     $('.btn-popup-notices').on('click', function(e) {
       e.preventDefault();
@@ -56,14 +49,6 @@
       // 팝업 찾아 열기 (id)
       $.popupId($popups, 'popup-resources').open();
     });
-
-     // qna 상세 팝업
-    $('.btn-popup-qna').on('click', function(e) {
-      e.preventDefault();
-      // 팝업 찾아 열기 (id)
-      $.popupId($popups, 'popup-qna').open();
-    });
-
 
     // 팝업 컨트롤 범위 지정
     $('.popup').draggable({
@@ -81,8 +66,8 @@
     });
 
     // 아코디언 설정
-    var accordion = new $.Accordion($('.accordion-lnb')), // LNB 메뉴
-        accordion_faq = new $.Accordion($('.accordion-faq'), 1); // QnA 메뉴
+    var accordion = new $.Accordion($('.aco-base')), // 기본 설정
+        accordion_open = new $.Accordion($(".aco-open"), 1); // 첫번째 패널 오픈
 
     // SelectBox Option 선택 설정
     var selectbox = $("select");

@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<!DOCTYPE html>
+<html lang="ko-KR">
 <head>
     <title>대북지원정보시스템</title>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
@@ -20,8 +20,9 @@
 <link rel="stylesheet" href="../assets/css/khj-style.css"/>
     <!-- IE 9 버전 이하 지원 -->
 <!--[if lt IE 9]>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-<script type="text/javascript" src="../assets/js/jquery-1.11.3.min.js"></script>
+    <script src="https://raw.githubusercontent.com/aFarkas/html5shiv/master/dist/html5shiv.min.js"></script>
+    <script src="https://raw.githubusercontent.com/aFarkas/html5shiv/master/dist/html5shiv-printshiv.min.js"></script>
+    <script type="text/javascript" src="../assets/js/jquery-1.11.3.min.js"></script>
 <![endif]-->
 
 <!-- IE 9 버전 이상 지원 -->
@@ -176,10 +177,11 @@
     <main id="container" class="wrap">
         <nav class="lnb">
             <h3>커뮤니티</h3>
-            <ul class="accordion-lnb">
+            <ul class="aco-base accordion-lnb">
                 <li>
                     <a href="#" class="lnb-link" role="button">뉴스레터<span class="fa fa-angle-down" aria-hidden="true"></span></a>
                 </li>
+                <!-- 메뉴 펼침 class="open"으로 제어 -->
                 <li class="open">
                     <a href="#" class="lnb-link" role="button">FAQ<span class="fa fa-angle-down" aria-hidden="true"></span></a>
                 </li>
@@ -224,52 +226,187 @@
                 <!-- [End] 검색 영역 -->
 
                 <!-- [Start] 탭 영역 -->
-                <ul class="tabs" data-tabgroup="tab-group">
-                    <li><a href="#tab1" class="active">Tab 1</a></li>
-                    <li><a href="#tab2">Tab 2</a></li>
-                    <li><a href="#tab3">Tab 3</a></li>
-                    <li><a href="#tab4">Tab 4</a></li>
-                    <li><a href="#tab5">Tab 5</a></li>
-                </ul>
-                <div id="tab-group" class="tabgroup">
-                    <div id="tab1">
-                        <ul class="accordion-faq">
+                <div class="tablist t5" role="tablist">
+                    <a id="tab1" aria-controls="panel1" role="tab" href><span>전체</span></a>
+                    <a id="tab2" aria-controls="panel2" role="tab" href><span>회원서비스</span></a>
+                    <a id="tab3" aria-controls="panel3" role="tab" href><span>기금사업신청</span></a>
+                    <a id="tab4" aria-controls="panel4" role="tab" href><span>통계</span></a>
+                    <a id="tab5" aria-controls="panel5" role="tab" href><span>북한현황지표</span></a>
+                </div>
+                <div class="panel-group">
+                    <div id="panel1" aria-labelledby="tab1" role="tabpanel" tabindex="0">
+                        <!-- [Start] 아코디언 영역 -->
+                        <ul class="aco-open accordion-faq">
                             <li>
-                                <a href="#" class="lnb-link" role="button">대분류 1<span class="fa fa-angle-down" aria-hidden="true"></span></a>
-                                <ul class="submenu">
-                                    <li><a class="ative" href="#">중분류 1</a>
-                                        <ul>
-                                             <li><a href="">세분류 1</a></li>
-                                         </ul> 
-                                    </li>
-                                    <li><a href="#">중분류 2</a></li>
-                                </ul>
+                                <a href="#" class="title-link" role="button"><span class="title-type">카테고리</span><span class="title-name">이런저런 질문입니다. 이럴 땐 어떻게 하나요?</span></a>
+                                <div class="sub-panel">
+                                    <p>기금사업신청 절차는 이렇게 저렇게 사시면 됩니다.<br/>
+                                    그래서 저렇게 하시면 됩니다.</p>
+                                </div>
                             </li>
                             <li>
-                                <a href="#" class="lnb-link" role="button">대분류 2<span class="fa fa-angle-down" aria-hidden="true"></span></a>
-                                <ul class="submenu">
-                                    <li><a href="#">중분류 1</a></li>
-                                </ul>
+                                <a href="#" class="title-link" role="button"><span class="title-type">카테고리</span><span class="title-name">이런저런 질문입니다. 이럴 땐 어떻게 하나요?</span></a>
+                                <div class="sub-panel">
+                                    <p>기금사업신청 절차는 이렇게 저렇게 사시면 됩니다.<br/>
+                                    그래서 저렇게 하시면 됩니다.</p>
+                                </div>
                             </li>
                             <li>
-                                <a href="#" class="lnb-link" role="button">대분류 3<span class="fa fa-angle-down" aria-hidden="true"></span></a>
-                                <ul class="submenu">
-                                    <li><a href="#">중분류 1</a></li>
-                                </ul>
+                                <a href="#" class="title-link" role="button"><span class="title-type">카테고리</span><span class="title-name">이런저런 질문입니다. 이럴 땐 어떻게 하나요?</span></a>
+                                <div class="sub-panel">
+                                    <p>기금사업신청 절차는 이렇게 저렇게 사시면 됩니다.<br/>
+                                    그래서 저렇게 하시면 됩니다.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="title-link" role="button"><span class="title-type">카테고리</span><span class="title-name">이런저런 질문입니다. 이럴 땐 어떻게 하나요?</span></a>
+                                <div class="sub-panel">
+                                    <p>기금사업신청 절차는 이렇게 저렇게 사시면 됩니다.<br/>
+                                    그래서 저렇게 하시면 됩니다.</p>
+                                </div>
                             </li>
                         </ul>
+                        <!-- [End] 아코디언 영역 -->
                     </div>
-                    <div id="tab2">
-                        tab2 영역 입니다.
+                    <div id="panel2" aria-labelledby="tab2" role="tabpanel" tabindex="0">
+                        
+                        <!-- [Start] 아코디언 영역 -->
+                        <ul class="aco-open accordion-faq">
+                            <li>
+                                <a href="#" class="title-link" role="button"><span class="title-type">카테고리</span><span class="title-name">이런저런 질문입니다. 이럴 땐 어떻게 하나요?</span></a>
+                                <div class="sub-panel">
+                                    <p>기금사업신청 절차는 이렇게 저렇게 사시면 됩니다.<br/>
+                                    그래서 저렇게 하시면 됩니다.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="title-link" role="button"><span class="title-type">카테고리</span><span class="title-name">이런저런 질문입니다. 이럴 땐 어떻게 하나요?</span></a>
+                                <div class="sub-panel">
+                                    <p>기금사업신청 절차는 이렇게 저렇게 사시면 됩니다.<br/>
+                                    그래서 저렇게 하시면 됩니다.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="title-link" role="button"><span class="title-type">카테고리</span><span class="title-name">이런저런 질문입니다. 이럴 땐 어떻게 하나요?</span></a>
+                                <div class="sub-panel">
+                                    <p>기금사업신청 절차는 이렇게 저렇게 사시면 됩니다.<br/>
+                                    그래서 저렇게 하시면 됩니다.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="title-link" role="button"><span class="title-type">카테고리</span><span class="title-name">이런저런 질문입니다. 이럴 땐 어떻게 하나요?</span></a>
+                                <div class="sub-panel">
+                                    <p>기금사업신청 절차는 이렇게 저렇게 사시면 됩니다.<br/>
+                                    그래서 저렇게 하시면 됩니다.</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- [End] 아코디언 영역 -->
                     </div>
-                    <div id="tab3">
-                        tab3 영역 입니다.
+                    <div id="panel3" aria-labelledby="tab3" role="tabpanel" tabindex="0">
+                        
+                        <!-- [Start] 아코디언 영역 -->
+                        <ul class="aco-open accordion-faq">
+                            <li>
+                                <a href="#" class="title-link" role="button"><span class="title-type">카테고리</span><span class="title-name">이런저런 질문입니다. 이럴 땐 어떻게 하나요?</span></a>
+                                <div class="sub-panel">
+                                    <p>기금사업신청 절차는 이렇게 저렇게 사시면 됩니다.<br/>
+                                    그래서 저렇게 하시면 됩니다.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="title-link" role="button"><span class="title-type">카테고리</span><span class="title-name">이런저런 질문입니다. 이럴 땐 어떻게 하나요?</span></a>
+                                <div class="sub-panel">
+                                    <p>기금사업신청 절차는 이렇게 저렇게 사시면 됩니다.<br/>
+                                    그래서 저렇게 하시면 됩니다.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="title-link" role="button"><span class="title-type">카테고리</span><span class="title-name">이런저런 질문입니다. 이럴 땐 어떻게 하나요?</span></a>
+                                <div class="sub-panel">
+                                    <p>기금사업신청 절차는 이렇게 저렇게 사시면 됩니다.<br/>
+                                    그래서 저렇게 하시면 됩니다.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="title-link" role="button"><span class="title-type">카테고리</span><span class="title-name">이런저런 질문입니다. 이럴 땐 어떻게 하나요?</span></a>
+                                <div class="sub-panel">
+                                    <p>기금사업신청 절차는 이렇게 저렇게 사시면 됩니다.<br/>
+                                    그래서 저렇게 하시면 됩니다.</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- [End] 아코디언 영역 -->
                     </div>
-                    <div id="tab4">
-                        tab4 영역 입니다.
+                    <div id="panel4" aria-labelledby="tab4" role="tabpanel" tabindex="0">
+                        
+                        <!-- [Start] 아코디언 영역 -->
+                        <ul class="aco-open accordion-faq">
+                            <li>
+                                <a href="#" class="title-link" role="button"><span class="title-type">카테고리</span><span class="title-name">이런저런 질문입니다. 이럴 땐 어떻게 하나요?</span></a>
+                                <div class="sub-panel">
+                                    <p>기금사업신청 절차는 이렇게 저렇게 사시면 됩니다.<br/>
+                                    그래서 저렇게 하시면 됩니다.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="title-link" role="button"><span class="title-type">카테고리</span><span class="title-name">이런저런 질문입니다. 이럴 땐 어떻게 하나요?</span></a>
+                                <div class="sub-panel">
+                                    <p>기금사업신청 절차는 이렇게 저렇게 사시면 됩니다.<br/>
+                                    그래서 저렇게 하시면 됩니다.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="title-link" role="button"><span class="title-type">카테고리</span><span class="title-name">이런저런 질문입니다. 이럴 땐 어떻게 하나요?</span></a>
+                                <div class="sub-panel">
+                                    <p>기금사업신청 절차는 이렇게 저렇게 사시면 됩니다.<br/>
+                                    그래서 저렇게 하시면 됩니다.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="title-link" role="button"><span class="title-type">카테고리</span><span class="title-name">이런저런 질문입니다. 이럴 땐 어떻게 하나요?</span></a>
+                                <div class="sub-panel">
+                                    <p>기금사업신청 절차는 이렇게 저렇게 사시면 됩니다.<br/>
+                                    그래서 저렇게 하시면 됩니다.</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- [End] 아코디언 영역 -->
                     </div>
-                    <div id="tab5">
-                        tab5 영역 입니다.
+                    <div id="panel5" aria-labelledby="tab5" role="tabpanel" tabindex="0">
+                        
+                        <!-- [Start] 아코디언 영역 -->
+                        <ul class="aco-open accordion-faq">
+                            <li>
+                                <a href="#" class="title-link" role="button"><span class="title-type">카테고리</span><span class="title-name">이런저런 질문입니다. 이럴 땐 어떻게 하나요?</span></a>
+                                <div class="sub-panel">
+                                    <p>기금사업신청 절차는 이렇게 저렇게 사시면 됩니다.<br/>
+                                    그래서 저렇게 하시면 됩니다.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="title-link" role="button"><span class="title-type">카테고리</span><span class="title-name">이런저런 질문입니다. 이럴 땐 어떻게 하나요?</span></a>
+                                <div class="sub-panel">
+                                    <p>기금사업신청 절차는 이렇게 저렇게 사시면 됩니다.<br/>
+                                    그래서 저렇게 하시면 됩니다.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="title-link" role="button"><span class="title-type">카테고리</span><span class="title-name">이런저런 질문입니다. 이럴 땐 어떻게 하나요?</span></a>
+                                <div class="sub-panel">
+                                    <p>기금사업신청 절차는 이렇게 저렇게 사시면 됩니다.<br/>
+                                    그래서 저렇게 하시면 됩니다.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="title-link" role="button"><span class="title-type">카테고리</span><span class="title-name">이런저런 질문입니다. 이럴 땐 어떻게 하나요?</span></a>
+                                <div class="sub-panel">
+                                    <p>기금사업신청 절차는 이렇게 저렇게 사시면 됩니다.<br/>
+                                    그래서 저렇게 하시면 됩니다.</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- [End] 아코디언 영역 -->
                     </div>
                 </div>
                 <!-- [End] 탭 영역 -->

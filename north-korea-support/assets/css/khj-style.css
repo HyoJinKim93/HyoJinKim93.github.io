@@ -14,7 +14,7 @@ html/notices.html*/
 }
 
 .notices-content th{
-	background-color:#f5f8fa;
+	background-color:#f0f3f5;
 	height:38px;
 	border-right: 1px solid #dbdbdb;
 	border-bottom: 1px solid #c2c2c2;
@@ -41,8 +41,8 @@ html/notices.html*/
 }
 
 .notices-content td{
-	border-right: 1px solid #dbdbdb;
-	border-bottom: 1px solid #dbdbdb;
+	border-right: 1px solid # #d1d1d1;
+	border-bottom: 1px solid # #d1d1d1;
 	height:38px;
 }
 
@@ -75,21 +75,26 @@ html/popup-notices.html*/
 
 .popup-notices-content th{
 	width:140px;
-	background-color:#f5f8fa;
-	border-bottom: 1px solid #dbdbdb;
+	background-color:#f0f3f5;
+	border-bottom: 1px solid # #d1d1d1;
 	text-align:left;
 	padding-left:20px;
 }
 .popup-notices-content table tr:nth-child(3) th:nth-child(3){
-	border-left:1px solid #dbdbdb;
+	border-left:1px solid # #d1d1d1;
 }
 
 .popup-notices-content table tr:nth-child(4) th{
 	height:75px;
 }
-
+.popup-notices-content table tr:nth-child(4) button:first-child{
+	color:#003761;
+	font-weight: bold;
+}
 .popup-notices-content table tr:nth-child(4) button:last-child{
 	margin-top: 13px;
+	color:#003761;
+	font-weight: bold;
 }
 
 .popup-notices-content table tr:nth-child(4) td img{
@@ -106,7 +111,7 @@ html/popup-notices.html*/
 
 .popup-notices-content td{
 	padding-left:20px;
-	border-bottom: 1px solid #dbdbdb;
+	border-bottom: 1px solid # #d1d1d1;
 }
 
 .popup-notices-content td:first-child,
@@ -139,7 +144,7 @@ html/resources.html*/
 }
 
 .resources-content th{
-	background-color:#f5f8fa;
+	background-color:#f0f3f5;
 	height:38px;
 	border-right: 1px solid #dbdbdb;
 	border-bottom: 1px solid #c2c2c2;
@@ -205,7 +210,7 @@ html/popup-resources.html*/
 
 .popup-resources-content th{
 	width:140px;
-	background-color:#f5f8fa;
+	background-color:#f0f3f5;
 	border-bottom: 1px solid #dbdbdb;
 	text-align:left;
 	padding-left:20px;
@@ -275,7 +280,7 @@ html/qna-list.html*/
 }
 
 .qna-content th{
-	background-color:#f5f8fa;
+	background-color:#f0f3f5;
 	height:38px;
 	border-right: 1px solid #dbdbdb;
 	border-bottom: 1px solid #c2c2c2;
@@ -346,7 +351,7 @@ html/popup-qna.html*/
 
 .popup-qna-content th{
 	width:140px;
-	background-color:#f5f8fa;
+	background-color:#f0f3f5;
 	border-bottom: 1px solid #dbdbdb;
 	text-align:left;
 	padding-left:20px;

@@ -348,8 +348,12 @@ html/popup-qna.html*/
 	padding-left:20px;
 }
 
-.popup-qna-content table tr:nth-child(3) th:nth-child(3){
+.popup-qna-content table tr:nth-child(2) th:nth-child(3){
 	border-left:1px solid #dbdbdb;
+}
+
+.popup-qna-content table tr:nth-child(2) td:nth-child(4){
+	border-right:1px solid #dbdbdb;
 }
 
 .popup-qna-content table tr:nth-child(4) th:nth-child(11){

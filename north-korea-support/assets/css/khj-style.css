@@ -451,14 +451,19 @@ html/popup-qna.html*/
 
 .popup-qna-content-li ul:first-child li:first-child{
 	border-top:1px solid #d1d1d1;
+	padding-top:7px;
 }
 
 .popup-qna-content-li ul:first-child li:last-child{
 	height:133px;
+	padding-left:20px;
+	padding-top:20px;
 }
 
 .popup-qna-content-li ul:last-child li:last-child{
 	height:76px;
+	padding-top: 20px;
+	padding-left:20px;
 }
 
 /* 팝업 수정,삭제 버튼 */

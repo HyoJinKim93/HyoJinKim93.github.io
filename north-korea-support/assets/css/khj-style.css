@@ -446,8 +446,12 @@ html/popup-qna.html*/
 	color:#333333;
 }
 
+.popup-qna-content-li ul li:nth-child(2){
+	height:133px;
+}
+
 .popup-qna-content-li ul li:last-child{
-	height:;
+	height:76px;
 }
 /* 팝업 수정,삭제 버튼 */
 .popup-qna-content .popup-qna-btn{

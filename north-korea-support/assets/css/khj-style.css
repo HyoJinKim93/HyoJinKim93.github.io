@@ -422,3 +422,22 @@ html/popup-qna.html*/
 .popup-qna-content td:nth-child(5){
 	width:808px;
 }
+
+/* 팝업 수정,삭제 버튼 */
+
+.popup-qna-content .btn-type-1-02{
+	display: inline-block; 
+	min-width: 66px; 
+	height: 30px; 
+	line-height: 28px; 
+	text-align: center; 
+	padding: 0 10px; 
+	border-radius: 3px; 
+	font-size: 14px; 
+	color: #fff; 
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.6); 
+	border: 1px solid #394147; 
+	background: #394a57;
+}
+
+.btn-type-1-02 {  }

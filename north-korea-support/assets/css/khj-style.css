@@ -351,6 +351,7 @@ html/popup-qna.html*/
 
 .popup-qna-content table:nth-child(2){
 	margin-top:10px;
+	clear:both;
 }
 
 .popup-qna-content th{

@@ -432,7 +432,9 @@ html/popup-qna.html*/
 }
 
 .popup-qna-content-li ul{
-	border:1px solid #d1d1d1;
+	border-left:1px solid #d1d1d1;
+	border-bottom:1px solid #d1d1d1;
+	border-right:1px solid #d1d1d1;
 }
 
 .popup-qna-content-li ul li{
@@ -444,6 +446,11 @@ html/popup-qna.html*/
 	background-color:#f0f3f5;
 	text-align: center;
 	color:#333333;
+	border-bottom: 1px solid #d1d1d1;
+}
+
+.popup-qna-content-li ul:first-child li:first-child{
+	border-top:1px solid #d1d1d1;
 }
 
 .popup-qna-content-li ul:first-child li:last-child{

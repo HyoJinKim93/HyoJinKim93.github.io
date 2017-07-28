@@ -345,6 +345,10 @@ html/popup-qna.html*/
 	border:1px solid #d2d4d6;
 }
 
+.popup-qna-content table:first-child{
+	margin-top:40px;
+}
+
 .popup-qna-content table:nth-child(2){
 	margin-top:10px;
 }

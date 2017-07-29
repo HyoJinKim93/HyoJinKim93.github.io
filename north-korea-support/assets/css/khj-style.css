@@ -517,16 +517,16 @@ html/relation-site.html*/
 	content: ""; 
 }
 
-.panel1{
-    float: left;
-    margin-left:30px; 
-	display: inline-block;
-}
-
 .panel-group { 
 	margin-top: 12px; 
 	width: 100%; 
 	min-height: 480px; 
+}
+
+.panel1-group>div{
+    float: left;
+    margin-left:30px; 
+	display: inline-block;
 }
 
 .panel-group [role="tabpanel"][aria-hidden='true'] { 

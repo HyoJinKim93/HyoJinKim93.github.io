@@ -609,6 +609,11 @@ html/relation-site.html*/
 	border:1px solid #ebebeb;
 }
 
+.panel-group .panel-tit{
+	background:url(../assets/images/sub/dot.svg) no-repeat;
+	padding-left:8px;
+}
+
 .panel-group .site{
 	background-color: #ebebeb;
 	height:34px;
@@ -617,6 +622,14 @@ html/relation-site.html*/
 }
 
 /* 관련 사이트 로고 정렬 */
-.panel-group img{
+.panel1-01 img{
 	padding:29px 56px;
+}
+
+.panel1-02 img{
+	padding:30px 47px 29px 47px;
+}
+
+.panel1-03 img{
+	padding:30px 47px 29px 47px;
 }

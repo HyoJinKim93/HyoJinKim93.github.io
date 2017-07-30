@@ -528,6 +528,7 @@ html/relation-site.html*/
 }
 
 /* 탭 안에 관련 사이트들 일렬로 정렬 */
+
 .panel1-01,
 .panel1-02,
 .panel1-03,
@@ -562,7 +563,21 @@ html/relation-site.html*/
 	margin-right: 10px;
 }
 
+/* 맨 오른쪽에 위치한 관련 사이트들 magin 없애기 */
+
+.panel1-04,
+.panel1-07,
+.panel2-04,
+.panel2-07,
+.panel3-04,
+.panel3-07,
+.panel4-04,
+.panel4-07{
+	margin:0;
+}
+
 /* 탭 안에 관련 사이트들 스타일 */
+
 .panel1-01>div,
 .panel1-02>div,
 .panel1-03>div,

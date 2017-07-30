@@ -518,7 +518,7 @@ html/relation-site.html*/
 }
 
 .panel-group { 
-	margin-top: 12px; 
+	margin-top:30px; 
 	width: 100%; 
 	min-height: 480px; 
 }
@@ -609,6 +609,13 @@ html/relation-site.html*/
 	border:1px solid #ebebeb;
 }
 
+.panel1-01,
+.panel1-02,
+.panel1-03,
+.panel1-04{
+	margin-bottom: 30px;
+}
+
 .panel-group .panel-tit{
 	background:url(../../assets/images/sub/dot.svg) no-repeat 0 50%;
 	padding-left:8px;
@@ -632,11 +639,11 @@ html/relation-site.html*/
 }
 
 .panel-group .logo3{
-	padding:30px 61px 30px 60px;
+	padding:36px 61px 30px 60px;
 }
 
 .panel-group .logo4{
-	padding:32px 49px 35px 50px;
+	padding:34px 49px 35px 50px;
 }
 
 .panel-group .logo5{

@@ -616,6 +616,27 @@ html/relation-site.html*/
 	margin-bottom: 30px;
 }
 
+.panel2-01,
+.panel2-02,
+.panel2-03,
+.panel2-04{
+	margin-bottom: 30px;
+}
+
+.panel3-01,
+.panel3-02,
+.panel3-03,
+.panel3-04{
+	margin-bottom: 30px;
+}
+
+.panel4-01,
+.panel4-02,
+.panel4-03,
+.panel4-04{
+	margin-bottom: 30px;
+}
+
 .panel-group .panel-tit{
 	background:url(../../assets/images/sub/dot.svg) no-repeat 0 50%;
 	padding-left:8px;

@@ -641,6 +641,7 @@ html/relation-site.html*/
 	background:url(../../assets/images/sub/dot.svg) no-repeat 0 50%;
 	padding-left:8px;
 	margin-left:6px;
+	margin-bottom: 8px;
 }
 
 .panel-group .site{

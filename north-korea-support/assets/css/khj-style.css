@@ -623,14 +623,30 @@ html/relation-site.html*/
 }
 
 /* 관련 사이트 로고 정렬 */
-.panel1-01 img{
+.panel-group .logo1{
 	padding:29px 56px;
 }
 
-.panel1-02 img{
+.panel-group .logo2{
 	padding:30px 47px 29px 47px;
 }
 
-.panel1-03 img{
-	padding:30px 47px 29px 47px;
+.panel-group .logo3{
+	padding:30px 61px 30px 60px;
+}
+
+.panel-group .logo4{
+	padding:32px 49px 35px 50px;
+}
+
+.panel-group .logo5{
+	padding:34px 51px 34px 52px;
+}
+
+.panel-group .logo6{
+	padding:34px 50px 33px 50px;
+}
+
+.panel-group .logo7{
+	padding:29px 76px 28px 77px;
 }

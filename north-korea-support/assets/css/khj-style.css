@@ -559,6 +559,7 @@ html/relation-site.html*/
 	width:225px;
 	height:154px;
 	display: inline-block;
+	margin-right: 10px;
 }
 
 /* 탭 안에 관련 사이트들 스타일 */
@@ -591,4 +592,16 @@ html/relation-site.html*/
 .panel4-06>div,
 .panel4-07>div{
 	border:1px solid #ebebeb;
+}
+
+.panel-group .site{
+	background-color: #ebebeb;
+	height:34px;
+	text-align: center;
+	padding-top: 5px;
+}
+
+/* 관련 사이트 로고 정렬 */
+.panel-group img{
+	padding:29px 56px;
 }

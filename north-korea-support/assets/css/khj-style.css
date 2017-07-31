@@ -518,11 +518,168 @@ html/relation-site.html*/
 }
 
 .panel-group { 
-	margin-top: 12px; 
+	margin-top:30px; 
 	width: 100%; 
 	min-height: 480px; 
 }
 
 .panel-group [role="tabpanel"][aria-hidden='true'] { 
 	display: none; 
+}
+
+/* 탭 안에 관련 사이트들 일렬로 정렬 */
+
+.panel1-01,
+.panel1-02,
+.panel1-03,
+.panel1-04,
+.panel1-05,
+.panel1-06,
+.panel1-07,
+.panel2-01,
+.panel2-02,
+.panel2-03,
+.panel2-04,
+.panel2-05,
+.panel2-06,
+.panel2-07,
+.panel3-01,
+.panel3-02,
+.panel3-03,
+.panel3-04,
+.panel3-05,
+.panel3-06,
+.panel3-07,
+.panel4-01,
+.panel4-02,
+.panel4-03,
+.panel4-04,
+.panel4-05,
+.panel4-06,
+.panel4-07{
+	width:225px;
+	height:154px;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+/* 맨 오른쪽에 위치한 관련 사이트들 magin 없애기 */
+
+.panel1-04,
+.panel1-07,
+.panel2-04,
+.panel2-07,
+.panel3-04,
+.panel3-07,
+.panel4-04,
+.panel4-07{
+	margin:0;
+}
+
+/* 탭 안에 관련 사이트들 스타일 */
+
+.panel1-01>div,
+.panel1-02>div,
+.panel1-03>div,
+.panel1-04>div,
+.panel1-05>div,
+.panel1-06>div,
+.panel1-07>div,
+.panel2-01>div,
+.panel2-02>div,
+.panel2-03>div,
+.panel2-04>div,
+.panel2-05>div,
+.panel2-06>div,
+.panel2-07>div,
+.panel3-01>div,
+.panel3-02>div,
+.panel3-03>div,
+.panel3-04>div,
+.panel3-05>div,
+.panel3-06>div,
+.panel3-07>div,
+.panel4-01>div,
+.panel4-02>div,
+.panel4-03>div,
+.panel4-04>div,
+.panel4-05>div,
+.panel4-06>div,
+.panel4-07>div{
+	border:1px solid #ebebeb;
+}
+
+.panel1-01,
+.panel1-02,
+.panel1-03,
+.panel1-04{
+	margin-bottom: 30px;
+}
+
+.panel2-01,
+.panel2-02,
+.panel2-03,
+.panel2-04{
+	margin-bottom: 30px;
+}
+
+.panel3-01,
+.panel3-02,
+.panel3-03,
+.panel3-04{
+	margin-bottom: 30px;
+}
+
+.panel4-01,
+.panel4-02,
+.panel4-03,
+.panel4-04{
+	margin-bottom: 30px;
+}
+
+.panel-group .panel-tit{
+	background:url(../../assets/images/sub/dot.svg) no-repeat 0 50%;
+	padding-left:8px;
+	margin-left:6px;
+	margin-bottom: 8px;
+}
+
+.panel-group .site{
+	background-color: #ebebeb;
+	height:34px;
+	text-align: center;
+	padding-top: 5px;
+}
+
+/* 관련 사이트 로고 정렬 */
+.panel-group .relation-logo1{
+	width:109px;
+	height:40px;
+	margin:0 auto;
+	text-align: center;
+	display: block;
+}
+
+.panel-group .relation-logo2{
+	padding:30px 47px 29px 47px;
+}
+
+.panel-group .relation-logo3{
+	padding:36px 61px 30px 60px;
+}
+
+.panel-group .relation-logo4{
+	padding:34px 49px 35px 50px;
+}
+
+.panel-group .relation-logo5{
+	padding:34px 51px 34px 52px;
+}
+
+.panel-group .relation-logo6{
+	padding:34px 50px 33px 50px;
+}
+
+.panel-group .relation-logo7{
+	padding:29px 76px 28px 77px;
 }

@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<!DOCTYPE html>
+<html lang="ko-KR">
 <head>
     <title>대북지원정보시스템</title>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
@@ -11,7 +11,7 @@
     <!-- MSIE 호환성 보기 (최신 브라우저) -->
 <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
 <!-- MOBILE : 모바일 최적화 -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes"/>
 
     <!-- Styles : Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
@@ -20,8 +20,9 @@
 <link rel="stylesheet" href="../assets/css/khj-style.css"/>
     <!-- IE 9 버전 이하 지원 -->
 <!--[if lt IE 9]>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-<script type="text/javascript" src="../assets/js/jquery-1.11.3.min.js"></script>
+    <script src="https://raw.githubusercontent.com/aFarkas/html5shiv/master/dist/html5shiv.min.js"></script>
+    <script src="https://raw.githubusercontent.com/aFarkas/html5shiv/master/dist/html5shiv-printshiv.min.js"></script>
+    <script type="text/javascript" src="../assets/js/jquery-1.11.3.min.js"></script>
 <![endif]-->
 
 <!-- IE 9 버전 이상 지원 -->
@@ -173,7 +174,7 @@
     <!-- [End] Header -->
 
     <!-- [Start] Container Area -->
-    <div id="container" class="wrap">
+    <main id="container" class="wrap">
         <nav class="lnb">
             <h3>자료마당</h3>
             <ul class="aco-base accordion-lnb">
@@ -200,118 +201,10 @@
             </header>
             <hr class="sub-title-bar"/>
             <div class="content">
-            <section class="content notices-content">
-            <!-- 조회 select box -->
-            <ul class="search-area">
-                <li class="search-title"><span>검색</span></li>
-                <li class="select-box">
-                    <label for="search">제목</label>
-                    <select id="search" name="search-item">
-                        <option selected="selected">제목</option>
-                        <option>내용</option>
-                        <option>단어</option>
-                    </select>
-                </li>
-                <li class="input-type">
-                    <label class="search-keyword">
-                        <span>검색 키워드 입력하세요.</span>
-                        <input type="text"/>
-                    </label>
-                </li>
-                <li>
-                    <button class="btn-lookup">조회</button>
-                </li>
-            </ul>
-            
-			<!--      공지사항 테이블      -->
-            <table>
-            	<caption>공지사항의 번호,제목,작성일,첨부파일,조회수 테이블 입니다.</caption>
-            	<thead>
-            		<tr>
-            			<th scope="col">번호</th>
-                        <th scope="col">제목</th>
-                        <th scope="col">작성일</th>
-                        <th scope="col">첨부파일</th>
-                        <th scope="col">조회수</th>
-            		</tr>
-            	</thead>
-            	<tbody>
-            		<tr>
-                        <td>177</td>
-                        <td><a class="btn-popup-notices" role="button"><strong>[공지]</strong> 이런저런 내용으로 공지사항합니다.&nbsp;<strong><span>(2)</span></strong></a></td>
-                        <td>2017-11-12</td>
-                        <td></td>
-                        <td>10</td>
-                    </tr>
-                    <tr>
-                        <td>177</td>
-                        <td><a href=""><strong>[기금공고]</strong> 또 다른 내용으로 공지사항합니다.&nbsp;<strong><span>(2)</span></strong></a></td>
-                        <td>2017-11-12</td>
-                        <td></td>
-                        <td>100</td>
-                    </tr>
-                    <tr>
-                        <td>177</td>
-                        <td><a href=""><strong>[이벤트]</strong> 이런저런 내용으로 공지사항합니다.&nbsp;<strong><span>(2)</span></strong></a></td>
-                        <td>2017-11-12</td>
-                        <td></td>
-                        <td>200</td>
-                    </tr>
-                    <tr>
-                        <td>177</td>
-                        <td><a href=""><strong>[공지]</strong> 또 다른 내용으로 공지사항합니다.&nbsp;<strong><span>(2)</span></strong></a></td>
-                        <td>2017-11-12</td>
-                        <td></td>
-                        <td>999</td>
-                    </tr>
-                    <tr>
-                        <td>177</td>
-                        <td><a href=""><strong>[기금공고]</strong> 또 다른 내용으로 공지사항합니다.&nbsp;<strong><span>(2)</span></strong></a></td>
-                        <td>2017-11-12</td>
-                        <td></td>
-                        <td>999</td>
-                    </tr>
-                    <tr>
-                        <td>177</td>
-                        <td><a href=""><strong>[공지]</strong> 이런저런 내용으로 공지사항합니다.&nbsp;<strong><span>(2)</span></strong></a></td>
-                        <td>2017-11-12</td>
-                        <td></td>
-                        <td>999</td>
-                    </tr>
-                    <tr>
-                        <td>177</td>
-                        <td><a href=""><strong>[공지]</strong> 이런저런 내용으로 공지사항합니다.&nbsp;<strong><span>(2)</span></strong></a></td>
-                        <td>2017-11-12</td>
-                        <td></td>
-                        <td>999</td>
-                    </tr>
-                    <tr>
-                        <td>177</td>
-                        <td><a href=""><strong>[공지]</strong> 이런저런 내용으로 공지사항합니다.&nbsp;<strong><span>(2)</span></strong></a></td>
-                        <td>2017-11-12</td>
-                        <td></td>
-                        <td>999</td>
-                    </tr>
-                    <tr>
-                        <td>177</td>
-                        <td><a href=""><strong>[공지]</strong> 이런저런 내용으로 공지사항합니다.&nbsp;<strong><span>(2)</span></strong></a></td>
-                        <td>2017-11-12</td>
-                        <td></td>
-                        <td>999</td>
-                    </tr>
-                    <tr>
-                        <td>177</td>
-                        <td><a href=""><strong>[공지]</strong> 이런저런 내용으로 공지사항합니다.&nbsp;<strong><span>(2)</span></strong></a></td>
-                        <td>2017-11-12</td>
-                        <td></td>
-                        <td>999</td>
-                    </tr>
-            	</tbody>
-            </table>
-            </section>
+            이 곳에 컨텐츠 작성하시면 됩니다.
             </div>
         </section>
-    </div>
+    </main>
     <!-- [End] Container Area -->
 
     <!-- [Start] Footer Area -->
@@ -328,56 +221,6 @@
         </p>
     </footer>
     <!-- [End] Footer Area -->
-<!-- [Start] 팝업 헤드라인 -->
-<div class="popup" data-id="popup-notices">
-    <header class="popup-headline">
-        <h4>공지사항</h4>
-        <button class="popup-close">창 닫기</button>
-    </header>
-    <!-- [End] 팝업 헤드라인 -->
-
- <!-- [Start] 팝업 콘텐츠 -->
-    <div class="popup-content popup-notices-content">
-        <table>
-            <caption>공지사항 팝업</caption>
-            <tr>
-                <th>제목</th>
-                <td colspan="3">[이벤트] 이런 저런 내용으로 공지합니다..</td>
-            </tr>
-            <tr>
-                <th>작성자</th>
-                <td colspan="3">id****</td>
-            </tr>
-            <tr>
-                <th>작성일</th>
-                <td>2017-11-12</td>
-                <th>조회수</th>
-                <td>999</td>
-            </tr>
-            <tr>
-                <th>첨부파일</th>
-                <td colspan="3">
-                    <button><a href=""><img src="../assets/images/icon/icon-hwp.png" alt="한글 아이콘">첨부파일1.hwp</a></button><br/>
-                    <button><a href=""><img src="../assets/images/icon/icon-hwp.png" alt="한글 아이콘">첨부파일2.hwp</a></button>
-                </td>
-            </tr>
-            <tr>
-                <th colspan="4">제안내용</th>
-            </tr>
-            <tr>
-                <td colspan="4">이런 저런 내용으로 제안합니다. 잘 검토하시고 답변주세요.</td>
-            </tr>
-        </table>
-
-        <!-- [Start] 팝업 버튼 -->
-        <div class="popup-btn-set">
-            <button class="popup-close popup-content-close">닫기</button>
-        </div>
-        <!-- [End] 팝업 버튼 -->
-
-    </div>
-    <!-- [End] 팝업 콘텐츠 -->
-</div>
 
     <!-- javascript : 라이브러리 플러그인 -->
 <script type="text/javascript" src="../assets/js/lib-js.js"></script>

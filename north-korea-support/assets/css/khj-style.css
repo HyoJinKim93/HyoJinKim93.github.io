@@ -4,7 +4,7 @@
 /*자료마당 > 공지사항
 html/notices.html*/
 
-.notices-content{
+/* .notices-content{
 	width:100%;
 }
 
@@ -64,7 +64,7 @@ html/notices.html*/
 .notices-content td:nth-child(2){
 	text-align: left;
 	padding-left: 20px;
-}
+} */
 /*자료마당 > 공지사항 > 팝업
 html/popup-notices.html*/
 

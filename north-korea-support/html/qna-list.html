@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="ko-KR">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
 <head>
     <title>대북지원정보시스템</title>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
@@ -20,9 +20,8 @@
 <link rel="stylesheet" href="../assets/css/khj-style.css"/>
     <!-- IE 9 버전 이하 지원 -->
 <!--[if lt IE 9]>
-    <script src="https://raw.githubusercontent.com/aFarkas/html5shiv/master/dist/html5shiv.min.js"></script>
-    <script src="https://raw.githubusercontent.com/aFarkas/html5shiv/master/dist/html5shiv-printshiv.min.js"></script>
-    <script type="text/javascript" src="../assets/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script type="text/javascript" src="../assets/js/jquery-1.11.3.min.js"></script>
 <![endif]-->
 
 <!-- IE 9 버전 이상 지원 -->
@@ -181,10 +180,11 @@
                 <li>
                     <a href="#" class="lnb-link" role="button">뉴스레터<span class="fa fa-angle-down" aria-hidden="true"></span></a>
                 </li>
-                <li>
+                <!-- 메뉴 펼침 class="open"으로 제어 -->
+                <li class="open">
                     <a href="#" class="lnb-link" role="button">FAQ<span class="fa fa-angle-down" aria-hidden="true"></span></a>
                 </li>
-                <li class="open">
+                <li>
                     <a href="#" class="lnb-link" role="button">Q&amp;A<span class="fa fa-angle-down" aria-hidden="true"></span></a>
                 </li>
             </ul>
@@ -194,38 +194,37 @@
                 <h2 class="sub-title">Q&amp;A</h2>
                 <div class="site-location">
                     <a href="#"><img src="../assets/images/icon/icon-home.svg" alt="home"/></a>
-                    <a href="#">커뮤니티</a>
+                    <a href="#">뉴스레터</a>
+                    <a href="#">FAQ</a>
                     <a href="#">Q&amp;A</a>
                 </div>
             </header>
             <hr class="sub-title-bar"/>
             <div class="content qna-content">
+            <!-- 조회 select box -->
+            <ul class="search-area">
+                <li class="search-title"><span>검색</span></li>
+                <li class="select-box">
+                    <label for="search">제목</label>
+                    <select id="search" name="search-item">
+                        <option selected="selected">제목</option>
+                        <option>내용</option>
+                        <option>단어</option>
+                    </select>
+                </li>
+                <li class="input-type">
+                    <label class="search-keyword">
+                        <span>검색 키워드 입력하세요.</span>
+                        <input type="text"/>
+                    </label>
+                </li>
+                <li>
+                    <button class="btn-lookup">조회</button>
+                </li>
+            </ul>
 
-                <!-- [Start] 검색 영역 -->
-                <ul class="search-area">
-                    <li class="search-title"><span>검색</span></li>
-                    <li class="select-box">
-                        <label for="search">제목</label>
-                        <select id="search" name="search-item">
-                            <option selected="selected">제목</option>
-                            <option>내용</option>
-                            <option>단어</option>
-                        </select>
-                    </li>
-                    <li class="input-type">
-                        <label class="search-keyword">
-                            <span>검색 키워드 입력하세요.</span>
-                            <input type="text"/>
-                        </label>
-                    </li>
-                    <li>
-                        <button class="btn-lookup">조회</button>
-                    </li>
-                </ul>
-                <!-- [End] 검색 영역 -->
-
-                <!-- [Start] Q&ampA 테이블 -->
-                <table class="table-type-01">
+            <!-- qna 테이블 -->
+            <table>
                     <caption>Q&amp;A의 카테고리 번호,분야,제목,작성자,첨부파일,등록일 테이블 입니다</caption>
                     <colgroup>
                         <col />
@@ -246,10 +245,11 @@
                         </tr>
                     </thead>
                     <tbody>
+
                         <tr>
                             <td>175</td>
                             <td>국내외 언론동향</td>
-                            <td><a href class="btn-popup-qna" role="button">이런저런 내용으로 공지사항합니다.</a></a></td>
+                            <td><a class="btn-popup-qna" role="button">이런저런 내용으로 공지사항합니다.</a></td>
                             <td>id****</td>
                             <td></td>
                             <td>2017-12-11</td>
@@ -257,7 +257,7 @@
                         <tr>
                             <td>175</td>
                             <td>북한동향</td>
-                            <td><a href class="btn-popup-qna" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                            <td>이런저런 내용으로 공지사항합니다.</td>
                             <td>id****</td>
                             <td></td>
                             <td>2017-12-11</td>
@@ -265,7 +265,7 @@
                         <tr>
                             <td>175</td>
                             <td>행사정보</td>
-                            <td><a href class="btn-popup-qna" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                            <td>이런저런 내용으로 공지사항합니다.</td>
                             <td>id****</td>
                             <td></td>
                             <td>2017-12-11</td>
@@ -273,7 +273,7 @@
                         <tr>
                             <td>175</td>
                             <td>기타</td>
-                            <td><a href class="btn-popup-qna" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                            <td>이런저런 내용으로 공지사항합니다.</td>
                             <td>id****</td>
                             <td></td>
                             <td>2017-12-11</td>
@@ -281,7 +281,7 @@
                         <tr>
                             <td>175</td>
                             <td>북한동향</td>
-                            <td><a href class="btn-popup-qna" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                            <td>이런저런 내용으로 공지사항합니다.</td>
                             <td>id****</td>
                             <td></td>
                             <td>2017-12-11</td>
@@ -289,7 +289,7 @@
                         <tr>
                             <td>175</td>
                             <td>행사정보</td>
-                            <td><a href class="btn-popup-qna" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                            <td>이런저런 내용으로 공지사항합니다.</td>
                             <td>id****</td>
                             <td></td>
                             <td>2017-12-11</td>
@@ -297,7 +297,7 @@
                         <tr>
                             <td>175</td>
                             <td>기타</td>
-                            <td><a href class="btn-popup-qna" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                            <td>이런저런 내용으로 공지사항합니다.</td>
                             <td>id****</td>
                             <td></td>
                             <td>2017-12-11</td>
@@ -305,7 +305,7 @@
                         <tr>
                             <td>175</td>
                             <td>국내외 언론동향</td>
-                            <td><a href class="btn-popup-qna" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                            <td>이런저런 내용으로 공지사항합니다.</td>
                             <td>id****</td>
                             <td></td>
                             <td>2017-12-11</td>
@@ -313,7 +313,7 @@
                         <tr>
                             <td>175</td>
                             <td>국내외 언론동향</td>
-                            <td><a href class="btn-popup-qna" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                            <td>이런저런 내용으로 공지사항합니다.</td>
                             <td>id****</td>
                             <td></td>
                             <td>2017-12-11</td>
@@ -321,14 +321,13 @@
                         <tr>
                             <td>175</td>
                             <td>기타</td>
-                            <td><a href class="btn-popup-qna" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                            <td>이런저런 내용으로 공지사항합니다.</td>
                             <td>id****</td>
                             <td></td>
                             <td>2017-12-11</td>
                         </tr>
                     </tbody>
                 </table>
-                <!-- [End] Q&ampA 테이블 -->
             </div>
         </section>
     </main>
@@ -349,55 +348,47 @@
     </footer>
     <!-- [End] Footer Area -->
 
-    <!-- [Start] Q&ampA Popup -->
     <div class="popup" data-id="popup-qna">
 
     <!-- [Start] 팝업 헤드라인 -->
-        <header class="popup-headline">
-            <h4>Q&amp;A</h4>
-            <button class="popup-close">창 닫기</button>
-        </header>
-        <!-- [End] 팝업 헤드라인 -->
+    <header class="popup-headline">
+        <h4>Q&amp;A</h4>
+        <button class="popup-close">창 닫기</button>
+    </header>
+    <!-- [End] 팝업 헤드라인 -->
 
-        <!-- [Start] 팝업 콘텐츠 -->
-        <div class="popup-content popup-qna-content">
-        <div class="btn-tr-set">
-            <button class="btn-type-1-02">수정</button>
-            <button class="btn-type-1-02">삭제</button>
-        </div>
-        <!-- 첫번째 테이블 (제목,작성자,패스워드,첨부파일) -->
-            <table class="table-type-02">
-                <caption>qna 팝업</caption>
-                <colgroup>
-                    <col>
-                    <col>
-                    <col>
-                    <col>
-                </colgroup>
-                <tbody>
-                    <tr>
-                        <th>제목</th>
-                        <td colspan="3">이런 저런 내용으로 제안합니다.</td>
-                    </tr>
-                    <tr>
-                        <th>작성자</th>
-                        <td>홍길동</td>
-                        <th>패스워드</th>
-                        <td>****</td>
-                    </tr>
-                    <tr>
-                        <th>첨부파일</th>
-                        <td class="download lines" colspan="3">
-                            <a class="icon-hwp" role="button" href>첨부파일1.hwp</a>
-                            <a class="icon-hwp" role="button" href>첨부파일2.hwp</a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <!-- ul,li (질문,답변) -->
-            <dl class="table-dt-dd">
-                <dt>질문</dt>
-                <dd class="lines">
+    <!-- [Start] 팝업 콘텐츠 -->
+    <div class="popup-content popup-qna-content">
+    <div class="popup-qna-btn">
+        <button class="btn-type-1-02">수정</button>
+        <button class="btn-type-1-02">삭제</button>
+    </div>
+    <!-- 첫번째 테이블 (제목,작성자,패스워드,첨부파일) -->
+        <table>
+            <caption>qna 팝업</caption>
+            <tr>
+                <th>제목</th>
+                <td colspan="6">이런 저런 내용으로 제안합니다.</td>
+            </tr>
+            <tr>
+                <th>작성자</th>
+                <td colspan="3">홍길동</td>
+                <th>패스워드</th>
+                <td>****</td>
+            </tr>
+            <tr>
+                <th>첨부파일</th>
+                <td colspan="6">
+                    <button><a href=""><img src="../assets/images/icon/icon-hwp.png" alt="한글 아이콘">첨부파일1.hwp</a></button><br/>
+                    <button><a href=""><img src="../assets/images/icon/icon-hwp.png" alt="한글 아이콘">첨부파일2.hwp</a></button>
+                </td>
+            </tr>
+        </table>
+        <!-- ul,li (질문,답변) -->
+        <div class="popup-qna-content-li">
+            <ul>
+                <li>질문</li>
+                <li>
                     이런저런 내용으로 제안합니다.
                     <br/>
                     잘 검토하시고 답변 바랍니다.
@@ -405,26 +396,27 @@
                     이런저런 내용으로 제안합니다.
                     <br/>
                     잘 검토하시고 답변 바랍니다.
-                </dd>
-                <dt>답변</dt>
-                <dd class="lines">
-                    <p><span class="admin">관리자</span>(2017-05-04)</p>
-                    이런저런 내용으로 제안합니다.
-                </dd>
-            </dl>
-            <!-- [Start] 팝업 버튼 -->
-            <div class="popup-btn-set">
-                <button class="popup-close">저장하기</button>
-                <button class="popup-close">닫기</button>
-            </div>
-            <!-- [End] 팝업 버튼 -->
-
+                </li>
+            </ul>
+            <ul>
+                <li>답변</li>
+                <li>
+                    <strong>관리자</strong><span>(2017-05-04)</span>
+                    <p>이런저런 내용으로 제안합니다.</p>
+                </il>
+            </ul>
         </div>
-        <!-- [End] 팝업 콘텐츠 -->
+        <!-- [Start] 팝업 버튼 -->
+        <div class="popup-btn-set">
+            <button class="popup-close">저장하기</button>
+            <button class="popup-close">닫기</button>
+        </div>
+        <!-- [End] 팝업 버튼 -->
 
     </div>
-    <!-- [End] Q&ampA Popup -->
+    <!-- [End] 팝업 콘텐츠 -->
 
+</div>
     <!-- javascript : 라이브러리 플러그인 -->
 <script type="text/javascript" src="../assets/js/lib-js.js"></script>
 <!-- javascript : 공통사용 -->

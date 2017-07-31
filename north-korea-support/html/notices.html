@@ -337,9 +337,17 @@
     <!-- [End] 팝업 헤드라인 -->
 
  <!-- [Start] 팝업 콘텐츠 -->
-    <div class="popup-content popup-notices-content table-type-02">
-        <table>
-            <caption>공지사항 팝업</caption>
+    <div class="popup-content popup-notices-content">
+        <table class="table-type-02 table-name">
+            <caption>공지사항 팝업의 제목,작성자,작성일,첨부파일,제안내용 테이블 입니다.</caption>
+            <colgroup>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+            </colgroup>
             <tr>
                 <th>제목</th>
                 <td colspan="3">[이벤트] 이런 저런 내용으로 공지합니다..</td>
@@ -361,13 +369,13 @@
                     <button class="icon-hwp"><a href="">첨부파일2.hwp</a></button>
                 </td>
             </tr>
-            <tr>
-                <th colspan="4">제안내용</th>
-            </tr>
-            <tr>
-                <td colspan="4">이런 저런 내용으로 제안합니다. 잘 검토하시고 답변주세요.</td>
-            </tr>
         </table>
+        <div class="table-dt-dd">
+            <dl>
+                <dt>제안내용</dt>
+                <dd class="lines">이런 저런 내용으로 제안합니다. 잘 검토하시고 답변주세요.</dd>
+            </dl>
+        </div>
 
         <!-- [Start] 팝업 버튼 -->
         <div class="popup-btn-set">

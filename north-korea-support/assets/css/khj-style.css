@@ -4,7 +4,7 @@
 /*자료마당 > 공지사항
 html/notices.html*/
 
-/* .notices-content{
+.notices-content{
 	width:100%;
 }
 
@@ -64,7 +64,7 @@ html/notices.html*/
 .notices-content td:nth-child(2){
 	text-align: left;
 	padding-left: 20px;
-} */
+}
 /*자료마당 > 공지사항 > 팝업
 html/popup-notices.html*/
 
@@ -223,7 +223,10 @@ html/popup-resources.html*/
 .popup-resources-content table tr:nth-child(4) th:nth-child(11){
 	height:75px;
 }
-
+.popup-resources-content table tr:nth-child(4) button:first-child{
+	color:#003761;
+	font-weight:bold;
+}
 .popup-resources-content table tr:nth-child(4) button:last-child{
 	margin-top: 13px;
 	color:#003761;
@@ -265,7 +268,9 @@ html/popup-resources.html*/
 .popup-resources-content td:nth-child(5){
 	height:75px;
 }
-
+.table-dt-dd{
+	border-top:0;
+}
 /*커뮤니티 > Q&A 조회
 html/qna-list.html*/
 

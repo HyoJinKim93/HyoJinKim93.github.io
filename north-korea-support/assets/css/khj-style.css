@@ -441,57 +441,55 @@ html/relation-site.html*/
 .panel-group .relation-logo1{
 	width:109px;
 	height:40px;
-	margin:0 auto;
+	margin:30px auto;
 	text-align: center;
 	display: block;
 }
 
 .panel-group .relation-logo2{
-	padding:30px 47px 29px 47px;
+	width:222px;
+	height:40px;
+	margin:30px auto;
+	text-align: center;
+	display: block;
 }
 
 .panel-group .relation-logo3{
-	padding:36px 61px 30px 60px;
+	width:223px;
+	height:40px;
+	margin:30px auto;
+	text-align: center;
+	display: block;
 }
 
 .panel-group .relation-logo4{
-	padding:34px 49px 35px 50px;
+	width:223px;
+	height:40px;
+	margin:30px auto;
+	text-align: center;
+	display: block;
 }
 
 .panel-group .relation-logo5{
-	padding:34px 51px 34px 52px;
+	width:223px;
+	height:40px;
+	margin:30px auto;
+	text-align: center;
+	display: block;
 }
 
 .panel-group .relation-logo6{
-	padding:34px 50px 33px 50px;
+	width:223px;
+	height:40px;
+	margin:30px auto;
+	text-align: center;
+	display: block;
 }
 
 .panel-group .relation-logo7{
-}
-.panel-group .logo1{
-	padding:29px 56px;
-}
-
-.panel-group .logo2{
-	padding:30px 47px 29px 47px;
-}
-
-.panel-group .logo3{
-	padding:36px 61px 30px 60px;
-}
-
-.panel-group .logo4{
-	padding:34px 49px 35px 50px;
-}
-
-.panel-group .logo5{
-	padding:34px 51px 34px 52px;
-}
-
-.panel-group .logo6{
-	padding:34px 50px 33px 50px;
-}
-
-.panel-group .logo7{
-	padding:29px 76px 28px 77px;
+	width:72px;
+	height:40px;
+	margin:30px auto;
+	text-align: center;
+	display: block;
 }

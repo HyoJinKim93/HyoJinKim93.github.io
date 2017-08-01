@@ -37,7 +37,6 @@ html/notices.html*/
 
 .notices-content th:last-child{
 	border-right:0;
-	width:70px;
 }
 
 .notices-content td{
@@ -68,6 +67,9 @@ html/notices.html*/
 /*자료마당 > 공지사항 > 팝업
 html/popup-notices.html*/
 
+.popup-notices-content colgroup col:nth-child(3){
+	width:140px;
+}
 
 .popup-notices-content table{
 	border:1px solid #d2d4d6;
@@ -81,7 +83,7 @@ html/popup-notices.html*/
 	padding-left:20px;
 }
 .popup-notices-content table tr:nth-child(3) th:nth-child(3){
-	border-left:1px solid # #d1d1d1;
+	border-left:1px solid #d1d1d1;
 }
 
 .popup-notices-content table tr:nth-child(4) th{
@@ -312,7 +314,7 @@ html/qna-list.html*/
 
 .qna-content th:last-child{
 	border-right:0;
-	width:140px;
+	width:81px;
 }
 
 .qna-content td{

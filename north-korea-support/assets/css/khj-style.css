@@ -428,19 +428,19 @@ html/relation-site.html*/
 	padding-left:8px;
 	margin-left:6px;
 	margin-bottom: 8px;
+	font-weight: bold;
 }
 
 .panel-group .site{
 	background-color: #ebebeb;
 	height:34px;
 	text-align: center;
-	padding-top: 5px;
+	line-height: 30px;
 }
 
 /* 관련 사이트 로고 정렬 */
 .panel-group .relation-logo1{
-	height:40px;
-	margin:30px auto;
+	margin:35px auto;
 	text-align: center;
 	display: block;
 }

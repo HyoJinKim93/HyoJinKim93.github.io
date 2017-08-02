@@ -486,3 +486,149 @@ html/relation-site.html*/
 	text-align: center;
 	display: block;
 }
+
+
+/* 회원서비스 > 법인.단체 > 지원접수현황 조회
+html/support-application-status-list.html */
+
+
+/* 체크 아이콘이랑 같이 있는 문구 영역 잡기 */
+
+.support-application-status-check{
+	width:560px;
+	height:66px;
+	margin: 60px auto;
+}
+
+.support-application-status-check .support-application-status-check-icon{
+	width:66px;
+	margin-right: 20px;
+	vertical-align:middle;
+}
+
+.support-application-status-check .support-application-status-notice{
+	display: inline-block;
+	text-align:center;
+	font-size:16px;
+	vertical-align:middle;
+	letter-spacing:-0.14em;
+}
+
+/* 완료 부분 글자색 블루 */
+.support-application-status-check .support-application-status-blue{
+	color:#003761;
+	font-weight: bold;
+}
+
+/* 사업자 신청 조회 */
+
+.support-application-status-content{
+    position: relative;
+    height:315px;
+    border-radius: 7px;
+    border: 1px solid #afc0cc;
+    box-shadow: 0 0 6px 6px #fdfdfd;
+    background: #fff;
+}
+
+.support-application-status-title{
+	color:#003761;
+	font-size:30px;
+	position: absolute;
+	top:50px;
+	left:37%;
+}
+
+/* 사업자 신청 정보 폼 영역 */
+
+.support-application-status-content .form-group{    
+	position: absolute;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom:120px;
+    width: 406px;
+}
+
+/* 사업자 신청 정보 input 영역 */
+
+.support-application-status-content .form-group .input-area{
+	float:left;
+}
+
+/* 사업자 신청 정보 input */
+
+.support-application-status-content .form-group .input-area input{
+	float:right;
+	margin-bottom: 8px;
+	clear:both;
+    cursor: auto;
+    width: 316px;
+    height: 34px;
+    line-height: 34px;
+    padding: 0 10px;
+    border: 1px solid #e6e9eb;
+    background: #fff;    
+}
+
+/* 사업자 신청 정보 input label */
+
+.support-application-status-content .form-group .input-area label {
+    float: left;
+    line-height: 34px;
+    font-weight: bold;
+    letter-spacing: -0.04em;
+    color: #2e3a42;
+    margin-right: 10px;
+}
+
+/* 사업자 신청 정보 버튼 */
+
+.support-application-status-content .btn-link-set {
+    position: absolute;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom:50px;
+    width: 406px;
+}
+
+.support-application-status-content .btn-link-set .btn-main {
+    float: left;
+    color: #333;
+    text-shadow: 0 0 1px #92a5b2;
+    border-bottom: 3px solid #6f7d87;
+    background: #9fb3c2;
+}
+
+.support-application-status-content .btn-link-set [class*='btn-'] {
+    display: inline-block;
+    min-width: 200px;
+    height: 40px;
+    line-height: 38px;
+    text-align: center;
+    padding: 0 10px;
+    border-radius: 3px;
+    letter-spacing: -0.01em;
+}
+
+.support-application-status-content .btn-link-set .btn-join {
+    float: right;
+    color: #fff;
+    text-shadow: 0 0 1px #344450;
+    border-bottom: 3px solid #28343d;
+    background: #394a57;
+}
+
+.support-application-status-content .btn-link-set [class*='btn-'] {
+    display: inline-block;
+    min-width: 200px;
+    height: 40px;
+    line-height: 38px;
+    text-align: center;
+    padding: 0 10px;
+    border-radius: 3px;
+    letter-spacing: -0.01em;
+}

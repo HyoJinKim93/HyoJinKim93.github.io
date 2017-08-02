@@ -204,7 +204,26 @@
 			<hr class="sub-title-bar" />
             <div class="content">
 			<section class="content resources-content">
+				<!--      총 검색, 해당 번째 페이지, 10개씩 보기 select box      -->
+
+	            <div class="all-pages-view">
+                    <div class="all-page">
+                        <span>총 <strong>199</strong>개 검색 , <strong>1</strong>/22 page</span>
+                    </div>
+                    <div class="select-box">
+                        <label for="search">10개씩보기</label>
+                        <select id="search" name="search-item">
+                            <option selected="selected">10개씩보기</option>
+                            <option>20개씩보기</option>
+                            <option>30개씩보기</option>
+                            <option>40개씩보기</option>
+                            <option>50개씩보기</option>
+                        </select>
+                    </div>
+	            </div>
+
 				<!--     자료마당 테이블       -->
+
 				<table class="table-type-01">
 					<caption>자료마당의 번호,분야,제목,작성자,첨부파일,등록일 테이블입니다.</caption>
 					<colgroup>
@@ -308,6 +327,23 @@
 						</tr>
 					</tbody>
 				</table>
+				<div class="paging">
+                    <button class="first-prev" aria-label="처음으로 이동"></button>
+                    <button class="prev" aria-label="이전 페이지"></button>
+                    <a href role="button">1</a>
+                    <a href role="button">2</a>
+                    <a href role="button">3</a>
+                    <a href role="button">4</a>
+                    <!-- 선택된 버튼 class="selected"로 제어 -->
+                    <a class="selected" href role="button">5</a>
+                    <a href role="button">6</a>
+                    <a href role="button">7</a>
+                    <a href role="button">8</a>
+                    <a href role="button">9</a>
+                    <a href role="button">10</a>
+                    <button class="next" " aria-label="다음 페이지"></button>
+                    <button class="last-next" aria-label="끝으로 이동"></button>
+                </div>
 			</section>
             </div>
 		</section>

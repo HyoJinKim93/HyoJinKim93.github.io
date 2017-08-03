@@ -632,3 +632,63 @@ html/support-application-status-list.html */
     border-radius: 3px;
     letter-spacing: -0.01em;
 }
+
+/* 회원서비스 > 회원가입안내 > 약관동의 조회
+html/accept-terms-list.html */
+
+/* content 부분 영역 잡고 가운데로 */
+
+.accept-terms-info{
+	width:930px;
+	margin:0 auto;
+}
+
+/* title 부분 라인과 글자 정렬 */
+
+.accept-terms-info .accept-terms-info-title{
+	border-left: 3px solid #003761;
+	font-size: 16px;
+	font-weight: bold;
+	padding-left: 7px;
+	line-height: 16px;
+	margin-bottom: 9px;
+}
+
+/* accept-terms-info textarea */
+
+.accept-terms-info textarea{
+	width: 930px;
+    height: 141px;
+    font-size: 13px;
+    letter-spacing: -0.08em;
+    overflow-y: scroll;
+    border: solid 1px #d2d4d6;
+    padding: 9px 10px;
+}
+
+/* textarea1 line-height */
+
+.accept-terms-info .accept-terms-info-textarea1{
+	line-height: 1.38;
+}
+
+.accept-terms-info .accept-terms-info-textarea2{
+	line-height: 1.61;
+}
+
+.accept-terms-info .accept-terms-info-textarea3{
+	line-height: 1.8;
+}
+
+/* accept-terms-info radio type */
+
+.accept-terms-info .checkbox-type{
+	margin-bottom: 28px;
+}
+
+/* 동의,메인화면 버튼 */
+.accept-terms-btn{
+	width:406px;
+	margin:0 auto;
+	margin-bottom: 120px;
+}

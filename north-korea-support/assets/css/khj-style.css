@@ -692,3 +692,20 @@ html/accept-terms-list.html */
 	margin:0 auto;
 	margin-bottom: 120px;
 }
+
+/* 회원서비스 > 법인.단체 > 지원접수현황 입력
+html/support-application-status-write.html */
+
+.support-application-status-write{
+	width:930px;
+	margin:0 auto;
+}
+
+.support-application-status-write .support-application-status-write-title{
+	border-left: 3px solid #003761;
+	font-size: 16px;
+	font-weight: bold;
+	padding-left: 7px;
+	line-height: 16px;
+	margin-bottom: 9px;
+}

@@ -721,7 +721,10 @@ html/support-application-status-write.html */
 
 .support-application-status-write-content .form-group{
 	width:406px;
+	height: 76px;
+	margin:0 auto;
 }
+
 .support-application-status-write .btn-search{
 	float: right;
     letter-spacing: -0.01em;

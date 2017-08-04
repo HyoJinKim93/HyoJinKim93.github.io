@@ -732,6 +732,21 @@ html/support-application-status-write.html */
 	margin-bottom:18px;
 }
 
+.support-application-status-write-content{
+    position: relative;
+    height: 178px;
+    border-radius: 7px;
+    border: 1px solid #afc0cc;
+    box-shadow: 0 0 6px 6px #fdfdfd;
+    background: #fff;
+}
+
+.support-application-status-write-content .form-group{
+	width:406px;
+	height: 76px;
+	margin:0 auto;
+}
+
 .support-application-status-write-content .form-group .input-area label {
     float: left;
     line-height: 34px;

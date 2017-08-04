@@ -707,7 +707,7 @@ html/support-application-status-write.html */
 	font-weight: bold;
 	padding-left: 7px;
 	line-height: 16px;
-	margin-bottom: 9px;
+	margin-bottom:18px;
 }
 
 .support-application-status-write-content{
@@ -723,6 +723,20 @@ html/support-application-status-write.html */
 	width:406px;
 	height: 76px;
 	margin:0 auto;
+}
+
+.support-application-status-write-content label{
+	color:#2e3a42;
+	font-weight: bold;
+}
+
+.support-application-status-write-content .input-area{
+	width: 220px;
+    height: 34px;
+    line-height: 30px;
+    padding: 0 10px;
+    border: 1px solid #dbdbdb;
+    background: #fff;
 }
 
 .support-application-status-write .btn-search{

@@ -697,13 +697,13 @@ html/accept-terms-list.html */
 /* 회원서비스 > 법인.단체 > 지원접수현황 입력
 html/support-application-status-write.html */
 
-.support-application-status-write-content .form-group .input-area{
+.support-application-status-write-content1 .form-group .input-area{
 	float:left;
 }
 
 /* 사업자 신청 정보 input */
 
-.support-application-status-write-content .form-group .input-area input{
+.support-application-status-write-content1 .form-group .input-area input{
 	float:right;
 	margin-bottom: 8px;
 	clear:both;
@@ -718,12 +718,12 @@ html/support-application-status-write.html */
 
 /* 사업자 신청 정보 input label */
 
-.support-application-status-write{
+.support-application-status-write1{
 	width:930px;
 	margin:0 auto;
 }
 
-.support-application-status-write .support-application-status-write-title{
+.support-application-status-write1 .support-application-status-write-title{
 	border-left: 3px solid #003761;
 	font-size: 16px;
 	font-weight: bold;
@@ -732,7 +732,7 @@ html/support-application-status-write.html */
 	margin-bottom:18px;
 }
 
-.support-application-status-write-content{
+.support-application-status-write-content1{
     position: relative;
     height: 178px;
     border-radius: 7px;
@@ -741,13 +741,13 @@ html/support-application-status-write.html */
     background: #fff;
 }
 
-.support-application-status-write-content .form-group{
+.support-application-status-write-content1 .form-group{
 	width:406px;
 	height: 76px;
 	margin:50px auto;
 }
 
-.support-application-status-write-content .form-group .input-area label {
+.support-application-status-write-content1 .form-group .input-area label {
     float: left;
     line-height: 34px;
     font-weight: bold;
@@ -758,7 +758,7 @@ html/support-application-status-write.html */
 
 /* 조회 버튼 */
 
-.support-application-status-write .btn-search{
+.support-application-status-write1 .btn-search{
 	float: right;
     letter-spacing: -0.01em;
     background: #003761;
@@ -776,7 +776,13 @@ html/support-application-status-write.html */
     background: #003761;
 }
 
+/* 사업자 신청 진행 현황 */
 
+.support-application-status-write2{
+	width:930px;
+	height:412px;
+	margin:0 auto;
+}
 
 
 

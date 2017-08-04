@@ -741,7 +741,25 @@ html/support-application-status-write.html */
     margin-right: 10px;
 }
 
+/* 조회 버튼 */
 
+.support-application-status-write .btn-search{
+	float: right;
+    letter-spacing: -0.01em;
+    background: #003761;
+    border-bottom: 3px solid #002644;
+    display: inline-block;
+    min-width: 76px;
+    height: 76px;
+    line-height: 74px;
+    text-align: center;
+    padding: 0 10px;
+    border-radius: 3px;
+    color: #fff;
+    text-shadow: 0 0 1px #003359;
+    border-bottom: 3px solid #002644;
+    background: #003761;
+}
 
 
 

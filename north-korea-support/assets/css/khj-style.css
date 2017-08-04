@@ -795,6 +795,10 @@ html/support-application-status-write.html */
 
 /* 보완요청 사항 */
 
+.support-application-status-write3{
+	width:930px;
+	margin:58px auto;
+}
 .support-application-status-write3 .support-application-status-write-title{
 	border-left: 3px solid #003761;
 	font-size: 16px;
@@ -803,7 +807,6 @@ html/support-application-status-write.html */
 	line-height: 16px;
 	margin-bottom:18px;
 }
-
 
 
 

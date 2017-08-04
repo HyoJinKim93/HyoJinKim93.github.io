@@ -784,7 +784,25 @@ html/support-application-status-write.html */
 	margin:0 auto;
 }
 
+.support-application-status-write2 .support-application-status-write-title{
+	border-left: 3px solid #003761;
+	font-size: 16px;
+	font-weight: bold;
+	padding-left: 7px;
+	line-height: 16px;
+	margin-bottom:18px;
+}
 
+/* 보완요청 사항 */
+
+.support-application-status-write3 .support-application-status-write-title{
+	border-left: 3px solid #003761;
+	font-size: 16px;
+	font-weight: bold;
+	padding-left: 7px;
+	line-height: 16px;
+	margin-bottom:18px;
+}
 
 
 

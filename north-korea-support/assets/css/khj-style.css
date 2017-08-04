@@ -808,8 +808,13 @@ html/support-application-status-write.html */
 	margin-bottom:18px;
 }
 
+.support-application-status-write3 .table-type-02 th{
+	width:50px;
+}
 
-
+.support-application-status-write3 .table-type-02 td{
+	width:878px;
+}
 
 
 

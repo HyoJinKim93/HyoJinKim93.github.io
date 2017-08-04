@@ -817,11 +817,25 @@ html/support-application-status-write.html */
 	padding-left: 20px;
 }
 
+/* 사업자 등록 완료 문구,버튼 */
 
+.support-application-status-write-confirm img{
+	width:40px;
+}
 
+.support-application-status-write-confirm{
+	width:444px;
+	height:130px;
+	margin:0 auto;
+}
 
-
-
+.support-application-status-write-confirm-notice{
+	display: inline-block;
+    text-align: center;
+    font-size: 16px;
+    vertical-align: middle;
+    letter-spacing: -0.14em;
+}
 
 
 

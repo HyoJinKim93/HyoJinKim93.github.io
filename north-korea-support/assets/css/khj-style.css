@@ -797,7 +797,7 @@ html/support-application-status-write.html */
 
 .support-application-status-write3{
 	width:930px;
-	margin:58px auto;
+	margin:0 auto;
 }
 .support-application-status-write3 .support-application-status-write-title{
 	border-left: 3px solid #003761;
@@ -821,23 +821,28 @@ html/support-application-status-write.html */
 
 .support-application-status-write-confirm img{
 	width:40px;
+	margin-right: 20px;
+	vertical-align: middle;
 }
 
 .support-application-status-write-confirm{
 	width:444px;
 	height:130px;
-	margin:0 auto;
+	margin:30px auto;
 }
 
 .support-application-status-write-confirm-notice{
 	display: inline-block;
     text-align: center;
-    font-size: 16px;
+    font-size: 20px;
     vertical-align: middle;
-    letter-spacing: -0.14em;
+    letter-spacing: -0.09em;
 }
 
-
+.support-application-status-write-confirm-notice .support-application-status-confirm-blue{
+	color: #003761;
+    font-weight: bold;
+}
 
 
 

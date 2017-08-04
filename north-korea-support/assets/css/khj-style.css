@@ -744,7 +744,7 @@ html/support-application-status-write.html */
 .support-application-status-write-content .form-group{
 	width:406px;
 	height: 76px;
-	margin:0 auto;
+	margin:50px auto;
 }
 
 .support-application-status-write-content .form-group .input-area label {
@@ -797,70 +797,3 @@ html/support-application-status-write.html */
 
 
 
-
-
-/* 
-.support-application-status-write{
-	width:930px;
-	margin:0 auto;
-}
-
-.support-application-status-write .support-application-status-write-title{
-	border-left: 3px solid #003761;
-	font-size: 16px;
-	font-weight: bold;
-	padding-left: 7px;
-	line-height: 16px;
-	margin-bottom:18px;
-}
-
-.support-application-status-write-content{
-    position: relative;
-    height: 178px;
-    border-radius: 7px;
-    border: 1px solid #afc0cc;
-    box-shadow: 0 0 6px 6px #fdfdfd;
-    background: #fff;
-}
-
-.support-application-status-write-content .form-group{
-	width:406px;
-	height: 76px;
-	margin:0 auto;
-}
-
-.support-application-status-write-content label{
-	color:#2e3a42;
-	font-weight: bold;
-}
-
-.support-application-status-write-content .input-area{
-	float:left;
-}
-
-.support-application-status-write-content .input-area input{
-	width: 220px;
-    height: 34px;
-    line-height: 30px;
-    padding: 0 10px;
-    border: 1px solid #dbdbdb;
-    background: #fff;
-}
-
-.support-application-status-write .btn-search{
-	float: right;
-    letter-spacing: -0.01em;
-    background: #003761;
-    border-bottom: 3px solid #002644;
-    display: inline-block;
-    min-width: 76px;
-    height: 76px;
-    line-height: 74px;
-    text-align: center;
-    padding: 0 10px;
-    border-radius: 3px;
-    color: #fff;
-    text-shadow: 0 0 1px #003359;
-    border-bottom: 3px solid #002644;
-    background: #003761;
-} */

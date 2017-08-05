@@ -837,6 +837,7 @@ html/support-application-status-write.html */
     font-size: 20px;
     vertical-align: middle;
     letter-spacing: -0.09em;
+    position: relative;
 }
 
 .support-application-status-write-confirm-notice .support-application-status-confirm-blue{
@@ -844,7 +845,11 @@ html/support-application-status-write.html */
     font-weight: bold;
 }
 
-
+.support-application-status-write-confirm-notice .btn-type-2-04{
+	position: absolute;
+	top:90px;
+	left:30%;
+}
 
 
 

@@ -753,7 +753,7 @@ html/support-application-status-write.html */
     font-weight: bold;
     letter-spacing: -0.04em;
     color: #2e3a42;
-    margin-right: 10px;
+    margin-right: 18px;
 }
 
 /* 조회 버튼 */
@@ -889,7 +889,7 @@ html/unsubscribe-list.html */
     font-weight: bold;
     letter-spacing: -0.04em;
     color: #2e3a42;
-    margin-right: 10px;
+    margin-right: 34px;
 }
 
 .unsubscribe-list .form-group .input-area{

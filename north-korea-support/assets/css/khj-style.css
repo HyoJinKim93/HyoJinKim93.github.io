@@ -351,7 +351,7 @@ html/support-application-status-list.html */
 
 /* 사업자 신청 조회 */
 
-.support-application-status-list-content{
+.support-application-status-list-form{
     position: relative;
     height:315px;
     border-radius: 7px;
@@ -360,7 +360,7 @@ html/support-application-status-list.html */
     background: #fff;
 }
 
-.support-application-status-list-content h4{
+.support-application-status-list-form h4{
 	color:#003761;
 	font-size:30px;
 	position: absolute;
@@ -370,7 +370,7 @@ html/support-application-status-list.html */
 
 /* 사업자 신청 정보 폼 영역 */
 
-.support-application-status-list-content .form-group{    
+.support-application-status-list-form .form-group{    
 	position: absolute;
     left: 50%;
     -ms-transform: translateX(-50%);
@@ -382,13 +382,13 @@ html/support-application-status-list.html */
 
 /* 사업자 신청 정보 input 영역 */
 
-.support-application-status-list-content .form-group .input-area{
+.support-application-status-list-form .form-group .input-area{
 	float:left;
 }
 
 /* 사업자 신청 정보 input */
 
-.support-application-status-list-content .form-group .input-area input{
+.support-application-status-list-form .form-group .input-area input{
 	float:right;
 	margin-bottom: 8px;
 	clear:both;
@@ -403,7 +403,7 @@ html/support-application-status-list.html */
 
 /* 사업자 신청 정보 input label */
 
-.support-application-status-list-content .form-group .input-area label {
+.support-application-status-list-form .form-group .input-area label {
     float: left;
     line-height: 34px;
     font-weight: bold;
@@ -414,7 +414,7 @@ html/support-application-status-list.html */
 
 /* 사업자 신청 정보 버튼 */
 
-.support-application-status-list-content .btn-link-set {
+.support-application-status-list-form .btn-link-set {
     position: absolute;
     left: 50%;
     -ms-transform: translateX(-50%);
@@ -424,7 +424,7 @@ html/support-application-status-list.html */
     width: 406px;
 }
 
-.support-application-status-list-content .btn-link-set .btn-main {
+.support-application-status-list-form .btn-link-set .btn-main {
     float: left;
     color: #333;
     text-shadow: 0 0 1px #92a5b2;
@@ -432,7 +432,7 @@ html/support-application-status-list.html */
     background: #9fb3c2;
 }
 
-.support-application-status-list-content .btn-link-set [class*='btn-'] {
+.support-application-status-list-form .btn-link-set [class*='btn-'] {
     display: inline-block;
     min-width: 200px;
     height: 40px;
@@ -443,7 +443,7 @@ html/support-application-status-list.html */
     letter-spacing: -0.01em;
 }
 
-.support-application-status-list-content .btn-link-set .btn-join {
+.support-application-status-list-form .btn-link-set .btn-join {
     float: right;
     color: #fff;
     text-shadow: 0 0 1px #344450;
@@ -451,7 +451,7 @@ html/support-application-status-list.html */
     background: #394a57;
 }
 
-.support-application-status-content .btn-link-set [class*='btn-'] {
+.support-application-status-list-form .btn-link-set [class*='btn-'] {
     display: inline-block;
     min-width: 200px;
     height: 40px;

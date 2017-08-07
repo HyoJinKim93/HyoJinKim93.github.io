@@ -817,7 +817,7 @@ html/support-application-status-write.html */
 	padding-left: 20px;
 }
 
-/* 사업자 등록 완료 문구,버튼 */
+/* 사업자 등록 완료 문구 */
 
 .support-application-status-write-confirm img{
 	width:40px;
@@ -827,7 +827,6 @@ html/support-application-status-write.html */
 
 .support-application-status-write-confirm{
 	width:444px;
-	height:130px;
 	margin:30px auto;
 }
 
@@ -845,21 +844,29 @@ html/support-application-status-write.html */
     font-weight: bold;
 }
 
+/* 버튼 */
+
 .support-application-status-write-confirm-notice .btn-type-2-04{
 	position: absolute;
 	top:90px;
 	left:30%;
 }
 
+.support-application-status-write-btn{
+	width:200px;
+	height: 120px;
+	margin:30px auto;
+}
+
 /* 회원서비스 > 회원가입안내 > 가입탈퇴 조회
 html/unsubscribe-list.html */
 
-.unsubscribe-list{
+.unsubscribe-list-content{
 	width:930px;
 	margin:0 auto;
 }
 
-.unsubscribe-list .unsubscribe-list-title{
+.unsubscribe-list-content .unsubscribe-list-title{
 	border-left: 3px solid #003761;
 	font-size: 16px;
 	font-weight: bold;
@@ -868,7 +875,7 @@ html/unsubscribe-list.html */
 	margin-bottom:18px;
 }
 
-.unsubscribe-list-content{
+.unsubscribe-list-form{
     position: relative;
     height: 178px;
     border-radius: 7px;
@@ -877,13 +884,13 @@ html/unsubscribe-list.html */
     background: #fff;
 }
 
-.unsubscribe-list .form-group{
+.unsubscribe-list-content .form-group{
 	width:406px;
 	height: 76px;
 	margin:50px auto;
 }
 
-.unsubscribe-list .form-group .input-area label {
+.unsubscribe-list-content .form-group .input-area label {
     float: left;
     line-height: 34px;
     font-weight: bold;
@@ -892,11 +899,11 @@ html/unsubscribe-list.html */
     margin-right: 34px;
 }
 
-.unsubscribe-list .form-group .input-area{
+.unsubscribe-list-content .form-group .input-area{
 	float:left;
 }
 
-.unsubscribe-list .form-group .input-area input {
+.unsubscribe-list-content .form-group .input-area input {
     float: right;
     margin-bottom: 8px;
     clear: both;
@@ -909,9 +916,26 @@ html/unsubscribe-list.html */
     background: #fff;
 }
 
+.unsubscribe-list-check{
+	width:300px;
+	margin:30px auto;
+}
+
+.unsubscribe-list-check img{
+	width: 40px;
+	margin-right: 20px;
+    vertical-align: middle;
+}
+
+.unsubscribe-list-confirm{
+	display: inline-block;
+    font-size: 20px;
+    letter-spacing: -0.1em;
+    vertical-align: middle;
+}
 /* 탈락 버튼 */
 
-.unsubscribe-list .btn-search{
+.unsubscribe-list-content .btn-search{
 	float: right;
     letter-spacing: -0.01em;
     background: #003761;
@@ -927,4 +951,11 @@ html/unsubscribe-list.html */
     text-shadow: 0 0 1px #003359;
     border-bottom: 3px solid #002644;
     background: #003761;
+}
+
+/* 메인 화면 바로가기 버튼 */
+
+.unsubscribe-list-btn{
+	width:200px;
+	margin:50px auto;
 }

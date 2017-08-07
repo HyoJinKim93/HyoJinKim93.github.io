@@ -424,43 +424,7 @@ html/support-application-status-list.html */
     width: 406px;
 }
 
-.support-application-status-list-form .btn-link-set .btn-main {
-    float: left;
-    color: #333;
-    text-shadow: 0 0 1px #92a5b2;
-    border-bottom: 3px solid #6f7d87;
-    background: #9fb3c2;
-}
 
-.support-application-status-list-form .btn-link-set [class*='btn-'] {
-    display: inline-block;
-    min-width: 200px;
-    height: 40px;
-    line-height: 38px;
-    text-align: center;
-    padding: 0 10px;
-    border-radius: 3px;
-    letter-spacing: -0.01em;
-}
-
-.support-application-status-list-form .btn-link-set .btn-join {
-    float: right;
-    color: #fff;
-    text-shadow: 0 0 1px #344450;
-    border-bottom: 3px solid #28343d;
-    background: #394a57;
-}
-
-.support-application-status-list-form .btn-link-set [class*='btn-'] {
-    display: inline-block;
-    min-width: 200px;
-    height: 40px;
-    line-height: 38px;
-    text-align: center;
-    padding: 0 10px;
-    border-radius: 3px;
-    letter-spacing: -0.01em;
-}
 
 /* 회원서비스 > 회원가입안내 > 약관동의 조회
 html/accept-terms-list.html */

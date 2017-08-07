@@ -175,6 +175,8 @@
 
     <!-- [Start] Container Area -->
     <main id="container" class="wrap">
+
+        <!-- [Start] LNB 메뉴 -->
         <nav class="lnb">
             <h3>회원서비스</h3>
             <ul class="aco-base accordion-lnb">
@@ -188,14 +190,7 @@
                                  <li><a href="">지원접수현황</a></li>
                              </ul> 
                         </li>
-                        <li><a href="#">담당자</a>
-                            <ul>
-                                 <li><a href="">약관 동의</a></li>
-                                 <li><a href="">가입 신청</a></li>
-                                 <li><a href="">가입 승인 확인</a></li>
-                                 <li><a href="">가입 탈퇴</a></li>
-                             </ul> 
-                        </li>
+                        <li><a href="#">담당자</a></li>
                     </ul>
                 </li>
                 <li>
@@ -216,22 +211,30 @@
                 </li>
             </ul>
         </nav>
+        <!-- [End] LNB 메뉴 -->
+        
+        <!-- [Start] Content Area -->
         <section class="content-area">
+
+            <!-- [Start] 컨텐츠 타이틀 -->
             <header class="headline">
-                <h2 class="sub-title">약관 동의</h2>
+                <h2 class="sub-title">사업자 신청</h2>
                 <div class="site-location">
                     <a href="#"><img src="../assets/images/icon/icon-home.svg" alt="home"/></a>
                     <a href="#">회원서비스</a>
                     <a href="#">회원가입안내</a>
-                    <a href="#">담당자</a>
-                    <a href="#">약관 동의</a>
+                    <a href="#">법인·단체</a>
+                    <a href="#">지원접수현황</a>
                 </div>
             </header>
             <hr class="sub-title-bar"/>
+            <!-- [End] 컨텐츠 타이틀 -->
+            
+            <!-- [Start] 컨텐츠 상세  -->
             <div class="content support-application-status-write-content">
-                <div class="support-application-status-write1">
-                    <p class="support-application-status-write-title">사업자 신청 조회</p>
-                    <div class="support-application-status-write-content1">
+                <div class="support-application-status-write-check">
+                    <h2>사업자 신청 조회</h2>
+                    <div class="support-application-status-write-form">
                         <div class="form-group">
                             <div class="input-area">
                                 <input type="text" id="username" name="username" required="required" />
@@ -244,12 +247,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="support-application-status-write2">
-                    <p class="support-application-status-write-title">사업자 신청 진행 현황</p>
-                    <div class="support-application-status-write-content2"></div>
+                <div>
+                    <h2>사업자 신청 진행 현황</h2>
                 </div>
-                <div class="support-application-status-write3">
-                    <p class="support-application-status-write-title">보완요청 사항</p>
+                <div class="support-application-status-write-table">
+                    <h2>보완요청 사항</h2>
                     <table class="table-type-02 table-name">
                         <caption>보완요청 사항에 대한 테이블 입니다.</caption>
                         <colgroup>
@@ -274,14 +276,18 @@
                     </table>
                 </div>
                 <div class="support-application-status-write-confirm">
-                    <img src="../assets/images/sub/confirm.svg" alt="사업자 등록 완료 아이콘" />
-                    <p class="support-application-status-write-confirm-notice">대북지원단체1 사업자 등록이 <span class="support-application-status-confirm-blue">완료</span> 되었습니다.</p>
+                    <img src="../assets/images/icon/icon-confirm.svg" alt="사업자 신청 완료 아이콘" />
+                    <p class="support-application-status-write-confirm-notice">대북지원단체1 사업자 등록이 <span class="support-application-status-write-blue">완료</span> 되었습니다.</p>
                 </div>
                 <div class="support-application-status-write-btn">
-                    <button class="btn-type-2-04">담당자 회원 가입</button>
+                    <a href="" class="btn-type-2-04">담당자 회원 가입</a>
                 </div>
             </div>
+            <!-- [End] 컨텐츠 상세  -->
+
         </section>
+        <!-- [End] Content Area -->
+
     </main>
     <!-- [End] Container Area -->
 

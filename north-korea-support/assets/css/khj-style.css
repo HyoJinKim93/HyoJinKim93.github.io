@@ -373,23 +373,11 @@ html/support-application-status-write.html */
     position: relative;
 }
 
-.support-application-status-write-confirm-notice .support-application-status-confirm-blue{
-	color: #003761;
-    font-weight: bold;
-}
+/* 담당자 회원 가입 버튼 */
 
-/* 버튼 */
-
-.support-application-status-write-confirm-notice .btn-type-2-04{
-	position: absolute;
-	top:90px;
-	left:30%;
-}
-
-.support-application-status-write-confirm-notice .support-application-status-write-btn{
-	width:200px;
-	height: 120px;
-	margin:30px auto;
+.support-application-status-write-btn{
+    width: 200px;
+    margin:0 auto;
 }
 
 /* 회원서비스 > 회원가입안내 > 가입탈퇴 조회

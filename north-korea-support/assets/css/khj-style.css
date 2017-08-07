@@ -344,7 +344,7 @@ html/support-application-status-list.html */
 
 /* 완료 부분 글자색 블루 */
 
-.support-application-status-check .support-application-status-blue{
+.support-application-status-list-content .support-application-status-blue{
 	color:#003761;
 	font-weight: bold;
 }

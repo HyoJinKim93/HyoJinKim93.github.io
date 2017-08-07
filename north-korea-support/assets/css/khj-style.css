@@ -546,12 +546,12 @@ html/support-application-status-write.html */
 
 /* 사업자 신청 정보 input label */
 
-.support-application-status-write{
+.support-application-status-write-content{
 	width:930px;
 	margin:0 auto;
 }
 
-.support-application-status-write .support-application-status-write-title{
+.support-application-status-write h2{
 	border-left: 3px solid #003761;
 	font-size: 16px;
 	font-weight: bold;
@@ -586,7 +586,7 @@ html/support-application-status-write.html */
 
 /* 조회 버튼 */
 
-.support-application-status-write .btn-search{
+.support-application-status-write-form .btn-search{
 	float: right;
     letter-spacing: -0.01em;
     background: #003761;
@@ -674,13 +674,13 @@ html/support-application-status-write.html */
 
 /* 버튼 */
 
-.support-application-status-write-confirm .btn-type-2-04{
+.support-application-status-write-confirm-notice .btn-type-2-04{
 	position: absolute;
 	top:90px;
 	left:30%;
 }
 
-.support-application-status-write-confirm .support-application-status-write-btn{
+.support-application-status-write-confirm-notice .support-application-status-write-btn{
 	width:200px;
 	height: 120px;
 	margin:30px auto;

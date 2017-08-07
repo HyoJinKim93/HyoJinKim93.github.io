@@ -213,26 +213,6 @@ html/accept-terms-list.html */
 /* 회원서비스 > 법인.단체 > 지원접수현황 입력
 html/support-application-status-write.html */
 
-.support-application-status-write-form .form-group .input-area{
-	float:left;
-}
-
-/* 사업자 신청 정보 input */
-
-.support-application-status-write-form .form-group .input-area input{
-	float:right;
-	margin-bottom: 8px;
-	clear:both;
-    cursor: auto;
-    width: 220px;
-    height: 34px;
-    line-height: 34px;
-    padding: 0 10px;
-    border: 1px solid #e6e9eb;
-    background: #fff;    
-}
-
-/* 사업자 신청 정보 input label */
 
 .support-application-status-write-form{
 	width:930px;
@@ -262,6 +242,27 @@ html/support-application-status-write.html */
 	height: 76px;
 	margin:50px auto;
 }
+
+.support-application-status-write-form .form-group .input-area{
+	float:left;
+}
+
+/* 사업자 신청 정보 input */
+
+.support-application-status-write-form .form-group .input-area input{
+	float:right;
+	margin-bottom: 8px;
+	clear:both;
+    cursor: auto;
+    width: 220px;
+    height: 34px;
+    line-height: 34px;
+    padding: 0 10px;
+    border: 1px solid #e6e9eb;
+    background: #fff;    
+}
+
+/* 사업자 신청 정보 input label */
 
 .support-application-status-write-form .form-group .input-area label {
     float: left;

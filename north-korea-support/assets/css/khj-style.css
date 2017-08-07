@@ -322,19 +322,19 @@ html/support-application-status-list.html */
 
 /* 체크 아이콘이랑 같이 있는 문구 영역 잡기 */
 
-.support-application-status-check{
+.support-application-status-list-content{
 	width:560px;
 	height:66px;
 	margin: 60px auto;
 }
 
-.support-application-status-check .support-application-status-check-icon{
+.support-application-status-list-content img{
 	width:66px;
 	margin-right: 20px;
 	vertical-align:middle;
 }
 
-.support-application-status-check .support-application-status-notice{
+.support-application-status-list-content .support-application-status-notice{
 	display: inline-block;
 	text-align:center;
 	font-size:16px;

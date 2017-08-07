@@ -606,13 +606,13 @@ html/support-application-status-write.html */
 
 /* 사업자 신청 진행 현황 */
 
-.support-application-status-write2{
+.support-application-status-write-table{
 	width:930px;
 	height:412px;
 	margin:58px auto;
 }
 
-.support-application-status-write2 .support-application-status-write-title{
+.support-application-status-write-table h2{
 	border-left: 3px solid #003761;
 	font-size: 16px;
 	font-weight: bold;
@@ -623,11 +623,11 @@ html/support-application-status-write.html */
 
 /* 보완요청 사항 */
 
-.support-application-status-write3{
+.support-application-status-write-confirm{
 	width:930px;
 	margin:0 auto;
 }
-.support-application-status-write3 .support-application-status-write-title{
+.support-application-status-write-confirm h2{
 	border-left: 3px solid #003761;
 	font-size: 16px;
 	font-weight: bold;
@@ -636,11 +636,11 @@ html/support-application-status-write.html */
 	margin-bottom:18px;
 }
 
-.support-application-status-write3 .table-type-02 th{
+.support-application-status-write-table .table-type-02 th{
 	width:50px;
 }
 
-.support-application-status-write3 .table-type-02 td{
+.support-application-status-write-table .table-type-02 td{
 	width:878px;
 	padding-left: 20px;
 }
@@ -674,13 +674,13 @@ html/support-application-status-write.html */
 
 /* 버튼 */
 
-.support-application-status-write-confirm-notice .btn-type-2-04{
+.support-application-status-write-confirm .btn-type-2-04{
 	position: absolute;
 	top:90px;
 	left:30%;
 }
 
-.support-application-status-write-btn{
+.support-application-status-write-confirm .support-application-status-write-btn{
 	width:200px;
 	height: 120px;
 	margin:30px auto;

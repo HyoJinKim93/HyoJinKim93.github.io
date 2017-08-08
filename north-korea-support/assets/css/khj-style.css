@@ -1,2 +1,483 @@
 
 /*# sourceMappingURL=map/khj-style.css.map */
+
+
+
+
+/* 회원서비스 > 법인.단체 > 지원접수현황 조회
+html/support-application-status-list.html */
+
+
+/* 체크 아이콘이랑 같이 있는 문구 영역 잡기 */
+
+.support-application-status-list-content .support-application-status-list-check{
+	width:560px;
+	height:66px;
+	margin: 60px auto;
+}
+
+.support-application-status-list-content img{
+	width:66px;
+	margin-right: 20px;
+	vertical-align:middle;
+}
+
+.support-application-status-list-content .support-application-status-notice{
+	display: inline-block;
+	text-align:center;
+	font-size:16px;
+	vertical-align:middle;
+	letter-spacing:-0.14em;
+}
+
+/* 완료 부분 글자색 블루 */
+
+.support-application-status-list-content .support-application-status-blue{
+	color:#003761;
+	font-weight: bold;
+}
+
+/* 사업자 신청 조회 */
+
+.support-application-status-list-form{
+    position: relative;
+    height:315px;
+    border-radius: 7px;
+    border: 1px solid #afc0cc;
+    box-shadow: 0 0 6px 6px #fdfdfd;
+    background: #fff;
+}
+
+.support-application-status-list-form h4{
+	color:#003761;
+	font-size:30px;
+	position: absolute;
+	top:50px;
+	left:37%;
+}
+
+/* 사업자 신청 정보 폼 영역 */
+
+.support-application-status-list-form .form-group{    
+	position: absolute;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom:120px;
+    width: 406px;
+}
+
+/* 사업자 신청 정보 input 영역 */
+
+.support-application-status-list-form .form-group .input-area{
+	float:left;
+}
+
+/* 사업자 신청 정보 input */
+
+.support-application-status-list-form .form-group .input-area input{
+	float:right;
+	margin-bottom: 8px;
+	clear:both;
+    cursor: auto;
+    width: 316px;
+    height: 34px;
+    line-height: 34px;
+    padding: 0 10px;
+    border: 1px solid #e6e9eb;
+    background: #fff;    
+}
+
+/* 사업자 신청 정보 input label */
+
+.support-application-status-list-form .form-group .input-area label {
+    float: left;
+    line-height: 34px;
+    font-weight: bold;
+    letter-spacing: -0.04em;
+    color: #2e3a42;
+    margin-right: 10px;
+}
+
+/* 사업자 신청 정보 버튼 */
+
+.support-application-status-list-form .btn-link-set {
+    position: absolute;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom:50px;
+    width: 406px;
+}
+
+.support-application-status-list-form .btn-link-set .btn-main {
+    float: left;
+    color: #333;
+    text-shadow: 0 0 1px #92a5b2;
+    border-bottom: 3px solid #6f7d87;
+    background: #9fb3c2;
+}
+
+.support-application-status-list-form .btn-link-set [class*='btn-'] {
+    display: inline-block;
+    min-width: 200px;
+    height: 40px;
+    line-height: 38px;
+    text-align: center;
+    padding: 0 10px;
+    border-radius: 3px;
+    letter-spacing: -0.01em;
+}
+
+.support-application-status-list-form .btn-link-set .btn-join {
+    float: right;
+    color: #fff;
+    text-shadow: 0 0 1px #344450;
+    border-bottom: 3px solid #28343d;
+    background: #394a57;
+}
+
+.support-application-status-list-form .btn-link-set [class*='btn-'] {
+    display: inline-block;
+    min-width: 200px;
+    height: 40px;
+    line-height: 38px;
+    text-align: center;
+    padding: 0 10px;
+    border-radius: 3px;
+    letter-spacing: -0.01em;
+}
+
+/* 회원서비스 > 회원가입안내 > 약관동의 조회
+html/accept-terms-list.html */
+
+/* content 부분 영역 잡고 가운데로 */
+
+.accept-terms-info{
+	width:930px;
+	margin:0 auto;
+}
+
+/* title 부분 라인과 글자 정렬 */
+
+.accept-terms-info .accept-terms-info-title{
+	border-left: 3px solid #003761;
+	font-size: 16px;
+	font-weight: bold;
+	padding-left: 7px;
+	line-height: 16px;
+	margin-bottom: 9px;
+}
+
+/* accept-terms-info textarea */
+
+.accept-terms-info textarea{
+	width: 930px;
+    height: 141px;
+    font-size: 13px;
+    letter-spacing: -0.08em;
+    overflow-y: scroll;
+    border: solid 1px #d2d4d6;
+    padding: 9px 10px;
+}
+
+/* textarea1 line-height */
+
+.accept-terms-info .accept-terms-info-textarea1{
+	line-height: 1.38;
+}
+
+.accept-terms-info .accept-terms-info-textarea2{
+	line-height: 1.61;
+}
+
+.accept-terms-info .accept-terms-info-textarea3{
+	line-height: 1.8;
+}
+
+/* accept-terms-info radio type */
+
+.accept-terms-info .checkbox-type{
+	margin-bottom: 28px;
+}
+
+/* 동의,메인화면 버튼 */
+.accept-terms-btn{
+	width:406px;
+	margin:0 auto;
+	margin-bottom: 120px;
+}
+
+/* 회원서비스 > 법인.단체 > 지원접수현황 입력
+html/support-application-status-write.html */
+
+
+.support-application-status-write-form{
+	width:930px;
+	margin:0 auto;
+}
+
+.support-application-status-write-check{
+    width:930px;
+    margin:0 auto;
+}
+
+.support-application-status-write-check h2{
+	border-left: 3px solid #003761;
+	font-size: 16px;
+	font-weight: bold;
+	padding-left: 7px;
+	line-height: 16px;
+	margin-bottom:18px;
+}
+
+.support-application-status-write-form{
+    position: relative;
+    height: 178px;
+    border-radius: 7px;
+    border: 1px solid #afc0cc;
+    box-shadow: 0 0 6px 6px #fdfdfd;
+    background: #fff;
+}
+
+.support-application-status-write-form .form-group{
+	width:406px;
+	height: 76px;
+	margin:50px auto;
+}
+
+.support-application-status-write-form .form-group .input-area{
+	float:left;
+}
+
+/* 사업자 신청 정보 input */
+
+.support-application-status-write-form .form-group .input-area input{
+	float:right;
+	margin-bottom: 8px;
+	clear:both;
+    cursor: auto;
+    width: 220px;
+    height: 34px;
+    line-height: 34px;
+    padding: 0 10px;
+    border: 1px solid #e6e9eb;
+    background: #fff;    
+}
+
+/* 사업자 신청 정보 input label */
+
+.support-application-status-write-form .form-group .input-area label {
+    float: left;
+    line-height: 34px;
+    font-weight: bold;
+    letter-spacing: -0.04em;
+    color: #2e3a42;
+    margin-right: 18px;
+}
+
+/* 조회 버튼 */
+
+.support-application-status-write-form .btn-search{
+	float: right;
+    letter-spacing: -0.01em;
+    background: #003761;
+    border-bottom: 3px solid #002644;
+    display: inline-block;
+    min-width: 76px;
+    height: 76px;
+    line-height: 74px;
+    text-align: center;
+    padding: 0 10px;
+    border-radius: 3px;
+    color: #fff;
+    text-shadow: 0 0 1px #003359;
+    border-bottom: 3px solid #002644;
+    background: #003761;
+}
+
+/* 사업자 신청 진행 현황 */
+
+.support-application-status-write-content h2{
+    border-left: 3px solid #003761;
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 7px;
+    line-height: 16px;
+    margin-bottom:18px;
+    width:930px;
+    margin:58px auto;
+}
+
+
+
+/* 보완요청 사항 */
+
+.support-application-status-write-table{
+    width:930px;
+    margin:58px auto;
+}
+
+.support-application-status-write-table h2{
+    border-left: 3px solid #003761;
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 7px;
+    line-height: 16px;
+    margin-bottom:18px;
+}
+.support-application-status-write-table .table-type-02 th{
+	width:50px;
+}
+
+.support-application-status-write-table .table-type-02 td{
+	width:878px;
+	padding-left: 20px;
+}
+
+/* 사업자 등록 완료 문구 */
+
+.support-application-status-write-confirm{
+    width:930px;
+    margin:0 auto;
+}
+
+.support-application-status-write-confirm h2{
+    border-left: 3px solid #003761;
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 7px;
+    line-height: 16px;
+    margin-bottom:18px;
+}
+
+.support-application-status-write-confirm img{
+	width:40px;
+	margin-right: 20px;
+	vertical-align: middle;
+}
+
+.support-application-status-write-confirm{
+	width:444px;
+	margin:30px auto;
+}
+
+.support-application-status-write-confirm-notice{
+	display: inline-block;
+    text-align: center;
+    font-size: 20px;
+    vertical-align: middle;
+    letter-spacing: -0.09em;
+    position: relative;
+}
+
+/* 담당자 회원 가입 버튼 */
+
+.support-application-status-write-btn{
+    width: 200px;
+    margin:0 auto;
+}
+
+/* 회원서비스 > 회원가입안내 > 가입탈퇴 조회
+html/unsubscribe-list.html */
+
+.unsubscribe-list-content{
+	width:930px;
+	margin:0 auto;
+}
+
+.unsubscribe-list-content .unsubscribe-list-title{
+	border-left: 3px solid #003761;
+	font-size: 16px;
+	font-weight: bold;
+	padding-left: 7px;
+	line-height: 16px;
+	margin-bottom:18px;
+}
+
+.unsubscribe-list-form{
+    position: relative;
+    height: 178px;
+    border-radius: 7px;
+    border: 1px solid #afc0cc;
+    box-shadow: 0 0 6px 6px #fdfdfd;
+    background: #fff;
+}
+
+.unsubscribe-list-content .form-group{
+	width:406px;
+	height: 76px;
+	margin:50px auto;
+}
+
+.unsubscribe-list-content .form-group .input-area label {
+    float: left;
+    line-height: 34px;
+    font-weight: bold;
+    letter-spacing: -0.04em;
+    color: #2e3a42;
+    margin-right: 34px;
+}
+
+.unsubscribe-list-content .form-group .input-area{
+	float:left;
+}
+
+.unsubscribe-list-content .form-group .input-area input {
+    float: right;
+    margin-bottom: 8px;
+    clear: both;
+    cursor: auto;
+    width: 220px;
+    height: 34px;
+    line-height: 34px;
+    padding: 0 10px;
+    border: 1px solid #e6e9eb;
+    background: #fff;
+}
+
+.unsubscribe-list-check{
+	width:300px;
+	margin:30px auto;
+}
+
+.unsubscribe-list-check img{
+	width: 40px;
+	margin-right: 20px;
+    vertical-align: middle;
+}
+
+.unsubscribe-list-confirm{
+	display: inline-block;
+    font-size: 20px;
+    letter-spacing: -0.1em;
+    vertical-align: middle;
+}
+/* 탈락 버튼 */
+
+.unsubscribe-list-content .btn-search{
+	float: right;
+    letter-spacing: -0.01em;
+    background: #003761;
+    border-bottom: 3px solid #002644;
+    display: inline-block;
+    min-width: 76px;
+    height: 76px;
+    line-height: 74px;
+    text-align: center;
+    padding: 0 10px;
+    border-radius: 3px;
+    color: #fff;
+    text-shadow: 0 0 1px #003359;
+    border-bottom: 3px solid #002644;
+    background: #003761;
+}
+
+/* 메인 화면 바로가기 버튼 */
+
+.unsubscribe-list-btn{
+	width:200px;
+	margin:50px auto;
+}

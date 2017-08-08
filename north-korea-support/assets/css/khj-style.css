@@ -219,6 +219,11 @@ html/support-application-status-write.html */
 	margin:0 auto;
 }
 
+.support-application-status-write-check{
+    width:930px;
+    margin:0 auto;
+}
+
 .support-application-status-write-check h2{
 	border-left: 3px solid #003761;
 	font-size: 16px;
@@ -295,35 +300,34 @@ html/support-application-status-write.html */
 
 /* 사업자 신청 진행 현황 */
 
-.support-application-status-write-table{
-	width:930px;
-	margin:58px auto;
+.support-application-status-write-content h2{
+    border-left: 3px solid #003761;
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 7px;
+    line-height: 16px;
+    margin-bottom:18px;
+    width:930px;
+    margin:58px auto;
 }
 
-.support-application-status-write-table h2{
-	border-left: 3px solid #003761;
-	font-size: 16px;
-	font-weight: bold;
-	padding-left: 7px;
-	line-height: 16px;
-	margin-bottom:18px;
-}
+
 
 /* 보완요청 사항 */
 
-.support-application-status-write-confirm{
-	width:930px;
-	margin:0 auto;
-}
-.support-application-status-write-confirm h2{
-	border-left: 3px solid #003761;
-	font-size: 16px;
-	font-weight: bold;
-	padding-left: 7px;
-	line-height: 16px;
-	margin-bottom:18px;
+.support-application-status-write-table{
+    width:930px;
+    margin:58px auto;
 }
 
+.support-application-status-write-table h2{
+    border-left: 3px solid #003761;
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 7px;
+    line-height: 16px;
+    margin-bottom:18px;
+}
 .support-application-status-write-table .table-type-02 th{
 	width:50px;
 }
@@ -334,6 +338,20 @@ html/support-application-status-write.html */
 }
 
 /* 사업자 등록 완료 문구 */
+
+.support-application-status-write-confirm{
+    width:930px;
+    margin:0 auto;
+}
+
+.support-application-status-write-confirm h2{
+    border-left: 3px solid #003761;
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 7px;
+    line-height: 16px;
+    margin-bottom:18px;
+}
 
 .support-application-status-write-confirm img{
 	width:40px;
@@ -355,23 +373,11 @@ html/support-application-status-write.html */
     position: relative;
 }
 
-.support-application-status-write-confirm-notice .support-application-status-confirm-blue{
-	color: #003761;
-    font-weight: bold;
-}
+/* 담당자 회원 가입 버튼 */
 
-/* 버튼 */
-
-.support-application-status-write-confirm-notice .btn-type-2-04{
-	position: absolute;
-	top:90px;
-	left:30%;
-}
-
-.support-application-status-write-confirm-notice .support-application-status-write-btn{
-	width:200px;
-	height: 120px;
-	margin:30px auto;
+.support-application-status-write-btn{
+    width: 200px;
+    margin:0 auto;
 }
 
 /* 회원서비스 > 회원가입안내 > 가입탈퇴 조회

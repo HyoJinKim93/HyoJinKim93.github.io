@@ -1,3 +1,87 @@
 
 /*# sourceMappingURL=map/khj-style.css.map */
 
+.applicant-application-step2 col:first-child{
+	width:200px;
+}
+
+.applicant-application-step2 col:nth-child(2){
+	width: 728px;
+}
+
+/* 신청자 정보 테이블 이름 */
+
+.applicant-application-step2 .table-type-02 tr:first-child input:first-child{
+	width:250px;
+}
+
+/* 신청자 정보 테이블 연락처(사무실) */
+
+.applicant-application-step2 .table-type-02 tr:nth-child(2) input:nth-child(2){
+	width:74px;
+}
+
+.applicant-application-step2 .table-type-02 tr:nth-child(2) input:nth-child(4){
+	width:74px;
+}
+
+.applicant-application-step2 .table-type-02 tr:nth-child(2) input:nth-child(6){
+	width:74px;
+}
+
+.applicant-application-step2 .table-type-02 tr:nth-child(2) span:first-child{
+	position: absolute;
+    left: -9999px;
+    visibility: hidden;
+}
+
+.applicant-application-step2 .table-type-02 tr:nth-child(2) span:nth-child(3),
+.applicant-application-step2 .table-type-02 tr:nth-child(2) span:nth-child(5){
+	margin:-1px;
+}
+
+/* 신청자 정보 테이블 연락처(전화) */
+
+.applicant-application-step2 .table-type-02 tr:nth-child(3) input:nth-child(2){
+	width:74px;
+}
+
+.applicant-application-step2 .table-type-02 tr:nth-child(3) input:nth-child(4){
+	width:74px;
+}
+
+.applicant-application-step2 .table-type-02 tr:nth-child(3) input:nth-child(6){
+	width:74px;
+}
+
+.applicant-application-step2 .table-type-02 tr:nth-child(3) span:first-child{
+	position: absolute;
+    left: -9999px;
+    visibility: hidden;
+}
+
+.applicant-application-step2 .table-type-02 tr:nth-child(3) span:nth-child(3),
+.applicant-application-step2 .table-type-02 tr:nth-child(3) span:nth-child(5){
+	margin:-1px;
+}
+
+/* 신청자 정보 테이블 이메일 */
+
+.applicant-application-step2 .table-type-02 tr:nth-child(4) input:first-child{
+	width:140px;
+}
+
+.applicant-application-step2 .table-type-02 tr:nth-child(4) input:nth-child(2){
+	width:140px;
+}
+
+.applicant-application-step2 .table-type-02 tr:nth-child(4) span{
+	padding:0 5px;
+}
+
+/* select box 넓이 수정 */
+
+.applicant-application-step2 .table-type-02 .select-box{
+	width: 150px;
+}
+

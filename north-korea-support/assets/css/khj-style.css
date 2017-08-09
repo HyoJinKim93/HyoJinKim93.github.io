@@ -14,7 +14,7 @@ html/applicant-application-step2.html */
 }
 
 .applicant-application-step2 .table-type-02 col:nth-child(2){
-	width: 728px;
+	width: 729px;
 }
 
 /* 신청자 정보 테이블 이름 */
@@ -46,6 +46,8 @@ html/applicant-application-step2.html */
 .applicant-application-step2 .table-type-02 tr:nth-child(2) span:nth-child(3),
 .applicant-application-step2 .table-type-02 tr:nth-child(2) span:nth-child(5){
 	margin:-1px;
+	width: 6px;
+    display: inline-block;
 }
 
 /* 신청자 정보 테이블 연락처(전화) */

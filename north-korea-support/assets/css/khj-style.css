@@ -17,6 +17,12 @@ html/applicant-application-step2.html */
 	width: 729px;
 }
 
+/* step */
+
+.applicant-application-step2-content .step-area{
+	margin-bottom: 58px;
+}
+
 /* 신청자 정보 테이블 이름 */
 
 .applicant-application-step2-content .table-type-02 tr:first-child input:first-child{
@@ -110,6 +116,12 @@ html/applicant-application-step3.html */
 .applicant-application-step3-content .content-box-area{
 	width:930px;
 	margin: 0 auto;
+}
+
+/* step */
+
+.applicant-application-step3-content .step-area{
+	margin-bottom: 58px;
 }
 
 .applicant-application-step3-content .table-type-02 .input-type input{
@@ -242,6 +254,12 @@ html/applicant-application-step4.html */
 	margin: 0 auto;
 }
 
+/* step */
+
+.applicant-application-step4-content .step-area{
+	margin-bottom: 65px;
+}
+
 .applicant-application-step4-content h3{
 	float:left;
 }
@@ -299,9 +317,109 @@ html/applicant-application-step4.html */
 	letter-spacing: -0.5px;
 }
 
-/* 회원서비스 > 법인.단체 > 사업자신청 Step 5. 구비서류 조회
-html/applicant-application-step5.html */
+/* 회원서비스 > 회원가입안내 > 가입신청 조회
+html/sign-up-list.html */
 
-.applicant-application-step5-content dl{
-	
+/* 법인단체 테이블*/
+
+.sign-up-content .content-box-area{
+	width:930px;
+	margin:0 auto;
+	margin-bottom: 30px;
+}
+
+.sign-up-content .table-corporate-body col:first-child{
+	width:200px;
+}
+
+.sign-up-content .table-corporate-body col:nth-child(2){
+	width:264px;
+}
+
+.sign-up-content .table-corporate-body col:nth-child(3){
+	width:200px;
+}
+
+.sign-up-content .table-corporate-body col:nth-child(4){
+	width:264px;
+}
+
+.sign-up-content .table-corporate-body .input-type input{
+	width:140px;
+}
+
+.sign-up-content .table-corporate-body tr:first-child td:last-child{
+	font-weight: bold;
+}
+
+/* 담당자 정보 */
+
+.sign-up-content .table-contact-information col:first-child{
+	width:200px;
+}
+
+.sign-up-content .table-contact-information col:nth-child(2){
+	width:264px;
+}
+
+.sign-up-content .table-contact-information col:nth-child(3){
+	width:200px;
+}
+
+.sign-up-content .table-contact-information col:nth-child(4){
+	width:264px;
+}
+
+.sign-up-content .table-contact-information .btn-type-1-02{
+	width:126px;
+}
+
+.sign-up-content .table-contact-information .input-type input{
+	width:242px;
+}
+
+.sign-up-content .table-contact-information .select-box:first-child{
+	width:242px;
+}
+
+.sign-up-content .table-contact-information tr:first-child .id-notice{
+	color:#bd1313;
+	letter-spacing: -1px;
+}
+
+.sign-up-content .table-contact-information tr:nth-child(2) .pwd-figure{
+	letter-spacing: -1px;
+}
+
+.sign-up-content .table-contact-information tr:nth-child(4) .pwd-confirm{
+	color:#bd1313;
+	letter-spacing: -1px;
+}
+
+.sign-up-content .table-contact-information tr:nth-child(6) .radio-type label{
+	margin-right:40px;
+}
+
+.sign-up-content .table-contact-information tr:nth-child(8) .input-type input{
+	width:70px;
+}
+
+.sign-up-content .table-contact-information tr:nth-child(9) .input-type input{
+	width:138px;
+}
+
+.sign-up-content .table-contact-information tr:nth-child(9) span{
+	    padding: 0 5px;
+}
+
+.sign-up-content .table-contact-information h4{
+	font-size: 14px;
+	margin-bottom: 9px;
+}
+
+.sign-up-content .table-contact-information .proof-of-employment{
+	border:1px solid #e6e6e6;
+	padding-top:6px;
+	padding-left:9px;
+	padding-bottom: 12px;
 }

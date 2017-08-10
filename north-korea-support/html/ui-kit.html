@@ -177,6 +177,9 @@
             <article>
                 <h2>Input</h2>
                 <div class="form-group">
+
+                    <h3><div class="fa fa-angle-double-right"></div>설명이 있는 인풋 스타일</h3>
+                    <!-- [Start] 설명이 있는 인풋 스타일 -->
                     <div class="input-type">
                         <label for="username">아이디</label>
                         <input type="text" id="username" name="username" required="required" />
@@ -185,13 +188,26 @@
                         <label for="password">비밀번호</label>
                         <input type="password" id="password" name="password" required="required" />
                     </div>
-                </div>
-                <br>
-                <div class="input-type">
-                    <label>
-                        <span>입력폼</span>
-                        <input type="text"/>
-                    </label>
+                    <!-- [End] 설명이 있는 인풋 스타일 -->
+
+                    <h3><div class="fa fa-angle-double-right"></div>설명이 없는 인풋 스타일</h3>
+                    <!-- [Start] 설명이 없는 인풋 스타일 -->
+                    <div class="input-type">
+                        <label aria-label="텍스트 입력">
+                            <input type="text"/>
+                        </label>
+                    </div>
+                    <!-- [End] 설명이 없는 인풋 스타일 -->
+
+                    <h3><div class="fa fa-angle-double-right"></div>Placeholder가 있는 인풋 스타일</h3>
+                    <!-- [Start] Placeholder가 있는 인풋 스타일 -->
+                    <div class="input-type">
+                        <label aria-label="Placeholder 텍스트 입력">
+                            <input type="text" placeholder="Placeholder 사용" />
+                        </label>
+                    </div>
+                    <!-- [End] Placeholder가 있는 인풋 스타일 -->
+
                 </div>
             </article>
             <!-- [End] Input 공통 -->
@@ -296,12 +312,36 @@
             <!-- [Start] 파일 아이콘 스타일 공통 -->
             <article>
                 <h2>File Icon Style</h2>
-                <ul class="file-icon-box">
-                    <li class="icon-hwp">.icon-hwp 파일 아이콘</li>
-                    <li class="icon-doc">.icon-doc 파일 아이콘</li>
-                    <li class="icon-pdf">.icon-pdf 파일 아이콘</li>
-                    <li class="icon-jpg">.icon-jpg 파일 아이콘</li>
-                </ul>
+                <div class="add-file-area">
+                    <div class="file">
+                        <a class="icon-hwp" role="button" href="">hwp-첨부파일.hwp</a>
+                        <button class="btn-file-remove">파일삭제</button>
+                    </div>
+                    <div class="file">
+                        <a class="icon-doc" role="button" href="">doc-첨부파일.doc</a>
+                        <button class="btn-file-remove">파일삭제</button>
+                    </div>
+                    <div class="file">
+                        <a class="icon-pdf" role="button" href="">pdf-첨부파일.pdf</a>
+                        <button class="btn-file-remove">파일삭제</button>
+                    </div>
+                    <div class="file">
+                        <a class="icon-jpg" role="button" href="">jpg-첨부파일.jpg</a>
+                        <button class="btn-file-remove">파일삭제</button>
+                    </div>
+                    <div class="file">
+                        <a class="icon-png" role="button" href="">png-첨부파일.png</a>
+                        <button class="btn-file-remove">파일삭제</button>
+                    </div>
+                    <div class="file">
+                        <a class="icon-xls" role="button" href="">xls-첨부파일.xls</a>
+                        <button class="btn-file-remove">파일삭제</button>
+                    </div>
+                    <div class="file">
+                        <a class="icon-ppt" role="button" href="">ppt-첨부파일.ppt</a>
+                        <button class="btn-file-remove">파일삭제</button>
+                    </div>
+                </div>
             </article>
             <!-- [End] 파일 아이콘 스타일 공통 -->
 
@@ -481,7 +521,7 @@
                                 <!-- 한 줄 이상 줄바꿈 없이 말줄임 처리 class="view-link" 적용 -->
                                 <td><a href class="btn-popup-qna-list view-link" role="button">이런저런 내용으로 공지사항합니다. 이런저런 내용으로 공지사항합니다.</a></a></td>
                                 <td>id****</td>
-                                <td class="download-type-02">
+                                <td class="table-download">
                                     <span class="icon-hwp"></span>
                                     <span class="icon-doc"></span>
                                     <span class="icon-pdf"></span>
@@ -501,7 +541,7 @@
                                 <td>북한동향</td>
                                 <td><a href class="btn-popup-qna-list view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
                                 <td>id****</td>
-                                <td class="download-type-02">
+                                <td class="table-download">
                                     <span class="icon-hwp"></span>
                                     <span class="icon-doc"></span>
                                     <span class="icon-pdf"></span>
@@ -521,7 +561,7 @@
                                 <td>행사정보</td>
                                 <td><a href class="btn-popup-qna-list view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
                                 <td>id****</td>
-                                <td class="download-type-02"></td>
+                                <td class="table-download"></td>
                                 <td>2017-12-11</td>
                             </tr>
                             <tr>
@@ -529,7 +569,7 @@
                                 <td>기타</td>
                                 <td><a href class="btn-popup-qna-list view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
                                 <td>id****</td>
-                                <td class="download-type-02"></td>
+                                <td class="table-download"></td>
                                 <td>2017-12-11</td>
                             </tr>
                             <tr>
@@ -537,7 +577,7 @@
                                 <td>북한동향</td>
                                 <td><a href class="btn-popup-qna-list view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
                                 <td>id****</td>
-                                <td class="download-type-02"></td>
+                                <td class="table-download"></td>
                                 <td>2017-12-11</td>
                             </tr>
                             <tr>
@@ -545,7 +585,7 @@
                                 <td>행사정보</td>
                                 <td><a href class="btn-popup-qna-list view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
                                 <td>id****</td>
-                                <td class="download-type-02"></td>
+                                <td class="table-download"></td>
                                 <td>2017-12-11</td>
                             </tr>
                             <tr>
@@ -553,7 +593,7 @@
                                 <td>기타</td>
                                 <td><a href class="btn-popup-qna-list view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
                                 <td>id****</td>
-                                <td class="download-type-02"></td>
+                                <td class="table-download"></td>
                                 <td>2017-12-11</td>
                             </tr>
                             <tr>
@@ -561,7 +601,7 @@
                                 <td>국내외 언론동향</td>
                                 <td><a href class="btn-popup-qna-list view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
                                 <td>id****</td>
-                                <td class="download-type-02"></td>
+                                <td class="table-download"></td>
                                 <td>2017-12-11</td>
                             </tr>
                             <tr>
@@ -569,7 +609,7 @@
                                 <td>국내외 언론동향</td>
                                 <td><a href class="btn-popup-qna-list view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
                                 <td>id****</td>
-                                <td class="download-type-02"></td>
+                                <td class="table-download"></td>
                                 <td>2017-12-11</td>
                             </tr>
                             <tr>
@@ -577,7 +617,7 @@
                                 <td>기타</td>
                                 <td><a href class="btn-popup-qna-list view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
                                 <td>id****</td>
-                                <td class="download-type-02"></td>
+                                <td class="table-download"></td>
                                 <td>2017-12-11</td>
                             </tr>
                         </tbody>
@@ -624,6 +664,11 @@
                         <dt>답변</dt>
                         <dd>이런저런 내용으로 제안합니다.</dd>
                     </dl>
+                    <h3><span class="fa fa-table"></span>table-dl</h3>
+                    <dl class="table-dl">
+                        <dt>제목</dt>
+                        <dd>이런저런 내용입니다.</dd>
+                    </dl>
                     <h3><span class="fa fa-table"></span>table-li</h3>
                     <ul class="table-li table-name">
                         <li class="title">질문</li>
@@ -635,6 +680,11 @@
                         </li>
                         <li class="title">답변</li>
                         <li>이런저런 내용으로 제안합니다.</li>
+                    </ul>
+                    <h3><span class="fa fa-table"></span>table-li</h3>
+                    <ul class="table-li table-name">
+                        <li class="title">제목</li>
+                        <li>이런저런 내용입니다.</li>
                     </ul>
                 </div>
             </article>
@@ -689,6 +739,300 @@
                 </article>
             </article>
             <!-- [End] 서브 컨텐츠 타이틀 공통 -->
+
+            <!-- [Start] 서브 컨텐츠 폼 공통 -->
+            <article>
+                <h2>Sub Content Box Form Style</h2>
+                <div class="content-form-area">
+                    <div class="form-group">
+                        <div class="input-area">
+                            <input type="text" id="username" name="username" required="required" />
+                            <label for="username">담당자 ID</label>
+                            <br>
+                            <input type="password" id="password" name="password" required="required" />
+                            <label for="password">비밀번호</label>
+                        </div>
+                        <button class="btn-input-area">탈퇴</button>
+                    </div>
+                </div>
+            </article>
+            <!-- [End] 서브 컨텐츠 폼 공통 -->
+
+            <!-- [Start] 하단 버튼 영역 공통 -->
+            <article>
+                <h2>Sub Buttom Button Style</h2>
+                <div class="sub-bottom-btn-area">
+                    <a href="" class="btn-type-2-04" role="button">동의</a>
+                    <a href="" class="btn-type-2-01" role="button">취소</a>
+                </div>
+            </article>
+            <!-- [End] 하단 버튼 영역 공통 -->
+
+            <!-- [Start] 하단 버튼 영역 공통 -->
+            <article>
+                <h2>Sub Buttom Button Style</h2>
+                <div class="porgress-area-test">
+                    <h3><div class="fa fa-angle-double-right"></div>.porgress-area.bar-step0</h3>
+                    <!-- [Start] 진행 순서 버튼 -->
+                    <div class="step-area">
+                        <!-- class명 "bar-step1 ~ bar-step5" 까지 진행률 단계 스타일 제어 -->
+                        <ul class="porgress-area bar-step0">
+                            <li>
+                                <!-- 활성화 스탭 class명 "step-open" 적용 -->
+                                <div class="step-open">
+                                    <div>Step 1</div>
+                                    <a href="" class="btn-step" role="button">가입여부 확인</a>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- 비활성화 스탭 class명 "step-close" 적용 -->
+                                <div class="step-close">
+                                    <div>Step 2</div>
+                                    <a href="" class="btn-step" role="button">신청자 정보</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="step-close">
+                                    <div>Step 3</div>
+                                    <a href="" class="btn-step" role="button">단체기본 정보</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="step-close">
+                                    <div>Step 4</div>
+                                    <a href="" class="btn-step" role="button">연혁 정보</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="step-close">
+                                    <div>Step 5</div>
+                                    <a href="" class="btn-step" role="button">구비서류</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <p class="help-text">
+                            <span class="icon-help">안내</span>2016년 이전에 대북지원사업자로 등록하신 단체는 공문 및 신청양식을 작성하신 후 <a class="help-email" href="mailto:abcd@efghijk.com">abcd@efghijk.com</a>으로 보내주시기 바랍니다.
+                        </p>
+                    </div>
+                    <!-- [End] 진행 순서 버튼 -->
+                    <h3><div class="fa fa-angle-double-right"></div>.porgress-area.bar-step1</h3>
+                    <!-- [Start] 진행 순서 버튼 -->
+                    <div class="step-area">
+                        <!-- class명 "bar-step1 ~ bar-step5" 까지 진행률 단계 스타일 제어 -->
+                        <ul class="porgress-area bar-step1">
+                            <li>
+                                <!-- 활성화 스탭 class명 "step-open" 적용 -->
+                                <div class="step-open">
+                                    <div>Step 1</div>
+                                    <a href="" class="btn-step" role="button">가입여부 확인</a>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- 비활성화 스탭 class명 "step-close" 적용 -->
+                                <div class="step-close">
+                                    <div>Step 2</div>
+                                    <a href="" class="btn-step" role="button">신청자 정보</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="step-close">
+                                    <div>Step 3</div>
+                                    <a href="" class="btn-step" role="button">단체기본 정보</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="step-close">
+                                    <div>Step 4</div>
+                                    <a href="" class="btn-step" role="button">연혁 정보</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="step-close">
+                                    <div>Step 5</div>
+                                    <a href="" class="btn-step" role="button">구비서류</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <p class="help-text">
+                            <span class="icon-help">안내</span>2016년 이전에 대북지원사업자로 등록하신 단체는 공문 및 신청양식을 작성하신 후 <a class="help-email" href="mailto:abcd@efghijk.com">abcd@efghijk.com</a>으로 보내주시기 바랍니다.
+                        </p>
+                    </div>
+                    <!-- [End] 진행 순서 버튼 -->
+                    <h3><div class="fa fa-angle-double-right"></div>.porgress-area.bar-step2</h3>
+                    <!-- [Start] 진행 순서 버튼 -->
+                    <div class="step-area">
+                        <!-- class명 "bar-step1 ~ bar-step5" 까지 진행률 단계 스타일 제어 -->
+                        <ul class="porgress-area bar-step2">
+                            <li>
+                                <!-- 활성화 스탭 class명 "step-open" 적용 -->
+                                <div class="step-open">
+                                    <div>Step 1</div>
+                                    <a href="" class="btn-step" role="button">가입여부 확인</a>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- 비활성화 스탭 class명 "step-close" 적용 -->
+                                <div class="step-close">
+                                    <div>Step 2</div>
+                                    <a href="" class="btn-step" role="button">신청자 정보</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="step-close">
+                                    <div>Step 3</div>
+                                    <a href="" class="btn-step" role="button">단체기본 정보</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="step-close">
+                                    <div>Step 4</div>
+                                    <a href="" class="btn-step" role="button">연혁 정보</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="step-close">
+                                    <div>Step 5</div>
+                                    <a href="" class="btn-step" role="button">구비서류</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <p class="help-text">
+                            <span class="icon-help">안내</span>2016년 이전에 대북지원사업자로 등록하신 단체는 공문 및 신청양식을 작성하신 후 <a class="help-email" href="mailto:abcd@efghijk.com">abcd@efghijk.com</a>으로 보내주시기 바랍니다.
+                        </p>
+                    </div>
+                    <!-- [End] 진행 순서 버튼 -->
+                    <h3><div class="fa fa-angle-double-right"></div>.porgress-area.bar-step3</h3>
+                    <!-- [Start] 진행 순서 버튼 -->
+                    <div class="step-area">
+                        <!-- class명 "bar-step1 ~ bar-step5" 까지 진행률 단계 스타일 제어 -->
+                        <ul class="porgress-area bar-step3">
+                            <li>
+                                <!-- 활성화 스탭 class명 "step-open" 적용 -->
+                                <div class="step-open">
+                                    <div>Step 1</div>
+                                    <a href="" class="btn-step" role="button">가입여부 확인</a>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- 비활성화 스탭 class명 "step-close" 적용 -->
+                                <div class="step-close">
+                                    <div>Step 2</div>
+                                    <a href="" class="btn-step" role="button">신청자 정보</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="step-close">
+                                    <div>Step 3</div>
+                                    <a href="" class="btn-step" role="button">단체기본 정보</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="step-close">
+                                    <div>Step 4</div>
+                                    <a href="" class="btn-step" role="button">연혁 정보</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="step-close">
+                                    <div>Step 5</div>
+                                    <a href="" class="btn-step" role="button">구비서류</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <p class="help-text">
+                            <span class="icon-help">안내</span>2016년 이전에 대북지원사업자로 등록하신 단체는 공문 및 신청양식을 작성하신 후 <a class="help-email" href="mailto:abcd@efghijk.com">abcd@efghijk.com</a>으로 보내주시기 바랍니다.
+                        </p>
+                    </div>
+                    <!-- [End] 진행 순서 버튼 -->
+                    <h3><div class="fa fa-angle-double-right"></div>.porgress-area.bar-step4</h3>
+                    <!-- [Start] 진행 순서 버튼 -->
+                    <div class="step-area">
+                        <!-- class명 "bar-step1 ~ bar-step5" 까지 진행률 단계 스타일 제어 -->
+                        <ul class="porgress-area bar-step4">
+                            <li>
+                                <!-- 활성화 스탭 class명 "step-open" 적용 -->
+                                <div class="step-open">
+                                    <div>Step 1</div>
+                                    <a href="" class="btn-step" role="button">가입여부 확인</a>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- 비활성화 스탭 class명 "step-close" 적용 -->
+                                <div class="step-close">
+                                    <div>Step 2</div>
+                                    <a href="" class="btn-step" role="button">신청자 정보</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="step-close">
+                                    <div>Step 3</div>
+                                    <a href="" class="btn-step" role="button">단체기본 정보</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="step-close">
+                                    <div>Step 4</div>
+                                    <a href="" class="btn-step" role="button">연혁 정보</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="step-close">
+                                    <div>Step 5</div>
+                                    <a href="" class="btn-step" role="button">구비서류</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <p class="help-text">
+                            <span class="icon-help">안내</span>2016년 이전에 대북지원사업자로 등록하신 단체는 공문 및 신청양식을 작성하신 후 <a class="help-email" href="mailto:abcd@efghijk.com">abcd@efghijk.com</a>으로 보내주시기 바랍니다.
+                        </p>
+                    </div>
+                    <!-- [End] 진행 순서 버튼 -->
+                    <h3><div class="fa fa-angle-double-right"></div>.porgress-area.bar-step5</h3>
+                    <!-- [Start] 진행 순서 버튼 -->
+                    <div class="step-area">
+                        <!-- class명 "bar-step1 ~ bar-step5" 까지 진행률 단계 스타일 제어 -->
+                        <ul class="porgress-area bar-step5">
+                            <li>
+                                <!-- 활성화 스탭 class명 "step-open" 적용 -->
+                                <div class="step-open">
+                                    <div>Step 1</div>
+                                    <a href="" class="btn-step" role="button">가입여부 확인</a>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- 비활성화 스탭 class명 "step-close" 적용 -->
+                                <div class="step-close">
+                                    <div>Step 2</div>
+                                    <a href="" class="btn-step" role="button">신청자 정보</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="step-close">
+                                    <div>Step 3</div>
+                                    <a href="" class="btn-step" role="button">단체기본 정보</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="step-close">
+                                    <div>Step 4</div>
+                                    <a href="" class="btn-step" role="button">연혁 정보</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="step-close">
+                                    <div>Step 5</div>
+                                    <a href="" class="btn-step" role="button">구비서류</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <p class="help-text">
+                            <span class="icon-help">안내</span>2016년 이전에 대북지원사업자로 등록하신 단체는 공문 및 신청양식을 작성하신 후 <a class="help-email" href="mailto:abcd@efghijk.com">abcd@efghijk.com</a>으로 보내주시기 바랍니다.
+                        </p>
+                    </div>
+                    <!-- [End] 진행 순서 버튼 -->
+                </div>
+            </article>
+            <!-- [End] 하단 버튼 영역 공통 -->
 
         </section>
     </main>

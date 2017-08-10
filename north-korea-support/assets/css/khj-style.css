@@ -232,6 +232,7 @@ html/applicant-application-step3.html */
     background: #fff;
 }
 
+
 /* 회원서비스 > 법인.단체 > 사업자신청 Step 4. 연혁정보 조회
 html/applicant-application-step4.html */
 
@@ -292,3 +293,4 @@ html/applicant-application-step4.html */
 .applicant-application-step4 .table-type-01 tr td:last-child{
 	text-align: left;
 }
+

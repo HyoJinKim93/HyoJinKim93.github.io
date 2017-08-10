@@ -81,11 +81,11 @@ html/applicant-application-step2.html */
 	width:140px;
 }
 
-.applicant-application-step-content .table-type-02 tr:nth-child(4) input:nth-child(2){
+.applicant-application-step2-content .table-type-02 tr:nth-child(4) input:nth-child(2){
 	width:140px;
 }
 
-.applicant-application-step-content .table-type-02 tr:nth-child(4) span{
+.applicant-application-step2-content .table-type-02 tr:nth-child(4) span{
 	padding:0 5px;
 }
 
@@ -98,8 +98,8 @@ html/applicant-application-step2.html */
 /* 회원서비스 > 법인.단체 > 사업자신청 Step 3. 단체기본 정보 조회
 html/applicant-application-step3.html */
 
-.applicant-application-step-content .table-type-02 col:first-child,
-.applicant-application-step-content .table-type-02 col:nth-child(3){
+.applicant-application-step3-content .table-type-02 col:first-child,
+.applicant-application-step3-content .table-type-02 col:nth-child(3){
 	width:200px;
 }
 
@@ -107,20 +107,20 @@ html/applicant-application-step3.html */
 	width: 728px;
 } */
 
-.applicant-application-step-content .content-box-area{
+.applicant-application-step3-content .content-box-area{
 	width:930px;
 	margin: 0 auto;
 }
 
-.applicant-application-step-content .table-type-02 .input-type input{
+.applicant-application-step3-content .table-type-02 .input-type input{
 	width:244px;
 }
 
-.applicant-application-step-content .table-type-02 tr:nth-child(2) .btn-type-1-02{
+.applicant-application-step3-content .table-type-02 tr:nth-child(2) .btn-type-1-02{
 	width:126px;
 }
 
-.applicant-application-step-content .table-type-02 tr:nth-child(3)  .input-type span:nth-child(2){
+.applicant-application-step3-content .table-type-02 tr:nth-child(3)  .input-type span:nth-child(2){
 	color:#bd1313;
 }
 
@@ -303,5 +303,5 @@ html/applicant-application-step4.html */
 html/applicant-application-step5.html */
 
 .applicant-application-step5-content dl{
-
+	
 }

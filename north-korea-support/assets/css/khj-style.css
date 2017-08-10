@@ -1,12 +1,20 @@
 
 /*# sourceMappingURL=map/khj-style.css.map */
 
-.applicant-application-step2 col:first-child{
+/* 회원서비스 > 법인.단체 > 사업자신청 Step 2. 신청자 정보 조회
+html/applicant-application-step2.html */
+
+.applicant-application-step2 .content-box-area{
+	width:930px;
+	margin: 0 auto;
+}
+
+.applicant-application-step2 .table-type-02 col:first-child{
 	width:200px;
 }
 
-.applicant-application-step2 col:nth-child(2){
-	width: 728px;
+.applicant-application-step2 .table-type-02 col:nth-child(2){
+	width: 729px;
 }
 
 /* 신청자 정보 테이블 이름 */
@@ -38,6 +46,8 @@
 .applicant-application-step2 .table-type-02 tr:nth-child(2) span:nth-child(3),
 .applicant-application-step2 .table-type-02 tr:nth-child(2) span:nth-child(5){
 	margin:-1px;
+	width: 6px;
+    display: inline-block;
 }
 
 /* 신청자 정보 테이블 연락처(전화) */
@@ -85,3 +95,200 @@
 	width: 150px;
 }
 
+/* 회원서비스 > 법인.단체 > 사업자신청 Step 3. 단체기본 정보 조회
+html/applicant-application-step3.html */
+
+.applicant-application-step3 .table-type-02 col:first-child,
+.applicant-application-step3 .table-type-02 col:nth-child(3){
+	width:200px;
+}
+
+/* .applicant-application-step3 .table-type-02 col:nth-child(2){
+	width: 728px;
+} */
+
+.applicant-application-step3 .content-box-area{
+	width:930px;
+	margin: 0 auto;
+}
+
+.applicant-application-step3 .table-type-02 .input-type input{
+	width:244px;
+}
+
+.applicant-application-step3 .table-type-02 tr:nth-child(2) .btn-type-1-02{
+	width:126px;
+}
+
+.applicant-application-step3 .table-type-02 tr:nth-child(3)  .input-type span:nth-child(2){
+	color:#bd1313;
+}
+
+.applicant-application-step3 .table-type-02 tr:nth-child(7) .add-file-area .file a[class^="icon-"], .popup-notices-content table tbody td .add-file-area .file a[class^="icon-"], .popup-resources-content table tbody td .add-file-area .file a[class^="icon-"]{
+	display: inline-block;
+    margin-right: 20px;
+}
+
+.applicant-application-step3 .table-type-02 tr:nth-child(7) .add-file-area .file .icon-hwp{
+	margin-bottom: 5px;
+	color:#003761;
+	font-weight: bold;
+	letter-spacing: -1.5px;
+}
+
+.applicant-application-step3 .table-type-02 tr:nth-child(7) .add-file-area .file .btn-file-remove{
+	text-decoration: underline;
+}
+
+.applicant-application-step3 .table-type-02 tr:nth-child(7) .add-file-area .file .btn-type-1-02{
+	width: 126px;
+}
+
+.applicant-application-step3 .table-type-02 tr:nth-child(8) .add-file-area .file a[class^="icon-"], .popup-notices-content table tbody td .add-file-area .file a[class^="icon-"], .popup-resources-content table tbody td .add-file-area .file a[class^="icon-"] {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.applicant-application-step3 .table-type-02 tr:nth-child(8) .add-file-area .file .icon-hwp{
+	margin-bottom: 5px;
+	color:#003761;
+	font-weight: bold;
+	letter-spacing: -1.5px;
+}
+
+.applicant-application-step3 .table-type-02 tr:nth-child(8) .add-file-area .file .btn-file-remove{
+	text-decoration: underline;
+}
+
+.applicant-application-step3 .table-type-02 tr:nth-child(8) .add-file-area .file .btn-type-1-02{
+	width: 126px;
+}
+
+.applicant-application-step3 .table-type-02 tr:nth-child(9) .input-type input:first-child{
+	width:244px;
+}
+
+.applicant-application-step3 .table-type-02 tr:nth-child(9) .input-type input:last-child{
+	width:128px;
+}
+
+.applicant-application-step3 .table-type-02 tr:nth-child(10) .input-type input{
+	width:72px;
+}
+
+.applicant-application-step3 .table-type-02 tr:nth-child(10) span:first-child{
+	position: absolute;
+    left: -9999px;
+    visibility: hidden;
+}
+
+.applicant-application-step3 .table-type-02 tr:nth-child(10) span{
+	margin: -1.5px;
+    width: 6px;
+    display: inline-block;
+}
+
+.applicant-application-step3 .table-type-02 tr:nth-child(11) .btn-type-1-02{
+	width:126px;
+}
+
+.applicant-application-step3 .table-type-02 tr:nth-child(11) .input-type input:nth-child(4){
+	width:708px;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+.applicant-application-step3 .table-type-02 tr:nth-child(11) .input-type input:last-child{
+	width:708px;
+}
+
+.applicant-application-step3 .table-type-02 tr:nth-child(12) .input-type input{
+	width:408px;
+}
+
+.applicant-application-step3 .table-type-02 tr:nth-child(12) .input-type span:nth-child(2){
+	color:#bd1313;
+}
+
+.applicant-application-step3 .table-type-02 tr:nth-child(16) .input-type input{
+	width:708px;
+}
+
+.applicant-application-step3 .table-type-02 tr:nth-child(14) textarea{
+	width:708px;
+	height:54px;
+	line-height: 30px;
+    padding: 0 10px;
+    border: 1px solid #dbdbdb;
+    background: #fff;
+}
+
+.applicant-application-step3 .table-type-02 tr:nth-child(15) textarea{
+	width:708px;
+	height:54px;
+	line-height: 30px;
+    padding: 0 10px;
+    border: 1px solid #dbdbdb;
+    background: #fff;
+}
+
+/* 회원서비스 > 법인.단체 > 사업자신청 Step 4. 연혁정보 조회
+html/applicant-application-step4.html */
+
+.applicant-application-step4 .content-box-area{
+	width:930px;
+	margin: 0 auto;
+}
+
+.applicant-application-step4 h3{
+	float:left;
+}
+
+/* 테이블 */
+
+.applicant-application-step4 .btn-type-1-02:first-child{
+	width:136px;
+}
+
+.applicant-application-step4 .btn-type-1-02:nth-child(2){
+	width:136px;
+}
+
+.applicant-application-step4 .btn-type-1-02:nth-child(3){
+	width:166px;
+}
+
+.applicant-application-step4 .btn-type-1-02:last-child{
+	width:136px;
+}
+
+.applicant-application-step4 .sub-top-button-area{
+	float:right;
+	margin-bottom: 10px;
+}
+
+.applicant-application-step4 .table-type-01 col:first-child{
+	width:38px;
+}
+
+.applicant-application-step4 .table-type-01 col:nth-child(2){
+	width:54px;
+}
+
+.applicant-application-step4 .table-type-01 col:nth-child(3){
+	width:132px;
+}
+
+.applicant-application-step4 .table-type-01 col:nth-child(4){
+	width:705px;
+}
+
+/* 체크박스 */
+
+.applicant-application-step4 .table-type-01 tr td:first-child{
+	padding-left:12px;
+}
+
+.applicant-application-step4 .table-type-01 tr td:last-child{
+	text-align: left;
+}

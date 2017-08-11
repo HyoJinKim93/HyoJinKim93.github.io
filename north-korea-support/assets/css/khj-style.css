@@ -27,21 +27,13 @@ html/applicant-application-step2.html */
 /* 신청자 정보 테이블 이름 */
 
 .applicant-application-step2-content .table-type-02 tr:first-child input:first-child{
-	width:248px;
+	width:240px;
 }
 
 /* 신청자 정보 테이블 연락처(사무실) */
 
 .applicant-application-step2-content .table-type-02 tr:nth-child(2) input:nth-child(2){
-	width:74px;
-}
-
-.applicant-application-step2-content .table-type-02 tr:nth-child(2) input:nth-child(4){
-	width:74px;
-}
-
-.applicant-application-step2-content .table-type-02 tr:nth-child(2) input{
-	width:72px;
+	width:70px;
 }
 
 .applicant-application-step2-content .table-type-02 tr:nth-child(2) span:first-child{
@@ -58,14 +50,6 @@ html/applicant-application-step2.html */
 }
 
 /* 신청자 정보 테이블 연락처(전화) */
-
-.applicant-application-step2-content .table-type-02 tr:nth-child(3) input{
-	width:72px;
-}
-
-.applicant-application-step2-content .table-type-02 tr:nth-child(3) input:nth-child(4){
-	width:74px;
-}
 
 .applicant-application-step2-content .table-type-02 tr:nth-child(3) input:nth-child(6){
 	width:74px;

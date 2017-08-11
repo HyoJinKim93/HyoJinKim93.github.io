@@ -27,7 +27,7 @@ html/applicant-application-step2.html */
 /* 신청자 정보 테이블 이름 */
 
 .applicant-application-step2-content .table-type-02 tr:first-child input:first-child{
-	width:250px;
+	width:248px;
 }
 
 /* 신청자 정보 테이블 연락처(사무실) */
@@ -41,7 +41,7 @@ html/applicant-application-step2.html */
 }
 
 .applicant-application-step2-content .table-type-02 tr:nth-child(2) input{
-	width:74px;
+	width:72px;
 }
 
 .applicant-application-step2-content .table-type-02 tr:nth-child(2) span:first-child{
@@ -60,7 +60,7 @@ html/applicant-application-step2.html */
 /* 신청자 정보 테이블 연락처(전화) */
 
 .applicant-application-step2-content .table-type-02 tr:nth-child(3) input{
-	width:74px;
+	width:72px;
 }
 
 .applicant-application-step2-content .table-type-02 tr:nth-child(3) input:nth-child(4){

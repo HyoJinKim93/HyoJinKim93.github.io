@@ -103,6 +103,7 @@ html/applicant-application-step3.html */
 
 .applicant-application-step3-content .table-type-02 tr:nth-child(3) .input-type label{
 	color:#bd1313;
+	letter-spacing: -1px;
 }
 
 .applicant-application-step3-content .table-type-02 tr:nth-child(7) .btn-type-1-02{
@@ -117,7 +118,7 @@ html/applicant-application-step3.html */
 	margin-bottom: 5px;
 	color:#003761;
 	font-weight: bold;
-	letter-spacing: -1.5px;
+	letter-spacing: -1px;
 }
 
 .applicant-application-step3-content .table-type-02 tr:nth-child(7) .file{
@@ -193,6 +194,7 @@ html/applicant-application-step3.html */
 
 .applicant-application-step3-content .table-type-02 tr:nth-child(12) .input-type label{
 	color:#bd1313;
+	letter-spacing: -1px;
 }
 
 .applicant-application-step3-content .table-type-02 tr:nth-child(16) .input-type input{

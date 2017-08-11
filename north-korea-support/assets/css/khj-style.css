@@ -139,7 +139,6 @@ html/applicant-application-step3.html */
 
 .applicant-application-step3-content .table-type-02 tr:nth-child(7) .add-file-area .file a[class^="icon-"], .popup-notices-content table tbody td .add-file-area .file a[class^="icon-"], .popup-resources-content table tbody td .add-file-area .file a[class^="icon-"]{
 	display: inline-block;
-    margin-right: 20px;
 }
 
 .applicant-application-step3-content .table-type-02 tr:nth-child(7) .add-file-area .file .icon-hwp{
@@ -147,6 +146,11 @@ html/applicant-application-step3.html */
 	color:#003761;
 	font-weight: bold;
 	letter-spacing: -1.5px;
+}
+
+.applicant-application-step3-content .table-type-02 tr:nth-child(7) .file{
+	margin-right: 356px;
+	float: right;
 }
 
 .applicant-application-step3-content .table-type-02 tr:nth-child(7) .add-file-area .file .btn-file-remove{
@@ -157,9 +161,13 @@ html/applicant-application-step3.html */
 	width: 126px;
 }
 
+.applicant-application-step3-content .table-type-02 tr:nth-child(8) .file{
+	margin-right: 356px;
+	float: right;
+}
+
 .applicant-application-step3-content .table-type-02 tr:nth-child(8) .add-file-area .file a[class^="icon-"], .popup-notices-content table tbody td .add-file-area .file a[class^="icon-"], .popup-resources-content table tbody td .add-file-area .file a[class^="icon-"] {
     display: inline-block;
-    margin-right: 20px;
 }
 
 .applicant-application-step3-content .table-type-02 tr:nth-child(8) .add-file-area .file .icon-hwp{
@@ -177,11 +185,7 @@ html/applicant-application-step3.html */
 	width: 126px;
 }
 
-.applicant-application-step3-content .table-type-02 tr:nth-child(9) .input-type input:first-child{
-	width:244px;
-}
-
-.applicant-application-step3-content .table-type-02 tr:nth-child(9) .input-type input:last-child{
+.applicant-application-step3-content .table-type-02 tr:nth-child(9) th:last-child .input-type input:last-child{
 	width:128px;
 }
 

@@ -403,7 +403,12 @@ html/sign-up-list.html */
  }
  .sign-up-content .table-contact-information tr:first-child label{
  	color:#bd1313;
+ 	letter-spacing: -1px;
  }
+ 
+.sign-up-content .table-contact-information tr:nth-child(2) label{
+	letter-spacing: -1px;
+}
 
  .sign-up-content .table-contact-information .input-type.tel label input{
  	position: relative;

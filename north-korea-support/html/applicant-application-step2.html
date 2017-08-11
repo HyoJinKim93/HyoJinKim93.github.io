@@ -247,45 +247,45 @@
                     <a href="" class="btn-file-upload" role="button">구비서류 올리기</a>
                 </div>
                 <div class="step-area">
-                    <!-- class명 "bar-step1 ~ bar-step5" 까지 진행률 단계 스타일 제어 -->
-                    <ul class="porgress-area bar-step2">
-                        <li>
-                            <!-- 활성화 스탭 class명 "step-open" 적용 -->
-                            <div class="step-open">
-                                <div>Step 1</div>
-                                <a href="" class="btn-step" role="button">가입여부 확인</a>
-                            </div>
-                        </li>
-                        <li>
-                            <!-- 비활성화 스탭 class명 "step-close" 적용 -->
-                            <div class="step-close">
-                                <div>Step 2</div>
-                                <a href="" class="btn-step" role="button">신청자 정보</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="step-close">
-                                <div>Step 3</div>
-                                <a href="" class="btn-step" role="button">단체기본 정보</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="step-close">
-                                <div>Step 4</div>
-                                <a href="" class="btn-step" role="button">연혁 정보</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="step-close">
-                                <div>Step 5</div>
-                                <a href="" class="btn-step" role="button">구비서류</a>
-                            </div>
-                        </li>
-                    </ul>
-                    <p class="help-text">
-                        <span class="icon-help">안내</span>2016년 이전에 대북지원사업자로 등록하신 단체는 공문 및 신청양식을 작성하신 후 <a class="help-email" href="mailto:abcd@efghijk.com">abcd@efghijk.com</a>으로 보내주시기 바랍니다.
-                    </p>
-                </div>
+                        <!-- class명 "bar-step1 ~ bar-step5" 까지 진행률 단계 스타일 제어 -->
+                        <ul class="porgress-area bar-step2">
+                            <li>
+                                <!-- 활성화 스탭 class명 "step-open" 적용 -->
+                                <div class="step-open">
+                                    <div>Step 1</div>
+                                    <a href="" class="btn-step" role="button">가입여부 확인</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="step-open">
+                                    <div>Step 2</div>
+                                    <a href="" class="btn-step" role="button">가입여부 확인</a>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- 비활성화 스탭 class명 "step-close" 적용 -->
+                                <div class="step-close">
+                                    <div>Step 3</div>
+                                    <a href="" class="btn-step" role="button">단체기본 정보</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="step-close">
+                                    <div>Step 4</div>
+                                    <a href="" class="btn-step" role="button">연혁 정보</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="step-close">
+                                    <div>Step 5</div>
+                                    <a href="" class="btn-step" role="button">구비서류</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <p class="help-text">
+                            <span class="icon-help">안내</span>2016년 이전에 대북지원사업자로 등록하신 단체는 공문 및 신청양식을 작성하신 후 <a class="help-email" href="mailto:abcd@efghijk.com">abcd@efghijk.com</a>으로 보내주시기 바랍니다.
+                        </p>
+                    </div>
                 <h3>신청자 정보</h3>
                 <!-- [Start] 테이블 영역 -->
                 <table class="table-type-02">
@@ -310,12 +310,9 @@
                             <td>
                                 <div class="input-type">
                                     <label>
-                                        <span>지역 전화번호 입력하세요</span>
-                                        <input type="tel">
-                                        <span>-</span>
-                                        <input type="tel">
-                                        <span>-</span>
-                                        <input type="tel">
+                                        <input type="tel" aria-label="지역번호">
+                                        <input type="tel" aria-label="앞번호">
+                                        <input type="tel" aria-label="뒷번호">
                                     </label>
                                 </div>
                             </td>
@@ -325,12 +322,9 @@
                             <td>
                                 <div class="input-type">
                                     <label>
-                                        <span>휴대전화 번호 입력하세요</span>
-                                        <input type="tel">
-                                        <span>-</span>
-                                        <input type="tel">
-                                        <span>-</span>
-                                        <input type="tel">
+                                        <input type="tel" aria-label="휴대전화 번호 앞번호">
+                                        <input type="tel" aria-label="중간번호">
+                                        <input type="tel" aria-label="뒷번호">
                                     </label>
                                 </div>
                             </td>

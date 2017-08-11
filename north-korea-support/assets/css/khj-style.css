@@ -396,19 +396,19 @@ html/sign-up-list.html */
 	letter-spacing: -1px;
 }
 
-.sign-up-content .table-contact-information tr:nth-child(6) .radio-type label{
+.sign-up-content .table-contact-information tr:nth-child(5) .radio-type label{
 	margin-right:40px;
 }
 
-.sign-up-content .table-contact-information tr:nth-child(8) .input-type input{
-	width:70px;
+.sign-up-content .table-contact-information tr:nth-child(5) .input-type input{
+	width:126px;
 }
 
-.sign-up-content .table-contact-information tr:nth-child(9) .input-type input{
+.sign-up-content .table-contact-information tr:nth-child(8) .input-type input{
 	width:138px;
 }
 
-.sign-up-content .table-contact-information tr:nth-child(9) span{
+.sign-up-content .table-contact-information tr:nth-child(8) span{
 	    padding: 0 5px;
 }
 
@@ -424,6 +424,23 @@ html/sign-up-list.html */
 	padding-bottom: 12px;
 }
 
-.sign-up-content .table-contact-information tr:nth-child(6) .input-type input{
-	width:126px;
+.sign-up-content .table-contact-information tr:nth-child(7) .input-type input{
+	width:70px;
 }
+
+.sign-up-content .table-contact-information tr:last-child .icon-hwp{
+	position: relative;
+    padding-left: 20px;
+}
+
+.sign-up-content .table-contact-information tr:last-child .add-file-area{
+	margin-top: 13px;
+}
+
+.sign-up-content .table-contact-information tr:last-child .add-file-area .file{
+    width:176px;
+ }
+
+ .sign-up-content .table-contact-information tr:last-child .add-file-area a[class^="icon-"]{
+ 	width:110px;
+ }

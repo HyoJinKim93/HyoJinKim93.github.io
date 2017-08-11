@@ -245,13 +245,6 @@
                     <a href="" class="btn-file-upload" role="button">구비서류 올리기</a>
                 </div>
                 <!-- [End] 상단 버튼 영역 스타일 -->
-                
-                <!-- [Start] 사업자 등록 번호 -->
-                <ul class="table-li">
-                    <li class="title">사업자 등록번호</li>
-                    <li>이런저런 내용입니다.</li>
-                </ul>
-                <!-- [End] 사업자 등록 번호 -->
 
                 <!-- [Start] 진행 순서 버튼 -->
                 <div class="step-area">
@@ -295,6 +288,18 @@
                     </p>
                 </div>
                 <!-- [End] 진행 순서 버튼 -->
+                
+                <!-- [Start] 사업자 등록 번호 -->
+                <ul class="table-li">
+                    <li class="title">사업자 등록번호</li>
+                    <li class="input-type">
+                        <label class="search-keyword" aria-label="검색 키워드 입력하세요.">
+                            <input type="text"/>
+                        </label>
+                        <button class="btn-type-1-02">가입여부 확인</button>
+                    </li>
+                </ul>
+                <!-- [End] 사업자 등록 번호 -->
             
                 <!-- [Start] 회원 이용약관 -->
                 <article class="content-box-area">
@@ -390,6 +395,60 @@
     </footer>
     <!-- [End] Footer Area -->
 
+    <!-- [Start] 구비서류 올리기 Popup -->
+    <div class="popup" data-id="popup-applicant-application">
+    <!-- [Start] 팝업 헤드라인 -->
+    <header class="popup-headline">
+        <h4>구비서류 올리기</h4>
+        <button class="popup-close">창 닫기</button>
+    </header>
+    <!-- [End] 팝업 헤드라인 -->
+    <!-- [Start] 팝업 콘텐츠 -->
+    <div class="popup-content">
+        <table class="table-type-02">
+            <caption>자료실 상세 내용 테이블의 분야, 제목, 작성자, 작성일, 조회수, 첨부파일, 제안내용 항목이 있습니다.</caption>
+            <colgroup>
+                <col>
+                <col>
+                <col>
+                <col>
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th>분야</th>
+                    <td>국내외 언론동향</td>
+                    <th>작성자</th>
+                    <td>id****</td>
+                </tr>
+                <tr>
+                    <th>제목</th>
+                    <td colspan="3">이런 저런 내용으로 제안합니다</td>
+                </tr>
+                <tr>
+                    <th>작성일</th>
+                    <td>2017-11-12</td>
+                    <th>조회수</th>
+                    <td>999</td>
+                </tr>
+                <tr>
+                    <th>첨부파일</th>
+                    <td class="download-type-01" colspan="3">
+                        <a class="icon-hwp" role="button" href>첨부파일1.hwp</a>
+                        <a class="icon-hwp" role="button" href>첨부파일2.hwp</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- [Start] 팝업 버튼 -->
+        <div class="popup-btn-set">
+            <button class="popup-close">닫기</button>
+        </div>
+        <!-- [End] 팝업 버튼 -->
+    </div>
+    <!-- [End] 팝업 콘텐츠 -->
+</div>
+    <!-- [End] 구비서류 올리기 Popup -->
+    
     <!-- javascript : 라이브러리 플러그인 -->
 <script type="text/javascript" src="../assets/js/lib-js.js"></script>
 <!-- javascript : 공통사용 -->

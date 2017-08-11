@@ -68,10 +68,6 @@ html/applicant-application-step2.html */
 
 /* 신청자 정보 테이블 이메일 */
 
-.applicant-application-step2-content .table-type-02 tr:nth-child(4) input:first-child{
-	width:140px;
-}
-
 .applicant-application-step2-content .table-type-02 tr:nth-child(4) input:nth-child(2){
 	width:140px;
 }

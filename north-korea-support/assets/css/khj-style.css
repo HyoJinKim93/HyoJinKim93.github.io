@@ -310,21 +310,6 @@ html/sign-up-list.html */
 
 /* 담당자 정보 */
 
-.sign-up-content .table-contact-information col:first-child{
-	width:200px;
-}
-
-.sign-up-content .table-contact-information col:nth-child(2){
-	width:264px;
-}
-
-.sign-up-content .table-contact-information col:nth-child(3){
-	width:200px;
-}
-
-.sign-up-content .table-contact-information col:nth-child(4){
-	width:264px;
-}
 
 .sign-up-content .table-contact-information .btn-type-1-02{
 	width:126px;
@@ -405,7 +390,7 @@ html/sign-up-list.html */
  	color:#bd1313;
  	letter-spacing: -1px;
  }
- 
+
 .sign-up-content .table-contact-information tr:nth-child(2) label{
 	letter-spacing: -1px;
 }

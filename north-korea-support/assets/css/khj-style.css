@@ -39,7 +39,7 @@ html/applicant-application-step2.html */
 	width:74px;
 }
 
-.applicant-application-step2-content .table-type-02 tr:nth-child(2) input:nth-child(6){
+.applicant-application-step2-content .table-type-02 tr:nth-child(2) input{
 	width:74px;
 }
 
@@ -58,7 +58,7 @@ html/applicant-application-step2.html */
 
 /* 신청자 정보 테이블 연락처(전화) */
 
-.applicant-application-step2-content .table-type-02 tr:nth-child(3) input:nth-child(2){
+.applicant-application-step2-content .table-type-02 tr:nth-child(3) input{
 	width:74px;
 }
 
@@ -422,4 +422,8 @@ html/sign-up-list.html */
 	padding-top:6px;
 	padding-left:9px;
 	padding-bottom: 12px;
+}
+
+.sign-up-content .table-contact-information tr:nth-child(6) .input-type input{
+	width:126px;
 }

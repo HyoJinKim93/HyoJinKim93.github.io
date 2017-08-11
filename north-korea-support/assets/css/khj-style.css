@@ -85,15 +85,6 @@ html/applicant-application-step2.html */
 /* 회원서비스 > 법인.단체 > 사업자신청 Step 3. 단체기본 정보 조회
 html/applicant-application-step3.html */
 
-.applicant-application-step3-content .table-type-02 col:first-child,
-.applicant-application-step3-content .table-type-02 col:nth-child(3){
-	width:200px;
-}
-
-/* .applicant-application-step3 .table-type-02 col:nth-child(2){
-	width: 728px;
-} */
-
 .applicant-application-step3-content .content-box-area{
 	width:930px;
 	margin: 0 auto;
@@ -109,12 +100,20 @@ html/applicant-application-step3.html */
 	width:244px;
 }
 
+.applicant-application-step3-content .table-type-02 .td-birth .input-type input{
+	width:128px;
+}
+
 .applicant-application-step3-content .table-type-02 tr:nth-child(2) .btn-type-1-02{
 	width:126px;
 }
 
-.applicant-application-step3-content .table-type-02 tr:nth-child(3)  .input-type span:nth-child(2){
+.applicant-application-step3-content .table-type-02 tr:nth-child(3) .input-type label{
 	color:#bd1313;
+}
+
+.applicant-application-step3-content .table-type-02 tr:nth-child(7) .btn-type-1-02{
+	width: 126px;
 }
 
 .applicant-application-step3-content .table-type-02 tr:nth-child(7) .add-file-area .file a[class^="icon-"], .popup-notices-content table tbody td .add-file-area .file a[class^="icon-"], .popup-resources-content table tbody td .add-file-area .file a[class^="icon-"]{
@@ -129,7 +128,7 @@ html/applicant-application-step3.html */
 }
 
 .applicant-application-step3-content .table-type-02 tr:nth-child(7) .file{
-	margin-right: 356px;
+	margin-right: 330px;
 	float: right;
 }
 
@@ -141,8 +140,12 @@ html/applicant-application-step3.html */
 	width: 126px;
 }
 
+.applicant-application-step3-content .table-type-02 tr:nth-child(8) .btn-type-1-02{
+	width: 126px;
+}
+
 .applicant-application-step3-content .table-type-02 tr:nth-child(8) .file{
-	margin-right: 356px;
+	margin-right: 330px;
 	float: right;
 }
 
@@ -173,33 +176,21 @@ html/applicant-application-step3.html */
 	width:70px;
 }
 
-.applicant-application-step3-content .table-type-02 tr:nth-child(10) span:first-child{
-	position: absolute;
-    left: -9999px;
-    visibility: hidden;
-}
-
-.applicant-application-step3-content .table-type-02 tr:nth-child(10) span{
-	margin: -1.5px;
-    width: 6px;
-    display: inline-block;
-}
-
 .applicant-application-step3-content .table-type-02 tr:nth-child(11) .btn-type-1-02{
 	width:126px;
 }
 
-.applicant-application-step3-content .table-type-02 tr:nth-child(11) .input-type input:nth-child(4){
+.applicant-application-step3-content .table-type-02 tr:nth-child(11) .td-address .input-type input{
 	width:708px;
 	margin-top: 4px;
 	margin-bottom: 4px;
 }
 
-.applicant-application-step3-content .table-type-02 tr:nth-child(11) .input-type input:first-child{
-	width:254px;
+.applicant-application-step3-content .table-type-02 tr:nth-child(11) .td-address .input-type:first-child input:first-child{
+	width:244px;
 }
 
-.applicant-application-step3-content .table-type-02 tr:nth-child(11) .input-type input:last-child{
+.applicant-application-step3-content .table-type-02 tr:nth-child(11) .td-address .input-type:nth-child(2) input{
 	width:708px;
 }
 
@@ -207,7 +198,7 @@ html/applicant-application-step3.html */
 	width:408px;
 }
 
-.applicant-application-step3-content .table-type-02 tr:nth-child(12) .input-type span:nth-child(2){
+.applicant-application-step3-content .table-type-02 tr:nth-child(12) .input-type label{
 	color:#bd1313;
 }
 

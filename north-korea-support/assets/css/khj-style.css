@@ -190,7 +190,7 @@ html/applicant-application-step3.html */
 }
 
 .applicant-application-step3-content .table-type-02 tr:nth-child(10) .input-type input{
-	width:72px;
+	width:70px;
 }
 
 .applicant-application-step3-content .table-type-02 tr:nth-child(10) span:first-child{
@@ -213,6 +213,10 @@ html/applicant-application-step3.html */
 	width:708px;
 	margin-top: 4px;
 	margin-bottom: 4px;
+}
+
+.applicant-application-step3-content .table-type-02 tr:nth-child(11) .input-type input:first-child{
+	width:254px;
 }
 
 .applicant-application-step3-content .table-type-02 tr:nth-child(11) .input-type input:last-child{

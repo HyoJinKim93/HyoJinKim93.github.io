@@ -10,13 +10,6 @@ html/applicant-application-step2.html */
 	margin: 0 auto;
 }
 
-.applicant-application-step2-content .table-type-02 col:first-child{
-	width:200px;
-}
-
-.applicant-application-step2-content .table-type-02 col:nth-child(2){
-	width: 729px;
-}
 
 /* step */
 
@@ -265,22 +258,6 @@ html/applicant-application-step4.html */
 .applicant-application-step4-content .sub-top-button-area{
 	float:right;
 	margin-bottom: 10px;
-}
-
-.applicant-application-step4-content .table-type-01 col:first-child{
-	width:38px;
-}
-
-.applicant-application-step4-content .table-type-01 col:nth-child(2){
-	width:54px;
-}
-
-.applicant-application-step4-content .table-type-01 col:nth-child(3){
-	width:130px;
-}
-
-.applicant-application-step4-content .table-type-01 col:nth-child(4){
-	width:705px;
 }
 
 /* 체크박스 */

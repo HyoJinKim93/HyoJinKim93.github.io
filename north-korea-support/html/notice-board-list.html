@@ -178,31 +178,43 @@
 
         <!-- [Start] LNB 메뉴 -->
         <nav class="lnb">
-            <h3>제목</h3>
+            <h3>회원서비스</h3>
             <ul class="aco-base accordion-lnb">
                 <li>
-                    <a href="#" class="lnb-link" role="button">대분류 1<span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                    <a href="#" class="lnb-link" role="button">회원가입안내<span class="fa fa-angle-down" aria-hidden="true"></span></a>
                     <ul class="sub-menu">
-                        <li><a href="#">중분류 1</a>
+                        <li><a href="#">법인·단체</a>
                             <ul>
-                                 <li><a href="">세분류 1</a></li>
-                                 <li><a href="">세분류 2</a></li>
-                                 <li><a href="">세분류 3</a></li>
+                                 <li><a href="">사업자 가입안내</a></li>
+                                 <li><a href="">사업자 신청</a></li>
+                                 <li><a href="">지원접수현황</a></li>
                              </ul> 
                         </li>
-                        <li><a href="#">중분류 2</a></li>
+                        <li><a href="#">담당자</a>
+                            <ul>
+                                 <li><a href="">약관 동의</a></li>
+                                 <li><a href="">가입 신청</a></li>
+                                 <li><a href="">가입 승인 확인</a></li>
+                                 <li><a href="">가입 탈퇴</a></li>
+                             </ul> 
+                        </li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#" class="lnb-link" role="button">대분류 2<span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                    <a href="#" class="lnb-link" role="button">단체정보 관리<span class="fa fa-angle-down" aria-hidden="true"></span></a>
                     <ul class="sub-menu">
-                        <li><a href="#">중분류 1</a></li>
-                        <li><a href="#">중분류 2</a></li>
-                        <li><a href="#">중분류 3</a></li>
+                        <li><a href="#">정보 조회</a></li>
+                        <li><a href="#">변경사항 요청</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#" class="lnb-link" role="button">대분류 3<span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                    <a href="#" class="lnb-link" role="button">정책제안<span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                </li>
+                <li>
+                    <a href="#" class="lnb-link" role="button">게시판<span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                </li>
+                <li>
+                    <a href="#" class="lnb-link" role="button">설문조사<span class="fa fa-angle-down" aria-hidden="true"></span></a>
                 </li>
             </ul>
         </nav>
@@ -213,20 +225,252 @@
 
             <!-- [Start] 컨텐츠 타이틀 -->
             <header class="headline">
-                <h2 class="sub-title">제목</h2>
+                <h2 class="sub-title">게시판</h2>
                 <div class="site-location">
                     <a href="#"><img src="../assets/images/icon/icon-home.svg" alt="home"/></a>
-                    <a href="#">대분류</a>
-                    <a href="#">중분류</a>
-                    <a href="#">세분류</a>
+                    <a href="#">회원서비스</a>
+                    <a href="#">게시판</a>
                 </div>
             </header>
             <hr class="sub-title-bar"/>
             <!-- [End] 컨텐츠 타이틀 -->
             
             <!-- [Start] 컨텐츠 상세  -->
-            <div class="content">
-            이 곳에 컨텐츠 작성하시면 됩니다.
+            <div class="content notice-board-list-content">
+                <article class="content-box-area">
+                    <ul class="search-area">
+                        <li class="search-title"><span>검색</span></li>
+                        <li class="select-box all">
+                            <label for="search">말머리:전체</label>
+                            <select id="search" name="search-item">
+                                <option selected="selected">말머리:전체</option>
+                                <option>내용</option>
+                                <option>단어</option>
+                            </select>
+                        </li>
+                        <li class="select-box">
+                            <label for="search">제목</label>
+                            <select id="search" name="search-item">
+                                <option selected="selected">제목</option>
+                                <option>내용</option>
+                                <option>단어</option>
+                            </select>
+                        </li>
+                        <li class="input-type">
+                            <label class="search-keyword">
+                                <input type="text" aria-label="검색 키워드 입력하세요."/>
+                            </label>
+                            <button class="btn-lookup">조회</button>
+                        </li>
+                    </ul>
+                </article>
+                <article class="content-box-area">
+                    <div class="tablist t5" role="tablist">
+                        <a id="tab1" aria-controls="panel1" role="tab" href><span>단체정보</span></a>
+                        <a id="tab2" aria-controls="panel2" role="tab" href><span>회원명부</span></a>
+                        <a id="tab3" aria-controls="panel3" role="tab" href><span>연혁</span></a>
+                        <a id="tab4" aria-controls="panel4" role="tab" href><span>예산정보</span></a>
+                        <a id="tab5" aria-controls="panel5" role="tab" href><span>예산정보</span></a>
+                        <a id="tab6" aria-controls="panel6" role="tab" href><span>예산정보</span></a>
+                        <a id="tab7" aria-controls="panel7" role="tab" href><span>예산정보</span></a>
+                        <a id="tab8" aria-controls="panel8" role="tab" href><span>예산정보</span></a>
+                        <a id="tab9" aria-controls="panel9" role="tab" href><span>예산정보</span></a>
+                    </div>
+                    <div class="all-pages-view">
+                    <div class="all-page">
+                        <span>총 <strong>199</strong>개 검색 , <strong>1</strong>/22 page</span>
+                    </div>
+                    <div class="select-box">
+                        <label for="search">10개씩보기</label>
+                        <select id="search" name="search-item">
+                            <option selected="selected">10개씩보기</option>
+                            <option>20개씩보기</option>
+                            <option>30개씩보기</option>
+                            <option>40개씩보기</option>
+                            <option>50개씩보기</option>
+                        </select>
+                    </div>
+                    </div>
+                    <div class="panel-group">
+                        <div id="panel1" aria-labelledby="tab1" role="tabpanel" tabindex="0">
+                            <!-- [Start] 테이블 영역 -->
+                <table class="table-type-01">
+                    <caption>공지사항의 번호,제목,작성일,첨부파일,조회수 테이블 입니다.</caption>
+                    <colgroup>
+                        <col width="54">
+                        <col width="140">
+                        <col width="340">
+                        <col width="110">
+                        <col width="140">
+                        <col width="140">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>분야</th>
+                            <th>제목</th>
+                            <th>작성자</th>
+                            <th>첨부파일</th>
+                            <th>등록일</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>175</td>
+                            <td>국내외 언론동향</td>
+                            <td><a href="" class="btn-popup-notices view-link" role="button"><strong>[공지]</strong> 이런저런 내용으로 공지사항합니다.<span class="total-number">(2)</span></a></td>
+                            <td>id＊＊＊＊</td>
+                            <td class="table-download">
+                                <span class="icon-hwp"></span>
+                                <span class="icon-doc"></span>
+                                <span class="icon-pdf"></span>
+                                <span class="icon-jpg"></span>
+                                <div class="download-file">
+                                    <strong>파일명 :</strong>
+                                    <a href="">대북지원사업신청서.hwp</a>
+                                    <a href="">남북협력기금지원신청서.doc</a>
+                                    <a href="">대북지원사업자 지정신청서.pdf</a>
+                                    <a href="">대북지원사업자 지정신청서.pdf</a>
+                                </div>
+                            </td>
+                            <td>2017-12-11</td>
+                        </tr>
+                        <tr>
+                            <td>174</td>
+                            <td>북한동향</td>
+                            <td><a href="" class="btn-popup-notices view-link" role="button"><strong>[기금공고]</strong> 또 다른 내용으로 공지사항합니다.<span class="total-number">(2)</span></a></td>
+                            <td>ab＊＊＊＊</td>
+                            <td class="table-download">
+                                <span class="icon-hwp"></span>
+                                <span class="icon-doc"></span>
+                                <span class="icon-pdf"></span>
+                                <span class="icon-jpg"></span>
+                                <div class="download-file">
+                                    <strong>파일명 :</strong>
+                                    <a href="">대북지원사업신청서.hwp</a>
+                                    <a href="">남북협력기금지원신청서.doc</a>
+                                    <a href="">대북지원사업자 지정신청서.pdf</a>
+                                    <a href="">대북지원사업자 지정신청서.pdf</a>
+                                </div>
+                            </td>
+                            <td>2017-11-12</td>
+                        </tr>
+                        <tr>
+                            <td>173</td>
+                            <td>행사정보</td>
+                            <td><a href="" class="btn-popup-notices view-link" role="button"><strong>[이벤트]</strong> 이런저런 내용으로 공지사항합니다.<span class="total-number">(2)</span></a></td>
+                            <td>dgfg＊＊＊＊</td>
+                            <td></td>
+                            <td>2017-11-12</td>
+                        </tr>
+                        <tr>
+                            <td>172</td>
+                            <td>기타</td>
+                            <td><a href="" class="btn-popup-notices view-link" role="button"><strong>[공지]</strong> 또 다른 내용으로 공지사항합니다.<span class="total-number">(2)</span></a></td>
+                            <td>erg＊＊＊＊</td>
+                            <td></td>
+                            <td>2017-11-12</td>
+                        </tr>
+                        <tr>
+                            <td>171</td>
+                            <td>북한동향</td>
+                            <td><a href="" class="btn-popup-notices view-link" role="button"><strong>[기금공고]</strong> 또 다른 내용으로 공지사항합니다.<span class="total-number">(2)</span></a></td>
+                            <td>egf＊＊＊＊</td>
+                            <td></td>
+                            <td>2017-11-12</td>
+                        </tr>
+                        <tr>
+                            <td>170</td>
+                            <td>행사정보</td>
+                            <td><a href="" class="btn-popup-notices view-link" role="button"><strong>[공지]</strong> 이런저런 내용으로 공지사항합니다.<span class="total-number">(2)</span></a></td>
+                            <td>rh＊＊＊＊</td>
+                            <td></td>
+                            <td>2017-11-12</td>
+                        </tr>
+                        <tr>
+                            <td>169</td>
+                            <td>기타</td>
+                            <td><a href="" class="btn-popup-notices view-link" role="button"><strong>[공지]</strong> 이런저런 내용으로 공지사항합니다.<span class="total-number">(2)</span></a></td>
+                            <td>qwrfd＊＊＊＊</td>
+                            <td></td>
+                            <td>2017-11-12</td>
+                        </tr>
+                        <tr>
+                            <td>168</td>
+                            <td>행사정보</td>
+                            <td><a href="" class="btn-popup-notices view-link" role="button"><strong>[공지]</strong> 이런저런 내용으로 공지사항합니다.<span class="total-number">(2)</span></a></td>
+                            <td>hjk＊＊＊＊</td>
+                            <td></td>
+                            <td>2017-11-12</td>
+                        </tr>
+                        <tr>
+                            <td>177</td>
+                            <td>행사정보</td>
+                            <td><a href="" class="btn-popup-notices view-link" role="button"><strong>[공지]</strong> 이런저런 내용으로 공지사항합니다.<span class="total-number">(2)</span></a></td>
+                            <td>aer＊＊＊＊</td>
+                            <td></td>
+                            <td>2017-11-12</td>
+                        </tr>
+                        <tr>
+                            <td>177</td>
+                            <td>기타</td>
+                            <td><a href="" class="btn-popup-notices view-link" role="button"><strong>[공지]</strong> 이런저런 내용으로 공지사항합니다.<span class="total-number">(2)</span></a></td>
+                            <td>hnm＊＊＊＊</td>
+                            <td></td>
+                            <td>2017-11-12</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="sub-top-button-area">
+                    <button class="btn-type-1-02">글쓰기</button>
+                </div>
+                <!-- [End] 테이블 영역 -->
+                        </div>
+                        <div id="panel2" aria-labelledby="tab2" role="tabpanel" tabindex="0">
+                            tab2 영역 입니다.
+                        </div>
+                        <div id="panel3" aria-labelledby="tab3" role="tabpanel" tabindex="0">
+                            tab3 영역 입니다.
+                        </div>
+                        <div id="panel4" aria-labelledby="tab4" role="tabpanel" tabindex="0">
+                            tab4 영역 입니다.
+                        </div>
+                        <div id="panel5" aria-labelledby="tab5" role="tabpanel" tabindex="0">
+                            tab5 영역 입니다.
+                        </div>
+                        <div id="panel6" aria-labelledby="tab6" role="tabpanel" tabindex="0">
+                            tab5 영역 입니다.
+                        </div>
+                        <div id="panel7" aria-labelledby="tab7" role="tabpanel" tabindex="0">
+                            tab5 영역 입니다.
+                        </div>
+                        <div id="panel8" aria-labelledby="tab8" role="tabpanel" tabindex="0">
+                            tab5 영역 입니다.
+                        </div>
+                        <div id="panel9" aria-labelledby="tab9" role="tabpanel" tabindex="0">
+                            tab5 영역 입니다.
+                        </div>
+                    </div>
+                </article>
+                <!-- [Start] 페이징 영역 -->
+                <div class="paging">
+                    <button class="first-prev" aria-label="처음으로 이동"></button>
+                    <button class="prev" aria-label="이전 페이지"></button>
+                    <a href role="button">1</a>
+                    <a href role="button">2</a>
+                    <a href role="button">3</a>
+                    <a href role="button">4</a>
+                    <!-- 선택된 버튼 class="selected"로 제어 -->
+                    <a class="selected" href role="button">5</a>
+                    <a href role="button">6</a>
+                    <a href role="button">7</a>
+                    <a href role="button">8</a>
+                    <a href role="button">9</a>
+                    <a href role="button">10</a>
+                    <button class="next" " aria-label="다음 페이지 "></button>
+                    <button class="last-next " aria-label="끝으로 이동 "></button>
+                </div>
+                <!-- [End] 페이징 영역 -->
             </div>
             <!-- [End] 컨텐츠 상세  -->
 

@@ -371,7 +371,7 @@
     </footer>
     <!-- [End] Footer Area -->
     <!-- [Start] 공지사항 Popup -->
-    <div class="popup" data-id="popup-request-change">
+    <div class="popup">
     <!-- [Start] 팝업 헤드라인 -->
     <header class="popup-headline">
         <h4>변경사항 요청</h4>
@@ -379,7 +379,7 @@
     </header>
     <!-- [End] 팝업 헤드라인 -->
     <!-- [Start] 팝업 콘텐츠 -->
-    <div class="popup-content popup-request-change-content">
+    <div class="popup-content popup-request-change-content" style="display: block;">
         <table class="table-type-02">
             <caption>변경사항 요청 상세 내용 테이블의 작성자,제목,첨부문서가 있습니다.</caption>
             <colgroup>
@@ -395,23 +395,23 @@
                     <th>제목</th>
                     <td colspan="3">
                         <div class="input-type">
-                            <label>
-                                <input type="text" placeholder="대표자 변경 요청합니다">
-                            </label>
+                            <input type="text" aria-label="제목을 입력하세요" placeholder="대표자 변경 요청합니다">
                         </div>
                     </td>
                 </tr>
                 <tr>
                     <th>첨부문서</th>
-                    <td class="add-file-area" colspan="3">
-                        <div class="file full-name">
-                            <span>파일 추가: </span>
-                            <div class="input-type">
-                                <label>
-                                    <input type="text">
-                                </label>
+                    <td colspan="3">
+                        <div class="add-file-search">
+                            <span>파일추가 : </span>
+                            <div class="file-search">
+                                <div class="input-type">
+                                    <label>
+                                        <input type="text">
+                                    </label>
+                                </div>
+                                <button class="btn-file-search">파일 검색</button>
                             </div>
-                            <a href="" class="btn-type-1-02">파일찾기</a>
                         </div>
                     </td>
                 </tr>

@@ -592,14 +592,6 @@ html/information-inquiry.html */
 	padding-left: 20px;
 }
 
-.popup .popup-request-change-content .input-type{
-	width:100%;
-}
-
-.popup .popup-request-change-content .input-type input{
-	width:100%;
-}
-
 .popup .popup-request-change-content .add-file-area .input-type input{
 	width:460px;
 }

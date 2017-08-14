@@ -6,10 +6,12 @@
 }
 
 .qna-content .table-type-01 .table-download .download-file .icon-popup-close{
-	display: inline-block;
-	vertical-align: middle;
-	float: right;
-	margin-top: 6px;
+    display: inline-block;
+    vertical-align: middle;
+    float: right;
+    margin-top: 6px;
+    width: 28px;
+    height: 20px;
 }
 
 .qna-content .table-type-01 .table-download .download-file .icon-popup-close:after{
@@ -599,19 +601,39 @@ html/information-inquiry.html */
 /* 회원서비스 > 게시판 상세 내용 팝업
 html/notice-board.html */
 
-.notice-board-list-content .all-pages-view{
+.notice-board-content .all-pages-view{
 	margin-top: 12px;
 }
 
-.notice-board-list-content .table-type-01 tr td:nth-child(3){
+.notice-board-content .table-type-01 tr td:nth-child(3){
 	text-align: left;
 }
 
-.notice-board-list-content .sub-top-button-area{
+.notice-board-content .sub-top-button-area{
 	float:right;
 	margin-top: 10px;
 }
 
-.notice-board-list-content .btn-type-1-02{
+.notice-board-content .btn-type-1-02{
 	width:106px;
+}
+.notice-board-content .tablist a:nth-child(5n){
+	margin-bottom: 2px;
+}
+
+.notice-board-content .table-type-01 .table-download .download-file strong{
+	display: inline-block;
+}
+
+.notice-board-content .table-type-01 .table-download .download-file .icon-popup-close{
+    display: inline-block;
+    vertical-align: middle;
+    float: right;
+    margin-top: 6px;
+    width: 28px;
+    height: 20px;
+}
+
+.notice-board-content .table-type-01 .table-download .download-file .icon-popup-close:after{
+	content:" ";
 }

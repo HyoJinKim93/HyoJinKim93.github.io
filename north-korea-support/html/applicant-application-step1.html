@@ -238,7 +238,7 @@
             <!-- [End] 컨텐츠 타이틀 -->
             
             <!-- [Start] 컨텐츠 상세  -->
-            <div class="content accept-terms">
+            <div class="content applicant-application-step1">
                 
                 <!-- [Start] 상단 버튼 영역 스타일 -->
                 <div class="sub-top-btn-area">
@@ -254,32 +254,32 @@
                             <!-- 활성화 스탭 class명 "step-open" 적용 -->
                             <div class="step-open">
                                 <div>Step 1</div>
-                                <a href="" class="btn-step" role="button">가입여부 확인</a>
+                                <a href="applicant-application-step1.html" class="btn-step" role="button">가입여부 확인</a>
                             </div>
                         </li>
                         <li>
                             <!-- 비활성화 스탭 class명 "step-close" 적용 -->
                             <div class="step-close">
                                 <div>Step 2</div>
-                                <a href="" class="btn-step" role="button">신청자 정보</a>
+                                <a href="applicant-application-step2.html" class="btn-step" role="button">신청자 정보</a>
                             </div>
                         </li>
                         <li>
                             <div class="step-close">
                                 <div>Step 3</div>
-                                <a href="" class="btn-step" role="button">단체기본 정보</a>
+                                <a href="applicant-application-step3.html" class="btn-step" role="button">단체기본 정보</a>
                             </div>
                         </li>
                         <li>
                             <div class="step-close">
                                 <div>Step 4</div>
-                                <a href="" class="btn-step" role="button">연혁 정보</a>
+                                <a href="applicant-application-step4.html" class="btn-step" role="button">연혁 정보</a>
                             </div>
                         </li>
                         <li>
                             <div class="step-close">
                                 <div>Step 5</div>
-                                <a href="" class="btn-step" role="button">구비서류</a>
+                                <a href="applicant-application-step5.html" class="btn-step" role="button">구비서류</a>
                             </div>
                         </li>
                     </ul>
@@ -292,10 +292,10 @@
                 <!-- [Start] 사업자 등록 번호 -->
                 <ul class="table-li">
                     <li class="title">사업자 등록번호</li>
-                    <li class="input-type">
-                        <label class="search-keyword">
+                    <li>
+                        <div class="input-type">
                             <input type="text" aria-label="사업자 등록번호 입력하세요."/>
-                        </label>
+                        </div>
                         <button class="btn-type-1-02">가입여부 확인</button>
                     </li>
                 </ul>
@@ -404,46 +404,78 @@
     </header>
     <!-- [End] 팝업 헤드라인 -->
     <!-- [Start] 팝업 콘텐츠 -->
-    <div class="popup-content">
+    <div class="popup-content popup-applicant-application-content">
         <table class="table-type-02">
-            <caption>자료실 상세 내용 테이블의 분야, 제목, 작성자, 작성일, 조회수, 첨부파일, 제안내용 항목이 있습니다.</caption>
+            <caption>2017년 이전 대북지원사업자 양식, 대표자 사진, 법인 · 단체 직인, 사업자 소개서, 대북지원사업 추진계획서, 추진실적 입증 서류, 정관 등기부, 법인 등기부, 대표자 신원증명서, 연혁 엑셀 upload 양식 항목이 있습니다.</caption>
             <colgroup>
                 <col>
-                <col>
-                <col>
-                <col>
+                <col width="180">
+                <col width="180">
+                <col width="100">
             </colgroup>
             <tbody>
                 <tr>
-                    <th>분야</th>
-                    <td>국내외 언론동향</td>
-                    <th>작성자</th>
-                    <td>id****</td>
+                    <th>2017년 이전 대북지원사업자 양식</th>
+                    <td><button class="btn-type-1-02">양식 다운받기</button></td>
+                    <td></td>
+                    <td><strong>해당없음</strong></td>
                 </tr>
                 <tr>
-                    <th>제목</th>
-                    <td colspan="3">이런 저런 내용으로 제안합니다</td>
+                    <th>대표자 사진</th>
+                    <td></td>
+                    <td><button class="btn-type-1-02">파일 올리기</button></td>
+                    <td><strong>제출</strong></td>
                 </tr>
                 <tr>
-                    <th>작성일</th>
-                    <td>2017-11-12</td>
-                    <th>조회수</th>
-                    <td>999</td>
+                    <th>법인 · 단체 직인</th>
+                    <td></td>
+                    <td><button class="btn-type-1-02">파일 올리기</button></td>
+                    <td><strong>제출</strong></td>
                 </tr>
                 <tr>
-                    <th>첨부파일</th>
-                    <td class="download-type-01" colspan="3">
-                        <a class="icon-hwp" role="button" href>첨부파일1.hwp</a>
-                        <a class="icon-hwp" role="button" href>첨부파일2.hwp</a>
-                    </td>
+                    <th>사업자 소개서</th>
+                    <td><button class="btn-type-1-02">양식 다운받기</button></td>
+                    <td><button class="btn-type-1-02">파일 올리기</button></td>
+                    <td><strong>제출</strong></td>
+                </tr>
+                <tr>
+                    <th>대북지원사업 추진계획서</th>
+                    <td><button class="btn-type-1-02">양식 다운받기</button></td>
+                    <td><button class="btn-type-1-02">파일 올리기</button></td>
+                    <td><strong class="red">미제출</strong></td>
+                </tr>
+                <tr>
+                    <th>추진실적 입증 서류</th>
+                    <td></td>
+                    <td><button class="btn-type-1-02">파일 올리기</button></td>
+                    <td><strong class="red">미제출</strong></td>
+                </tr>
+                <tr>
+                    <th>정관 등기부</th>
+                    <td></td>
+                    <td><button class="btn-type-1-02">파일 올리기</button></td>
+                    <td><strong class="red">미제출</strong></td>
+                </tr>
+                <tr>
+                    <th>법인 등기부</th>
+                    <td></td>
+                    <td><button class="btn-type-1-02">파일 올리기</button></td>
+                    <td><strong class="red">미제출</strong></td>
+                </tr>
+                <tr>
+                    <th>대표자 신원증명서</th>
+                    <td></td>
+                    <td><button class="btn-type-1-02">파일 올리기</button></td>
+                    <td><strong class="red">미제출</strong></td>
+                </tr>
+                <tr>
+                    <th>연혁 엑셀 upload 양식</th>
+                    <td><button class="btn-type-1-02">양식 다운받기</button></td>
+                    <td></td>
+                    <td><strong>해당없음</strong></td>
                 </tr>
             </tbody>
         </table>
-        <!-- [Start] 팝업 버튼 -->
-        <div class="popup-btn-set">
-            <button class="popup-close">닫기</button>
-        </div>
-        <!-- [End] 팝업 버튼 -->
     </div>
     <!-- [End] 팝업 콘텐츠 -->
 </div>

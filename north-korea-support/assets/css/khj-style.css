@@ -536,6 +536,7 @@ html/information-inquiry.html */
 	text-align: left;
 }
 
+
 /* 회원서비스 > 단체정보관리 > 정보조회 조회
 html/information-inquiry.html */
 
@@ -594,6 +595,9 @@ html/information-inquiry.html */
 .popup .popup-request-change-content .add-file-area .btn-type-1-02{
 	width:100px;
 }
+
+/* 회원서비스 > 게시판 상세 내용 팝업
+html/notice-board.html */
 
 .notice-board-list-content .all-pages-view{
 	margin-top: 12px;

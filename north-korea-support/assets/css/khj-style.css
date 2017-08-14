@@ -1,6 +1,22 @@
 
 /*# sourceMappingURL=map/khj-style.css.map */
 
+.qna-content .table-type-01 .table-download .download-file strong{
+	display: inline-block;
+}
+
+.qna-content .table-type-01 .table-download .download-file .icon-popup-close{
+	display: inline-block;
+	vertical-align: middle;
+	float: right;
+	margin-top: 6px;
+}
+
+.qna-content .table-type-01 .table-download .download-file .icon-popup-close:after{
+	content:" ";
+}
+
+
 /* 회원서비스 > 법인.단체 > 사업자신청 Step 2. 신청자 정보 조회
 html/applicant-application-step2.html */
 @charset "UTF-8";

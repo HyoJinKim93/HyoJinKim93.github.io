@@ -42,15 +42,6 @@ html/notice-board.html */
 	content:" ";
 }
 
-.notice-board-content .all-page::before {
-	content: "";
-    display: inline-block;
-    width: 8px;
-    height: 14px;
-    vertical-align: -6px;
-    background:url(../../assets/images/sub/all-page-arrow.png) no-repeat;
-}
-
 .notice-board-content .all-page strong:nth-child(2){
 	margin-left: 18px;
 }

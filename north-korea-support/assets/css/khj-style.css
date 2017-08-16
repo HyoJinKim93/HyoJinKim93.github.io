@@ -1,2 +1,81 @@
 
 /*# sourceMappingURL=map/khj-style.css.map */
+
+
+/* 회원서비스 > 게시판 상세 내용 팝업
+html/notice-board.html */
+
+.notice-board-content .all-pages-view{
+	margin-top: 12px;
+}
+
+.notice-board-content .table-type-01 tr td:nth-child(3){
+	text-align: left;
+}
+
+.notice-board-content .sub-top-button-area{
+	float:right;
+	margin-top: 10px;
+}
+
+.notice-board-content .btn-type-1-02{
+	width:106px;
+}
+.notice-board-content .tablist a:nth-child(5n){
+	margin-bottom: 2px;
+}
+
+.notice-board-content .table-type-01 .table-download .download-file strong{
+	display: inline-block;
+}
+
+.notice-board-content .table-type-01 .table-download .download-file .icon-popup-close{
+    display: inline-block;
+    vertical-align: middle;
+    float: right;
+    margin-top: 6px;
+    width: 28px;
+    height: 20px;
+}
+
+.notice-board-content .table-type-01 .table-download .download-file .icon-popup-close:after{
+	content:" ";
+}
+
+.notice-board-content .all-page::before {
+	content: "";
+    display: inline-block;
+    width: 8px;
+    height: 14px;
+    vertical-align: -6px;
+    background:url(../../assets/images/sub/all-page-arrow.png) no-repeat;
+}
+
+.notice-board-content .all-page strong:nth-child(2){
+	margin-left: 18px;
+}
+
+
+/* 기금사업신청 > 사업 신청
+html/business-appllication.html */
+
+.business-application-content #panel2 .table-type-02 tr th{
+	height:68px;
+}
+
+.business-application-content #panel3 .table-type-02{
+	letter-spacing: -1px;
+}
+
+.business-application-content #panel3 .table-type-02 .icon-hwp{
+	width: 325px;
+}
+
+.business-application-content #panel3 .table-type-02 .btn-file-remove{
+	float: left;
+}
+
+.business-application-content #panel3 .table-type-02 .btn-type-1-02{
+	float: right;
+	width: 126px;
+}

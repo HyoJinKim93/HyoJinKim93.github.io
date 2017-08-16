@@ -1,7 +1,9 @@
 
 /*# sourceMappingURL=map/khj-style.css.map */
 
-
+.popup-container{
+	display: block !important;
+}
 
 /* 회원서비스 > 단체정보관리 > 변경사항요청 조회진행중
 html/request-change.html */
@@ -39,8 +41,6 @@ html/request-change.html */
 	margin-top: 70px;
 }
 
-/* 팝업 */
-
 .popup .popup-request-change-content .table-type-02 tr:first-child td{
 	padding-left: 20px;
 }
@@ -54,7 +54,7 @@ html/request-change.html */
 }
 
 .popup .popup-request-change-content .popup-btn-set{
-	margin-top: 450px;
+	margin-top:140px;
 }
 
 .popup .popup-request-change-content .add-file-area .btn-type-1-02{

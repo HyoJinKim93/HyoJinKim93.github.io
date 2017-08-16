@@ -1,10 +1,10 @@
 
 /*# sourceMappingURL=map/khj-style.css.map */
 
-.popup-container{
+/* .popup-container{
 	display: block !important;
 }
-
+ */
 /* 회원서비스 > 단체정보관리 > 변경사항요청 조회진행중
 html/request-change.html */
 
@@ -18,7 +18,7 @@ html/request-change.html */
     width: 8px;
     height: 14px;
     vertical-align: -2px;
-	background:url(../../assets/images/sub/all-page-arrow.png) no-repeat 0 50%;
+	background:url("../../assets/images/icon/icon-all-page.png") no-repeat 0 50%;
 }
 
 .request-change-content .table-type-01 tr td:nth-child(2),
@@ -159,3 +159,5 @@ html/business-appllication.html */
 	float: right;
 	width: 126px;
 }
+
+

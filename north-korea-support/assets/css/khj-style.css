@@ -656,3 +656,28 @@ html/notice-board.html */
 .notice-board-content .all-page strong:nth-child(2){
 	margin-left: 18px;
 }
+
+
+/* 기금사업신청 > 사업 신청
+html/business-appllication.html */
+
+.business-application-content #panel2 .table-type-02 tr th{
+	height:68px;
+}
+
+.business-application-content #panel3 .table-type-02{
+	letter-spacing: -1px;
+}
+
+.business-application-content #panel3 .table-type-02 .icon-hwp{
+	width: 325px;
+}
+
+.business-application-content #panel3 .table-type-02 .btn-file-remove{
+	float: left;
+}
+
+.business-application-content #panel3 .table-type-02 .btn-type-1-02{
+	float: right;
+	width: 126px;
+}

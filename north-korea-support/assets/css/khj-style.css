@@ -2,8 +2,9 @@
 /*# sourceMappingURL=map/khj-style.css.map */
 
 
-/* 회원서비스 > 단체정보관리 > 정보조회 조회
-html/information-inquiry.html */
+
+/* 회원서비스 > 단체정보관리 > 변경사항요청 조회진행중
+html/request-change.html */
 
 .request-change-content .all-page{
 	margin-bottom: 13px;
@@ -105,6 +106,35 @@ html/notice-board.html */
 	margin-left: 18px;
 }
 
+[class^="table-type-"] .table-download .download-file .btn-download-close{
+	position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 20px;
+    height: 20px;
+    text-indent: -9999px;
+}
+[class^="table-type-"] .table-download .download-file .btn-download-close:before{
+    position: absolute;
+    top: 9px;
+    left: 0;
+    display: block;
+    width: 20px;
+    height: 1px;
+    background: #8aa3b7;
+    transform: rotate(45deg);
+    content: "";
+}
+[class^="table-type-"] .table-download .download-file .btn-download-close:after{    position: absolute;
+    top: 9px;
+    left: 0;
+    display: block;
+    width: 20px;
+    height: 1px;
+    background: #8aa3b7;
+    transform: rotate(-45deg);
+    content: "";
+  }
 
 /* 기금사업신청 > 사업 신청
 html/business-appllication.html */

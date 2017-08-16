@@ -5,11 +5,63 @@
 /* 회원서비스 > 단체정보관리 > 정보조회 조회
 html/information-inquiry.html */
 
+.request-change-content .all-page{
+	margin-bottom: 13px;
+}
+
+.request-change-content .all-page span::before{
+	content: "";
+    display: inline-block;
+    width: 8px;
+    height: 14px;
+    vertical-align: -2px;
+	background:url(../../assets/images/sub/all-page-arrow.png) no-repeat 0 50%;
+}
+
+.request-change-content .table-type-01 tr td:nth-child(2),
+.request-change-content .table-type-01 tr td:nth-child(3),
+.request-change-content .table-type-01 tr td:last-child{
+	letter-spacing: -2px;
+}
+
 .request-change-content .table-type-01 tr td:nth-child(3){
 	text-align:left;
 }
 
-/* 회원서비스 > 게시판 상세 내용 팝업
+.request-change-content .btn-type-1-02{
+	float: right;
+	width: 106px;
+	margin-top:10px;
+}
+
+.request-change-content .paging{
+	margin-top: 70px;
+}
+
+/* 팝업 */
+
+.popup .popup-request-change-content .table-type-02 tr:first-child td{
+	padding-left: 20px;
+}
+
+.popup .popup-request-change-content .table-type-02 tr:nth-child(3) td{
+	padding-left: 20px;
+}
+
+.popup .popup-request-change-content .add-file-area .input-type input{
+	width:460px;
+}
+
+.popup .popup-request-change-content .popup-btn-set{
+	margin-top: 450px;
+}
+
+.popup .popup-request-change-content .add-file-area .btn-type-1-02{
+	width:100px;
+}
+
+
+/* 회원서비스 > 게시판 상세 내용
 html/notice-board.html */
 
 .notice-board-content .all-pages-view{

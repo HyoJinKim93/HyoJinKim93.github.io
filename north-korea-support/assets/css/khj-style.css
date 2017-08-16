@@ -2,6 +2,13 @@
 /*# sourceMappingURL=map/khj-style.css.map */
 
 
+/* 회원서비스 > 단체정보관리 > 정보조회 조회
+html/information-inquiry.html */
+
+.request-change-content .table-type-01 tr td:nth-child(3){
+	text-align:left;
+}
+
 /* 회원서비스 > 게시판 상세 내용 팝업
 html/notice-board.html */
 

@@ -1,10 +1,10 @@
 
 /*# sourceMappingURL=map/khj-style.css.map */
 
-.popup-container{
+/* .popup-container{
 	display: block !important;
 }
-
+ */
 
 
 /* 회원서비스 > 단체정보관리 > 변경사항요청 조회진행중
@@ -140,11 +140,11 @@ html/notice-board.html */
 
 /* 게시판 판업 */
 
-.popup-notice-board .table-type-02 .select-box{
+.popup-notice-board-write .table-type-02 .select-box{
 	width:100%;
 }
 
-.popup-notice-board .table-type-02 .td-title p{
+.popup-notice-board-write .table-type-02 .td-title p{
 	height: 30px;
     line-height: 30px;
     padding: 0 10px;
@@ -152,45 +152,64 @@ html/notice-board.html */
     background: #fff;
 }
 
-.popup-notice-board .table-type-02 .checkbox-type{
+.popup-notice-board-write .table-type-02 .checkbox-type{
 	margin-top:11px;
 	padding-bottom: 6px;
 }
 
-.popup-notice-board .table-type-02 .checkbox-type span{
+.popup-notice-board-write .table-type-02 .checkbox-type span{
 	color:#757575;
 }
 
-.popup-notice-board .table-type-02 tr:nth-child(3) td{
+.popup-notice-board-write .table-type-02 tr:nth-child(3) td{
 	padding:6px 20px;
 }
 
-.popup-notice-board .table-type-02 .add-file-area{
+.popup-notice-board-write .table-type-02 .add-file-area{
 	margin-left:83px;
 }
 
 /* 기금사업신청 > 사업 신청
 html/business-appllication.html */
 
-.business-application-content #panel2 .table-type-02 tr th{
+.business-application #panel2 .table-type-02 tr th{
 	height:68px;
 }
 
-.business-application-content #panel3 .table-type-02{
+.business-application #panel3 .table-type-02 tr th{
 	letter-spacing: -1px;
 }
 
-.business-application-content #panel3 .table-type-02 .icon-hwp{
+.business-application #panel3 .table-type-02 .icon-hwp{
 	width: 325px;
 }
 
-.business-application-content #panel3 .table-type-02 .btn-file-remove{
+.business-application #panel3 .table-type-02 .btn-file-remove{
 	float: left;
 }
 
-.business-application-content #panel3 .table-type-02 .btn-type-1-02{
+.business-application #panel3 .table-type-02 .btn-type-1-02{
 	float: right;
 	width: 126px;
 }
 
+.business-application #panel3 .table-type-02 .add-file-area{
+	padding-left: 10px;
+}
 
+.business-application #panel3 .table-type-02 .add-file-area .file{
+	width:508px;
+}
+
+.business-application #panel3 .table-type-02 .add-file-area .file .btn-file-remove{
+	float: left;
+}
+
+.business-application #panel3 .table-type-02 .add-file-area .file a[class^="icon-"]{
+	width:317px;
+}
+
+.business-application #panel3 .table-type-02 .add-file-area .btn-type-1-02{
+	width: 126px;
+	float:right;
+}

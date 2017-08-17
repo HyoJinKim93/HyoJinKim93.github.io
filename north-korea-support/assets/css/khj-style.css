@@ -1,11 +1,11 @@
 
 /*# sourceMappingURL=map/khj-style.css.map */
 
-/* .popup-container{
+.popup-container{
 	display: block !important;
 }
 
- */
+
 
 /* 회원서비스 > 단체정보관리 > 변경사항요청 조회진행중
 html/request-change.html */
@@ -63,6 +63,13 @@ html/request-change.html */
 	width:100px;
 }
 
+.popup-request-change-content .table-type-02 .td-title p {
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    border: 1px solid #dbdbdb;
+    background: #fff;
+}
 
 /* 회원서비스 > 게시판 상세 내용
 html/notice-board.html */
@@ -168,6 +175,7 @@ html/notice-board.html */
 .popup-notice-board-write .table-type-02 .add-file-area{
 	margin-left:83px;
 }
+
 
 /* 기금사업신청 > 사업 신청
 html/business-appllication.html */

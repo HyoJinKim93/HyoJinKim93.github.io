@@ -1,9 +1,9 @@
 /*# sourceMappingURL=map/khj-style.css.map */
 
-
-/* .popup-container {
+.popup-container {
     display: block !important;
-} */
+}
+
 
 
 /* 회원서비스 > 단체정보관리 > 변경사항요청 조회진행중
@@ -151,6 +151,7 @@ html/notice-board.html */
 }
 
 
+
 /* 게시판 판업 */
 
 .popup-notice-board-write .table-type-02 .select-box {
@@ -181,11 +182,6 @@ html/notice-board.html */
 .popup-notice-board-write .table-type-02 .add-file-area {
     margin-left: 83px;
 }
-
-
-
-
-
 
 
 
@@ -236,11 +232,6 @@ html/business-appllication.html */
 
 
 
-
-
-
-
-
 /* 기금사업신청 > 결과조회
 html/view-results.html */
 
@@ -268,10 +259,6 @@ html/view-results.html */
 
 
 /* 팝업 */
-
-.popup-view-results .table-type-02 tr:nth-child(7) th {
-    width: 528px;
-}
 
 .popup-view-results .ul-type-02 {
     margin-top: 10px;
@@ -305,4 +292,20 @@ html/view-results.html */
 .popup-view-results table td .radio-type li {
     float: left;
     width: 25%;
+}
+
+.popup-view-results .table-type-02 tr:nth-child(7) td:nth-child(2) {
+    text-align: right;
+}
+
+.popup-view-results .table-type-02 tr:nth-child(8) td:nth-child(2) {
+    text-align: right;
+}
+
+.popup-view-results .table-type-02 tr:nth-child(9) td:nth-child(2) {
+    text-align: right;
+}
+
+.popup-view-results .table-dl p {
+    float: left;
 }

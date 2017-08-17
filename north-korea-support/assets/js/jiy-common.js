@@ -73,9 +73,37 @@
     });
     
     // 구비서류 올리기 팝업
-    $('.btn-file-upload').on('click', function(e) {
+    $('.btn-popup-applicant-application').on('click', function(e) {
       e.preventDefault();
       $.popupId($popups, 'popup-applicant-application').open();
+    });
+
+    // 회원명부 인물정보 팝업
+    $('.btn-popup-information-inquiry').on('click', function(e) {
+      e.preventDefault();
+      $.popupId($popups, 'popup-information-inquiry').open();
+    });
+
+    // 정책제안 상세 조회 팝업
+    $('.btn-popup-policy-proposal-list').on('click', function(e) {
+      e.preventDefault();
+      $.popupId($popups, 'popup-policy-proposal-list').open();
+    });
+    // 정책제안 상세 입력 팝업
+    $('.btn-popup-policy-proposal-write').on('click', function(e) {
+      e.preventDefault();
+      $.popupId($popups, 'popup-policy-proposal-write').open();
+    });
+
+    // 게시판 상세 조회 팝업
+    $('.btn-popup-notice-board-list').on('click', function(e) {
+      e.preventDefault();
+      $.popupId($popups, 'popup-notice-board-list').open();
+    });
+    // 게시판 상세 입력 팝업
+    $('.btn-popup-notice-board-write').on('click', function(e) {
+      e.preventDefault();
+      $.popupId($popups, 'popup-notice-board-write').open();
     });
     
     // GNB 전체메뉴
@@ -109,9 +137,9 @@
         $(this).siblings("label").text(select_name);
     });
 
-    // -------------------------------------------------------------------
-    //다운로드 파일 말풍선 설정
-    // -------------------------------------------------------------------
+    // =======================================
+    // 다운로드 파일 말풍선 설정
+    // =======================================
 
     // downloadWidget 객체 생성
     // (필수) 첫번째 인자: 객체 지향 자바스크립트 클래스를 연결할 대상 선택자

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
+
 <head>
     <title>대북지원정보시스템</title>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
@@ -14,9 +15,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes"/>
 
     <!-- Styles : Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
     <!-- Styles : Guide Style -->
-    <link rel="stylesheet" href="../guide/ui-kit.css"/>
+    <link rel="stylesheet" href="../guide/ui-kit.css" />
     <!-- IE 9 버전 이하 지원 -->
 <!--[if lt IE 9]>
     <script src="https://raw.githubusercontent.com/aFarkas/html5shiv/master/dist/html5shiv.min.js"></script>
@@ -39,7 +40,6 @@
     <a class="skip-link" href="#gnb-all-menu" data-scroll data-target="#gnb-all-menu" role="button">전체메뉴 바로가기</a>
     <a class="skip-link" href="#container" data-scroll data-target="#container" role="button">컨텐츠 바로가기</a>
     <!-- [End] skip navigation -->
-    
     <!-- [Start] Header -->
     <header class="header">
         <!-- [Start] Top menu -->
@@ -51,14 +51,11 @@
             </div>
         </div>
         <!-- [End] Top menu -->
-        
         <!-- [Start] 로고 및 즐겨찾는 메뉴 -->
         <div class="gnb-area wrap">
-        
             <!-- [Start] 로고 영역 -->
             <h1 class="logo"><a href="/"><img src="../assets/images/common/logo.png" alt="대북지원정보시스템 메인이동" /></a></h1>
             <!-- [End] 로고 영역 -->
-
             <!-- [Start] GNB 영역 -->
             <nav class="gnb">
                 <!-- [Start] 즐겨찾는 메뉴 -->
@@ -74,13 +71,11 @@
                 <button class="btn-gnb-all" aria-labelledby="gnb-all-menu">전체메뉴</button>
             </nav>
             <!-- [End] GNB 영역 -->
-
         </div>
         <!-- [Start] 로고 및 즐겨찾는 메뉴 -->
-
         <!-- [Start] GNB 전체 메뉴 -->
         <nav id="gnb-all-menu">
-            <div class="wrap">    
+            <div class="wrap">
                 <div class="panel">
                     <h2><a href="#">대북지원사업안내</a></h2>
                     <ul>
@@ -119,7 +114,6 @@
                                 <li><a href="#">지원채널별</a></li>
                             </ul>
                         </li>
-
                     </ul>
                 </div>
                 <div class="panel">
@@ -167,17 +161,54 @@
         <!-- [End] GNB 전체 메뉴 -->
     </header>
     <!-- [End] Header -->
-
     <!-- [Start] Container Area -->
     <main class="ui-kit">
         <section class="content-area wrap">
             <h1><span class="fa fa-paperclip"></span> UI Kit 정의</h1>
-            
+
+            <!-- [Start] HTML 주석 기본 사용 -->
+            <article>
+                <h2>HTML 주석 기본 사용</h2>
+<pre class="html">
+&lt;!-- [Start] HTML 주석 기본 사용 --&gt;
+HTML 내용 작성
+&lt;!-- [End] HTML 주석 기본 사용 --&gt;
+</pre>
+            </article>
+            <!-- [End] HTML 주석 기본 사용 -->
+
+            <!-- [Start] CSS 주석 기본 사용 -->
+            <article>
+                <h2>CSS 주석 기본 사용</h2>
+<pre class="css">
+/* =======================================*/
+/* 대분류 &gt; 중분류 &gt; 소분류
+/* (html/index.html)
+/* =======================================*/
+CSS 내용 작성
+</pre>
+            </article>
+            <!-- [End] CSS 주석 기본 사용 -->
+
+            <!-- [Start] JS 주석 기본 사용 -->
+            <article>
+                <h2>JS 주석 기본 사용</h2>
+<pre class="js">
+// =======================================
+// JS 플러그인명 (URL 제공)
+// =======================================
+
+or
+
+// 한줄라인 주석 사용 시
+</pre>
+            </article>
+            <!-- [End] JS 주석 기본 사용 -->
+
             <!-- [Start] Input 공통 -->
             <article>
                 <h2>Input</h2>
                 <div class="form-group">
-
                     <!-- [Start] 설명이 있는 인풋 스타일 -->
                     <h3><div class="fa fa-angle-double-right"></div>설명이 있는 인풋 스타일</h3>
                     <div class="input-type">
@@ -188,31 +219,54 @@
                         <label for="password">비밀번호</label>
                         <input type="password" id="password" name="password" required="required" />
                     </div>
+<pre class="html">
+&lt;div class=&quot;input-type&quot;&gt;
+    &lt;label for=&quot;username&quot;&gt;아이디&lt;/label&gt;
+    &lt;input type=&quot;text&quot; id=&quot;username&quot; name=&quot;username&quot; required=&quot;required&quot; /&gt;
+&lt;/div&gt;
+&lt;div class=&quot;input-type&quot;&gt;
+    &lt;label for=&quot;password&quot;&gt;비밀번호&lt;/label&gt;
+    &lt;input type=&quot;password&quot; id=&quot;password&quot; name=&quot;password&quot; required=&quot;required&quot; /&gt;
+&lt;/div&gt;
+</pre>
                     <!-- [End] 설명이 있는 기본 인풋 스타일 -->
-
                     <!-- [Start] 설명이 없는 기본 인풋 스타일 -->
                     <h3><div class="fa fa-angle-double-right"></div>설명이 없는 기본 인풋 스타일</h3>
                     <div class="input-type">
-                        <input type="text" aria-label="텍스트 입력"/>
+                        <input type="text" aria-label="내용 설명" />
                     </div>
+<pre class="html">
+&lt;div class=&quot;input-type&quot;&gt;
+    &lt;input type=&quot;text&quot; aria-label=&quot;내용 설명&quot; /&gt;
+&lt;/div&gt;
+</pre>
                     <!-- [End] 설명이 없는 기본 인풋 스타일 -->
-
                     <!-- [Start] 설명이 없는 너비 100% 인풋 스타일 -->
                     <h3><div class="fa fa-angle-double-right"></div>설명이 없는 너비 100% 인풋 스타일</h3>
                     <div class="input-type full">
-                        <input type="text" aria-label="텍스트 입력"/>
+                        <input type="text" aria-label="내용 설명" />
                     </div>
+<pre class="html">
+&lt;div class=&quot;input-type full&quot;&gt;
+    &lt;input type=&quot;text&quot; aria-label=&quot;내용 설명&quot; /&gt;
+&lt;/div&gt;
+</pre>
                     <!-- [End] 설명이 없는 너비 100% 인풋 스타일 -->
-
                     <!-- [Start] Placeholder가 있는 인풋 스타일 -->
                     <h3><div class="fa fa-angle-double-right"></div>Placeholder가 있는 인풋 스타일</h3>
                     <div class="input-type">
                         <label>
-                            <input type="text" placeholder="Placeholder 내용" />
+                            <input type="text" placeholder="Placeholder 내용 설명" />
                         </label>
                     </div>
+<pre class="html">
+&lt;div class=&quot;input-type&quot;&gt;
+    &lt;label&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Placeholder 내용 설명&quot; /&gt;
+    &lt;/label&gt;
+&lt;/div&gt;
+</pre>
                     <!-- [End] Placeholder가 있는 인풋 스타일 -->
-
                     <!-- [Start] 전화번호 인풋 스타일 -->
                     <h3><div class="fa fa-angle-double-right"></div>전화번호 인풋 스타일</h3>
                     <div class="input-type tel">
@@ -226,10 +280,22 @@
                             <input class="last-number" type="tel" aria-label="뒷번호">
                         </div>
                     </div>
+<pre class="html">
+&lt;div class=&quot;input-type tel&quot;&gt;
+    &lt;div class=&quot;dialog&quot;&gt;
+        &lt;input class=&quot;country-code&quot; type=&quot;tel&quot; aria-label=&quot;지역번호&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;dialog&quot;&gt;
+        &lt;input class=&quot;first-number&quot; type=&quot;tel&quot; aria-label=&quot;앞번호&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;dialog&quot;&gt;
+        &lt;input class=&quot;last-number&quot; type=&quot;tel&quot; aria-label=&quot;뒷번호&quot;&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
                     <!-- [End] 전화번호 인풋 스타일 -->
-
                     <!-- [Start] 이메일 인풋 스타일 -->
-                    <h3><div class="fa fa-angle-double-right"></div>전화번호 인풋 스타일</h3>
+                    <h3><div class="fa fa-angle-double-right"></div>이메일 인풋 스타일</h3>
                     <div class="input-type e-mail">
                         <div class="email">
                             <input class="email-id" type="text" aria-label="이메일 아이디">
@@ -249,13 +315,35 @@
                             <option>yahoo.com</option>
                         </select>
                     </div>
+<pre class="html">
+&lt;div class=&quot;input-type e-mail&quot;&gt;
+    &lt;div class=&quot;email&quot;&gt;
+        &lt;input class=&quot;email-id&quot; type=&quot;text&quot; aria-label=&quot;이메일 아이디&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;email&quot;&gt;
+        &lt;input class=&quot;email-address&quot; type=&quot;text&quot; aria-label=&quot;이메일 주소 직접입력&quot;&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;select-box e-mail&quot;&gt;
+    &lt;label for=&quot;email-search&quot;&gt;직접입력&lt;/label&gt;
+    &lt;select id=&quot;email-search&quot; name=&quot;email-search-item&quot;&gt;
+        &lt;option selected=&quot;selected&quot;&gt;직접입력&lt;/option&gt;
+        &lt;option&gt;naver.com&lt;/option&gt;
+        &lt;option&gt;daum.net&lt;/option&gt;
+        &lt;option&gt;nate.com&lt;/option&gt;
+        &lt;option&gt;google.com&lt;/option&gt;
+        &lt;option&gt;yahoo.com&lt;/option&gt;
+    &lt;/select&gt;
+&lt;/div&gt;
+</pre>
                     <!-- [End] 이메일 인풋 스타일 -->
-
                     <!-- [Start] 텍스트박스 스타일 -->
                     <h3><div class="fa fa-angle-double-right"></div>텍스트박스 스타일</h3>
-                    <textarea class="textarea" placeholder="텍스트 입력하세요."></textarea>
+                    <textarea class="textarea" placeholder="Placeholder 내용 설명"></textarea>
+<pre class="html">
+&lt;textarea class=&quot;textarea&quot; placeholder=&quot;Placeholder 내용 설명&quot;&gt;&lt;/textarea&gt;
+</pre>
                     <!-- [End] 텍스트박스 스타일 -->
-
                     <!-- [Start] 주소 영역 스타일 -->
                     <h3><div class="fa fa-angle-double-right"></div>주소 영역 스타일</h3>
                     <ul class="address-area">
@@ -276,11 +364,30 @@
                             </div>
                         </li>
                     </ul>
+<pre class="html">
+&lt;ul class=&quot;address-area&quot;&gt;
+    &lt;li&gt;
+        &lt;div class=&quot;input-type&quot;&gt;
+            &lt;input type=&quot;text&quot; aria-label=&quot;우편번호&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;btn-type-1-02&quot;&gt;우편번호 찾기&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;div class=&quot;input-type&quot;&gt;
+            &lt;input type=&quot;text&quot; aria-label=&quot;기본 주소&quot;&gt;
+        &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;div class=&quot;input-type&quot;&gt;
+            &lt;input type=&quot;text&quot; placeholder=&quot;상세 주소 입력&quot;&gt;
+        &lt;/div&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+</pre>
                     <!-- [End] 주소 영역 스타일 -->
                 </div>
             </article>
             <!-- [End] Input 공통 -->
-
             <!-- [Start] Select Box 공통 -->
             <article>
                 <h2>Select Box</h2>
@@ -295,14 +402,25 @@
                         <option>키워드05</option>
                     </select>
                 </div>
+<pre class="html">
+&lt;div class=&quot;select-box&quot;&gt;
+    &lt;label for=&quot;search&quot;&gt;검색&lt;/label&gt;
+    &lt;select id=&quot;search&quot; name=&quot;search-item&quot;&gt;
+        &lt;option selected=&quot;selected&quot;&gt;검색&lt;/option&gt;
+        &lt;option&gt;키워드01&lt;/option&gt;
+        &lt;option&gt;키워드02&lt;/option&gt;
+        &lt;option&gt;키워드03&lt;/option&gt;
+        &lt;option&gt;키워드04&lt;/option&gt;
+        &lt;option&gt;키워드05&lt;/option&gt;
+    &lt;/select&gt;
+&lt;/div&gt;
+</pre>
             </article>
             <!-- [End] Select Box 공통 -->
-
             <!-- [Start] 서브 검색 영역 공통 -->
             <article>
                 <h2>Seb Search Style</h2>
                 <div class="search-type-area">
-
                     <!-- [Start] 검색 타입 1. -->
                     <h3><div class="fa fa-angle-double-right"></div>검색 타입 1.</h3>
                     <ul class="search-area">
@@ -316,12 +434,28 @@
                             </select>
                         </li>
                         <li class="input-type">
-                            <input type="text" aria-label="검색 키워드 입력하세요."/>
-                            <button class="btn-lookup">조회</button>
+                            <input type="text" aria-label="검색 키워드 입력하세요." />
+                            <button type="button" class="btn-lookup">조회</button>
                         </li>
                     </ul>
+<pre class="html">
+&lt;ul class=&quot;search-area&quot;&gt;
+    &lt;li&gt;&lt;span class=&quot;search-title&quot;&gt;검색&lt;/span&gt;&lt;/li&gt;
+    &lt;li class=&quot;select-box&quot;&gt;
+        &lt;label for=&quot;search&quot;&gt;검색&lt;/label&gt;
+        &lt;select id=&quot;search&quot; name=&quot;search-item&quot;&gt;
+            &lt;option selected=&quot;selected&quot;&gt;제목&lt;/option&gt;
+            &lt;option&gt;내용&lt;/option&gt;
+            &lt;option&gt;단어&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;input-type&quot;&gt;
+        &lt;input type=&quot;text&quot; aria-label=&quot;검색 키워드 입력하세요.&quot; /&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn-lookup&quot;&gt;조회&lt;/button&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+</pre>
                     <!-- [End] 검색 타입 1. -->
-
                     <!-- [Start] 검색 타입 2. -->
                     <h3><div class="fa fa-angle-double-right"></div>검색 타입 2.</h3>
                     <ul class="search-area">
@@ -343,30 +477,66 @@
                             </select>
                         </li>
                         <li class="input-type">
-                            <input type="text" aria-label="검색 키워드 입력하세요."/>
-                            <button class="btn-lookup">조회</button>
+                            <input type="text" aria-label="검색 키워드 입력하세요." />
+                            <button type="button" class="btn-lookup">조회</button>
                         </li>
                     </ul>
+<pre class="html">
+&lt;ul class=&quot;search-area&quot;&gt;
+    &lt;li class=&quot;search-title&quot;&gt;&lt;span&gt;검색&lt;/span&gt;&lt;/li&gt;
+    &lt;li class=&quot;select-box all&quot;&gt;
+        &lt;label for=&quot;search&quot;&gt;말머리:전체&lt;/label&gt;
+        &lt;select id=&quot;search&quot; name=&quot;search-item&quot;&gt;
+            &lt;option selected=&quot;selected&quot;&gt;말머리:전체&lt;/option&gt;
+            &lt;option&gt;내용&lt;/option&gt;
+            &lt;option&gt;단어&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;select-box&quot;&gt;
+        &lt;label for=&quot;search&quot;&gt;제목&lt;/label&gt;
+        &lt;select id=&quot;search&quot; name=&quot;search-item&quot;&gt;
+            &lt;option selected=&quot;selected&quot;&gt;제목&lt;/option&gt;
+            &lt;option&gt;내용&lt;/option&gt;
+            &lt;option&gt;단어&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;input-type&quot;&gt;
+        &lt;input type=&quot;text&quot; aria-label=&quot;검색 키워드 입력하세요.&quot; /&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn-lookup&quot;&gt;조회&lt;/button&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+</pre>
                     <!-- [End] 검색 타입 2. -->
-
                 </div>
             </article>
             <!-- [End] 서브 검색 영역 공통 -->
-
             <!-- [Start] 체크박스 공통 -->
-           <article>
+            <article>
                 <h2>Check box</h2>
-               <div class="checkbox-type">
-                   <input type="checkbox" id="checkbox-01" name="test-01">
-                   <label for="checkbox-01">Checkbox Test 01</label>
-                   <input type="checkbox" id="checkbox-02" name="test-02">
-                   <label for="checkbox-02">Checkbox Test 02</label>
-                   <input type="checkbox" id="checkbox-03" name="test-03">
-                   <label for="checkbox-03">Checkbox Test 03</label>
-               </div>
-           </article>
+                <div class="checkbox-type">
+                    <input type="checkbox" id="checkbox-01" name="test-01">
+                    <label for="checkbox-01">Checkbox Test 01</label>
+                    <input type="checkbox" id="checkbox-02" name="test-02">
+                    <label for="checkbox-02">Checkbox Test 02</label>
+                    <input type="checkbox" id="checkbox-03" name="test-03">
+                    <label for="checkbox-03">Checkbox Test 03</label>
+                </div>
+<pre class="html">
+&lt;div class=&quot;checkbox-type&quot;&gt;
+
+    &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-01&quot; name=&quot;test-01&quot;&gt;
+    &lt;label for=&quot;checkbox-01&quot;&gt;Checkbox Test 01&lt;/label&gt;
+
+    &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-02&quot; name=&quot;test-02&quot;&gt;
+    &lt;label for=&quot;checkbox-02&quot;&gt;Checkbox Test 02&lt;/label&gt;
+
+    &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-03&quot; name=&quot;test-03&quot;&gt;
+    &lt;label for=&quot;checkbox-03&quot;&gt;Checkbox Test 03&lt;/label&gt;
+
+&lt;/div&gt;
+</pre>
+            </article>
             <!-- [End] 체크박스 공통 -->
-            
             <!-- [Start] 라디오버튼 공통 -->
             <article>
                 <h2>Radio Button</h2>
@@ -376,9 +546,19 @@
                     <input type="radio" id="radio2" name="test">
                     <label for="radio2">Radio Button Test 02</label>
                 </div>
+<pre class="html">
+&lt;div class=&quot;radio-type&quot;&gt;
+
+    &lt;input type=&quot;radio&quot; id=&quot;radio1&quot; name=&quot;test&quot;&gt;
+    &lt;label for=&quot;radio1&quot;&gt;Radio Button Test 01&lt;/label&gt;
+
+    &lt;input type=&quot;radio&quot; id=&quot;radio2&quot; name=&quot;test&quot;&gt;
+    &lt;label for=&quot;radio2&quot;&gt;Radio Button Test 02&lt;/label&gt;
+
+&lt;/div&gt;
+</pre>
             </article>
             <!-- [End] 라디오버튼 공통 -->
-
             <!-- [Start] 버튼 스타일 공통 -->
             <article>
                 <h2>Arrow Style</h2>
@@ -392,53 +572,92 @@
                     <div class="arrow-bottom-left"></div>
                     <div class="arrow-bottom-right"></div>
                 </div>
+<pre class="html">
+&lt;div class=&quot;arrow-top&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;arrow-bottom&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;arrow-left&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;arrow-right&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;arrow-top-left&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;arrow-top-right&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;arrow-bottom-left&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;arrow-bottom-right&quot;&gt;&lt;/div&gt;
+</pre>
             </article>
             <!-- [End] 버튼 스타일 공통 -->
-
             <!-- [Start] 버튼 스타일 공통 -->
             <article>
                 <h2>Button Style</h2>
                 <div class="btn-type-sample">
-                    <p>.btn-type-1-01</p>
-                    <button class="btn-type-1-01">버튼</button>
+                    <button type="button" class="btn-type-1-01">버튼</button>
                     <a href class="btn-type-1-01" role="button">버튼</a>
-                    <p>.btn-type-1-02</p>
-                    <button class="btn-type-1-02">버튼</button>
+<pre class="html">
+&lt;button type=&quot;button&quot; class=&quot;btn-type-1-01&quot;&gt;버튼&lt;/button&gt;
+&lt;a href class=&quot;btn-type-1-01&quot; role=&quot;button&quot;&gt;버튼&lt;/a&gt;
+</pre>
+                    <button type="button" class="btn-type-1-02">버튼</button>
                     <a href class="btn-type-1-02" role="button">버튼</a>
-                    <p>.btn-type-1-03</p>
-                    <button class="btn-type-1-03">버튼</button>
+<pre class="html">
+&lt;button type=&quot;button&quot; class=&quot;btn-type-1-02&quot;&gt;버튼&lt;/button&gt;
+&lt;a href class=&quot;btn-type-1-02&quot; role=&quot;button&quot;&gt;버튼&lt;/a&gt;
+</pre>
+                    <button type="button" class="btn-type-1-03">버튼</button>
                     <a href class="btn-type-1-03" role="button">버튼</a>
-                    <p>.btn-type-3-01</p>
-                    <button class="btn-type-3-01">버튼</button>
+<pre class="html">
+&lt;button type=&quot;button&quot; class=&quot;btn-type-1-03&quot;&gt;버튼&lt;/button&gt;
+&lt;a href class=&quot;btn-type-1-03&quot; role=&quot;button&quot;&gt;버튼&lt;/a&gt;3
+</pre>
+                    <button type="button" class="btn-type-3-01">버튼</button>
                     <a href class="btn-type-3-01" role="button">버튼</a>
-                    <p>.btn-type-3-02</p>
-                    <button class="btn-type-3-02">버튼</button>
+<pre class="html">
+&lt;button type=&quot;button&quot; class=&quot;btn-type-3-01&quot;&gt;버튼&lt;/button&gt;
+&lt;a href class=&quot;btn-type-3-01&quot; role=&quot;button&quot;&gt;버튼&lt;/a&gt;
+</pre>
+                    <button type="button" class="btn-type-3-02">버튼</button>
                     <a href class="btn-type-3-02" role="button">버튼</a>
-                    <p>.btn-type-3-03</p>
-                    <button class="btn-type-3-03">버튼</button>
+<pre class="html">
+&lt;button type=&quot;button&quot; class=&quot;btn-type-3-02&quot;&gt;버튼&lt;/button&gt;
+&lt;a href class=&quot;btn-type-3-02&quot; role=&quot;button&quot;&gt;버튼&lt;/a&gt;
+</pre>
+                    <button type="button" class="btn-type-3-03">버튼</button>
                     <a href class="btn-type-3-03" role="button">버튼</a>
-                    <p>.btn-type-2-01</p>
-                    <button class="btn-type-2-01">버튼</button>
+<pre class="html">
+&lt;button type=&quot;button&quot; class=&quot;btn-type-3-03&quot;&gt;버튼&lt;/button&gt;
+&lt;a href class=&quot;btn-type-3-03&quot; role=&quot;button&quot;&gt;버튼&lt;/a&gt;
+</pre>
+                    <button type="button" class="btn-type-2-01">버튼</button>
                     <a href class="btn-type-2-01" role="button">버튼</a>
-                    <p>.btn-type-2-02</p>
-                    <button class="btn-type-2-02">버튼</button>
+<pre class="html">
+&lt;button type=&quot;button&quot; class=&quot;btn-type-2-01&quot;&gt;버튼&lt;/button&gt;
+&lt;a href class=&quot;btn-type-2-01&quot; role=&quot;button&quot;&gt;버튼&lt;/a&gt;
+</pre>
+                    <button type="button" class="btn-type-2-02">버튼</button>
                     <a href class="btn-type-2-02" role="button">버튼</a>
-                    <p>.btn-type-2-03</p>
-                    <button class="btn-type-2-03">버튼</button>
+<pre class="html">
+button type=&quot;button&quot; class=&quot;btn-type-2-02&quot;&gt;버튼&lt;/button&gt;
+&lt;a href class=&quot;btn-type-2-02&quot; role=&quot;button&quot;&gt;버튼&lt;/a&gt;
+</pre>
+                    <button type="button" class="btn-type-2-03">버튼</button>
                     <a href class="btn-type-2-03" role="button">버튼</a>
-                    <p>.btn-type-2-04</p>
-                    <button class="btn-type-2-04">버튼</button>
+<pre class="html">
+&lt;button type=&quot;button&quot; class=&quot;btn-type-2-03&quot;&gt;버튼&lt;/button&gt;
+&lt;a href class=&quot;btn-type-2-03&quot; role=&quot;button&quot;&gt;버튼&lt;/a&gt;
+</pre>
+                    <button type="button" class="btn-type-2-04">버튼</button>
                     <a href class="btn-type-2-04" role="button">버튼</a>
-                    <p>.icon-comment</p>
+<pre class="html">
+&lt;button type=&quot;button&quot; class=&quot;btn-type-2-04&quot;&gt;버튼&lt;/button&gt;
+&lt;a href class=&quot;btn-type-2-04&quot; role=&quot;button&quot;&gt;버튼&lt;/a&gt;
+</pre>
                     <button class="icon-comment">덧글</button>
+<pre class="html">
+&lt;button class=&quot;icon-comment&quot;&gt;덧글&lt;/button&gt;
+</pre>
                 </div>
             </article>
             <!-- [End] 버튼 스타일 공통 -->
-
             <!-- [Start] 파일 아이콘 스타일 공통 -->
             <article>
                 <h2>File Icon Style</h2>
-
                 <div class="file-area-test">
                     <h3><div class="fa fa-angle-double-right"></div>첨부파일 Type 1</h3>
                     <div class="add-file-area">
@@ -472,7 +691,38 @@
                         </div>
                     </div>
                 </div>
-
+<pre class="html">
+&lt;div class=&quot;add-file-area&quot;&gt;
+    &lt;div class=&quot;file&quot;&gt;
+        &lt;a class=&quot;icon-hwp&quot; role=&quot;button&quot; href=&quot;&quot;&gt;hwp-첨부파일.hwp&lt;/a&gt;
+        &lt;button class=&quot;btn-file-remove&quot;&gt;파일삭제&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;file&quot;&gt;
+        &lt;a class=&quot;icon-doc&quot; role=&quot;button&quot; href=&quot;&quot;&gt;doc-첨부파일.doc&lt;/a&gt;
+        &lt;button class=&quot;btn-file-remove&quot;&gt;파일삭제&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;file&quot;&gt;
+        &lt;a class=&quot;icon-pdf&quot; role=&quot;button&quot; href=&quot;&quot;&gt;pdf-첨부파일.pdf&lt;/a&gt;
+        &lt;button class=&quot;btn-file-remove&quot;&gt;파일삭제&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;file&quot;&gt;
+        &lt;a class=&quot;icon-jpg&quot; role=&quot;button&quot; href=&quot;&quot;&gt;jpg-첨부파일.jpg&lt;/a&gt;
+        &lt;button class=&quot;btn-file-remove&quot;&gt;파일삭제&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;file&quot;&gt;
+        &lt;a class=&quot;icon-png&quot; role=&quot;button&quot; href=&quot;&quot;&gt;png-첨부파일.png&lt;/a&gt;
+        &lt;button class=&quot;btn-file-remove&quot;&gt;파일삭제&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;file&quot;&gt;
+        &lt;a class=&quot;icon-xls&quot; role=&quot;button&quot; href=&quot;&quot;&gt;xls-첨부파일.xls&lt;/a&gt;
+        &lt;button class=&quot;btn-file-remove&quot;&gt;파일삭제&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;file&quot;&gt;
+        &lt;a class=&quot;icon-ppt&quot; role=&quot;button&quot; href=&quot;&quot;&gt;ppt-첨부파일.ppt&lt;/a&gt;
+        &lt;button class=&quot;btn-file-remove&quot;&gt;파일삭제&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
                 <div class="file-area-test">
                     <h3><div class="fa fa-angle-double-right"></div>첨부파일 Type 2</h3>
                     <div class="add-file-upload">
@@ -488,10 +738,22 @@
                         </div>
                     </div>
                 </div>
-
+<pre class="html">
+&lt;div class=&quot;add-file-upload&quot;&gt;
+    &lt;div class=&quot;add-file-search&quot;&gt;
+        &lt;span&gt;서류 등록 :&lt;/span&gt;
+        &lt;button class=&quot;btn-type-1-02&quot;&gt;파일 올리기&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;add-file-area&quot;&gt;
+        &lt;div class=&quot;file&quot;&gt;
+            &lt;a class=&quot;icon-png&quot; role=&quot;button&quot; href&gt;첨부파일1.png&lt;/a&gt;
+            &lt;button class=&quot;btn-file-remove&quot;&gt;파일삭제&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
             </article>
             <!-- [End] 파일 아이콘 스타일 공통 -->
-
             <!-- [Start] 아코디언 스타일 공통 -->
             <article>
                 <h2>Accordion Style</h2>
@@ -503,10 +765,10 @@
                             <ul class="sub-name">
                                 <li><a href="#">중분류 1</a>
                                     <ul>
-                                         <li><a href="">세분류 1</a></li>
-                                         <li><a href="">세분류 2</a></li>
-                                         <li><a href="">세분류 3</a></li>
-                                     </ul> 
+                                        <li><a href="">세분류 1</a></li>
+                                        <li><a href="">세분류 2</a></li>
+                                        <li><a href="">세분류 3</a></li>
+                                    </ul>
                                 </li>
                                 <li><a href="#">중분류 2</a></li>
                             </ul>
@@ -525,35 +787,34 @@
                     </ul>
                     <h3><span class="fa fa-list-ul"></span>아코디언 첫번째 패널 펼침</h3>
                     <ul class="aco-open accordion-faq">
-                            <li>
-                                <a href="#" class="title-link" role="button"><span class="title-type">카테고리</span><span class="title-name">질문입니다.</span></a>
-                                <div class="sub-panel">
-                                    <p>답변입니다.</p>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="#" class="title-link" role="button"><span class="title-type">카테고리</span><span class="title-name">질문입니다.</span></a>
-                                <div class="sub-panel">
-                                    <p>답변입니다.</p>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="#" class="title-link" role="button"><span class="title-type">카테고리</span><span class="title-name">질문입니다.</span></a>
-                                <div class="sub-panel">
-                                    <p>답변입니다.</p>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="#" class="title-link" role="button"><span class="title-type">카테고리</span><span class="title-name">질문입니다.</span></a>
-                                <div class="sub-panel">
-                                    <p>답변입니다.</p>
-                                </div>
-                            </li>
-                        </ul>
+                        <li>
+                            <a href="#" class="title-link" role="button"><span class="title-type">카테고리</span><span class="title-name">질문입니다.</span></a>
+                            <div class="sub-panel">
+                                <p>답변입니다.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" class="title-link" role="button"><span class="title-type">카테고리</span><span class="title-name">질문입니다.</span></a>
+                            <div class="sub-panel">
+                                <p>답변입니다.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" class="title-link" role="button"><span class="title-type">카테고리</span><span class="title-name">질문입니다.</span></a>
+                            <div class="sub-panel">
+                                <p>답변입니다.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" class="title-link" role="button"><span class="title-type">카테고리</span><span class="title-name">질문입니다.</span></a>
+                            <div class="sub-panel">
+                                <p>답변입니다.</p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </article>
             <!-- [End] 아코디언 스타일 공통 -->
-
             <!-- [Start] 탭 스타일 공통 -->
             <article>
                 <h2>Tab Style</h2>
@@ -605,6 +866,23 @@
                         </select>
                     </div>
                 </div>
+<pre class="html">
+&lt;div class=&quot;all-pages-view&quot;&gt;
+    &lt;div class=&quot;all-page&quot;&gt;
+        &lt;span&gt;총 &lt;strong&gt;199&lt;/strong&gt;개 검색 , &lt;strong&gt;1&lt;/strong&gt;/22 page&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;select-box&quot;&gt;
+        &lt;label for=&quot;search&quot;&gt;10개씩보기&lt;/label&gt;
+        &lt;select id=&quot;search&quot; name=&quot;search-item&quot;&gt;
+            &lt;option selected=&quot;selected&quot;&gt;10개씩보기&lt;/option&gt;
+            &lt;option&gt;20개씩보기&lt;/option&gt;
+            &lt;option&gt;30개씩보기&lt;/option&gt;
+            &lt;option&gt;40개씩보기&lt;/option&gt;
+            &lt;option&gt;50개씩보기&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
             </article>
             <!-- [End] 서브 전체 페이지 선택 영역 -->
 
@@ -615,6 +893,7 @@
                 <!-- ex) class를 추가 후 컬럼 width 설정 -->
                 <div class="table-type">
                     <h3><span class="fa fa-table"></span>table-type-01</h3>
+                    <!-- [Start] table-type-01 -->
                     <table class="table-type-01">
                         <caption>Q&amp;A의 카테고리 번호,분야,제목,작성자,첨부파일,등록일 테이블 입니다</caption>
                         <colgroup>
@@ -640,7 +919,8 @@
                                 <td>175</td>
                                 <td>국내외 언론동향</td>
                                 <!-- 한 줄 이상 줄바꿈 없이 말줄임 처리 class="view-link" 적용 -->
-                                <td><a href class="btn-popup-qna-list view-link" role="button">이런저런 내용으로 공지사항합니다. 이런저런 내용으로 공지사항합니다.</a></a></td>
+                                <td class="icon-secret"><a href class="btn-popup-qna-list view-link" role="button">이런저런 내용으로 공지사항합니다. 이런저런 내용으로 공지사항합니다.</a>
+                                </td>
                                 <td>id****</td>
                                 <td class="table-download">
                                     <span class="icon-hwp"></span>
@@ -661,7 +941,8 @@
                             <tr>
                                 <td>175</td>
                                 <td>북한동향</td>
-                                <td><a href class="btn-popup-qna-list view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                                <!-- 비밀글의 경우 td안에 icon-secret 클래스 적용 -->
+                                <td class="icon-secret"><a href class="btn-popup-qna-list view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
                                 <td>id****</td>
                                 <td class="table-download">
                                     <span class="icon-hwp"></span>
@@ -745,7 +1026,155 @@
                             </tr>
                         </tbody>
                     </table>
+<pre class="html">
+&lt;table class=&quot;table-type-01&quot;&gt;
+    &lt;caption&gt;&quot;table-type-01&quot; 테이블의&quot;번호, 분야, 제목, 작성자, 첨부파일, 등록일&quot; 항목이 있습니다.&lt;/caption&gt;
+    &lt;colgroup&gt;
+        &lt;col&gt;
+        &lt;col&gt;
+        &lt;col&gt;
+        &lt;col&gt;
+        &lt;col&gt;
+        &lt;col&gt;
+    &lt;/colgroup&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;번호&lt;/th&gt;
+            &lt;th&gt;분야&lt;/th&gt;
+            &lt;th&gt;제목&lt;/th&gt;
+            &lt;th&gt;작성자&lt;/th&gt;
+            &lt;th&gt;첨부파일&lt;/th&gt;
+            &lt;th&gt;등록일&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;1&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;!-- 비밀글의 경우 td안에 icon-secret 클래스 적용 --&gt;
+            &lt;td class=&quot;icon-secret&quot;&gt;
+                &lt;!-- 한 줄 이상 줄바꿈 없이 말줄임 처리 class=&quot;view-link&quot; 적용 --&gt;
+                &lt;a href class=&quot;view-link&quot; role=&quot;button&quot;&gt;이런저런 내용으로 공지사항합니다. 이런저런 내용으로 공지사항합니다.&lt;/a&gt;
+            &lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;!--&quot;table-type-01&quot; 첨부 파일 다운로드 말풍선 table-download 클래스 적용 --&gt;
+            &lt;td class=&quot;table-download&quot;&gt;
+                &lt;span class=&quot;icon-hwp&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-doc&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-pdf&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-jpg&quot;&gt;&lt;/span&gt;
+                &lt;!-- [Start] 첨부파일 다운로드 --&gt;
+                &lt;div class=&quot;download-file&quot;&gt;
+                    &lt;strong&gt;파일명 :&lt;/strong&gt;
+                    &lt;a href=&quot;&quot;&gt;대북지원사업신청서.hwp&lt;/a&gt;
+                    &lt;a href=&quot;&quot;&gt;남북협력기금지원신청서.doc&lt;/a&gt;
+                    &lt;a href=&quot;&quot;&gt;대북지원사업자 지정신청서.pdf&lt;/a&gt;
+                    &lt;a href=&quot;&quot;&gt;대북지원사업자 지정신청서.pdf&lt;/a&gt;
+                    &lt;button type=&quot;button&quot; class=&quot;btn-download-close&quot;&gt;다운로드 팝업 닫기&lt;/button&gt;
+                &lt;/div&gt;
+                &lt;!-- [End] 첨부파일 다운로드 --&gt;
+            &lt;/td&gt;
+            &lt;td&gt;2017-09-13&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;2&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;a href class=&quot;view-link&quot; role=&quot;button&quot;&gt;이런저런 내용으로 공지사항합니다.&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td class=&quot;table-download&quot;&gt;
+                &lt;span class=&quot;icon-hwp&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-doc&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-pdf&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-jpg&quot;&gt;&lt;/span&gt;
+                &lt;div class=&quot;download-file&quot;&gt;
+                    &lt;strong&gt;파일명 :&lt;/strong&gt;
+                    &lt;a href=&quot;&quot;&gt;대북지원사업신청서.hwp&lt;/a&gt;
+                    &lt;a href=&quot;&quot;&gt;남북협력기금지원신청서.doc&lt;/a&gt;
+                    &lt;a href=&quot;&quot;&gt;대북지원사업자 지정신청서.pdf&lt;/a&gt;
+                    &lt;a href=&quot;&quot;&gt;대북지원사업자 지정신청서.pdf&lt;/a&gt;
+                    &lt;button type=&quot;button&quot; class=&quot;btn-download-close&quot;&gt;다운로드 팝업 닫기&lt;/button&gt;
+                &lt;/div&gt;
+            &lt;/td&gt;
+            &lt;td&gt;2017-09-13&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+</pre>
+                    <!-- [End] table-type-01 -->
+
+                    <!-- [Start] 테이블 하단 버튼 -->
+                    <h2>Table bottom button</h2>
+                    <!-- 버튼 가운데 위치 -->
+                    <div class="table-btn-set">
+                        <a href="" class="btn-type-3-02" role="button">버튼</a>
+                    </div>
+<pre class="html">
+&lt;div class=&quot;table-btn-set&quot;&gt;
+    &lt;a href=&quot;&quot; class=&quot;btn-type-3-02&quot; role=&quot;button&quot;&gt;버튼&lt;/a&gt;
+&lt;/div&gt;
+</pre>
+                    <!-- 버튼 좌측 위치 -->
+                    <div class="table-btn-set in-left">
+                        <a href="" class="btn-type-3-02" role="button">버튼</a>
+                    </div>
+<pre class="html">
+&lt;div class=&quot;table-btn-set in-left&quot;&gt;
+    &lt;a href=&quot;&quot; class=&quot;btn-type-3-02&quot; role=&quot;button&quot;&gt;버튼&lt;/a&gt;
+&lt;/div&gt;
+</pre>
+                    <!-- 버튼 우측 위치 -->
+                    <div class="table-btn-set in-right">
+                        <a href="" class="btn-type-3-02" role="button">버튼</a>
+                    </div>
+<pre class="html">
+&lt;div class=&quot;table-btn-set in-right&quot;&gt;
+    &lt;a href=&quot;&quot; class=&quot;btn-type-3-02&quot; role=&quot;button&quot;&gt;버튼&lt;/a&gt;
+&lt;/div&gt;
+</pre>
+                    <!-- [End] 테이블 하단 버튼 -->
+
+                    <!-- [Start] 페이징 스타일 공통 -->
+                    <h2>Paging Style</h2>
+                    <div class="paging">
+                        <button type="button" class="first-prev" aria-label="처음으로 이동"></button>
+                        <button type="button" class="prev" aria-label="이전 페이지"></button>
+                        <a href role="button">1</a>
+                        <a href role="button">2</a>
+                        <a href role="button">3</a>
+                        <a href role="button">4</a>
+                        <!-- 선택된 버튼 class="selected"로 제어 -->
+                        <a href role="button" class="selected">5</a>
+                        <a href role="button">6</a>
+                        <a href role="button">7</a>
+                        <a href role="button">8</a>
+                        <a href role="button">9</a>
+                        <a href role="button">10</a>
+                        <button type="button" class="next" " aria-label="다음 페이지"></button>
+                        <button type="button " class="last-next " aria-label="끝으로 이동"></button>
+                    </div>
+<pre class="html">
+&lt;div class=&quot;paging&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;first-prev&quot; aria-label=&quot;처음으로 이동&quot;&gt;&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;prev&quot; aria-label=&quot;이전 페이지&quot;&gt;&lt;/button&gt;
+    &lt;a href role=&quot;button&quot;&gt;1&lt;/a&gt;
+    &lt;a href role=&quot;button&quot;&gt;2&lt;/a&gt;
+    &lt;a href role=&quot;button&quot;&gt;3&lt;/a&gt;
+    &lt;a href role=&quot;button&quot;&gt;4&lt;/a&gt;
+    &lt;!-- 선택된 버튼 class=&quot;selected&quot;로 제어 --&gt;
+    &lt;a href role=&quot;button&quot; class=&quot;selected&quot;&gt;5&lt;/a&gt;
+    &lt;a href role=&quot;button&quot;&gt;6&lt;/a&gt;
+    &lt;a href role=&quot;button&quot;&gt;7&lt;/a&gt;
+    &lt;a href role=&quot;button&quot;&gt;8&lt;/a&gt;
+    &lt;a href role=&quot;button&quot;&gt;9&lt;/a&gt;
+    &lt;a href role=&quot;button&quot;&gt;10&lt;/a&gt;
+    &lt;button type=&quot;button&quot; class=&quot;next&quot;&quot; aria-label=&quot;다음 페이지&quot;&gt;&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;last-next&quot; aria-label=&quot;끝으로 이동&quot;&gt;&lt;/button&gt;
+&lt;/div&gt;
+</pre>
+                    <!-- [End] 페이징 스타일 공통 -->
+
                     <h3><span class="fa fa-table"></span>table-type-02</h3>
+                    <!-- [Start] table-type-02 -->
                     <table class="table-type-02">
                         <caption>qna 팝업</caption>
                         <colgroup>
@@ -779,400 +1208,269 @@
                             </tr>
                         </tbody>
                     </table>
+<pre class="html">
+&lt;table class=&quot;table-type-02&quot;&gt;
+    &lt;caption&gt;&quot;table-type-02&quot; 테이블의&quot;제목, 작성자, 패스워드, 첨부파일&quot; 항목이 있습니다.&lt;/caption&gt;
+    &lt;colgroup&gt;
+        &lt;col&gt;
+        &lt;col&gt;
+        &lt;col&gt;
+        &lt;col&gt;
+    &lt;/colgroup&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;th&gt;제목&lt;/th&gt;
+            &lt;td colspan=&quot;3&quot;&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;작성자&lt;/th&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;th&gt;패스워드&lt;/th&gt;
+            &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;첨부파일&lt;/th&gt;
+            &lt;td colspan=&quot;3&quot;&gt;
+                &lt;!-- [Start] 첨부파일 추가 --&gt;
+                &lt;div class=&quot;add-file-area&quot;&gt;
+                    &lt;div class=&quot;file full-name&quot;&gt;
+                        &lt;a class=&quot;icon-hwp&quot; role=&quot;button&quot; href=&quot;&quot;&gt;첨부파일1.hwp&lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;file full-name&quot;&gt;
+                        &lt;a class=&quot;icon-hwp&quot; role=&quot;button&quot; href=&quot;&quot;&gt;첨부파일2.hwp&lt;/a&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- [End] 첨부파일 추가 --&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+</pre>
+                    <!-- [End] table-type-02 -->
+                    
+                    <!-- [Start] 하단 버튼 영역 공통 -->
+                    <h2>Sub Bottom Button Style</h2>
+                    <div class="sub-bottom-btn-area">
+                        <a href=" " class="btn-type-2-04 " role="button">동의</a>
+                        <a href=" " class="btn-type-2-01 " role="button">취소</a>
+                    </div>
+<pre class="html">
+&lt;div class=&quot;sub-bottom-btn-area&quot;&gt;
+    &lt;a href=&quot;&quot; class=&quot;btn-type-2-04&quot; role=&quot;button&quot;&gt;동의&lt;/a&gt;
+    &lt;a href=&quot;&quot; class=&quot;btn-type-2-01&quot; role=&quot;button&quot;&gt;취소&lt;/a&gt;
+&lt;/div&gt;
+</pre>
+                    <!-- [End] 하단 버튼 영역 공통 -->
+
                     <h3><span class="fa fa-table"></span>table-dt-dd</h3>
+                    <!-- [Start] table-dt-dd -->
                     <dl class="table-dt-dd">
                         <dt>질문</dt>
                         <dd>
-                            이런저런 내용으로 제안합니다.<br>
-                            잘 검토하시고 답변 바랍니다.<br>
-                            이런저런 내용으로 제안합니다.<br>
-                            잘 검토하시고 답변 바랍니다.
+                            이런저런 내용으로 제안합니다.
+                            <br> 잘 검토하시고 답변 바랍니다.
+                            <br> 이런저런 내용으로 제안합니다.
+                            <br> 잘 검토하시고 답변 바랍니다.
                         </dd>
                         <dt>답변</dt>
                         <dd>이런저런 내용으로 제안합니다.</dd>
                     </dl>
+<pre class="html">
+&lt;dl class=&quot;table-dt-dd&quot;&gt;
+    &lt;dt&gt;질문&lt;/dt&gt;
+    &lt;dd&gt;
+        이런저런 내용으로 제안합니다.
+        &lt;br&gt; 잘 검토하시고 답변 바랍니다.
+        &lt;br&gt; 이런저런 내용으로 제안합니다.
+        &lt;br&gt; 잘 검토하시고 답변 바랍니다.
+    &lt;/dd&gt;
+    &lt;dt&gt;답변&lt;/dt&gt;
+    &lt;dd&gt;이런저런 내용으로 제안합니다.&lt;/dd&gt;
+&lt;/dl&gt;
+</pre>
+                    <!-- [End] table-dt-dd -->
+
                     <h3><span class="fa fa-table"></span>table-dl</h3>
+                    <!-- [Start] table-dl -->
                     <dl class="table-dl">
                         <dt>제목</dt>
                         <dd>이런저런 내용입니다.</dd>
                     </dl>
+<pre class="html">
+&lt;dl class=&quot;table-dl&quot;&gt;
+    &lt;dt&gt;제목&lt;/dt&gt;
+    &lt;dd&gt;이런저런 내용입니다.&lt;/dd&gt;
+&lt;/dl&gt;
+</pre>
+                    <!-- [End] table-dl -->
+
                     <h3><span class="fa fa-table"></span>table-li</h3>
+                    <!-- [Start] table-li -->
                     <ul class="table-li">
                         <li class="title">질문</li>
                         <li>
-                            이런저런 내용으로 제안합니다.<br>
-                            잘 검토하시고 답변 바랍니다.<br>
-                            이런저런 내용으로 제안합니다.<br>
-                            잘 검토하시고 답변 바랍니다.
+                            이런저런 내용으로 제안합니다.
+                            <br> 잘 검토하시고 답변 바랍니다.
+                            <br> 이런저런 내용으로 제안합니다.
+                            <br> 잘 검토하시고 답변 바랍니다.
                         </li>
                         <li class="title">답변</li>
                         <li>이런저런 내용으로 제안합니다.</li>
                     </ul>
+<pre class="html">
+&lt;ul class=&quot;table-li&quot;&gt;
+    &lt;li class=&quot;title&quot;&gt;질문&lt;/li&gt;
+    &lt;li&gt;
+        이런저런 내용으로 제안합니다.
+        &lt;br&gt; 잘 검토하시고 답변 바랍니다.
+        &lt;br&gt; 이런저런 내용으로 제안합니다.
+        &lt;br&gt; 잘 검토하시고 답변 바랍니다.
+    &lt;/li&gt;
+    &lt;li class=&quot;title&quot;&gt;답변&lt;/li&gt;
+    &lt;li&gt;이런저런 내용으로 제안합니다.&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+                    <!-- [End] table-li -->
+
                     <h3><span class="fa fa-table"></span>table-li</h3>
+                    <!-- [Start] table-li -->
                     <ul class="table-li">
                         <li class="title">제목</li>
                         <li>이런저런 내용입니다.</li>
                     </ul>
-                </div>
-                <h3><span class="fa fa-table"></span>table bottom button</h3>
-                <!-- 버튼 가운데 위치 -->
-                <div class="table-btn-set">
-                    <a href="" class="btn-type-3-02" role="button">버튼</a>
-                </div>
-                <!-- 버튼 좌측 위치 -->
-                <div class="table-btn-set in-left">
-                    <a href="" class="btn-type-3-02" role="button">버튼</a>
-                </div>
-                <!-- 버튼 우측 위치 -->
-                <div class="table-btn-set in-right">
-                    <a href="" class="btn-type-3-02" role="button">버튼</a>
+<pre class="html">
+&lt;ul class=&quot;table-li&quot;&gt;
+    &lt;li class=&quot;title&quot;&gt;제목&lt;/li&gt;
+    &lt;li&gt;이런저런 내용입니다.&lt;/li&gt;
+&lt;/ul&gt;   
+</pre>
+                    <!-- [End] table-li -->
                 </div>
             </article>
             <!-- [End] 테이블 스타일 공통 -->
-
+            
             <!-- [Start] 팝업 기본 스타일 -->
             <article>
-                <h2>Popup Base Style</h2>
+                <h2>Popup Button</h2>
                 <!-- 팝업 버튼 class 설정 -->
-                <a class="btn-popup-test" role="button" href>팝업 띄우기 <= 클릭</a>
+                <a class="btn-popup-test btn-type-3-02" role="button" href>팝업버튼 클릭</a>
+<pre class="html">
+&lt;a class=&quot;btn-popup-name&quot; role=&quot;button&quot; href&gt;팝업 버튼 클릭&lt;/a&gt;
+</pre>
+                <p class="popup-name">팝업버튼의 <strong>class="btn-<span class="red">popup-name</span>"</strong> 클래스명 클릭 시 해당 팝업의 <strong>data-id="<span class="red">popup-name</span>"</strong> 와 연결되어 팝업이 띄워지도록 설정 되었습니다.<br>
+                빨간색 글자의 <strong class="red">popup-name</strong> 은 파일 네이밍을 동일하게 규칙적으로 사용합니다.</p>
+                <strong class="red">name</strong>은 파일명과 동일하게 작성합니다.
+            </article>
+            <article>
+                <h2>Popup Base Style</h2>
+<pre class="html">
+&lt;div class=&quot;popup&quot; data-id=&quot;popup-name&quot;&gt;
+
+    &lt;!-- [Start] 팝업 헤드라인 --&gt;
+    &lt;header class=&quot;popup-headline&quot;&gt;
+        &lt;h4&gt;팝업 제목&lt;/h4&gt;
+        &lt;button type=&quot;button&quot; class=&quot;popup-close&quot;&gt;창 닫기&lt;/button&gt;
+    &lt;/header&gt;
+    &lt;!-- [End] 팝업 헤드라인 --&gt;
+
+    &lt;!-- [Start] 팝업 콘텐츠 --&gt;
+    &lt;div class=&quot;popup-content&quot;&gt;
+        &lt;p&gt;이 곳에 팝업 상세내용 작성하시면 됩니다.&lt;/p&gt;
+
+        &lt;!-- [Start] 팝업 버튼 --&gt;
+        &lt;div class=&quot;popup-btn-set&quot;&gt;
+            &lt;!-- 닫기 버튼 필수 (접근성) --&gt;
+            &lt;button type=&quot;button&quot; class=&quot;popup-close&quot;&gt;닫기&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;!-- [End] 팝업 버튼 --&gt;
+
+    &lt;/div&gt;
+    &lt;!-- [End] 팝업 콘텐츠 --&gt;
+
+&lt;/div&gt;
+</pre>
+<pre class="js">
+// 팝업 버튼 (class=&quot;btn-popup-name&quot;)
+$('.btn-popup-name').on('click', function(e) {
+    e.preventDefault();
+    // 팝업 찾아 열기 (data-id=&quot;popup-name&quot;)
+    $.popupId($popups, 'popup-name').open();
+});
+</pre>
             </article>
             <!-- [End] 팝업 기본 스타일 -->
-
-            <!-- [Start] 페이징 스타일 공통 -->
-            <article>
-                <h2>Paging Style</h2>
-                <div class="paging">
-                    <button type="button" class="first-prev" aria-label="처음으로 이동"></button>
-                    <button type="button" class="prev" aria-label="이전 페이지"></button>
-                    <a href role="button">1</a>
-                    <a href role="button">2</a>
-                    <a href role="button">3</a>
-                    <a href role="button">4</a>
-                    <!-- 선택된 버튼 class="selected"로 제어 -->
-                    <a href role="button" class="selected">5</a>
-                    <a href role="button">6</a>
-                    <a href role="button">7</a>
-                    <a href role="button">8</a>
-                    <a href role="button">9</a>
-                    <a href role="button">10</a>
-                    <button type="button" class="next" " aria-label="다음 페이지"></button>
-                    <button type="button" class="last-next" aria-label="끝으로 이동"></button>
-                </div>
-            </article>
-            <!-- [End] 페이징 스타일 공통 -->
 
             <!-- [Start] 등록 완료 스타일 공통 -->
             <article>
                 <h2>Sub Complete Style</h2>
+                <!-- 등록완료 Type 1 -->
                 <div class="sub-completed">
-                    <p class="message">등록이 <span>완료</span> 되었습니다.</p><br>
-                    <a class="btn-completed" role="button" href>완료</a>
+                    <p class="message">등록이 <span>완료</span> 되었습니다.</p>
                 </div>
+<pre class="html">
+&lt;div class=&quot;sub-completed&quot;&gt;
+    &lt;p class=&quot;message&quot;&gt;등록이 &lt;span&gt;완료&lt;/span&gt; 되었습니다.&lt;/p&gt;
+&lt;/div&gt;
+</pre>
+                <!-- 등록완료 Type 2 -->
+                <div class="sub-completed-big">
+                    <p class="message">등록이 <span>완료</span> 되었습니다.</p>
+                </div>
+<pre class="html">
+&lt;div class=&quot;sub-completed-big&quot;&gt;
+    &lt;p class=&quot;message&quot;&gt;등록이 &lt;span&gt;완료&lt;/span&gt; 되었습니다.&lt;/p&gt;
+&lt;/div&gt;
+</pre>
             </article>
             <!-- [End] 등록 완료 스타일 공통 -->
 
-            <!-- [Start] 서브 컨텐츠 타이틀 공통 -->
             <article>
-                <h2>Sub Content Box Title Style</h2>
+                <h2>Sub Content Box Title &amp; Form Style</h2>
+
+                <!-- [Start] 서브 컨텐츠 타이틀 공통 -->
                 <article class="content-box-area">
-                    <h3>담당자 조회</h3>
-                </article>
-            </article>
-            <!-- [End] 서브 컨텐츠 타이틀 공통 -->
+                    <h3>서브 컨텐츠 타이틀</h3>
 
-            <!-- [Start] 서브 컨텐츠 폼 공통 -->
-            <article>
-                <h2>Sub Content Box Form Style</h2>
-                <div class="content-form-area">
-                    <div class="form-group">
-                        <div class="input-area">
-                            <input type="text" id="username" name="username" required="required" />
-                            <label for="username">담당자 ID</label>
-                            <br>
-                            <input type="password" id="password" name="password" required="required" />
-                            <label for="password">비밀번호</label>
+                    <!-- [Start] 서브 컨텐츠 폼 공통 -->
+                    <div class="content-form-area">
+                        <div class="form-group">
+                            <div class="input-area">
+                                <input type="text " id="username " name="username " required="required " />
+                                <label for="username">담당자 ID</label>
+                                <br>
+                                <input type="password " id="password " name="password " required="required " />
+                                <label for="password">비밀번호</label>
+                            </div>
+                            <button class="btn-input-area">탈퇴</button>
                         </div>
-                        <button class="btn-input-area">탈퇴</button>
                     </div>
-                </div>
-            </article>
-            <!-- [End] 서브 컨텐츠 폼 공통 -->
+                    <!-- [End] 서브 컨텐츠 폼 공통 -->
 
-            <!-- [Start] 하단 버튼 영역 공통 -->
-            <article>
-                <h2>Sub Buttom Button Style</h2>
-                <div class="sub-bottom-btn-area">
-                    <a href="" class="btn-type-2-04" role="button">동의</a>
-                    <a href="" class="btn-type-2-01" role="button">취소</a>
-                </div>
-            </article>
-            <!-- [End] 하단 버튼 영역 공통 -->
+                </article>
+                <!-- [End] 서브 컨텐츠 타이틀 공통 -->
 
-            <!-- [Start] 서브 신청 절차 영역 공통 -->
-            <article>
-                <h2>Sub Buttom Button Style</h2>
-                <div class="porgress-area-test">
-                    <h3><div class="fa fa-angle-double-right"></div>.porgress-area.bar-step0</h3>
-                    <!-- [Start] 진행 순서 버튼 -->
-                    <div class="step-area">
-                        <!-- class명 "bar-step1 ~ bar-step5" 까지 진행률 단계 스타일 제어 -->
-                        <ul class="porgress-area bar-step0">
-                            <li>
-                                <!-- 활성화 스탭 class명 "step-open" 적용 -->
-                                <div class="step-open">
-                                    <div>Step 1</div>
-                                    <a href="" class="btn-step" role="button">가입여부 확인</a>
-                                </div>
-                            </li>
-                            <li>
-                                <!-- 비활성화 스탭 class명 "step-close" 적용 -->
-                                <div class="step-close">
-                                    <div>Step 2</div>
-                                    <a href="" class="btn-step" role="button">신청자 정보</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="step-close">
-                                    <div>Step 3</div>
-                                    <a href="" class="btn-step" role="button">단체기본 정보</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="step-close">
-                                    <div>Step 4</div>
-                                    <a href="" class="btn-step" role="button">연혁 정보</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="step-close">
-                                    <div>Step 5</div>
-                                    <a href="" class="btn-step" role="button">구비서류</a>
-                                </div>
-                            </li>
-                        </ul>
-                        <p class="help-text">
-                            <span class="icon-help">안내</span>2016년 이전에 대북지원사업자로 등록하신 단체는 공문 및 신청양식을 작성하신 후 <a class="help-email" href="mailto:abcd@efghijk.com">abcd@efghijk.com</a>으로 보내주시기 바랍니다.
-                        </p>
-                    </div>
-                    <!-- [End] 진행 순서 버튼 -->
-                    <h3><div class="fa fa-angle-double-right"></div>.porgress-area.bar-step1</h3>
-                    <!-- [Start] 진행 순서 버튼 -->
-                    <div class="step-area">
-                        <!-- class명 "bar-step1 ~ bar-step5" 까지 진행률 단계 스타일 제어 -->
-                        <ul class="porgress-area bar-step1">
-                            <li>
-                                <!-- 활성화 스탭 class명 "step-open" 적용 -->
-                                <div class="step-open">
-                                    <div>Step 1</div>
-                                    <a href="" class="btn-step" role="button">가입여부 확인</a>
-                                </div>
-                            </li>
-                            <li>
-                                <!-- 비활성화 스탭 class명 "step-close" 적용 -->
-                                <div class="step-close">
-                                    <div>Step 2</div>
-                                    <a href="" class="btn-step" role="button">신청자 정보</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="step-close">
-                                    <div>Step 3</div>
-                                    <a href="" class="btn-step" role="button">단체기본 정보</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="step-close">
-                                    <div>Step 4</div>
-                                    <a href="" class="btn-step" role="button">연혁 정보</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="step-close">
-                                    <div>Step 5</div>
-                                    <a href="" class="btn-step" role="button">구비서류</a>
-                                </div>
-                            </li>
-                        </ul>
-                        <p class="help-text">
-                            <span class="icon-help">안내</span>2016년 이전에 대북지원사업자로 등록하신 단체는 공문 및 신청양식을 작성하신 후 <a class="help-email" href="mailto:abcd@efghijk.com">abcd@efghijk.com</a>으로 보내주시기 바랍니다.
-                        </p>
-                    </div>
-                    <!-- [End] 진행 순서 버튼 -->
-                    <h3><div class="fa fa-angle-double-right"></div>.porgress-area.bar-step2</h3>
-                    <!-- [Start] 진행 순서 버튼 -->
-                    <div class="step-area">
-                        <!-- class명 "bar-step1 ~ bar-step5" 까지 진행률 단계 스타일 제어 -->
-                        <ul class="porgress-area bar-step2">
-                            <li>
-                                <!-- 활성화 스탭 class명 "step-open" 적용 -->
-                                <div class="step-open">
-                                    <div>Step 1</div>
-                                    <a href="" class="btn-step" role="button">가입여부 확인</a>
-                                </div>
-                            </li>
-                            <li>
-                                <!-- 비활성화 스탭 class명 "step-close" 적용 -->
-                                <div class="step-close">
-                                    <div>Step 2</div>
-                                    <a href="" class="btn-step" role="button">신청자 정보</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="step-close">
-                                    <div>Step 3</div>
-                                    <a href="" class="btn-step" role="button">단체기본 정보</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="step-close">
-                                    <div>Step 4</div>
-                                    <a href="" class="btn-step" role="button">연혁 정보</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="step-close">
-                                    <div>Step 5</div>
-                                    <a href="" class="btn-step" role="button">구비서류</a>
-                                </div>
-                            </li>
-                        </ul>
-                        <p class="help-text">
-                            <span class="icon-help">안내</span>2016년 이전에 대북지원사업자로 등록하신 단체는 공문 및 신청양식을 작성하신 후 <a class="help-email" href="mailto:abcd@efghijk.com">abcd@efghijk.com</a>으로 보내주시기 바랍니다.
-                        </p>
-                    </div>
-                    <!-- [End] 진행 순서 버튼 -->
-                    <h3><div class="fa fa-angle-double-right"></div>.porgress-area.bar-step3</h3>
-                    <!-- [Start] 진행 순서 버튼 -->
-                    <div class="step-area">
-                        <!-- class명 "bar-step1 ~ bar-step5" 까지 진행률 단계 스타일 제어 -->
-                        <ul class="porgress-area bar-step3">
-                            <li>
-                                <!-- 활성화 스탭 class명 "step-open" 적용 -->
-                                <div class="step-open">
-                                    <div>Step 1</div>
-                                    <a href="" class="btn-step" role="button">가입여부 확인</a>
-                                </div>
-                            </li>
-                            <li>
-                                <!-- 비활성화 스탭 class명 "step-close" 적용 -->
-                                <div class="step-close">
-                                    <div>Step 2</div>
-                                    <a href="" class="btn-step" role="button">신청자 정보</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="step-close">
-                                    <div>Step 3</div>
-                                    <a href="" class="btn-step" role="button">단체기본 정보</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="step-close">
-                                    <div>Step 4</div>
-                                    <a href="" class="btn-step" role="button">연혁 정보</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="step-close">
-                                    <div>Step 5</div>
-                                    <a href="" class="btn-step" role="button">구비서류</a>
-                                </div>
-                            </li>
-                        </ul>
-                        <p class="help-text">
-                            <span class="icon-help">안내</span>2016년 이전에 대북지원사업자로 등록하신 단체는 공문 및 신청양식을 작성하신 후 <a class="help-email" href="mailto:abcd@efghijk.com">abcd@efghijk.com</a>으로 보내주시기 바랍니다.
-                        </p>
-                    </div>
-                    <!-- [End] 진행 순서 버튼 -->
-                    <h3><div class="fa fa-angle-double-right"></div>.porgress-area.bar-step4</h3>
-                    <!-- [Start] 진행 순서 버튼 -->
-                    <div class="step-area">
-                        <!-- class명 "bar-step1 ~ bar-step5" 까지 진행률 단계 스타일 제어 -->
-                        <ul class="porgress-area bar-step4">
-                            <li>
-                                <!-- 활성화 스탭 class명 "step-open" 적용 -->
-                                <div class="step-open">
-                                    <div>Step 1</div>
-                                    <a href="" class="btn-step" role="button">가입여부 확인</a>
-                                </div>
-                            </li>
-                            <li>
-                                <!-- 비활성화 스탭 class명 "step-close" 적용 -->
-                                <div class="step-close">
-                                    <div>Step 2</div>
-                                    <a href="" class="btn-step" role="button">신청자 정보</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="step-close">
-                                    <div>Step 3</div>
-                                    <a href="" class="btn-step" role="button">단체기본 정보</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="step-close">
-                                    <div>Step 4</div>
-                                    <a href="" class="btn-step" role="button">연혁 정보</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="step-close">
-                                    <div>Step 5</div>
-                                    <a href="" class="btn-step" role="button">구비서류</a>
-                                </div>
-                            </li>
-                        </ul>
-                        <p class="help-text">
-                            <span class="icon-help">안내</span>2016년 이전에 대북지원사업자로 등록하신 단체는 공문 및 신청양식을 작성하신 후 <a class="help-email" href="mailto:abcd@efghijk.com">abcd@efghijk.com</a>으로 보내주시기 바랍니다.
-                        </p>
-                    </div>
-                    <!-- [End] 진행 순서 버튼 -->
-                    <h3><div class="fa fa-angle-double-right"></div>.porgress-area.bar-step5</h3>
-                    <!-- [Start] 진행 순서 버튼 -->
-                    <div class="step-area">
-                        <!-- class명 "bar-step1 ~ bar-step5" 까지 진행률 단계 스타일 제어 -->
-                        <ul class="porgress-area bar-step5">
-                            <li>
-                                <!-- 활성화 스탭 class명 "step-open" 적용 -->
-                                <div class="step-open">
-                                    <div>Step 1</div>
-                                    <a href="" class="btn-step" role="button">가입여부 확인</a>
-                                </div>
-                            </li>
-                            <li>
-                                <!-- 비활성화 스탭 class명 "step-close" 적용 -->
-                                <div class="step-close">
-                                    <div>Step 2</div>
-                                    <a href="" class="btn-step" role="button">신청자 정보</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="step-close">
-                                    <div>Step 3</div>
-                                    <a href="" class="btn-step" role="button">단체기본 정보</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="step-close">
-                                    <div>Step 4</div>
-                                    <a href="" class="btn-step" role="button">연혁 정보</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="step-close">
-                                    <div>Step 5</div>
-                                    <a href="" class="btn-step" role="button">구비서류</a>
-                                </div>
-                            </li>
-                        </ul>
-                        <p class="help-text">
-                            <span class="icon-help">안내</span>2016년 이전에 대북지원사업자로 등록하신 단체는 공문 및 신청양식을 작성하신 후 <a class="help-email" href="mailto:abcd@efghijk.com">abcd@efghijk.com</a>으로 보내주시기 바랍니다.
-                        </p>
-                    </div>
-                    <!-- [End] 진행 순서 버튼 -->
-                </div>
+<pre class="html">
+&lt;article class=&quot;content-box-area&quot;&gt;
+    &lt;h3&gt;서브 컨텐츠 타이틀&lt;/h3&gt;
+    &lt;p&gt;서브 컨텐츠 타이틀의 내용을 작성합니다.&lt;/p&gt;
+&lt;/article&gt;
+</pre>
+<pre class="html">
+&lt;div class=&quot;content-form-area&quot;&gt;
+    &lt;div class=&quot;form-group&quot;&gt;
+        &lt;div class=&quot;input-area&quot;&gt;
+            &lt;input type=&quot;text&quot; id=&quot;username&quot; name=&quot;username&quot; required=&quot;required&quot; /&gt;
+            &lt;label for=&quot;username&quot;&gt;담당자 ID&lt;/label&gt;
+            &lt;br&gt;
+            &lt;input type=&quot;password&quot; id=&quot;password&quot; name=&quot;password&quot; required=&quot;required&quot; /&gt;
+            &lt;label for=&quot;password&quot;&gt;비밀번호&lt;/label&gt;
+        &lt;/div&gt;
+        &lt;button class=&quot;btn-input-area&quot;&gt;탈퇴&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
             </article>
-            <!-- [End] 서브 신청 절차 영역 공통 -->
 
         </section>
     </main>

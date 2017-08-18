@@ -6,6 +6,7 @@
 
 
 
+
 /* 회원서비스 > 단체정보관리 > 변경사항요청 조회진행중
 html/request-change.html */
 
@@ -72,166 +73,6 @@ html/request-change.html */
 
 
 
-/* 회원서비스 > 게시판 상세 내용
-html/notice-board.html */
-
-.notice-board-content .all-pages-view {
-    margin-top: 12px;
-}
-
-.notice-board-content .table-type-01 tr td:nth-child(3) {
-    text-align: left;
-}
-
-.notice-board-content .sub-top-button-area {
-    float: right;
-    margin-top: 10px;
-}
-
-.notice-board-content .btn-type-1-02 {
-    width: 106px;
-}
-
-.notice-board-content .tablist a:nth-child(5n) {
-    margin-bottom: 2px;
-}
-
-.notice-board-content .table-type-01 .table-download .download-file strong {
-    display: inline-block;
-}
-
-.notice-board-content .table-type-01 .table-download .download-file .icon-popup-close {
-    display: inline-block;
-    vertical-align: middle;
-    float: right;
-    margin-top: 6px;
-    width: 28px;
-    height: 20px;
-}
-
-.notice-board-content .table-type-01 .table-download .download-file .icon-popup-close:after {
-    content: " ";
-}
-
-.notice-board-content .all-page strong:nth-child(2) {
-    margin-left: 18px;
-}
-
-[class^="table-type-"] .table-download .download-file .btn-download-close {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    width: 20px;
-    height: 20px;
-    text-indent: -9999px;
-}
-
-[class^="table-type-"] .table-download .download-file .btn-download-close:before {
-    position: absolute;
-    top: 9px;
-    left: 0;
-    display: block;
-    width: 20px;
-    height: 1px;
-    background: #8aa3b7;
-    transform: rotate(45deg);
-    content: "";
-}
-
-[class^="table-type-"] .table-download .download-file .btn-download-close:after {
-    position: absolute;
-    top: 9px;
-    left: 0;
-    display: block;
-    width: 20px;
-    height: 1px;
-    background: #8aa3b7;
-    transform: rotate(-45deg);
-    content: "";
-}
-
-
-
-/* 게시판 판업 */
-
-.popup-notice-board-write .table-type-02 .select-box {
-    width: 100%;
-}
-
-.popup-notice-board-write .table-type-02 .td-title p {
-    height: 30px;
-    line-height: 30px;
-    padding: 0 10px;
-    border: 1px solid #dbdbdb;
-    background: #fff;
-}
-
-.popup-notice-board-write .table-type-02 .checkbox-type {
-    margin-top: 11px;
-    padding-bottom: 6px;
-}
-
-.popup-notice-board-write .table-type-02 .checkbox-type span {
-    color: #757575;
-}
-
-.popup-notice-board-write .table-type-02 tr:nth-child(3) td {
-    padding: 6px 20px;
-}
-
-.popup-notice-board-write .table-type-02 .add-file-area {
-    margin-left: 83px;
-}
-
-
-
-/* 기금사업신청 > 사업 신청
-html/business-appllication.html */
-
-.business-application #panel2 .table-type-02 tr th {
-    height: 68px;
-}
-
-.business-application #panel3 .table-type-02 tr th {
-    letter-spacing: -1px;
-}
-
-.business-application #panel3 .table-type-02 .icon-hwp {
-    width: 325px;
-}
-
-.business-application #panel3 .table-type-02 .btn-file-remove {
-    float: left;
-}
-
-.business-application #panel3 .table-type-02 .btn-type-1-02 {
-    float: right;
-    width: 126px;
-}
-
-.business-application #panel3 .table-type-02 .add-file-area {
-    padding-left: 10px;
-}
-
-.business-application #panel3 .table-type-02 .add-file-area .file {
-    width: 508px;
-}
-
-.business-application #panel3 .table-type-02 .add-file-area .file .btn-file-remove {
-    float: left;
-}
-
-.business-application #panel3 .table-type-02 .add-file-area .file a[class^="icon-"] {
-    width: 317px;
-}
-
-.business-application #panel3 .table-type-02 .add-file-area .btn-type-1-02 {
-    width: 126px;
-    float: right;
-}
-
-
-
 /* 기금사업신청 > 결과조회
 html/view-results.html */
 
@@ -255,6 +96,7 @@ html/view-results.html */
 .view-results .btn-type-1-01 {
     width: 90px;
 }
+
 
 
 

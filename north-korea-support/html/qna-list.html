@@ -226,7 +226,7 @@
                         <label class="search-keyword">
                             <input type="text" aria-label="검색 키워드 입력하세요."/>
                         </label>
-                        <button class="btn-lookup">조회</button>
+                        <button type="button" class="btn-lookup">조회</button>
                     </li>
                 </ul>
                 <!-- [End] 검색 영역 -->
@@ -255,26 +255,26 @@
                     <colgroup>
                         <col width="54">
                         <col>
-                        <col width="340">
                         <col width="110">
-                        <col>
-                        <col>
+                        <col width="140">
+                        <col width="110">
+                        <col width="140">
                     </colgroup>
                     <thead>
                         <tr>
                             <th>번호</th>
-                            <th>분야</th>
                             <th>제목</th>
                             <th>작성자</th>
                             <th>첨부파일</th>
+                            <th>조회수</th>
                             <th>등록일</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>175</td>
-                            <td>국내외 언론동향</td>
-                            <td><a href class="btn-popup-qna-list view-link" role="button">이런저런 내용으로 공지사항합니다.</a></a></td>
+                            <!-- 비밀글의 경우 td안에 icon-secret 클래스 적용 -->
+                            <td class="icon-secret"><a href class="btn-popup-qna-list view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
                             <td>id****</td>
                             <td class="table-download">
                                 <span class="icon-hwp"></span>
@@ -287,14 +287,15 @@
                                     <a href="">남북협력기금지원신청서.doc</a>
                                     <a href="">대북지원사업자 지정신청서.pdf</a>
                                     <a href="">대북지원사업자 지정신청서.pdf</a>
+                                    <button type="button" class="btn-download-close">다운로드 팝업 닫기</button>
                                 </div>
                             </td>
+                            <td>123</td>
                             <td>2017-12-11</td>
                         </tr>
                         <tr>
                             <td>175</td>
-                            <td>북한동향</td>
-                            <td><a href class="btn-popup-qna-list view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
+                            <td class="icon-secret"><a href class="btn-popup-qna-list view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
                             <td>id****</td>
                             <td class="table-download">
                                 <span class="icon-hwp"></span>
@@ -307,72 +308,74 @@
                                     <a href="">남북협력기금지원신청서.doc</a>
                                     <a href="">대북지원사업자 지정신청서.pdf</a>
                                     <a href="">대북지원사업자 지정신청서.pdf</a>
+                                    <button type="button" class="btn-download-close">다운로드 팝업 닫기</button>
                                 </div>
                             </td>
+                            <td>123</td>
                             <td>2017-12-11</td>
                         </tr>
                         <tr>
                             <td>175</td>
-                            <td>행사정보</td>
                             <td><a href class="btn-popup-qna-list view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
-                            <td>id****</td>
                             <td class="table-download"></td>
+                            <td>id****</td>
+                            <td>123</td>
                             <td>2017-12-11</td>
                         </tr>
                         <tr>
                             <td>175</td>
-                            <td>기타</td>
                             <td><a href class="btn-popup-qna-list view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
-                            <td>id****</td>
                             <td class="table-download"></td>
+                            <td>id****</td>
+                            <td>123</td>
                             <td>2017-12-11</td>
                         </tr>
                         <tr>
                             <td>175</td>
-                            <td>북한동향</td>
                             <td><a href class="btn-popup-qna-list view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
-                            <td>id****</td>
                             <td class="table-download"></td>
+                            <td>id****</td>
+                            <td>123</td>
                             <td>2017-12-11</td>
                         </tr>
                         <tr>
                             <td>175</td>
-                            <td>행사정보</td>
                             <td><a href class="btn-popup-qna-list view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
-                            <td>id****</td>
                             <td class="table-download"></td>
+                            <td>id****</td>
+                            <td>123</td>
                             <td>2017-12-11</td>
                         </tr>
                         <tr>
                             <td>175</td>
-                            <td>기타</td>
                             <td><a href class="btn-popup-qna-list view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
-                            <td>id****</td>
                             <td class="table-download"></td>
+                            <td>id****</td>
+                            <td>123</td>
                             <td>2017-12-11</td>
                         </tr>
                         <tr>
                             <td>175</td>
-                            <td>국내외 언론동향</td>
                             <td><a href class="btn-popup-qna-list view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
-                            <td>id****</td>
                             <td class="table-download"></td>
+                            <td>id****</td>
+                            <td>123</td>
                             <td>2017-12-11</td>
                         </tr>
                         <tr>
                             <td>175</td>
-                            <td>국내외 언론동향</td>
                             <td><a href class="btn-popup-qna-list view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
-                            <td>id****</td>
                             <td class="table-download"></td>
+                            <td>id****</td>
+                            <td>123</td>
                             <td>2017-12-11</td>
                         </tr>
                         <tr>
                             <td>175</td>
-                            <td>기타</td>
                             <td><a href class="btn-popup-qna-list view-link" role="button">이런저런 내용으로 공지사항합니다.</a></td>
-                            <td>id****</td>
                             <td class="table-download"></td>
+                            <td>id****</td>
+                            <td>123</td>
                             <td>2017-12-11</td>
                         </tr>
                     </tbody>
@@ -436,7 +439,7 @@
     </header>
     <!-- [End] 팝업 헤드라인 -->
     <!-- [Start] 팝업 콘텐츠 -->
-    <div class="popup-content popup-qna-content">
+    <div class="popup-content popup-qna-list">
         <div class="btn-tr-set">
             <button class="btn-type-1-02">수정</button>
             <button class="btn-type-1-02">삭제</button>
@@ -462,18 +465,20 @@
                 </tr>
                 <tr>
                     <th>첨부파일</th>
-                    <td class="add-file-area" colspan="3">
-                        <div class="file full-name">
-                            <a class="icon-hwp" role="button" href>첨부파일1.hwp</a>
-                        </div>
-                        <div class="file full-name">
-                            <a class="icon-hwp" role="button" href>첨부파일2.hwp</a>
+                    <td colspan="3">
+                        <div class="add-file-area">
+                            <div class="file full-name">
+                                <a class="icon-hwp" role="button" href>첨부파일1.hwp</a>
+                            </div>
+                            <div class="file full-name">
+                                <a class="icon-hwp" role="button" href>첨부파일2.hwp</a>
+                            </div>
                         </div>
                     </td>
                 </tr>
             </tbody>
         </table>
-        <dl class="table-dt-dd">
+        <dl class="table-dt-dd comment-upload">
             <dt>질문</dt>
             <dd>
                 이런저런 내용으로 제안합니다.<br>
@@ -481,12 +486,51 @@
                 이런저런 내용으로 제안합니다.<br>
                 잘 검토하시고 답변 바랍니다.
             </dd>
-            <dt>답변</dt>
+            <dt>답변 <button class="icon-comment" type="button">덧글</button></dt>
             <dd>
                 <p><span class="admin">관리자</span><span class="date">(2017-05-04)</span></p>
                 이런저런 내용으로 제안합니다.
+                <div class="comment-edit-area">
+                    <div class="input-type">
+                        <label for="comment-password">비밀번호</label>
+                        <input type="password" id="comment-password" name="comment-password" required="required" />
+                    </div>
+                    <button class="comment-edit" type="button">수정</button>
+                    <button class="comment-delete" type="button">삭제</button>
+                </div>
             </dd>
         </dl>
+        <table class="table-type-02 qna-comments">
+            <caption>>Q&amp;A 덧글 테이블의 제목, 작성자, 비밀번호 항목이 있습니다.</caption>
+            <colgroup>
+                <col width="140">
+                <col>
+                <col width="140">
+                <col>
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th>제목</th>
+                    <td colspan="3">
+                        <textarea class="textarea"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <th>작성자</th>
+                    <td>
+                        <div class="input-type full">
+                            <input type="text" name="" aria-label="작성자명 입력하세요.">
+                        </div>
+                    </td>
+                    <th>비밀번호</th>
+                    <td>
+                        <div class="input-type full">
+                            <input type="text" name="" aria-label="비밀번호 입력하세요.">
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
         <!-- [Start] 팝업 버튼 -->
         <div class="popup-btn-set">
             <button class="popup-save">저장하기</button>
@@ -508,7 +552,7 @@
     </header>
     <!-- [End] 팝업 헤드라인 -->
     <!-- [Start] 팝업 콘텐츠 -->
-    <div class="popup-content popup-qna-content">
+    <div class="popup-content popup-qna-write">
         <table class="table-type-02">
             <caption>Q&amp;A 입력 내용 테이블의 제목, 작성자, 패스워드, 보안문자, 첨부파일 항목이 있습니다.</caption>
             <colgroup>
@@ -521,32 +565,26 @@
                 <tr>
                     <th>제목</th>
                     <td colspan="3">
-                        <div class="input-type">
-                            <label>
-                                <input type="text"/>
-                            </label>
+                        <div class="input-type full">
+                            <input type="text" aria-label="제목 입력하세요."/>
                         </div>
                         <div class="checkbox-type secret-article">
                             <input type="checkbox" id="secretArticle" name="secretArticle">
-                            <label for="secretArticle">비밀글 (체크시 작성자만 내용을 확인할 수 있습니다.)</label>
+                            <label for="secretArticle">비밀글 <span>(체크시 작성자만 내용을 확인할 수 있습니다.)</span></label>
                         </div>
                     </td>
                 </tr>
                 <tr>
                     <th for="username">작성자</th>
                     <td>
-                        <div class="input-type">
-                            <label>
-                                <input type="text" id="username" name="username" required="required" />
-                            </label>
+                        <div class="input-type full">
+                            <input type="text" id="username" name="username" required="required" aria-label="작성자명 입력하세요." />
                         </div>
                     </td>
                     <th for="password">패스워드</th>
                     <td>
-                        <div class="input-type">
-                            <label>
-                                <input type="password" id="password" name="password" required="required"/>
-                            </label>
+                        <div class="input-type full">
+                            <input type="password" id="password" name="password" required="required" aria-label="패스워드 입력하세요."/>
                         </div>
                     </td>
                 </tr>
@@ -554,9 +592,7 @@
                     <th>보안문자</th>
                     <td class="security-text-area" colspan="3">
                         <div class="input-type">
-                            <label>
-                                <input type="text"/>
-                            </label>
+                            <input type="text" aria-label="보안문자 입력하세요."/>
                         </div>
                         <div class="security-text">보안문자 영역</div>
                         <strong>* 보안문자를 확인하시고 입력해주세요.</strong>
@@ -565,15 +601,13 @@
                 <tr>
                     <th>첨부파일</th>
                     <td colspan="3">
-                        <div class="add-file-sherch">
+                        <div class="add-file-search">
                             <span>파일추가 : </span>
-                            <div class="file-sherch">
+                            <div class="file-search">
                                 <div class="input-type">
-                                    <label>
-                                        <input type="text"/>
-                                    </label>
+                                    <input type="text" aria-label="파일추가 되었습니다."/>
                                 </div>
-                                <button class="btn-file-sherch">파일 검색</button>
+                                <button class="btn-file-search">파일 검색</button>
                             </div>
                         </div>
                         <div class="add-file-area">

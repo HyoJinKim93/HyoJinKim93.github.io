@@ -73,6 +73,7 @@ html/request-change.html */
 
 
 
+
 /* 기금사업신청 > 결과조회
 html/view-results.html */
 
@@ -127,7 +128,6 @@ html/view-results.html */
     width: 140px;
     letter-spacing: -1px;
     line-height: 23px;
-    padding: 70px 20px;
 }
 
 .popup-view-results table td .checkbox-type li,
@@ -148,6 +148,42 @@ html/view-results.html */
     text-align: right;
 }
 
+.popup-view-results .table-dl dt {
+    padding-top: 55px;
+    height: 176px;
+}
+
 .popup-view-results .table-dl p {
     float: left;
+}
+
+.popup-view-results .table-dl .add-file-area .icon-hwp {
+    float: right;
+    width: 210px;
+}
+
+.popup-view-results .table-dl .add-file-area {
+    padding-top: 5px;
+}
+
+.popup-view-results .table-dl .add-file-area .file {
+    line-height: 33px;
+}
+
+.popup-view-results .table-dl .icon-hwp:before,
+.icon-secret:before,
+.icon-doc:before,
+.icon-pdf:before,
+.icon-jpg:before,
+.icon-png:before,
+.icon-xls:before,
+.icon-ppt:before {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    display: inline-block;
+    width: 14px;
+    height: 16px;
+    content: "";
+    background: url(../../assets/images/icon/icon-hwp.png) no-repeat;
 }

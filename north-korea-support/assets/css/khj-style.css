@@ -1,9 +1,32 @@
 /*# sourceMappingURL=map/khj-style.css.map */
 
 .service-survey .service-survey-box {
+    display: inline-block;
+    width: 930px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+.service-survey .service-survey-box>div {
+    display: inline-block;
     width: 300px;
-    height: 233px;
     background-color: #e6e6e6;
-    border: 1px solid #c8cacc;
-    border-radius:
+    height: 233px;
+    margin-right: 10px;
+    vertical-align: top;
+    text-align: center;
+    border: 1px solid #e1e4e6;
+    border-radius: 7px;
+    padding: 10px;
+    position: relative;
+}
+
+.service-survey .service-survey-box>div::before {
+    position: absolute;
+    top: 0;
+    background: #fff url(../../assets/images/bg/bg-service-survey.png) no-repeat;
+}
+
+.service-survey .service-survey-box>div:last-child {
+    margin-right: 0;
 }

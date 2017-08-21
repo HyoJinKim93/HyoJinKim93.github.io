@@ -22,8 +22,12 @@
 }
 
 .service-survey .service-survey-box>div::before {
+    content: "";
+    display: block;
+    width: 280px;
+    height: 212px;
     position: absolute;
-    top: 0;
+    top: 10px;
     background: #fff url(../../assets/images/bg/bg-service-survey.png) no-repeat;
 }
 

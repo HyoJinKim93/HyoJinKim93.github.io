@@ -88,3 +88,44 @@
 .service-survey .table-type-01 .btn-type-1-02 {
     width: 100px;
 }
+
+
+
+
+
+
+
+/* 통계 > 국제 > 분야별 조회 (통계, 시계열, 차트)
+html/international-field-list.html */
+
+.international-field .panel-group #panel2 {
+    height: 440px;
+    padding: 30px;
+    border: 1px solid #c2c2c2;
+}
+
+.international-field .panel-group #panel2 div {
+    background-color: #e5e5e5;
+    height: 378px;
+}
+
+.international-field .panel-group #panel2 p {
+    font-size: 30px;
+    padding: 166px 395px;
+}
+
+.international-field .panel-group #panel3 {
+    height: 440px;
+    padding: 30px;
+    border: 1px solid #c2c2c2;
+}
+
+.international-field .panel-group #panel3 div {
+    background-color: #e5e5e5;
+    height: 378px;
+}
+
+.international-field .panel-group #panel3 p {
+    font-size: 30px;
+    padding: 166px 395px;
+}

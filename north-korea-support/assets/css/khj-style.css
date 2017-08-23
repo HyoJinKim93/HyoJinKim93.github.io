@@ -95,6 +95,16 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 /* 통계 > 국제 > 분야별 조회 (통계, 시계열, 차트)
 html/international-field-list.html */
 
@@ -128,4 +138,116 @@ html/international-field-list.html */
 .international-field .panel-group #panel3 p {
     font-size: 30px;
     padding: 166px 395px;
+}
+
+
+
+
+
+
+/* 통계 > 국제 > 주체별 조회 (통계, 시계열, 차트)
+html/international-by-subject-list.html */
+
+.international-by-support-channel .panel-group #panel2 {
+    height: 440px;
+    padding: 30px;
+    border: 1px solid #c2c2c2;
+}
+
+.international-by-support-channel .panel-group #panel2 div {
+    background-color: #e5e5e5;
+    height: 378px;
+}
+
+.international-by-support-channel .panel-group #panel2 p {
+    font-size: 30px;
+    padding: 166px 395px;
+}
+
+.international-by-support-channel .panel-group #panel3 {
+    height: 440px;
+    padding: 30px;
+    border: 1px solid #c2c2c2;
+}
+
+.international-by-support-channel .panel-group #panel3 div {
+    background-color: #e5e5e5;
+    height: 378px;
+}
+
+.international-by-support-channel .panel-group #panel3 p {
+    font-size: 30px;
+    padding: 166px 395px;
+}
+
+
+
+
+
+
+/* 북한현황지표 > 보건의료 > 전체인구
+html/total-population.html */
+
+.total-population .total-population-graph {
+    height: 440px;
+    border: 1px solid #c2c2c2;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.total-population .total-population-graph p {
+    background-color: #e5e5e5;
+    height: 378px;
+    padding: 166px 395px;
+    font-size: 30px;
+}
+
+.total-population .total-population-data-graph {
+    height: 170px;
+    margin-bottom: 80px;
+}
+
+.total-population .table-type-02 {
+    margin-bottom: 224px;
+}
+
+.total-population .table-type-02 td {
+    width: 728px;
+    padding-left: 20px;
+}
+
+
+
+
+
+
+/* 북한현황지표 > 보건의료 > 기대수명
+html/life-expectancy.html */
+
+.life-expectancy .life-expectancy-graph {
+    height: 440px;
+    border: 1px solid #c2c2c2;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.life-expectancy .life-expectancy-graph p {
+    background-color: #e5e5e5;
+    height: 378px;
+    padding: 166px 395px;
+    font-size: 30px;
+}
+
+.life-expectancy .life-expectancy-data-graph {
+    height: 170px;
+    margin-bottom: 80px;
+}
+
+.life-expectancy .table-type-02 {
+    margin-bottom: 224px;
+}
+
+.life-expectancy .table-type-02 td {
+    width: 728px;
+    padding-left: 20px;
 }

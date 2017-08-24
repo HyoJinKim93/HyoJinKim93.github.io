@@ -91,9 +91,6 @@
 
 
 
-
-
-
 /* 통계 > 국제 > 분야별 조회 (통계, 시계열, 차트)
 html/international-field-list.html */
 
@@ -128,9 +125,6 @@ html/international-field-list.html */
     font-size: 30px;
     padding: 166px 395px;
 }
-
-
-
 
 
 
@@ -171,27 +165,23 @@ html/international-by-subject-list.html */
 
 
 
-
-
-
 /* 북한현황지표 > 보건의료 > 전체인구
 html/total-population.html */
 
-.total-population .total-population-graph {
+.total-population .graph-area {
     height: 440px;
     border: 1px solid #c2c2c2;
     padding: 30px;
     margin-bottom: 30px;
 }
 
-.total-population .total-population-graph p {
+.total-population .graph-area p {
     background-color: #e5e5e5;
     height: 378px;
-    padding: 166px 395px;
     font-size: 30px;
 }
 
-.total-population .total-population-data-graph {
+.total-population p:nth-child(2) {
     height: 170px;
     margin-bottom: 80px;
 }
@@ -207,27 +197,23 @@ html/total-population.html */
 
 
 
-
-
-
 /* 북한현황지표 > 보건의료 > 기대수명
 html/life-expectancy.html */
 
-.life-expectancy .life-expectancy-graph {
+.life-expectancy .graph-area {
     height: 440px;
     border: 1px solid #c2c2c2;
     padding: 30px;
     margin-bottom: 30px;
 }
 
-.life-expectancy .life-expectancy-graph p {
+.life-expectancy .graph-area p {
     background-color: #e5e5e5;
     height: 378px;
-    padding: 166px 395px;
     font-size: 30px;
 }
 
-.life-expectancy .life-expectancy-data-graph {
+.life-expectancy p:nth-child(2) {
     height: 170px;
     margin-bottom: 80px;
 }
@@ -243,33 +229,29 @@ html/life-expectancy.html */
 
 
 
-
-
-
 /* 북한현황지표 > 보건의료 > 영양부족 인구
 html/an-undernourished-population.html */
 
-.an-undernourished-population .an-undernourished-population-graph {
+.an-undernourished-population .graph-area {
     height: 440px;
     border: 1px solid #c2c2c2;
     padding: 30px;
     margin-bottom: 30px;
 }
 
-.an-undernourished-population .an-undernourished-population-graph p {
+.an-undernourished-population .graph-area p {
     background-color: #e5e5e5;
     height: 378px;
-    padding: 166px 395px;
     font-size: 30px;
 }
 
-.an-undernourished-population .an-undernourished-population-data-graph {
-    height: 170px;
+.an-undernourished-population p:nth-child(2) {
+    height: 84px;
     margin-bottom: 80px;
 }
 
 .an-undernourished-population .table-type-02 {
-    margin-bottom: 224px;
+    margin-bottom: 310px;
 }
 
 .an-undernourished-population .table-type-02 td {
@@ -279,25 +261,23 @@ html/an-undernourished-population.html */
 
 
 
-
 /* 북한현황지표 > 보건의료 > 5세 미만 아동 사망률
 html/child-mortality-rate.html */
 
-.child-mortality-rate .child-mortality-rate-graph {
+.child-mortality-rate .graph-area {
     height: 440px;
     border: 1px solid #c2c2c2;
     padding: 30px;
     margin-bottom: 30px;
 }
 
-.child-mortality-rate .child-mortality-rate-graph p {
+.child-mortality-rate .graph-area p {
     background-color: #e5e5e5;
     height: 378px;
-    padding: 166px 395px;
     font-size: 30px;
 }
 
-.child-mortality-rate .child-mortality-rate-data-graph {
+.child-mortality-rate p:nth-child(2) {
     height: 170px;
     margin-bottom: 80px;
 }
@@ -307,6 +287,231 @@ html/child-mortality-rate.html */
 }
 
 .child-mortality-rate .table-type-02 td {
+    width: 728px;
+    padding-left: 20px;
+}
+
+
+
+/* 북한현황지표 > 보건의료 > 5세 미만 아동 만성영양실조
+html/chronic-malnutrition-in-children.html */
+
+.chronic-malnutrition-in-children .graph-area {
+    height: 440px;
+    border: 1px solid #c2c2c2;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.chronic-malnutrition-in-children .graph-area p {
+    background-color: #e5e5e5;
+    height: 378px;
+    font-size: 30px;
+}
+
+.chronic-malnutrition-in-children p:nth-child(2) {
+    height: 170px;
+    margin-bottom: 80px;
+}
+
+.chronic-malnutrition-in-children .table-type-02 {
+    margin-bottom: 224px;
+}
+
+.chronic-malnutrition-in-children .table-type-02 td {
+    width: 728px;
+    padding-left: 20px;
+}
+
+
+
+/* 북한현황지표 > 보건의료 > 결핵 유병률
+html/tuberculosis-prevalence.html */
+
+.tuberculosis-prevalence .graph-area {
+    height: 440px;
+    border: 1px solid #c2c2c2;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.tuberculosis-prevalence p:nth-child(2) {
+    height: 84px;
+    margin-bottom: 80px;
+}
+
+.tuberculosis-prevalence .graph-area p {
+    background-color: #e5e5e5;
+    height: 378px;
+    font-size: 30px;
+}
+
+.tuberculosis-prevalence .table-type-02 {
+    margin-bottom: 310px;
+}
+
+.tuberculosis-prevalence .table-type-02 td {
+    width: 728px;
+    padding-left: 20px;
+}
+
+
+
+/* 북한현황지표 > 보건의료 > 말라리아 유병률
+html/malaria-prevalence.html */
+
+.malaria-prevalence .graph-area {
+    height: 440px;
+    border: 1px solid #c2c2c2;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.malaria-prevalence .graph-area p {
+    background-color: #e5e5e5;
+    height: 378px;
+    font-size: 30px;
+}
+
+.malaria-prevalence p:nth-child(2) {
+    height: 84px;
+    margin-bottom: 80px;
+}
+
+.malaria-prevalence .table-type-02 {
+    margin-bottom: 310px;
+}
+
+.malaria-prevalence .table-type-02 td {
+    width: 728px;
+    padding-left: 20px;
+}
+
+
+
+/* 북한현황지표 > 보건의료 > 연간 인구 성장률(%)
+html/annual-population-growth-rate.html */
+
+.annual-population-growth-rate .graph-area {
+    height: 440px;
+    border: 1px solid #c2c2c2;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.annual-population-growth-rate .graph-area p {
+    background-color: #e5e5e5;
+    height: 378px;
+    font-size: 30px;
+}
+
+.annual-population-growth-rate p:nth-child(2) {
+    height: 84px;
+    margin-bottom: 80px;
+}
+
+.annual-population-growth-rate .table-type-02 {
+    margin-bottom: 310px;
+}
+
+.annual-population-growth-rate .table-type-02 td {
+    width: 728px;
+    padding-left: 20px;
+}
+
+
+
+/* 북한현황지표 > 보건의료 > 65세 이상 인구 비율
+html/65-year-old-population-ratio.html */
+
+.year-old-population-ratio .graph-area {
+    height: 440px;
+    border: 1px solid #c2c2c2;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.year-old-population-ratio .graph-area p {
+    background-color: #e5e5e5;
+    height: 378px;
+    font-size: 30px;
+}
+
+.year-old-population-ratio p:nth-child(2) {
+    height: 84px;
+    margin-bottom: 80px;
+}
+
+.year-old-population-ratio .table-type-02 {
+    margin-bottom: 310px;
+}
+
+.year-old-population-ratio .table-type-02 td {
+    width: 728px;
+    padding-left: 20px;
+}
+
+
+
+
+/* 북한현황지표 > 보건의료 > 인구 당 ODA 수원액
+html/oda-water-per-population.html */
+
+.oda-water-per-population .graph-area {
+    height: 440px;
+    border: 1px solid #c2c2c2;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.oda-water-per-population .graph-area p {
+    background-color: #e5e5e5;
+    height: 378px;
+    font-size: 30px;
+}
+
+.oda-water-per-population p:nth-child(2) {
+    height: 84px;
+    margin-bottom: 80px;
+}
+
+.oda-water-per-population .table-type-02 {
+    margin-bottom: 310px;
+}
+
+.oda-water-per-population .table-type-02 td {
+    width: 728px;
+    padding-left: 20px;
+}
+
+
+
+/* 북한현황지표 > 보건의료 > 재난의 영향을 받은 인구수
+html/impact-of-disaster-population.html */
+
+.impact-of-disaster-population .graph-area {
+    height: 440px;
+    border: 1px solid #c2c2c2;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.impact-of-disaster-population .graph-area p {
+    background-color: #e5e5e5;
+    height: 378px;
+    font-size: 30px;
+}
+
+.impact-of-disaster-population p:nth-child(2) {
+    height: 84px;
+    margin-bottom: 80px;
+}
+
+.impact-of-disaster-population .table-type-02 {
+    margin-bottom: 310px;
+}
+
+.impact-of-disaster-population .table-type-02 td {
     width: 728px;
     padding-left: 20px;
 }

@@ -95,6 +95,27 @@
 
 
 
+/* 통계 > 국내 > 당국차원 조회
+html/domestic-authority-level-list.html */
+
+.domestic-authority-level .table-overflow-x {
+    overflow-x: auto;
+    margin-bottom: 30px;
+}
+
+.domestic-authority-level .table-overflow-x .table-type-01 {
+    margin-bottom: 0;
+}
+
+.domestic-authority-level div:last-child table {
+    margin-bottom: 120px;
+}
+
+
+
+
+
+
 
 /* 통계 > 국제 > 분야별 조회 (통계, 시계열, 차트)
 html/international-field-list.html */
@@ -112,7 +133,6 @@ html/international-field-list.html */
 
 .international-field .panel-group #panel2 p {
     font-size: 30px;
-    padding: 166px 395px;
 }
 
 .international-field .panel-group #panel3 {
@@ -128,9 +148,7 @@ html/international-field-list.html */
 
 .international-field .panel-group #panel3 p {
     font-size: 30px;
-    padding: 166px 395px;
 }
-
 
 
 
@@ -154,7 +172,6 @@ html/international-by-subject-list.html */
 
 .international-by-support-channel .panel-group #panel2 p {
     font-size: 30px;
-    padding: 166px 395px;
 }
 
 .international-by-support-channel .panel-group #panel3 {
@@ -170,9 +187,7 @@ html/international-by-subject-list.html */
 
 .international-by-support-channel .panel-group #panel3 p {
     font-size: 30px;
-    padding: 166px 395px;
 }
-
 
 
 
@@ -216,7 +231,6 @@ html/total-population.html */
 
 
 
-
 /* 북한현황지표 > 보건의료 > 기대수명
 html/life-expectancy.html */
 
@@ -246,7 +260,6 @@ html/life-expectancy.html */
     width: 728px;
     padding-left: 20px;
 }
-
 
 
 
@@ -290,7 +303,6 @@ html/an-undernourished-population.html */
 
 
 
-
 /* 북한현황지표 > 보건의료 > 5세 미만 아동 사망률
 html/child-mortality-rate.html */
 
@@ -320,7 +332,6 @@ html/child-mortality-rate.html */
     width: 728px;
     padding-left: 20px;
 }
-
 
 
 
@@ -364,7 +375,6 @@ html/chronic-malnutrition-in-children.html */
 
 
 
-
 /* 북한현황지표 > 보건의료 > 결핵 유병률
 html/tuberculosis-prevalence.html */
 
@@ -394,7 +404,6 @@ html/tuberculosis-prevalence.html */
     width: 728px;
     padding-left: 20px;
 }
-
 
 
 
@@ -438,7 +447,6 @@ html/malaria-prevalence.html */
 
 
 
-
 /* 북한현황지표 > 보건의료 > 연간 인구 성장률(%)
 html/annual-population-growth-rate.html */
 
@@ -468,7 +476,6 @@ html/annual-population-growth-rate.html */
     width: 728px;
     padding-left: 20px;
 }
-
 
 
 
@@ -512,8 +519,6 @@ html/65-year-old-population-ratio.html */
 
 
 
-
-
 /* 북한현황지표 > 보건의료 > 인구 당 ODA 수원액
 html/oda-water-per-population.html */
 
@@ -543,7 +548,6 @@ html/oda-water-per-population.html */
     width: 728px;
     padding-left: 20px;
 }
-
 
 
 
@@ -586,6 +590,7 @@ html/impact-of-disaster-population.html */
 
 
 
+
 /* 북한현황지표 > 보건의료 > 15-19세 소녀 1천명 당 출산율
 html/girls-birth-rate.html */
 
@@ -619,6 +624,20 @@ html/girls-birth-rate.html */
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* 북한현황지표 > 보건의료 > 출생 1천명 당 영아 사망률
 html/infant-mortality-rate.html */
 
@@ -648,6 +667,20 @@ html/infant-mortality-rate.html */
     width: 728px;
     padding-left: 20px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

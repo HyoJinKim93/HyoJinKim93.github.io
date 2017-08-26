@@ -88,13 +88,6 @@
 .service-survey .table-type-01 .btn-type-1-02 {
     width: 100px;
 }
-
-
-
-
-
-
-
 /* 통계 > 국내 > 당국차원 조회
 html/domestic-authority-level-list.html */
 
@@ -110,13 +103,11 @@ html/domestic-authority-level-list.html */
 .domestic-authority-level div:last-child table {
     margin-bottom: 120px;
 }
-
-
-
-
-
-
-
+/* 통계 > 국내 > 당국차원 조회
+html/domestic-civilian-dimension-list.html */
+.domestic-civilian-dimension .table-type-01{
+    margin-bottom: 120px;
+}
 /* 통계 > 국제 > 분야별 조회 (통계, 시계열, 차트)
 html/international-field-list.html */
 
@@ -149,13 +140,6 @@ html/international-field-list.html */
 .international-field .panel-group #panel3 p {
     font-size: 30px;
 }
-
-
-
-
-
-
-
 /* 통계 > 국제 > 주체별 조회 (통계, 시계열, 차트)
 html/international-by-subject-list.html */
 
@@ -188,13 +172,6 @@ html/international-by-subject-list.html */
 .international-by-support-channel .panel-group #panel3 p {
     font-size: 30px;
 }
-
-
-
-
-
-
-
 /* 북한현황지표 > 보건의료 > 전체인구
 html/total-population.html */
 
@@ -224,13 +201,6 @@ html/total-population.html */
     width: 728px;
     padding-left: 20px;
 }
-
-
-
-
-
-
-
 /* 북한현황지표 > 보건의료 > 기대수명
 html/life-expectancy.html */
 
@@ -260,13 +230,6 @@ html/life-expectancy.html */
     width: 728px;
     padding-left: 20px;
 }
-
-
-
-
-
-
-
 /* 북한현황지표 > 보건의료 > 영양부족 인구
 html/an-undernourished-population.html */
 
@@ -296,13 +259,6 @@ html/an-undernourished-population.html */
     width: 728px;
     padding-left: 20px;
 }
-
-
-
-
-
-
-
 /* 북한현황지표 > 보건의료 > 5세 미만 아동 사망률
 html/child-mortality-rate.html */
 
@@ -332,13 +288,6 @@ html/child-mortality-rate.html */
     width: 728px;
     padding-left: 20px;
 }
-
-
-
-
-
-
-
 /* 북한현황지표 > 보건의료 > 5세 미만 아동 만성영양실조
 html/chronic-malnutrition-in-children.html */
 
@@ -368,13 +317,6 @@ html/chronic-malnutrition-in-children.html */
     width: 728px;
     padding-left: 20px;
 }
-
-
-
-
-
-
-
 /* 북한현황지표 > 보건의료 > 결핵 유병률
 html/tuberculosis-prevalence.html */
 
@@ -404,13 +346,6 @@ html/tuberculosis-prevalence.html */
     width: 728px;
     padding-left: 20px;
 }
-
-
-
-
-
-
-
 /* 북한현황지표 > 보건의료 > 말라리아 유병률
 html/malaria-prevalence.html */
 
@@ -440,13 +375,6 @@ html/malaria-prevalence.html */
     width: 728px;
     padding-left: 20px;
 }
-
-
-
-
-
-
-
 /* 북한현황지표 > 보건의료 > 연간 인구 성장률(%)
 html/annual-population-growth-rate.html */
 
@@ -476,13 +404,60 @@ html/annual-population-growth-rate.html */
     width: 728px;
     padding-left: 20px;
 }
+/* 북한현황지표 > 보건의료 > 0-14세 이상 인구 비율
+html/0-14-year-old-population-ratio.html */
+.years-old-ratio .graph-area {
+    height: 440px;
+    border: 1px solid #c2c2c2;
+    padding: 30px;
+    margin-bottom: 30px;
+}
 
+.years-old-ratio .graph-area p {
+    background-color: #e5e5e5;
+    height: 378px;
+    font-size: 30px;
+}
 
+.years-old-ratio p:nth-child(2) {
+    margin-bottom: 80px;
+}
 
+.years-old-ratio .table-type-02 {
+    margin-bottom: 310px;
+}
 
+.years-old-ratio .table-type-02 td {
+    width: 728px;
+    padding-left: 20px;
+}
+/* 북한현황지표 > 보건의료 > 15-64세 이상 인구 비율
+html/15-64-year-old-population-ratio.html */
+.year-old-ratio .graph-area {
+    height: 440px;
+    border: 1px solid #c2c2c2;
+    padding: 30px;
+    margin-bottom: 30px;
+}
 
+.year-old-ratio .graph-area p {
+    background-color: #e5e5e5;
+    height: 378px;
+    font-size: 30px;
+}
 
+.year-old-ratio p:nth-child(2) {
+    margin-bottom: 80px;
+}
 
+.year-old-ratio .table-type-02 {
+    margin-bottom: 310px;
+}
+
+.year-old-ratio .table-type-02 td {
+    width: 728px;
+    padding-left: 20px;
+}
 /* 북한현황지표 > 보건의료 > 65세 이상 인구 비율
 html/65-year-old-population-ratio.html */
 
@@ -512,13 +487,6 @@ html/65-year-old-population-ratio.html */
     width: 728px;
     padding-left: 20px;
 }
-
-
-
-
-
-
-
 /* 북한현황지표 > 보건의료 > 인구 당 ODA 수원액
 html/oda-water-per-population.html */
 
@@ -548,13 +516,6 @@ html/oda-water-per-population.html */
     width: 728px;
     padding-left: 20px;
 }
-
-
-
-
-
-
-
 /* 북한현황지표 > 보건의료 > 재난의 영향을 받은 인구수
 html/impact-of-disaster-population.html */
 
@@ -584,13 +545,6 @@ html/impact-of-disaster-population.html */
     width: 728px;
     padding-left: 20px;
 }
-
-
-
-
-
-
-
 /* 북한현황지표 > 보건의료 > 15-19세 소녀 1천명 당 출산율
 html/girls-birth-rate.html */
 
@@ -608,7 +562,6 @@ html/girls-birth-rate.html */
 }
 
 .girls-birth-rate p:nth-child(2) {
-    height: 84px;
     margin-bottom: 80px;
 }
 
@@ -620,24 +573,6 @@ html/girls-birth-rate.html */
     width: 728px;
     padding-left: 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* 북한현황지표 > 보건의료 > 출생 1천명 당 영아 사망률
 html/infant-mortality-rate.html */
 
@@ -655,7 +590,6 @@ html/infant-mortality-rate.html */
 }
 
 .infant-mortality-rate p:nth-child(2) {
-    height: 84px;
     margin-bottom: 80px;
 }
 
@@ -667,23 +601,6 @@ html/infant-mortality-rate.html */
     width: 728px;
     padding-left: 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* 북한현황지표 > 보건의료 > 출생 1천명 당 5세 미만 아동 사망률
 html/birth-child-mortality.html */
 
@@ -701,7 +618,6 @@ html/birth-child-mortality.html */
 }
 
 .birth-child-mortality p:nth-child(2) {
-    height: 84px;
     margin-bottom: 80px;
 }
 
@@ -712,4 +628,24 @@ html/birth-child-mortality.html */
 .birth-child-mortality .table-type-02 td {
     width: 728px;
     padding-left: 20px;
+}
+/* 북한현황지표 > 농업 > 식량 지원량
+html/north-korean-food-ration.html */
+.north-korean-food-ration .graph-area {
+    height: 440px;
+    border: 1px solid #c2c2c2;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+.north-korean-food-ration .graph-area p {
+    background-color: #e5e5e5;
+    height: 378px;
+    font-size: 30px;
+}
+.north-korean-food-ration .table-overflow-x{
+    overflow-x: auto;
+    margin-bottom: 120px;
+}
+.north-korean-food-ration .table-type-01 td{
+    height:44px;
 }

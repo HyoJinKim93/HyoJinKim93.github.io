@@ -1,738 +1,142 @@
-/*# sourceMappingURL=map/khj-style.css.map */
+@charset "UTF-8";
+/* =======================================*/
+/* 회원서비스 > 설문조사 조회
+/* (html/service-survey.html)
+/* =======================================*/
+.service-survey .service-survey-box { display: inline-block; width: 930px; margin: 0 auto; margin-bottom: 60px; text-align: center; }
 
-.service-survey .service-survey-box {
-    display: inline-block;
-    width: 930px;
-    margin: 0 auto;
-    margin-bottom: 60px;
-    text-align: center;
-}
+.service-survey .service-survey-box > div { display: inline-block; width: 300px; background-color: #e6e6e6; height: 233px; margin-right: 10px; vertical-align: top; text-align: center; border: 1px solid #c8cacc; border-radius: 7px; padding: 50px 27px 30px 30px; z-index: 1; position: relative; box-shadow: 0 1px 0 #c8cacc; }
 
-.service-survey .service-survey-box>div {
-    display: inline-block;
-    width: 300px;
-    background-color: #e6e6e6;
-    height: 233px;
-    margin-right: 10px;
-    vertical-align: top;
-    text-align: center;
-    border: 1px solid #c8cacc;
-    border-radius: 7px;
-    padding: 50px 27px 30px 30px;
-    z-index: 1;
-    position: relative;
-    box-shadow: 0 1px 0 #c8cacc;
-}
+.service-survey .service-survey-box > div::after { content: ""; display: block; width: 280px; height: 212px; position: absolute; top: 10px; left: 10px; background: #fff url(../../assets/images/bg/bg-service-survey.png) no-repeat; box-shadow: 0 0 3px rgba(0, 0, 0, 0.2); z-index: -1; }
 
-.service-survey .service-survey-box>div::after {
-    content: "";
-    display: block;
-    width: 280px;
-    height: 212px;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    background: #fff url(../../assets/images/bg/bg-service-survey.png) no-repeat;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-    z-index: -1;
-}
+.service-survey .service-survey-box > div:last-child { margin-right: 0; }
 
-.service-survey .service-survey-box>div:last-child {
-    margin-right: 0;
-}
+.service-survey .service-survey-box div div { margin-top: 13px; }
 
-.service-survey .service-survey-box div div {
-    margin-top: 13px;
-}
+.service-survey .service-survey-box .btn-type-1-04 { width: 117px; }
 
-.service-survey .service-survey-box .btn-type-1-04 {
-    width: 117px;
-}
+.service-survey .service-survey-box .btn-type-1-02 { width: 117px; margin-left: 2px; }
 
-.service-survey .service-survey-box .btn-type-1-02 {
-    width: 117px;
-    margin-left: 2px;
-}
+.service-survey .service-survey-box h4 { color: #003761; font-size: 16px; display: inline-block; vertical-align: middle; text-align: center; border: 2px solid #e1e4e6; width: 240px; height: 72px; line-height: 70px; }
 
-.service-survey .content-box-area:first-child h3 {
-    margin-bottom: 0;
-}
+.service-survey .service-survey-box p { width: 240px; height: 44px; line-height: 44px; vertical-align: middle; display: inline-block; border-bottom: 1px solid #d6d6d6; text-align: center; }
 
-.service-survey .service-survey-box h4 {
-    color: #003761;
-    font-size: 16px;
-    display: inline-block;
-    vertical-align: middle;
-    text-align: center;
-    border: 2px solid #e1e4e6;
-    width: 240px;
-    height: 72px;
-    line-height: 70px;
-}
+.service-survey .content-box-area:first-child h3 { margin-bottom: 0; }
 
-.service-survey .service-survey-box p {
-    width: 240px;
-    height: 44px;
-    line-height: 44px;
-    vertical-align: middle;
-    display: inline-block;
-    border-bottom: 1px solid #d6d6d6;
-    text-align: center;
-}
+.service-survey .table-type-01 tr td:nth-child(2) { text-align: left; padding-left: 20px; }
 
-.service-survey .table-type-01 tr td:nth-child(2) {
-    text-align: left;
-    padding-left: 20px;
-}
+.service-survey .table-type-01 .btn-type-1-02 { width: 100px; }
 
-.service-survey .table-type-01 .btn-type-1-02 {
-    width: 100px;
-}
+/* =======================================*/
 /* 통계 > 국내 > 당국차원 조회
-html/domestic-authority-level-list.html */
+/* (html/domestic-authority-level-list.html)
+/* =======================================*/
+.domestic-authority-level .table-overflow-x { overflow-x: auto; margin-bottom: 30px; }
 
-.domestic-authority-level .table-overflow-x {
-    overflow-x: auto;
-    margin-bottom: 30px;
-}
+.domestic-authority-level .table-overflow-x .table-type-01 { margin-bottom: 0; }
 
-.domestic-authority-level .table-overflow-x .table-type-01 {
-    margin-bottom: 0;
-}
+.domestic-authority-level div:last-child table { margin-bottom: 120px; }
 
-.domestic-authority-level div:last-child table {
-    margin-bottom: 120px;
-}
-/* 통계 > 국내 > 당국차원 조회
-html/domestic-civilian-dimension-list.html */
-.domestic-civilian-dimension .table-type-01{
-    margin-bottom: 120px;
-}
-/* 통계 > 국제 > 분야별 조회 (통계, 시계열, 차트)
-html/international-field-list.html */
-
-.international-field .panel-group #panel2 {
-    height: 440px;
-    padding: 30px;
-    border: 1px solid #c2c2c2;
-}
-
-.international-field .panel-group #panel2 div {
-    background-color: #e5e5e5;
-    height: 378px;
-}
-
-.international-field .panel-group #panel2 p {
-    font-size: 30px;
-}
-
-.international-field .panel-group #panel3 {
-    height: 440px;
-    padding: 30px;
-    border: 1px solid #c2c2c2;
-}
-
-.international-field .panel-group #panel3 div {
-    background-color: #e5e5e5;
-    height: 378px;
-}
-
-.international-field .panel-group #panel3 p {
-    font-size: 30px;
-}
+/* =======================================*/
 /* 통계 > 국제 > 주체별 조회 (통계, 시계열, 차트)
-html/international-by-subject-list.html */
+/* (html/international-field-list.html)
+/* =======================================*/
+.international-by-subject-list .panel-group [role="tabpanel"] .web-graph-area { margin-bottom: 0; }
 
-.international-by-support-channel .panel-group #panel2 {
-    height: 440px;
-    padding: 30px;
-    border: 1px solid #c2c2c2;
-}
+/* =======================================*/
+/* 통계 > 국제 > 분야별 조회 (통계, 시계열, 차트)
+/* (html/international-field-list.html)
+/* =======================================*/
+.international-field-list .panel-group [role="tabpanel"] .web-graph-area { margin-bottom: 0; }
 
-.international-by-support-channel .panel-group #panel2 div {
-    background-color: #e5e5e5;
-    height: 378px;
-}
+/* =======================================*/
+/* 통계 > 국제 > 지원채널별 조회 (통계, 시계열, 차트)
+/* (html/international-by-support-channel-list.html)
+/* =======================================*/
+.international-by-support-channel-list .panel-group [role="tabpanel"] .web-graph-area { margin-bottom: 0; }
 
-.international-by-support-channel .panel-group #panel2 p {
-    font-size: 30px;
-}
-
-.international-by-support-channel .panel-group #panel3 {
-    height: 440px;
-    padding: 30px;
-    border: 1px solid #c2c2c2;
-}
-
-.international-by-support-channel .panel-group #panel3 div {
-    background-color: #e5e5e5;
-    height: 378px;
-}
-
-.international-by-support-channel .panel-group #panel3 p {
-    font-size: 30px;
-}
+/* =======================================*/
 /* 북한현황지표 > 보건의료 > 전체인구
-html/total-population.html */
+/* (html/total-population.html)
+/* =======================================*/
+.total-population .table-type-02 { margin-bottom: 120px; }
 
-.total-population .graph-area {
-    height: 440px;
-    border: 1px solid #c2c2c2;
-    padding: 30px;
-    margin-bottom: 30px;
-}
-
-.total-population .graph-area p {
-    background-color: #e5e5e5;
-    height: 378px;
-    font-size: 30px;
-}
-
-.total-population p:nth-child(2) {
-    height: 170px;
-    margin-bottom: 80px;
-}
-
-.total-population .table-type-02 {
-    margin-bottom: 224px;
-}
-
-.total-population .table-type-02 td {
-    width: 728px;
-    padding-left: 20px;
-}
+/* =======================================*/
 /* 북한현황지표 > 보건의료 > 기대수명
-html/life-expectancy.html */
+(html/life-expectancy.html)
+/* =======================================*/
+.life-expectancy .table-type-02 { margin-bottom: 120px; }
 
-.life-expectancy .graph-area {
-    height: 440px;
-    border: 1px solid #c2c2c2;
-    padding: 30px;
-    margin-bottom: 30px;
-}
-
-.life-expectancy .graph-area p {
-    background-color: #e5e5e5;
-    height: 378px;
-    font-size: 30px;
-}
-
-.life-expectancy p:nth-child(2) {
-    height: 170px;
-    margin-bottom: 80px;
-}
-
-.life-expectancy .table-type-02 {
-    margin-bottom: 224px;
-}
-
-.life-expectancy .table-type-02 td {
-    width: 728px;
-    padding-left: 20px;
-}
+/* =======================================*/
 /* 북한현황지표 > 보건의료 > 영양부족 인구
-html/an-undernourished-population.html */
+/* (html/an-undernourished-population.html)
+/* =======================================*/
+.an-undernourished-population .table-type-02 { margin-bottom: 120px; }
 
-.an-undernourished-population .graph-area {
-    height: 440px;
-    border: 1px solid #c2c2c2;
-    padding: 30px;
-    margin-bottom: 30px;
-}
-
-.an-undernourished-population .graph-area p {
-    background-color: #e5e5e5;
-    height: 378px;
-    font-size: 30px;
-}
-
-.an-undernourished-population p:nth-child(2) {
-    height: 84px;
-    margin-bottom: 80px;
-}
-
-.an-undernourished-population .table-type-02 {
-    margin-bottom: 310px;
-}
-
-.an-undernourished-population .table-type-02 td {
-    width: 728px;
-    padding-left: 20px;
-}
+/* =======================================*/
 /* 북한현황지표 > 보건의료 > 5세 미만 아동 사망률
-html/child-mortality-rate.html */
+/* (html/child-mortality-rate.html)
+/* =======================================*/
+.child-mortality-rate .table-type-02 { margin-bottom: 120px; }
 
-.child-mortality-rate .graph-area {
-    height: 440px;
-    border: 1px solid #c2c2c2;
-    padding: 30px;
-    margin-bottom: 30px;
-}
-
-.child-mortality-rate .graph-area p {
-    background-color: #e5e5e5;
-    height: 378px;
-    font-size: 30px;
-}
-
-.child-mortality-rate p:nth-child(2) {
-    height: 170px;
-    margin-bottom: 80px;
-}
-
-.child-mortality-rate .table-type-02 {
-    margin-bottom: 224px;
-}
-
-.child-mortality-rate .table-type-02 td {
-    width: 728px;
-    padding-left: 20px;
-}
+/* =======================================*/
 /* 북한현황지표 > 보건의료 > 5세 미만 아동 만성영양실조
-html/chronic-malnutrition-in-children.html */
+/* (html/chronic-malnutrition-in-children.html)
+/* =======================================*/
+.chronic-malnutrition-in-children .table-type-02 { margin-bottom: 120px; }
 
-.chronic-malnutrition-in-children .graph-area {
-    height: 440px;
-    border: 1px solid #c2c2c2;
-    padding: 30px;
-    margin-bottom: 30px;
-}
-
-.chronic-malnutrition-in-children .graph-area p {
-    background-color: #e5e5e5;
-    height: 378px;
-    font-size: 30px;
-}
-
-.chronic-malnutrition-in-children p:nth-child(2) {
-    height: 170px;
-    margin-bottom: 80px;
-}
-
-.chronic-malnutrition-in-children .table-type-02 {
-    margin-bottom: 224px;
-}
-
-.chronic-malnutrition-in-children .table-type-02 td {
-    width: 728px;
-    padding-left: 20px;
-}
+/* =======================================*/
 /* 북한현황지표 > 보건의료 > 결핵 유병률
-html/tuberculosis-prevalence.html */
+/* (html/tuberculosis-prevalence.html)
+/* =======================================*/
+.tuberculosis-prevalence .table-type-02 { margin-bottom: 120px; }
 
-.tuberculosis-prevalence .graph-area {
-    height: 440px;
-    border: 1px solid #c2c2c2;
-    padding: 30px;
-    margin-bottom: 30px;
-}
-
-.tuberculosis-prevalence p:nth-child(2) {
-    height: 84px;
-    margin-bottom: 80px;
-}
-
-.tuberculosis-prevalence .graph-area p {
-    background-color: #e5e5e5;
-    height: 378px;
-    font-size: 30px;
-}
-
-.tuberculosis-prevalence .table-type-02 {
-    margin-bottom: 310px;
-}
-
-.tuberculosis-prevalence .table-type-02 td {
-    width: 728px;
-    padding-left: 20px;
-}
+/* =======================================*/
 /* 북한현황지표 > 보건의료 > 말라리아 유병률
-html/malaria-prevalence.html */
+/* (html/malaria-prevalence.html)
+/* =======================================*/
+.malaria-prevalence .table-type-02 { margin-bottom: 120px; }
 
-.malaria-prevalence .graph-area {
-    height: 440px;
-    border: 1px solid #c2c2c2;
-    padding: 30px;
-    margin-bottom: 30px;
-}
-
-.malaria-prevalence .graph-area p {
-    background-color: #e5e5e5;
-    height: 378px;
-    font-size: 30px;
-}
-
-.malaria-prevalence p:nth-child(2) {
-    height: 84px;
-    margin-bottom: 80px;
-}
-
-.malaria-prevalence .table-type-02 {
-    margin-bottom: 310px;
-}
-
-.malaria-prevalence .table-type-02 td {
-    width: 728px;
-    padding-left: 20px;
-}
+/* =======================================*/
 /* 북한현황지표 > 보건의료 > 연간 인구 성장률(%)
-html/annual-population-growth-rate.html */
+/* html/annual-population-growth-rate.html
+/* =======================================*/
+.annual-population-growth-rate .table-type-02 { margin-bottom: 120px; }
 
-.annual-population-growth-rate .graph-area {
-    height: 440px;
-    border: 1px solid #c2c2c2;
-    padding: 30px;
-    margin-bottom: 30px;
-}
-
-.annual-population-growth-rate .graph-area p {
-    background-color: #e5e5e5;
-    height: 378px;
-    font-size: 30px;
-}
-
-.annual-population-growth-rate p:nth-child(2) {
-    height: 84px;
-    margin-bottom: 80px;
-}
-
-.annual-population-growth-rate .table-type-02 {
-    margin-bottom: 310px;
-}
-
-.annual-population-growth-rate .table-type-02 td {
-    width: 728px;
-    padding-left: 20px;
-}
-/* 북한현황지표 > 보건의료 > 0-14세 이상 인구 비율
-html/0-14-year-old-population-ratio.html */
-.years-old-ratio .graph-area {
-    height: 440px;
-    border: 1px solid #c2c2c2;
-    padding: 30px;
-    margin-bottom: 30px;
-}
-
-.years-old-ratio .graph-area p {
-    background-color: #e5e5e5;
-    height: 378px;
-    font-size: 30px;
-}
-
-.years-old-ratio p:nth-child(2) {
-    margin-bottom: 80px;
-}
-
-.years-old-ratio .table-type-02 {
-    margin-bottom: 310px;
-}
-
-.years-old-ratio .table-type-02 td {
-    width: 728px;
-    padding-left: 20px;
-}
-/* 북한현황지표 > 보건의료 > 15-64세 이상 인구 비율
-html/15-64-year-old-population-ratio.html */
-.year-old-ratio .graph-area {
-    height: 440px;
-    border: 1px solid #c2c2c2;
-    padding: 30px;
-    margin-bottom: 30px;
-}
-
-.year-old-ratio .graph-area p {
-    background-color: #e5e5e5;
-    height: 378px;
-    font-size: 30px;
-}
-
-.year-old-ratio p:nth-child(2) {
-    margin-bottom: 80px;
-}
-
-.year-old-ratio .table-type-02 {
-    margin-bottom: 310px;
-}
-
-.year-old-ratio .table-type-02 td {
-    width: 728px;
-    padding-left: 20px;
-}
+/* =======================================*/
 /* 북한현황지표 > 보건의료 > 65세 이상 인구 비율
-html/65-year-old-population-ratio.html */
+/* (html/65-year-old-population-ratio.html)
+/* =======================================*/
+.year-old-population-ratio .table-type-02 { margin-bottom: 120px; }
 
-.year-old-population-ratio .graph-area {
-    height: 440px;
-    border: 1px solid #c2c2c2;
-    padding: 30px;
-    margin-bottom: 30px;
-}
-
-.year-old-population-ratio .graph-area p {
-    background-color: #e5e5e5;
-    height: 378px;
-    font-size: 30px;
-}
-
-.year-old-population-ratio p:nth-child(2) {
-    height: 84px;
-    margin-bottom: 80px;
-}
-
-.year-old-population-ratio .table-type-02 {
-    margin-bottom: 310px;
-}
-
-.year-old-population-ratio .table-type-02 td {
-    width: 728px;
-    padding-left: 20px;
-}
+/* =======================================*/
 /* 북한현황지표 > 보건의료 > 인구 당 ODA 수원액
-html/oda-water-per-population.html */
+/* (html/oda-water-per-population.html)
+/* =======================================*/
+.oda-water-per-population .table-type-02 { margin-bottom: 120px; }
 
-.oda-water-per-population .graph-area {
-    height: 440px;
-    border: 1px solid #c2c2c2;
-    padding: 30px;
-    margin-bottom: 30px;
-}
-
-.oda-water-per-population .graph-area p {
-    background-color: #e5e5e5;
-    height: 378px;
-    font-size: 30px;
-}
-
-.oda-water-per-population p:nth-child(2) {
-    height: 84px;
-    margin-bottom: 80px;
-}
-
-.oda-water-per-population .table-type-02 {
-    margin-bottom: 310px;
-}
-
-.oda-water-per-population .table-type-02 td {
-    width: 728px;
-    padding-left: 20px;
-}
+/* =======================================*/
 /* 북한현황지표 > 보건의료 > 재난의 영향을 받은 인구수
-html/impact-of-disaster-population.html */
+/* (html/impact-of-disaster-population.html)
+/* =======================================*/
+.impact-of-disaster-population .table-type-02 { margin-bottom: 120px; }
 
-.impact-of-disaster-population .graph-area {
-    height: 440px;
-    border: 1px solid #c2c2c2;
-    padding: 30px;
-    margin-bottom: 30px;
-}
-
-.impact-of-disaster-population .graph-area p {
-    background-color: #e5e5e5;
-    height: 378px;
-    font-size: 30px;
-}
-
-.impact-of-disaster-population p:nth-child(2) {
-    height: 84px;
-    margin-bottom: 80px;
-}
-
-.impact-of-disaster-population .table-type-02 {
-    margin-bottom: 310px;
-}
-
-.impact-of-disaster-population .table-type-02 td {
-    width: 728px;
-    padding-left: 20px;
-}
+/* =======================================*/
 /* 북한현황지표 > 보건의료 > 15-19세 소녀 1천명 당 출산율
-html/girls-birth-rate.html */
+/* (html/girls-birth-rate.html)
+/* =======================================*/
+.girls-birth-rate .table-type-02 { margin-bottom: 120px; }
 
-.girls-birth-rate .graph-area {
-    height: 440px;
-    border: 1px solid #c2c2c2;
-    padding: 30px;
-    margin-bottom: 30px;
-}
-
-.girls-birth-rate .graph-area p {
-    background-color: #e5e5e5;
-    height: 378px;
-    font-size: 30px;
-}
-
-.girls-birth-rate p:nth-child(2) {
-    margin-bottom: 80px;
-}
-
-.girls-birth-rate .table-type-02 {
-    margin-bottom: 310px;
-}
-
-.girls-birth-rate .table-type-02 td {
-    width: 728px;
-    padding-left: 20px;
-}
+/* =======================================*/
 /* 북한현황지표 > 보건의료 > 출생 1천명 당 영아 사망률
-html/infant-mortality-rate.html */
+/* (html/infant-mortality-rate.html)
+/* =======================================*/
+.infant-mortality-rate .table-type-02 { margin-bottom: 120px; }
 
-.infant-mortality-rate .graph-area {
-    height: 440px;
-    border: 1px solid #c2c2c2;
-    padding: 30px;
-    margin-bottom: 30px;
-}
-
-.infant-mortality-rate .graph-area p {
-    background-color: #e5e5e5;
-    height: 378px;
-    font-size: 30px;
-}
-
-.infant-mortality-rate p:nth-child(2) {
-    margin-bottom: 80px;
-}
-
-.infant-mortality-rate .table-type-02 {
-    margin-bottom: 310px;
-}
-
-.infant-mortality-rate .table-type-02 td {
-    width: 728px;
-    padding-left: 20px;
-}
+/* =======================================*/
 /* 북한현황지표 > 보건의료 > 출생 1천명 당 5세 미만 아동 사망률
-html/birth-child-mortality.html */
+/* (html/birth-child-mortality.html)
+/* =======================================*/
+.birth-child-mortality .table-type-02 { margin-bottom: 120px; }
 
-.birth-child-mortality .graph-area {
-    height: 440px;
-    border: 1px solid #c2c2c2;
-    padding: 30px;
-    margin-bottom: 30px;
-}
-
-.birth-child-mortality .graph-area p {
-    background-color: #e5e5e5;
-    height: 378px;
-    font-size: 30px;
-}
-
-.birth-child-mortality p:nth-child(2) {
-    margin-bottom: 80px;
-}
-
-.birth-child-mortality .table-type-02 {
-    margin-bottom: 310px;
-}
-
-.birth-child-mortality .table-type-02 td {
-    width: 728px;
-    padding-left: 20px;
-}
-/* 북한현황지표 > 농업 > 식량 지원량
-html/north-korean-food-ration.html */
-.north-korean-food-ration .graph-area {
-    height: 440px;
-    border: 1px solid #c2c2c2;
-    padding: 30px;
-    margin-bottom: 30px;
-}
-.north-korean-food-ration .graph-area p {
-    background-color: #e5e5e5;
-    height: 378px;
-    font-size: 30px;
-}
-.north-korean-food-ration .table-overflow-x{
-    overflow-x: auto;
-    margin-bottom: 120px;
-}
-.north-korean-food-ration .table-type-01 td{
-    height:44px;
-}
-/* 북한현황지표 > 농업 > 식량 지원량
-html/food-aid-list.html */
-.food-aid .graph-area {
-    height: 440px;
-    border: 1px solid #c2c2c2;
-    padding: 30px;
-    margin-bottom: 30px;
-}
-.food-aid .graph-area p {
-    background-color: #e5e5e5;
-    height: 378px;
-    font-size: 30px;
-}
-.food-aid .table-overflow-x{
-    overflow-x: auto;
-    margin-bottom: 120px;
-}
-.food-aid .table-type-01 td{
-    height:44px;
-}
-/* 북한현황지표 > 농업 > 식량 생산량
-html/food-production-list.html */
-.food-production .graph-area {
-    height: 440px;
-    border: 1px solid #c2c2c2;
-    padding: 30px;
-    margin-bottom: 30px;
-}
-.food-production .graph-area p {
-    background-color: #e5e5e5;
-    height: 378px;
-    font-size: 30px;
-}
-.food-production p:nth-child(2) {
-    margin-bottom: 80px;
-}
-
-.food-production .table-type-02 {
-    margin-bottom: 224px;
-}
-
-.food-production .table-type-02 td {
-    width: 728px;
-    padding-left: 20px;
-}
-/* 북한현황지표 > 농업 > 과채류 재배면적
-html/fruit-and-vegetable-cultivation-area.html */
-.fruit-and-vegetable-cultivation-area .graph-area {
-    height: 440px;
-    border: 1px solid #c2c2c2;
-    padding: 30px;
-    margin-bottom: 30px;
-}
-.fruit-and-vegetable-cultivation-area .graph-area p {
-    background-color: #e5e5e5;
-    height: 378px;
-    font-size: 30px;
-}
-
-.fruit-and-vegetable-cultivation-area p:nth-child(2) {
-    margin-bottom: 80px;
-}
-
-.fruit-and-vegetable-cultivation-area .table-type-02 {
-    margin-bottom: 310px;
-}
-
-.fruit-and-vegetable-cultivation-area .table-type-02 td {
-    width: 728px;
-    padding-left: 20px;
-}
-/* 북한현황지표 > 농업 > 비료 생산량
-html/fertilizer-production.html */
-.fertilizer-production .graph-area {
-    height: 440px;
-    border: 1px solid #c2c2c2;
-    padding: 30px;
-    margin-bottom: 30px;
-}
-.fertilizer-production .graph-area p {
-    background-color: #e5e5e5;
-    height: 378px;
-    font-size: 30px;
-}
-.fertilizer-production .table-type-01{
-    margin-bottom: 120px;
-}
+/*# sourceMappingURL=map/khj-style.css.map */

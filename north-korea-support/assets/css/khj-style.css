@@ -294,6 +294,17 @@
 }
 /* =======================================*/
 
-/* 북한현황지표 > 보건의료 > 식량 생산량
-/* (html/food-production-list.html)
+/* 통계 > 대북 인도지원 > 민간차원 지원
+/* (html/private-level-support.html)
 /* =======================================*/
+.private-level-support p{
+	margin-top: 10px;
+}
+/* =======================================*/
+
+/* 통계 > 대북 인도지원 > 국제기구 등을 통한 지원
+/* (html/support-through-international-organizations.html)
+/* =======================================*/
+.support-through-international-organizations p{
+	margin-top: 10px;
+}

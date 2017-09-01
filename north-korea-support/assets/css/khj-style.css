@@ -326,6 +326,9 @@
 .humanitarian-aid-to-north-korea-by-year .p-margin{
 	margin-top: 10px;
 }
+/* 통계 > 대북 인도지원 > 식량지원
+/* (html/food-aid-content.html)
+/* =======================================*/
 .food-aid-content .table-type-01 tr:first-child td:nth-child(2),
 .food-aid-content .table-type-01 tr:first-child td:nth-child(4),
 .food-aid-content .table-type-01 tr:first-child td:nth-child(5),

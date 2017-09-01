@@ -297,7 +297,10 @@
 /* 통계 > 대북 인도지원 > 민간차원 지원
 /* (html/private-level-support.html)
 /* =======================================*/
-.private-level-support p{
+.private-level-support .web-table-area p{
+	height: 800px;
+}
+.private-level-support .p-margin{
 	margin-top: 10px;
 }
 /* =======================================*/
@@ -305,7 +308,10 @@
 /* 통계 > 대북 인도지원 > 국제기구 등을 통한 지원
 /* (html/support-through-international-organizations.html)
 /* =======================================*/
-.support-through-international-organizations p{
+.support-through-international-organizations .web-table-area p{
+	height: 800px;
+}
+.support-through-international-organizations .p-margin{
 	margin-top: 10px;
 }
 /* =======================================*/
@@ -313,6 +319,17 @@
 /* 통계 > 대북 인도지원 > 연도별 인도적 대북지원
 /* (html/humanitarian-aid-to-north-korea-by-year.html)
 /* =======================================*/
+.humanitarian-aid-to-north-korea-by-year .web-table-area p{
+	height: 904px;
+}
+
 .humanitarian-aid-to-north-korea-by-year .p-margin{
 	margin-top: 10px;
+}
+.food-aid-content .table-type-01 tr:first-child td:nth-child(2),
+.food-aid-content .table-type-01 tr:first-child td:nth-child(4),
+.food-aid-content .table-type-01 tr:first-child td:nth-child(5),
+.food-aid-content .table-type-01 tr:first-child td:nth-child(8),
+.food-aid-content .table-type-01 tr:first-child td:nth-child(12){
+	vertical-align: top;
 }

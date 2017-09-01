@@ -308,3 +308,11 @@
 .support-through-international-organizations p{
 	margin-top: 10px;
 }
+/* =======================================*/
+
+/* 통계 > 대북 인도지원 > 연도별 인도적 대북지원
+/* (html/humanitarian-aid-to-north-korea-by-year.html)
+/* =======================================*/
+.humanitarian-aid-to-north-korea-by-year .p-margin{
+	margin-top: 10px;
+}

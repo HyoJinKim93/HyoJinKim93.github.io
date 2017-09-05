@@ -15,7 +15,10 @@ caption {
 .clearfix:after {
     clear: both;
 }
-
+.cy-content-box {
+	height: calc(100% - 80px);
+	min-height: 500px;
+}
 /* =======================================*/
 /* 설문조사
 /* =======================================*/
@@ -120,9 +123,13 @@ caption {
 .cy-table table td{
 	height: 22px;
 }
+.cy-table table tbody td{
+	text-align: center;
+}
 .cy-table table thead tr th {
 	border-right: 1px solid #d3dbe0;
 	font-weight: bold;
+	padding-bottom: 1px;
 }
 .cy-table table tbody tr:last-child td{
 	border-bottom: 0;
@@ -133,6 +140,8 @@ caption {
 .cy-table table tbody tr td {
 	border-right: 1px solid #d3dbe0;
 	border-bottom: 1px solid #d3dbe0;
+	line-height: 0;
+	padding: 2px 0 1px;
 }
 .cy-table table tbody tr td:last-child {
 	border-right: 0;
@@ -147,4 +156,11 @@ caption {
 .cy-paging {
 	margin-top: 10px;
 	text-align: center;
+}
+.cy-paging * {
+	vertical-align:text-bottom;
+}
+.cy-paging button {
+	cursor: pointer;
+	margin: 0 2px;
 }

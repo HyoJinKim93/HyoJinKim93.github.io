@@ -45,9 +45,11 @@ caption {
 /* 조회조건 */
 .cy-srcForm div:first-child {
 	float: left;
+	width: 50%;
 }
 .cy-srcForm div:nth-child(2) {
-	float: right
+	float: right;
+	width: 50%;
 }
 .cy-srcForm ul li:nth-child(2) {
 	display: inline-block;
@@ -69,11 +71,23 @@ caption {
 .cy-srcForm ul li:last-child{
 	margin-bottom: 0;
 }
+.cy-srcForm ul li:last-child input{
+	width: 482px;
+}
 .cy-srcForm ul li h4 {
 	display: inline-block;
 	font-weight: bold;
 	vertical-align: -1px;
 	width: 40px;
+}
+.cy-srcForm ul li [type="radio"] + label {
+	margin-right: 30px;
+}
+.cy-srcForm button{
+	background-color: #394a57;
+	color: #fff;
+	border: 0;
+	padding: 0 14px 2px 13px;
 }
 .cy-hr{
 	height: 1px;
@@ -103,8 +117,7 @@ caption {
 .cy-srcBtn button {
 	background-color: #1a5380;
 	color: #fff;
-	padding-left: 15px;
-	padding-right: 15px;
+	padding: 0 15px 2px 15px;
 	border-radius: 3px;
 	height: 28px;
 }

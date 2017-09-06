@@ -10,6 +10,46 @@ caption { visibility: hidden; position: absolute; top: -9999px; }
 
 .cy-content-box { height: calc(100% - 80px); min-height: 500px; }
 
+
+/* =======================================*/
+/* btn type
+/* =======================================*/
+
+.cy-btn-set {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.cy-btn-type-1 {
+	height: 30px;
+	background-color: #d12d04;
+	border-radius: 3px;
+	color: #fff;
+	padding: 0 14px 0 14px;
+}
+
+.cy-btn-type-3 {
+	background-color: #0f77bc;
+	padding: 0 24px;
+	border-radius: 3px;
+	text-align: center;
+	color: #fff;
+	height: 30px;
+}
+
+.cy-btn-type-2{
+	background-color: #475966;
+	padding: 0 14px 0 14px;
+	height: 30px;
+	border-radius: 3px;
+	color: #fff;
+}
+
+.cy-submit-btn{
+	text-align: center;
+}
+
 /* =======================================*/
 /* 설문조사
 /* =======================================*/
@@ -87,3 +127,78 @@ caption { visibility: hidden; position: absolute; top: -9999px; }
 .cy-paging button { cursor: pointer; margin: 0 2px; }
 
 /*# sourceMappingURL=map/cy-human.css.map */
+
+
+/* =======================================*/
+/* 메인화면
+/* =======================================*/
+/* 외부화면 영역 */
+
+.cy-main-content-box div p {
+	height: 400px;
+	background-color:#d3e1f4;
+	margin: 10px;
+}
+
+/* 외부화면 수정 영역 */
+.cy-main-rework-content-box {
+	position: relative;
+	top: 627px;
+}
+.cy-tab-menu {
+	position: absolute;
+	top: -32px;
+	width: 100%;
+}
+
+.cy-main-rework-content-box .cy-main-left-content {
+	margin: 10px;
+	float: left;
+}
+
+.cy-main-rework-content-box .cy-main-right-content {
+	margin: 47px 30px 0 0;
+	float: right;
+}
+
+.cy-main-left-content div:first-child{
+	margin-bottom: 6px;
+}
+
+.cy-main-left-content div:nth-child(2){
+	margin-bottom: 6px;
+}
+
+.cy-main-left-content div:nth-child(2) input,
+.cy-main-left-content div:nth-child(3) input{
+	width: calc(100% - 90px);
+}
+
+.cy-main-left-content div:nth-child(4) {
+	margin-top:6px;
+	margin-bottom:4px;
+}
+
+.cy-main-left-content div:nth-child(5) {
+	background-color:#f0f3f5;
+	border: 1px solid #e6e6e6;
+	padding: 7px 11px;
+	margin-left: 90px;
+}
+.cy-main-left-content div:nth-child(5) span{
+	width: 84px;
+}
+.cy-main-left-content div:nth-child(5) input {
+	width: calc(100% - 90px);
+	margin-bottom: 6px;
+}
+.cy-main-left-content div span:first-child {
+	width: 84px;
+}
+.cy-main-right-content div select{
+	width: 70px;
+}
+.cy-main-right-content div select:first-child{
+	margin-right: 50px;
+	margin-bottom: 6px;
+}

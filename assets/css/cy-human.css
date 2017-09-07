@@ -19,6 +19,7 @@ caption { visibility: hidden; position: absolute; top: -9999px; }
 	position: absolute;
 	top: 0;
 	right: 0;
+	z-index: 1;
 }
 
 .cy-btn-type-1 {
@@ -49,24 +50,33 @@ caption { visibility: hidden; position: absolute; top: -9999px; }
 .cy-submit-btn {
 	text-align: center;
 	cursor: pointer;
+	margin-top: 20px;
 }
 
 .cy-main-left-content input {
 	border: 1px solid #e6e6e6;
-	height: 30px;
 }
 
 .cy-main-right-content select {
 	border: 1px solid #e6e6e6;
-	height: 30px;
 }
 
-.circle {
+.cy-circle-1 {
+	width: 24px;
+	height: 24px;
+	background-color: #d3e6f5;
+	border: 1px solid #81b1d6;
+	border-radius: 24px;
+	float: right;
+}
+
+.cy-circle-2 {
 	width: 24px;
 	height: 24px;
 	background-color: #fff;
 	border: 1px solid #c2c2c2;
 	border-radius: 24px;
+	float: right;
 }
 
 /* =======================================*/
@@ -184,13 +194,12 @@ caption { visibility: hidden; position: absolute; top: -9999px; }
 	margin-bottom: 6px;
 }
 
-.cy-main-left-content div:nth-child(2){
+.cy-main-left-content div:nth-child(2) {
 	margin-bottom: 6px;
-    float: right;
 }
 
 .cy-main-left-content div:nth-child(2) input,
-.cy-main-left-content div:nth-child(3) input{
+.cy-main-left-content div:nth-child(3) input {
 	width: calc(100% - 90px);
 }
 
@@ -202,11 +211,13 @@ caption { visibility: hidden; position: absolute; top: -9999px; }
 .cy-main-left-content div:nth-child(5) {
 	position: relative;
 }
+
 .cy-main-left-content div:nth-child(5) span {
 	width: 84px;
 	font-weight: bold;
 	margin-bottom: 6px;
 }
+
 .cy-main-left-content div:nth-child(5) input {
 	width: calc(100% - 90px);
 	margin-bottom: 6px;
@@ -216,9 +227,46 @@ caption { visibility: hidden; position: absolute; top: -9999px; }
 	float: left;
 	background-color:#f0f3f5;
 	border: 1px solid #e6e6e6;
-	padding: 7px 11px;
+	padding: 7px 11px 1px;
 	margin-left: 90px;
 }
+
+.cy-main-left-content div:nth-child(5) div:nth-child(2) {
+	float: right;
+	position: absolute;
+	top: 28px;
+	left: 644px;
+} 
+
+.cy-main-left-content div:nth-child(6) {
+	position: relative;
+}
+
+.cy-main-left-content div:nth-child(6) span {
+	width: 84px;
+	font-weight: bold;
+	margin-bottom: 6px;
+}
+
+.cy-main-left-content div:nth-child(6) input {
+	width: calc(100% - 90px);
+	margin-bottom: 6px;
+}
+
+.cy-main-left-content div:nth-child(6) div:first-child {
+    float: left;
+	background-color:#f0f3f5;
+	border: 1px solid #e6e6e6;
+	padding: 7px 11px 1px;
+	margin-left: 90px;
+}
+
+.cy-main-left-content div:nth-child(6) div:nth-child(2) {
+	float: right;
+	position: absolute;
+	top: 100px;
+	left: 644px;
+} 
 
 .cy-main-left-content div span:first-child {
 	width: 84px;

@@ -57,10 +57,6 @@ caption { visibility: hidden; position: absolute; top: -9999px; }
 	border: 1px solid #e6e6e6;
 }
 
-select {
-	border: 1px solid #e6e6e6;
-}
-
 .cy-btn-menu-remove {
 	width: 24px;
 	height: 24px;
@@ -125,7 +121,7 @@ select {
 /* 조회조건 */
 .cy-srcForm div:first-child { float: left; width: 50%; }
 
-.cy-srcForm div:nth-child(2) { float: right; width: 50%; }
+/* .cy-srcForm div:nth-child(2) { float: right; width: 50%; } */
 
 .cy-srcForm ul li:nth-child(2) { display: inline-block; float: left; }
 
@@ -501,7 +497,7 @@ th, td { border-collapse: collapse; }
 /* 조회조건 */
 .cy-srcForm div:first-child { float: left; width: 50%; }
 
-.cy-srcForm div:nth-child(2) { float: right; width: 50%; }
+/* .cy-srcForm div:nth-child(2) { float: right; width: 50%; } */display: block;
 
 .cy-srcForm ul li:nth-child(2) { display: inline-block; float: left; }
 
@@ -695,4 +691,36 @@ th, td { border-collapse: collapse; }
 
 .popup-content.cy-form-content {
 	padding: 20px;
+}
+
+/* =======================================*/
+/* 이메일 발송 그룹 팝업
+/* =======================================*/
+
+.cy-srcForm.cy-email-group {
+	height: 160px;
+	margin: 0;
+}
+
+.cy-srcForm.cy-email-group h4 {
+	width: 80px;
+}
+
+.cy-srcForm.cy-email-group div:first-child {
+	width: 100%;
+}
+
+.cy-srcForm.cy-email-group .btn-sub {
+	width: 92px;
+	margin-top: 10px;
+}
+
+.cy-btn-sub {
+	text-align: center;
+}
+
+.cy-all-pages {
+	display: inline-block;
+	float: left;
+	margin-top: 28px;
 }

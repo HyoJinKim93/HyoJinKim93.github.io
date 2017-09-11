@@ -724,3 +724,7 @@ th, td { border-collapse: collapse; }
 	float: left;
 	margin-top: 28px;
 }
+
+.popup-content.cy-form-content div:first-child {
+	
+}

@@ -12,7 +12,7 @@
 
 <body>
     <!-- popup-wrap(S) -->
-    <div class="popup-container" id="popupUser">
+    <div class="popup-container" id="popupUser" style="display: none;">
         <div class="popup">
             <!-- popup-headline(S) -->
             <div class="popup-headline">
@@ -184,13 +184,44 @@
                                         <td>4.doc</td>
                                         <td>22.hwp</td>
                                     </tr>
+
                                 </tbody>
                             </table>
                         </div>
                     </div>
+                    <div class="cy-section-box">
+                        <div class="cy-table cy-table-check-border">
+                            <div class="cy-title">
+                                <h5>상태 설정 선택</h5>
+                            </div>
+                            <div class="cy-label">
+                                <input type="radio" name="a">
+                                    <label for="">보완제출</label>
+                                    <input type="radio" name="a">
+                                    <label for="">검토완료</label>
+                                    <input type="radio" name="a">
+                                    <label for="">접수</label>
+                                    <input type="radio" name="a">
+                                    <label for="">선정</label>
+                                    <input type="radio" name="a">
+                                    <label for="">미선정</label>
+                                    <!-- <select id="popSector" name="popSector">
+                                           <option value="J10" selected="selected">국내외언론동향</option>
+                                           <option value="J20">북한동향</option>
+                                           <option value="J30">행사정보</option>
+                                           <option value="J40">기타</option>
+                                    </select> -->
+                            </div>
+                        </div>
+                    </div>
                     <!-- 조회조건 (E) -->
-                    <!-- 팝업 공통버튼 영역(S) -->
+                    
+                </div>
+                <!-- 팝업 공통버튼 영역(S) -->
                     <div class="popup-btns">
+                        <button class="cy-btn-gray" type="button">보완요청 작성</button>
+                        <button class="cy-btn-gray" type="button">처리</button>
+                        <button class="cy-btn-gray" type="button">이전단계</button>
                         <!-- <button type="button" class="btn-pop" onclick="fnSave('S'); return false;">
                             <spring:message code="button.save" />
                         </button>
@@ -198,14 +229,13 @@
                             <button type="button" class="btn-pop" onclick="popupClose(); return false;">닫기</button> -->
                     </div>
                     <!-- 팝업 공통버튼 영역(E) -->
-                </div>
                 <!-- popup-content(E) -->
             </form>
         </div>
     </div>
     <!-- popup-wrap(E) -->
     <!-- popup-wrap(S) -->
-    <div class="popup-container" id="popupStatus" style="display: none;">
+    <div class="popup-container" id="popupStatus">
         <div class="popup">
             <!-- popup-headline(S) -->
             <div class="popup-headline">
@@ -222,39 +252,24 @@
                             <div class="cy-title">
                                 <h5>상태 설정 선택</h5>
                             </div>
-                            <table>
-                                <colgroup>
-                                    <col width="100">
-                                    <!-- <col style="width: 80px;"> -->
-                                    <col width="190">
-                                    <!-- <col style="width: 80px;"> -->
-                                    <col width="100">
-                                    <!-- <col style="width: 80px;"> -->
-                                    <col width="190">
-                                </colgroup>
-                                <tbody>
-                                    <tr>
-                                        <td colspan="4" class="cy-td-label">
-                                            <input type="radio" name="a">
-                                            <label for="">보완제출</label>
-                                            <input type="radio" name="a">
-                                            <label for="">검토완료</label>
-                                            <input type="radio" name="a">
-                                            <label for="">접수</label>
-                                            <input type="radio" name="a">
-                                            <label for="">선정</label>
-                                            <input type="radio" name="a">
-                                            <label for="">미선정</label>
-                                            <!-- <select id="popSector" name="popSector">
-                                                   <option value="J10" selected="selected">국내외언론동향</option>
-                                                   <option value="J20">북한동향</option>
-                                                   <option value="J30">행사정보</option>
-                                                   <option value="J40">기타</option>
-                                    </select> -->
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <div class="cy-label">
+                                <input type="radio" name="a">
+                                <label for="">보완제출</label>
+                                <input type="radio" name="a">
+                                <label for="">검토완료</label>
+                                <input type="radio" name="a">
+                                <label for="">접수</label>
+                                <input type="radio" name="a">
+                                <label for="">선정</label>
+                                <input type="radio" name="a">
+                                <label for="">미선정</label>
+                                <!-- <select id="popSector" name="popSector">
+                                   <option value="J10" selected="selected">국내외언론동향</option>
+                                       <option value="J20">북한동향</option>
+                                       <option value="J30">행사정보</option>
+                                               <option value="J40">기타</option>
+                                </select> -->
+                            </div>
                         </div>
                     </div>
                     <!-- 조회조건 (E) -->
@@ -276,12 +291,12 @@
     </div>
     <!-- popup-wrap(E) -->
     <!-- popup-wrap(S) -->
-    <div class="popup-container" id="popupDoc" style="display: none;">
+    <div class="popup-container" id="popupDoc">
         <div class="popup">
             <!-- popup-headline(S) -->
             <div class="popup-headline">
-                <h4>상태 정보</h4>
-                <button type="button" class="pop-close">close</button>
+                <h4>구비서류 확인</h4>
+                <button type="button" class="popup-close">close</button>
             </div>
             <!-- popup-headline(E) -->
             <form name="formPop" id="formPop" method="post" action="/mgt/SaveMgtBbsItem.do" enctype="multipart/form-data">
@@ -289,11 +304,11 @@
                 <div class="popup-content">
                     <!-- 조회조건 (S) -->
                     <div class="cy-section-box">
-                        <div class="cy-table">
-                            <div class="cy-title">
-                                <h5>상태 설정 선택구비서류 확인</h5>
-                            </div>
-                            
+                        <div class="cy-title">
+                            <h5>구비서류 확인</h5>
+                        </div>
+                        <div class="cy-base-table">
+
                             <table>
                                 <colgroup>
                                     <col width="100">
@@ -329,7 +344,6 @@
                     <!-- 조회조건 (E) -->
                     <!-- 팝업 공통버튼 영역(S) -->
                     <div class="popup-btns">
-                        <button class="cy-btn-gray" type="button">닫기</button>
                         <!-- <%-- <button type="button" class="btn-pop" onclick="fnSave('D'); return false;"><spring:message code="button.delete" /></button> --%>
                             <button type="button" class="btn-pop" onclick="popupClose(); return false;">닫기</button> -->
                     </div>
@@ -342,7 +356,7 @@
     <!-- popup-wrap(E) -->
 
     <!-- popup-wrap(S) -->
-    <div class="popup-container" id="" style="display: none;">
+    <div class="popup-container" id="">
         <div class="popup">
             <!-- popup-headline(S) -->
             <div class="popup-headline">
@@ -365,7 +379,7 @@
                     </div>
                     <!-- 조회조건 (S) -->
                     <div class="cy-section-box">
-                        <div class="cy-table">
+                        <div>
                             <div class="cy-title">
                                 <h5>사업정보</h5>
                             </div>
@@ -398,7 +412,7 @@
                     </div>
                     <!-- 조회조건 (E) -->
                     <div class="cy-section-box">
-                        <div class="cy-table">
+                        <div>
                             <div class="cy-title">
                                 <h5>구비서류</h5>
                             </div>

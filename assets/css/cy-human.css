@@ -33,6 +33,7 @@ label[for="cy-number"]:after { content: "▼"; top: 12px; }
 /* =======================================*/
 .cy-th-border { border-right: 0 !important; }
 .cy-td-border { border-left: 0 !important; }
+.cy-label label { margin-right: 20px; margin-left: 2px;}
 .cy-content-box { height: calc(100% - 80px); min-height: 500px; }
 
 .cy-paging { margin-top: 10px; text-align: center; }
@@ -63,7 +64,7 @@ label[for="cy-number"]:after { content: "▼"; top: 12px; }
 /* 팝업 컨테이너 */
 .popup-container { position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 9999; /* 팝업 영역 */ }
 
-.popup-container .popup { width: 900px; min-height: 460px; max-height: 700px; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3); outline: 0; z-index: 10000; position: absolute; top: 50%; left: 50%; -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); /* 팝업 헤드라인 */ /* 팝업 콘텐츠 */ }
+.popup-container .popup { width: 900px; min-height: 460px; max-height: 700px; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3); outline: 0; z-index: 10000; position: absolute; top: 50%; left: 50%; -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); /* 팝업 헤드라인 */ /* 팝업 콘텐츠 */ background: #e1effa; }
 
 .popup-container .popup .popup-headline { height: 54px; line-height: 54px; padding: 0 30px; background: #1f303d; }
 

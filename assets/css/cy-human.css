@@ -10,7 +10,19 @@ caption { visibility: hidden; position: absolute; top: -9999px; }
 
 .cy-content-box { height: calc(100% - 80px); min-height: 500px; }
 
+.cy-text-left {
+	text-align: left !important;
+}
 
+.cy-text-center {
+	text-align: center;
+}
+.cy-th-border {
+	border-right: 1px solid #d2d4d6 !important;
+}
+.cy-td-border {
+	border-left: 1px solid #d2d4d6 !important;
+}
 /* =======================================*/
 /* btn type
 /* =======================================*/
@@ -620,6 +632,29 @@ th, td { border-collapse: collapse; }
 
 .cy-section-box .cy-check-list li input[type="text"] { min-width: 50%; max-width: 580px; margin-left: 4px; }
 
+/* 조회결과 [시트정보] */
+.cy-table { padding-left: 10px; padding-right: 10px; }
+
+.cy-table table { border: 1px solid #999fa3; }
+
+.cy-table table td { height: 22px; }
+
+.cy-table table tbody td { text-align: center; }
+
+.cy-table table thead tr th { border-right: 1px solid #d3dbe0; font-weight: bold; padding-bottom: 1px; }
+
+.cy-table table tbody tr:last-child td { border-bottom: 0; }
+
+.cy-table table thead tr th:last-child { border-right: 0; }
+
+.cy-table table tbody tr td { border-right: 1px solid #d3dbe0; border-bottom: 1px solid #d3dbe0; line-height: 0; padding: 2px 0 1px; }
+
+.cy-table table tbody tr td:last-child { border-right: 0; }
+
+.cy-table thead th { background-color: #b8c3cc; height: 30px; }
+.cy-table table tbody th {
+	background-color: #f5f8fa;
+}
 /*# sourceMappingURL=map/cy-human.css.map */
 
 /* =======================================*/
@@ -652,7 +687,7 @@ th, td { border-collapse: collapse; }
 	background-color: #f5f8fa;
 	border: 1px solid #d2d4d6;
 	border-right: 0;
-	height: 44px;
+	height: 36px;
 }
 
 .cy-section-box .cy-td-style {
@@ -725,6 +760,57 @@ th, td { border-collapse: collapse; }
 	margin-top: 28px;
 }
 
-.popup-content.cy-form-content div:first-child {
-	
+.popup-content.cy-form-content .cy-btn-email {
+	float: right;
+	margin-top: 28px;
+	margin-right: 4px;
+	margin-bottom: 6px;
+}
+
+.popup-content.cy-form-content .cy-btn-lightblue { 
+	min-width: 52px; 
+	height: 28px; 
+	line-height: 25px; 
+	color: #fff; 
+	padding: 0 10px; 
+	border-radius: 3px; 
+	background-color: #1a5380;
+}
+
+.email-group {
+    float: left;
+    width: 310px;
+    height: 390px;
+    padding: 0;	
+}
+
+.email-group h4 {
+	background-color: #c9e2f5;
+	padding: 16px 20px;
+}
+
+.email-group ul {
+	overflow-y: scroll;
+}
+.email-group ul li {
+	padding: 12px 20px;
+	border-bottom: 1px solid #c9e2f5;
+}
+
+.email-group-btn {
+	display: inline-block;
+}
+
+.email-select-group {
+	width: 450px;
+    height: 320px;
+    float: right;
+    padding: 0;	
+}
+.email-select-group h4 {
+	background-color: #c9e2f5;
+	padding: 16px 20px;
+}
+.email-select-group li {
+	margin-top: 4px;
 }

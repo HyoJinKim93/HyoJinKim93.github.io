@@ -33,9 +33,17 @@ label[for="cy-number"]:after { content: "▼"; top: 12px; }
 /* =======================================*/
 .cy-th-border { border-right: 0 !important; }
 .cy-td-border { border-left: 0 !important; }
+.cy-base-dl { width:100%; border: 1px solid #8ec5f4; }
+.cy-base-dl dt {
+	width: 80px;
+	background: #f5f8fa;
+    border-right: 1px solid #d3dbe0;
+}
+.cy-base-dl dt,.cy-base-dl dd { display:inline-block; height: 36px; line-height: 36px;padding: 0 20px;}
 .cy-label label { margin-right: 20px; margin-left: 2px;}
 .cy-content-box { height: calc(100% - 80px); min-height: 500px; }
-
+.cy-ta-right { text-align: right; }
+.cy-ta-center { text-align: center; }
 .cy-paging { margin-top: 10px; text-align: center; }
 
 .cy-paging * { vertical-align: text-bottom; }
@@ -173,11 +181,13 @@ label[for="cy-number"]:after { content: "▼"; top: 12px; }
 
 .cy-section-table table th:first-child, .cy-base-table table th:first-child { border-left: 0; }
 
-.cy-section-table table td, .cy-base-table table td { height: 36px; }
+.cy-section-table table td, .cy-base-table table td, .cy-base-table td { height: 36px; }
 
 .cy-section-table table td textarea, .cy-base-table table td textarea { border: 1px solid #b4bfc8; overflow-y: scroll; }
 
 .cy-section-table table th, .cy-base-table table th, .cy-section-table table td, .cy-base-table table td { padding: 6px 20px; border-top: 1px solid #c5e2f3; border-left: 1px solid #c5e2f3; box-sizing: border-box; }
+
+.cy-section-box .cy-base-table2 { letter-spacing: -0.04em; margin-top: 10px; background: #fff; }
 
 .cy-section-box.cy-section-box2 { background-color: #f7f8d8; }
 
@@ -600,7 +610,10 @@ label[for="cy-number"]:after { content: "▼"; top: 12px; }
 /* =======================================*/
 
 .cy-section-box.cy-space {
-	padding: 0 45px;
+	padding: 20px 45px;
+}
+.cy-section-box.cy-space .cy-ta-right {
+	margin-bottom: 20px;
 }
 .cy-section-box.cy-space table td {
 	padding: 0 20px;
@@ -610,15 +623,20 @@ label[for="cy-number"]:after { content: "▼"; top: 12px; }
 	float: right;
 }
 
-.cy-popup-btn .cy-btn-blue { 
+.cy-popup-btn {
+	margin-bottom: 20px;
+}
+.cy-popup-btn button {
+	padding: 0 10px; 
+}
+.cy-btn-blue { 
 	min-width: 52px; 
 	height: 28px; 
 	line-height: 25px; 
-	color: #fff; 
-	padding: 0 10px; 
-	border-radius: 3px; 
+	color: #fff;
+	border-radius: 3px;
+	padding: 0 10px;  
 	background-color: #003761;
-	margin-bottom: 20px;
 }
 .cy-section-box .cy-popup-survey {
 	background-color: #fff;

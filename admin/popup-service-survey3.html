@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <title>설문조사</title>
+    <!-- CSS : 기존 스타일 -->
+    <link rel="stylesheet" href="../assets/css/human.css">
+    <!-- CSS : 신규 추가 스타일 -->
+    <link rel="stylesheet" href="../assets/css/cy-human.css">
+</head>
+<body>
+
+    <div class="popup-container">
+        <div class="popup">
+            <!-- [Start] 팝업 헤드라인 -->
+            <header class="popup-headline">
+                <h4>설문조사</h4>
+                <button type="button" class="popup-close">창 닫기</button>
+            </header>
+            <!-- [End] 팝업 헤드라인 -->
+
+            <!-- [Start] 팝업 콘텐츠 -->
+            <div class="popup-content">
+                <!-- [Start] 테이블 영역 -->
+                <div class="cy-section-box cy-space">
+                    <!-- [Start] 결과보기, 엑셀 다운받기 콘텐츠 -->
+                    <div class="cy-ta-right">
+                        <button class="cy-btn-blue" type="button">결과보기</button>
+                        <button class="cy-btn-blue" type="button">결과 Excel 다운받기</button>
+                    </div>
+                    <!-- [End] 결과보기, 엑셀 다운받기 콘텐츠 -->
+                    <dl class="cy-base-dl">
+                        <dt>제목</dt>
+                        <dd><!-- 편집일 경우, 아래 input 요소 사용  -->
+                            <!-- <input class="cy-w100p" type="text" aria-label="제목 입력"> -->
+                            우리 단체는 이렇게 사업운영합니다
+                        </dd>
+                    </dl>
+                    <!-- [End] 테이블 영역 -->
+                    <!-- [Start] 컨텐츠 -->
+                    <div class="cy-popup-survey cy-survey-contents">
+                        <hr class="cy-hr-dashed">
+                        <!-- [Start] 질문 : 증감 보기 영역 -->
+                        <div class="cy-section-box cy-view cy-check">
+                            <div class="cy-title">
+                                <h5>1. 사전정보공개에 대해 건의할 게 있습니까?</h5>
+                                <span>(복수선택 가능)</span>
+                            </div>
+                            <ul class="cy-check-list">
+                                <li>
+                                    <input id="checkbox-id" type="checkbox" name="checkbox-neme">
+                                    <label for="checkbox-id">없다</label>
+                                </li>
+                                <li>
+                                    <input id="checkbox-id" type="checkbox" name="checkbox-neme">
+                                    <label for="checkbox-id">잘 모르겠다</label>
+                                </li>
+                                <li>
+                                    <input id="checkbox-id" type="checkbox" name="checkbox-neme">
+                                    <label for="checkbox-id">잘 진행되고 있다</label>
+                                </li>
+                                <li>
+                                    <input id="checkbox-id" type="checkbox" name="checkbox-neme">
+                                    <label for="checkbox-id">관심없다</label>
+                                </li>
+                                <li>
+                                    <input id="checkbox-id" type="checkbox" name="checkbox-neme">
+                                    <label for="checkbox-id">기타</label>
+                                    <input id="text-id" class="cy-popup-survey-input" type="text" aria-label="기타 답변 입력하세요.">
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- [End] 질문 : 증감 보기 영역 -->
+                    </div>
+                    <!-- [End] 컨텐츠 영역 -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

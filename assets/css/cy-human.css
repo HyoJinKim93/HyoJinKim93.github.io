@@ -888,3 +888,15 @@ label[for="cy-number"]:after { content: "▼"; top: 12px; }
 
 .cy-survey-contents .results-area .statistics strong { vertical-align: 0; }
 .cy-survey-contents .results-area .statistics .fa-commenting img { vertical-align: 0; }
+
+.cy-section-table .cy-input-type { display: inline-block; }
+
+.cy-section-table .cy-input-group { display: inline-block; }
+
+.cy-section-table .cy-label-m60p { display: inline-block; }
+
+.cy-section-table .cy-label-m60p label { margin-right: 60px; }
+
+.cy-section-table .cy-send-group { border: 1px solid #b4bfc8; padding: 20px; margin-top: 6px; height: 280px; overflow-y: auto; }
+
+.cy-section-table .cy-send-group a[href=""] { color:#6b0000; }

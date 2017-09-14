@@ -882,6 +882,9 @@ label[for="cy-number"]:after { content: "▼"; top: 12px; }
 
 .cy-survey-contents .results-area .statistics .fa { color: #003761; margin-right: 4px; }
 
-.cy-survey-contents .results-area .statistics .fa-user { display: inline-block; background:url(../images/icon/icon-person.png) no-repeat 0 62%; font-size: 18px; vertical-align: -1px; }
+.cy-survey-contents .results-area .statistics .fa-user { font-size: 18px; vertical-align: -1px; }
 
-.cy-survey-contents .results-area .statistics .fa-commenting { background:url(../images/icon/icon-talk.png) no-repeat 0 62%; font-size: 16px; margin-left: 15px; transform: scale(-1, 1); }
+.cy-survey-contents .results-area .statistics .fa-commenting { font-size: 16px; margin-left: 15px; transform: scale(-1, 1); }
+
+.cy-survey-contents .results-area .statistics strong { vertical-align: 0; }
+.cy-survey-contents .results-area .statistics .fa-commenting img { vertical-align: 0; }

@@ -4,7 +4,7 @@
 .clearfix:before, .popup-container .popup:before, .popup-container .popup .popup-headline:before, .cy-section-box .cy-title:before, .cy-section-box .cy-item-add:before, .clearfix:after, .popup-container .popup:after, .popup-container .popup .popup-headline:after, .cy-section-box .cy-title:after, .cy-section-box .cy-item-add:after { content: ""; display: table; }
 
 .clearfix:after, .popup-container .popup:after, .popup-container .popup .popup-headline:after, .cy-section-box .cy-title:after, .cy-section-box .cy-item-add:after { clear: both; }
-
+@font-face { font-family: 'FontAwesome'; src: url("../fonts/fontawesome-webfont.eot?v=4.7.0"); src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg"); font-weight: normal; font-style: normal; }
 /* =======================================*/
 /* CSS reset
 /* =======================================*/
@@ -40,6 +40,9 @@ label[for="cy-number"]:after { content: "▼"; top: 12px; }
     border-right: 1px solid #d3dbe0;
 }
 .cy-base-dl dt,.cy-base-dl dd { display:inline-block; height: 36px; line-height: 36px;padding: 0 20px;}
+.cy-base-dl .cy-dd { padding: 0 20px; }
+.cy-dd.cy-dd-w340p { width: calc(100% - 420px); }
+.cy-dl-border { border-top: 0; }
 .cy-label label { margin-right: 20px; margin-left: 2px;}
 .cy-content-box { height: calc(100% - 80px); min-height: 500px; }
 .cy-ta-right { text-align: right; }
@@ -226,6 +229,8 @@ label[for="cy-number"]:after { content: "▼"; top: 12px; }
 .cy-section-box .cy-item-add .cy-ex-btn .cy-btn-lightgrey { min-width: 25px; height: 25px; padding: 0; text-indent: -9999px; }
 
 .cy-section-box .cy-item-add .cy-ex-btn .cy-btn-lightgrey:first-child { text-indent: inherit; padding: 0 10px; }
+
+.cy-btn-darkgrey { background-color: #999999; min-width: 52px; height: 25px; line-height: 25px; color: #fff; padding: 0 10px; border-radius: 3px; float: right;}
 
 .cy-section-box .cy-item-add .cy-ex-btn .cy-btn-lightgrey.add { position: relative; }
 
@@ -829,3 +834,54 @@ label[for="cy-number"]:after { content: "▼"; top: 12px; }
 .email-enroll-group input:first-child {
 	width: 15%;
 }
+
+
+/* =======================================*/
+/* 설문조사 결과 팝업
+/* =======================================*/
+
+.cy-survey-contents .results-area {
+	border: 1px solid #b3b3b3;
+}
+
+.cy-survey-contents .results-area h5 { 
+	font-size: 14px; 
+	font-weight: bold; 
+	color: #333; 
+	padding: 16px 30px; 
+	background: #faf6f5; 
+}
+
+.cy-survey-contents .results-area h5 span { 
+	font-weight: normal; 
+}
+
+.cy-survey-contents .results-area ol { padding: 30px; border-top: 1px dashed #e1e4e6; border-bottom: 1px dashed #e1e4e6; }
+
+.cy-survey-contents .results-area ol li { width: 100%; height: 34px; }
+
+.cy-survey-contents .results-area ol li span { display: inline-block; margin-left: 10px; color: #666666; }
+
+.cy-survey-contents .results-area ol li span:first-child { float: left; min-width: 170px; color: #333; }
+
+.cy-survey-contents .results-area ol li span:last-child {  color: #666; min-width: 80px; text-align: right; }
+
+.cy-survey-contents .results-area ol li progress[value] { width: calc(100% - 500px); height: 26px; vertical-align: middle; -webkit-appearance: none; -moz-appearance: none; appearance: none; border: none; }
+
+.cy-survey-contents .results-area ol li progress[value]::-moz-progress-bar { background-color: #f05c26; }
+
+.cy-survey-contents .results-area ol li progress[value]::-webkit-progress-value { background-color: #f05c26; }
+
+.cy-survey-contents .results-area ol li progress[value]::-webkit-progress-bar { background-color: #fdeee9; }
+
+.cy-survey-contents .results-area .statistics { min-height: 42px; padding: 10px 30px; }
+
+.cy-survey-contents .results-area .statistics p { display: inline-block; }
+
+.cy-survey-contents .results-area .statistics p:first-child:after { content: " / "; }
+
+.cy-survey-contents .results-area .statistics .fa { color: #003761; margin-right: 4px; }
+
+.cy-survey-contents .results-area .statistics .fa-user { display: inline-block; background:url(../images/icon/icon-person.png) no-repeat 0 62%; font-size: 18px; vertical-align: -1px; }
+
+.cy-survey-contents .results-area .statistics .fa-commenting { background:url(../images/icon/icon-talk.png) no-repeat 0 62%; font-size: 16px; margin-left: 15px; transform: scale(-1, 1); }

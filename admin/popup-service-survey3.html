@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
+
 <head>
     <meta charset="UTF-8">
     <title>설문조사</title>
@@ -8,8 +9,8 @@
     <!-- CSS : 신규 추가 스타일 -->
     <link rel="stylesheet" href="../assets/css/cy-human.css">
 </head>
-<body>
 
+<body>
     <div class="popup-container">
         <div class="popup">
             <!-- [Start] 팝업 헤드라인 -->
@@ -18,7 +19,6 @@
                 <button type="button" class="popup-close">창 닫기</button>
             </header>
             <!-- [End] 팝업 헤드라인 -->
-
             <!-- [Start] 팝업 콘텐츠 -->
             <div class="popup-content">
                 <!-- [Start] 테이블 영역 -->
@@ -31,44 +31,110 @@
                     <!-- [End] 결과보기, 엑셀 다운받기 콘텐츠 -->
                     <dl class="cy-base-dl">
                         <dt>제목</dt>
-                        <dd><!-- 편집일 경우, 아래 input 요소 사용  -->
+                        <dd class="cy-dd">
+                            <!-- 편집일 경우, 아래 input 요소 사용  -->
                             <!-- <input class="cy-w100p" type="text" aria-label="제목 입력"> -->
                             우리 단체는 이렇게 사업운영합니다
                         </dd>
                     </dl>
+                    <dl class="cy-base-dl cy-dl-border">
+                        <dt>기간</dt>
+                        <dd class="cy-dd cy-dd-w340p">
+                            <!-- 편집일 경우, 아래 input 요소 사용  -->
+                            <!-- <input class="cy-w100p" type="text" aria-label="제목 입력"> -->
+                            2017-12-11~2017-12-31
+                        </dd>
+                        <dt>참여자수</dt>
+                        <dd>
+                            <!-- 편집일 경우, 아래 input 요소 사용  -->
+                            <!-- <input class="cy-w100p" type="text" aria-label="제목 입력"> -->
+                            888
+                        </dd>
+                    </dl>
                     <!-- [End] 테이블 영역 -->
                     <!-- [Start] 컨텐츠 -->
-                    <div class="cy-popup-survey cy-survey-contents">
-                        <hr class="cy-hr-dashed">
+                    <div class="cy-survey-contents">
                         <!-- [Start] 질문 : 증감 보기 영역 -->
                         <div class="cy-section-box cy-view cy-check">
-                            <div class="cy-title">
-                                <h5>1. 사전정보공개에 대해 건의할 게 있습니까?</h5>
-                                <span>(복수선택 가능)</span>
+                            <div class="results-area">
+                                <h5>1. 여러분이 생각하는 최고의 문화재는? <span>(단일선택형)</span></h5>
+                                <ol>
+                                    <li><span>1. 남대문 </span>
+                                        <progress value="20" max="100"></progress>
+                                        <span>20명 (20%)</span>
+                                        <button class="cy-btn-darkgrey" type="button">답변자 보기</button>
+                                    </li>
+                                    <li><span>2. 동대문 </span>
+                                        <progress value="13" max="100"></progress>
+                                        <span>13명 (20%)</span>
+                                        <button class="cy-btn-darkgrey" type="button">답변자 보기</button>
+                                    </li>
+                                    <li><span>3. 광화문 </span>
+                                        <progress value="10" max="100"></progress>
+                                        <span>10명 (20%)</span>
+                                        <button class="cy-btn-darkgrey" type="button">답변자 보기</button>
+                                    </li>
+                                    <li><span>4. 종각 </span>
+                                        <progress value="15" max="100"></progress>
+                                        <span>15명 (20%)</span>
+                                        <button class="cy-btn-darkgrey" type="button">답변자 보기</button>
+                                    </li>
+                                    <li><span>5. 석굴암 </span>
+                                        <progress value="17" max="100"></progress>
+                                        <span>17명 (20%)</span>
+                                        <button class="cy-btn-darkgrey" type="button">답변자 보기</button>
+                                    </li>
+                                </ol>
+                                <div class="statistics">
+                                    <p><span class="fa fa-user">&nbsp;&nbsp;&nbsp;</span>총 응답자 : <strong>100명</strong></p>
+                                    <p><span class="fa fa-commenting">&nbsp;&nbsp;&nbsp;</span>총 선택수 : <strong>100개</strong></p>
+                                </div>
                             </div>
-                            <ul class="cy-check-list">
-                                <li>
-                                    <input id="checkbox-id" type="checkbox" name="checkbox-neme">
-                                    <label for="checkbox-id">없다</label>
-                                </li>
-                                <li>
-                                    <input id="checkbox-id" type="checkbox" name="checkbox-neme">
-                                    <label for="checkbox-id">잘 모르겠다</label>
-                                </li>
-                                <li>
-                                    <input id="checkbox-id" type="checkbox" name="checkbox-neme">
-                                    <label for="checkbox-id">잘 진행되고 있다</label>
-                                </li>
-                                <li>
-                                    <input id="checkbox-id" type="checkbox" name="checkbox-neme">
-                                    <label for="checkbox-id">관심없다</label>
-                                </li>
-                                <li>
-                                    <input id="checkbox-id" type="checkbox" name="checkbox-neme">
-                                    <label for="checkbox-id">기타</label>
-                                    <input id="text-id" class="cy-popup-survey-input" type="text" aria-label="기타 답변 입력하세요.">
-                                </li>
-                            </ul>
+                            <div class="results-area">
+                                <h5>2. 여러분이 생각하는 남북교류 협력을 위한 가장 좋은 방안은? <span>(중복선택형)</span></h5>
+                                <ol>
+                                    <li>
+                                        <span>1. 남북교류 협력방안1 </span>
+                                        <progress value="20" max="100"></progress>
+                                        <span>20명 (20%)</span>
+                                        <button class="cy-btn-darkgrey" type="button">답변자 보기</button>
+                                    </li>
+                                    <li>
+                                        <span>2. 남북교류 협력방안2 </span>
+                                        <progress value="13" max="100"></progress>
+                                        <span>13명 (20%)</span>
+                                        <button class="cy-btn-darkgrey" type="button">답변자 보기</button>
+                                    </li>
+                                    <li>
+                                        <span>3. 남북교류 협력방안3 </span>
+                                        <progress value="10" max="100"></progress>
+                                        <span>10명 (20%)</span>
+                                        <button class="cy-btn-darkgrey" type="button">답변자 보기</button>
+                                    </li>
+                                    <li>
+                                        <span>4. 남북교류 협력방안4 </span>
+                                        <progress value="15" max="100"></progress>
+                                        <span>15명 (20%)</span>
+                                        <button class="cy-btn-darkgrey" type="button">답변자 보기</button>
+                                    </li>
+                                    <li>
+                                        <span>5. 남북교류 협력방안5 </span>
+                                        <progress value="17" max="100"></progress>
+                                        <span>17명 (20%)</span>
+                                        <button class="cy-btn-darkgrey" type="button">답변자 보기</button>
+                                    </li>
+                                    <li>
+                                        <span>6. 기타 </span>
+                                        <progress value="17" max="100"></progress>
+                                        <span>17명 (20%)</span>
+                                        <button class="cy-btn-darkgrey" type="button">답변자 보기</button>
+                                    </li>
+                                </ol>
+                                <div class="statistics">
+                                    <p><span class="fa fa-user"></span>총 응답자 : <strong>100명</strong></p>
+                                    <p><span class="fa fa-commenting"></span>총 선택수 : <strong>200개</strong></p>
+                                </div>
+                            </div>
                         </div>
                         <!-- [End] 질문 : 증감 보기 영역 -->
                     </div>
@@ -78,4 +144,5 @@
         </div>
     </div>
 </body>
+
 </html>

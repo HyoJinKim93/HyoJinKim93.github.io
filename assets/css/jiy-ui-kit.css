@@ -4686,6 +4686,8 @@ hr.sub-title-bar { display: block; width: 100%; height: 6px; margin-top: 0; marg
 
 .sign-up-list .content-box-area:nth-child(2) .table-type-02 tbody td h4 { font-size: 14px; margin-bottom: 5px; }
 
+.table-li.table-li-02 li.title:first-child:after {  margin-left:6px;font-family: 'FontAwesome'; content: ""; font-size: 10px; font-size: 1rem; color: #b80000; vertical-align: text-bottom; }
+
 /* =======================================*/
 /* 회원서비스 > 법인.단체 > 사업자신청 Step 1. 가입여부 확인 조회
 /* (html/applicant-application-step1.html)

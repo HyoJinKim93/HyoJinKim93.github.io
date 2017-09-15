@@ -8,6 +8,19 @@
 .clearfix:before, .popup-container .popup:before, .popup-container .popup .popup-headline2:before, .cy-section-box .cy-title:before, .cy-section-box .cy-item-add:before, .clearfix:after, .popup-container .popup:after, .popup-container .popup .popup-headline2:after, .cy-section-box .cy-title:after, .cy-section-box .cy-item-add:after { content: ""; display: table; }
 
 .clearfix:after, .popup-container .popup:after, .popup-container .popup .popup-headline2:after, .cy-section-box .cy-title:after, .cy-section-box .cy-item-add:after { clear: both; }
+
+/* 팝업2 */
+
+.clearfix, .popup-container .popup2, .popup-container .popup2 .popup-headline, .cy-section-box .cy-title, .cy-section-box .cy-item-add { *zoom: 1; }
+
+.clearfix:before, .popup-container .popup2:before, .popup-container .popup2 .popup-headline:before, .cy-section-box .cy-title:before, .cy-section-box .cy-item-add:before, .clearfix:after, .popup-container .popup2:after, .popup-container .popup2 .popup-headline:after, .cy-section-box .cy-title:after, .cy-section-box .cy-item-add:after { content: ""; display: table; }
+
+.clearfix:after, .popup-container .popup2:after, .popup-container .popup2 .popup-headline:after, .cy-section-box .cy-title:after, .cy-section-box .cy-item-add:after { clear: both; }
+
+.clearfix:before, .popup-container .popup2:before, .popup-container .popup2 .popup-headline2:before, .cy-section-box .cy-title:before, .cy-section-box .cy-item-add:before, .clearfix:after, .popup-container .popup2:after, .popup-container .popup2 .popup-headline2:after, .cy-section-box .cy-title:after, .cy-section-box .cy-item-add:after { content: ""; display: table; }
+
+.clearfix:after, .popup-container .popup2:after, .popup-container .popup2 .popup-headline2:after, .cy-section-box .cy-title:after, .cy-section-box .cy-item-add:after { clear: both; }
+
 @font-face { font-family: 'FontAwesome'; src: url("../fonts/fontawesome-webfont.eot?v=4.7.0"); src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg"); font-weight: normal; font-style: normal; }
 /* =======================================*/
 /* CSS reset
@@ -120,6 +133,47 @@ label[for="cy-number"]:after { content: "▼"; top: 12px; }
 
 @media only screen and (max-height: 700px) { .popup { max-height: 100vh !important; }
   .popup .popup-content { max-height: calc(100% - 54px) !important; } }
+
+
+/* 팝업2 */
+
+.popup-container .popup2 { width: 700px; min-height: 200px; max-height: 700px; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3); outline: 0; z-index: 10000; position: absolute; top: 50%; left: 50%; -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); /* 팝업 헤드라인 */ /* 팝업 콘텐츠 */ background: #e1effa; }
+
+.popup-container .popup2 .popup-headline { height: 54px; line-height: 54px; padding: 0 30px; background: #1f303d; }
+
+.popup-container .popup2 .popup-headline h4 { float: left; font-size: 22px; font-weight: bold; color: #fff; letter-spacing: -0.04em; }
+
+.popup-container .popup2 .popup-headline .popup-close { position: relative; float: right; width: 21px; height: 21px; margin-top: 17px; text-indent: -9999px; }
+
+.popup-container .popup2 .popup-headline .popup-close:before { position: absolute; top: 10px; left: -4px; display: block; width: 135%; height: 1px; background: #fff; transform: rotate(45deg); content: ""; }
+
+.popup-container .popup2 .popup-headline .popup-close:after { position: absolute; top: 10px; left: -4px; display: block; width: 135%; height: 1px; background: #fff; transform: rotate(-45deg); content: ""; }
+
+.popup-container .popup2 .popup-headline2 { height: 54px; line-height: 54px; padding: 0 30px; background: #396d95; }
+
+.popup-container .popup2 .popup-headline2 h4 { float: left; font-size: 22px; font-weight: bold; color: #fff; letter-spacing: -0.04em; }
+
+.popup-container .popup2 .popup-headline2 .popup-close { position: relative; float: right; width: 21px; height: 21px; margin-top: 17px; text-indent: -9999px; }
+
+.popup-container .popup2 .popup-headline2 .popup-close:before { position: absolute; top: 10px; left: -4px; display: block; width: 135%; height: 1px; background: #fff; transform: rotate(45deg); content: ""; }
+
+.popup-container .popup2 .popup-headline2 .popup-close:after { position: absolute; top: 10px; left: -4px; display: block; width: 135%; height: 1px; background: #fff; transform: rotate(-45deg); content: ""; }
+
+.popup-container .popup2 .popup-content { padding: 30px; max-height: calc(700px - 54px); overflow-y: auto; background: #e1effa; }
+
+.popup-container .popup2 .popup-content2 { padding: 0 2px 2px 2px; max-height: calc(700px - 54px); overflow-y: auto; background: #396d95; }
+.popup-container .popup2 .popup-content2 > div { background-color: #fff; padding: 20px 28px; }
+@media only screen and (max-width: 900px) { .popup-container .popup { top: 0 !important; left: 0 !important; right: 0; bottom: 0; width: 100% !important; max-height: 100vh !important; transform: inherit !important; }
+  .popup-container .popup2 .popup-content { max-height: calc(100% - 54px) !important; padding: 20px !important; } }
+
+@media only screen and (max-height: 700px) { .popup2 { max-height: 100vh !important; }
+  .popup2 .popup-content { max-height: calc(100% - 54px) !important; } }
+
+
+
+
+
+
 
 /* =======================================*/
 /* 설문조사
@@ -956,3 +1010,24 @@ label[for="cy-number"]:after { content: "▼"; top: 12px; }
 }
 
 .cy-section-table .cy-p { display: inline-block; }
+
+/* 답변자 현황 */
+
+.cy-group-search {
+	margin-bottom: 10px;
+}
+
+.cy-group-search label {
+	font-weight: bold;
+	padding-left: 10px;
+}
+
+.cy-group-search .cy-btn-lightblue { 
+	min-width: 52px; 
+	height: 28px; 
+	line-height: 25px; 
+	color: #fff; 
+	padding: 0 10px; 
+	border-radius: 3px; 
+	background-color: #1a5380; 
+}

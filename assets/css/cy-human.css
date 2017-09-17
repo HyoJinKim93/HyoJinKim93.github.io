@@ -1034,3 +1034,16 @@ label[for="cy-number"]:after { content: "▼"; top: 12px; }
 	background-color: #1a5380; 
 	width: 78px;
 }
+
+
+
+/* =======================================*/
+/* 법인단체 승인관리 팝업
+/* =======================================*/
+
+.cy-ellipsis {
+	text-overflow: ellipsis;
+    white-space: nowrap; 
+    overflow: hidden;
+	width: 100px;
+}

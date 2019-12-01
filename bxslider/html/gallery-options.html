@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
 	<meta charset="utf-8">
 	<title>캡션이 있는 갤러리 이미지</title>
@@ -7,13 +8,95 @@
 
 	<!-- Link Swiper's CSS -->
 	<link rel="stylesheet" href="../content/css/bxslider.min.css">
+
+	<script src="../content/js/jquery.1.12.4.min.js"></script>
+	<script>
+	</script>
+	<!-- Demo styles -->
+	<style>
+		html,
+		body {
+			position: relative;
+			height: 100%;
+		}
+
+		body {
+			font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+			font-size: 14px;
+			color: #000;
+			margin: 0;
+			padding: 0;
+		}
+
+		.inner {
+			margin: 0 auto;
+			width: 1080px;
+		}
+
+		img {
+			width: 100%;
+		}
+
+		.bxslider {
+			height: 400px;
+		}
+
+		.bxslider .img {
+			display: inline-block;
+			width: 100%;
+		}
+
+	</style>
+</head>
+
 <body>
-    <div id="wrap">
-      <div class="bxslider">
-        <div><img src="/assets/images/coffee1.jpg" title="Funky roots"></div>
-        <div><img src="/assets/images/coffee2.jpg" title="The long and winding road"></div>
-        <div><img src="/assets/images/coffee3.jpg" title="Happy trees"></div>
-      </div>  
-    </div>
+	<div id="wrap">
+		<div class="main-visual">
+			<div class="bxslider">
+				<div class="img">
+					<a href="javascript:void(0)">
+						<img src="../content/images/elsa01.gif" alt="">
+					</a>
+				</div>
+				<div class="img">
+					<a href="javascript:void(0)">
+						<img src="../content/images/elsa02.gif" alt="">
+					</a>
+				</div>
+				<div class="img">
+					<a href="javascript:void(0)">
+						<img src="../content/images/elsa03.gif" alt="">
+					</a>
+				</div>
+				<div class="img">
+					<a href="javascript:void(0)">
+						<img src="../content/images/elsa04.gif" alt="">
+					</a>
+				</div>
+				<div class="img">
+					<a href="javascript:void(0)">
+						<img src="../content/images/elsa05.gif" alt="">
+					</a>
+				</div>
+				<div class="img">
+					<a href="javascript:void(0)">
+						<img src="../content/images/brunie.gif" alt="">
+					</a>
+				</div>
+				<div class="img">
+					<a href="javascript:void(0)">
+						<img src="../content/images/frozen.gif" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Swiper JS -->
+	<script src="../content/js/bxslider.min.js"></script>
+
+	<!-- Initialize Swiper -->
+	<script>
+	</script>
 </body>
+
 </html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <title>이메일 발송 그룹 만들기</title>
+    <!-- CSS : 기존 스타일 -->
+    <link rel="stylesheet" href="../assets/css/human.css">
+    <!-- CSS : 신규 추가 스타일 -->
+    <link rel="stylesheet" href="../assets/css/cy-human.css">
+</head>
+<body>
+
+    <div class="popup-container">
+        <div class="popup">
+            <!-- [Start] 팝업 헤드라인 -->
+            <header class="popup-headline">
+                <h4>이메일 발송 그룹 만들기</h4>
+                <button type="button" class="popup-close">창 닫기</button>
+            </header>
+            <!-- [End] 팝업 헤드라인 -->
+
+            <!-- [Start] 팝업 콘텐츠 -->
+            <div class="popup-content cy-form-content cy-m900p">
+                <!-- [Start] 조회 영역 -->
+                <form class="cy-srcForm cy-srcForm2" name="" id="">
+                    <ul class="clearfix cy-email-search-group">
+                        <li class="clearfix">
+                            <h4>유형검색</h4>
+                            <div class="cy-input-group">
+                                <input type="radio" id="" name="">
+                                <label for="">그룹검색</label>
+                                <input type="radio" id="" name="">
+                                <label for="">단체/회원</label>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <h4>단체명</h4>
+                            <div class="cy-input-group">
+                                <input type="text" id="" name="" class="cy-w100p" />
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <h4>추가구분</h4>
+                            <div class="cy-input-group">
+                                <select>
+                                    <option value="">대표자</option>
+                                    <option value="">대표자2</option>
+                                    <option value="">대표자3</option>
+                                </select>
+                                <input type="text" id="" name="" />
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <h4>회원명</h4>
+                            <div class="cy-input-group">
+                                <input type="text" id="" name=""  class="cy-w100p" />
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="cy-btn-sub">
+                        <button class="cy-btn-gray" type="button">조회</button>
+                    </div>
+                </form>
+                <!-- [End] 조회 영역 -->
+
+                <div class="clearfix">
+                    <div class="cy-all-pages">
+                        <span>총 <strong>199개</strong> 선택</span>
+                    </div>
+                    <div class="cy-btn-email">
+                        <button type="button" class="cy-btn-lightblue">엑셀 업로드</button>
+                        <button type="button" class="cy-btn-lightblue">목록 전체삭제</button>
+                        <button type="button" class="cy-btn-lightblue">삭제</button>
+                    </div>
+                </div>
+                <div class="email-group cy-section-box">
+                    <h4>검색결과</h4>
+                    <ul>
+                       <li><a href="">이메일 발송 그룹1</a></li>
+                       <li><a href="">설문조사 대상 그룹1</a></li>
+                       <li><a href="">이메일 발송 그룹1</a></li>
+                       <li><a href="">설문조사 대상 그룹1</a></li>
+                       <li><a href="">이메일 발송 그룹1</a></li>
+                    </ul>
+                </div>
+                <div class="email-group-btn">
+                    <button type="button"><img src="../assets/images/sub/btn-email-group.png"></button>
+                </div>
+                <div class="email-select-group">
+
+                    <div class="cy-section-box">
+                        <h4>선택된 회원</h4>
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="" name="">
+                                <label for="">000@email.com (메모한 내용보임);</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="" name="">
+                                <label for="">abc@email.com (대북지원단체 홍길동);</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="" name="">
+                                <label for="">ttt@email.com (대북지원단체 박길동);</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="" name="">
+                                <label for="">abc@email.com (메모한 내용보임);</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="" name="">
+                                <label for="">000@email.com (메모한 내용보임);</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="email-enroll-group">
+                        <label for="">등록</label>
+                        <input type="text" placeholder="이름입력">
+                        <input type="text" placeholder="이메일 주소 입력">
+                        <button class="cy-btn-lightblue" type="button">추가</button>
+                    </div>
+                    <div class="email-send-group">
+                        <label for="">발송 그룹명</label>
+                        <input type="text">
+                        <button class="cy-btn-lightblue" type="button">선택된 회원 메일그룹으로 등록</button>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+</body>
+</html>

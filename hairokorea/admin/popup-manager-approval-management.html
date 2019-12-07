@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>담당자 승인관리</title>
+    <!-- CSS : 기존 스타일 -->
+    <link rel="stylesheet" href="../assets/css/human.css">
+    <!-- CSS : 신규 추가 스타일 -->
+    <link rel="stylesheet" href="../assets/css/cy-human.css">
+</head>
+
+<body>
+    <!-- popup-wrap(S) -->
+    <div class="popup-container" id="popupUser" style="display: block;">
+        <div class="popup">
+            <!-- popup-headline(S) -->
+            <div class="popup-headline">
+                <h4>보완요청</h4>
+                <button type="button" class="popup-close">창 닫기</button>
+            </div>
+            <!-- popup-headline(E) -->
+            <form name="formPop" id="formPop" method="post" action="/mgt/SaveMgtBbsItem.do" enctype="multipart/form-data">
+                <!-- <input type="text" name="popStatus" id="popStatus"> -->
+                <!-- <input type="hidden" name="popBbsId" id="popBbsId" value="J"> -->
+                <!-- 공지사항 K -->
+                <!-- <input type="hidden" name="popService" id="popService"> -->
+                <!-- 게시물 숨김여부 -->
+                <!-- <input type="hidden" name="atchFileId"> -->
+                <!-- <input type="hidden" name="fileSn"> -->
+                <!-- <input type="hidden" name="fileListCnt"> -->
+                <!-- <input type="hidden" name="returnUrl"> -->
+                <!-- popup-content(S) -->
+                <div class="popup-content">
+                    <!-- 조회조건 (S) -->
+                    <div class="cy-title2">
+                        <h5>구비서류</h5>
+                    </div>
+                    <div class="cy-base-table">
+                        <table class="cy-text-center">
+                            <colgroup>
+                                <col>
+                                <col>
+                                <col>
+                                <col width="150">
+                                <col>
+                                <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">성명</th>
+                                    <th scope="row">부서명</th>
+                                    <th scope="row">직함</th>
+                                    <th scope="row">사무실 전화번호</th>
+                                    <th scope="row">휴대전화</th>
+                                    <th class="cy-th-border" scope="row">이메일</th>
+                                </tr>
+                                <tr>
+                                    <td class="cy-td-border">
+                                        <input name="" type="checkbox" value="">
+                                        <label></label>
+                                    </td>
+                                    <td>
+                                        <input name="" type="checkbox" value="">
+                                        <label></label>
+                                    </td>
+                                    <td>
+                                        <input name="" type="checkbox" value="">
+                                        <label></label>
+                                    </td>
+                                    <td>
+                                        <input name="" type="checkbox" value="">
+                                        <label></label>
+                                    </td>
+                                    <td>
+                                        <input name="" type="checkbox" value="">
+                                        <label></label>
+                                    </td>
+                                    <td>
+                                        <input name="" type="checkbox" value="">
+                                        <label></label>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="cy-title2">
+                        <h5>연혁정보</h5>
+                    </div>
+                    <div class="cy-section-box">
+                        <input name="" type="checkbox" value="">
+                        <label>보완요청</label>
+                    </div>
+                    <div class="cy-title2">
+                        <h5>기타</h5>
+                    </div>
+                    <div class="cy-section-box">
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <!-- 조회조건 (E) -->
+                    <!-- 팝업 공통버튼 영역(S) -->
+                    <div class="popup-btns">
+                        <button class="cy-btn-gray" type="button">처리</button>
+                        <!-- <button type="button" class="btn-pop" onclick="fnSave('S'); return false;">
+                            <spring:message code="button.save" />
+                        </button>
+                        <%-- <button type="button" class="btn-pop" onclick="fnSave('D'); return false;"><spring:message code="button.delete" /></button> --%>
+                            <button type="button" class="btn-pop" onclick="popupClose(); return false;">닫기</button> -->
+                    </div>
+                    <!-- 팝업 공통버튼 영역(E) -->
+
+                </div>
+                
+                <!-- popup-content(E) -->
+            </form>
+        </div>
+    </div>
+    <!-- popup-wrap(E) -->
+    <!-- popup-wrap(S) -->
+    <div class="popup-container" id="popupStatus" style="display: none;">
+        <div class="popup">
+            <!-- popup-headline(S) -->
+            <div class="popup-headline">
+                <h4>상태 설정</h4>
+                <button type="button" class="popup-close">close</button>
+            </div>
+            <!-- popup-headline(E) -->
+            <form name="formPop" id="formPop" method="post" action="" enctype="">
+                <!-- popup-content(S) -->
+                <div class="popup-content">
+                    <!-- 조회조건 (S) -->
+                    <div class="cy-section-box">
+                        <div class="cy-table cy-table-check-border">
+                            <div class="cy-title">
+                                <h5>상태 설정 선택</h5>
+                            </div>
+                            <div class="cy-label">
+                                <input type="radio" name="">
+                                <label for="">보완요청</label>
+                                <input type="radio" name="">
+                                <label for="">승인</label>
+                                <input type="radio" name="">
+                                <label for="">반려</label>
+                                <!-- <select id="popSector" name="popSector">
+                                   <option value="J10" selected="selected">국내외언론동향</option>
+                                       <option value="J20">북한동향</option>
+                                       <option value="J30">행사정보</option>
+                                               <option value="J40">기타</option>
+                                </select> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 조회조건 (E) -->
+                    <!-- 팝업 공통버튼 영역(S) -->
+                    <div class="popup-btns">
+                        <button class="cy-btn-gray" type="button">처리</button>
+                        <!-- <button type="button" class="btn-pop" onclick="fnSave('S'); return false;">
+                            <spring:message code="button.save" />
+                        </button>
+                        <%-- <button type="button" class="btn-pop" onclick="fnSave('D'); return false;"><spring:message code="button.delete" /></button> --%>
+                            <button type="button" class="btn-pop" onclick="popupClose(); return false;">닫기</button> -->
+                    </div>
+                    <!-- 팝업 공통버튼 영역(E) -->
+                </div>
+                <!-- popup-content(E) -->
+            </form>
+        </div>
+    </div>
+    <!-- popup-wrap(E) -->
+    <!-- popup-wrap(S) -->
+    <div class="popup-container" id="popupDoc" style="display: block;">
+        <div class="popup">
+            <!-- popup-headline(S) -->
+            <div class="popup-headline">
+                <h4>담당자 가입정보</h4>
+                <button type="button" class="popup-close">close</button>
+            </div>
+            <!-- popup-headline(E) -->
+            <form name="formPop" id="formPop" method="post" action="/mgt/SaveMgtBbsItem.do" enctype="multipart/form-data">
+                <!-- popup-content(S) -->
+                <div class="popup-content">
+                    <!-- 조회조건 (S) -->
+                        <div class="cy-title2">
+                            <h5>담당자 가입정보</h5>
+                        </div>
+                        <div class="cy-base-table">
+
+                            <table>
+                                <colgroup>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th class="cy-text-left">법인·단체 ID</th>
+                                        <td class="cy-text-left">asd</td>
+                                        <th class="cy-text-left">단체명</th>
+                                        <td class="cy-text-left">대북지원단체1</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="cy-text-left">담당자 ID</th>
+                                        <td class="cy-text-left">agsdgfad</td>
+                                        <th class="cy-text-left">비밀번호</th>
+                                        <td class="cy-text-left">12345</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="cy-text-left">성명</th>
+                                        <td class="cy-text-left">홍길동</td>
+                                        <th class="cy-text-left">국적</th>
+                                        <td class="cy-text-left">대한민국</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="cy-text-left">부서명</th>
+                                        <td class="cy-text-left">지원과</td>
+                                        <th class="cy-text-left">직함</th>
+                                        <td class="cy-text-left">사무총장</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="cy-text-left">사무실 전화</th>
+                                        <td class="cy-text-left">02-123-123</td>
+                                        <th class="cy-text-left">휴대전화</th>
+                                        <td class="cy-text-left">010-2121-2111</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="cy-text-left">이메일</th>
+                                        <td class="cy-text-left" colspan="3">abd@naver.com</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="cy-text-left">법인 등기부</th>
+                                        <td class="cy-text-left" colspan="3">법인 등기부.jpg</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                    </div>
+                    <!-- 조회조건 (E) -->
+                <!-- popup-content(S) -->
+                    <!-- 조회조건 (S) -->
+                    <div class="cy-title2">
+                        <h5>보완요청</h5>
+                    </div>
+                    <div class="cy-section-box">
+                        <div class="cy-title2">
+                            <h5>담당자 정보</h5>
+                        </div>
+                        <div class="cy-base-table">
+                            <table class="cy-text-center">
+                                <colgroup>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col width="150">
+                                    <col>
+                                    <col>
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">성명</th>
+                                        <th scope="row">부서명</th>
+                                        <th scope="row">직함</th>
+                                        <th scope="row">사무실 전화번호</th>
+                                        <th scope="row">휴대전화</th>
+                                        <th class="cy-th-border" scope="row">이메일</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="cy-td-border">
+                                            <input name="" type="checkbox" value="">
+                                            <label></label>
+                                        </td>
+                                        <td>
+                                            <input name="" type="checkbox" value="">
+                                            <label></label>
+                                        </td>
+                                        <td>
+                                            <input name="" type="checkbox" value="">
+                                            <label></label>
+                                        </td>
+                                        <td>
+                                            <input name="" type="checkbox" value="">
+                                            <label></label>
+                                        </td>
+                                        <td>
+                                            <input name="" type="checkbox" value="">
+                                            <label></label>
+                                        </td>
+                                        <td>
+                                            <input name="" type="checkbox" value="">
+                                            <label></label>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="cy-title2">
+                            <h5>구비서류</h5>
+                        </div>
+                        <div class="cy-section-box">
+                            <input name="" type="checkbox" value="">
+                            <label>보완요청</label>
+                        </div>
+                        <div class="cy-title2">
+                            <h5>기타</h5>
+                        </div>
+                        <div class="cy-section-box">
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+                    <div class="cy-section-box cy-text-center cy-table-check-border">
+                        <div class="cy-label">
+                            <input type="radio" name="">
+                            <label for="">보완요청</label>
+                            <input type="radio" name="">
+                            <label for="">승인</label>
+                            <input type="radio" name="">
+                            <label for="">반려</label>
+                            <!-- <select id="popSector" name="popSector">
+                               <option value="J10" selected="selected">국내외언론동향</option>
+                                   <option value="J20">북한동향</option>
+                                   <option value="J30">행사정보</option>
+                                           <option value="J40">기타</option>
+                            </select> -->
+                        </div>
+                    </div>
+                        <!-- 조회조건 (E) -->
+                    <!-- 팝업 공통버튼 영역(S) -->
+                    <div class="popup-btns">
+                        <button class="cy-btn-gray" type="button">처리</button>
+                        <!-- <button type="button" class="btn-pop" onclick="fnSave('S'); return false;">
+                            <spring:message code="button.save" />
+                        </button>
+                        <%-- <button type="button" class="btn-pop" onclick="fnSave('D'); return false;"><spring:message code="button.delete" /></button> --%>
+                            <button type="button" class="btn-pop" onclick="popupClose(); return false;">닫기</button> -->
+                    </div>
+                    <!-- 팝업 공통버튼 영역(E) -->
+                    <div class="popup-btns">
+                        <!-- <%-- <button type="button" class="btn-pop" onclick="fnSave('D'); return false;"><spring:message code="button.delete" /></button> --%>
+                            <button type="button" class="btn-pop" onclick="popupClose(); return false;">닫기</button> -->
+                    </div>
+                <!-- popup-content(E) -->
+            </form>
+        </div>
+    </div>
+    <!-- popup-wrap(E) -->
+
+</body>
+
+</html>

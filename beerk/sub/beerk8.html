@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1, maximum-scale = 1, user-scalable = 0, viewport-fit=cover"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon.ico" />
+    <link rel="stylesheet" href="../assets/css/pages.css">
+    <title>BeerK</title>
+</head>
+<body>
+    <div class="wrapper">
+        <ul class="skip">
+            <li><a href="#nav">메뉴바로가기</a></li>
+            <li><a href="#contents">본문바로가기</a></li>
+        </ul>
+        <header>
+            <div class="pc-wrap">
+                <h1 class="logo">
+                    <a href="javascript:void(0)">
+                        BK Co.,Ltd Import & Distribution pf world's finest beers
+                    </a>
+                </h1>
+                <nav>
+                    <ul>
+                        <li>ID : ABC0001</li>
+                        <li><a href="javascript:void(0)">수도권 도매 1파트&nbsp;<strong>김영업<span>님</span></strong></a></li>
+                    </ul>
+                    <a href="javascript:void(0)" class="btn btn_logout">로그아웃</a>
+                </nav>
+            </div>
+            <div class="mobile-wrap center">
+                <h2 class="title">수주 조회 상세</h2>
+                <!-- <button class="btn btn-menu" type="button">메뉴 열기</button> -->
+                <button class="btn btn-back" type="button">뒤로가기</button>
+            </div>
+        </header>
+        <nav id="nav">
+            <h1 class="hidden">메인 내비게이션</h1>
+            <button class="btn btn-menu-close" type="button">메뉴 닫기</button>
+            <ul class="gnb">
+                <li class="gnb1">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>영업 활동 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">주간 활동 내역</a></li>
+                        <li><a href="#">영업 활동 내역</a></li>
+                        <li><a href="#">영업 call 현황</a></li>
+                        <li><a href="#">영업 행사 설정</a></li>
+                        <li><a href="#">거래처 제품 입점 조회</a></li>
+                        <li><a href="#">coverage/listing 현황</a></li>
+                    </ul> -->
+                </li>
+                <li class="gnb2">
+                    <a href="javascript:void(0)"  class="on current"><span>도매장 수주 관리</span></a>
+                    <ul>
+                        <li><a href="#">수주 조회</a></li>
+                        <li><a href="#">수주 등록</a></li>
+                        <li><a href="#">반품 조회</a></li>
+                        <li><a href="#">반품 등록</a></li>
+                        <!-- <li><a href="#">도매장 기말 재고 등록</a></li>
+                        <li><a href="#">도매장 기말 재고 조회</a></li>
+                        <li><a href="#">도매장 평균 재고 관리</a></li>
+                        <li><a href="#"> 파트별 도매장 재고 현황</a></li> -->
+                    </ul>
+                </li>
+                <li class="gnb3">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>영업 운영 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">주간 활동 내역</a></li>
+                        <li><a href="#">영업 활동 내역</a></li>
+                        <li><a href="#">영업 call 현황</a></li>
+                        <li><a href="#">영업 행사 설정</a></li>
+                        <li><a href="#">거래처 제품 입점 조회</a></li>
+                        <li><a href="#">coverage/listing 현황</a></li>
+                    </ul> -->
+                    <!-- <ul>
+                        <li><a href="#">신규 입점 현황</a></li>
+                        <li><a href="#">개인 별 신규 영업 목표 실적</a></li>
+                        <li><a href="#">파트 별 목표 실적 현황</a></li>
+                        <li><a href="#">posm 등록</a></li>                       
+                    </ul> -->
+                </li>
+                <li class="gnb4">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>판매량 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">업소 조회 관리</a></li>
+                        <li><a href="#">도매장 조회 관리</a></li>
+                    </ul> -->
+                </li>
+                <li class="gnb5">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>도매장 재고 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">업소 판매량 등록</a></li>
+                        <li><a href="#">재널 별 판매량 등록</a></li>
+                        <li><a href="#">지역 별 판매량 등록</a></li>
+                    </ul> -->
+                </li>
+                <li class="gnb6">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>거래처 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">업소 조회 관리</a></li>
+                        <li><a href="#">도매장 조회 관리</a></li>
+                    </ul> -->
+                </li>
+                <li class="gnb7">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>프로모션 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">visibility 영업 조회 등록</a></li> 
+                        <li><a href="#">visibility 프로모션 조회 등록</a></li> 
+                        <li><a href="#">set 프로모션 영업 조회 등록</a></li> 
+                        <li><a href="#">set 프로모션 조회 등록</a></li> 
+                        <li><a href="#">set 프로모션 대시보드</a></li> 
+                        <li><a href="#">gift 프로모션 영업 조회 등록</a></li> 
+                        <li><a href="#">gift 프로모션 조회 등록</a></li> 
+                        <li><a href="#">gift 프로모션 대시보드</a></li>
+                    </ul> -->
+                </li>
+            </ul>
+        </nav>
+        <section id="contents" class="businessManage tableWrap">
+           <div class="container">
+                <div class="headline clear">
+                    <h1 class="title-style">업장 조회 관리</h1>
+                    <!-- <ul class="location">
+                        <li><a href="javascript:void(0)">홈</a></li>
+                        <li><a href="javascript:void(0)">수주 관리</a></li>
+                        <li><a href="javascript:void(0)" class="on">수주 조회</a></li>
+                    </ul> -->
+                </div>
+                <div class="info">
+                    <dl class="dl_col02">
+                        <dt>업장 명</dt>
+                        <dd>
+                            <div class="row">
+                                <input type="text" class="input_type01" placeholder="업장 명을 입력하세요" title="업장명">
+                            </div>
+                        </dd>
+                        <dt>업장 담당</dt>
+                        <dd>
+                            <div class="row">
+                                <select name="" id="">
+                                    <option value="">전체</option>
+                                    <option value="">전체</option>
+                                    <option value="">전체</option>
+                                </select>
+                                <input type="text" class="input_type02" placeholder="담당자를 입력하세요" title="업장 담당자">
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl class="dl_col02">
+                        <dt>업장 구분</dt>
+                        <dd>
+                            <div class="row select-col4">
+                                <select name="" id="" class="mCalc">
+                                    <option value="">채널</option>
+                                    <option value="">ON</option>
+                                    <option value="">OFF</option>
+                                </select>
+                                <select name="" id="" class="mCalc">
+                                    <option value="">Seg</option>
+                                    <option value="">Seg</option>
+                                </select>
+                                <select name="" id="" class="mCalc">
+                                    <option value="">Sub Seg1</option>
+                                    <option value="">Sub Seg1</option>
+                                    <option value="">Sub Seg1</option>
+                                </select>
+                                <select name="" id="" class="mCalc">
+                                    <option value="">Sub Seg2</option>
+                                    <option value="">Sub Seg2</option>
+                                    <option value="">Sub Seg2</option>
+                                </select>
+                            </div>
+                        </dd>
+                        <dt>지역</dt>
+                        <dd>
+                            <div class="row">
+                                <select name="" id="" class="mCalc">
+                                    <option value="">지역1</option>
+                                    <option value="">지역1</option>
+                                    <option value="">지역1</option>
+                                </select>
+                                <select name="" id="" class="mCalc">
+                                    <option value="">지역2</option>
+                                    <option value="">지역2</option>
+                                </select>
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl class="dl_col02">
+                        <dt>등급</dt>
+                        <dd>
+                            <div class="row">
+                                <div class="chk_area chk_label chk01">
+                                    <input type="checkbox" id="chk01" class="chk01" checked>
+                                    <label for="chk01">A등급</label>
+                                </div>
+                                <div class="chk_area chk_label chk01">
+                                    <input type="checkbox" id="chk02" class="chk01" checked>
+                                    <label for="chk02">B등급</label>
+                                </div>
+                                <div class="chk_area chk_label chk01">
+                                    <input type="checkbox" id="chk03" class="chk01" checked>
+                                    <label for="chk03">C등급</label>
+                                </div>
+                                <div class="chk_area chk_label chk01">
+                                    <input type="checkbox" id="chk04" class="chk01" checked>
+                                    <label for="chk04">등급없음</label>
+                                </div>
+                            </div>
+                        </dd>
+                        <dt>최근 방문일</dt>
+                        <dd>
+                            <div class="row">
+                                <input type="text" id="calender1" class="calender" placeholder="2020-08-01" title="최근 방문일">
+                                <span class="etc">~</span>
+                                <input type="text" id="calender2" class="calender" placeholder="2020-09-28" title="최근 방문일">
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl class="dl_col01">
+                        <dt>상태</dt>
+                        <dd>
+                            <div class="row">
+                                <div class="chk_area chk_label chk01">
+                                    <input type="checkbox" id="chk05" class="chk01" checked>
+                                    <label for="chk05">영업</label>
+                                </div>
+                                <div class="chk_area chk_label chk01">
+                                    <input type="checkbox" id="chk06" class="chk01" checked>
+                                    <label for="chk06">휴업</label>
+                                </div>
+                                <div class="chk_area chk_label chk01">
+                                    <input type="checkbox" id="chk07" class="chk01" checked>
+                                    <label for="chk07">폐업</label>
+                                </div>
+                                <div class="chk_area chk_label chk01">
+                                    <input type="checkbox" id="chk08" class="chk01" checked>
+                                    <label for="chk08">삭제요청</label>
+                                </div>
+                                <div class="chk_area chk_label chk01">
+                                    <input type="checkbox" id="chk09" class="chk01">
+                                    <label for="chk09">삭제</label>
+                                </div>
+                            </div>
+                        </dd>
+                    </dl>
+                    <div class="btn_wrap">
+                        <p class="import">* Rad : A등급 1개월 이상, B등급 2개월 이상 미 방문 업장</p>
+                        <button type="button" class="btn btn_red">조회</button>
+                    </div>
+                </div>
+                <p class="tit2 mb0">선택된 거래처들</p>
+                <div class="box">
+                    <div class="list">
+                        <select name="" id="" class="mr10">
+                            <option value="rate">등급선택</option>
+                            <option value="a">A</option>
+                            <option value="b">B</option>
+                            <option value="c">C</option>
+                        </select>
+                        <select name="" id="" class="mr10">
+                            <option value="1">상태선택</option>
+                            <option value="2">영업</option>
+                            <option value="3">휴업</option>
+                            <option value="4">폐업</option>
+                            <option value="5">삭제요청</option>
+                        </select>
+                        <button type="button" class="btn btn_white">변경</button>
+                    </div>
+                    <div class="list">
+                        <select name="" id="">
+                            <option value="10">10건</option>
+                            <option value="20">20건</option>
+                            <option value="50">50건</option>
+                            <option value="50">100건</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="scroll-box">
+                    <table class="table01 chk">
+                        <caption>선택된 거래처들 테이블의 거래처 명, 채널, seg, subseg1, 등급, 거래처 담당 부서, 거래처 담당자, 최근 방문일, 상태 테이블 입니다.</caption>
+                        <colgroup>
+                            <col style="width:2%">
+                            <col style="width:10%">
+                            <col style="width:2%">
+                            <col style="width:10%">
+                            <col style="width:8%">
+                            <col style="width:2%">
+                            <col style="width:5%">
+                            <col style="width:6%">
+                            <col style="width:8%">
+                            <col style="width:8%">
+                            <col style="width:10%">
+                            <col style="width:10%">
+                            <col style="width:8%">
+                            <col style="width:10%">
+                            <col style="width:5%">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>
+                                    <div class="chk_area chk_all chk02">
+                                        <input type="checkbox" id="t_chk-all" name="tchk">
+                                        <label for="t_chk-all"> </label>
+                                    </div>
+                                </th>
+                                <th>업장 명</th>
+                                <th>채널</th>
+                                <th>Seg</th>
+                                <th>subseg1</th>
+                                <th>등급</th>
+                                <th>지역1</th>
+                                <th>지역2</th>
+                                <th>업장 담당 부서</th>
+                                <th>업장 담당자</th>
+                                <th>사용도매장</th>
+                                <th>도매장 담당 부서</th>
+                                <th>도매장 담당자</th>
+                                <th>최근 방문일</th>
+                                <th>상태</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="center">
+                                    <div class="chk_area chk02 t_chk">
+                                        <input type="checkbox" id="t_chk1" name="tchk">
+                                        <label for="t_chk1"> </label>
+                                    </div>
+                                </td>
+                                <td>(신당)기배이자캬야</td>
+                                <td class="center">ON</td>
+                                <td>Social Drinking</td>
+                                <td class="center">이자카야</td>
+                                <td class="center">A</td>
+                                <td>서울</td>
+                                <td>중구</td>
+                                <td>수도권 업장2</td>
+                                <td>주종원</td>
+                                <td>(주)양지종합주류(석관)</td>
+                                <td>수도권 도매2</td>
+                                <td>김도매</td>
+                                <td class="center">2020-09-03</td>
+                                <td class="center">영업</td>
+                            </tr>
+                            <tr>
+                                <td class="center">
+                                    <div class="chk_area chk02 t_chk">
+                                        <input type="checkbox" id="t_chk2" name="tchk">
+                                        <label for="t_chk2"> </label>
+                                    </div>
+                                </td>
+                                <td>(서소문)누나홀닭_시청역</td>
+                                <td class="center">ON</td>
+                                <td>Social Drinking</td>
+                                <td class="center">호프</td>
+                                <td class="center">B</td>
+                                <td>서울</td>
+                                <td>중구</td>
+                                <td>수도권 업장2</td>
+                                <td>주종원</td>
+                                <td>(주)대진주류</td>
+                                <td>수도권 도매2</td>
+                                <td>김도매</td>
+                                <td class="center">2020-09-03</td>
+                                <td class="center">영업</td>
+                            </tr>
+                            <tr>
+                                <td class="center">
+                                    <div class="chk_area chk02 t_chk">
+                                        <input type="checkbox" id="t_chk3" name="tchk">
+                                        <label for="t_chk3"> </label>
+                                    </div>
+                                </td>
+                                <td>(수표)창화루</td>
+                                <td class="center">ON</td>
+                                <td>Simply Food</td>
+                                <td class="center">중식당</td>
+                                <td class="center">C</td>
+                                <td>서울</td>
+                                <td>중구</td>
+                                <td>수도권 업장2</td>
+                                <td>주종원</td>
+                                <td>(유)남양주류</td>
+                                <td>수도권 도매2</td>
+                                <td>김도매</td>
+                                <td class="center">2020-09-03</td>
+                                <td class="center">영업</td>
+                            </tr>
+                            <tr>
+                                <td class="center">
+                                    <div class="chk_area chk02 t_chk">
+                                        <input type="checkbox" id="t_chk4" name="tchk">
+                                        <label for="t_chk4"> </label>
+                                    </div>
+                                </td>
+                                <td>못된 양꼬치(라페스타)</td>
+                                <td class="center">ON</td>
+                                <td>Simply Food</td>
+                                <td class="center">양꼬치</td>
+                                <td class="center">B</td>
+                                <td>경기</td>
+                                <td>고양시</td>
+                                <td>수도권 업장3</td>
+                                <td>최병민</td>
+                                <td></td>
+                                <td>수도권 도매3</td>
+                                <td>최병민</td>
+                                <td class="center">2020-07-05</td>
+                                <td class="center">휴업</td>
+                            </tr>
+                            <tr>
+                                <td class="center">
+                                    <div class="chk_area chk02 t_chk">
+                                        <input type="checkbox" id="t_chk5" name="tchk">
+                                        <label for="t_chk5"> </label>
+                                    </div>
+                                </td>
+                                <td>병의신(라페스타)</td>
+                                <td class="center">ON</td>
+                                <td>Social Drinking</td>
+                                <td class="center">맥주편의방</td>
+                                <td class="center"></td>
+                                <td>경기</td>
+                                <td>고양시</td>
+                                <td>수도권 업장3</td>
+                                <td>최병민</td>
+                                <td>(주)대화주류</td>
+                                <td>수도권 도매3</td>
+                                <td>최병민</td>
+                                <td class="center">2020-09-05</td>
+                                <td class="center">영업</td>
+                            </tr>
+                            <tr>
+                                <td class="center">
+                                    <div class="chk_area chk02 t_chk">
+                                        <input type="checkbox" id="t_chk6" name="tchk">
+                                        <label for="t_chk6"> </label>
+                                    </div>
+                                </td>
+                                <td>장보고식자재마트(중방점)</td>
+                                <td class="center">OFF</td>
+                                <td>SM</td>
+                                <td class="center">체인형 슈퍼</td>
+                                <td class="center">B</td>
+                                <td>경북</td>
+                                <td>경산시</td>
+                                <td>경북</td>
+                                <td>최기재</td>
+                                <td>대양종합주류</td>
+                                <td>경북</td>
+                                <td>최기재</td>
+                                <td class="center">2020-09-23</td>
+                                <td class="center">삭제 요청</td>
+                            </tr>
+                            <tr>
+                                <td class="center">
+                                    <div class="chk_area chk02 t_chk">
+                                        <input type="checkbox" id="t_chk7" name="tchk">
+                                        <label for="t_chk7"> </label>
+                                    </div>
+                                </td>
+                                <td>청담동말자싸롱(사수점)</td>
+                                <td class="center">ON</td>
+                                <td>Social Drinking</td>
+                                <td class="center">호프</td>
+                                <td class="center"></td>
+                                <td>대구</td>
+                                <td>북구</td>
+                                <td>경북</td>
+                                <td>최기재</td>
+                                <td>(유)대일상사</td>
+                                <td>경북</td>
+                                <td>최기재</td>
+                                <td class="center">2020-08-28</td>
+                                <td class="center">폐업</td>
+                            </tr>
+                            <tr>
+                                <td class="center">
+                                    <div class="chk_area chk02 t_chk">
+                                        <input type="checkbox" id="t_chk8" name="tchk">
+                                        <label for="t_chk8"> </label>
+                                    </div>
+                                </td>
+                                <td>연남공판장(마포)</td>
+                                <td class="center">OFF</td>
+                                <td>SM</td>
+                                <td class="center">개인형 슈퍼</td>
+                                <td class="center">A</td>
+                                <td>서울</td>
+                                <td>마포구</td>
+                                <td>SM</td>
+                                <td>조희훈</td>
+                                <td>(주)라인상사</td>
+                                <td>SM</td>
+                                <td>조희훈</td>
+                                <td class="center">2020-08-28</td>
+                                <td class="center">영업</td>
+                            </tr>
+                            <tr>
+                                <td class="center">
+                                    <div class="chk_area chk02 t_chk">
+                                        <input type="checkbox" id="t_chk9" name="tchk">
+                                        <label for="t_chk9"> </label>
+                                    </div>
+                                </td>
+                                <td>후남이네</td>
+                                <td class="center">ON</td>
+                                <td>Simply Food</td>
+                                <td class="center">식당</td>
+                                <td class="center"></td>
+                                <td>경기</td>
+                                <td>안양시</td>
+                                <td>수도권업장1</td>
+                                <td>김웅</td>
+                                <td>대인상사(유)</td>
+                                <td>수도권 도매1</td>
+                                <td>김웅</td>
+                                <td class="center">2020-09-04</td>
+                                <td class="center">영업</td>
+                            </tr>
+                            <tr>
+                                <td class="center">
+                                    <div class="chk_area chk02 t_chk">
+                                        <input type="checkbox" id="t_chk10" name="tchk">
+                                        <label for="t_chk10"> </label>
+                                    </div>
+                                </td>
+                                <td>웨이스탑 경북 옥동점</td>
+                                <td class="center">OFF</td>
+                                <td>CVS</td>
+                                <td class="center">Major</td>
+                                <td class="center"></td>
+                                <td>경북</td>
+                                <td>안동시</td>
+                                <td>경북</td>
+                                <td>정창호</td>
+                                <td>(주)풍산주류</td>
+                                <td>경북</td>
+                                <td>정창호</td>
+                                <td class="center">2020-09-13</td>
+                                <td class="center">영업</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="pagination">
+                    <ul>
+                        <li class="arrow_left">
+                            <a href="javascript:void(0)" title="이전"></a>
+                        </li>
+                        <li><a href="javascript:void(0)" class="on">1</a></li>
+                        <li><a href="javascript:void(0)">2</a></li>
+                        <li><a href="javascript:void(0)">3</a></li>
+                        <li><a href="javascript:void(0)">4</a></li>
+                        <li><a href="javascript:void(0)">5</a></li>
+                        <li class="arrow_right">
+                            <a href="javascript:void(0)" title="다음"></a>
+                        </li>
+                    </ul>
+                    <div class="btn-area right">
+                        <button type="button" class="btn btn_navy btn-big mr10">신규 업장 등록</button>
+                        <button type="button" class="btn btn btn_navy btn-big">EXCEL</button>
+                    </div>
+                </div>  
+           </div>
+        </section> <!--// contents -->
+    </div> <!--// wrapper -->
+    <script src="../assets/js/jquery-1.12.4.js"></script>
+    <script src="../assets/js/jquery-ui.js"></script>
+    <script src="../assets/js/perfect-scrollbar.min.js"></script>
+    <script src="../assets/js/common.js"></script>
+</body>
+</html>

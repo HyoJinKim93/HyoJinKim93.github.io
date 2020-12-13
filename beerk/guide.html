@@ -23,52 +23,96 @@
             <li><a href="#contents">본문바로가기</a></li>
         </ul>
         <header>
-            <h1 class="logo">
-                <a href="javascript:void(0)">
-                    BK Co.,Ltd Import & Distribution pf world's finest beers
-                </a>
-            </h1>
-            <nav>
-                <ul>
-                    <li>ID : ABC0001</li>
-                    <li><a href="javascript:void(0)">수도권 도매 1파트&nbsp;<strong>김영업<span>님</span></strong></a></li>
-                </ul>
-                <a href="javascript:void(0)" class="btn_logout">로그아웃</a>
-            </nav>
+            <div class="pc-wrap">
+                <h1 class="logo">
+                    <a href="javascript:void(0)">
+                        BK Co.,Ltd Import & Distribution pf world's finest beers
+                    </a>
+                </h1>
+                <nav>
+                    <ul>
+                        <li>ID : ABC0001</li>
+                        <li><a href="javascript:void(0)">수도권 도매 1파트&nbsp;<strong>김영업<span>님</span></strong></a></li>
+                    </ul>
+                    <a href="javascript:void(0)" class="btn btn_logout">로그아웃</a>
+                </nav>
+            </div>
+            <div class="mobile-wrap center">
+                <h2 class="title">수주 조회 상세</h2>
+                <!-- <button class="btn btn-menu" type="button">메뉴 열기</button> -->
+                <button class="btn btn-back" type="button">뒤로가기</button>
+            </div>
         </header>
         <nav id="nav">
             <h1 class="hidden">메인 내비게이션</h1>
+            <button class="btn btn-menu-close" type="button">메뉴 닫기</button>
             <ul class="gnb">
                 <li class="gnb1">
-                    <a href="javascript:void(0)" class="on current"><span>거래처 관리</span></a>
-                    <ul>
-                        <li><a href="#">업소 조회 관리</a></li>
-                        <li><a href="#">도매장 조회 관리</a></li>
-                    </ul>
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>영업 활동 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">주간 활동 내역</a></li>
+                        <li><a href="#">영업 활동 내역</a></li>
+                        <li><a href="#">영업 call 현황</a></li> 
+                        <li><a href="#">영업 행사 설정</a></li>
+                        <li><a href="#">거래처 제품 입점 조회</a></li>
+                        <li><a href="#">coverage/listing 현황</a></li>
+                    </ul> -->
                 </li>
                 <li class="gnb2">
-                    <a href="javascript:void(0)"><span>영업 활동 관리</span></a>
+                    <a href="javascript:void(0)"  class="on current"><span>도매장 수주 관리</span></a>
                     <ul>
+                        <li><a href="#">수주 조회</a></li>
+                        <li><a href="#">수주 등록</a></li>
+                        <li><a href="#">반품 조회</a></li>
+                        <li><a href="#">반품 등록</a></li>
+                        <!-- <li><a href="#">도매장 기말 재고 등록</a></li>
+                        <li><a href="#">도매장 기말 재고 조회</a></li>
+                        <li><a href="#">도매장 평균 재고 관리</a></li>
+                        <li><a href="#"> 파트별 도매장 재고 현황</a></li> -->
+                    </ul>
+                </li>
+                <li class="gnb3">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>영업 운영 관리</span></a>
+                    <!-- <ul>
                         <li><a href="#">주간 활동 내역</a></li>
                         <li><a href="#">영업 활동 내역</a></li>
                         <li><a href="#">영업 call 현황</a></li>
                         <li><a href="#">영업 행사 설정</a></li>
                         <li><a href="#">거래처 제품 입점 조회</a></li>
                         <li><a href="#">coverage/listing 현황</a></li>
-                    </ul>
-                </li>
-                <li class="gnb3">
-                    <a href="javascript:void(0)"><span>영업 운영 관리</span></a>
-                    <ul>
+                    </ul> -->
+                    <!-- <ul>
                         <li><a href="#">신규 입점 현황</a></li>
                         <li><a href="#">개인 별 신규 영업 목표 실적</a></li>
                         <li><a href="#">파트 별 목표 실적 현황</a></li>
                         <li><a href="#">posm 등록</a></li>                       
-                    </ul>
+                    </ul> -->
                 </li>
                 <li class="gnb4">
-                    <a href="javascript:void(0)" ><span>프로모션 관리</span></a>
-                    <ul>
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>판매량 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">업소 조회 관리</a></li>
+                        <li><a href="#">도매장 조회 관리</a></li>
+                    </ul> -->
+                </li>
+                <li class="gnb5">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>도매장 재고 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">업소 판매량 등록</a></li>
+                        <li><a href="#">재널 별 판매량 등록</a></li>
+                        <li><a href="#">지역 별 판매량 등록</a></li>
+                    </ul> -->
+                </li>
+                <li class="gnb6">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>거래처 관리</span></a>
+                    <!-- <ul>
+                        <li><a href="#">업소 조회 관리</a></li>
+                        <li><a href="#">도매장 조회 관리</a></li>
+                    </ul> -->
+                </li>
+                <li class="gnb7">
+                    <a href="javascript:void(0)" onclick="modal('준비중입니다.');"><span>프로모션 관리</span></a>
+                    <!-- <ul>
                         <li><a href="#">visibility 영업 조회 등록</a></li> 
                         <li><a href="#">visibility 프로모션 조회 등록</a></li> 
                         <li><a href="#">set 프로모션 영업 조회 등록</a></li> 
@@ -77,31 +121,7 @@
                         <li><a href="#">gift 프로모션 영업 조회 등록</a></li> 
                         <li><a href="#">gift 프로모션 조회 등록</a></li> 
                         <li><a href="#">gift 프로모션 대시보드</a></li>
-                    </ul>
-                </li>
-                <li class="gnb5">
-                    <a href="javascript:void(0)"><span>판매량 관리</span></a>
-                    <ul>
-                        <li><a href="#">업소 조회 관리</a></li>
-                        <li><a href="#">도매장 조회 관리</a></li>
-                    </ul>
-                </li>
-                <li class="gnb6">
-                    <a href="javascript:void(0)"><span>도매장 재고 관리</span></a>
-                    <ul>
-                        <li><a href="#">업소 판매량 등록</a></li>
-                        <li><a href="#">재널 별 판매량 등록</a></li>
-                        <li><a href="#">지역 별 판매량 등록</a></li>
-                    </ul>
-                </li>
-                <li class="gnb7">
-                    <a href="javascript:void(0)"><span>도매장 발주 관리</span></a>
-                    <ul>
-                        <li><a href="#">도매장 기말 재고 등록</a></li>
-                        <li><a href="#">도매장 기말 재고 조회</a></li>
-                        <li><a href="#">도매장 평균 재고 관리</a></li>
-                        <li><a href="#"> 파트별 도매장 재고 현황</a></li>
-                    </ul>
+                    </ul> -->
                 </li>
             </ul>
         </nav>
@@ -129,131 +149,149 @@
                         <dl class="dl_col02">
                             <dt>업소명</dt>
                             <dd>
-                                <input type="text" class="input_type01">
+                                <div class="row">
+                                    <input type="text" class="input_type01" title="입력">
+                                </div>
                             </dd>
                             <dt>업소 담당</dt>
                             <dd>
-                                <select name="" id="">
-                                    <option value="">전체</option>
-                                    <option value="">전체</option>
-                                    <option value="">전체</option>
-                                </select>
-                                <input type="text" class="input_type02">
+                                <div class="row">
+                                    <select name="" id="">
+                                        <option value="">전체</option>
+                                        <option value="">전체</option>
+                                        <option value="">전체</option>
+                                    </select>
+                                    <input type="text1" class="input_type02" title="입력">
+                                </div>
                             </dd>
                         </dl>
                         <dl class="dl_col01">
                             <dt>업소 구분</dt>
                             <dd>
-                                <select name="" id="">
-                                    <option value="">채널</option>
-                                    <option value="">Seg</option>
-                                    <option value="">Seg</option>
-                                </select>
-                                <select name="" id="">
-                                    <option value="">Seg</option>
-                                    <option value="">Seg</option>
-                                    <option value="">Sub Seg</option>
-                                </select>
-                                <select name="" id="">
-                                    <option value="">Sub Seg1</option>
-                                    <option value="">Sub Seg1</option>
-                                    <option value="">Sub Seg1</option>
-                                </select>
-                                <select name="" id="">
-                                    <option value="">Sub Seg2</option>
-                                    <option value="">Sub Seg2</option>
-                                    <option value="">Sub Seg2</option>
-                                </select>
+                                <div class="row">
+                                    <select name="" id="">
+                                        <option value="">채널</option>
+                                        <option value="">Seg</option>
+                                        <option value="">Seg</option>
+                                    </select>
+                                    <select name="" id="">
+                                        <option value="">Seg</option>
+                                        <option value="">Seg</option>
+                                        <option value="">Sub Seg</option>
+                                    </select>
+                                    <select name="" id="">
+                                        <option value="">Sub Seg1</option>
+                                        <option value="">Sub Seg1</option>
+                                        <option value="">Sub Seg1</option>
+                                    </select>
+                                    <select name="" id="">
+                                        <option value="">Sub Seg2</option>
+                                        <option value="">Sub Seg2</option>
+                                        <option value="">Sub Seg2</option>
+                                    </select>
+                                </div>
                             </dd>
                         </dl>
                         <dl class="dl_col02">
                             <dt>지역</dt>
                             <dd>
-                                <select name="" id="">
-                                    <option value="">A등급</option>
-                                    <option value="">전체</option>
-                                    <option value="">전체</option>
-                                </select>
-                                <select name="" id="" class="mr0">
-                                    <option value="">전체</option>
-                                    <option value="">전체</option>
-                                    <option value="">전체</option>
-                                </select>
+                                <div class="row select-col2">
+                                    <select name="" id="">
+                                        <option value="">A등급</option>
+                                        <option value="">전체</option>
+                                        <option value="">전체</option>
+                                    </select>
+                                    <select name="" id="">
+                                        <option value="">전체</option>
+                                        <option value="">전체</option>
+                                        <option value="">전체</option>
+                                    </select>
+                                </div>
                             </dd>
                             <dt>최근 방문일</dt>
                             <dd>
-                                <input type="text" id="calender1" class="input_type02 calender">
-                                <span class="etc">~</span>
-                                <input type="text" id="calender2" class="input_type02 calender">
+                                <div class="row">
+                                    <input type="text" id="calender1" class="calender" title="날짜">
+                                    <span class="etc">~</span>
+                                    <input type="text" id="calender2" class="calender" title="날짜">
+                                </div>
                             </dd>
                         </dl>
                         <dl class="dl_col02">
                             <dt>조회 일자</dt>
                             <dd>
-                                <select name="" id="">
-                                    <option value="">전체</option>
-                                    <option value="">전체</option>
-                                    <option value="">전체</option>
-                                </select>
-                                <select name="" id="" class="mr0">
-                                    <option value="">전체</option>
-                                    <option value="">전체</option>
-                                    <option value="">전체</option>
-                                </select>
+                                <div class="row">
+                                    <select name="" id="">
+                                        <option value="">전체</option>
+                                        <option value="">전체</option>
+                                        <option value="">전체</option>
+                                    </select>
+                                    <select name="" id="">
+                                        <option value="">전체</option>
+                                        <option value="">전체</option>
+                                        <option value="">전체</option>
+                                    </select>
+                                </div>
                             </dd>
                             <dt>거래처 담당</dt>
                             <dd>
-                                <select name="" id="">
-                                    <option value="">전체</option>
-                                    <option value="">전체</option>
-                                    <option value="">전체</option>
-                                </select>
-                                <input type="text" class="input_type02">
+                                <div class="row">
+                                    <select name="" id="">
+                                        <option value="">전체</option>
+                                        <option value="">전체</option>
+                                        <option value="">전체</option>
+                                    </select>
+                                    <input type="text" class="input_type02" title="입력">
+                                </div>
                             </dd>
                         </dl>
                         <dl class="dl_col01">
                             <dt>등급</dt>
                             <dd>
-                                <div class="chk_area chk_label chk01">
-                                    <input type="checkbox" id="chk01" class="chk01">
-                                    <label for="chk01">A등급</label>
-                                </div>
-                                <div class="chk_area chk_label chk01">
-                                    <input type="checkbox" id="chk02" class="chk01">
-                                    <label for="chk02">B등급</label>
-                                </div>
-                                <div class="chk_area chk_label chk01">
-                                    <input type="checkbox" id="chk03" class="chk01">
-                                    <label for="chk03">C등급</label>
-                                </div>
-                                <div class="chk_area chk_label chk01">
-                                    <input type="checkbox" id="chk04" class="chk01">
-                                    <label for="chk04">등급없음</label>
+                                <div class="row">
+                                    <div class="chk_area chk_label chk01">
+                                        <input type="checkbox" id="chk01" class="chk01">
+                                        <label for="chk01">A등급</label>
+                                    </div>
+                                    <div class="chk_area chk_label chk01">
+                                        <input type="checkbox" id="chk02" class="chk01">
+                                        <label for="chk02">B등급</label>
+                                    </div>
+                                    <div class="chk_area chk_label chk01">
+                                        <input type="checkbox" id="chk03" class="chk01">
+                                        <label for="chk03">C등급</label>
+                                    </div>
+                                    <div class="chk_area chk_label chk01">
+                                        <input type="checkbox" id="chk04" class="chk01">
+                                        <label for="chk04">등급없음</label>
+                                    </div>
                                 </div>
                             </dd>
                         </dl>
                         <dl class="dl_col01">
                             <dt>상태</dt>
                             <dd>
-                                <div class="chk_area chk_label chk01">
-                                    <input type="checkbox" id="chk05" class="chk01">
-                                    <label for="chk05">영업</label>
-                                </div>
-                                <div class="chk_area chk_label chk01">
-                                    <input type="checkbox" id="chk06" class="chk01">
-                                    <label for="chk06">휴업</label>
-                                </div>
-                                <div class="chk_area chk_label chk01">
-                                    <input type="checkbox" id="chk07" class="chk01">
-                                    <label for="chk07">폐업</label>
-                                </div>
-                                <div class="chk_area chk_label chk01">
-                                    <input type="checkbox" id="chk08" class="chk01">
-                                    <label for="chk08">삭제요청</label>
-                                </div>
-                                <div class="chk_area chk_label chk01">
-                                    <input type="checkbox" id="chk09" class="chk01">
-                                    <label for="chk09">삭제</label>
+                                <div class="row">
+                                    <div class="chk_area chk_label chk01">
+                                        <input type="checkbox" id="chk05" class="chk01">
+                                        <label for="chk05">영업</label>
+                                    </div>
+                                    <div class="chk_area chk_label chk01">
+                                        <input type="checkbox" id="chk06" class="chk01">
+                                        <label for="chk06">휴업</label>
+                                    </div>
+                                    <div class="chk_area chk_label chk01">
+                                        <input type="checkbox" id="chk07" class="chk01">
+                                        <label for="chk07">폐업</label>
+                                    </div>
+                                    <div class="chk_area chk_label chk01">
+                                        <input type="checkbox" id="chk08" class="chk01">
+                                        <label for="chk08">삭제요청</label>
+                                    </div>
+                                    <div class="chk_area chk_label chk01">
+                                        <input type="checkbox" id="chk09" class="chk01">
+                                        <label for="chk09">삭제</label>
+                                    </div>
                                 </div>
                             </dd>
                         </dl>
@@ -281,7 +319,6 @@
                 </div>
             </div>
             <div class="box_flow">
-               <div class="scroll-box">
                 <div class="sum">
                     <p>전체 <em>250</em>개 / 조회 <span>80</span>개</p>
                     <div class="chk_area chk_label chk01">
@@ -289,6 +326,7 @@
                         <label for="chk2-1">기존 신규 제외</label>
                     </div>
                 </div>
+               <div class="scroll-box">
                 <table class="table01 adv chk">
                     <caption>수도권 1팀, 지역팀의 전체합계, 비중, 수도권계, 지역계 테이블 입니다.</caption>
                     <colgroup>
@@ -559,8 +597,6 @@
                                 <input type="checkbox" id="box4">
                                 <label for="box4">칭따오 640ml(병)</label>
                             </div>
-                        </div>
-                        <div class="radio_wrap">
                             <div class="list">
                                 <input type="checkbox" id="box5">
                                 <label for="box5">라오샨 600ml(병)</label>
@@ -578,7 +614,6 @@
                                 <label for="box8">칭따오 640ml(병)</label>
                             </div>
                         </div>
-                       
                     </div>
                     <div class="detail clear">
                         <h3 class="tit3">경쟁사 입점제품</h3>
@@ -599,8 +634,6 @@
                                 <input type="checkbox" id="box20">
                                 <label for="box20">경쟁사4</span></label>
                             </div>
-                        </div>
-                        <div class="radio_wrap">
                             <div class="list">
                                 <input type="checkbox" id="box21">
                                 <label for="box21">경쟁사5</span></label>
@@ -617,8 +650,6 @@
                                 <input type="checkbox" id="box24">
                                 <label for="box24">경쟁사8</span></label>
                             </div>
-                        </div>
-                        <div class="radio_wrap">
                             <div class="list">
                                 <input type="checkbox" id="box25">
                                 <label for="box25">경쟁사9</label>
@@ -635,8 +666,6 @@
                                 <input type="checkbox" id="box28">
                                 <label for="box28">경쟁사9</label>
                             </div>
-                        </div>
-                        <div class="radio_wrap">
                             <div class="list">
                                 <input type="checkbox" id="box29">
                                 <label for="box29">경쟁사9</label>
@@ -688,31 +717,40 @@
                         </tr>
                     </tbody>
                 </table>
-                <p class="tit2">선택된 거래처들</p>
+                
+                <p class="tit2 mb0">선택된 거래처들</p>
                 <div class="box">
                     <div class="list">
-                        <select name="" id="" class="mr10">
-                            <option value="2020년">지역1</option>
-                            <option value="2020년">지역1</option>
-                            <option value="2020년">지역1</option>
-                        </select>
-                        <select name="" id="">
-                            <option value="1">지역2</option>
-                            <option value="2">지역2</option>
-                            <option value="3">지역2</option>
-                        </select>
+                        <div class="row">
+                            <select name="" id="">
+                                <option value="rate">등급선택</option>
+                                <option value="a">A</option>
+                                <option value="b">B</option>
+                                <option value="c">C</option>
+                            </select>
+                            <select name="" id="">
+                                <option value="1">상태선택</option>
+                                <option value="2">영업</option>
+                                <option value="3">휴업</option>
+                                <option value="4">폐업</option>
+                                <option value="5">삭제요청</option>
+                            </select>
+                            <button type="button" class="btn btn_white">변경</button>
+                        </div>
                     </div>
-                    <div class="list">
-                        <button type="button" class="btn_navy mr10">신규 영업 목표 등록</button>
-                        <button type="button" class="btn_navy mr10">저장</button>
-                        <select name="" id="">
-                            <option value="1">10건</option>
-                            <option value="2">2월</option>
-                            <option value="3">3월</option>
-                        </select>
+                    <div class="list btn-area">
+                        <div class="row">
+                            <button type="button" class="btn btn_navy btn-big">신규 영업 목표 등록</button>
+                            <button type="button" class="btn btn_navy">저장</button>
+                            <select name="" id="">
+                                <option value="10">10건</option>
+                                <option value="20">20건</option>
+                                <option value="50">50건</option>
+                                <option value="50">100건</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
-                
                 <table class="table01 chk">
                     <caption>선택된 거래처들 테이블의 거래처 명, 채널, seg, subseg1, 등급, 거래처 담당 부서, 거래처 담당자, 최근 방문일, 상태 테이블 입니다.</caption>
                     <colgroup>
@@ -857,44 +895,54 @@
                             <dl class="col01">
                                 <dt>등급</dt>
                                 <dd>
-                                    <select name="" id="">
-                                        <option value="2020년">2020년</option>
-                                        <option value="2020년">2021년</option>
-                                        <option value="2020년">2022년</option>
-                                    </select>
+                                   <div class="row">
+                                        <select name="" id="">
+                                            <option value="2020년">2020년</option>
+                                            <option value="2020년">2021년</option>
+                                            <option value="2020년">2022년</option>
+                                        </select>
+                                   </div>
                                 </dd>
                             </dl>
                             <dl class="col02">
                                 <dt>대표자</dt>
                                 <dd>
-                                    <input type="text">
-                                    <input type="text" class="mr0">
+                                    <div class="row row-input">
+                                        <input type="text" title="입력">
+                                        <input type="text" title="입력">
+                                    </div>
                                 </dd>
                             </dl>
                             <dl class="col02 col_btn01">
                                 <dt>사업자 등록번호</dt>
                                 <dd>
-                                    <input type="text">
-                                    <button type="button" class="btn_navy">중복확인</button>
+                                    <div class="row">
+                                        <input type="text" title="입력">
+                                        <button type="button" class="btn_navy">중복확인</button>
+                                    </div>
                                 </dd>
                             </dl>
                             <dl>
                                 <dt>사업장 전화번호</dt>
                                 <dd>
-                                    <input type="text">
+                                   <div class="row">
+                                     <input type="text" title="입력">
+                                   </div>
                                 </dd>
                             </dl>
                             <dl class="col02">
                                 <dt>키맨 1</dt>
                                 <dd>
-                                    <input type="text">
-                                    <input type="text" class="mr0">
+                                    <div class="row row-input">
+                                        <input type="text" title="입력">
+                                        <input type="text" title="입력">
+                                    </div>
                                 </dd>
                             </dl>
                             <dl class="col03">
                                 <dt>지역</dt>
                                 <dd>
-                                    <div class="row">
+                                    <div class="row ea3">
                                         <select name="" id="">
                                             <option value="2020년">지역1</option>
                                             <option value="2020년">지역1</option>
@@ -916,20 +964,26 @@
                             <dl class="col02 col_btn02">
                                 <dt>우편번호</dt>
                                 <dd>
-                                    <input type="text" class="mr10">
-                                    <button type="button" class="btn_navy pd32">우편번호 찾기</button>
+                                    <div class="row">
+                                        <input type="text" title="입력">
+                                        <button type="button" class="btn btn_navy btn-big">우편번호 찾기</button>
+                                    </div>
                                 </dd>
                             </dl>
                             <dl>
                                 <dt>신주소</dt>
                                 <dd>
-                                    <input type="text">
+                                  <div class="row">
+                                        <input type="text" title="입력">
+                                  </div>
                                 </dd>
                             </dl>
                             <dl>
                                 <dt>구주소</dt>
                                 <dd>
-                                    <input type="text">
+                                   <div class="row">
+                                     <input type="text" title="입력">
+                                   </div>
                                 </dd>
                             </dl>
                         </div>
@@ -950,31 +1004,31 @@
                             <dl>
                                 <dt><span class="star">*</span>담당자 부서</dt>
                                 <dd>
-                                    <input type="text">
+                                    <input type="text" title="입력">
                                 </dd>
                             </dl>
                             <dl>
                                 <dt><span class="star">*</span>담당자</dt>
                                 <dd>
-                                    <input type="text">
+                                    <input type="text" title="입력">
                                 </dd>
                             </dl>
                             <dl>
                                 <dt>사용도매장</dt>
                                 <dd>
-                                    <input type="text">
+                                    <input type="text" title="입력">
                                 </dd>
                             </dl>
                             <dl>
                                 <dt>도매장 담당자 부서</dt>
                                 <dd>
-                                    <input type="text">
+                                    <input type="text" title="입력">
                                 </dd>
                             </dl>
                             <dl>
                                 <dt>도매장 담당자</dt>
                                 <dd>
-                                    <input type="text">
+                                    <input type="text" title="입력">
                                 </dd>
                             </dl>
                             <dl>
@@ -986,23 +1040,23 @@
                             <dl class="txtarea">
                                 <dt>비고</dt>
                                 <dd>
-                                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                                    <textarea name="" id="" cols="30" rows="10" title="입력"></textarea>
                                 </dd>
                             </dl>
                         </div>
                     </div>
                 </div>
                 <div class="btn_wrap clear">
-                    <button type="button" class="btn_white mr10">취소</button>
-                    <button type="button" class="btn_white">등록</button>
+                    <button type="button" class="btn btn_white mr10">취소</button>
+                    <button type="button" class="btn btn_white">등록</button>
                 </div>
                 <div class="btn_wrap mt76">
-                    <button type="button" class="btn_white mr10">삭제</button>
-                    <button type="button" class="btn_white mr10">수정</button>
-                    <button type="button" class="btn_white mr10">등록</button>
-                    <button type="button" class="btn_white mr10">확인</button>
-                    <button type="button" class="btn_navy mr10 pd34">EXCEL</button>
-                    <button type="button" class="btn_navy pd32">신규 업소 등록</button>
+                    <button type="button" class="btn btn_white mr10">삭제</button>
+                    <button type="button" class="btn btn_white mr10">수정</button>
+                    <button type="button" class="btn btn_white mr10">등록</button>
+                    <button type="button" class="btn btn_white mr10">확인</button>
+                    <button type="button" class="btn btn btn_navy mr10">EXCEL</button>
+                    <button type="button" class="btn btn_navy btn-big">신규 업소 등록</button>
                 </div>
             </div>
             <!-- ======= popup ======= -->
@@ -1024,7 +1078,7 @@
                     <div class="pop_contents">
                         <div class="scrollBox">
                             <div class="pop_info_form">
-                                <div class="list col02">
+                                <div class="list row">
                                     <select name="" id="" class="mr10">
                                         <option value="">매니저 코칭</option>
                                         <option value="">매니저 코칭</option>
@@ -1034,68 +1088,51 @@
                                         <option value="">매니저 코칭</option>
                                     </select>
                                 </div>
-                                <div class="list col03">
-                                    <select name="" id="" class="mr10">
-                                        <option value="">2020년</option>
-                                        <option value="">1월</option>
-                                    </select>
-                                    <select name="" id="" class="mr10">
-                                        <option value="">1월</option>
-                                        <option value="">1월</option>
-                                    </select>
-                                    <select name="" id="">
-                                        <option value="">1일</option>
-                                        <option value="">1월</option>
-                                    </select>
+                                <div class="list input-col3">
+                                    <input type="text" class="mr10" placeholder="년도" title="년도">
+                                    <input type="text" class="mr10" placeholder="월" title="월">
+                                    <input type="text" placeholder="일" title="일">
                                 </div>
-                                <div class="list col02">
-                                    <select name="" id="" class="mr10">
-                                        <option value="">시/분</option>
-                                        <option value="">시/분</option>
-                                    </select>
-                                    <select name="" id="">
-                                        <option value="">시/분</option>
-                                        <option value="">시/분</option>
-                                    </select>
+                                <div class="list row">
+                                    <input type="text" class="mr10" placeholder="시/분" title="시/분">
+                                    <input type="text" placeholder="시/분" title="시/분">
                                 </div>
-                                <div class="list col03">
+                                <div class="list select-col3">
                                     <p class="tit03">방문 지역</p>
-                                    <select name="" id="" class="mr10">
-                                        <option value="">지역</option>
-                                        <option value="">서울</option>
-                                    </select>
-                                    <select name="" id="" class="mr10">
-                                        <option value="">지역</option>
-                                        <option value="">서울</option>
-                                    </select>
-                                    <select name="" id="">
-                                        <option value="">지역</option>
-                                        <option value="">서울</option>
-                                    </select>
+                                    <div class="row">
+                                        <select name="" id="" class="mr10">
+                                            <option value="">지역</option>
+                                            <option value="">서울</option>
+                                        </select>
+                                        <select name="" id="" class="mr10">
+                                            <option value="">지역</option>
+                                            <option value="">서울</option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">지역</option>
+                                            <option value="">서울</option>
+                                        </select>
+                                    </div>
                                 </div>
                                 <div class="list">
-                                    <p class="tit03">방문 도매장 수</p>
-                                    <input type="text" placeholder="입력">
+                                    <label for="">방문 도매장 수</label>
+                                    <input type="text" placeholder="입력" title="입력">
                                 </div>
                                 <div class="list">
-                                    <p class="tit03">방문 입장 수</p>
-                                    <input type="text" placeholder="입력">
+                                    <label for="">방문 입장 수</label>
+                                    <input type="text" placeholder="입력" title="입력">
                                 </div>
                                 <div class="list">
-                                    <p class="tit03">동행 사원 수</p>
-                                    <input type="text" placeholder="입력">
-                                </div>
-                                <div class="list">
-                                    <label for=""></label>
-                                    <input type="text" placeholder="활동 내용 입력">
+                                    <label for="">동행 사원 수</label>
+                                    <input type="text" placeholder="입력" title="입력">
                                 </div>
                                 <div class="list">
                                     <label for="">동행 사원 성명</label>
-                                    <input type="text" placeholder="입력">
+                                    <input type="text" placeholder="입력" title="입력">
                                 </div>
                                 <div class="list">
                                     <label for="">코칭 내용</label>
-                                    <input type="text" placeholder="활동 내용 입력">
+                                    <textarea type="text" placeholder="활동 내용 입력" title="입력"></textarea>
                                 </div>
                             </div>
                             <div class="btn-area between">
@@ -1103,7 +1140,7 @@
                                     <input type="checkbox" id="new" >
                                     <label for="new">활동완료</label>
                                 </div>
-                                <button type="button" class="btn_white">등록</button>
+                                <button type="button" class="btn btn_white">등록</button>
                             </div>
                         </div><!--// scrollBox -->
                     </div>
@@ -1116,7 +1153,7 @@
                     <div class="pop_contents">
                         <div class="scrollBox">
                             <div class="pop_info_form">
-                                <div class="list col02">
+                                <div class="list">
                                     <select name="" id="" class="mr10">
                                         <option value="">매니저 코칭</option>
                                         <option value="">매니저 코칭</option>
@@ -1126,10 +1163,10 @@
                                         <option value="">매니저 코칭</option>
                                     </select>
                                 </div>
-                                <div class="list col02">
+                                <div class="list">
                                     <input type="text" placeholder="거래처 조회">
                                 </div>
-                                <div class="list col03">
+                                <div class="list select-col3">
                                     <select name="" id="" class="mr10">
                                         <option value="">2020년</option>
                                         <option value="">1월</option>
@@ -1143,7 +1180,7 @@
                                         <option value="">1월</option>
                                     </select>
                                 </div>
-                                <div class="list col02">
+                                <div class="list">
                                     <select name="" id="" class="mr10">
                                         <option value="">시/분</option>
                                         <option value="">시/분</option>
@@ -1163,7 +1200,7 @@
                                     <input type="checkbox" id="new" class="chk01">
                                     <label for="new">활동완료</label>
                                 </div>
-                                <button type="button" class="btn_white">등록</button>
+                                <button type="button" class="btn btn_white">등록</button>
                             </div>
                         </div><!--// scrollBox -->
                     </div>
@@ -1186,7 +1223,7 @@
                                     <input type="checkbox" id="new">
                                     <label for="new">기존 신규</label>
                                 </div>
-                                <button type="button" class="btn_white">등록</button>
+                                <button type="button" class="btn btn_white">등록</button>
                             </div>
                         </div><!--// scrollBox -->
                     </div>
@@ -1199,7 +1236,7 @@
                     <div class="pop_contents">
                         <div class="scrollBox">
                             <div class="pop_info_form">
-                                <div class="list col01">
+                                <div class="list">
                                     <p class="tit03">행사일자</p>
                                     <input type="text" id="calender3" class="input_type02 calender">
                                     <span class="etc">~</span>
@@ -1207,21 +1244,23 @@
                                 </div>
                                 <div class="list col01">
                                     <p class="tit03">행사거래처</p>
-                                    <select name="" id="">
-                                        <option value="">전체</option>
-                                        <option value="">전체</option>
-                                        <option value="">전체</option>
-                                    </select>
-                                    <div class="count">
+                                        <div class="row">
                                         <select name="" id="">
-                                            <option value="">제품선택</option>
+                                            <option value="">전체</option>
                                             <option value="">전체</option>
                                             <option value="">전체</option>
                                         </select>
-                                        <input type="text" placeholder="내용 입력">
-                                        <button type="button" class="btn_minus" title="빼기"></button>
+                                        <div class="count">
+                                            <select name="" id="">
+                                                <option value="">제품선택</option>
+                                                <option value="">전체</option>
+                                                <option value="">전체</option>
+                                            </select>
+                                            <input type="text" placeholder="내용 입력">
+                                            <button type="button" class="btn_minus" title="빼기"></button>
+                                        </div>
                                     </div>
-                                    <div class="count">
+                                    <div class="count row">
                                         <select name="" id="">
                                             <option value="">제품선택</option>
                                             <option value="">전체</option>
@@ -1233,7 +1272,7 @@
                                 </div>
                             </div>
                             <div class="btn-area right">
-                                <button type="submit" class="btn_white">등록</button>
+                                <button type="submit" class="btn btn_white">등록</button>
                             </div>
                         </div><!--// scrollBox -->
                     </div>
@@ -1280,8 +1319,8 @@
                                 </div>
                             </div>
                             <div class="btn-area right">
-                                <button type="button" class="btn_white mr10">삭제</button>
-                                <button type="button" class="btn_white">수정</button>
+                                <button type="button" class="btn btn_white mr10">삭제</button>
+                                <button type="button" class="btn btn_white">수정</button>
                             </div>
                         </div><!--// scrollBox -->
                     </div>
@@ -1312,17 +1351,19 @@
                         <div class="scrollBox">
                             <div class="pop_head">
                                 <input type="text">
-                                <select name="" id="">
-                                    <option value="2020년">2020년</option>
-                                    <option value="2020년">2021년</option>
-                                    <option value="2020년">2022년</option>
-                                </select>
-                                <select name="" id="">
-                                    <option value="1">1월</option>
-                                    <option value="2">2월</option>
-                                    <option value="3">3월</option>
-                                </select>
-                                <button type="button" class="btn_red">조회</button>
+                                <div class="row">
+                                    <select name="" id="">
+                                        <option value="2020년">2020년</option>
+                                        <option value="2020년">2021년</option>
+                                        <option value="2020년">2022년</option>
+                                    </select>
+                                    <select name="" id="">
+                                        <option value="1">1월</option>
+                                        <option value="2">2월</option>
+                                        <option value="3">3월</option>
+                                    </select>
+                                </div>
+                                <button type="button" class="btn btn_red">조회</button>
                             </div>
                             <div class="pop_list">
                                 <dl>
@@ -1365,8 +1406,6 @@
                                     <dt>매그너스 쥬시 애플 330ml(병)</dt>
                                     <dd><input type="text"></dd>
                                 </dl>
-                            </div>
-                            <div class="pop_list">
                                 <dl>
                                     <dt>라오샨 600ml(병)</dt>
                                     <dd><input type="text"></dd>
@@ -1407,8 +1446,6 @@
                                     <dt>매그너스 쥬시 애플 330ml(병)</dt>
                                     <dd><input type="text"></dd>
                                 </dl>
-                            </div>
-                            <div class="pop_list">
                                 <dl>
                                     <dt>라오샨 600ml(병)</dt>
                                     <dd><input type="text"></dd>
@@ -1451,7 +1488,7 @@
                                 </dl>
                             </div>
                             <div class="btn-area right">
-                                <button type="button" class="btn_white">등록</button>
+                                <button type="button" class="btn btn_white">등록</button>
                             </div>
                         </div><!--// scrollBox -->
                     </div>

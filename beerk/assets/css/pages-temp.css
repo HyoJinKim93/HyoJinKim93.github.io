@@ -1,0 +1,42 @@
+/* td내 결과를 나눌 경우  */
+/* td.div-td{padding:0 !important}
+.div-td .row{width:100%;padding:5px 10px}
+.div-td .row + .row{border-top:1px solid #d6d6d6}
+
+.salesActivityList .table01 th{height:auto;line-height:30px}
+.salesActivityList .table01 td a{font-weight:700;}
+.salesActivityList .table01 td a:hover{text-decoration:underline} */
+.result-box {display:flex;flex-wrap:wrap;flex-direction:row;margin:30px 0 0;width:100%;overflow:hidden;overflow-x:auto}
+.result-box .sum{width:100%;margin:0 0 10px}
+.result-box > table{min-width:1160px}
+.result-box table{width:100%}
+.result-box tfoot th,
+.result-box tfoot td{background:#f9f9f9;font-weight:700}
+.result-box .lBox{position:relative;right:-1px;width:400px}
+.result-box .rBox{width:calc(100% - 400px);overflow-x:auto;}
+.result-box .rBox table td{min-width:60px}
+.result-box .gray01 th,
+.result-box .gray01 td{background:#e1e1e1}
+.result-box .gray02 th,
+.result-box .gray02 td{background:#f9f9f9}
+.result-box .fontBold th,
+.result-box .fontBold td{font-weight:700}
+.redTxt{color:#f00 !important}
+
+.salesActivityCallList tfoot {display:table-header-group}
+.salesActivityCallList tfoot td{font-weight:bold;background:#e1e1e1}
+.salesActivityCallList tbody tr:first-child {background:#efefef}
+
+.salesActivitySegListing .lBox table thead th,
+.salesActivityPartListing .lBox table thead th{height:104px}
+
+.salesActivityResultListing .result-box > table{min-width:2000px}
+.salesActivityResultListing tbody th{width:160px}
+.salesActivityResultListing tbody td{width:60px}
+.salesActivityResultListing .sum .btn{padding:0 10px}
+@media screen and (max-width:1000px){
+    .result-box table td,
+    .result-box table th{font-size:0.8em}
+    .result-box .lBox{width:235px}
+    .result-box .rBox{width:calc(100% - 235px);}
+}

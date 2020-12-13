@@ -53,7 +53,6 @@
 
 .order_inquiry .table01{border:0;}
 .order_inquiry .table01 td{text-align:center;}
-
 .order_inquiry .list-style{display:none;}
 
 /* .list-style {display:flex;margin:-10px;width:100%;flex-wrap: wrap;}
@@ -71,10 +70,12 @@
 
 .orderRegister #productList .btn-delete{display:block;}
 .orderRegister #productList .btn-add{display:none;}
-.orderRegister #productList .active .btn-delete{display:none;}
+.orderRegister #productList .active .btn-delete{display:none;margin-left:10px;}
 .orderRegister #productList .active .btn-add{display:block;}
 .orderRegister .info_form .detail_wrap .list .row.row-col > *{margin:0;}
 .orderRegister .chk_area{margin-top:10px;}
+.orderRegister .info_form .list select{min-width: 100%;}
+.orderRegister .info_form .detail_wrap .list .row.row-col{width:100%;}
 .orderRegister .info_form .result-box{position:relative;}
 .orderRegister .info_form .result-box .searchList{display:none;position:absolute;top:100%;margin-top:-1px;left:0;width:100%;border:1px solid #979797;border-radius:3px;background:#F2F2F2}
 .orderRegister .info_form .result-box .searchList .searchList-box{position:relative;width:100%;height:100px;overflow:hidden;overflow-y:auto}
@@ -98,6 +99,9 @@
 .info_form .detail_wrap .list .total dd{font-size:18px;font-weight:900;text-align: right;}
 .info_form .detail_wrap .list ol:first-of-type{padding-top:20px;border-top:0;}
 
+/* .returnDetail .info_form .detail_wrap .list dl dd{padding:22px 22px 22px 0;} */
+.returnDetail .row .mCalc{min-width: 0;width: calc(33.3% - 10px);max-width: 100%;}
+
 .returnRegister .select-wrap select,
 .returnRegister .select-wrap input{margin:0 5px;}
 .returnRegister .select-wrap select:first-of-type,
@@ -108,6 +112,28 @@
 
 /* .info_form .detail_wrap .result-box{margin-bottom:10px;} */
 
+/* 업장 조회 관리 - 피피티 8페이지 */
+.businessManage .info{margin-bottom:26px;}
+.businessManage .select-col4 select,
+.businessManage .select-col3 select{width:auto;}
+.businessManage .btn_wrap{display: flex;justify-content: space-between;align-items: center;}
+.businessManage .pagination{display:flex;justify-content: space-between;align-items: center;}
+.businessManage .pagination ul{margin:0 auto;}
+
+.businessDetail .name,
+.businessDetail .tel{display:inline-block;width:49%;padding-left:0;vertical-align: top;}
+.businessDetail .info_form .detail_wrap .list .txtarea{min-height: 623px;}
+.businessDetail .info_form .detail_wrap .list .txtarea dd{vertical-align: top;}
+/* .businessDetail .popup .btn-area.between button{width:100%;} */
+
+/* td내 결과를 나눌 경우  */
+td.div-td{padding:0 !important}
+.div-td .row{width:100%;padding:5px 10px}
+.div-td .row + .row{border-top:1px solid #d6d6d6}
+
+.salesActivityList .table01 th{height:auto;line-height:30px}
+.salesActivityList .table01 td a{font-weight:700;}
+.salesActivityList .table01 td a:hover{text-decoration:underline}
  @media screen and (max-width:1320px) {
     .info_form .detail_wrap .list .calendar-picker dt,
     .info_form .detail_wrap .list .calendar-picker dd{display: block;}
@@ -117,6 +143,17 @@
  }
 @media screen and (max-width:1000px) {
     #contents.order_inquiry .container{padding:13px 13px 30px}
+
+    .orderRegister .info_form .detail_wrap .list dl, 
+    .orderRegister .info_form .detail_wrap .list dl dt, 
+    .orderRegister .info_form .detail_wrap .list dl dd,
+    .returnRegister .info_form .detail_wrap .list dl, 
+    .returnRegister .info_form .detail_wrap .list dl dt,
+    .returnRegister .info_form .detail_wrap .list dl dd,
+    .returnDetail .info_form .detail_wrap .list dl, 
+    .returnDetail .info_form .detail_wrap .list dl dt,
+    .returnDetail .info_form .detail_wrap .list dl dd{padding:0;border:0;}
+
     .order_inquiry .search-box{border:0;margin:0 0 10px ;padding:0}
     .order_inquiry .search-box .select_area + input[type="text"]{width:100%;margin:0 0 13px;font-size:13px}
     .order_inquiry .search-box .btn{margin:0;font-size:13px }
@@ -152,6 +189,11 @@
     .order-detail #productList{padding-bottom:10px;border-bottom:1px solid #dcdcdc;}
     .order-detail #productList:last-of-type{padding-bottom:0;border-bottom:0;}
     .order-detail .info_form .detail_wrap .list ol:first-of-type{border-top:1px solid #dcdcdc;}
+    .order-detail .btn-blue{margin-left:0;}
+    .order-detail .info_form .detail_wrap .list dl,
+    .order-detail .info_form .detail_wrap .list dd{padding-bottom:0;border:0;}
+    .order-detail .info_form .detail_wrap .list dl.total{border-top:1px solid #DCDCDC;border-bottom:1px solid #dcdcdc;}
+    .order-detail .btn_wrap{padding:0;}
     
 
     .orderRegister .info_form select{width:100%}
@@ -159,11 +201,10 @@
     .orderRegister .info_form .detail_wrap .list .row > *{margin:0} */
     .orderRegister .info_form .detail_wrap .btn-area{padding:15px;border-bottom:1px solid #efefef;}
     .orderRegister .info_form .detail_wrap .list .row.row-col > *{margin:5px;}
-    .order-detail .btn-blue{margin-left:0;}
-
-    .info_form .detail_wrap .list .row,
-    .info_form .detail_wrap .list .row > *{margin-top:6px;}
-    .info_form .detail_wrap .list dl{margin-top:10px;}
+    .orderRegister .info_form .detail_wrap .list .row.row-col{margin:-5px;width:calc(100% + 10px);}
+    /*.info_form .detail_wrap .list .row,
+    .info_form .detail_wrap .list .row > *{margin-top:6px;}*/
+    /* .info_form .detail_wrap .list dl{margin-top:10px;} */
     .orderRegister .info_form .detail_wrap .btn-area{padding:15px;border-bottom:1px solid #efefef;}
     /* .info_form .detail_wrap .list .calendar-picker{padding-bottom:20px;border-bottom:1px solid #efefef;} */
     .orderRegister .info_form .calendar-box{max-width:100%;}
@@ -193,12 +234,16 @@
     .returnRegister .info_form .txtarea textarea{margin-top:0;}
     /* .returnDetail #productList .btn-area{padding-bottom: 20px;border-bottom: 1px solid #dcdcdc;} */
     /* .returnDetail .info_form .select-wrap{margin-bottom:10px;} */
+    .returnDetail .info_form .detail_wrap .list dl.total{padding:0 25px;}
+    .returnDetail .txtarea.bt0 textarea{margin-bottom:10px;}
+    .returnDetail .btn_wrap{padding:0;}
 }
 @media screen and (max-width:640px) {/* mobile */
     .fix{min-width:1000px;overflow:auto}
     .login .login_wrap{width: 90%;max-width:345px;padding: 56px 45px 56px 37px;}
     .login .logo{margin-bottom: 37px;}
     .none {margin:40px 0 0;}
+
 }
 @media screen and (max-width:360px){
 }

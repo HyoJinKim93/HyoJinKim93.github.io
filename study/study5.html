@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<title>My Portfolio</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link href='css/portfolio.css' type='text/css' rel='stylesheet'>
+	<link href='css/transition.css' type='text/css' rel='stylesheet'>
+</head>
+
+<body>
+	<div id='wrap' class="sub sub-study">
+		<ul class="skip">
+			<li><a href="#header">메뉴 바로가기</a></li>
+			<li><a href="#main">메인 바로가기</a></li>
+			<li><a href="#footer">하단 바로가기</a></li>
+		</ul>
+		<header id='header'>
+			<div class='headerWhiteBg'></div>
+			<nav class='header-left-wrap'>
+				<ul class='header-left-wrap-ul floatClear'>
+					<li><a href='portfolio.html' class='navBt'>HOME</a></li>
+					<li><a href='sub1.html' class='navBt'><span class='fa fa-th'></span>PORTFOLIO</a></li>
+					<li><a href='sub2.html' class='navBt'><span class='fa fa-pencil'></span>STUDY</a></li>
+				</ul>
+			</nav>
+			<aside class='header-right-wrap'>
+				<!--			<a href='javascript:void(0);' class='searchBt'><span class='fa fa-search'></span></a>-->
+				<div class='mobile'>
+					<ul class='mobile-wrap'>
+						<li class='m3line'></li>
+						<li class='m3line'></li>
+						<li class='m3line'></li>
+					</ul>
+					<a href='javascript:void(0);' class='mobileBt'></a>
+				</div>
+			</aside>
+
+			<ul class='mobile-Sub-wrap'>
+				<li><a href='javascript:void(0)' class='mBt'>HOME</a></li>
+                <li><a href='sub1.html' class='mBt'>PORTFOLIO</a></li>
+                <li><a href='sub2.html' class='mBt'>STUDY</a></li>
+				<!--			<li><a href='javascript:' class='mBt'>SEARCH</a></li>-->
+			</ul>
+
+		</header>
+		<div id="main">
+            <div id="stars"></div>
+            <div id="stars2"></div>
+            <div id="stars3"></div>
+			<section id="study" class="section web">
+				<div class="study-wrap h2-mt">
+					<h2>자동 재생</h2>
+					<div class="list floatClear">
+						<ul class="img-ul">
+							<li>슬라이드 배너, 페이지 진입 시 나오는 음향 등 자동으로 재생이 되면 안 된다.</li>
+							<li>슬라이드 배너는 3초 이내 움직이거나 깜빡이면 안 되며 정지와 재생이 가능한 버튼이 있어야 한다.</li>
+						</ul>
+					</div>					
+				</div>
+				<div class="study-wrap h2-mt">
+					<h2>컨텐츠 구분</h2>
+					<div class="list floatClear">
+						<ul class="img-ul img-ul3">
+							<li>컨텐츠를 구분하지 않으면 글의 흐름, 가독성이 떨어진다.</li>
+							<li>테두리를 이용, 라인, 배경색 등 확연하게 차이나게 표현</li>
+							<li>폰트는 너무 붙지 않게, 가독성 있게 표현</li>
+						</ul>
+						<p class="img-wrap img-size3"><img src="img/nugu.png" alt="sk 누구"></p>
+					</div>					
+				</div>
+				<a href="study4.html" class="btn-prev fab" title="이전 페이지"><span>Prev</span></a>
+				<a href="study6.html" class="btn-next fab" title="다음 페이지"><span>Next</span></a>
+			</section>
+		</div>
+	</div>
+	<script src='js/lib/jquery-1.12.4.min.js' type='text/javascript'></script>
+	<script src='js/header.js' type='text/javascript'></script>
+	<script src='js/smoothScroll.js' type='text/javascript'></script>
+	<script src='js/section1.js' type='text/javascript'></script>
+</body>
+
+</html>

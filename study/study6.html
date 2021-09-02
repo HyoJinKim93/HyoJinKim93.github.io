@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<title>My Portfolio</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link href='css/portfolio.css' type='text/css' rel='stylesheet'>
+	<link href='css/transition.css' type='text/css' rel='stylesheet'>
+</head>
+
+<body>
+	<div id='wrap' class="sub sub-study">
+		<ul class="skip">
+			<li><a href="#header">메뉴 바로가기</a></li>
+			<li><a href="#main">메인 바로가기</a></li>
+			<li><a href="#footer">하단 바로가기</a></li>
+		</ul>
+		<header id='header'>
+			<div class='headerWhiteBg'></div>
+			<nav class='header-left-wrap'>
+				<ul class='header-left-wrap-ul floatClear'>
+					<li><a href='portfolio.html' class='navBt'>HOME</a></li>
+					<li><a href='sub1.html' class='navBt'><span class='fa fa-th'></span>PORTFOLIO</a></li>
+					<li><a href='sub2.html' class='navBt'><span class='fa fa-pencil'></span>STUDY</a></li>
+				</ul>
+			</nav>
+			<aside class='header-right-wrap'>
+				<!--			<a href='javascript:void(0);' class='searchBt'><span class='fa fa-search'></span></a>-->
+				<div class='mobile'>
+					<ul class='mobile-wrap'>
+						<li class='m3line'></li>
+						<li class='m3line'></li>
+						<li class='m3line'></li>
+					</ul>
+					<a href='javascript:void(0);' class='mobileBt'></a>
+				</div>
+			</aside>
+
+			<ul class='mobile-Sub-wrap'>
+				<li><a href='javascript:void(0)' class='mBt'>HOME</a></li>
+                <li><a href='sub1.html' class='mBt'>PORTFOLIO</a></li>
+                <li><a href='sub2.html' class='mBt'>STUDY</a></li>
+				<!--			<li><a href='javascript:' class='mBt'>SEARCH</a></li>-->
+			</ul>
+
+		</header>
+		<div id="main">
+            <div id="stars"></div>
+            <div id="stars2"></div>
+            <div id="stars3"></div>
+			<section id="study" class="section web">
+				<div class="study-wrap h2-mt">
+					<h2>키보드 사용 보장</h2>
+					<div class="list floatClear">
+						<ul class="img-ul img-ul3">
+							<li>마우스로 조작 가능한 건 키보드로도 같이 적용 되어야 한다.</li>
+							<li>a 링크 요소에 href 기능이 반드시 있어야 한다.</li>
+							<li>onfocus:blur();는 초점을 초기화시켜 키보드 접근이 불가하므로 하지 않는다.</li>
+						</ul>
+					</div>					
+				</div>
+				<div class="study-wrap h2-mt">
+					<h2>Tabindex &amp; 초점 이동</h2>
+					<div class="list floatClear">
+						<ul class="img-ul">
+							<li>tabindex는 폼, 탭키로 포커스를 가질 수 있는 요소에 마크업 순서에 따라 기본적으로 이동 되어 있다. 기본적으로 마크업이 제대로 구성되어 있으면 tabindex는 필요 없다.</li>
+							<li>outline:0(none), onfocus:blur();는 초점이 안 보이게 되므로 사용하면 안 된다.</li>
+						</ul>
+					</div>					
+				</div>
+				<div class="study-wrap h2-mt">
+					<h2>select</h2>
+					<div class="list floatClear">
+						<ul class="img-ul img-ul2">
+							<li>select를 키보드로 이동했을 때 (onFocus(),onKeypress()등) 바로 화면이 전환되면 오류</li>
+						</ul>
+					</div>					
+				</div>
+				<div class="study-wrap h2-mt">
+					<h2>배너 및 컨텐츠에 있는 버튼</h2>
+					<div class="list floatClear">
+						<ul class="img-ul">
+							<li>배너 및 컨텐츠에 있는 버튼의 경우 가로,세로 길이가 6mm 미만이면 접근성 오류.</li>
+							<li>버튼 및 컨트롤이 1px 이상이 아니면 구분하기 힘들고 잘못 누를 수 있기 때문에 1px 이상 거리를 두어야 한다.</li>
+						</ul>
+					</div>					
+				</div>
+				<a href="study5.html" class="btn-prev fab" title="이전 페이지"><span>Prev</span></a>
+				<a href="study7.html" class="btn-next fab" title="다음 페이지"><span>Next</span></a>
+			</section>
+		</div>
+	</div>
+	<script src='js/lib/jquery-1.12.4.min.js' type='text/javascript'></script>
+	<script src='js/header.js' type='text/javascript'></script>
+	<script src='js/smoothScroll.js' type='text/javascript'></script>
+	<script src='js/section1.js' type='text/javascript'></script>
+</body>
+
+</html>

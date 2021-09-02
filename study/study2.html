@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<title>My Portfolio</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link href='css/portfolio.css' type='text/css' rel='stylesheet'>
+	<link href='css/transition.css' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+	<div id='wrap' class="sub sub-study">
+		<ul class="skip">
+			<li><a href="#header">메뉴 바로가기</a></li>
+			<li><a href="#main">메인 바로가기</a></li>
+			<li><a href="#footer">하단 바로가기</a></li>
+		</ul>
+		<header id='header'>
+			<div class='headerWhiteBg'></div>
+			<nav class='header-left-wrap'>
+				<ul class='header-left-wrap-ul floatClear'>
+					<li><a href='portfolio.html' class='navBt'>HOME</a></li>
+					<li><a href='sub1.html' class='navBt'><span class='fa fa-th'></span>PORTFOLIO</a></li>
+					<li><a href='sub2.html' class='navBt'><span class='fa fa-pencil'></span>STUDY</a></li>
+				</ul>
+			</nav>
+			<aside class='header-right-wrap'>
+				<!--			<a href='javascript:void(0);' class='searchBt'><span class='fa fa-search'></span></a>-->
+				<div class='mobile'>
+					<ul class='mobile-wrap'>
+						<li class='m3line'></li>
+						<li class='m3line'></li>
+						<li class='m3line'></li>
+					</ul>
+					<a href='javascript:void(0);' class='mobileBt'></a>
+				</div>
+			</aside>
+
+			<ul class='mobile-Sub-wrap'>
+				<li><a href='javascript:void(0)' class='mBt'>HOME</a></li>
+                <li><a href='sub1.html' class='mBt'>PORTFOLIO</a></li>
+                <li><a href='sub2.html' class='mBt'>STUDY</a></li>
+				<!--			<li><a href='javascript:' class='mBt'>SEARCH</a></li>-->
+			</ul>
+
+		</header>
+		<div id="main">
+            <div id="stars"></div>
+            <div id="stars2"></div>
+            <div id="stars3"></div>
+			<section id="study" class="section web">
+				<div class="study-wrap h2-mt">
+					<h2>대체 텍스트</h2>
+					<div class="list">
+						<h4>alt로 대체 텍스트 제공</h4>
+						<ul>
+							<li>텍스트가 있는 이미지를 이미지 요소로 마크업할 때 대체 텍스트는 이미지 요소의 alternative속성인 'alt'에 적용하면 된다.
+							</li>
+							<li>img 요소뿐만 아니라 button, 이미지맵의 area에도 대체 텍스트가 존재한다면 alt로 제공.</li>
+						</ul>
+						<p class="img-wrap big-img2"><img src="img/img1.png" alt="올 여름 개발자의 완벽한 계획 부스트와 함께하기"></p>
+						<pre class='code code-html'><label>HTML</label><code>&lt;img src='../img/img1.png'&nbsp;alt='올 여름 개발자의 완벽한 계획 부스터와 함께하기'&gt;</code></pre>
+					</div>
+					<div class="list">
+						<h4>마크업으로 대체 텍스트 제공</h4>
+						<ul class="img-ul">
+							<li>접근성에 필요하지만 화면에는 구현을 안 했으면 하는 요소가 있다.</li>
+							<li>디자인에 맞추기 위해 text-indent, display:none, visibility:hidden을 사용할 때가 있는데 이 요소들은 리더기가 읽어주지 않기 때문에 다른 방법을 사용 해야 한다.<span class="txt">(개인적으로 clip:rect(0 0 0 0)을 사용)</span></li>
+						</ul>
+						<pre class='code code-html'><label>HTML</label><code>&lt;p class="blind"&gt;blind&lt;/p&gt;</code></pre>
+					</div>
+					<div class="list">
+						<h4>데이터 혹은 복잡한 컨텐츠</h4>
+						<ul class="img-ul">
+							<li>데이터 혹은 복잡한 컨텐츠는 내용이 많기 때문에 테이블로 대체 텍스트를 제공하고 있다.</li>
+							<li>데이터가 있는 차트는 보통 테이블로 많이 사용한다.</li>
+						</ul>
+						<pre class='code code2 code-html'><label>HTML</label><code>&lt;img src='../img/img1.jpg'&nbsp;alt=''&gt;</code><code>&lt;table&gt;<br>생략<br>&lt;/table&gt;</code></pre>
+					</div>
+					<div class="list">
+						<h4>longdesc</h4>
+						<ul class="img-ul">
+							<li>img 요소에 대체 텍스트가 길어지면 별도로 제공하는 longdesc 값을 넣어준다.</li>
+							<li>longdesc는 img 속성 중에 하나로 이미지 대체 텍스트 길이가 길어 사용한다. 하지만 유지보수가 힘들다.</li>
+						</ul>
+						<pre class='code code-html'><label>HTML</label><code>&lt;img src='../img/longdesc.png'&nbsp;longdesc='desc.html' alt=''&gt;</code></pre>
+					</div>
+					<div class="list">
+						<h4>이미지맵</h4>
+						<pre class='code code2 code-html'><label>HTML</label><code>&lt;map name="map" id="map"&gt;</code><code>&lt;area shape="rect" coords="201,169,60,200" href="http://www.naver.com" alt="네이버" /&gt;</code></pre>
+					</div>
+					<div class="list">
+						<h4>배경 이미지</h4>
+						<pre class='code code-html'><label>HTML</label><code>&lt;p&gt;오늘만 무료 배송!&lt;/p&gt;</code></pre>
+						<pre class='code code-css'><label>CSS</label><code>&lt;background:url('../img/img2.png') no-repeat;&gt;</code></pre>
+					</div>
+					<div class="list">
+						<h4>의미 없는 이미지</h4>
+						<ul class="img-ul img-ul2">
+							<li>의미 없는 이미지라고 해서 alt="" 속성을 적어주지 않으면 리더기가 파일명을 읽기 때문에 alt="" 속성을 적어주되, 빈 공간으로 놓는다.
+							</li>
+						</ul>
+						<pre class='code code-html'><label>HTML</label><code>&lt;p&gt;오늘만 무료 배송!&lt;/p&gt;</code></pre>
+					</div>
+					<div class="list">
+						<h4>QR Code</h4>
+						<ul class="img-ul img-ul2">
+							<li>시각적으로 인지 할 수 없기 때문에 alt="qr code"라고 하지 말고 링크 주소를 적어준다.
+							</li>
+						</ul>
+						<pre class='code code-html'><label>HTML</label><code>&lt;img src="../images/qrcode.png" alt="http://www.naver.com 바로 가기 QR코드"&gt;</code></pre>
+					</div>
+					<div class="list">
+						<h4>썸네일 이미지</h4>
+						<ul class="img-ul img-ul2">
+							<li>문구가 적혀져 있는 썸네일과 설명글이 있을 경우 리더기에서 2번 읽어주기 때문에 사용자가 혼동을 겪을 수 있다. 이럴 경우, alt="" 속성을 빈 값으로 놓는다.
+							</li>
+						</ul>
+						<pre class='code code-html'><label>HTML</label><code>&lt;img src="../images/travel.png" alt=""&gt;<br>&lt;p&gt;몰디브 가서 찍은 사진&lt;/p&gt;</code></pre>
+					</div>
+					<div class="list">
+						<h4>보안 문자 이미지</h4>
+						<ul class="img-ul img-ul2">
+							<li>보안 문자를 대체 텍스트로 하면 리더기를 사용하는 사람들은 정답을 알게 된다. 이럴 경우, 보안 문자라고 지정하고 청각 시스템을 제공 해야 한다.
+							</li>
+						</ul>
+						<p class="img-wrap big-img"><img src="img/security.png" alt="보안 문자" /></p>
+						<pre class='code code-html'><label>HTML</label><code>&lt;img src="security.png" alt="보안 문자"&gt;</code></pre>
+					</div>
+				</div>
+				<a href="study1.html" class="btn-prev fab" title="이전 페이지"><span>Prev</span></a>
+				<a href="study3.html" class="btn-next fab" title="다음 페이지"><span>Next</span></a>
+			</section>
+		</div>
+	</div>
+	<script src='js/lib/jquery-1.12.4.min.js' type='text/javascript'></script>
+	<script src='js/header.js' type='text/javascript'></script>
+	<script src='js/smoothScroll.js' type='text/javascript'></script>
+	<script src='js/section1.js' type='text/javascript'></script>
+</body>
+
+</html>

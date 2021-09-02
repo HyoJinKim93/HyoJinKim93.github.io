@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<title>레이블 &amp; 오류 정정</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link href='css/portfolio.css' type='text/css' rel='stylesheet'>
+	<link href='css/transition.css' type='text/css' rel='stylesheet'>
+</head>
+
+<body>
+	<div id='wrap' class="sub sub-study">
+		<ul class="skip">
+			<li><a href="#header">메뉴 바로가기</a></li>
+			<li><a href="#main">메인 바로가기</a></li>
+		</ul>
+		<header id='header'>
+			<div class='headerWhiteBg'></div>
+			<nav class='header-left-wrap'>
+				<ul class='header-left-wrap-ul floatClear'>
+					<li><a href='portfolio.html' class='navBt'>HOME</a></li>
+					<li><a href='sub1.html' class='navBt'><span class='fa fa-th'></span>PORTFOLIO</a></li>
+					<li><a href='sub2.html' class='navBt'><span class='fa fa-pencil'></span>STUDY</a></li>
+				</ul>
+			</nav>
+			<aside class='header-right-wrap'>
+				<!--			<a href='javascript:void(0);' class='searchBt'><span class='fa fa-search'></span></a>-->
+				<div class='mobile'>
+					<ul class='mobile-wrap'>
+						<li class='m3line'></li>
+						<li class='m3line'></li>
+						<li class='m3line'></li>
+					</ul>
+					<a href='javascript:void(0);' class='mobileBt'></a>
+				</div>
+			</aside>
+
+			<ul class='mobile-Sub-wrap'>
+				<li><a href='javascript:void(0)' class='mBt'>HOME</a></li>
+				<li><a href='sub1.html' class='mBt'>PORTFOLIO</a></li>
+				<li><a href='sub2.html' class='mBt'>STUDY</a></li>
+				<!--			<li><a href='javascript:' class='mBt'>SEARCH</a></li>-->
+			</ul>
+
+		</header>
+		<div id="main">
+            <div id="stars"></div>
+            <div id="stars2"></div>
+            <div id="stars3"></div>
+			<section id="study" class="section web">
+				<div class="study-wrap h2-mt">
+					<h2>레이블</h2>
+					<div class="list floatClear">
+						<ul class="img-ul img-ul3">
+							<li>label은 radio, checkbox 등 form 요소에서 많이 사용한다.</li>
+							<li>label이 없을 경우 title을 사용한다.</li>
+						</ul>
+						<pre class='code code-html'><label>HTML</label><code>1. label이 있을 경우<br>&lt;label id="form1"&gt;Form1&lt;/label&gt;<br>&lt;input type="radio" id="form1"&gt;</code></pre>
+						
+						<pre class='code code-html'><label>HTML</label><code>2. label이 없을 경우<br>&lt;input type="radio" title="form1"&gt;</code></pre>
+					</div>
+				</div>
+				<div class="study-wrap h2-mt">
+					<h2>오류 정정</h2>
+					<div class="list floatClear">
+						<ul class="img-ul img-ul2">
+							<li>오류가 발생하여 입력했던 내용들이 사라지면 오류이다. 준수하려면 어디 부분이 오류인지 알려 줘야 한다.</li>
+						</ul>
+						<p class="img-wrap"><img src="img/error.png" alt="에러 메세지 이미지"></p>
+					</div>
+				</div>
+				<a href="study9.html" class="btn-prev fab" title="이전 페이지"><span>Prev</span></a>
+				<a href="sub2.html" class="btn-next fab" title="목록으로"><span>List</span></a>
+			</section>
+		</div>
+	</div>
+	<script src='js/lib/jquery-1.12.4.min.js' type='text/javascript'></script>
+	<script src='js/header.js' type='text/javascript'></script>
+	<script src='js/smoothScroll.js' type='text/javascript'></script>
+	<script src='js/section1.js' type='text/javascript'></script>
+</body>
+
+</html>

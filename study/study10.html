@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<title>컨텐츠 구조</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link href='css/portfolio.css' type='text/css' rel='stylesheet'>
+	<link href='css/transition.css' type='text/css' rel='stylesheet'>
+</head>
+
+<body>
+	<div id='wrap' class="sub sub-study">
+		<ul class="skip">
+			<li><a href="#header">메뉴 바로가기</a></li>
+			<li><a href="#main">메인 바로가기</a></li>
+		</ul>
+		<header id='header'>
+			<div class='headerWhiteBg'></div>
+			<nav class='header-left-wrap'>
+				<ul class='header-left-wrap-ul floatClear'>
+					<li><a href='portfolio.html' class='navBt'>HOME</a></li>
+					<li><a href='sub1.html' class='navBt'><span class='fa fa-th'></span>PORTFOLIO</a></li>
+					<li><a href='sub2.html' class='navBt'><span class='fa fa-pencil'></span>STUDY</a></li>
+				</ul>
+			</nav>
+			<aside class='header-right-wrap'>
+				<!--			<a href='javascript:void(0);' class='searchBt'><span class='fa fa-search'></span></a>-->
+				<div class='mobile'>
+					<ul class='mobile-wrap'>
+						<li class='m3line'></li>
+						<li class='m3line'></li>
+						<li class='m3line'></li>
+					</ul>
+					<a href='javascript:void(0);' class='mobileBt'></a>
+				</div>
+			</aside>
+
+			<ul class='mobile-Sub-wrap'>
+				<li><a href='javascript:void(0)' class='mBt'>HOME</a></li>
+				<li><a href='sub1.html' class='mBt'>PORTFOLIO</a></li>
+				<li><a href='sub2.html' class='mBt'>STUDY</a></li>
+				<!--			<li><a href='javascript:' class='mBt'>SEARCH</a></li>-->
+			</ul>
+
+		</header>
+		<div id="main">
+            <div id="stars"></div>
+            <div id="stars2"></div>
+            <div id="stars3"></div>
+			<section id="study" class="section web">
+				<div class="study-wrap h2-mt">
+					<h2>컨텐츠 구조</h2>
+					<div class="list floatClear">
+						<h4>탭</h4>
+						<ul class="img-ul img-ul3">
+							<li>탭1, 탭1에 해당하는 컨텐츠, 탭2, 탭2에 해당하는 컨텐츠 순으로 작성한다.</li>
+							<li>혹은 메뉴끼리 내용끼리 작성할 때 내용에 해당 제목을 작성 해야 한다.</li>
+							<li>더보기 버튼이 있을 경우 마크업에 먼저 작성하는 게 아니라 나중에 작성한다.</li>
+						</ul>
+						<pre class='code code-html'><label>HTML</label><code>1. 탭1, 탭1 내용, 탭2, 탭2 내용<br>&lt;a href="…"&gt;상품1&lt;/a&gt;<br>&lt;div&gt;탭1 내용&lt;/div&gt;<br>&lt;a href="…"&gt;상품2&lt;/a&gt;<br>&lt;div&gt;탭2 내용&lt;/div&gt;</code></pre>
+						<pre class='code code-html'><label>HTML</label><code>2. 해당 탭 컨텐츠에 제목 제공<br>&lt;ul&gt;<br>&nbsp;&nbsp;&lt;li&gt;<br>&nbsp;&nbsp;&lt;a href=""&gt;상품1&lt;/a&gt;<br>&nbsp;&nbsp;&lt;/li&gt;<br>&lt;/ul&gt;<br>&lt;div&gt;<br>&nbsp;&nbsp;&lt;h3&gt;상품3&lt;/h3&gt;<br>&nbsp;&nbsp;상품3 내용<br>&lt;/div&gt;<br>&lt;a href="#"&gt;더보기&lt;/a&gt;</code></pre>
+					</div>
+				</div>
+				<a href="study9.html" class="btn-prev fab" title="이전 페이지"><span>Prev</span></a>
+				<a href="study11.html" class="btn-next fab" title="다음 페이지"><span>Next</span></a>
+			</section>
+		</div>
+	</div>
+	<script src='js/lib/jquery-1.12.4.min.js' type='text/javascript'></script>
+	<script src='js/header.js' type='text/javascript'></script>
+	<script src='js/smoothScroll.js' type='text/javascript'></script>
+	<script src='js/section1.js' type='text/javascript'></script>
+</body>
+
+</html>

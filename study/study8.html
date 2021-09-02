@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<title>깜빡임 금지,건너뛰기 메뉴,타이틀</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link href='css/portfolio.css' type='text/css' rel='stylesheet'>
+	<link href='css/transition.css' type='text/css' rel='stylesheet'>
+</head>
+
+<body>
+	<div id='wrap' class="sub sub-study">
+		<ul class="skip">
+			<li><a href="#header">메뉴 바로가기</a></li>
+			<li><a href="#main">메인 바로가기</a></li>
+		</ul>
+		<header id='header'>
+			<div class='headerWhiteBg'></div>
+			<nav class='header-left-wrap'>
+				<ul class='header-left-wrap-ul floatClear'>
+					<li><a href='portfolio.html' class='navBt'>HOME</a></li>
+					<li><a href='sub1.html' class='navBt'><span class='fa fa-th'></span>PORTFOLIO</a></li>
+					<li><a href='sub2.html' class='navBt'><span class='fa fa-pencil'></span>STUDY</a></li>
+				</ul>
+			</nav>
+			<aside class='header-right-wrap'>
+				<!--			<a href='javascript:void(0);' class='searchBt'><span class='fa fa-search'></span></a>-->
+				<div class='mobile'>
+					<ul class='mobile-wrap'>
+						<li class='m3line'></li>
+						<li class='m3line'></li>
+						<li class='m3line'></li>
+					</ul>
+					<a href='javascript:void(0);' class='mobileBt'></a>
+				</div>
+			</aside>
+
+			<ul class='mobile-Sub-wrap'>
+				<li><a href='javascript:void(0)' class='mBt'>HOME</a></li>
+                <li><a href='sub1.html' class='mBt'>PORTFOLIO</a></li>
+                <li><a href='sub2.html' class='mBt'>STUDY</a></li>
+				<!--			<li><a href='javascript:' class='mBt'>SEARCH</a></li>-->
+			</ul>
+
+		</header>
+		<div id="main">
+            <div id="stars"></div>
+            <div id="stars2"></div>
+            <div id="stars3"></div>
+			<section id="study" class="section web">
+				<div class="study-wrap h2-mt">
+					<h2>배너 슬라이드</h2>
+					<div class="list floatClear">
+						<ul class="img-ul img-ul2">
+							<li>재생, 일시정지, 다음, 이전 버튼이 없더라도 마우스 오버 시, 정지 되면 정지 기능으로 인정한다.</li>
+						</ul>
+					</div>					
+				</div>
+				<div class="study-wrap h2-mt">
+					<h2>깜빡임 금지</h2>
+					<div class="list floatClear">
+						<ul class="img-ul">
+							<li>컨텐츠 중 깜빡임이 자주 발생하는 현상 금지.</li>
+							<li>시간을 3초 미만으로 제한하고 사전에 경고하는 문구를 내보낸다.</li>
+						</ul>
+					</div>					
+				</div>
+				<div class="study-wrap h2-mt">
+					<h2>건너뛰기 메뉴 (skip)</h2>
+					<div class="list floatClear">
+						<ul class="img-ul3">
+							<li>마크업 최상단에 위치한다.</li>
+							<li>다른 페이지들을 접속할 때마다 중복 되는 부분을 피할 수 있다.</li>
+							<li>키보드 접근 시, 화면에 나와야 한다.</li>
+						</ul>
+						<pre class='code code-html'><label>HTML</label><code>&lt;ul class="skip"&gt;<br>&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#gnb"&gt;메인 메뉴 바로가기&lt;/a&gt;&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#footer"&gt;하단 바로가기&lt;/a&gt;&lt;/li&gt;<br>&lt;/ul&gt;</code></pre>
+					</div>					
+				</div>
+				<div class="study-wrap h2-mt">
+					<h2>타이틀</h2>
+					<div class="list floatClear">
+						<ul class="img-ul3">
+							<li>iframe, 기본 document, 컨텐츠에 타이틀 (제목)이 들어가야 한다.</li>
+							<li>iframe일 경우, 빈 내용이면 title="빈 프레임"이라고 표시 해야 한다.</li>
+							<li>타이틀에 특수 기호는 하나만 사용한다. 여러 개를 사용할 경우, 리더기가 불필요한 특수 기호까지 읽게 된다.</li>
+						</ul>
+						<pre class='code code-html'><label>HTML</label><code>&lt;title&gt;네이버&lt;/title&gt;<br>&lt;iframe src="https://naver.com" title="네이버"&gt;&lt;/iframe&gt;</code></pre>
+					</div>					
+				</div>
+				<div class="study-wrap h2-mt">
+					<h2>언어</h2>
+					<div class="list floatClear">
+						<ul class="img-ul3">
+							<li>한국어는 ko, 영어는 en 등 써준다.</li>
+							<li>그 외의 언어일 경우, lang=""으로 써준다.</li>
+						</ul>
+						<pre class='code code-html'><label>HTML</label><code>&lt;html lang="ko"&lt;/html&gt;</code></pre>
+					</div>					
+				</div>
+				<a href="study7.html" class="btn-prev fab" title="이전 페이지"><span>Prev</span></a>
+				<a href="study9.html" class="btn-next fab" title="다음 페이지"><span>Next</span></a>
+			</section>
+		</div>
+	</div>
+	<script src='js/lib/jquery-1.12.4.min.js' type='text/javascript'></script>
+	<script src='js/header.js' type='text/javascript'></script>
+	<script src='js/smoothScroll.js' type='text/javascript'></script>
+	<script src='js/section1.js' type='text/javascript'></script>
+</body>
+
+</html>

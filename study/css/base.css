@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Nanum+Gothic:wght@400;700;800&display=swap');
+* { box-sizing:border-box; }
+
+html { font-size:10px; }
+
+@media (min-width: 375px) and (max-width: 413px) {html {font-size: 10.7px;}} /* 아이폰 6, 7, 8 */
+
+@media (min-width: 414px) {html {font-size: 11.5px;}} /* 아이폰 6+, 7+, 8+ */
+
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,button,label { margin: 0; padding:0 }
+h1,h2,h3,h4,h5,h6{ font-weight: 700; }
+fieldset,img { border: 0 none; }
+img{ max-width: 100%; }
+dl,ul,ol,menu,li { list-style: none }
+blockquote, q { quotes: none }
+blockquote:before, blockquote:after,q:before, q:after { content: none }
+body {
+	width: 100%;
+	font-size: 1.3rem;
+	line-height: 1.2;
+	font-weight: 400;
+	letter-spacing: -0.3px;
+	font-family: 'Montserrat', 'Noto Sans KR', 'Malgun Gothic', Tahoma, Helvetica, AppleGothic, Helvetica, Sans-serif;
+	color: #333;
+	background: #fff;
+}
+a { color: inherit; text-decoration: none; }
+a:active, a:hover { text-decoration:none; }
+address,caption,cite,code,dfn,em,var { font-style: inherit; font-weight: inherit; }
+table { width: 100%; border-collapse: collapse; border-spacing: 0; }
+caption, legend{ font-size: 0; line-height: 0; width: 0; height:0; padding: 0; text-indent: -9999px; overflow: hidden; }
+
+.word{
+	white-space: nowrap;
+	word-break: break-all;
+}
+input, select, textarea, .form-control, .custom-select, button {
+	font-size: 1.3rem;
+	font-weight: 400;
+	font-family: 'Montserrat', 'Noto Sans KR', 'Malgun Gothic', Tahoma, Helvetica, AppleGothic, Helvetica, Sans-serif;
+	vertical-align: middle;
+}
+input,
+input[type="text"],
+input[type="search"],
+input[type="password"],
+input.form-control {
+	display: inline-block;
+	width: 100%;
+	color: #000;
+	background: transparent;
+}
+select{
+	padding: 0;
+	width: 100%;
+	color: #333;
+	border: 0;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+	cursor: pointer;
+}
+select::-ms-expand {display: none;} /* ie10 select화살표 지우기 */
+textarea {
+	padding: 10px 12px;
+	width: 100%;
+	height: 16rem;
+	color: #000;
+	background: #fff;
+	border: 1px solid #d5d5d5;
+	resize: none;
+}
+button {
+	padding: 0;
+	border: 0 none;
+	background-color: transparent;
+    outline: none;
+}
+/* diabled */
+input[disabled],
+select[disabled],
+.form-control[disabled],
+.custom-select[disabled] {
+	background-color: #fbfbfb;
+}
+
+/* mobile reset */
+body {-webkit-text-size-adjust: none } /* 뷰표트 변환시 폰트크기 자동확대 방지 */
+input,
+input[type='number'],
+input[type='text'],
+input[type='password'],
+input[type='submit'],
+input[type='search'], textarea {-webkit-appearance: none; border-radius: 0; }
+input[type=number] {-moz-appearance: textfield;}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {-webkit-appearance: none; margin: 0;}
+input:checked[type='checkbox'] {background: #666; -webkit-appearance: checkbox; }
+button, input[type='button'],
+input[type='submit'],
+input[type='reset'],
+input[type='file'] {-webkit-appearance: button; border-radius: 0; }
+input[type='search']::-webkit-search-cancel-button {-webkit-appearance: none; }
+
+
+
+ /* 대체 텍스트 숨김 */
+.ir_pm {display:block; overflow:hidden; font-size:0px; line-height:0; text-indent:-9999px; } /* 사용된 이미지내 의미있는 텍스트의 대체텍스트를 제공할때 */
+.ir_wa {display:block; overflow:hidden; position:relative; z-index:-1; width:100%; height:100%; } /* 중요한 이미지 대체텍스트로 이미지off시에도 대체 텍스트를 보여주고자 할때 */
+.screen_out {overflow:hidden; position:absolute; width:0; height:0; line-height:0; text-indent:-9999px; } /* 대체텍스트가 아닌 접근성을 위한 숨김텍스트를 제공할때 */
+
+
+body{font-family: 'Nanum Gothic', sans-serif;}
+
+.skip a{display: block;position:absolute;top:-33px;left:0;width:100%;height:30px;color:#fff;text-align: center;line-height: 30px; background: rgba(0,0,0,0.8);}
+.skip a:hover, .skip a:focus, .skip a:active { top: 0; color: #eee; }

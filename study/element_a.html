@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>My Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href='css/portfolio.css' type='text/css' rel='stylesheet'>
+    <link href='css/transition.css' type='text/css' rel='stylesheet'>
+    <link href='https://cdn.rawgit.com/openhiun/hangul/14c0f6faa2941116bb53001d6a7dcd5e82300c3f/nanumbarungothic.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div id='wrap' class="sub sub-study">
+        <ul class="skip">
+            <li><a href="#header">메뉴 바로가기</a></li>
+            <li><a href="#main">메인 바로가기</a></li>
+        </ul>
+        <header id='header'>
+            <div class='headerWhiteBg'></div>
+            <nav class='header-left-wrap'>
+                <ul class='header-left-wrap-ul floatClear'>
+                    <li><a href='portfolio.html' class='navBt'>HOME</a></li>
+					<li><a href='sub1.html' class='navBt'><span class='fa fa-th'></span>PORTFOLIO</a></li>
+					<li><a href='sub2.html' class='navBt'><span class='fa fa-pencil'></span>STUDY</a></li>
+                </ul>
+            </nav>
+            <aside class='header-right-wrap'>
+                <!--			<a href='javascript:void(0);' class='searchBt'><span class='fa fa-search'></span></a>-->
+                <div class='mobile'>
+                    <ul class='mobile-wrap'>
+                        <li class='m3line'></li>
+                        <li class='m3line'></li>
+                        <li class='m3line'></li>
+                    </ul>
+                    <a href='javascript:void(0);' class='mobileBt'></a>
+                </div>
+            </aside>
+
+            <ul class='mobile-Sub-wrap'>
+                <li><a href='portfolio.html' class='mBt'>HOME</a></li>
+                <li><a href='sub2.html' class='mBt'>STUDY</a></li>
+                <!--			<li><a href='javascript:' class='mBt'>SEARCH</a></li>-->
+            </ul>
+
+        </header>
+        <div id="main">
+            <div id="stars"></div>
+            <div id="stars2"></div>
+            <div id="stars3"></div>
+        	<section id="study" class="section web">
+        		<div class="study-wrap">
+                    <h1>Element</h1>
+        		    <div class="study">
+                        <h3>&#60;abbr&#62;</h3>
+                        <ul>
+                            <li>HTML, CSS, WHO, WWW와 같은 약어를 정의한다.</li>
+                            <li>inline 속성</li>
+                        </ul>
+                        <pre class='code code-html'><label>HTML</label><code>&#60;abbr title="World Wide Web"&#62;The <abbr title="World Wide Web">WWW</abbr> was founded in 1990.&#60;/abbr&#62;</code></pre>
+                        <table class="table table-left">
+                            <caption>브라우저 지원</caption>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="img/chrome.gif" alt="chrome icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/edge.png" alt="edge icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/ie.png" alt="ie icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/firefox.png" alt="firefox icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/safari.gif" alt="safari icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/opera.gif" alt="opera icon">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2.0</td>
+                                    <td>지원</td>
+                                    <td>7.0</td>
+                                    <td>1.0</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h3>&#60;acronym&#62;</h3>
+                        <ul>
+                            <li>HTML4에서 사용되었다. HTML5에서 사용되지 않는다.</li>
+                            <li>abbr 태그로 대신 사용된다.</li>
+                        </ul>
+                        <h3>&#60;address&#62;</h3>
+                        <ul>
+                            <li>문서나 글의 저자 또는 회사와 연락할 수 있는 정보를 명시할 때 사용한다.</li>
+                            <li>body 안에 address는 해당 문서의 연락 정보를 나타내며, article 안의 address는 해당 글에 대한 연락 정보를 나타낸다.</li>
+                            <li>address는 주로 italic체로 표현되며, address 요소의 위쪽과 아래쪽에 약간의 공백을 자동으로 삽입하여 다른 텍스트와 구분한다.</li>
+                            <li>HTML 4에선 article을 지원하지 않기 때문에 언제나 해당 문서의 연락 정보만을 나타낸다.</li>
+                        </ul>
+                        <pre class='code code-html'><label>HTML</label><code>&#60;address&#62;서울시 구로구 구로동&#60;/address&#62; </code></pre>
+                        <table class="table table-left">
+                            <caption>브라우저 지원</caption>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="img/chrome.gif" alt="chrome icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/edge.png" alt="edge icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/ie.png" alt="ie icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/firefox.png" alt="firefox icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/safari.gif" alt="safari icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/opera.gif" alt="opera icon">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>지원/td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>1.0</td>
+                                    <td>1.0</td>
+                                    <td>지원</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h3>&#60;applet&#62;</h3>
+                        <ul>
+                            <li>HTML4에서 사용되었다. HTML5에서 사용되지 않는다.</li>
+                            <li>인터넷 익스플로러 11버전과 그 이전 버전에서는 플러그인(plug-in)을 사용하여 지원하고 있으며, 그 외 몇몇 브라우저들에서도 플러그인이나 기타 프로그램을 설치함으로써 요소를 사용할 수 있도록 지원하고 있습니다.</li>
+                            <li>대체할 태그로 동영상을 넣으려면 video, 음악을 넣으려면 audio, 개체를 넣으려면 embed, object를 사용한다.</li>
+                        </ul>
+                        <table class="table">
+                            <caption>필수 속성</caption>
+                            <thead>
+                                <tr>
+                                    <th>속성명</th>
+                                    <th>속성값</th>
+                                    <th>설명</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>code</td>
+                                    <td>URL</td>
+                                    <td>자바 애플릿(Java applet)의 파일 이름을 명시함.</td>
+                                </tr>
+                                <tr>
+                                    <td>object</td>
+                                    <td>이름</td>
+                                    <td>애플릿의 직렬화 표현(serialized representation)에 대한 참조를 명시함.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="table">
+                            <caption>옵션</caption>
+                            <colgroup>
+                                <col style="width:15%">
+                                <col style="width:25%">
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>속성명</th>
+                                    <th>속성값</th>
+                                    <th>설명</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>align</td>
+                                    <td>left
+
+                                        right
+                                        
+                                        top
+                                        
+                                        bottom
+                                        
+                                        middle
+                                        
+                                        baseline</td>
+                                    <td>주위의 요소에 따른 애플릿의 정렬 방법을 명시함.</td>
+                                </tr>
+                                <tr>
+                                    <td>alt</td>
+                                    <td>텍스트</td>
+                                    <td>애플릿의 대체 텍스트를 명시함.</td>
+                                </tr>
+                                <tr>
+                                    <td>archive</td>
+                                    <td>URL</td>
+                                    <td>아카이브 파일(archive file)의 URL을 명시함.</td>
+                                </tr>
+                                <tr>
+                                    <td>codebase</td>
+                                    <td>URL</td>
+                                    <td>code 속성에서 명시된 애플릿의 상대 주소(relative base URL)를 명시함.</td>
+                                </tr>
+                                <tr>
+                                    <td>height</td>
+                                    <td>픽셀</td>
+                                    <td>애플릿의 높이를 명시함.</td>
+                                </tr>
+                                <tr>
+                                    <td>hspace</td>
+                                    <td>픽셀</td>
+                                    <td>애플릿과 주위 사이의 수평 간격(horizontal spacing)을 명시함.</td>
+                                </tr>
+                                <tr>
+                                    <td>name</td>
+                                    <td>이름</td>
+                                    <td>스크립트에서 사용될 애플릿의 이름을 명시함.</td>
+                                </tr>
+                                <tr>
+                                    <td>vspace</td>
+                                    <td>픽셀</td>
+                                    <td>애플릿과 주위 사이의 수직 간격(vertical spacing)을 명시함.</td>
+                                </tr>
+                                <tr>
+                                    <td>width</td>
+                                    <td>픽셀</td>
+                                    <td>애플릿의 너비를 명시함.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="table table-left">
+                            <caption>브라우저 지원</caption>
+                            <colgroup>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="img/chrome.gif" alt="chrome icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/edge.png" alt="edge icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/ie.png" alt="ie icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/firefox.png" alt="firefox icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/safari.gif" alt="safari icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/opera.gif" alt="opera icon">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>지원하지 않음</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원하지 않음</td>
+                                    <td>지원</td>
+                                    <td>지원하지 않음</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h3>&#60;area&#62;</h3>
+                        <ul>
+                            <li>image-map에서 하이퍼링크가 연결될 영역을 정의할 때 사용한다.</li>
+                        </ul>
+                        <pre class='code code-html'><label>HTML</label>
+                            <code>
+    &#60;img src="img/earth.jpg" alt="지구" usemap="#vending"&#62;
+    &#60;map name="vending"&#62;
+    <br>
+     &#60;area shape="rect" coords="210,200,70,130" alt="지구" href="https://ko.wikipedia.org/wiki/%EC%A7%80%EA%B5%AC"&#62;
+    &#60;/map&#62;</code>
+                        </pre>
+                        <div>
+                            <img src="img/earth.jpg" alt="지구" usemap="#vending" style="width:320px; height:240px;margin-top:20px;">
+                            <map name="vending">
+                                <area shape="rect" coords="1000,1000,70,130" alt="지구" href="https://ko.wikipedia.org/wiki/%EC%A7%80%EA%B5%AC" _target="_blank">
+                            </map>
+                        </div>
+                        <table class="table table-left">
+                            <caption>브라우저 지원</caption>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="img/chrome.gif" alt="chrome icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/edge.png" alt="edge icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/ie.png" alt="ie icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/firefox.png" alt="firefox icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/safari.gif" alt="safari icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/opera.gif" alt="opera icon">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>1.0</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h3>&#60;article&#62;</h3>
+                        <ul>
+                            <li>해당 문서나 페이지 또는 사이트와는 완전히 독립적으로 구성할 수 있는 요소를 정의할 때 사용</li>
+                        </ul>
+                        <pre class='code code-html'><label>HTML</label><code>&#60;article&#62;&#60;p&#62;해당 문서나 페이지 또는 사이트와는 완전히 독립적으로 구성할 수 있는 요소를 정의할 때 사용&#60;/p&#62;&#60;/article&#62; </code></pre>
+                        <table class="table table-left">
+                            <caption>브라우저 지원</caption>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="img/chrome.gif" alt="chrome icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/edge.png" alt="edge icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/ie.png" alt="ie icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/firefox.png" alt="firefox icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/safari.gif" alt="safari icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/opera.gif" alt="opera icon">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>5.0</td>
+                                    <td>지원</td>
+                                    <td>9.0</td>
+                                    <td>4.0</td>
+                                    <td>4.1</td>
+                                    <td>11.1</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h3>&#60;base&#62;</h3>
+                        <ul>
+                            <li>해당 문서의 모든 상대 주소(relative URL)에 대한 기본 URL(base URL)과 target 속성값을 정의할 때 사용</li>
+                            <li>href 속성 또는 target 또는 둘 모두를 가져야 한다.</li>
+                            <li>하나의 문서에 최대 하나만 존재할 수 있고, head 요소 내에 위치해야 한다.</li>
+                            <li>body 요소 내에 쓰게 될 경우, body 안에 있는 href, src들이 에러가 난다.</li>
+                        </ul>
+                        <pre class='code code-html'><label>HTML</label><code>&#60;base href="/images/example.png"&#62; </code></pre>
+                        <table class="table table-left">
+                            <caption>브라우저 지원</caption>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="img/chrome.gif" alt="chrome icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/edge.png" alt="edge icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/ie.png" alt="ie icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/firefox.png" alt="firefox icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/safari.gif" alt="safari icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/opera.gif" alt="opera icon">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h3>&#60;basefont&#62;</h3>
+                        <ul>
+                            <li>모든 텍스트를 위한 기본 색상, 크기, 글꼴을 정의할 때 사용한다.</li>
+                            <li>HTML5에선 더이상 지원하지 않는다. CSS를 사용해야 한다.</li>
+                        </ul>
+                        <pre class='code code-html'><label>HTML</label><code>&#60;basefont font-family="sans-serif" color="blue" size="10"&#62; </code></pre>
+                        <table class="table table-left">
+                            <caption>브라우저 지원</caption>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="img/chrome.gif" alt="chrome icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/edge.png" alt="edge icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/ie.png" alt="ie icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/firefox.png" alt="firefox icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/safari.gif" alt="safari icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/opera.gif" alt="opera icon">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>지원하지 않음</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원하지 않음</td>
+                                    <td>지원하지 않음</td>
+                                    <td>지원하지 않음</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="table">
+                            <caption>옵션</caption>
+                            <colgroup>
+                                <col style="width:15%">
+                                <col style="width:25%">
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>속성명</th>
+                                    <th>속성값</th>
+                                    <th>설명</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>color</td>
+                                    <td>색상</td>
+                                    <td>문서 내의 텍스트를 위한 기본 색상을 명시함.</td>
+                                </tr>
+                                <tr>
+                                    <td>face</td>
+                                    <td>글꼴 집합</td>
+                                    <td>문서 내의 텍스트를 위한 기본 글꼴을 명시함.</td>
+                                </tr>
+                                <tr>
+                                    <td>dir</td>
+                                    <td>방향</td>
+                                    <td>문서 내의 텍스트 방향을 명시함.</td>
+                                </tr>
+                                <tr>
+                                    <td>size</td>
+                                    <td>숫자</td>
+                                    <td>문서 내의 텍스트를 위한 기본 크기를 명시함.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                   </div>
+    				<a href="study2.html" class="btn-next fab" title="다음 페이지"><span>Next</span></a>
+     			</div>
+      		</section>
+        </div>
+    </div>
+</html>

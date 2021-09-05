@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>My Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href='css/portfolio.css' type='text/css' rel='stylesheet'>
+    <link href='css/transition.css' type='text/css' rel='stylesheet'>
+    <link href='https://cdn.rawgit.com/openhiun/hangul/14c0f6faa2941116bb53001d6a7dcd5e82300c3f/nanumbarungothic.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div id='wrap' class="sub sub-study">
+        <ul class="skip">
+            <li><a href="#header">메뉴 바로가기</a></li>
+            <li><a href="#main">메인 바로가기</a></li>
+        </ul>
+        <header id='header'>
+            <div class='headerWhiteBg'></div>
+            <nav class='header-left-wrap'>
+                <ul class='header-left-wrap-ul floatClear'>
+                    <li><a href='portfolio.html' class='navBt'>HOME</a></li>
+					<li><a href='sub1.html' class='navBt'><span class='fa fa-th'></span>PORTFOLIO</a></li>
+					<li><a href='sub2.html' class='navBt'><span class='fa fa-pencil'></span>STUDY</a></li>
+                </ul>
+            </nav>
+            <aside class='header-right-wrap'>
+                <!--			<a href='javascript:void(0);' class='searchBt'><span class='fa fa-search'></span></a>-->
+                <div class='mobile'>
+                    <ul class='mobile-wrap'>
+                        <li class='m3line'></li>
+                        <li class='m3line'></li>
+                        <li class='m3line'></li>
+                    </ul>
+                    <a href='javascript:void(0);' class='mobileBt'></a>
+                </div>
+            </aside>
+
+            <ul class='mobile-Sub-wrap'>
+                <li><a href='portfolio.html' class='mBt'>HOME</a></li>
+                <li><a href='sub2.html' class='mBt'>STUDY</a></li>
+                <!--			<li><a href='javascript:' class='mBt'>SEARCH</a></li>-->
+            </ul>
+
+        </header>
+        <div id="main">
+            <div id="stars"></div>
+            <div id="stars2"></div>
+            <div id="stars3"></div>
+        	<section id="study" class="section web">
+        		<div class="study-wrap">
+                    <h1>Doctype</h1>
+        		    <div class="study">
+                        <h3>&#60;!DOCTYPE&#62;</h3>
+                        <ul>
+                            <li>HTML 문서 안에서 먼저 선언되어야 한다.</li>
+                            <li>HTML 버전이 무엇인지를 웹 브라우저에 알려주는 선언문으로, 대소문자를 구별하지 않는다.</li>
+                            <li>HTML 4.01에서 DOCTYPE 선언은 SGML을 기반으로 하기 때문에 DTD를 참조해야 한다. DTD는 브라우저가 콘텐츠를 정확하게 표현하도록 마크업 언어에 대한 규칙을 명시한다.
+                                하지만, HTML5는 SGML을 기반으로 하지 않기 때문에 DTD를 참조할 필요가 없다.
+                                (SMGML: Standard Generalized Markup Language의 약자로, 국제 표준으로 정한 마크업 언어이다. 컴퓨터 전자 문서의 작성에 관한 국제 표준 규약.
+                                컴퓨터에서 쓰이는 전자 문서. 이 전자문서가 어떠한 시스템 환경에서도 정보의 손실 없이 전송, 저장, 자동처리가 가능하도록 국제표준화기구(ISO)에서 정한 것이 SGML이다.
+                                이 표준은 출판환경에 적합한 것으로, 헤더파일, 문서형태정의(DTD), 본문 등 세 부분으로 구성한다. HTML과 XML은 모두 SGML에 근거하여 만들어진 것이다.)
+                            </li>
+                        </ul>
+                        <h3>HTML 4.01과 HTML5에서의 DOCTYPE 선언</h3>
+                        <ul>
+                            <li>strict: 모든 HTML 요소와 속성들을 포함하고 있지만, 더 이상 사용되지 않거나 아직 정식으로 포함되지 못한 요소들은 포함하고 있지 않는다.
+                                단어 뜻대로 웹표준을 엄격하게 지키는 버전. center, font, iframe, strike, 새창띄우기 등 수식 태그가 제한된다.
+                                <pre class='code code-html'><label>HTML</label><code>&#60;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"&#62;</code></pre>
+                            </li>
+                            <li>transitional: 모든 HTML 요소와 속성들뿐만 아니라 더 이상 사용되지 않거나 아직 정식으로 포함되지 못한 요소들까지도 포함, 아직까지 많이 쓰인다. 하지만 프레임셋(frameset) 콘텐츠의 사용은 허용하지 않는다.
+                                즉, 프레임을 제외한 모든 태그 사용이 가능.
+                                <pre class='code code-html'><label>HTML</label><code>&#60;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"&#62;</code></pre>
+                            </li>
+                            <li>framset: 모든 HTML 요소와 속성들, 더 이상 사용되지 않거나 아직 정식으로 포함되지 못한 요소들까지도 모두 포함하며, 프레임셋(frameset) 콘텐츠의 사용까지 허용한다. 프레임셋(frameset) 콘텐츠의 사용은 허용하지 않는다.
+                                즉, 프레임을 제외한 모든 태그 사용이 가능.
+                                <pre class='code code-html'><label>HTML</label><code>&#60;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd"&#62;</code></pre>
+                            </li>
+                            <li>HTML5에서는 단 한가지 방법으로 선언 가능.
+                                <pre class='code code-html'><label>HTML</label><code>&#60;!DOCTYPE html&#62;</code></pre>
+                            </li>
+                        </ul>
+                        <table class="table table-left">
+                            <caption>브라우저 지원</caption>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="img/chrome.gif" alt="chrome icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/edge.png" alt="edge icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/ie.png" alt="ie icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/firefox.png" alt="firefox icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/safari.gif" alt="safari icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/opera.gif" alt="opera icon">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                   </div>
+    				<a href="anchor.html" class="btn-next fab" title="다음 페이지"><span>Next</span></a>
+     			</div>
+      		</section>
+        </div>
+    </div>
+</html>

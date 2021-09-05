@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>My Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href='css/portfolio.css' type='text/css' rel='stylesheet'>
+    <link href='css/transition.css' type='text/css' rel='stylesheet'>
+    <link href='https://cdn.rawgit.com/openhiun/hangul/14c0f6faa2941116bb53001d6a7dcd5e82300c3f/nanumbarungothic.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div id='wrap' class="sub sub-study">
+        <ul class="skip">
+            <li><a href="#header">메뉴 바로가기</a></li>
+            <li><a href="#main">메인 바로가기</a></li>
+        </ul>
+        <header id='header'>
+            <div class='headerWhiteBg'></div>
+            <aside class='header-right-wrap'>
+                <!--			<a href='javascript:void(0);' class='searchBt'><span class='fa fa-search'></span></a>-->
+                <div class='mobile'>
+                    <ul class='mobile-wrap'>
+                        <li class='m3line'></li>
+                        <li class='m3line'></li>
+                        <li class='m3line'></li>
+                    </ul>
+                    <a href='javascript:void(0);' class='mobileBt'></a>
+                </div>
+            </aside>
+
+            <ul class='mobile-Sub-wrap'>
+                <li><a href='portfolio.html' class='mBt'>HOME</a></li>
+                <li><a href='sub2.html' class='mBt'>STUDY</a></li>
+                <!--			<li><a href='javascript:' class='mBt'>SEARCH</a></li>-->
+            </ul>
+
+        </header>
+        <div id="main">
+            <div id="stars"></div>
+            <div id="stars2"></div>
+            <div id="stars3"></div>
+        	<section id="study" class="section web">
+        		<div class="study-wrap">
+                    <h1>a 태그</h1>
+        		    <div class="study">
+                        <h3>&#60;a&#62;</h3>
+                        <ul>
+                            <li>다른 페이지를 연결할 때 사용하는 하이퍼링크(hypertext reference)를 정의할 때 사용</li>
+                            <li>href 속성을 이용해 link의 목적지를 가리킨다. href 속성이 없다면, target, download, rel, type 속성들도 사용할 수 없다.</li>
+                            <li>방문하지 않은 링크(:link): 파란색</li>
+                            <li>방문했던 링크(:visited): 보라색</li>
+                            <li>활성화된 링크(:active): 빨간색</li>
+                            <li>HTML 4에서는 하이퍼링크, 앵커 둘 다 사용 가능했지만, HTML5에서는 하이퍼링크 용도로만 사용되며, href가 없는 경우에는 하이퍼링크를 위한 표시 역할만을 한다.</li>
+                        </ul>
+                        <pre class='code code-html'><label>HTML</label><code>&#60;a href="http://www.tcpschool.com" target="_blank"&#62;&#60;/a&#62;</code></pre>
+                        <table class="table">
+                            <caption>필수 속성</caption>
+                            <colgroup>
+                                <col style="width:15%">
+                                <col>
+                                <col style="width:30%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>속성명</th>
+                                    <th>속성값</th>
+                                    <th>설명</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>href</td>
+                                    <td>URL</td>
+                                    <td>링크된 페이지의 URL을 명시</td>
+                                </tr>
+                                <tr>
+                                    <td>download</td>
+                                    <td>파일 이름</td>
+                                    <td>콘텐츠 다운로드</td>
+                                </tr>
+                                <tr>
+                                    <td>tel</td>
+                                    <td></td>
+                                    <td>전화번호 명시</td>
+                                </tr>
+                                <tr>
+                                    <td>mailto</td>
+                                    <td></td>
+                                    <td>메일 명시</td>
+                                </tr>
+                                <tr>
+                                    <td>target</td>
+                                    <td><p>_blank(새 창 열기),</p> <p>_parent(부모 창에서 연다),</p> <p>_self(링크를 클릭한 해당 창에서 연다),</p> <p>_top(전체 브라우저 창에서 가장 상위의 창에서 연다. (부모 창이 없으면 _self 속성으로 처리))</p></td>
+                                    <td>링크된 문서를 클릭했을 때 문서가 열릴 위치 명시</td>
+                                </tr>
+                                <tr>
+                                    <td>type</td>
+                                    <td>미디어 타입</td>
+                                    <td>링크된 문서 타입 명시</td>
+                                </tr>
+                                <tr>
+                                    <td>rel</td>
+                                    <td>	
+                                        <p>alternate (다국어로 정의된 페이지/보조 페이지를 정의)</p>
+                                        
+                                        <p>author (작성자)</p>
+                                        
+                                        <p>bookmark (가장 가까운 부모 section에 대한 영구 링크를 제공)</p>
+                                        
+                                        <p>help (상황에 맞는 도움말에 대한 링크 제공)</p>
+                                        
+                                        <p>license (현재 문서의 주요 내용이 참조 문서에 설명된 저작권 라이선스의 적용을 받는다는 것을 나타냄)</p>
+                                        
+                                        <p>next (다음 문서)</p>
+                                        
+                                        <p>prev (이전 문서)</p>
+                                        
+                                        <p>nofollow (현재 문서의 원래 작성자 또는 발행자가 참조 문서를 보증하지 않음을 나타냄)</p>
+
+                                        <p>search (현재 문서 및 관련 페이지를 검색하는 데 사용할 수 있는 리소스나 링크 제공)</p>
+                                        
+                                    </td>
+                                    <td>현재 문서와 링크된 문서 사이의 연관 관계를 명시함.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="table table-left">
+                            <caption>브라우저 지원</caption>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="img/chrome.gif" alt="chrome icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/edge.png" alt="edge icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/ie.png" alt="ie icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/firefox.png" alt="firefox icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/safari.gif" alt="safari icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/opera.gif" alt="opera icon">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                   </div>
+    				<a href="element_a.html" class="btn-next fab" title="다음 페이지"><span>Next</span></a>
+     			</div>
+      		</section>
+        </div>
+    </div>
+</html>

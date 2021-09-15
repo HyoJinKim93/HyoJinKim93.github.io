@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>My Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href='css/portfolio.css' type='text/css' rel='stylesheet'>
+    <link href='css/transition.css' type='text/css' rel='stylesheet'>
+    <link href='https://cdn.rawgit.com/openhiun/hangul/14c0f6faa2941116bb53001d6a7dcd5e82300c3f/nanumbarungothic.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div id='wrap' class="sub sub-study">
+        <ul class="skip">
+            <li><a href="#header">메뉴 바로가기</a></li>
+            <li><a href="#main">메인 바로가기</a></li>
+        </ul>
+        <header id='header'>
+            
+
+        </header>
+        <div id="main">
+            <div id="stars"></div>
+            <div id="stars2"></div>
+            <div id="stars3"></div>
+        	<section id="study" class="section web">
+        		<div class="study-wrap">
+                    <h1>Element</h1>
+        		    <div class="study">
+                        <h3>&#60;body&#62;</h3>
+                        <ul>
+                            <li>HTML 문서의 텍스트, 하이퍼링크, 이미지, 리스트 등과 같은 모든 콘텐츠를 포함하는 영역을 정의할 때 사용</li>
+                            <li>HTML 안에 단 하나의 body 요소만이 존재할</li>
+                        </ul>
+                        <pre class='code code-html'><label>HTML</label>
+                            <code>&#60;html&#62;
+        &#60;body&#62;HTML 문서의 콘텐츠(contents) 영역입니다.#62;&#60;/body&#62; 
+&#60;/html&#62;</code>
+                        </pre>
+                        <table class="table table-left">
+                            <caption>브라우저 지원</caption>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="img/chrome.gif" alt="chrome icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/edge.png" alt="edge icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/ie.png" alt="ie icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/firefox.png" alt="firefox icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/safari.gif" alt="safari icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/opera.gif" alt="opera icon">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1.0</td>
+                                    <td>12.0</td>
+                                    <td>지원</td>
+                                    <td>1.0</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h3>&#60;header&#62;</h3>
+                        <ul>
+                            <li>header 안에 header를 넣을 수 없음</li>
+                            <li>html 안에는 여러 개의 header를 넣을 수 잆음</li>
+                            <li>소개나 탐색을 돕는 것의 그룹. 일부 제목 요소들을 포함할 뿐만 아니라, 로고나 구획의 제목, 탐색 폼과 같은 것들이 포함</li>
+                            <li>block 요소</li>
+                        </ul>
+                        <pre class='code code-html'><label>HTML</label>
+                            <code>&#60;article&#62;
+   &#60;header&#62;
+    &#60;h1&#62;문서 제목&#60;/h1&#62;
+   &#60;/header&#62; 
+   &#60;p&#62;일부 제목 요소들을 포함할 뿐만 아니라, 로고나 구획의 제목, 탐색 폼과 같은 것들이 포함&#60;/p&#62;
+&#60;/article&#62;</code>
+                        </pre>
+                        <div>
+                            <img src="img/layout-header.PNG" alt="레이아웃 헤더">
+                        </div>
+                        <table class="table table-left">
+                            <caption>브라우저 지원</caption>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="img/chrome.gif" alt="chrome icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/edge.png" alt="edge icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/ie.png" alt="ie icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/firefox.png" alt="firefox icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/safari.gif" alt="safari icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/opera.gif" alt="opera icon">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>5.0</td>
+                                    <td>지원</td>
+                                    <td>9.0</td>
+                                    <td>4.0</td>
+                                    <td>4.1</td>
+                                    <td>11.1</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h3>&#60;main&#62;</h3>
+                        <ul>
+                            <li>body의 주 컨텐츠를 정의할 때 사용</li>
+                            <li>하나의 문서에는 단 하나의 main 태그만 존재한다.</li>
+                            <li>article, aside, footer, header, nav 요소의 하위 요소가 되어서는 안 된다.</li>
+                            <li>ie에서 지원이 안 된다.</li>
+                            <li>블록 요소</li>
+                        </ul>
+                        <pre class='code code-html'><label>HTML</label>
+                            <code>&#60;main&#62;
+    &#60;article&#62;
+      &#60;p&#62;main 태그는 html5에서 새롭게 추가된 요소이다.&#60;/p&#62;
+    &#60;/article&#62;
+&#60;/main&#62;</code>
+                        </pre>
+                        <table class="table table-left">
+                            <caption>브라우저 지원</caption>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="img/chrome.gif" alt="chrome icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/edge.png" alt="edge icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/ie.png" alt="ie icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/firefox.png" alt="firefox icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/safari.gif" alt="safari icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/opera.gif" alt="opera icon">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>26.0</td>
+                                    <td>12.0</td>
+                                    <td>지원하지 않음</td>
+                                    <td>21.0</td>
+                                    <td>7.0</td>
+                                    <td>16.0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h3>&#60;footer&#62;</h3>
+                        <ul>
+                            <li>footer 안에 footer를 넣을 수 없음</li>
+                            <li>주로 연락처, 사이트맵, 맨 위로 올라가는 탑 버튼, 저자 정보, 주소 등을 기입</li>
+                            <li>block 요소</li>
+                        </ul>
+                        <div>
+                            <img src="img/layout-footer.PNG" alt="레이아웃 푸터">
+                        </div>
+                        <pre class='code code-html'><label>HTML</label>
+                            <code>&#60;article&#62;
+   &#60;header&#62;
+    &#60;h1&#62;문서 제목&#60;/h1&#62;
+   &#60;/header&#62; 
+   &#60;p&#62;일부 제목 요소들을 포함할 뿐만 아니라, 로고나 구획의 제목, 탐색 폼과 같은 것들이 포함&#60;/p&#62;
+&#60;/article&#62;</code>
+                        </pre>
+                        <table class="table table-left">
+                            <caption>브라우저 지원</caption>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="img/chrome.gif" alt="chrome icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/edge.png" alt="edge icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/ie.png" alt="ie icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/firefox.png" alt="firefox icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/safari.gif" alt="safari icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/opera.gif" alt="opera icon">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>5.0</td>
+                                    <td>지원</td>
+                                    <td>9.0</td>
+                                    <td>4.0</td>
+                                    <td>4.1</td>
+                                    <td>11.1</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h3>&#60;article&#62;</h3>
+                        <ul>
+                            <li>해당 문서나 페이지 또는 사이트와는 완전히 <strong>독립적</strong>으로 구성할 수 있는 요소를 정의할 때 사용</li>
+                            <li>재사용 가능한 영역 (매거진, 신문 기사, 블로그 등)</li>
+                            <li>h1 ~ h6을 포함하여 식별</li>
+                            <li>article 안에 여러 개의 section이 존재할 수 있다.</li>
+                            <li>article 요소 안에 address를 제공할 수 있지만, 중첩 article에는 제공하지 않는다.</li>
+                            <li>article 안에 time, datetime을 넣을 수 있지만, time 요소의 pubtime은 웹표준에 준수하지 않는다.</li>
+                            <li>block 요소</li>
+                            <li>html5에 새로 나온 요소</li>
+                        </ul>
+                        <pre class='code code-html'><label>HTML</label>
+                            <code>&#60;h1&#62;오늘의 날씨&#60;/h1&#62;
+&#60;article&#62;
+    &#60;header&#62;오늘의 날씨&#60;/header&#62;
+    &#60;section&#62;
+        &#60;article&#62;
+            &#60;h2&#62;서울&#60;/h2&#62;
+            &#60;p&#62;맑음&#60;/p&#62;
+        &#60;/article&#62;
+        &#60;article&#62;
+            &#60;h2&#62;인천&#60;/h2&#62;
+            &#60;p&#62;비&#60;/p&#62;
+        &#60;/article&#62;
+    &#60;/section&#62;
+    &#60;section&#62;
+        &#60;article&#62;
+            &#60;h2&#62;강원&#60;/h2&#62;
+            &#60;p&#62;맑음&#60;/p&#62;
+        &#60;/article&#62;
+        &#60;article&#62;
+            &#60;h2&#62;제주&#60;/h2&#62;
+            &#60;p&#62;비&#60;/p&#62;
+        &#60;/article&#62;
+    &#60;/section&#62;
+&#60;/article&#62;</code>
+                        </pre>
+                        <div>
+                            <img src="img/layout-article.PNG" alt="레이아웃 article">
+                        </div>
+                        <table class="table table-left">
+                            <caption>브라우저 지원</caption>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="img/chrome.gif" alt="chrome icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/edge.png" alt="edge icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/ie.png" alt="ie icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/firefox.png" alt="firefox icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/safari.gif" alt="safari icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/opera.gif" alt="opera icon">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>5.0</td>
+                                    <td>12</td>
+                                    <td>9.0</td>
+                                    <td>4.0</td>
+                                    <td>5.0</td>
+                                    <td>11.1</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h3>&#60;section&#62;</h3>
+                        <ul>
+                            <li>문서의 일반적인 영역을 구분</li>
+                            <li>h1 ~ h6을 포함하여 식별</li>
+                            <li>article 안에 여러 개의 section이 존재할 수 있다.</li>
+                            <li>단순히 의미 없는 스타일링 목적이면 div 태그를 써도 좋지만, 제목을 포함해서 의미를 가지는, 구획이 명확하게 구분되야 한다면, section 태그를 선택하는 게 좋다.</li>
+                            <li>section 안에 article이 들어가야 하는 구조가 있고, article 안에 section 구조가 있어야 하는 구조가 있다. 서로 무엇을 포함하는 지는, 기본적으로는 의미적으로 상관이 없다.</li>
+                            <li>의미적으로 보면 article (독립적인) > section > div</li>
+                            <li>block 요소</li>
+                            <li>html5에 새로 나온 요소</li>
+                        </ul>
+                        <pre class='code code-html'><label>HTML</label>
+                            <code>&#60;section&#62;
+        &#60;article&#62;
+            &#60;h2&#62;서울&#60;/h2&#62;
+            &#60;p&#62;맑음&#60;/p&#62;
+        &#60;/article&#62;
+        &#60;article&#62;
+            &#60;h2&#62;인천&#60;/h2&#62;
+            &#60;p&#62;비&#60;/p&#62;
+        &#60;/article&#62;
+    &#60;/section&#62;
+    &#60;section&#62;
+        &#60;article&#62;
+            &#60;h2&#62;강원&#60;/h2&#62;
+            &#60;p&#62;맑음&#60;/p&#62;
+        &#60;/article&#62;
+        &#60;article&#62;
+            &#60;h2&#62;제주&#60;/h2&#62;
+            &#60;p&#62;비&#60;/p&#62;
+        &#60;/article&#62;
+    &#60;/section&#62;</code>
+                        </pre>
+                        <div>
+                            <img src="img/layout-section.PNG" alt="레이아웃 section">
+                        </div>
+                        <table class="table table-left">
+                            <caption>브라우저 지원</caption>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="img/chrome.gif" alt="chrome icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/edge.png" alt="edge icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/ie.png" alt="ie icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/firefox.png" alt="firefox icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/safari.gif" alt="safari icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/opera.gif" alt="opera icon">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>5.0</td>
+                                    <td>12</td>
+                                    <td>9.0</td>
+                                    <td>4.0</td>
+                                    <td>5.0</td>
+                                    <td>11.1</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h3>&#60;aside&#62;</h3>
+                        <ul>
+                            <li>문서의 별도 콘텐츠를 설정. 해당 콘텐츠들로부터 분리시킬 수 있는 콘텐츠로 구성된 페이지 영역을 정의할 때 사용. 보통 광고나 기타 링크 등의 사이드 바를 설정</li>
+                            <li>html5에서 새롭게 추가된 요소</li>
+                            <li>블록 요소</li>
+                        </ul>
+                        <pre class='code code-html'><label>HTML</label><code>&#60;aside&#62;해당 콘텐츠들로부터 분리시킬 수 있는 콘텐츠로 구성된 페이지 영역을 정의할 때 사용&#60;/aside&#62; </code></pre>
+                        <div>
+                            <img src="img/layout-aside.PNG" alt="레이아웃 aside">
+                        </div>
+                        <table class="table table-left">
+                            <caption>브라우저 지원</caption>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="img/chrome.gif" alt="chrome icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/edge.png" alt="edge icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/ie.png" alt="ie icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/firefox.png" alt="firefox icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/safari.gif" alt="safari icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/opera.gif" alt="opera icon">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>5.0</td>
+                                    <td>지원</td>
+                                    <td>9.0</td>
+                                    <td>4.0</td>
+                                    <td>4.1</td>
+                                    <td>11.1</td>
+                                </tr>
+                            </tbody>
+                        </table> 
+                   </div>
+    				<a href="study2.html" class="btn-next fab" title="다음 페이지"><span>Next</span></a>
+     			</div>
+      		</section>
+        </div>
+    </div>
+</html>

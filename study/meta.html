@@ -41,34 +41,72 @@
                         <h3>종류</h3>
                         <ul>
                             <li>
-                                웹 브라우저 한글깨짐 현상을 막아준다. 
-                                <pre class='code code-html'><label>HTML</label><code>&#60;meta charset="UTF-8"&#62;</code></pre>
+                                웹 브라우저 한글깨짐 현상을 막아주는 인코딩 선언
+                                <pre class='code code-html'>
+                                    <label>HTML</label>
+                                    <code>&#60;meta charset="UTF-8"&#62;</code>
+                                </pre>
+                                <ul>
+                                    <li>EUC-KR / ISO-2022-KR : 한국어 문자 인코딩</li>
+                                    <li>EUC-JP / ISO-2022-JP : 일본어 문자 인코딩</li>
+                                    <li>GB2312 : 중국어 문자 인코딩</li>
+                                    <li>ISO-8859-1 : 북미, 서부 유럽, 라틴 아메리카, 카리브해, 캐나다, 아프리카</li>
+                                    <li>ISO-8859-2 : 동유럽</li>
+                                    <li>ISO-8859-3 : 남동유럽, 에스페란토</li>
+                                    <li>ISO-8859-4 : 스칸디나비아, 발트 연안국</li>
+                                    <li>ISO-8859-5 : 불가리아어, 벨로루시어, 러시아어, 마케도니아</li>
+                                    <li>ISO-8859-6 : 아랍문자</li>
+                                    <li>ISO-8859-7 : 현대 그리스문자 언어뿐 만 아니라 수학 기호</li>
+                                    <li>ISO-8859-8 : 히브리어 문자를 사용하는 언어</li>
+                                    <li>ISO-8859-9 : 터키어</li>
+                                    <li>ISO-8859-10 : 에스키모, 북유럽 언어</li>
+                                    <li>UTF-8, UTF-16, UTF-32 : 모든 언어의 문자를 지원하는 인코딩</li>
+                                </ul>
                             </li>
-                            <li>transitional: 모든 HTML 요소와 속성들뿐만 아니라 더 이상 사용되지 않거나 아직 정식으로 포함되지 못한 요소들까지도 포함, 아직까지 많이 쓰인다. 하지만 프레임셋(frameset) 콘텐츠의 사용은 허용하지 않는다.
-                                즉, 프레임을 제외한 모든 태그 사용이 가능.
-                                <pre class='code code-html'><label>HTML</label><code>&#60;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"&#62;</code></pre>
+                            <li>검색 엔진에 의해 검색되는 단어 지정
+                                <p><img src="img/meta-keywords.png" alt="meta keywords"></p>
+                                <pre class='code code-html'><label>HTML</label><code>&#60;meta name="keyword" content="추석 - 위키백과"&#62;</code></pre>
                             </li>
-                            <li>framset: 모든 HTML 요소와 속성들, 더 이상 사용되지 않거나 아직 정식으로 포함되지 못한 요소들까지도 모두 포함하며, 프레임셋(frameset) 콘텐츠의 사용까지 허용한다. 프레임셋(frameset) 콘텐츠의 사용은 허용하지 않는다.
-                                즉, 프레임을 제외한 모든 태그 사용이 가능.
-                                <pre class='code code-html'><label>HTML</label><code>&#60;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd"&#62;</code></pre>
+                            <li>검색 결과에 표시되는 문자를 지정
+                                <pre class='code code-html'><label>HTML</label><code>&#60;meta name="description" content="추석"&#62;</code></pre>
                             </li>
-                            <li>HTML5에서는 단 한가지 방법으로 선언 가능.
-                                <pre class='code code-html'><label>HTML</label><code>&#60;!DOCTYPE html&#62;</code></pre>
+                            <li>robots (검색 로봇 제어)
+                                <pre class='code code-html'><label>HTML</label><code>&#60;meta name="robots" content="noindex, nofollow"&#62;</code></pre>
+                                <ul>
+                                    <li>noindex : 검색 결과에 이 페이지를 표시 하지 않는다.</li>
+                                    <li>nofollow : 이 페이지의 링크를 따라가지 않는다.</li>
+                                    <li>noarchive : 검색결과에 저장된 페이지 링크를 표시하지 않는다.</li>
+                                    <li>All(기본값) : 색인 생성이나 게재에 대한 제한이 없다, 기본값이므로 명시적으로 표시해도 효과 없음</li>
+                                    <li>Non : noindex, nofollow와 같다</li>
+                                    <li>index : 그 페이지를 수집대상으로 한다.</li>
+                                    <li>Follow : 그 페이지를 포함해 링크가 걸린 곳을 수집대상으로 한다.</li>
+                                    <li>noindex, nofollow를 사용하면 구글에서 자신의 사이트가 색인화 되거나 링크 연결이 되지 않도록 설정할 수 있다.
+                                        주로, 개발 중일 때 사이트가 구글에 노출되지 않길 원할 때 사용한다.
+                                    </li>
+                                    <li>index, follow를 사용하면 페이지를 색인화 하고, 링크 연결이 된다.</li>
+                                </ul>
+                            </li>
+                            <li>문서의 저자(author)를 정의
+                                <pre class='code code-html'><label>HTML</label><code>&#60;meta name="author" content="Kim hyojin"&#62;</code></pre>
+                            </li>
+                            <li>5초 뒤에 다른 페이지로 리다이렉트(redirect)시킨다.
+                                <pre class='code code-html'><label>HTML</label><code>&#60;meta http-equiv="refresh" content="5;url=http://www.naver.com"&#62;</code></pre>
+                            </li>
+                            <li>Content-Script-Type (웹페이지에 쓰인 언어)
+                                <pre class='code code-html'><label>HTML</label><code>&#60;meta http-equiv="Content-Script-Type" content="Text/javascript"&#62;</code></pre>
+                            </li>
+                            <li>X-UA-Compatible (브라우저 호환성)
+                                <pre class='code code-html'><label>HTML</label><code>&#60;meta http-equiv="X-UA-Compatible" content="IE-edge"&#62;</code></pre>
+                            </li>
+                            <li>모든 장치에서 웹 사이트가 잘 보이도록 뷰포트(viewport)를 설정하는 예제
+                                <pre class='code code-html'><label>HTML</label><code>&#60;meta name="viewport" content="width=device-width, initial-scale=1.0"&#62;</code></pre>
+                            </li>
+                            <li>Date (날짜- 제작일)
+                                <br>
+                                content '+09:00'은 GMT(그리니치 표준시)로 부터의 시차이며, 한국은 '+09:00' 이다. 나라/지역에 따라 달라진다.
+                                <pre class='code code-html'><label>HTML</label><code>&#60;meta name="Date" content="2021-09-17T07:45:37+09:00"&#62;</code></pre>
                             </li>
                         </ul>
-                        <pre class='code code-html'>
-                            <label>HTML</label>
-                            <code>
-&#60;head&#62;
-    &#60;meta charset="UTF-8"&#62;
-    &#60;meta name="keyword" content="HTML, meta, tag, element, reference"&#62;
-    &#60;meta name="description" content="HTML meta tag page"&#62;
-    &#60;meta name="author" content="TCPSchool"&#62;
-    &#60;meta name="viewport" content="width=device-width, initial-scale=1.0"&#62;
-    &#60;meta http-equiv="X-UA-Compatible" content="IE=9"&#62;
-&#60;/head&#62;
-                            </code>
-                        </pre>
                         <table class="table table-left">
                             <caption>브라우저 지원</caption>
                             <tbody>

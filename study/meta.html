@@ -46,7 +46,7 @@
                                     <label>HTML</label>
                                     <code>&#60;meta charset="UTF-8"&#62;</code>
                                 </pre>
-                                <ul>
+                                <ul class="sub-li">
                                     <li>EUC-KR / ISO-2022-KR : 한국어 문자 인코딩</li>
                                     <li>EUC-JP / ISO-2022-JP : 일본어 문자 인코딩</li>
                                     <li>GB2312 : 중국어 문자 인코딩</li>
@@ -68,11 +68,12 @@
                                 <pre class='code code-html'><label>HTML</label><code>&#60;meta name="keyword" content="추석 - 위키백과"&#62;</code></pre>
                             </li>
                             <li>검색 결과에 표시되는 문자를 지정
+                                <p><img src="img/meta-description.png" alt="meta description"></p>
                                 <pre class='code code-html'><label>HTML</label><code>&#60;meta name="description" content="추석"&#62;</code></pre>
                             </li>
                             <li>robots (검색 로봇 제어)
                                 <pre class='code code-html'><label>HTML</label><code>&#60;meta name="robots" content="noindex, nofollow"&#62;</code></pre>
-                                <ul>
+                                <ul class="sub-li">
                                     <li>noindex : 검색 결과에 이 페이지를 표시 하지 않는다.</li>
                                     <li>nofollow : 이 페이지의 링크를 따라가지 않는다.</li>
                                     <li>noarchive : 검색결과에 저장된 페이지 링크를 표시하지 않는다.</li>
@@ -105,6 +106,99 @@
                                 <br>
                                 content '+09:00'은 GMT(그리니치 표준시)로 부터의 시차이며, 한국은 '+09:00' 이다. 나라/지역에 따라 달라진다.
                                 <pre class='code code-html'><label>HTML</label><code>&#60;meta name="Date" content="2021-09-17T07:45:37+09:00"&#62;</code></pre>
+                            </li>
+                            <li>subject (홈페이지 주제 지정)
+                                <pre class='code code-html'><label>HTML</label><code>&#60;meta http=equiv="Subject" content="네이버"&#62;</code></pre>
+                            </li>
+                            <li>title (제목)
+                                <pre class='code code-html'><label>HTML</label><code>&#60;meta http=equiv="Title" content="Meta tag 공부"&#62;</code></pre>
+                            </li>
+                            <li>Publisher (제작사)
+                                <pre class='code code-html'><label>HTML</label><code>&#60;meta http=equiv="Publisher" content="publisher name"&#62;</code></pre>
+                            </li>
+                            <li>Other Agent (웹 책임자)
+                                <pre class='code code-html'><label>HTML</label><code>&#60;meta http=equiv="Other Agent" content="Other Agent name"&#62;</code></pre>
+                            </li>
+                            <li>Generator (제작 도구)
+                                <pre class='code code-html'><label>HTML</label><code>&#60;meta http=equiv="Generator" content="Visual Studio Code"&#62;</code></pre>
+                            </li>
+                            <li>Reply-To / Email (메일 주소)
+                                <pre class='code code-html'><label>HTML</label><code>&#60;meta http=equiv="Reply-To" content="example@naver.com"&#62;</code>
+                                    <code>&#60;meta http=equiv="Email" content="example@naver.com"&#62;</code>
+                                </pre>
+                            </li>
+                            <li>Filename (파일 이름)
+                                <pre class='code code-html'><label>HTML</label><code>&#60;meta http=equiv="Filename" content="index.html"&#62;</code></pre>
+                            </li>
+                            <li>Location (위치)
+                                <pre class='code code-html'><label>HTML</label><code>&#60;meta http=equiv="Location" content="홈페이지 위치(소속국가)"&#62;</code></pre>
+                            </li>
+                            <li>Distribution(배포자)
+                                <pre class='code code-html'><label>HTML</label><code>&#60;meta http=equiv="Distribution" content="배포자"&#62;</code></pre>
+                            </li>
+                            <li>Copyright (저작권)
+                                <pre class='code code-html'><label>HTML</label><code>&#60;meta http=equiv="Copyright" content="저작자"&#62;</code></pre>
+                            </li>
+                            <li>Build (제작 년, 월, 일)
+                                <pre class='code code-html'><label>HTML</label><code>&#60;meta http=equiv="Build" content="Sun", 19 Sep 2021 19:40:40"&#62;</code></pre>
+                            </li>
+                            <li>Last-Modified(제작 년, 월, 일)
+                                <pre class='code code-html'><label>HTML</label><code>&#60;meta http=equiv="Last-Modified" content="Sun", 19 Sep 2021 19:40:40"&#62;</code></pre>
+                            </li>
+                            <li>imagetoolbar (그림 위 마우스 오버 시 이미지 관련 툴바 생기지 않게 하기)
+                                <pre class='code code-html'><label>HTML</label><code>&#60;meta http=equiv="imagetoolbar" content="no"&#62;</code></pre>
+                            </li>
+                            <li>Cache-Control / Pragma(캐쉬가 되지 않도록 하기)
+                                <pre class='code code-html'><label>HTML</label><code>&#60;meta http=equiv="Cache-Control" content="no-cache"&#62;
+&#60;meta http=equiv="Pragma" content="no-cache"&#62;</code>
+                                </pre>
+                                <ul class="sub-li">
+                                    <li>페이지를 캐시에서 가져오지 않게 한다.</li>
+                                    <li>캐시가 남게 되면 로딩하는 데 시간이 많이 걸린다.</li>
+                                </ul>
+                            </li>
+                            <li>Expires (캐쉬 만료일)
+                                <pre class='code code-html'><label>HTML</label><code>&#60;meta http=equiv="Expires" content="Mon, 08 Sep 2016 10:10:10 GMT"&#62;
+&#60;meta http=equiv="Expires" content="-1"&#62;
+                                    </code>
+                                </pre>
+                                <ul class="sub-li">
+                                    <li>Expires: -1은 캐시된 페이지를 즉시 만료시킨다.</li>
+                                </ul>
+                            </li>
+                            <li>Refresh (새로고침)
+                                <pre class='code code-html'><label>HTML</label><code>&#60;meta http=equiv="refresh" content="60"&#62;</code></pre>
+                            </li>
+                            <li>Refresh (입력한 주소로 5초 후 이동)
+                                <pre class='code code-html'><label>HTML</label><code>&#60;meta http=equiv="refresh" content="5; url = 주소"&#62;</code></pre>
+                            </li>
+                            <li>Page-Enter (페이지 들어갈 때 장면 전환 효과)
+                                <pre class='code code-html'><label>HTML</label><code>&#60;meta http=equiv="refresh" content="revealtrans(Duration=1, Transition=12)"&#62;</code></pre>
+                                <ul class="sub-li">
+                                    <li>Box out : 네모난 박스가 안쪽에서 바깥쪽으로</li>
+                                    <li>Circle in : 원이 바깥에서 안쪽으로</li>
+                                    <li>Circle out : 원이 안쪽에서 바깥쪽으로</li>
+                                    <li>Wipe up : 이미지의 아래에서 위쪽으로 수직 이동</li>
+                                    <li>Wipe down : 이미지의 위에서 아래쪽으로 수직 이동</li>
+                                    <li>Wipe right : 이미지의 왼쪽에서 오른쪽으로 수평 이동</li>
+                                    <li>Wipe left : 이미지의 오른쪽에서 왼쪽으로 수평 이동</li>
+                                    <li>Vertical blinds : 수직 블라인드가 쳐지는 형태로 변환</li>
+                                    <li>Horizontal blinds : 수평 블라인드가 쳐지는 형태로 변환</li>
+                                    <li>Checkerboard across : 바둑판 형태의 격자가 왼쪽에서 오른쪽으로 생성</li>
+                                    <li>Checkerboard down : 바둑판 형태의 격자가 위에서 아래로 생성</li>
+                                    <li>Random dissove : 안개와 비슷한 형태로 전환</li>
+                                    <li>Split vertical in : 왼쪽과 오른쪽 끝에서 중앙으로 수직 이동</li>
+                                    <li>Split vertical out : 중앙에서 양쪽 끝으로 수직 이동</li>
+                                    <li>Split Horizontal in : 양쪽에서 중앙으로 수평 이동</li>
+                                    <li>Split Horizontal out : 중앙에서 양쪽 끝으로 수직이동</li>
+                                    <li>Strips left down : 대각선 형태로 오른쪽 상단에서 왼쪽 하단으로 이동</li>
+                                    <li>Strips left up : 대각선 형태로 오른쪽 하단에서 왼쪽 상단으로 이동</li>
+                                    <li>Strips right down : 대각선 형태로 왼쪽 상단에서 오른쪽 하단으로 이동</li>
+                                    <li>Strips right up : 대각선 형태로 왼쪽 하단에서 오른쪽 상단으로 이동</li>
+                                    <li>Random bars horizontal : 수평선이 무작위로 생성</li>
+                                    <li>Random bars vertical : 수직선이 무작위로 생성</li>
+                                    <li>Random : 임의로 생성 </li>
+                                </ul>
                             </li>
                         </ul>
                         <table class="table table-left">

@@ -253,6 +253,10 @@
                         </table>
                         <h3>aria-label</h3>
                         <ul>
+                            <li>‘Accessible Rich Internet Applications’의 약자로 리치 인터넷을 위한 W3C 접근성 명세. 쉽게 말해 Ajax 같은 기술에 대응하는 접근성 명세라고 이해할 수 있다.
+                                <span class="red">Rich Internet Applications(리치 인터넷 애플리케이션)이란, 기존 HTML보다 역동적인 화면 연출이 가능하고 페이지 이동 없이 한 페이지에서 정보 제공이 가능한, 사용자 중심의 새로운 플래시 웹페이지 제작기술을 말한다. 
+                                <br>최근 영화예매 사이트나 쇼핑몰을 중심으로 이 같은 RIA를 도입하는 곳이 늘고 있다.</span>
+                            </li>
                             <li>액세스 가능한 레이블로 사용할 문자열을 지정할 수 있다.</li>
                             <li>텍스트 대신 그래픽을 사용하는 버튼과 같이, 요소의 목적을 시각적으로 표시할 때, aria-label 속성을 사용할 수 있다.</li>
                             <li>우리 눈에 보이지 않더라도 브라우저에게는 전달이 되면 좋은 정보, 혹은 스크린 리더를 통해 웹을 사용하는 사용자들에게 전달해야 하는 정보를 제공하고 싶을 때 사용한다.</li>
@@ -327,7 +331,7 @@
 &#60;/div&#62;</code></pre>
                         
                         <ul>
-                            <li>위와 같은 소스로 작성했을 경우 Water ~ Ginger Ale 을 담고 있는 radiogroup 영역에 대한 설명용 텍스트가 해당 div 영역 밖인 <span id="rg-label">에 있기 때문에<br>해당 id 값과 radiogroup div의 aria-labelledby의 값을 일치 시켜줘서 radiogroup 영역이 어떤 요소들의 집합인지를 설명해줄 수 있다.</li>
+                            <li>위와 같은 소스로 작성했을 경우 Water ~ Ginger Ale 을 담고 있는 radiogroup 영역에 대한 설명용 텍스트가 해당 div 영역 밖인 <span id="drinkOptions">에 있기 때문에<br>해당 id 값과 radiogroup div의 aria-labelledby의 값을 일치 시켜줘서 radiogroup 영역이 어떤 요소들의 집합인지를 설명해줄 수 있다.</li>
                         </ul>
                         <table class="table table-left">
                             <caption>브라우저 지원</caption>
@@ -362,7 +366,76 @@
                                 </tr>
                             </tbody>
                         </table> 
-                        <p>참조 : <a href="https://abcdqbbq.tistory.com/77">https://abcdqbbq.tistory.com/77</a></p>
+                        <p>참조 : <a href="https://abcdqbbq.tistory.com/77">https://abcdqbbq.tistory.com/77</a>
+                            <a href="https://tech.lezhin.com/2018/04/20/wai-aria">https://tech.lezhin.com/2018/04/20/wai-aria</a>
+                        </p>
+                        <h3>aria-current</h3>
+                        <ul>
+                            <li>aria-current 속성은 현재 맥락과 일치하는 항목을 의미한다.</li>
+                            <li>token 값은 정해진 값 중 하나만 사용할 수 있음을 의미한다. token 값은 page|step|location|date|time|true|false(default)로 정해져 있다.
+                                <ul class="sub-li">
+                                    <li>page : 현재 '페이지'와 일치하는 시각적으로 강조한 링크.</li>
+                                    <li>step : 현재 '단계'와 일치하는 시각적으로 강조한 링크.</li>
+                                    <li>location : 플로우 차트에서 현재 '위치'와 일치하는 시각적으로 강조한 이미지.</li>
+                                    <li>date : 달력에서 현재 '날짜'와 일치하는 날짜.</li>
+                                    <li>time : 시간표에서 현재 '시간'과 일치하는 시간.</li>
+                                </ul>
+                            </li>
+                            <li>true, false 값도 있는데 true 또는 false 값은 구체적으로 어떤 맥락(페이지, 단계, 위치, 날짜, 시간)과 일치하는지 정보를 전달하지 않기 때문에 page|step|location|date|time 토큰이 적절하지 않은 맥락에 한하여 사용한다.
+                                <ul class="sub-li">
+                                    <li>true : 항목이 세트 내 현재 맥락과 일치함.</li>
+                                    <li>false(default): 항목이 세트 내 현재 맥락과 일치하지 않음. 속성 또는 값을 선언하지 않은 경우 초기값.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        
+                        <pre class='code code-html'><label>HTML</label><code>&#60;nav&#62;
+    &#60;h2&#62;&#60;/h2&#62;
+    &#60;ol&#62;
+        &#60;li&#62;
+            &#60;a href="/info" aria-current="step"&#62;정보&#60;/a&#62;
+            &#60;a href="/terms"&#62;약관&#60;/a&#62;
+        &#60;/li&#62;
+    &#60;/ol&#62;
+&#60;/nav&#62;
+</code></pre>
+                        <ul>
+                            <li>aria-current 속성은 aria-selected 속성과 다른 의미로 사용하기 때문에 tablist 목록 안에서 aria-selected 속성을 대체하는 용도로 사용하면 안 된다. 그러나 aria-current 속성과 aria-selected 속성을 함께 선언할 수도 있다. 
+                            <br>예를 들면 편집 가능한 트리 형식의 목록에서 현재 페이지 항목과 편집을 위해 선택한 항목이 일치하는 경우 함께 선언할 수 있다.</li>
+                        </ul>
+                        <table class="table table-left">
+                            <caption>브라우저 지원</caption>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="img/chrome.gif" alt="chrome icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/edge.png" alt="edge icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/ie.png" alt="ie icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/firefox.png" alt="firefox icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/safari.gif" alt="safari icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/opera.gif" alt="opera icon">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>지원하지 않음</td>
+                                    <td>지원하지 않음</td>
+                                    <td>지원하지 않음</td>
+                                    <td>지원하지 않음</td>
+                                    <td>지원하지 않음</td>
+                                    <td>지원하지 않음</td>
+                                </tr>
+                            </tbody>
+                        </table> 
                         <h3>&#60;audio&#62;</h3>
                         <ul>
                             <li>음악이나 오디오 스트림과 같은 사운드를 정의할 때 사용</li>

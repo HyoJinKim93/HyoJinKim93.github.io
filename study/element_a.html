@@ -431,6 +431,69 @@
                                 </tr>
                             </tbody>
                         </table> 
+                        
+                        <h3>aria-labelledby</h3>
+                        <ul>
+                            <li>화면에 현재 요소를 설명할 텍스트가 있을 경우에 해당 텍스트 영역과 현재 요소를 연결할 때 사용한다.</li>
+                        </ul>
+                        <pre class='code code-html'><label>HTML</label><code>&#60;div role="radiogroup" aria-labelledby="navigation menu"&#62;&#60;/div&#62;
+<div>
+    <input type="radio" name="drink" id="drink1">
+    <label for="drink1">Water</label>
+  </div>
+  <div>
+    <input type="radio" name="drink" id="drink2">
+    <label for="drink2">Tea</label>
+  </div>
+  <div>
+    <input type="radio" name="drink" id="drink3">
+    <label for="drink3">Coffee</label>
+  </div>
+  <div>
+    <input type="radio" name="drink" id="drink4">
+    <label for="drink4">Cola</label>
+  </div>
+  <div>
+    <input type="radio" name="drink" id="drink5">
+    <label for="drink5">Ginger Ale</label>
+  </div></code></pre>
+                        
+                        <ul>
+                            <li>위와 같은 소스로 작성했을 경우 Water ~ Ginger Ale 을 담고 있는 radiogroup 영역에 대한 설명용 텍스트가 해당 div 영역 밖인 <span id="rg-label">에 있기 때문에<br>해당 id 값과 radiogroup div의 aria-labelledby의 값을 일치 시켜줘서 radiogroup 영역이 어떤 요소들의 집합인지를 설명해줄 수 있다.</li>
+                        </ul>
+                        <table class="table table-left">
+                            <caption>브라우저 지원</caption>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="img/chrome.gif" alt="chrome icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/edge.png" alt="edge icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/ie.png" alt="ie icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/firefox.png" alt="firefox icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/safari.gif" alt="safari icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/opera.gif" alt="opera icon">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>지원하지 않음</td>
+                                    <td>지원하지 않음</td>
+                                    <td>지원하지 않음</td>
+                                    <td>지원하지 않음</td>
+                                    <td>지원하지 않음</td>
+                                    <td>지원하지 않음</td>
+                                </tr>
+                            </tbody>
+                        </table> 
                         <h3>&#60;audio&#62;</h3>
                         <ul>
                             <li>음악이나 오디오 스트림과 같은 사운드를 정의할 때 사용</li>

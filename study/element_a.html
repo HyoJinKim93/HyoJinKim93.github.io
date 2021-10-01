@@ -534,17 +534,39 @@
                                     <li>menu : menu(role) 팝업이 연결됨. menu(role)는 링크 목록.</li>
                                     <li>dialog : dialog(role) 팝업이 연결됨. dialog(role)는 상호작용 요소(버튼 또는 콘트롤)가 포함된 현재 문서의 하위창.</li>
                                     <li>listbox: listbox(role) 팝업이 연결됨. listbox(role)는 선택 가능한 option(role)을 포함한 콤보박스.</li>
-                                    <li></li>
-                                    <li></li>
+                                    <li>tree: tree(role) 팝업이 연결됨. tree(role)는 하위 list(role)을 포함하며 접고 펼칠 수 있음.</li>
+                                    <li>grid: grid(role) 팝업이 연결됨. grid(role)는 행과 열로 구성된 선택 가능한 위젯. 상호작용 가능한 셀이기 때문에 table(role)과는 역할이 다름에 유의.</li>
+                                    <li>false(default): 연결된 팝업이 없음을 의미.</li>
                                 </ul>
                             </li>
                         </ul>
-                        <pre class='code code-html'><label>HTML</label><code><!-- O: aria-haspopup="menu|true" -->
-&#60;div role="tablist"&#62;
-    &#60;a id="mon-anchor" href="#mon" role="tab" aria-selected="true"&#62;&#60;월&#62;
-    &#60;a id="tue-anchor" href="#tue" role="tab" aria-selected="false"&#62;&#60;화&#62;
-&#60;/div&#62;
+                        <pre class='code code-html'><label>HTML</label><code><!-- aria-haspopup="menu|true" -->
+&#60;button type="button" id="menu-button" aria-haspopup="menu" aria-controls="menu-list" aria-expanded="false"&#62;Menu&#60;/button&#62;
+&#60;ul id="menu-list" role="menu" aria-labelledby="menu-button" hidden&#62;
+    &#60;li&#62;
+        &#60;a href="/completed"&#62;완결&#60;/a&#62;
+    &#60;/li&#62;
+    &#60;li&#62;
+        &#60;a href="/printed"&#62;단행본&#60;/a&#62;
+    &#60;/li&#62;
+&#60;/ul&#62;
+
+<!-- aria-haspopup="dialog"-->
+&#60;a href="#login-dialog" aria-haspopup="dialog"&#62;Login&#60;/a&#62;
+&#60;section id="login-dialog" role="dialog" aria-labelledby="login-heading" aria-modal="true" hidden&#62;
+    &#60;h2 id="login-heading"&#62;로그인&#60;/h2&#62;
+    &#60;form&#62;
+        &#60;label for="id-input"&#62;아이디&#60;label&#62;
+        &#60;input id="id-input" type="text"&#62;
+        &#60;label for="pwd-input"&#62;비밀번호&#60;label&#62;
+        &#60;input id="pwd-input" type="password"&#62;
+        &#60;button type="submit"&#62;로그인&#60;/button&#62;
+    &#60;/form&#62;
+&#60;/section&#62;
 </code></pre>
+                        <ul>
+                            <li>연결한 팝업 role이 간접적인 경우에도 aria-haspopup 속성을 연결할 수 있다. 예를 들어 연결된 팝업이 <dialog> 요소라면 암시적으로 role="dialog" 속성을 지닌 것이므로 aria-haspopup="dailog" 속성을 사용할 수 있다. <br>대중적인 브라우저가 <dialog> 요소를 충분히 지원하면 role="dialog" 속성 대신 <dialog> 요소를 사용합니다.</li>
+                        </ul>
                         <table class="table table-left">
                             <caption>브라우저 지원</caption>
                             <tbody>

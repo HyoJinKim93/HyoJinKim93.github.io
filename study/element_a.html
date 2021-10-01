@@ -389,7 +389,17 @@
                             </li>
                         </ul>
                         
-                        <pre class='code code-html'><label>HTML</label><code>&#60;nav&#62;
+                        <pre class='code code-html'><label>HTML</label><code><!-- O: aria-current="page" 현재 페이지 강조 링크 -->
+&#60;nav&#62;
+    &#60;h2&#62;&#60;/h2&#62;
+    &#60;ol&#62;
+        &#60;li&#62;
+            &#60;a href="/home" aria-current="page"&#62;정보&#60;/a&#62;
+            &#60;a href="/madang"&#62;자료마당&#60;/a&#62;
+        &#60;/li&#62;
+    &#60;/ol&#62;
+&#60;/nav&#62;
+&#60;nav&#62;
     &#60;h2&#62;&#60;/h2&#62;
     &#60;ol&#62;
         &#60;li&#62;
@@ -398,9 +408,31 @@
         &#60;/li&#62;
     &#60;/ol&#62;
 &#60;/nav&#62;
+
+<!-- O: aria-current="step" 현재 단계 강조 링크 -->
+&#60;nav&#62;
+    &#60;h2&#62;&#60;/h2&#62;
+    &#60;ol&#62;
+        &#60;li&#62;
+            &#60;a href="/info" aria-current="step"&#62;정보&#60;/a&#62;
+            &#60;a href="/terms"&#62;약관&#60;/a&#62;
+        &#60;/li&#62;
+    &#60;/ol&#62;
+&#60;/nav&#62;
+
+<!-- O: aria-current="location" 현재 위치 강조 이미지 -->
+&#60;img src="payment-success.png" alt="결제 성공" aria-current="location"&#60;/a&#62;
+&#60;img src="payment-info.png" alt="결제 내역 안내"&#60;/a&#62;
+
+<!-- O: aria-current="date" 현재 날짜 강조 -->
+&#60;p aria-curent="date"&#62;10/01(금)&#60;/p&#62;
+
+<!-- O: aria-current="time" 현재 시간 강조 -->
+&#60;p aria-curent="time"&#62;18:00 ~ 20:00&#60;/p&#62;
+
 </code></pre>
                         <ul>
-                            <li>aria-current 속성은 aria-selected 속성과 다른 의미로 사용하기 때문에 tablist 목록 안에서 aria-selected 속성을 대체하는 용도로 사용하면 안 된다. 그러나 aria-current 속성과 aria-selected 속성을 함께 선언할 수도 있다. 
+                            <li>aria-current 속성은 aria-selected 속성과 다른 의미로 사용하기 때문에 aria-selected 속성을 대체하는 용도로 사용하면 안 된다. 그러나 aria-current 속성과 aria-selected 속성을 함께 선언할 수도 있다. 
                             <br>예를 들면 편집 가능한 트리 형식의 목록에서 현재 페이지 항목과 편집을 위해 선택한 항목이 일치하는 경우 함께 선언할 수 있다.</li>
                         </ul>
                         <table class="table table-left">
@@ -437,6 +469,117 @@
                             </tbody>
                         </table> 
                         <p>참조 : <a href="https://github.com/lezhin/accessibility/blob/master/aria/README.md#aria-current">https://github.com/lezhin/accessibility/blob/master/aria/README.md#aria-current</a></p>
+                        
+                        
+                        <h3>aria-selected</h3>
+                        <ul>
+                            <li>단일 또는 다중 요소 (role="tab|gridcell|option|row")에 한하여 선택 상태를 명시하는 용도로 쓰인다.</li>                        
+                            <li>키보드 초점을 받을 수 있는 요소에 적용해야 한다.</li>
+                            <li>
+                                <ul class="sub-li">
+                                    <li>undefined(default) : 속성 또는 값을 선언하지 않은 경우 초기값. 선택할 수 없음.</li>
+                                    <li>true : 선택 가능한 요소를 선택했음.</li>
+                                    <li>false : 선택 가능한 요소를 선택하지 않았음.</li>
+                                </ul>
+                            </li>
+                            <li>선택 요소에만 aria-selected="true" 속성을 적용하면 aria-selected 속성을 적용하지 않은 요소는 aria-selected="undefined" 상태(선택할 수 없음)가 된다. 따라서 선택하지 않은 요소에는 명시적으로 aria-selected="false" 속성과 값을 적용한다.</li>
+                        </ul>
+                        <pre class='code code-html'><label>HTML</label><code><!-- O: role="tab" 요소에 선택 상태를 명시 -->
+&#60;div role="tablist"&#62;
+    &#60;a id="mon-anchor" href="#mon" role="tab" aria-selected="true"&#62;&#60;월&#62;
+    &#60;a id="tue-anchor" href="#tue" role="tab" aria-selected="false"&#62;&#60;화&#62;
+&#60;/div&#62;
+</code></pre>
+                        <table class="table table-left">
+                            <caption>브라우저 지원</caption>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="img/chrome.gif" alt="chrome icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/edge.png" alt="edge icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/ie.png" alt="ie icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/firefox.png" alt="firefox icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/safari.gif" alt="safari icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/opera.gif" alt="opera icon">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>지원하지 않음</td>
+                                    <td>지원하지 않음</td>
+                                    <td>지원하지 않음</td>
+                                    <td>지원하지 않음</td>
+                                    <td>지원하지 않음</td>
+                                    <td>지원하지 않음</td>
+                                </tr>
+                            </tbody>
+                        </table> 
+                        <p>참조 : <a href="https://github.com/lezhin/accessibility/blob/master/aria/README.md#aria-selected">https://github.com/lezhin/accessibility/blob/master/aria/README.md#aria-selected</a></p>
+                        
+                        <h3>aria-haspopup</h3>
+                        <ul>
+                            <li>요소에 연결되어 있는 팝업 정보를 제공한다.</li>
+                            <li>menu|listbox|tree|grid|dialog으로 제한되어 있기 때문에 의미가 정확하게 일치하는 경우에만 사용해야 한다.
+                                <ul class="sub-li">
+                                    <li>true : menu와 동일</li>
+                                    <li>menu : menu(role) 팝업이 연결됨. menu(role)는 링크 목록.</li>
+                                    <li>dialog : dialog(role) 팝업이 연결됨. dialog(role)는 상호작용 요소(버튼 또는 콘트롤)가 포함된 현재 문서의 하위창.</li>
+                                    <li>listbox: listbox(role) 팝업이 연결됨. listbox(role)는 선택 가능한 option(role)을 포함한 콤보박스.</li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <pre class='code code-html'><label>HTML</label><code><!-- O: aria-haspopup="menu|true" -->
+&#60;div role="tablist"&#62;
+    &#60;a id="mon-anchor" href="#mon" role="tab" aria-selected="true"&#62;&#60;월&#62;
+    &#60;a id="tue-anchor" href="#tue" role="tab" aria-selected="false"&#62;&#60;화&#62;
+&#60;/div&#62;
+</code></pre>
+                        <table class="table table-left">
+                            <caption>브라우저 지원</caption>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="img/chrome.gif" alt="chrome icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/edge.png" alt="edge icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/ie.png" alt="ie icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/firefox.png" alt="firefox icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/safari.gif" alt="safari icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/opera.gif" alt="opera icon">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>지원하지 않음</td>
+                                    <td>지원하지 않음</td>
+                                    <td>지원하지 않음</td>
+                                    <td>지원하지 않음</td>
+                                    <td>지원하지 않음</td>
+                                    <td>지원하지 않음</td>
+                                </tr>
+                            </tbody>
+                        </table> 
+                        <p>참조 : <a href="https://github.com/lezhin/accessibility/blob/master/aria/README.md#aria-selected">https://github.com/lezhin/accessibility/blob/master/aria/README.md#aria-selected</a></p>
+                        
                         <h3>&#60;audio&#62;</h3>
                         <ul>
                             <li>음악이나 오디오 스트림과 같은 사운드를 정의할 때 사용</li>

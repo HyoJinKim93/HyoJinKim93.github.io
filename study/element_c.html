@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <title>My Portfolio</title>
     <meta charset="UTF-8">
@@ -8,8 +9,10 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link href='css/portfolio.css' type='text/css' rel='stylesheet'>
     <link href='css/transition.css' type='text/css' rel='stylesheet'>
-    <link href='https://cdn.rawgit.com/openhiun/hangul/14c0f6faa2941116bb53001d6a7dcd5e82300c3f/nanumbarungothic.css' rel='stylesheet' type='text/css'>
+    <link href='https://cdn.rawgit.com/openhiun/hangul/14c0f6faa2941116bb53001d6a7dcd5e82300c3f/nanumbarungothic.css'
+        rel='stylesheet' type='text/css'>
 </head>
+
 <body>
     <div id='wrap' class="sub sub-study">
         <ul class="skip">
@@ -21,16 +24,17 @@
             <div id="stars"></div>
             <div id="stars2"></div>
             <div id="stars3"></div>
-            
-        	<section id="study" class="section web">
-        		<div class="study-wrap">
+
+            <section id="study" class="section web">
+                <div class="study-wrap">
                     <h1>Element</h1>
-        		    <div class="study">
+                    <div class="study">
                         <h3>&#60;canvas&#62;</h3>
                         <ul>
                             <li>Canvas API나 WebGL API를 사용하여 그래픽이나 애니메이션을 렌더링
                                 <ul class="sub-li">
-                                    <li>Canvas API : Javascript나 canvas 태그를 이용해 그래픽을 그리기 위한 수단이다. 애니메이션, 게임 그래픽, 데이터 시각화, 사진 조작 및 실시간 비디오 처리를 위해 사용</li>
+                                    <li>Canvas API : Javascript나 canvas 태그를 이용해 그래픽을 그리기 위한 수단이다. 애니메이션, 게임 그래픽, 데이터
+                                        시각화, 사진 조작 및 실시간 비디오 처리를 위해 사용</li>
                                     <li>WebGL API : 2D 및 3D 그래픽을 그린다.</li>
                                 </ul>
                             </li>
@@ -38,32 +42,127 @@
                                 <ul class="sub-list">
                                     <li>document.getElementById : id 속성을 가진 요소를 찾는다.</li>
                                     <li>HTMLCanvasElement.getContext() : 엘리먼트의 컨텍스트(렌더링 될 그리기의 대상)을 얻는다.</li>
-                                    <li>CanvasRenderingContext2D : 인터페이스를 사용해 수행한다. 드로잉면에 대한 2 차원 렌더링 컨텍스트 제공. 도형, 텍스트, 이미지 및 기타 개체를 그리는 데 사용됩니다.</li>
+                                    <li>CanvasRenderingContext2D : 인터페이스를 사용해 수행한다. 드로잉면에 대한 2 차원 렌더링 컨텍스트 제공. 도형, 텍스트,
+                                        이미지 및 기타 개체를 그리는 데 사용됩니다.</li>
                                     <li>fillStyle : 캔버스에 그려져 있는 도형을 스타일로 채운다.</li>
+                                    <li>createLinearGradient : 시작점과 끝점의 좌표만 지정한다. 시작점에서 끝점으로 색상이 점점 변하는데 두 점의 위치에 따라 무늬의
+                                        방향이 결정된다. 선형 그라데이션 지정(시작점 x1, 시작점 y1, 끝점 x2, 끝점 y2)</li>
+                                    <li>createRadialGradient : 원형 그라데이션 지정(x1, y1, 첫번째 원의 반지름 r1, x2, y2, 두번째 원의 반지름 r2)
+                                    </li>
+                                    <li>addColorStop(offset, color) : offset은 0~1 사이의 실수값으로 색상의 위치를 지정한다. 0은 시작점, 1은 끝점,
+                                        0.5은 중간점이다.</li>
                                 </ul>
                             </li>
                         </ul>
                         <pre class='code code-html'><label>HTML</label><code>&#60;canvas id="canvasRect" width="200" height="100" style="border:1px solid #000000;"&#62;&#60;/canvas&#62;
+    &#60;canvas id="canvasCircle" width="200" height="100" style="border:1px solid #000000;"&#60;/canvas&#62;
+    &#60;canvas id="canvasStroke" width="200" height="100" style="border:1px solid #000000;"&#60;/canvas&#62;
+    &#60;canvas id="canvasFillText" width="200" height="100" style="border:1px solid #000000;"&#60;/canvas&#62;
+    &#60;canvas id="canvasStrokeText" width="200" height="100" style="border:1px solid #000000;"&#60;/canvas&#62;
+    &#60;canvas id="canvasLineGradient" width="200" height="100" style="border:1px solid #000000;"&#60;/canvas&#62;
+    &#60;canvas id="canvasCircleGradient" width="200" height="100" style="border:1px solid #000000;"&#60;/canvas&#62;
+    &#60;script&#62;
+        const canvas = document.getElementById('canvasRect');
+        const canvas2 = document.getElementById('canvasCircle');
+        const canvas3 = document.getElementById('canvasStroke');
+        const canvas4 = document.getElementById('canvasFillText');
+        const canvas5 = document.getElementById('canvasStrokeText');
+        const canvas6 = document.getElementById('canvasLineGradient');
+        const canvas7 = document.getElementById('canvasCircleGradient');
+        const ctx = canvas.getContext('2d');
+        const ctx2 = canvas2.getContext('2d');
+        const ctx3 = canvas3.getContext('2d');
+        const ctx4 = canvas4.getContext('2d');
+        const ctx5 = canvas5.getContext('2d');
+        const ctx6 = canvas6.getContext('2d');
+        const ctx7 = canvas7.getContext('2d');
 
-<!-- 사각형 그리기 -->
-&#60;script&#62; 
-    const canvas = document.getElementById('canvasRect');
-    const ctx = canvas.getContext('2d');
+        <!-- 사각형 -->
+        ctx.fillStyle = 'green';
+        ctx.fillRect(10, 10, 150, 100); //x, y, width, height
 
-    ctx.fillStyle = 'green';
-    ctx.fillRect(10, 10, 150, 100);
-&#60;/script&#62; 
+        <!-- 원형 -->
+        ctx2.beginPath(); //새로운 선을 그리겠다는 선언
+        ctx2.arc(95, 50, 50, 0, 2 * Math.PI); //(x, y, 반지름, 시작 각도, 마지막 각도 * 원주율)
+        ctx2.stroke();
 
-<!-- 원형 그리기 -->
-#60;canvas id="canvasCircle" width="200" height="100" style="border:1px solid #000000;"&#62;&#60;/canvas&#62;
-&#60;script&#62; 
-    const canvas = document.getElementById('canvasCircle');
-    const ctx = canvas.getContext('2d');
+        <!-- 선형 -->
+        ctx3.moveTo(0, 0); //시작 좌표로 시작점을 나타냄
+        ctx3.lineTo(200, 100); //끝나는 좌표
+        ctx3.stroke();
 
-    ctx.fillStyle = 'green';
-    ctx.fillRect(10, 10, 150, 100);
-&#60;/script&#62; </code></pre>
-                        <p>HTMLCanvasElement : canvas 요소의 레이아웃을 조작하는 여러 프로퍼티와 메서드럴 제공한다.</p>
+        ctx4.font = "30px Arial" //폰트 정의 = "사이즈, 패밀리"
+        ctx4.fillText("Hello", 10, 50);
+
+        ctx5.font = "30px Arial"
+        ctx5.strokeText("Hello", 10, 50); //("문자", x, y)
+
+        const grad = ctx6.createLinearGradient(0, 0, 200, 0);
+        grad.addColorStop(0, "red");
+        grad.addColorStop(1, "white");
+        ctx6.fillStyle = grad;
+        ctx6.fillRect(10, 10, 150, 80);
+    &#60;/script&#62;
+</code></pre>
+                        <p>HTMLCanvasElement : canvas 요소의 레이아웃을 조작하는 여러 프로퍼티와 메서드를 제공한다.</p>
+                        <canvas id="canvasRect" width="200" height="100" style="border:1px solid #000000;"></canvas>
+                        <canvas id="canvasCircle" width="200" height="100" style="border:1px solid #000000;"></canvas>
+                        <canvas id="canvasStroke" width="200" height="100" style="border:1px solid #000000;"></canvas>
+                        <canvas id="canvasFillText" width="200" height="100" style="border:1px solid #000000;"></canvas>
+                        <canvas id="canvasStrokeText" width="200" height="100"
+                            style="border:1px solid #000000;"></canvas>
+                        <canvas id="canvasLineGradient" width="200" height="100"
+                            style="border:1px solid #000000;"></canvas>
+                        <canvas id="canvasCircleGradient" width="200" height="100"
+                            style="border:1px solid #000000;"></canvas>
+                        <script>
+                            const canvas = document.getElementById('canvasRect');
+                            const canvas2 = document.getElementById('canvasCircle');
+                            const canvas3 = document.getElementById('canvasStroke');
+                            const canvas4 = document.getElementById('canvasFillText');
+                            const canvas5 = document.getElementById('canvasStrokeText');
+                            const canvas6 = document.getElementById('canvasLineGradient');
+                            const canvas7 = document.getElementById('canvasCircleGradient');
+                            const ctx = canvas.getContext('2d');
+                            const ctx2 = canvas2.getContext('2d');
+                            const ctx3 = canvas3.getContext('2d');
+                            const ctx4 = canvas4.getContext('2d');
+                            const ctx5 = canvas5.getContext('2d');
+                            const ctx6 = canvas6.getContext('2d');
+                            const ctx7 = canvas7.getContext('2d');
+
+                            ctx.fillStyle = '#fffca1';
+                            ctx.fillRect(10, 10, 150, 100);
+
+                            ctx2.beginPath(); //path 시작
+                            ctx2.arc(95, 50, 50, 0, 2 * Math.PI);
+                            ctx2.stroke();
+
+                            ctx3.moveTo(0, 0);
+                            ctx3.lineTo(200, 100);
+                            ctx3.stroke();
+
+                            ctx4.font = "30px Arial" //폰트 정의 = "사이즈, 패밀리"
+                            ctx4.fillText("Hello", 10, 50);
+
+                            ctx5.font = "30px Arial"
+                            ctx5.strokeText("Hello", 10, 50); //x, y
+
+                            const grad = ctx6.createLinearGradient(0, 0, 200, 0);
+                            grad.addColorStop(0, "#fffca1");
+                            grad.addColorStop(1, "white");
+                            ctx6.fillStyle = grad;
+                            ctx6.fillRect(10, 10, 150, 80);
+
+                            const grd = ctx7.canvasCircleGradient();
+                            grd.addColorStop(0, "#fffca1");
+                            ctx7.fillStyle = grd;
+                            ctx7.fillRect(10, 10, 150, 80);
+                            ctx7.fillCircle();
+                        </script>
+                        <div class="imgArea">
+                            <img src="img/gradient.png" alt="그라디언트 이미지">
+                        </div>
                         <table class="table">
                             <caption>필수 속성</caption>
                             <thead>
@@ -75,11 +174,13 @@
                             <tbody>
                                 <tr>
                                     <td>HTMLCanvasElement.width (en-US)</td>
-                                    <td>canvas 요소에서 HTML 속성인 width를 반영하며, css의 pixel 값으로 해석된다. 속성값이 없거나 음수일 경우, 기본값인 300이 주어진다.</td>
+                                    <td>canvas 요소에서 HTML 속성인 width를 반영하며, css의 pixel 값으로 해석된다. 속성값이 없거나 음수일 경우, 기본값인
+                                        300이 주어진다.</td>
                                 </tr>
                                 <tr>
                                     <td>HTMLCanvasElement.height (en-US)</td>
-                                    <td>canvas 요소에서 HTML 속성인 height를 반영하며, css의 pixel 값으로 해석된다. 속성값이 없거나 음수일 경우, 기본값인 150이 주어진다.</td>
+                                    <td>canvas 요소에서 HTML 속성인 height를 반영하며, css의 pixel 값으로 해석된다. 속성값이 없거나 음수일 경우, 기본값인
+                                        150이 주어진다.</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -116,7 +217,13 @@
                                 </tr>
                             </tbody>
                         </table>
-                        
+                        <p>참조 :
+                            <a href="https://www.w3schools.com/html/html5_canvas.asp">w3schools</a>
+                            <a href="http://tcpschool.com/html-tags/canvas">http://tcpschool.com/html-tags/canvas</a>
+                            <a href="https://developer.mozilla.org/ko/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes">https://developer.mozilla.org/ko/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes</a>
+                            <a href="http://www.soen.kr/html5/html3/2-1-2.htm">http://www.soen.kr/html5/html3/2-1-2.htm</a>
+                        </p>
+
                         <h3>&#60;caption&#62;</h3>
                         <ul>
                             <li>테이블, 사진, 삽화 등에 설명 혹은 제목을 정의할 때 사용한다.</li>
@@ -146,9 +253,9 @@
                                     <td>left
 
                                         right
-                                        
+
                                         top
-                                        
+
                                         bottom
                                     </td>
                                     <td>캡션(caption)의 정렬 방법(alignment)를 명시함.
@@ -192,7 +299,7 @@
                         </table>
 
                         <!-- center -->
-                        
+
                         <h3>&#60;center&#62;</h3>
                         <ul>
                             <li>가운데로 정렬되는 텍스트를 정의할 때 사용된다.</li>
@@ -238,7 +345,7 @@
                         </table>
 
                         <!-- cite -->
-                        
+
                         <h3>&#60;cite&#62;</h3>
                         <ul>
                             <li>HTML4에서는 인용구를 명시했었지만, 책, 음악, 영화, 예술 작품 등 창작물이나 저작물의 제목을 명시할 때 사용한다.</li>
@@ -280,15 +387,18 @@
                         </table>
 
                         <!-- code -->
-                        
+
                         <h3>&#60;code&#62;</h3>
                         <ul>
-                            <li>컴퓨터 코드의 일부분을 나타낼 때 사용한다. 컴퓨터 코드의 일부분이란 XML 요소의 이름이나 파일 이름, 컴퓨터 프로그램 코드, 또는 컴퓨터가 인식할 수 있는 어떤 문자열이라도 가능하다.</li>
+                            <li>컴퓨터 코드의 일부분을 나타낼 때 사용한다. 컴퓨터 코드의 일부분이란 XML 요소의 이름이나 파일 이름, 컴퓨터 프로그램 코드, 또는 컴퓨터가 인식할 수 있는
+                                어떤 문자열이라도 가능하다.</li>
                             <li>HTML5에서도 사용할 수 있다.</li>
                             <li>css를 사용해서 강조나 스타일을 줄 수 있다.</li>
-                            <li>table, td 태그 안에 code 태그 안에 col 태그를 넣으면 코드가 보이지 않는다. col은 td 안에 종속되는 게 아닌데 넣어서 안 보이는 것 같다.</li>
+                            <li>table, td 태그 안에 code 태그 안에 col 태그를 넣으면 코드가 보이지 않는다. col은 td 안에 종속되는 게 아닌데 넣어서 안 보이는 것
+                                같다.</li>
                         </ul>
-                        <pre class='code code-html'><label>HTML</label><code>&#60;p&#62;HTML 코드들 중&#60;code&#62;button&#60;/code&#62;은 클릭 이벤트가 가능하다.&#60;/p&#62;</code></pre>
+                        <pre
+                            class='code code-html'><label>HTML</label><code>&#60;p&#62;HTML 코드들 중&#60;code&#62;button&#60;/code&#62;은 클릭 이벤트가 가능하다.&#60;/p&#62;</code></pre>
                         <table class="table table-left">
                             <caption>브라우저 지원</caption>
                             <tbody>
@@ -324,14 +434,16 @@
                         </table>
 
                         <!-- col -->
-                        
+
                         <h3>&#60;colgroup&#62; & &#60;col&#62;</h3>
                         <ul>
                             <li>colgroup
                                 <ul class="sub-li">
                                     <li>테이블에서 서식 지정을 위해 하나 이상의 열을 그룹으로 묶을 때 사용한다.</li>
-                                    <li>행(row)이나 셀(cell)의 스타일을 반복하지 않고, 열(column) 전체에 다른 스타일을 적용하고 싶을 때 유용하게 사용할 수 있다.</li>
-                                    <li>테이블 요소의 자식 요소로, 모든 caption 요소보다 뒤에 위치해야 하며 모든 thead, tbody, tfoot, tr 요소보다는 앞에 위치해야 한다.</li>
+                                    <li>행(row)이나 셀(cell)의 스타일을 반복하지 않고, 열(column) 전체에 다른 스타일을 적용하고 싶을 때 유용하게 사용할 수 있다.
+                                    </li>
+                                    <li>테이블 요소의 자식 요소로, 모든 caption 요소보다 뒤에 위치해야 하며 모든 thead, tbody, tfoot, tr 요소보다는 앞에
+                                        위치해야 한다.</li>
                                 </ul>
                             </li>
                             <li>col
@@ -403,15 +515,15 @@
                             <tbody>
                                 <tr>
                                     <td>align</td>
-                                    <td>	
+                                    <td>
                                         left
-                                        
+
                                         right
-                                        
+
                                         center
-                                        
+
                                         justify
-                                        
+
                                         char
                                     </td>
                                     <td>콘텐츠의 정렬 방식.
@@ -430,7 +542,7 @@
                                 <tr>
                                     <td>charoff</td>
                                     <td>숫자 </td>
-                                    <td>	
+                                    <td>
                                         char 속성에서 명시된 문자를 기준으로 정렬될 콘텐츠의 문자 수를 명시함.
 
                                         HTML5에서는 더 이상 지원하지 않음.
@@ -449,9 +561,9 @@
                                     <td>top
 
                                         middle
-                                        
+
                                         bottom
-                                        
+
                                         baseline
                                     </td>
                                     <td>관련된 콘텐츠의 수직 정렬 방법을 명시함.
@@ -464,7 +576,7 @@
                                     <td>%
 
                                         픽셀
-                                        
+
                                         상대 길이
                                     </td>
                                     <td>요소의 너비를 명시함.
@@ -523,4 +635,5 @@
         </div>
     </div>
 </body>
+
 </html>

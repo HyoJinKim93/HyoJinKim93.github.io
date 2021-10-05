@@ -90,6 +90,7 @@ a.mobileBt{z-index:2;display:block;position:absolute;top:0;left:0;width:100%;hei
 .li-style2 { margin-left: 26px; }
 .li-margin { margin-bottom: 10px; }
 .size { font-size: 18px; font-weight: 800; margin-bottom: 10px; }
+#study.web .testArea{margin-top:20px}
 
 h3{color:#333;margin:20px 0;font-size:16px;text-align:left;}
 caption{text-align: left;}

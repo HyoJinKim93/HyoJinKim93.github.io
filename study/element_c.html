@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>My Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href='css/portfolio.css' type='text/css' rel='stylesheet'>
+    <link href='css/transition.css' type='text/css' rel='stylesheet'>
+    <link href='https://cdn.rawgit.com/openhiun/hangul/14c0f6faa2941116bb53001d6a7dcd5e82300c3f/nanumbarungothic.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div id='wrap' class="sub sub-study">
+        <ul class="skip">
+            <li><a href="#header">메뉴 바로가기</a></li>
+            <li><a href="#main">메인 바로가기</a></li>
+        </ul>
+        </header>
+        <div id="main">
+            <div id="stars"></div>
+            <div id="stars2"></div>
+            <div id="stars3"></div>
+            
+        	<section id="study" class="section web">
+        		<div class="study-wrap">
+                    <h1>Element</h1>
+        		    <div class="study">
+                        <h3>&#60;canvas&#62;</h3>
+                        <ul>
+                            <li>Canvas API나 WebGL API를 사용하여 그래픽이나 애니메이션을 렌더링
+                                <ul class="sub-li">
+                                    <li>Canvas API : Javascript나 canvas 태그를 이용해 그래픽을 그리기 위한 수단이다. 애니메이션, 게임 그래픽, 데이터 시각화, 사진 조작 및 실시간 비디오 처리를 위해 사용</li>
+                                    <li>WebGL API : 2D 및 3D 그래픽을 그린다.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="sub-list">
+                                    <li>document.getElementById : id 속성을 가진 요소를 찾는다.</li>
+                                    <li>HTMLCanvasElement.getContext() : 엘리먼트의 컨텍스트(렌더링 될 그리기의 대상)을 얻는다.</li>
+                                    <li>CanvasRenderingContext2D : 인터페이스를 사용해 수행한다. 드로잉면에 대한 2 차원 렌더링 컨텍스트 제공. 도형, 텍스트, 이미지 및 기타 개체를 그리는 데 사용됩니다.</li>
+                                    <li>fillStyle : 캔버스에 그려져 있는 도형을 스타일로 채운다.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <pre class='code code-html'><label>HTML</label><code>&#60;canvas id="canvasRect" width="200" height="100" style="border:1px solid #000000;"&#62;&#60;/canvas&#62;
+
+<!-- 사각형 그리기 -->
+&#60;script&#62; 
+    const canvas = document.getElementById('canvasRect');
+    const ctx = canvas.getContext('2d');
+
+    ctx.fillStyle = 'green';
+    ctx.fillRect(10, 10, 150, 100);
+&#60;/script&#62; 
+
+<!-- 원형 그리기 -->
+#60;canvas id="canvasCircle" width="200" height="100" style="border:1px solid #000000;"&#62;&#60;/canvas&#62;
+&#60;script&#62; 
+    const canvas = document.getElementById('canvasCircle');
+    const ctx = canvas.getContext('2d');
+
+    ctx.fillStyle = 'green';
+    ctx.fillRect(10, 10, 150, 100);
+&#60;/script&#62; </code></pre>
+                        <p>HTMLCanvasElement : canvas 요소의 레이아웃을 조작하는 여러 프로퍼티와 메서드럴 제공한다.</p>
+                        <table class="table">
+                            <caption>필수 속성</caption>
+                            <thead>
+                                <tr>
+                                    <th>속성명</th>
+                                    <th>설명</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>HTMLCanvasElement.width (en-US)</td>
+                                    <td>canvas 요소에서 HTML 속성인 width를 반영하며, css의 pixel 값으로 해석된다. 속성값이 없거나 음수일 경우, 기본값인 300이 주어진다.</td>
+                                </tr>
+                                <tr>
+                                    <td>HTMLCanvasElement.height (en-US)</td>
+                                    <td>canvas 요소에서 HTML 속성인 height를 반영하며, css의 pixel 값으로 해석된다. 속성값이 없거나 음수일 경우, 기본값인 150이 주어진다.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="table table-left">
+                            <caption>브라우저 지원</caption>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="img/chrome.gif" alt="chrome icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/edge.png" alt="edge icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/ie.png" alt="ie icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/firefox.png" alt="firefox icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/safari.gif" alt="safari icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/opera.gif" alt="opera icon">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>1.0</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <h3>&#60;caption&#62;</h3>
+                        <ul>
+                            <li>테이블, 사진, 삽화 등에 설명 혹은 제목을 정의할 때 사용한다.</li>
+                            <li>table 요소의 caption은 하나만 사용할 수 있으며, table 태그 바로 다음에 사용해야 한다.</li>
+                            <li>css을 사용해서 위치나 정렬 방법을 변경할 수 있다.</li>
+                        </ul>
+                        <pre class='code code-html'><label>HTML</label><code>&#60;table&#62; 
+&#60;caption&#62;색상의 종류에 대한 테이블 입니다.&#60;/caption&#62; 
+    &#60;tr&#62;
+        &#60;th scope="col"&#62;레드&#60;/th&#62;
+        &#60;th scope="col"&#62;화이트&#60;/th&#62;
+        &#60;th scope="col"&#62;블랙&#60;/th&#62;
+    &#60;/tr&#62; 
+&#60;/table&#62; </code></pre>
+                        <table class="table">
+                            <caption>필수 속성</caption>
+                            <thead>
+                                <tr>
+                                    <th>속성명</th>
+                                    <th>속성값</th>
+                                    <th>설명</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>align</td>
+                                    <td>left
+
+                                        right
+                                        
+                                        top
+                                        
+                                        bottom
+                                    </td>
+                                    <td>캡션(caption)의 정렬 방법(alignment)를 명시함.
+
+                                        HTML5에서는 더 이상 지원하지 않음.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="table table-left">
+                            <caption>브라우저 지원</caption>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="img/chrome.gif" alt="chrome icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/edge.png" alt="edge icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/ie.png" alt="ie icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/firefox.png" alt="firefox icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/safari.gif" alt="safari icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/opera.gif" alt="opera icon">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!-- center -->
+                        
+                        <h3>&#60;center&#62;</h3>
+                        <ul>
+                            <li>가운데로 정렬되는 텍스트를 정의할 때 사용된다.</li>
+                            <li>HTML5에선 지원하지 않는다.</li>
+                        </ul>
+                        <pre class='code code-html'><label>HTML</label><code>&#60;p&#62;이 문장은 왼쪽 정렬이 됩니다.&#60;/p&#62;
+&#60;center&#62;이 문장은 가운데 정렬이 됩니다.&#60;/center&#62; </code></pre>
+                        <p class="imgArea border">
+                            <img src="img/center.png" alt="가운데 정렬 예시 이미지">
+                        </p>
+                        <table class="table table-left">
+                            <caption>브라우저 지원</caption>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="img/chrome.gif" alt="chrome icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/edge.png" alt="edge icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/ie.png" alt="ie icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/firefox.png" alt="firefox icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/safari.gif" alt="safari icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/opera.gif" alt="opera icon">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!-- cite -->
+                        
+                        <h3>&#60;cite&#62;</h3>
+                        <ul>
+                            <li>HTML4에서는 인용구를 명시했었지만, 책, 음악, 영화, 예술 작품 등 창작물이나 저작물의 제목을 명시할 때 사용한다.</li>
+                        </ul>
+                        <pre class='code code-html'><label>HTML</label><code>&#60;img&#62; src="img/pearl-girl.jpg" alt="진주 귀걸이를 한 소녀"&#60;/img&#62;
+&#60;p&#62;&#60;cite&#62;진주 귀걸이를 한 소녀&#60;/cite&#62;&#60;/p&#62; </code></pre>
+                        <table class="table table-left">
+                            <caption>브라우저 지원</caption>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="img/chrome.gif" alt="chrome icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/edge.png" alt="edge icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/ie.png" alt="ie icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/firefox.png" alt="firefox icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/safari.gif" alt="safari icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/opera.gif" alt="opera icon">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!-- code -->
+                        
+                        <h3>&#60;code&#62;</h3>
+                        <ul>
+                            <li>컴퓨터 코드의 일부분을 나타낼 때 사용한다. 컴퓨터 코드의 일부분이란 XML 요소의 이름이나 파일 이름, 컴퓨터 프로그램 코드, 또는 컴퓨터가 인식할 수 있는 어떤 문자열이라도 가능하다.</li>
+                            <li>HTML5에서도 사용할 수 있다.</li>
+                            <li>css를 사용해서 강조나 스타일을 줄 수 있다.</li>
+                            <li>table, td 태그 안에 code 태그 안에 col 태그를 넣으면 코드가 보이지 않는다. col은 td 안에 종속되는 게 아닌데 넣어서 안 보이는 것 같다.</li>
+                        </ul>
+                        <pre class='code code-html'><label>HTML</label><code>&#60;p&#62;HTML 코드들 중&#60;code&#62;button&#60;/code&#62;은 클릭 이벤트가 가능하다.&#60;/p&#62;</code></pre>
+                        <table class="table table-left">
+                            <caption>브라우저 지원</caption>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="img/chrome.gif" alt="chrome icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/edge.png" alt="edge icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/ie.png" alt="ie icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/firefox.png" alt="firefox icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/safari.gif" alt="safari icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/opera.gif" alt="opera icon">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!-- col -->
+                        
+                        <h3>&#60;colgroup&#62; & &#60;col&#62;</h3>
+                        <ul>
+                            <li>colgroup
+                                <ul class="sub-li">
+                                    <li>테이블에서 서식 지정을 위해 하나 이상의 열을 그룹으로 묶을 때 사용한다.</li>
+                                    <li>행(row)이나 셀(cell)의 스타일을 반복하지 않고, 열(column) 전체에 다른 스타일을 적용하고 싶을 때 유용하게 사용할 수 있다.</li>
+                                    <li>테이블 요소의 자식 요소로, 모든 caption 요소보다 뒤에 위치해야 하며 모든 thead, tbody, tfoot, tr 요소보다는 앞에 위치해야 한다.</li>
+                                </ul>
+                            </li>
+                            <li>col
+                                <ul class="sub-li">
+                                    <li>colgroup 요소에 속하는 각 열의 속성을 정의할 때 사용한다.</li>
+                                    <li>각 행(row)이나 셀(cell)의 스타일을 반복하지 않고, 열마다 다른 스타일을 적용하고 싶을 때 사용할 수 있다.</li>
+                                    <li>HTML에서는 태그를 닫지 않지만, XHTML에서는 다음과 같이 반드시 태그를 닫아야만 한다.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <strong>※ colgroup</strong>
+                        <pre class='code code-html'><label>HTML</label><code>&#60;table&#62;
+    &#60;caption&#62;학생정보 테이블&#60;/caption&#62;
+    &#60;colgroup span="2" style="background-color: #f0f8ff"&#62;
+        &#60;col&#62;
+        &#60;col&#62;
+    &#60;/colgroup&#62;
+    &#60;thead&#62;
+        &#60;tr&#62;
+            &#60;th scope="col"&#62;이름&#60;/th&#62;
+            &#60;th scope="col"&#62;생년월일&#60;/th&#62;
+            &#60;th scope="col"&#62;전화번호&#60;/th&#62;
+        &#60;/tr&#62;
+    &#60;/thead&#62;
+    &#60;tbody&#62;
+        &#60;tr&#62;
+            &#60;td&#62;홍길동&#60;/td&#62;
+            &#60;td&#62;1999.11.11&#60;/td&#62;
+            &#60;td&#62;010-1111-2222&#60;/td&#62;
+        &#60;/tr&#62;
+    &#60;/tbody&#62;
+&#60;/table&#62;</code></pre>
+                        <strong>※ col</strong>
+                        <pre class='code code-html'><label>HTML - col</label><code>&#60;table&#62;
+    &#60;caption&#62;학생정보 테이블&#60;/caption&#62;
+    &#60;colgroup&#62;
+        &#60;col span="2" style="background-color: #f0f8ff"&#62;
+        &#60;col&#62;
+    &#60;/colgroup&#62;
+    &#60;thead&#62;
+        &#60;tr&#62;
+            &#60;th scope="col"&#62;이름&#60;/th&#62;
+            &#60;th scope="col"&#62;생년월일&#60;/th&#62;
+            &#60;th scope="col"&#62;전화번호&#60;/th&#62;
+        &#60;/tr&#62;
+    &#60;/thead&#62;
+    &#60;tbody&#62;
+        &#60;tr&#62;
+            &#60;td&#62;홍길동&#60;/td&#62;
+            &#60;td&#62;1999.11.11&#60;/td&#62;
+            &#60;td&#62;010-1111-2222&#60;/td&#62;
+        &#60;/tr&#62;
+    &#60;/tbody&#62;
+&#60;/table&#62;</code></pre>
+                        <table class="table">
+                            <caption>필수 속성</caption>
+                            <colgroup>
+                                <col>
+                                <col>
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>속성명</th>
+                                    <th>속성값</th>
+                                    <th>설명</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>align</td>
+                                    <td>	
+                                        left
+                                        
+                                        right
+                                        
+                                        center
+                                        
+                                        justify
+                                        
+                                        char
+                                    </td>
+                                    <td>콘텐츠의 정렬 방식.
+
+                                        HTML5에서는 더 이상 지원하지 않음.
+                                        예) &#60;col align="left"&#62;</td>
+                                </tr>
+                                <tr>
+                                    <td>char</td>
+                                    <td>문자 </td>
+                                    <td>콘텐츠의 정렬에 사용되는 문자(character)를 명시함.
+
+                                        HTML5에서는 더 이상 지원하지 않음.
+                                        예) &#60;col align="char" char="."&#62;</td>
+                                </tr>
+                                <tr>
+                                    <td>charoff</td>
+                                    <td>숫자 </td>
+                                    <td>	
+                                        char 속성에서 명시된 문자를 기준으로 정렬될 콘텐츠의 문자 수를 명시함.
+
+                                        HTML5에서는 더 이상 지원하지 않음.
+                                        예) &#60;col align="char" char="." charoff="2"&#62;</td>
+                                </tr>
+                                <tr>
+                                    <td>span</td>
+                                    <td>숫자 </td>
+                                    <td>합쳐질 열(column)의 개수를 명시함.
+
+                                        HTML5에서는 더 이상 지원하지 않음.
+                                        예) &#60;col width="20%"&#62;</td>
+                                </tr>
+                                <tr>
+                                    <td>valign</td>
+                                    <td>top
+
+                                        middle
+                                        
+                                        bottom
+                                        
+                                        baseline
+                                    </td>
+                                    <td>관련된 콘텐츠의 수직 정렬 방법을 명시함.
+
+                                        HTML5에서는 더 이상 지원하지 않음.
+                                        예) &#60;col valign="top"&#62;</td>
+                                </tr>
+                                <tr>
+                                    <td>width</td>
+                                    <td>%
+
+                                        픽셀
+                                        
+                                        상대 길이
+                                    </td>
+                                    <td>요소의 너비를 명시함.
+
+                                        HTML5에서는 더 이상 지원하지 않음.<br>
+                                        때문에 인라인 스타일로 제어를 해야 한다.<br>
+                                        예) &#60;col style="width:20%"&#62;</code>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="imgArea">
+                            <p>colgroup에 인라인 스타일로 배경색을 넣으면 테이블 전체에 색상이 입혀진다.</p>
+                            <img src="img/colgroup.PNG" alt="">
+                        </div>
+                        <div class="imgArea">
+                            <p>col에 인라인 스타일로 배경색을 넣으면 해당 컬럼 전체에 색상이 입혀진다.</p>
+                            <img src="img/col.PNG" alt="">
+                        </div>
+                        <table class="table table-left">
+                            <caption>브라우저 지원</caption>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="img/chrome.gif" alt="chrome icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/edge.png" alt="edge icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/ie.png" alt="ie icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/firefox.png" alt="firefox icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/safari.gif" alt="safari icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/opera.gif" alt="opera icon">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

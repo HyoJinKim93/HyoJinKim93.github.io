@@ -121,9 +121,9 @@
                                 style="border:1px solid #000000;"></canvas>
                             <canvas id="canvasCircleGradient" width="200" height="100"
                                 style="border:1px solid #000000;"></canvas>
-                            <canvas id="canvasImg" width="500" height="80" style="border:1px solid #000000;"></canvas>
-                            <img src="img/heart-rabbit.gif" alt="" id="heart-rabbit">
-                            <button type="button" onclick="imgShow()">Try It</button>
+                            <canvas id="canvasImg" width="500" height="380" style="border:1px solid #000000;"></canvas>
+                            <img src="heart-rabbit.gif" alt="토끼" id="heartRabbit">
+                            <button type="button" onclick="canvasImg()">Try It</button>
                             <script>
                                 const canvas = document.getElementById('canvasRect');
                                 const canvas2 = document.getElementById('canvasCircle');
@@ -132,7 +132,6 @@
                                 const canvas5 = document.getElementById('canvasStrokeText');
                                 const canvas6 = document.getElementById('canvasLineGradient');
                                 const canvas7 = document.getElementById('canvasCircleGradient');
-                                const canvas8 = document.getElementById('canvasImg');
                                 const ctx = canvas.getContext('2d');
                                 const ctx2 = canvas2.getContext('2d');
                                 const ctx3 = canvas3.getContext('2d');
@@ -140,7 +139,6 @@
                                 const ctx5 = canvas5.getContext('2d');
                                 const ctx6 = canvas6.getContext('2d');
                                 const ctx7 = canvas7.getContext('2d');
-                                const ctx8 = canvas8.getContext('2d');
 
                                 ctx.fillStyle = '#fffca1';
                                 ctx.fillRect(10, 10, 150, 100);
@@ -171,18 +169,23 @@
                                 ctx7.fillStyle = grd;
                                 ctx7.fillRect(10, 10, 150, 80);
 
-                                const img = document.getElementById("heart-rabbit");
-                                ctx8.drawImage(img, 10, 10);
+                                window.onload = function () {
+                                    const canvas8 = document.getElementById("canvasImg");
+                                    const ctx8 = canvas8.getContext("2d");
+                                    const img = document.getElementById("heartRabbit");
+                                    ctx8.drawImage(img, 0, 0); //.drawImage로 이미지 주소를 통해 이미지를 호출할 때 발생하는 에러
+                                }
                             </script>
                         </div>
                         <div class="imgArea">
                             <img src="img/gradient.png" alt="그라디언트 이미지">
                         </div>
+                        <p>프로퍼티</p>
                         <table class="table">
-                            <caption>필수 속성</caption>
+                            <caption>프로퍼티</caption>
                             <thead>
                                 <tr>
-                                    <th>속성명</th>
+                                    <th>프로퍼티명</th>
                                     <th>설명</th>
                                 </tr>
                             </thead>
@@ -196,6 +199,90 @@
                                     <td>HTMLCanvasElement.height (en-US)</td>
                                     <td>canvas 요소에서 HTML 속성인 height를 반영하며, css의 pixel 값으로 해석된다. 속성값이 없거나 음수일 경우, 기본값인
                                         150이 주어진다.</td>
+                                </tr>
+                                <tr>
+                                    <td>HTMLCanvasElement.mozOpaque (en-US) 표준 X</td>
+                                    <td>HTML 속성인 moz-opaque(투명도가 중요한 요소인지를 알려준다. Mozila 기반 브라우저에서만 지원하므로, 표준
+                                        canvas.getContext('2d', { alpha: false })를 사용한다.)를 반영하는 객체. 반투명이 인자로 사용될지에 대한
+                                        여부를 알려준다. 반투명 요소가 없다면, canvas
+                                        성능이 최적화될 수 있다.</td>
+                                </tr>
+                                <tr>
+                                    <td>HTMLCanvasElement.mozPrintCallback 표준 X</td>
+                                    <td>페이지가 프린트 되는 경우 호출되는 함수. 만약 프린터가 사용되는 경우 canvas를 더욱 고해상도로 다시 그리게 할 수 있습니다. </td>
+                                </tr>
+                                <tr>
+                                    <td>CanvasPattern</td>
+                                    <td>CanvasRenderingContext2D.createPattern()방법으로 만든 이미지, 캔버스 또는 비디오를 기반으로 패턴을 설명한다.
+                                        fillStyle 또는 strokeStyle을 사용할 수 있다.
+                                        ie 지원 불가
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>CanvasPattern.setTransform()</td>
+                                    <td>패턴에 선형 변환을 적용 SVGMatrix(더이상 사용하지 않는다.) 하거나 DOMMatrix(회전과 번역을 포함하여 2D 및 3D 작업에
+                                        적합한 4 x 4로 나타낸다.) 나타낸다. 일부 구현에서는 아직 허용하지 않는다.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>OffscreenCanvas</td>
+                                    <td>화면 밖에서 렌더링 되는 인터페이스.</td>
+                                </tr>
+                                <tr>
+                                    <td>CanvasRenderingContext2D</td>
+                                    <td>canvas 도형, 텍스트, 이미지 등 개체를 그리는 데 사용된다.</td>
+                                </tr>
+                                <tr>
+                                    <td>ImageBitmap</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Path2D</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>메서드</p>
+                        <table class="table">
+                            <caption>메서드</caption>
+                            <thead>
+                                <tr>
+                                    <th>메서드명</th>
+                                    <th>설명</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>HTMLCanvasElement.captureStream()</td>
+                                    <td>실시간 비디오로 캡처할 수 있는 CanvasCaptureMediaStream (en-US)을 반환한다. ie 불가<br>
+                                        ex) MediaStream = canvas.captureStream(frameRate); //frameRate : 각 프레임의 캡처 속도를
+                                        나타내는 배정밀도 부동 소수점 값. 설정하지 않으면 캔버스가 변경될 때마다 새 프레임이 캡처된다.<br>
+                                        const stream = canvasElt.captureStream(25);
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>CanvasCaptureMediaStreamTrack</td>
+                                    <td>수동으로 프레임을 캡처하여 스트림으로 보내도록 한다.</td>
+                                </tr>
+                                <tr>
+                                    <td>HTMLCanvasElement.toDataURL() (en-US)</td>
+                                    <td>type 파라미터에서 지정하고 있는 포맷(기본: png) 의 이미지를 나타내는 data-URL을 반환, 반환된 이미지는 96dpi의 해상도를
+                                        갖는다.</td>
+                                </tr>
+                                <tr>
+                                    <td>HTMLCanvasElement.toBlob() (en-US)</td>
+                                    <td>캔버스가 포함하고 있는 이미지를 나타내는 Blob 객체를 생성. </td>
+                                </tr>
+                                <tr>
+                                    <td>HTMLCanvasElement.transferControlToOffscreen() (en-US)</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>HTMLCanvasElement.transferControlToOffscreen() (en-US)</td>
+                                    <td>캔버스에 오브젝트를 그리는 데엔 여러 path와 드로잉 커맨드가 쓰이는데, Path2D()를 써서 간단하게 만들 수 있다. <br>
+                                        ex) const rectangle = new Path2D();
+                                        rectangle.rect(10, 10, 45, 45);
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
@@ -239,6 +326,8 @@
                                 href="https://developer.mozilla.org/ko/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes">https://developer.mozilla.org/ko/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes</a>
                             <a
                                 href="http://www.soen.kr/html5/html3/2-1-2.htm">http://www.soen.kr/html5/html3/2-1-2.htm</a>
+                            <a
+                                href="https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=phlox__&logNo=221223871826">https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=phlox__&logNo=221223871826</a>
                         </p>
 
                         <h3>&#60;caption&#62;</h3>

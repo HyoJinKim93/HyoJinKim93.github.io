@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <title>My Portfolio</title>
     <meta charset="UTF-8">
@@ -8,143 +9,361 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link href='css/portfolio.css' type='text/css' rel='stylesheet'>
     <link href='css/transition.css' type='text/css' rel='stylesheet'>
-    <link href='https://cdn.rawgit.com/openhiun/hangul/14c0f6faa2941116bb53001d6a7dcd5e82300c3f/nanumbarungothic.css' rel='stylesheet' type='text/css'>
+    <link href='https://cdn.rawgit.com/openhiun/hangul/14c0f6faa2941116bb53001d6a7dcd5e82300c3f/nanumbarungothic.css'
+        rel='stylesheet' type='text/css'>
 </head>
+
 <body>
     <div id='wrap' class="sub sub-study">
         <ul class="skip">
             <li><a href="#header">메뉴 바로가기</a></li>
             <li><a href="#main">메인 바로가기</a></li>
         </ul>
-        
+        </header>
         <div id="main">
             <div id="stars"></div>
             <div id="stars2"></div>
             <div id="stars3"></div>
-        	<section id="study" class="section web">
-        		<div class="study-wrap">
+
+            <section id="study" class="section web">
+                <div class="study-wrap">
                     <h1>Element</h1>
-        		    <div class="study">
-                        <h3>&#60;abbr&#62;</h3>
+                    <div class="study">
+                        <h3>&#60;canvas&#62;</h3>
                         <ul>
-                            <li>HTML, CSS, WHO, WWW와 같은 약어를 정의한다.</li>
-                            <li>inline 속성</li>
+                            <li>Canvas API나 WebGL API를 사용하여 그래픽이나 애니메이션을 렌더링
+                                <ul class="sub-li">
+                                    <li>Canvas API : Javascript나 canvas 태그를 이용해 그래픽을 그리기 위한 수단이다. 애니메이션, 게임 그래픽, 데이터
+                                        시각화, 사진 조작 및 실시간 비디오 처리를 위해 사용</li>
+                                    <li>WebGL API : 2D 및 3D 그래픽을 그린다.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="sub-list">
+                                    <li>ctx : context를 의미</li>
+                                    <li>document.getElementById : id 속성을 가진 요소를 찾는다.</li>
+                                    <li>HTMLCanvasElement.getContext() : 엘리먼트의 컨텍스트(렌더링 될 그리기의 대상)을 얻는다.</li>
+                                    <li>CanvasRenderingContext2D : 인터페이스를 사용해 수행한다. 드로잉면에 대한 2 차원 렌더링 컨텍스트 제공. 도형, 텍스트,
+                                        이미지 및 기타 개체를 그리는 데 사용됩니다.</li>
+                                    <li>fillStyle : 캔버스에 그려져 있는 도형을 스타일로 채운다.</li>
+                                    <li>createLinearGradient : 시작점과 끝점의 좌표만 지정한다. 시작점에서 끝점으로 색상이 점점 변하는데 두 점의 위치에 따라 무늬의
+                                        방향이 결정된다. 선형 그라데이션 지정(시작점 x1, 시작점 y1, 끝점 x2, 끝점 y2)</li>
+                                    <li>createRadialGradient : 6개의 매개변수로 지정된다. 원형 그라데이션 지정(시작하는 원의 x축 좌표, 시작하는 원의 y축 좌표,
+                                        시작하는 원의 반지름,
+                                        마지막 원의 x축, 마지막 원의 y축, 마지막 원의 반지름)
+                                    </li>
+                                    <li>addColorStop(offset, color) : offset은 0~1 사이의 실수값으로 색상의 위치를 지정한다. 0은 시작점, 1은 끝점,
+                                        0.5은 중간점이다.</li>
+                                </ul>
+                            </li>
                         </ul>
-                        <pre class='code code-html'><label>HTML</label><code>&#60;abbr title="World Wide Web"&#62;The <abbr title="World Wide Web">WWW</abbr> was founded in 1990.&#60;/abbr&#62;</code></pre>
-                        <table class="table table-left">
-                            <caption>브라우저 지원</caption>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <img src="img/chrome.gif" alt="chrome icon">
-                                    </td>
-                                    <td>
-                                        <img src="img/edge.png" alt="edge icon">
-                                    </td>
-                                    <td>
-                                        <img src="img/ie.png" alt="ie icon">
-                                    </td>
-                                    <td>
-                                        <img src="img/firefox.png" alt="firefox icon">
-                                    </td>
-                                    <td>
-                                        <img src="img/safari.gif" alt="safari icon">
-                                    </td>
-                                    <td>
-                                        <img src="img/opera.gif" alt="opera icon">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>2.0</td>
-                                    <td>지원</td>
-                                    <td>7.0</td>
-                                    <td>1.0</td>
-                                    <td>지원</td>
-                                    <td>지원</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <h3>&#60;acronym&#62;</h3>
-                        <ul>
-                            <li>HTML4에서 사용되었다. HTML5에서 사용되지 않는다.</li>
-                            <li>abbr 태그로 대신 사용된다.</li>
-                        </ul>
-                        <h3>&#60;address&#62;</h3>
-                        <ul>
-                            <li>문서나 글의 저자 또는 회사와 연락할 수 있는 정보를 명시할 때 사용한다.</li>
-                            <li>body 안에 address는 해당 문서의 연락 정보를 나타내며, article 안의 address는 해당 글에 대한 연락 정보를 나타낸다.</li>
-                            <li>address는 주로 italic체로 표현되며, address 요소의 위쪽과 아래쪽에 약간의 공백을 자동으로 삽입하여 다른 텍스트와 구분한다.</li>
-                            <li>HTML 4에선 article을 지원하지 않기 때문에 언제나 해당 문서의 연락 정보만을 나타낸다.</li>
-                        </ul>
-                        <pre class='code code-html'><label>HTML</label><code>&#60;address&#62;서울시 구로구 구로동&#60;/address&#62; </code></pre>
-                        <table class="table table-left">
-                            <caption>브라우저 지원</caption>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <img src="img/chrome.gif" alt="chrome icon">
-                                    </td>
-                                    <td>
-                                        <img src="img/edge.png" alt="edge icon">
-                                    </td>
-                                    <td>
-                                        <img src="img/ie.png" alt="ie icon">
-                                    </td>
-                                    <td>
-                                        <img src="img/firefox.png" alt="firefox icon">
-                                    </td>
-                                    <td>
-                                        <img src="img/safari.gif" alt="safari icon">
-                                    </td>
-                                    <td>
-                                        <img src="img/opera.gif" alt="opera icon">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>지원/td>
-                                    <td>지원</td>
-                                    <td>지원</td>
-                                    <td>1.0</td>
-                                    <td>1.0</td>
-                                    <td>지원</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <h3>&#60;applet&#62;</h3>
-                        <ul>
-                            <li>HTML4에서 사용되었다. HTML5에서 사용되지 않는다.</li>
-                            <li>인터넷 익스플로러 11버전과 그 이전 버전에서는 플러그인(plug-in)을 사용하여 지원하고 있으며, 그 외 몇몇 브라우저들에서도 플러그인이나 기타 프로그램을 설치함으로써 요소를 사용할 수 있도록 지원하고 있습니다.</li>
-                            <li>대체할 태그로 동영상을 넣으려면 video, 음악을 넣으려면 audio, 개체를 넣으려면 embed, object를 사용한다.</li>
-                        </ul>
+                        <pre class='code code-html'><label>HTML</label><code>&#60;canvas id="canvasRect" width="200" height="100" style="border:1px solid #000000;"&#62;&#60;/canvas&#62;
+    &#60;canvas id="canvasCircle" width="200" height="100" style="border:1px solid #000000;"&#60;/canvas&#62;
+    &#60;canvas id="canvasStroke" width="200" height="100" style="border:1px solid #000000;"&#60;/canvas&#62;
+    &#60;canvas id="canvasFillText" width="200" height="100" style="border:1px solid #000000;"&#60;/canvas&#62;
+    &#60;canvas id="canvasStrokeText" width="200" height="100" style="border:1px solid #000000;"&#60;/canvas&#62;
+    &#60;canvas id="canvasLineGradient" width="200" height="100" style="border:1px solid #000000;"&#60;/canvas&#62;
+    &#60;canvas id="canvasCircleGradient" width="200" height="100" style="border:1px solid #000000;"&#60;/canvas&#62;
+    &#60;script&#62;
+        const canvas = document.getElementById('canvasRect');
+        const canvas2 = document.getElementById('canvasCircle');
+        const canvas3 = document.getElementById('canvasStroke');
+        const canvas4 = document.getElementById('canvasFillText');
+        const canvas5 = document.getElementById('canvasStrokeText');
+        const canvas6 = document.getElementById('canvasLineGradient');
+        const canvas7 = document.getElementById('canvasCircleGradient');
+        const ctx = canvas.getContext('2d');
+        const ctx2 = canvas2.getContext('2d');
+        const ctx3 = canvas3.getContext('2d');
+        const ctx4 = canvas4.getContext('2d');
+        const ctx5 = canvas5.getContext('2d');
+        const ctx6 = canvas6.getContext('2d');
+        const ctx7 = canvas7.getContext('2d');
+
+        <!-- 사각형 -->
+        ctx.fillStyle = 'green';
+        ctx.fillRect(10, 10, 150, 100); //x, y, width, height
+
+        <!-- 원형 -->
+        ctx2.beginPath(); //새로운 선을 그리겠다는 선언
+        ctx2.arc(95, 50, 50, 0, 2 * Math.PI); //(x, y, 반지름, 시작 각도, 마지막 각도 * 원주율)
+        ctx2.stroke();
+
+        <!-- 선형 -->
+        ctx3.moveTo(0, 0); //시작 좌표로 시작점을 나타냄
+        ctx3.lineTo(200, 100); //끝나는 좌표
+        ctx3.stroke();
+
+        ctx4.font = "30px Arial" //폰트 정의 = "사이즈, 패밀리"
+        ctx4.fillText("Hello", 10, 50);
+
+        ctx5.font = "30px Arial"
+        ctx5.strokeText("Hello", 10, 50); //("문자", x, y)
+
+        const grad = ctx6.createLinearGradient(0, 0, 200, 0);
+        grad.addColorStop(0, "red");
+        grad.addColorStop(1, "white");
+        ctx6.fillStyle = grad;
+        ctx6.fillRect(10, 10, 150, 80);
+    &#60;/script&#62;
+</code></pre>
+                        <div class="testArea">
+                            <canvas id="canvasRect" width="200" height="100" style="border:1px solid #000000;"></canvas>
+                            <canvas id="canvasCircle" width="200" height="100"
+                                style="border:1px solid #000000;"></canvas>
+                            <canvas id="canvasStroke" width="200" height="100"
+                                style="border:1px solid #000000;"></canvas>
+                            <canvas id="canvasFillText" width="200" height="100"
+                                style="border:1px solid #000000;"></canvas>
+                            <canvas id="canvasStrokeText" width="200" height="100"
+                                style="border:1px solid #000000;"></canvas>
+                            <canvas id="canvasLineGradient" width="200" height="100"
+                                style="border:1px solid #000000;"></canvas>
+                            <canvas id="canvasCircleGradient" width="200" height="100"
+                                style="border:1px solid #000000;"></canvas>
+                            <canvas id="canvasImg" width="500" height="380" style="border:1px solid #000000;"></canvas>
+                            <img src="heart-rabbit.gif" alt="토끼" id="heartRabbit">
+                            <button type="button" onclick="canvasImg()">Try It</button>
+                            <script>
+                                const canvas = document.getElementById('canvasRect');
+                                const canvas2 = document.getElementById('canvasCircle');
+                                const canvas3 = document.getElementById('canvasStroke');
+                                const canvas4 = document.getElementById('canvasFillText');
+                                const canvas5 = document.getElementById('canvasStrokeText');
+                                const canvas6 = document.getElementById('canvasLineGradient');
+                                const canvas7 = document.getElementById('canvasCircleGradient');
+                                const ctx = canvas.getContext('2d');
+                                const ctx2 = canvas2.getContext('2d');
+                                const ctx3 = canvas3.getContext('2d');
+                                const ctx4 = canvas4.getContext('2d');
+                                const ctx5 = canvas5.getContext('2d');
+                                const ctx6 = canvas6.getContext('2d');
+                                const ctx7 = canvas7.getContext('2d');
+
+                                ctx.fillStyle = '#fffca1';
+                                ctx.fillRect(10, 10, 150, 100);
+
+                                ctx2.beginPath(); //path 시작
+                                ctx2.arc(95, 50, 50, 0, 2 * Math.PI);
+                                ctx2.stroke();
+
+                                ctx3.moveTo(0, 0);
+                                ctx3.lineTo(200, 100);
+                                ctx3.stroke();
+
+                                ctx4.font = "30px Arial" //폰트 정의 = "사이즈, 패밀리"
+                                ctx4.fillText("Hello", 10, 50);
+
+                                ctx5.font = "30px Arial"
+                                ctx5.strokeText("Hello", 10, 50); //x, y
+
+                                const grad = ctx6.createLinearGradient(0, 0, 200, 0);
+                                grad.addColorStop(0, "#fffca1");
+                                grad.addColorStop(1, "white");
+                                ctx6.fillStyle = grad;
+                                ctx6.fillRect(10, 10, 150, 80);
+
+                                const grd = ctx7.createRadialGradient(75, 50, 5, 90, 60, 100);
+                                grd.addColorStop(0, "#fffca1");
+                                grd.addColorStop(1, "white");
+                                ctx7.fillStyle = grd;
+                                ctx7.fillRect(10, 10, 150, 80);
+
+                                window.onload = function () {
+                                    const canvas8 = document.getElementById("canvasImg");
+                                    const ctx8 = canvas8.getContext("2d");
+                                    const img = document.getElementById("heartRabbit");
+                                    ctx8.drawImage(img, 0, 0); //.drawImage로 이미지 주소를 통해 이미지를 호출할 때 발생하는 에러
+                                }
+                            </script>
+                        </div>
+                        <div class="imgArea">
+                            <img src="img/gradient.png" alt="그라디언트 이미지">
+                        </div>
                         <table class="table">
-                            <caption>필수 속성</caption>
+                            <caption>프로퍼티</caption>
                             <thead>
                                 <tr>
-                                    <th>속성명</th>
-                                    <th>속성값</th>
+                                    <th>프로퍼티명</th>
                                     <th>설명</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>code</td>
-                                    <td>URL</td>
-                                    <td>자바 애플릿(Java applet)의 파일 이름을 명시함.</td>
+                                    <td>HTMLCanvasElement.width (en-US)</td>
+                                    <td>canvas 요소에서 HTML 속성인 width를 반영하며, css의 pixel 값으로 해석된다. 속성값이 없거나 음수일 경우, 기본값인
+                                        300이 주어진다.</td>
                                 </tr>
                                 <tr>
-                                    <td>object</td>
-                                    <td>이름</td>
-                                    <td>애플릿의 직렬화 표현(serialized representation)에 대한 참조를 명시함.</td>
+                                    <td>HTMLCanvasElement.height (en-US)</td>
+                                    <td>canvas 요소에서 HTML 속성인 height를 반영하며, css의 pixel 값으로 해석된다. 속성값이 없거나 음수일 경우, 기본값인
+                                        150이 주어진다.</td>
+                                </tr>
+                                <tr>
+                                    <td>HTMLCanvasElement.mozOpaque (en-US) 표준 X</td>
+                                    <td>HTML 속성인 moz-opaque(투명도가 중요한 요소인지를 알려준다. Mozila 기반 브라우저에서만 지원하므로, 표준
+                                        canvas.getContext('2d', { alpha: false })를 사용한다.)를 반영하는 객체. 반투명이 인자로 사용될지에 대한
+                                        여부를 알려준다. 반투명 요소가 없다면, canvas
+                                        성능이 최적화될 수 있다.</td>
+                                </tr>
+                                <tr>
+                                    <td>HTMLCanvasElement.mozPrintCallback 표준 X</td>
+                                    <td>페이지가 프린트 되는 경우 호출되는 함수. 만약 프린터가 사용되는 경우 canvas를 더욱 고해상도로 다시 그리게 할 수 있습니다. </td>
+                                </tr>
+                                <tr>
+                                    <td>CanvasPattern</td>
+                                    <td>CanvasRenderingContext2D.createPattern()방법으로 만든 이미지, 캔버스 또는 비디오를 기반으로 패턴을 설명한다.
+                                        fillStyle 또는 strokeStyle을 사용할 수 있다.
+                                        ie 지원 불가
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>CanvasPattern.setTransform()</td>
+                                    <td>패턴에 선형 변환을 적용 SVGMatrix(더이상 사용하지 않는다.) 하거나 DOMMatrix(회전과 번역을 포함하여 2D 및 3D 작업에
+                                        적합한 4 x 4로 나타낸다.) 나타낸다. 일부 구현에서는 아직 허용하지 않는다.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>OffscreenCanvas</td>
+                                    <td>화면 밖에서 렌더링 되는 인터페이스.</td>
+                                </tr>
+                                <tr>
+                                    <td>CanvasRenderingContext2D</td>
+                                    <td>canvas 도형, 텍스트, 이미지 등 개체를 그리는 데 사용된다.</td>
+                                </tr>
+                                <tr>
+                                    <td>ImageBitmap</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Path2D</td>
+                                    <td></td>
                                 </tr>
                             </tbody>
                         </table>
                         <table class="table">
-                            <caption>옵션</caption>
-                            <colgroup>
-                                <col style="width:15%">
-                                <col style="width:25%">
-                                <col>
-                            </colgroup>
+                            <caption>메서드</caption>
+                            <thead>
+                                <tr>
+                                    <th>메서드명</th>
+                                    <th>설명</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>HTMLCanvasElement.captureStream()</td>
+                                    <td>실시간 비디오로 캡처할 수 있는 CanvasCaptureMediaStream (en-US)을 반환한다. ie 불가<br>
+                                        ex) MediaStream = canvas.captureStream(frameRate); //frameRate : 각 프레임의 캡처 속도를
+                                        나타내는 배정밀도 부동 소수점 값. 설정하지 않으면 캔버스가 변경될 때마다 새 프레임이 캡처된다.<br>
+                                        const stream = canvasElt.captureStream(25);
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>CanvasCaptureMediaStreamTrack</td>
+                                    <td>수동으로 프레임을 캡처하여 스트림으로 보내도록 한다.</td>
+                                </tr>
+                                <tr>
+                                    <td>HTMLCanvasElement.toDataURL() (en-US)</td>
+                                    <td>type 파라미터에서 지정하고 있는 포맷(기본: png) 의 이미지를 나타내는 data-URL을 반환, 반환된 이미지는 96dpi의 해상도를
+                                        갖는다.</td>
+                                </tr>
+                                <tr>
+                                    <td>HTMLCanvasElement.toBlob() (en-US)</td>
+                                    <td>캔버스가 포함하고 있는 이미지를 나타내는 Blob 객체를 생성. </td>
+                                </tr>
+                                <tr>
+                                    <td>HTMLCanvasElement.transferControlToOffscreen() (en-US)</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>HTMLCanvasElement.transferControlToOffscreen() (en-US)</td>
+                                    <td>캔버스에 오브젝트를 그리는 데엔 여러 path와 드로잉 커맨드가 쓰이는데, Path2D()를 써서 간단하게 만들 수 있다. <br>
+                                        ex) const rectangle = new Path2D();
+                                        rectangle.rect(10, 10, 45, 45);
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>CanvasGradient</td>
+                                    <td>그래디언트를 할 수 있게 해주는 기능. 모든 브라우저 사용 가능<br>
+                                        CanvasGradient.addColorStop() : offset 및 a로 정의된 새 정지점 color을 그래디언트에 추가한다. <br>
+                                        오프셋이 0 ~ 1까지 설정 가능하며, 그 외의 숫자나 음수를 설정하면, INDEX_SIZE_ERR가 발생한다.<br>
+                                        색상을 CSS로 구문 분석할 수 없으면 SYNTAX_ERR가 발생한다.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>ImageData</td>
+                                    <td>canvas 엘리먼트의 픽셀 데이터를 나타낸다. 인자로 주어진 Uint8ClampedArray(0 - 255 클램핑 8 비트 부호없는 정수의
+                                        배열을 나타내는 입력; [0,255] 범위를 벗어난 값을 지정하면 0 또는 255가 대신 설정됩니다. 정수가 아닌 값을 지정하면 가장 가까운
+                                        정수가 설정되며, 내용은 0 으로 초기화 된다.)<br>로 부터 해당 크기에 맞는 ImageData객체를
+                                        생성한다. <br>
+                                        만약 인자가 주어지지 않으면 검정색 사각형 이미지를 생성</td>
+                                </tr>
+                                <tr>
+                                    <td>TextMetrics</td>
+                                    <td>현재 글꼴 스타일로 캔버스에 그려진 텍스트의 너비와 같은 숫자 정보를 검색한다.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="table table-left">
+                            <caption>브라우저 지원</caption>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="img/chrome.gif" alt="chrome icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/edge.png" alt="edge icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/ie.png" alt="ie icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/firefox.png" alt="firefox icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/safari.gif" alt="safari icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/opera.gif" alt="opera icon">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>1.0</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p class="reference">참조 :
+                            <a href="https://www.w3schools.com/html/html5_canvas.asp">w3schools</a>
+                            <a href="http://tcpschool.com/html-tags/canvas">http://tcpschool.com/html-tags/canvas</a>
+                            <a
+                                href="https://developer.mozilla.org/ko/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes">https://developer.mozilla.org/ko/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes</a>
+                            <a
+                                href="http://www.soen.kr/html5/html3/2-1-2.html">http://www.soen.kr/html5/html3/2-1-2.html</a>
+                            <a
+                                href="https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=phlox__&logNo=221223871826">https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=phlox__&logNo=221223871826</a>
+                        </p>
+
+                        <h3>&#60;caption&#62;</h3>
+                        <ul>
+                            <li>테이블, 사진, 삽화 등에 설명 혹은 제목을 정의할 때 사용한다.</li>
+                            <li>table 요소의 caption은 하나만 사용할 수 있으며, table 태그 바로 다음에 사용해야 한다.</li>
+                            <li>css을 사용해서 위치나 정렬 방법을 변경할 수 있다.</li>
+                        </ul>
+                        <pre class='code code-html'><label>HTML</label><code>&#60;table&#62; 
+&#60;caption&#62;색상의 종류에 대한 테이블 입니다.&#60;/caption&#62; 
+    &#60;tr&#62;
+        &#60;th scope="col"&#62;레드&#60;/th&#62;
+        &#60;th scope="col"&#62;화이트&#60;/th&#62;
+        &#60;th scope="col"&#62;블랙&#60;/th&#62;
+    &#60;/tr&#62; 
+&#60;/table&#62; </code></pre>
+                        <table class="table">
+                            <caption>필수 속성</caption>
                             <thead>
                                 <tr>
                                     <th>속성명</th>
@@ -158,115 +377,349 @@
                                     <td>left
 
                                         right
-                                        
+
                                         top
-                                        
+
                                         bottom
-                                        
-                                        middle
-                                        
-                                        baseline</td>
-                                    <td>주위의 요소에 따른 애플릿의 정렬 방법을 명시함.</td>
-                                </tr>
-                                <tr>
-                                    <td>alt</td>
-                                    <td>텍스트</td>
-                                    <td>애플릿의 대체 텍스트를 명시함.</td>
-                                </tr>
-                                <tr>
-                                    <td>archive</td>
-                                    <td>URL</td>
-                                    <td>아카이브 파일(archive file)의 URL을 명시함.</td>
-                                </tr>
-                                <tr>
-                                    <td>codebase</td>
-                                    <td>URL</td>
-                                    <td>code 속성에서 명시된 애플릿의 상대 주소(relative base URL)를 명시함.</td>
-                                </tr>
-                                <tr>
-                                    <td>height</td>
-                                    <td>픽셀</td>
-                                    <td>애플릿의 높이를 명시함.</td>
-                                </tr>
-                                <tr>
-                                    <td>hspace</td>
-                                    <td>픽셀</td>
-                                    <td>애플릿과 주위 사이의 수평 간격(horizontal spacing)을 명시함.</td>
-                                </tr>
-                                <tr>
-                                    <td>name</td>
-                                    <td>이름</td>
-                                    <td>스크립트에서 사용될 애플릿의 이름을 명시함.</td>
-                                </tr>
-                                <tr>
-                                    <td>vspace</td>
-                                    <td>픽셀</td>
-                                    <td>애플릿과 주위 사이의 수직 간격(vertical spacing)을 명시함.</td>
-                                </tr>
-                                <tr>
-                                    <td>width</td>
-                                    <td>픽셀</td>
-                                    <td>애플릿의 너비를 명시함.</td>
+                                    </td>
+                                    <td>캡션(caption)의 정렬 방법(alignment)를 명시함.
+
+                                        HTML5에서는 더 이상 지원하지 않음.</td>
                                 </tr>
                             </tbody>
                         </table>
                         <table class="table table-left">
                             <caption>브라우저 지원</caption>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="img/chrome.gif" alt="chrome icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/edge.png" alt="edge icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/ie.png" alt="ie icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/firefox.png" alt="firefox icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/safari.gif" alt="safari icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/opera.gif" alt="opera icon">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!-- center -->
+
+                        <h3>&#60;center&#62;</h3>
+                        <ul>
+                            <li>가운데로 정렬되는 텍스트를 정의할 때 사용된다.</li>
+                            <li>HTML5에선 지원하지 않는다.</li>
+                        </ul>
+                        <pre class='code code-html'><label>HTML</label><code>&#60;p&#62;이 문장은 왼쪽 정렬이 됩니다.&#60;/p&#62;
+&#60;center&#62;이 문장은 가운데 정렬이 됩니다.&#60;/center&#62; </code></pre>
+                        <p class="imgArea border">
+                            <img src="img/center.png" alt="가운데 정렬 예시 이미지">
+                        </p>
+                        <table class="table table-left">
+                            <caption>브라우저 지원</caption>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="img/chrome.gif" alt="chrome icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/edge.png" alt="edge icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/ie.png" alt="ie icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/firefox.png" alt="firefox icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/safari.gif" alt="safari icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/opera.gif" alt="opera icon">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!-- cite -->
+
+                        <h3>&#60;cite&#62;</h3>
+                        <ul>
+                            <li>HTML4에서는 인용구를 명시했었지만, 책, 음악, 영화, 예술 작품 등 창작물이나 저작물의 제목을 명시할 때 사용한다.</li>
+                        </ul>
+                        <pre class='code code-html'><label>HTML</label><code>&#60;img&#62; src="img/pearl-girl.jpg" alt="진주 귀걸이를 한 소녀"&#60;/img&#62;
+&#60;p&#62;&#60;cite&#62;진주 귀걸이를 한 소녀&#60;/cite&#62;&#60;/p&#62; </code></pre>
+                        <table class="table table-left">
+                            <caption>브라우저 지원</caption>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="img/chrome.gif" alt="chrome icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/edge.png" alt="edge icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/ie.png" alt="ie icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/firefox.png" alt="firefox icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/safari.gif" alt="safari icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/opera.gif" alt="opera icon">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!-- code -->
+
+                        <h3>&#60;code&#62;</h3>
+                        <ul>
+                            <li>컴퓨터 코드의 일부분을 나타낼 때 사용한다. 컴퓨터 코드의 일부분이란 XML 요소의 이름이나 파일 이름, 컴퓨터 프로그램 코드, 또는 컴퓨터가 인식할 수 있는
+                                어떤 문자열이라도 가능하다.</li>
+                            <li>HTML5에서도 사용할 수 있다.</li>
+                            <li>css를 사용해서 강조나 스타일을 줄 수 있다.</li>
+                            <li>table, td 태그 안에 code 태그 안에 col 태그를 넣으면 코드가 보이지 않는다. col은 td 안에 종속되는 게 아닌데 넣어서 안 보이는 것
+                                같다.</li>
+                        </ul>
+                        <pre
+                            class='code code-html'><label>HTML</label><code>&#60;p&#62;HTML 코드들 중&#60;code&#62;button&#60;/code&#62;은 클릭 이벤트가 가능하다.&#60;/p&#62;</code></pre>
+                        <table class="table table-left">
+                            <caption>브라우저 지원</caption>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="img/chrome.gif" alt="chrome icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/edge.png" alt="edge icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/ie.png" alt="ie icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/firefox.png" alt="firefox icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/safari.gif" alt="safari icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/opera.gif" alt="opera icon">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!-- col -->
+
+                        <h3>&#60;colgroup&#62; & &#60;col&#62;</h3>
+                        <ul>
+                            <li>colgroup
+                                <ul class="sub-li">
+                                    <li>테이블에서 서식 지정을 위해 하나 이상의 열을 그룹으로 묶을 때 사용한다.</li>
+                                    <li>행(row)이나 셀(cell)의 스타일을 반복하지 않고, 열(column) 전체에 다른 스타일을 적용하고 싶을 때 유용하게 사용할 수 있다.
+                                    </li>
+                                    <li>테이블 요소의 자식 요소로, 모든 caption 요소보다 뒤에 위치해야 하며 모든 thead, tbody, tfoot, tr 요소보다는 앞에
+                                        위치해야 한다.</li>
+                                </ul>
+                            </li>
+                            <li>col
+                                <ul class="sub-li">
+                                    <li>colgroup 요소에 속하는 각 열의 속성을 정의할 때 사용한다.</li>
+                                    <li>각 행(row)이나 셀(cell)의 스타일을 반복하지 않고, 열마다 다른 스타일을 적용하고 싶을 때 사용할 수 있다.</li>
+                                    <li>HTML에서는 태그를 닫지 않지만, XHTML에서는 다음과 같이 반드시 태그를 닫아야만 한다.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <strong>※ colgroup</strong>
+                        <pre class='code code-html'><label>HTML</label><code>&#60;table&#62;
+    &#60;caption&#62;학생정보 테이블&#60;/caption&#62;
+    &#60;colgroup span="2" style="background-color: #f0f8ff"&#62;
+        &#60;col&#62;
+        &#60;col&#62;
+    &#60;/colgroup&#62;
+    &#60;thead&#62;
+        &#60;tr&#62;
+            &#60;th scope="col"&#62;이름&#60;/th&#62;
+            &#60;th scope="col"&#62;생년월일&#60;/th&#62;
+            &#60;th scope="col"&#62;전화번호&#60;/th&#62;
+        &#60;/tr&#62;
+    &#60;/thead&#62;
+    &#60;tbody&#62;
+        &#60;tr&#62;
+            &#60;td&#62;홍길동&#60;/td&#62;
+            &#60;td&#62;1999.11.11&#60;/td&#62;
+            &#60;td&#62;010-1111-2222&#60;/td&#62;
+        &#60;/tr&#62;
+    &#60;/tbody&#62;
+&#60;/table&#62;</code></pre>
+                        <strong>※ col</strong>
+                        <pre class='code code-html'><label>HTML - col</label><code>&#60;table&#62;
+    &#60;caption&#62;학생정보 테이블&#60;/caption&#62;
+    &#60;colgroup&#62;
+        &#60;col span="2" style="background-color: #f0f8ff"&#62;
+        &#60;col&#62;
+    &#60;/colgroup&#62;
+    &#60;thead&#62;
+        &#60;tr&#62;
+            &#60;th scope="col"&#62;이름&#60;/th&#62;
+            &#60;th scope="col"&#62;생년월일&#60;/th&#62;
+            &#60;th scope="col"&#62;전화번호&#60;/th&#62;
+        &#60;/tr&#62;
+    &#60;/thead&#62;
+    &#60;tbody&#62;
+        &#60;tr&#62;
+            &#60;td&#62;홍길동&#60;/td&#62;
+            &#60;td&#62;1999.11.11&#60;/td&#62;
+            &#60;td&#62;010-1111-2222&#60;/td&#62;
+        &#60;/tr&#62;
+    &#60;/tbody&#62;
+&#60;/table&#62;</code></pre>
+                        <table class="table">
+                            <caption>필수 속성</caption>
                             <colgroup>
                                 <col>
                                 <col>
                                 <col>
-                                <col>
-                                <col>
-                                <col>
                             </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>속성명</th>
+                                    <th>속성값</th>
+                                    <th>설명</th>
+                                </tr>
+                            </thead>
                             <tbody>
                                 <tr>
+                                    <td>align</td>
                                     <td>
-                                        <img src="img/chrome.gif" alt="chrome icon">
+                                        left
+
+                                        right
+
+                                        center
+
+                                        justify
+
+                                        char
                                     </td>
-                                    <td>
-                                        <img src="img/edge.png" alt="edge icon">
-                                    </td>
-                                    <td>
-                                        <img src="img/ie.png" alt="ie icon">
-                                    </td>
-                                    <td>
-                                        <img src="img/firefox.png" alt="firefox icon">
-                                    </td>
-                                    <td>
-                                        <img src="img/safari.gif" alt="safari icon">
-                                    </td>
-                                    <td>
-                                        <img src="img/opera.gif" alt="opera icon">
-                                    </td>
+                                    <td>콘텐츠의 정렬 방식.
+
+                                        HTML5에서는 더 이상 지원하지 않음.
+                                        예) &#60;col align="left"&#62;</td>
                                 </tr>
                                 <tr>
-                                    <td>지원하지 않음</td>
-                                    <td>지원</td>
-                                    <td>지원</td>
-                                    <td>지원하지 않음</td>
-                                    <td>지원</td>
-                                    <td>지원하지 않음</td>
+                                    <td>char</td>
+                                    <td>문자 </td>
+                                    <td>콘텐츠의 정렬에 사용되는 문자(character)를 명시함.
+
+                                        HTML5에서는 더 이상 지원하지 않음.
+                                        예) &#60;col align="char" char="."&#62;</td>
+                                </tr>
+                                <tr>
+                                    <td>charoff</td>
+                                    <td>숫자 </td>
+                                    <td>
+                                        char 속성에서 명시된 문자를 기준으로 정렬될 콘텐츠의 문자 수를 명시함.
+
+                                        HTML5에서는 더 이상 지원하지 않음.
+                                        예) &#60;col align="char" char="." charoff="2"&#62;</td>
+                                </tr>
+                                <tr>
+                                    <td>span</td>
+                                    <td>숫자 </td>
+                                    <td>합쳐질 열(column)의 개수를 명시함.
+
+                                        HTML5에서는 더 이상 지원하지 않음.
+                                        예) &#60;col width="20%"&#62;</td>
+                                </tr>
+                                <tr>
+                                    <td>valign</td>
+                                    <td>top
+
+                                        middle
+
+                                        bottom
+
+                                        baseline
+                                    </td>
+                                    <td>관련된 콘텐츠의 수직 정렬 방법을 명시함.
+
+                                        HTML5에서는 더 이상 지원하지 않음.
+                                        예) &#60;col valign="top"&#62;</td>
+                                </tr>
+                                <tr>
+                                    <td>width</td>
+                                    <td>%
+
+                                        픽셀
+
+                                        상대 길이
+                                    </td>
+                                    <td>요소의 너비를 명시함.
+
+                                        HTML5에서는 더 이상 지원하지 않음.<br>
+                                        때문에 인라인 스타일로 제어를 해야 한다.<br>
+                                        예) &#60;col style="width:20%"&#62;</code>
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
-                        <h3>aria-label</h3>
-                        <ul>
-                            <li>‘Accessible Rich Internet Applications’의 약자로 리치 인터넷을 위한 W3C 접근성 명세. 쉽게 말해 Ajax 같은 기술에 대응하는 접근성 명세라고 이해할 수 있다.
-                                <span class="red">Rich Internet Applications(리치 인터넷 애플리케이션)이란, 기존 HTML보다 역동적인 화면 연출이 가능하고 페이지 이동 없이 한 페이지에서 정보 제공이 가능한, 사용자 중심의 새로운 플래시 웹페이지 제작기술을 말한다. 
-                                <br>최근 영화예매 사이트나 쇼핑몰을 중심으로 이 같은 RIA를 도입하는 곳이 늘고 있다.</span>
-                            </li>
-                            <li>액세스 가능한 레이블로 사용할 문자열을 지정할 수 있다.</li>
-                            <li>텍스트 대신 그래픽을 사용하는 버튼과 같이, 요소의 목적을 시각적으로 표시할 때, aria-label 속성을 사용할 수 있다.</li>
-                            <li>우리 눈에 보이지 않더라도 브라우저에게는 전달이 되면 좋은 정보, 혹은 스크린 리더를 통해 웹을 사용하는 사용자들에게 전달해야 하는 정보를 제공하고 싶을 때 사용한다.</li>
-                            <li>label과 aria-label을 같이 썼을 경우, aria-label이 우선시 된다.</li>
-                        </ul>
-                        <pre class='code code-html'><label>HTML</label><code>&#60;button class="btnMenu" aria-label="navigation menu"&#62;</code></pre>
-                        
-                        <ul>
-                            <li>예를들어, 햄버거 메뉴 버튼이 있다고 한다면 일반적인 사용자들의 경우 햄버거 메뉴 이미지를 보고 클릭을 하고 사용하겠지만,<br> 시각적으로 햄버거 메뉴 이미지를 확인할 수 없는 사용자들의 경우, 해당 영역이 어떤 버튼인지 인지 할 수 없다. <br>그렇기 때문에 aria-label 속성을 사용해 해당 영역이 navigation menu 라는 정보를 담아준다.</li>
-                        </ul>
+                        <div class="imgArea">
+                            <p>colgroup에 인라인 스타일로 배경색을 넣으면 테이블 전체에 색상이 입혀진다.</p>
+                            <img src="img/colgroup.PNG" alt="">
+                        </div>
+                        <div class="imgArea">
+                            <p>col에 인라인 스타일로 배경색을 넣으면 해당 컬럼 전체에 색상이 입혀진다.</p>
+                            <img src="img/col.PNG" alt="">
+                        </div>
                         <table class="table table-left">
                             <caption>브라우저 지원</caption>
                             <tbody>
@@ -291,444 +744,20 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>지원하지 않음</td>
-                                    <td>지원하지 않음</td>
-                                    <td>지원하지 않음</td>
-                                    <td>지원하지 않음</td>
-                                    <td>지원하지 않음</td>
-                                    <td>지원하지 않음</td>
-                                </tr>
-                            </tbody>
-                        </table> 
-                        
-                        <h3>aria-labelledby</h3>
-                        <ul>
-                            <li>화면에 현재 요소를 설명할 텍스트가 있을 경우에 해당 텍스트 영역과 현재 요소를 연결할 때 사용한다.</li>
-                            <li>숨겨져 있는 요소도 참조할 수 있다. (display:none or visibility:hidden)</li>
-                        </ul>
-                        <pre class='code code-html'><label>HTML</label><code>&#60;span id="drinkOptions"&#62;Drink Options&#60;/span&#62;
-&#60;div role="radiogroup" aria-labelledby="drinkOptions"&#62;
-    &#60;div&#62;
-        &#60;input type="radio" name="drink" id="drink1"&#62;
-        &#60;label for="drink1"&#62;Water&#60;&#60;/label&#62;
-    &#60;/div&#62;
-    &#60;div&#62;
-        &#60;input type="radio" name="drink" id="drink2"&#62;
-        &#60;label for="drink2"&#62;Lemonade&#60;&#60;/label&#62;
-    &#60;/div&#62;
-    &#60;div&#62;
-        &#60;input type="radio" name="drink" id="drink3"&#62;
-        &#60;label for="drink3"&#62;Coffee&#60;&#60;/label&#62;
-    &#60;/div&#62;
-    &#60;div&#62;
-        &#60;input type="radio" name="drink" id="drink4&#62;
-        &#60;label for="drink4"&#62;Milk&#60;&#60;/label&#62;
-    &#60;/div&#62;
-    &#60;div&#62;
-        &#60;input type="radio" name="drink" id="drink5&#62;
-        &#60;label for="drink5"&#62;Ginger Ade&#60;&#60;/label&#62;
-    &#60;/div&#62;
-&#60;/div&#62;</code></pre>
-                        
-                        <ul>
-                            <li>위와 같은 소스로 작성했을 경우 Water ~ Ginger Ale 을 담고 있는 radiogroup 영역에 대한 설명용 텍스트가 해당 div 영역 밖인 <span id="drinkOptions">에 있기 때문에<br>해당 id 값과 radiogroup div의 aria-labelledby의 값을 일치 시켜줘서 radiogroup 영역이 어떤 요소들의 집합인지를 설명해줄 수 있다.</li>
-                        </ul>
-                        <table class="table table-left">
-                            <caption>브라우저 지원</caption>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <img src="img/chrome.gif" alt="chrome icon">
-                                    </td>
-                                    <td>
-                                        <img src="img/edge.png" alt="edge icon">
-                                    </td>
-                                    <td>
-                                        <img src="img/ie.png" alt="ie icon">
-                                    </td>
-                                    <td>
-                                        <img src="img/firefox.png" alt="firefox icon">
-                                    </td>
-                                    <td>
-                                        <img src="img/safari.gif" alt="safari icon">
-                                    </td>
-                                    <td>
-                                        <img src="img/opera.gif" alt="opera icon">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>지원하지 않음</td>
-                                    <td>지원하지 않음</td>
-                                    <td>지원하지 않음</td>
-                                    <td>지원하지 않음</td>
-                                    <td>지원하지 않음</td>
-                                    <td>지원하지 않음</td>
-                                </tr>
-                            </tbody>
-                        </table> 
-                        <p>참조 : <a href="https://abcdqbbq.tistory.com/77">https://abcdqbbq.tistory.com/77</a>
-                            <a href="https://tech.lezhin.com/2018/04/20/wai-aria">https://tech.lezhin.com/2018/04/20/wai-aria</a>
-                        </p>
-                        <h3>aria-current</h3>
-                        <ul>
-                            <li>aria-current 속성은 현재 맥락과 일치하는 항목을 의미한다.</li>
-                            <li>token 값은 정해진 값 중 하나만 사용할 수 있음을 의미한다. token 값은 page|step|location|date|time|true|false(default)로 정해져 있다.
-                                <ul class="sub-li">
-                                    <li>page : 현재 '페이지'와 일치하는 시각적으로 강조한 링크.</li>
-                                    <li>step : 현재 '단계'와 일치하는 시각적으로 강조한 링크.</li>
-                                    <li>location : 플로우 차트에서 현재 '위치'와 일치하는 시각적으로 강조한 이미지.</li>
-                                    <li>date : 달력에서 현재 '날짜'와 일치하는 날짜.</li>
-                                    <li>time : 시간표에서 현재 '시간'과 일치하는 시간.</li>
-                                </ul>
-                            </li>
-                            <li>true, false 값도 있는데 true 또는 false 값은 구체적으로 어떤 맥락(페이지, 단계, 위치, 날짜, 시간)과 일치하는지 정보를 전달하지 않기 때문에 page|step|location|date|time 토큰이 적절하지 않은 맥락에 한하여 사용한다.
-                                <ul class="sub-li">
-                                    <li>true : 항목이 세트 내 현재 맥락과 일치함.</li>
-                                    <li>false(default): 항목이 세트 내 현재 맥락과 일치하지 않음. 속성 또는 값을 선언하지 않은 경우 초기값.</li>
-                                </ul>
-                            </li>
-                        </ul>
-                        
-                        <pre class='code code-html'><label>HTML</label><code><!-- O: aria-current="page" 현재 페이지 강조 링크 -->
-&#60;nav&#62;
-    &#60;h2&#62;&#60;/h2&#62;
-    &#60;ol&#62;
-        &#60;li&#62;
-            &#60;a href="/home" aria-current="page"&#62;정보&#60;/a&#62;
-            &#60;a href="/madang"&#62;자료마당&#60;/a&#62;
-        &#60;/li&#62;
-    &#60;/ol&#62;
-&#60;/nav&#62;
-&#60;nav&#62;
-    &#60;h2&#62;&#60;/h2&#62;
-    &#60;ol&#62;
-        &#60;li&#62;
-            &#60;a href="/info" aria-current="step"&#62;정보&#60;/a&#62;
-            &#60;a href="/terms"&#62;약관&#60;/a&#62;
-        &#60;/li&#62;
-    &#60;/ol&#62;
-&#60;/nav&#62;
-
-<!-- O: aria-current="step" 현재 단계 강조 링크 -->
-&#60;nav&#62;
-    &#60;h2&#62;&#60;/h2&#62;
-    &#60;ol&#62;
-        &#60;li&#62;
-            &#60;a href="/info" aria-current="step"&#62;정보&#60;/a&#62;
-            &#60;a href="/terms"&#62;약관&#60;/a&#62;
-        &#60;/li&#62;
-    &#60;/ol&#62;
-&#60;/nav&#62;
-
-<!-- O: aria-current="location" 현재 위치 강조 이미지 -->
-&#60;img src="payment-success.png" alt="결제 성공" aria-current="location"&#60;/a&#62;
-&#60;img src="payment-info.png" alt="결제 내역 안내"&#60;/a&#62;
-
-<!-- O: aria-current="date" 현재 날짜 강조 -->
-&#60;p aria-curent="date"&#62;10/01(금)&#60;/p&#62;
-
-<!-- O: aria-current="time" 현재 시간 강조 -->
-&#60;p aria-curent="time"&#62;18:00 ~ 20:00&#60;/p&#62;
-
-</code></pre>
-                        <ul>
-                            <li>aria-current 속성은 aria-selected 속성과 다른 의미로 사용하기 때문에 aria-selected 속성을 대체하는 용도로 사용하면 안 된다. 그러나 aria-current 속성과 aria-selected 속성을 함께 선언할 수도 있다. 
-                            <br>예를 들면 편집 가능한 트리 형식의 목록에서 현재 페이지 항목과 편집을 위해 선택한 항목이 일치하는 경우 함께 선언할 수 있다.</li>
-                        </ul>
-                        <table class="table table-left">
-                            <caption>브라우저 지원</caption>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <img src="img/chrome.gif" alt="chrome icon">
-                                    </td>
-                                    <td>
-                                        <img src="img/edge.png" alt="edge icon">
-                                    </td>
-                                    <td>
-                                        <img src="img/ie.png" alt="ie icon">
-                                    </td>
-                                    <td>
-                                        <img src="img/firefox.png" alt="firefox icon">
-                                    </td>
-                                    <td>
-                                        <img src="img/safari.gif" alt="safari icon">
-                                    </td>
-                                    <td>
-                                        <img src="img/opera.gif" alt="opera icon">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>지원하지 않음</td>
-                                    <td>지원하지 않음</td>
-                                    <td>지원하지 않음</td>
-                                    <td>지원하지 않음</td>
-                                    <td>지원하지 않음</td>
-                                    <td>지원하지 않음</td>
-                                </tr>
-                            </tbody>
-                        </table> 
-                        <p>참조 : <a href="https://github.com/lezhin/accessibility/blob/master/aria/README.md#aria-current">https://github.com/lezhin/accessibility/blob/master/aria/README.md#aria-current</a></p>
-                        
-                        
-                        <h3>aria-selected</h3>
-                        <ul>
-                            <li>단일 또는 다중 요소 (role="tab|gridcell|option|row")에 한하여 선택 상태를 명시하는 용도로 쓰인다.</li>                        
-                            <li>키보드 초점을 받을 수 있는 요소에 적용해야 한다.</li>
-                            <li>
-                                <ul class="sub-li">
-                                    <li>undefined(default) : 속성 또는 값을 선언하지 않은 경우 초기값. 선택할 수 없음.</li>
-                                    <li>true : 선택 가능한 요소를 선택했음.</li>
-                                    <li>false : 선택 가능한 요소를 선택하지 않았음.</li>
-                                </ul>
-                            </li>
-                            <li>선택 요소에만 aria-selected="true" 속성을 적용하면 aria-selected 속성을 적용하지 않은 요소는 aria-selected="undefined" 상태(선택할 수 없음)가 된다. 따라서 선택하지 않은 요소에는 명시적으로 aria-selected="false" 속성과 값을 적용한다.</li>
-                        </ul>
-                        <pre class='code code-html'><label>HTML</label><code><!-- O: role="tab" 요소에 선택 상태를 명시 -->
-&#60;div role="tablist"&#62;
-    &#60;a id="mon-anchor" href="#mon" role="tab" aria-selected="true"&#62;&#60;월&#62;
-    &#60;a id="tue-anchor" href="#tue" role="tab" aria-selected="false"&#62;&#60;화&#62;
-&#60;/div&#62;
-</code></pre>
-                        <table class="table table-left">
-                            <caption>브라우저 지원</caption>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <img src="img/chrome.gif" alt="chrome icon">
-                                    </td>
-                                    <td>
-                                        <img src="img/edge.png" alt="edge icon">
-                                    </td>
-                                    <td>
-                                        <img src="img/ie.png" alt="ie icon">
-                                    </td>
-                                    <td>
-                                        <img src="img/firefox.png" alt="firefox icon">
-                                    </td>
-                                    <td>
-                                        <img src="img/safari.gif" alt="safari icon">
-                                    </td>
-                                    <td>
-                                        <img src="img/opera.gif" alt="opera icon">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>지원하지 않음</td>
-                                    <td>지원하지 않음</td>
-                                    <td>지원하지 않음</td>
-                                    <td>지원하지 않음</td>
-                                    <td>지원하지 않음</td>
-                                    <td>지원하지 않음</td>
-                                </tr>
-                            </tbody>
-                        </table> 
-                        <p>참조 : <a href="https://github.com/lezhin/accessibility/blob/master/aria/README.md#aria-selected">https://github.com/lezhin/accessibility/blob/master/aria/README.md#aria-selected</a></p>
-                        
-                        <h3>aria-haspopup</h3>
-                        <ul>
-                            <li>요소에 연결되어 있는 팝업 정보를 제공한다.</li>
-                            <li>menu|listbox|tree|grid|dialog으로 제한되어 있기 때문에 의미가 정확하게 일치하는 경우에만 사용해야 한다.
-                                <ul class="sub-li">
-                                    <li>true : menu와 동일</li>
-                                    <li>menu : menu(role) 팝업이 연결됨. menu(role)는 링크 목록.</li>
-                                    <li>dialog : dialog(role) 팝업이 연결됨. dialog(role)는 상호작용 요소(버튼 또는 콘트롤)가 포함된 현재 문서의 하위창.</li>
-                                    <li>listbox: listbox(role) 팝업이 연결됨. listbox(role)는 선택 가능한 option(role)을 포함한 콤보박스.</li>
-                                    <li>tree: tree(role) 팝업이 연결됨. tree(role)는 하위 list(role)을 포함하며 접고 펼칠 수 있음.</li>
-                                    <li>grid: grid(role) 팝업이 연결됨. grid(role)는 행과 열로 구성된 선택 가능한 위젯. 상호작용 가능한 셀이기 때문에 table(role)과는 역할이 다름에 유의.</li>
-                                    <li>false(default): 연결된 팝업이 없음을 의미.</li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <pre class='code code-html'><label>HTML</label><code><!-- aria-haspopup="menu|true" -->
-&#60;button type="button" id="menu-button" aria-haspopup="menu" aria-controls="menu-list" aria-expanded="false"&#62;Menu&#60;/button&#62;
-&#60;ul id="menu-list" role="menu" aria-labelledby="menu-button" hidden&#62;
-    &#60;li&#62;
-        &#60;a href="/completed"&#62;완결&#60;/a&#62;
-    &#60;/li&#62;
-    &#60;li&#62;
-        &#60;a href="/printed"&#62;단행본&#60;/a&#62;
-    &#60;/li&#62;
-&#60;/ul&#62;
-
-<!-- aria-haspopup="dialog"-->
-&#60;a href="#login-dialog" aria-haspopup="dialog"&#62;Login&#60;/a&#62;
-&#60;section id="login-dialog" role="dialog" aria-labelledby="login-heading" aria-modal="true" hidden&#62;
-    &#60;h2 id="login-heading"&#62;로그인&#60;/h2&#62;
-    &#60;form&#62;
-        &#60;label for="id-input"&#62;아이디&#60;label&#62;
-        &#60;input id="id-input" type="text"&#62;
-        &#60;label for="pwd-input"&#62;비밀번호&#60;label&#62;
-        &#60;input id="pwd-input" type="password"&#62;
-        &#60;button type="submit"&#62;로그인&#60;/button&#62;
-    &#60;/form&#62;
-&#60;/section&#62;
-</code></pre>
-                        <ul>
-                            <li>연결한 팝업 role이 간접적인 경우에도 aria-haspopup 속성을 연결할 수 있다. 예를 들어 연결된 팝업이 <dialog> 요소라면 암시적으로 role="dialog" 속성을 지닌 것이므로 aria-haspopup="dailog" 속성을 사용할 수 있다. <br>대중적인 브라우저가 <dialog> 요소를 충분히 지원하면 role="dialog" 속성 대신 <dialog> 요소를 사용합니다.</li>
-                        </ul>
-                        <table class="table table-left">
-                            <caption>브라우저 지원</caption>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <img src="img/chrome.gif" alt="chrome icon">
-                                    </td>
-                                    <td>
-                                        <img src="img/edge.png" alt="edge icon">
-                                    </td>
-                                    <td>
-                                        <img src="img/ie.png" alt="ie icon">
-                                    </td>
-                                    <td>
-                                        <img src="img/firefox.png" alt="firefox icon">
-                                    </td>
-                                    <td>
-                                        <img src="img/safari.gif" alt="safari icon">
-                                    </td>
-                                    <td>
-                                        <img src="img/opera.gif" alt="opera icon">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>지원하지 않음</td>
-                                    <td>지원하지 않음</td>
-                                    <td>지원하지 않음</td>
-                                    <td>지원하지 않음</td>
-                                    <td>지원하지 않음</td>
-                                    <td>지원하지 않음</td>
-                                </tr>
-                            </tbody>
-                        </table> 
-                        <p>참조 : <a href="https://github.com/lezhin/accessibility/blob/master/aria/README.md#aria-haspopup">https://github.com/lezhin/accessibility/blob/master/aria/README.md#aria-haspopup</a></p>
-                        
-                        <h3>aria-expanded</h3>
-                        <ul>
-                            <li>제어 대상의 확장 또는 축소 상태를 나타낸다.</li>
-                            <li>주로 아코디언, 메뉴, 콤보박스, 하위 그룹 내용을 토글하는 경우에 사용한다.</li>
-                            <li>독립적인 내용을 제어할 때 aria-controls 속성을 이용하여 제어 대상을 명시해야 한다.</li>
-                            <li>
-                                <ul class="sub-li">
-                                    <li>undefined(default): 속성 또는 값을 선언하지 않은 경우 초기값. 제어 대상이 없거나 모두 확장 상태. 확장/축소 제어 불가능.</li>
-                                    <li>true: 요소 또는 제어 대상 확장 상태.</li>
-                                    <li>false: 요소 또는 제어 대상 축소 상태.</li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <table class="table table-left">
-                            <caption>브라우저 지원</caption>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <img src="img/chrome.gif" alt="chrome icon">
-                                    </td>
-                                    <td>
-                                        <img src="img/edge.png" alt="edge icon">
-                                    </td>
-                                    <td>
-                                        <img src="img/ie.png" alt="ie icon">
-                                    </td>
-                                    <td>
-                                        <img src="img/firefox.png" alt="firefox icon">
-                                    </td>
-                                    <td>
-                                        <img src="img/safari.gif" alt="safari icon">
-                                    </td>
-                                    <td>
-                                        <img src="img/opera.gif" alt="opera icon">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>지원하지 않음</td>
-                                    <td>지원하지 않음</td>
-                                    <td>지원하지 않음</td>
-                                    <td>지원하지 않음</td>
-                                    <td>지원하지 않음</td>
-                                    <td>지원하지 않음</td>
-                                </tr>
-                            </tbody>
-                        </table> 
-                        <p>참조 : <a href="https://github.com/lezhin/accessibility/blob/master/aria/README.md#aria-expanded">https://github.com/lezhin/accessibility/blob/master/aria/README.md#aria-expanded</a></p>
-
-                        <h3>&#60;audio&#62;</h3>
-                        <ul>
-                            <li>음악이나 오디오 스트림과 같은 사운드를 정의할 때 사용</li>
-                            <li>&#60;audio&#62; 요소 내에 위치하는 텍스트는 사용자의 브라우저가 &#60;/audio&#62; 요소를 지원하지 않을 경우 화면에 표시됩니다.</li>
-                            <li>현재 다음 세 가지 포맷의 파일을 지원하고 있다.
-                                <ul class="sub-li">
-                                    <li>MP3 : Moving Picture Experts Group에 의해 개발되었으며, MPEG-1의 오디오 규격으로 개발된 손실 압축형 파일 형식이다.
-                                        <br>
-                                        모든 브라우저에서 다 가능하다.
-                                    </li>
-                                    <li>WAV : IBM과 Microsoft에 의해 개발되었으며, 개인용 PC에서 오디오를 재생하기 위한 IBM과 Microsoft의 표준 오디오 파일 형식이다.
-                                        <br>
-                                        ie에서 지원하지 않는다.
-                                    </li>
-                                    <li>Ogg : Xiph 재단에 의해 개발되었으며, MP3의 대안으로 개발된 특허권으로 보호되지 않는 개방형 공개 멀티미디어 파일 형식이다.
-                                        <br>
-                                        ie와 safari에서 지원하지 않는다.
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>audio 옵션
-                                <ul class="sub-li">
-                                    <li>controls : 오디오 재생, 볼륨, 탐색, 일시 정지 컨트롤을 브라우저에서 제공</li>
-                                    <li>currentTime : 오디오 재생의 현재 위치(초)를 설정하거나 반환. 설정하면 재생이 지정된 위치로 이동. ie에서 지원하지 않는다.</li>
-                                    <li>autoplay : 자동 재생</li>
-                                    <li>loop : 오디오가 끝나면 자동 재생</li>
-                                    <li>muted : 음소거</li>
-                                    <li>preload : 페이지가 로드될 때 오디오 파일이 같이 로드되어야 하는지 여부와 그 방법을 명시</li>
-                                    <li>src : 오디오 파일의 위치</li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <pre class='code code-html'><label>HTML</label><code>&#60;figure&#62;
-    &#60;figcaption&#62;sample_audio_ogg 파일&#60;/figcaption&#62;
-    &#60;audio controls&#62;
-        &#60;souce src="examples/media/sample_audio_ogg.ogg"&#62;&#60;/souce&#62;
-        &#60;souce src="examples/media/sample_audio_ogg.mp3"&#62;&#60;/souce&#62;
-        &#60;souce src="examples/media/sample_audio_ogg.wav"&#62;&#60;/souce&#62;
-        이 문장은 브라우저가 audio 태그를 지원하지 않을 때 화면에 표시된다.
-    &#60;/audio&#62;
-&#60;/figure&#62;</code></pre>
-                        <table class="table table-left">
-                            <caption>브라우저 지원</caption>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <img src="img/chrome.gif" alt="chrome icon">
-                                    </td>
-                                    <td>
-                                        <img src="img/edge.png" alt="edge icon">
-                                    </td>
-                                    <td>
-                                        <img src="img/ie.png" alt="ie icon">
-                                    </td>
-                                    <td>
-                                        <img src="img/firefox.png" alt="firefox icon">
-                                    </td>
-                                    <td>
-                                        <img src="img/safari.gif" alt="safari icon">
-                                    </td>
-                                    <td>
-                                        <img src="img/opera.gif" alt="opera icon">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>3.0</td>
                                     <td>지원</td>
-                                    <td>9.0</td>
-                                    <td>3.5</td>
-                                    <td>3.1</td>
-                                    <td>10.5</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
                                 </tr>
                             </tbody>
-                        </table> 
-                   </div>
-                   <a href="meta.html" class="btn-prev fab" title="이전 페이지"><span>Prev</span></a>
-    			   <a href="element_b.html" class="btn-next fab" title="다음 페이지"><span>Next</span></a>
-     			</div>
-      		</section>
+                        </table>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
+</body>
+
 </html>

@@ -284,6 +284,26 @@
                                         rectangle.rect(10, 10, 45, 45);
                                     </td>
                                 </tr>
+                                <tr>
+                                    <td>CanvasGradient</td>
+                                    <td>그래디언트를 할 수 있게 해주는 기능. 모든 브라우저 사용 가능<br>
+                                        CanvasGradient.addColorStop() : offset 및 a로 정의된 새 정지점 color을 그래디언트에 추가한다. <br>
+                                        오프셋이 0 ~ 1까지 설정 가능하며, 그 외의 숫자나 음수를 설정하면, INDEX_SIZE_ERR가 발생한다.<br>
+                                        색상을 CSS로 구문 분석할 수 없으면 SYNTAX_ERR가 발생한다.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>ImageData</td>
+                                    <td>canvas 엘리먼트의 픽셀 데이터를 나타낸다. 인자로 주어진 Uint8ClampedArray(0 - 255 클램핑 8 비트 부호없는 정수의
+                                        배열을 나타내는 입력; [0,255] 범위를 벗어난 값을 지정하면 0 또는 255가 대신 설정됩니다. 정수가 아닌 값을 지정하면 가장 가까운
+                                        정수가 설정되며, 내용은 0 으로 초기화 된다.)<br>로 부터 해당 크기에 맞는 ImageData객체를
+                                        생성한다. <br>
+                                        만약 인자가 주어지지 않으면 검정색 사각형 이미지를 생성</td>
+                                </tr>
+                                <tr>
+                                    <td>TextMetrics</td>
+                                    <td>현재 글꼴 스타일로 캔버스에 그려진 텍스트의 너비와 같은 숫자 정보를 검색한다.</td>
+                                </tr>
                             </tbody>
                         </table>
                         <table class="table table-left">

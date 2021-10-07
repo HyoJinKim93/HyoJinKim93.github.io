@@ -287,9 +287,28 @@
                             <li>문서에 대한 업데이트나 수정할 때 쓰인다.</li>
                         </ul>
                         <pre
-                            class='code code-html'><label>HTML</label><code>&#60;p&#62;문서에 대한 업데이트나&#60;del&#62;수정할 때&#60;/del&#62; 쓰인다.&#60;/p&#62; </code></pre>
+                            class='code code-html'><label>HTML</label><code>&#60;details&#62;
+    &#60;summary&#62;오늘의 날씨&#60;/summary&#62;
+    &#60;ul&#62;
+        &#60;li&#62;미세먼지 : 좋음&#60;/li&#62;
+        &#60;li&#62;초미세먼지 : 좋음&#60;/li&#62;
+        &#60;li&#62;강수확률 : 30%&#60;/li&#62;   
+    &#60;ul&#62;
+&#60;/details&#62; </code></pre>
                         <div class="testArea">
-                            <p>문서에 대한 업데이트나 <del>수정할 때 </del>쓰인다.</p>
+                            <details>
+                                <summary>오늘의 날씨</summary>
+                                <ul>
+                                    <li>미세먼지 : 좋음</li>
+                                    <li>초미세먼지 : 좋음</li>
+                                    <li>강수확률 : 30%</li>
+                                </ul>
+                            </details>
+                            <p>끄적이다 보니, details로 아코디언을 많이 쓰는 걸 보지 않아서 찾아봤더니, details 요소를 이용해서 accordion을 만들 수 있지만, detail은 ie, edge에서 지원을 하지 않는다.
+                                그리고 기본적으로 open 속성이 있어 열고 닫음이 가능하지만, 부드러운 모션의 열고 닫음이 없고 선택한 항목 외 나머지 항목들이 닫히는 기능이 없어 자바스크립트를 추가 해야 한다.
+                                details에서 ::marker와  open 기능에 css를 추가할 수 있지만, 잘못 사용하면 css가 복잡해질 수 있다.
+                            </p>
+                            <p></p>
                         </div>
                         <table class="table table-left">
                             <caption>브라우저 지원</caption>
@@ -335,6 +354,9 @@
                             </li>
                             <li>
                                 <a href="http://tcpschool.com/html-tags/del">http://tcpschool.com/html-tags/del</a>
+                            </li>
+                            <li>
+                                <a href="https://blogpack.tistory.com/1026">details 요소로 accordion 만들기</a>
                             </li>
                         </ul>
 

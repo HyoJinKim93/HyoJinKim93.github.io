@@ -439,10 +439,14 @@
 &#60;/dialog&#62; </code></pre>
                         <div class="testArea">
                             <button id="openBtn">Open</button>
-                            <dialog id="dialog">This is an open dialog window</dialog>
+                            <dialog id="dialog">
+                                <p>This is an open dialog window</p>
+                                <button type="button" id="closeBtn">Close</button>
+                            </dialog>
                             <script>
                                 const openBtn = document.getElementById("openBtn");
                                 const dialog = document.getElementById("dialog");
+                                const closeBtn = document.getElementById("closeBtn");
 
                                 openBtn.addEventListener("click", function onOpen() {
                                     if (typeof dialog.showModal === "function") {
@@ -451,8 +455,14 @@
 
                                     }
                                 })
+
+                                dialog.addEventListener("close", function onClose() {
+                                    this.returnValue();
+                                })
+
                             </script>
                         </div>
+
                         <table class="table">
                             <caption>필수 속성</caption>
                             <colgroup>

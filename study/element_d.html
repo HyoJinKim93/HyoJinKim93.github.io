@@ -456,9 +456,11 @@
                                     }
                                 })
 
-                                dialog.addEventListener("close", function onClose() {
-                                    this.returnValue();
-                                })
+                                function closeEvent(returnValue) {
+                                    if (returnValue === 'Cancel') {
+
+                                    }
+                                }
 
                             </script>
                         </div>

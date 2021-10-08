@@ -135,7 +135,7 @@
                                 </tr>
                             </tbody>
                         </table>
-                        <p class="reference">참조
+                        <p class="reference">참조</p>
                         <ul>
                             <li>
                                 <a
@@ -148,7 +148,6 @@
                                 <a href="https://caniuse.com/?search=data">https://caniuse.com/?search=data</a>
                             </li>
                         </ul>
-                        </p>
 
                         <!-- datalist -->
                         <h3>&#60;datalist&#62;</h3>
@@ -286,8 +285,7 @@
                             <li>텍스트 한가운데 라인을 추가하여 문서에서 삭제된 텍스트를 표현할 때 사용한다.</li>
                             <li>문서에 대한 업데이트나 수정할 때 쓰인다.</li>
                         </ul>
-                        <pre
-                            class='code code-html'><label>HTML</label><code>&#60;details&#62;
+                        <pre class='code code-html'><label>HTML</label><code>&#60;details&#62;
     &#60;summary&#62;오늘의 날씨&#60;/summary&#62;
     &#60;ul&#62;
         &#60;li&#62;미세먼지 : 좋음&#60;/li&#62;
@@ -304,11 +302,82 @@
                                     <li>강수확률 : 30%</li>
                                 </ul>
                             </details>
-                            <p>끄적이다 보니, details로 아코디언을 많이 쓰는 걸 보지 않아서 찾아봤더니, details 요소를 이용해서 accordion을 만들 수 있지만, detail은 ie, edge에서 지원을 하지 않는다.
-                                그리고 기본적으로 open 속성이 있어 열고 닫음이 가능하지만, 부드러운 모션의 열고 닫음이 없고 선택한 항목 외 나머지 항목들이 닫히는 기능이 없어 자바스크립트를 추가 해야 한다.
-                                details에서 ::marker와  open 기능에 css를 추가할 수 있지만, 잘못 사용하면 css가 복잡해질 수 있다.
-                            </p>
-                            <p></p>
+                        </div>
+                        <ul>
+                            <li>details 요소를 이용해서 accordion을 만들 수 있지만, detail은 ie, edge에서 지원을 하지 않는다.</li>
+                            <li>기본적으로 open 속성이 있어 열고 닫음이 가능하지만, 그 외의 모션을 사용하려면 자바스크립트를 추가 해야 한다.</li>
+                            <li>details에서 ::marker와 open 기능에 css를 추가할 수 있지만, 잘못 사용하면 css가 복잡해질 수 있다.</li>
+                            <li>details의 summary는 제약이 있어 한 개만 있어야 한다. 한 개 이상일 땐 첫번째 오는 summary 태그만 키워드로 인식되며, 나머지는 일반
+                                태그로
+                                처리한다.</li>
+                            <li>details 태그 안의 자식 태그이면 위치는 무관하다. 상세 내용을표시하는 다른 태그들과 섞여 있어도 인식된다.</li>
+                            <li>details 태그 안에 summary 태그가 없으면 「세부정보」로 기본 요약 키워드가 자동 표시된다.</li>
+                        </ul>
+                        <table class="table table-left">
+                            <caption>브라우저 지원</caption>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="img/chrome.gif" alt="chrome icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/edge.png" alt="edge icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/ie.png" alt="ie icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/firefox.png" alt="firefox icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/safari.gif" alt="safari icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/opera.gif" alt="opera icon">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>지원</td>
+                                    <td>지원하지 않음</td>
+                                    <td>지원하지 않음</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p class="reference">참조</p>
+                        <ul>
+                            <li>
+                                <a
+                                    href="https://www.w3schools.com/tags/tag_del.asp">https://www.w3schools.com/tags/tag_del.asp</a>
+                            </li>
+                            <li>
+                                <a href="http://tcpschool.com/html-tags/del">http://tcpschool.com/html-tags/del</a>
+                            </li>
+                            <li>
+                                <a href="http://tcpschool.com/html-tags/del">http://tcpschool.com/html-tags/del</a>
+                            </li>
+                            <li>
+                                <a href="https://blogpack.tistory.com/1026">details 요소로 accordion 만들기</a>
+                            </li>
+                        </ul>
+
+                        <!-- dfn -->
+                        <h3>&#60;dfn&#62;</h3>
+                        <ul>
+                            <li>HTML에서 용어를 정의할 때 사용</li>
+                            <li>dfn 요소의 상위에는 해당 용어에 대한 정의나 설명이 반드시 있어야 한다.</li>
+                            <li>dfn 요소가 title 특성을 가지고 있으면 그 값을 현재 정의 중인 용어로 간주한다.</li>
+                            <li>dfn은 여전히 텍스트 콘텐츠를 가지고 있겠지만, 완전한 용어 대신 준말(abbr)을 넣을 수도 있고, 다른 대체 형태일 수도 있다.</li>
+                            <li>dfn이 다른 텍스트는 없이 하나의 자식만 가지는데, 그 자식이 title 특성을 가진 abbr인 경우, 자식 abbr의 title 특성 값을 현재 용어로
+                                간주한다.</li>
+                            <li>dfn 요소에 id를 지정하면, a 요소로 dfn을 가리킬 수 있다. 사용자가 용어 뜻을 잘 모를 경우, 링크를 클릭해 확인할 수 있다.</li>
+                        </ul>
+                        <pre
+                            class='code code-html'><label>HTML</label><code>&#60;p&#62;문서에 대한 업데이트나&#60;del&#62;수정할 때&#60;/del&#62; 쓰인다.&#60;/p&#62; </code></pre>
+                        <div class="testArea">
+                            <p>문서에 대한 업데이트나 <del>수정할 때 </del>쓰인다.</p>
                         </div>
                         <table class="table table-left">
                             <caption>브라우저 지원</caption>
@@ -347,16 +416,105 @@
                         <ul>
                             <li>
                                 <a
-                                    href="https://www.w3schools.com/tags/tag_del.asp">https://www.w3schools.com/tags/tag_del.asp</a>
+                                    href="https://www.w3schools.com/tags/tag_dfn.asp">https://www.w3schools.com/tags/tag_dfn.asp</a>
                             </li>
                             <li>
-                                <a href="http://tcpschool.com/html-tags/del">http://tcpschool.com/html-tags/del</a>
+                                <a href="http://tcpschool.com/html-tags/dfn">http://tcpschool.com/html-tags/dfn</a>
                             </li>
                             <li>
-                                <a href="http://tcpschool.com/html-tags/del">http://tcpschool.com/html-tags/del</a>
+                                <a href="https://caniuse.com/?search=dfn">https://caniuse.com/?search=dfn</a>
+                            </li>
+                        </ul>
+
+                        <!-- dialog -->
+                        <h3>&#60;dialog&#62;</h3>
+                        <ul>
+                            <li>닫을 수 있는 경고, 검사기, 창 등 대화 상자 및 기타 다른 상호작용 가능한 컴포넌트를 나타낸다.</li>
+                            <li>쉽게 웹 페이지에서 팝업 대화 상자를 만들 수 있도록 해준다.</li>
+                            <li>대화형 콘텐츠 요소는 aria가 관리하기 때문에 tabindex 특성을 dialog 요소에 사용해서는 안 된다.</li>
+                            <li>method="dialog" 특성을 사용한 form 요소는 제출 시 닫는다.</li>
+                        </ul>
+                        <pre class='code code-html'><label>HTML</label><code>&#60;dialog&#62;
+    &#60;p&#62;This is dialog&#60;p&#62;
+&#60;/dialog&#62; </code></pre>
+                        <div class="testArea">
+                            <button id="openBtn">Open</button>
+                            <dialog id="dialog">This is an open dialog window</dialog>
+                            <script>
+                                const openBtn = document.getElementById("openBtn");
+                                const dialog = document.getElementById("dialog");
+
+                                openBtn.addEventListener("click", function onOpen() {
+                                    if (typeof dialog.showModal === "function") {
+                                        dialog.showModal();
+                                    } else {
+
+                                    }
+                                })
+                            </script>
+                        </div>
+                        <table class="table">
+                            <caption>필수 속성</caption>
+                            <colgroup>
+                                <col>
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>속성명</th>
+                                    <th>설명</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>open</td>
+                                    <td>dialog가 활성화 상태이며 상호작용할 수 있음을 나타낸다. open이 없을 땐 dialog가 활성화 되지 않는다.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="table table-left">
+                            <caption>브라우저 지원</caption>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="img/chrome.gif" alt="chrome icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/edge.png" alt="edge icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/ie.png" alt="ie icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/firefox.png" alt="firefox icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/safari.gif" alt="safari icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/opera.gif" alt="opera icon">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원하지 않는다</td>
+                                    <td>지원하지 않는다</td>
+                                    <td>지원하지 않는다</td>
+                                    <td>지원</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p class="reference">참조</p>
+                        <ul>
+                            <li>
+                                <a href="https://www.w3schools.com/tags/tag_dfn.asp">w3schools</a>
                             </li>
                             <li>
-                                <a href="https://blogpack.tistory.com/1026">details 요소로 accordion 만들기</a>
+                                <a href="http://tcpschool.com/html-tags/dfn">tcp school</a>
+                            </li>
+                            <li>
+                                <a href="https://caniuse.com/?search=dialog">Can I Use</a>
                             </li>
                         </ul>
 

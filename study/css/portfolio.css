@@ -460,6 +460,8 @@ caption{text-align: left;}
 #cori>.port-img { float: right; width: 50%; height: 100%; background: url(../img/cori_thumb.png) center center; background-size: cover; }
 #cori>.port-img>img { width: 100%; }
 
+#study .testArea .dialog{margin:auto;padding: auto;border:3px solid #000;}
+
 @media all and (max-width:1500px) {
 #section12>.port { margin: 30% auto; }
 #section13>.port { margin: 30% auto; }

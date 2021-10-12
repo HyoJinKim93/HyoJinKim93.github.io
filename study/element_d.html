@@ -437,33 +437,30 @@
                         <pre class='code code-html'><label>HTML</label><code>&#60;dialog&#62;
     &#60;p&#62;This is dialog&#60;p&#62;
 &#60;/dialog&#62; </code></pre>
+                        
                         <div class="testArea">
                             <button id="openBtn">Open</button>
                             <dialog id="dialog">
                                 <p>This is an open dialog window</p>
-                                <button type="button" id="closeBtn">Close</button>
+                                <button type="button" class="close">Close</button>
                             </dialog>
                             <script>
                                 const openBtn = document.getElementById("openBtn");
                                 const dialog = document.getElementById("dialog");
-                                const closeBtn = document.getElementById("closeBtn");
 
                                 openBtn.addEventListener("click", function onOpen() {
                                     if (typeof dialog.showModal === "function") {
                                         dialog.showModal();
-                                    } else {
-
                                     }
                                 })
-
-                                function closeEvent(returnValue) {
-                                    if (returnValue === 'Cancel') {
-
-                                    }
-                                }
+                                const closeBtn = document.querySelector('.close');
+                                closeBtn.addEventListener('click', () => {
+                                    dialog.close();
+                                });
 
                             </script>
                         </div>
+
 
                         <table class="table">
                             <caption>필수 속성</caption>

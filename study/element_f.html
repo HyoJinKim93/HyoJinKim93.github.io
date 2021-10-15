@@ -103,12 +103,12 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>지원</td>
-                                    <td>지원</td>
-                                    <td>지원</td>
-                                    <td>지원</td>
-                                    <td>지원</td>
-                                    <td>지원</td>
+                                    <td>지원하지만, 더 이상 사용하지 않는다.</td>
+                                    <td>지원하지만, 더 이상 사용하지 않는다.</td>
+                                    <td>지원하지만, 더 이상 사용하지 않는다.</td>
+                                    <td>지원하지만, 더 이상 사용하지 않는다.</td>
+                                    <td>지원하지만, 더 이상 사용하지 않는다.</td>
+                                    <td>지원하지만, 더 이상 사용하지 않는다.</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -123,6 +123,125 @@
                             </li>
                             <li>
                                 <a href="https://caniuse.com/?search=dfn">https://caniuse.com/?search=dfn</a>
+                            </li>
+                        </ul>
+
+                        <!-- form -->
+                        <h3>&#60;form&#62;</h3>
+                        <ul>
+                            <li>사용자 입력을 위한 HTML 폼을 생성하는 데 사용된다.</li>
+                            <li>&#60;form&#62;에서 사용하는 태그들은 다음과 같다.<br>
+                                &#60;input&#62;<br>
+                                &#60;textarea&#62;<br>
+                                &#60;button&#62;<br>
+                                &#60;select&#62;<br>
+                                &#60;option&#62;<br>
+                                &#60;optiongroup&#62;<br>
+                                &#60;fieldset&#62;<br>
+                                &#60;label&#62;<br>
+                                &#60;output&#62;<br>
+                            </li>
+                            <li>HTML5에서는 form 요소에 autocomplete 속성과 novalidate 속성이 새롭게 추가되었고, accept 속성은 더 이상 지원되지 않도록
+                                변경</li>
+                            <li>XHTML에서는 name 속성을 더 이상 지원하지 않으므로, name 속성 대신 전역 속성인 id 속성을 사용해야 한다.</li>
+                            <li>form 중, valid, invalid 부분은 css :valid와 :invalid pseudo-class를 사용할 수 있다.</li>
+                        </ul>
+                        <pre class='code code-html'><label>HTML</label><code>&#60;form action="" method="get"&#62;
+    &#60;label for="name"&#62;First name: &#60;&#62;
+    &#60;input type="text" id="name"&#62;
+    &#60;button type="submit"&#62;Submit&#60;/button&#62;
+&#60;/form&#62; </code></pre>
+                        <table class="table">
+                            <caption>필수 속성</caption>
+                            <colgroup>
+                                <col style="width:20%">
+                                <col style="width:20%">
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>속성명</th>
+                                    <th>속성값</th>
+                                    <th>설명</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>accept</td>
+                                    <td>파일 타입</td>
+                                    <td>서버로 업로드 할 수 있는 파일 타입을 콤마로 구분된 리스트로 명시. <br>
+                                        HTML5에선 더 이상 지원 안 함.</td>
+                                </tr>
+                                <tr>
+                                    <td>accept-charset</td>
+                                    <td>문자셋</td>
+                                    <td>폼 데이터(form data)를 서버로 보낼 때 사용되는 문자 인코딩(character encoding) 방식을 명시<br>
+                                        accept-charset 속성의 기본값은 “UNKNOWN”으로 설정한다.
+                                        &#60;form accept-charset="문자셋"&#62;
+                                        <a href="http://tcpschool.com/html-tag-attrs/form-accept-charset">참고 :
+                                            http://tcpschool.com/html-tag-attrs/form-accept-charset</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="table table-left">
+                            <caption>브라우저 지원</caption>
+                            <colgroup>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="img/chrome.gif" alt="chrome icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/edge.png" alt="edge icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/ie.png" alt="ie icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/firefox.png" alt="firefox icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/safari.gif" alt="safari icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/opera.gif" alt="opera icon">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p class="reference">참조</p>
+                        <ul>
+                            <li>
+                                <a href="https://www.w3schools.com/tags/tag_form.asp">w3schools form -
+                                    https://www.w3schools.com/tags/tag_form.asp</a>
+                            </li>
+                            <li>
+                                <a href="http://tcpschool.com/html-tags/form">tcp scool fom -
+                                    http://tcpschool.com/html-tags/form</a>
+                            </li>
+                            <li>
+                                <a href="https://developer.mozilla.org/ko/docs/Web/HTML/Element/form"> mdn form -
+                                    https://developer.mozilla.org/ko/docs/Web/HTML/Element/form</a>
+                            </li>
+                            <li>
+                                <a href="https://caniuse.com/?search=form">Can i use form -
+                                    https://caniuse.com/?search=form</a>
                             </li>
                         </ul>
 

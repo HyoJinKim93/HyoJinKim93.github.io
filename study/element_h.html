@@ -260,11 +260,15 @@
                             <li>HTML 문서의 루트 요소(root element)를 정의할 때 사용</li>
                             <li>DOCTYPE 선언을 제외한 모든 다른 HTML 요소를 포함하기 위한 컨테이너이며, 브라우저에게 해당 문서가 HTML 문서임을 알려주는 역할을 한다.</li>
                         </ul>
-                        <pre class='code code-html'><label>HTML</label><code>&#60;frameset cols="25%,*,25%"&#62;
-    &#60;frame name="left" src="/ex1/intro" /&#62;
-    &#60;frame name="center" src="/ex2/intro" /&#62;
-    &#60;frame name="right" src="/ex3/intro" /&#62;
-&#60;/frameset&#62; </code></pre>
+                        <pre class='code code-html'><label>HTML</label><code>&#60;!DOCTYPE html&#62;
+&#60;html lang="ko"&#62;
+    &#60;head&#62;
+        &#60;title&#62;HTML 문서의 제목입니다.&#60;/title&#62;
+    &#60;/head&#62;
+    &#60;body&#62;
+        &#60;p&#62;HTML 문서의 콘텐츠(contents) 영역입니다.&#60;/p&#62;
+    &#60;/body&#62;
+&#60;/html&#62; </code></pre>
                         <div class="testArea">
                             <!DOCTYPE html>
                             <html lang="ko">
@@ -272,7 +276,7 @@
                                     <title>HTML 문서의 제목입니다.</title>
                                 </head>
                                 <body>
-                                    HTML 문서의 콘텐츠(contents) 영역입니다.
+                                    <p>HTML 문서의 콘텐츠(contents) 영역입니다.</p>
                                 </body>
                             </html>
                         </div>
@@ -292,71 +296,11 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>frameborder</td>
-                                    <td>0, 1</td>
-                                    <td>
-                                        프레임(frame) 주위에 테두리(border)를 보여줄지 여부를 명시함.<br>
-                                        HTML5에서는 더 이상 지원하지 않음.
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>longdesc</td>
-                                    <td>URL</td>
-                                    <td>
-                                        프레임에 보일 콘텐츠에 대한 설명을 담고 있는 페이지를 명시함.<br>
-                                        HTML5에서는 더 이상 지원하지 않음.<br>
-                                        ex) &#60;frame longdesc="URL"&#62;<br>
-                                        <a href="http://www.w3bai.com/ko/tags/att_frame_longdesc.html">참고 :
-                                            http://www.w3bai.com/ko/tags/att_frame_longdesc.html</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>marginheight</td>
-                                    <td>픽셀</td>
-                                    <td>프레임의 위아래 마진값<br>
-                                        HTML5에서는 더 이상 지원하지 않음.<br>
-                                        ex) &#60;frame marginheight="pixels"&#62;<br>
-                                        <a href="http://www.w3bai.com/ko/tags/att_frame_marginheight.html">참고 :
-                                            http://www.w3bai.com/ko/tags/att_frame_marginheight.html</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>marginwidth</td>
-                                    <td>픽셀</td>
-                                    <td>프레임의 좌우 마진값<br>
-                                        HTML5에서는 더 이상 지원하지 않음.<br>
-                                        ex) &#60;frame marginwidth="pixels"&#62;<br>
-                                        <a href="http://www.w3bai.com/ko/tags/att_frame_marginwidth.html">참고 :
-                                            http://www.w3bai.com/ko/tags/att_frame_marginwidth.html</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>name</td>
-                                    <td>텍스트</td>
-                                    <td>프레임의 이름(name)을 명시함.<br>
-                                        HTML5에서는 더 이상 지원하지 않음.
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>noresize</td>
-                                    <td>noresize</td>
-                                    <td>사용자가 프레임의 크기를 조절할 수 있는지 여부를 명시함.<br>
-                                        HTML5에서는 더 이상 지원하지 않음.
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>scrolling</td>
-                                    <td>yes, no, auto</td>
-                                    <td>프레임에 스크롤바(scrollbar)를 표시할지 여부를 명시함.<br>
-                                        HTML5에서는 더 이상 지원하지 않음.
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>src</td>
-                                    <td>URL</td>
-                                    <td>
-                                        프레임에 보일 문서의 URL를 명시함.<br>
-                                        HTML5에서는 더 이상 지원하지 않음.
+                                    <td>xmlns</td>
+                                    <td>	
+                                        http://www.w3.org/1999/xhtml</td>
+                                    <td>	
+                                        해당 문서를 위한 XML 네임스페이스를 명시함.
                                     </td>
                                 </tr>
                             </tbody>
@@ -393,12 +337,12 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>지원하지만, 더 이상 사용하지 않는다.</td>
-                                    <td>지원하지만, 더 이상 사용하지 않는다.</td>
-                                    <td>지원하지만, 더 이상 사용하지 않는다.</td>
-                                    <td>지원하지만, 더 이상 사용하지 않는다.</td>
-                                    <td>지원하지만, 더 이상 사용하지 않는다.</td>
-                                    <td>지원하지만, 더 이상 사용하지 않는다.</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
                                 </tr>
                             </tbody>
                         </table>

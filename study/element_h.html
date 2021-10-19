@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<!DOCTYPE HTML>
 <html lang="ko">
 
 <head>
@@ -127,377 +127,138 @@
                                 <a href="http://tcpschool.com/html-tags/headings">tcpschool h1 ~ h6 - http://tcpschool.com/html-tags/headings</a>
                             </li>
                             <li>
-                                <a href="https://developer.mozilla.org/ko/docs/Web/HTML/Element/Heading_Elements"> MDN h1 ~ g6 - https://developer.mozilla.org/ko/docs/Web/HTML/Element/Heading_Elements</a>
+                                <a href="https://developer.mozilla.org/ko/docs/Web/HTML/Element/Heading_Elements"> MDN h1 ~ h6 - https://developer.mozilla.org/ko/docs/Web/HTML/Element/Heading_Elements</a>
                             </li>
                             <li>
                                 <a href="https://caniuse.com/?search=h1">Can I Use h1 ~ h6 - https://caniuse.com/?search=h1</a>
                             </li>
                         </ul>
 
-                        <!-- form -->
-                        <h3>&#60;form&#62;</h3>
+                        <!-- head -->
+                        <h3>&#60;head&#62;</h3>
                         <ul>
-                            <li>사용자 입력을 위한 HTML 폼을 생성하는 데 사용된다.</li>
-                            <li>&#60;form&#62;에서 사용하는 태그들은 다음과 같다.<br>
-                                &#60;input&#62;<br>
-                                &#60;textarea&#62;<br>
-                                &#60;button&#62;<br>
-                                &#60;select&#62;<br>
-                                &#60;option&#62;<br>
-                                &#60;optiongroup&#62;<br>
-                                &#60;fieldset&#62;<br>
-                                &#60;label&#62;<br>
-                                &#60;output&#62;<br>
-                            </li>
-                            <li>HTML5에서는 form 요소에 autocomplete 속성과 novalidate 속성이 새롭게 추가되었고, accept 속성은 더 이상 지원되지 않도록
-                                변경</li>
-                            <li>XHTML에서는 name 속성을 더 이상 지원하지 않으므로, name 속성 대신 전역 속성인 id 속성을 사용해야 한다.</li>
-                            <li>form 중, valid, invalid 부분은 css :valid와 :invalid pseudo-class를 사용할 수 있다.</li>
-                        </ul>
-                        <pre class='code code-html'><label>HTML</label><code>&#60;form action="" method="get"&#62;
-    &#60;label for="name"&#62;First name: &#60;&#62;
-    &#60;input type="text" id="name"&#62;
-    &#60;button type="submit"&#62;Submit&#60;/button&#62;
-&#60;/form&#62; </code></pre>
-                        <table class="table">
-                            <caption>필수 속성</caption>
-                            <colgroup>
-                                <col style="width:20%">
-                                <col style="width:20%">
-                                <col>
-                            </colgroup>
-                            <thead>
-                                <tr>
-                                    <th>속성명</th>
-                                    <th>속성값</th>
-                                    <th>설명</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>accept</td>
-                                    <td>파일 타입</td>
-                                    <td>서버로 업로드 할 수 있는 파일 타입을 콤마로 구분된 리스트로 명시. <br>
-                                        HTML5에선 더 이상 지원 안 함.</td>
-                                </tr>
-                                <tr>
-                                    <td>accept-charset</td>
-                                    <td>문자셋</td>
-                                    <td>폼 데이터(form data)를 서버로 보낼 때 사용되는 문자 인코딩(character encoding) 방식을 명시<br>
-                                        accept-charset 속성의 기본값은 “UNKNOWN”으로 설정한다.
-                                        &#60;form accept-charset="문자셋"&#62;
-                                        <a href="http://tcpschool.com/html-tag-attrs/form-accept-charset">참고 :
-                                            http://tcpschool.com/html-tag-attrs/form-accept-charset</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>action</td>
-                                    <td>URL</td>
-                                    <td>폼 데이터가 서버로 제출될 때 해당 데이터가 도착할 URL을 명시함.</td>
-                                </tr>
-                                <tr>
-                                    <td>enctype</td>
-                                    <td>
-                                        <p>application/x-www-form-urlencoded : 기본값으로, 모든 문자들은 서버로 보내기 전에 인코딩 됨을 명시</p>
-
-                                        <p>multipart/form-data : 모든 문자를 인코딩하지 않음. 주로 파일이나 이미지를 서버로 보낼 때 주로 사용</p>
-
-                                        <p>text/plain :
-                                            공백 문자(space)는 "+" 기호로 변환하지만, 나머지 문자는 모두 인코딩되지 않음을 명시함.</p>
-                                    </td>
-                                    <td>폼 데이터가 서버로 제출될 때 해당 데이터가 인코딩되는 방법을 명시함.<br>
-                                        단, form 요소의 method 속성이 post인 경우에만 가능<br>
-                                        &#60;form action="/home/uploadfiles" method="post"
-                                        enctype="multipart/form-data"&#62;&#60;/form&#62;
-                                        <a href="http://tcpschool.com/html-tag-attrs/form-enctype">참고 :
-                                            http://tcpschool.com/html-tag-attrs/form-enctype</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>autocomplete</td>
-                                    <td>on, off</td>
-                                    <td>form 요소에서 자동 완성 기능을 사용할지 여부를 명시함.</td>
-                                </tr>
-                                <tr>
-                                    <td>method</td>
-                                    <td>
-                                        <ul>
-                                            <li>GET
-                                                <ul class="sub-li">
-                                                    <li>URL에 폼 데이터를 추가하여 서버로 전달하는 방식이다. </li>
-                                                    <li>HTTP 요청은 브라우저에 의해 캐시되어 저장된다.</li>
-                                                    <li>보통 쿼리 문자열에 포함되어 전송되므로, 길이의 제한이 있다. 따라서 보안상 취약점이 존재하므로, 중요한 데이터는
-                                                        POST 형식으로 하는 것이 좋다.
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>POST
-                                                <ul class="sub-li">
-                                                    <li>폼 데이터를 별도로 첨부하여 서버로 전달하는 방식이다.</li>
-                                                    <li>HTTP 요청은 브라우저에 의해 캐시되지 않고, 히스토리에도 남아있지 않는다.</li>
-                                                    <li>HTTP 요청에 의한 데이터는 쿼리 문자열과는 별도로 전송된다.</li>
-                                                    <li>데이터의 길이에 제한이 없고, 보안성이 높다.</li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </td>
-                                    <td>폼 데이터가 서버로 제출될 때 사용되는 HTTP 메소드를 명시함.</td>
-                                </tr>
-                                <tr>
-                                    <td>name</td>
-                                    <td>텍스트</td>
-                                    <td>form 요소의 이름을 명시함.</td>
-                                </tr>
-                                <tr>
-                                    <td>novalidate</td>
-                                    <td>novalidate</td>
-                                    <td>폼 데이터가 서버로 제출될 때 해당 데이터의 유효성을 검사하지 않음을 명시함.</td>
-                                </tr>
-                                <tr>
-                                    <td>target</td>
-                                    <td>_blank, _self, _parent, _top</td>
-                                    <td>폼 데이터를 서버로 제출한 후 받는 응답이 열릴 위치를 명시함.</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <table class="table table-left">
-                            <caption>브라우저 지원</caption>
-                            <colgroup>
-                                <col>
-                                <col>
-                                <col>
-                                <col>
-                                <col>
-                                <col>
-                            </colgroup>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <img src="img/chrome.gif" alt="chrome icon">
-                                    </td>
-                                    <td>
-                                        <img src="img/edge.png" alt="edge icon">
-                                    </td>
-                                    <td>
-                                        <img src="img/ie.png" alt="ie icon">
-                                    </td>
-                                    <td>
-                                        <img src="img/firefox.png" alt="firefox icon">
-                                    </td>
-                                    <td>
-                                        <img src="img/safari.gif" alt="safari icon">
-                                    </td>
-                                    <td>
-                                        <img src="img/opera.gif" alt="opera icon">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>지원</td>
-                                    <td>지원</td>
-                                    <td>지원</td>
-                                    <td>지원</td>
-                                    <td>지원</td>
-                                    <td>지원</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <p class="reference">참조</p>
-                        <ul>
-                            <li>
-                                <a href="https://www.w3schools.com/tags/tag_form.asp">w3schools form -
-                                    https://www.w3schools.com/tags/tag_form.asp</a>
-                            </li>
-                            <li>
-                                <a href="http://tcpschool.com/html-tags/form">tcp school form -
-                                    http://tcpschool.com/html-tags/form</a>
-                            </li>
-                            <li>
-                                <a href="https://developer.mozilla.org/ko/docs/Web/HTML/Element/form"> MDN form -
-                                    https://developer.mozilla.org/ko/docs/Web/HTML/Element/form</a>
-                            </li>
-                            <li>
-                                <a href="https://caniuse.com/?search=form">Can i use form -
-                                    https://caniuse.com/?search=form</a>
-                            </li>
-                        </ul>
-
-                        <!-- frame -->
-                        <h3>&#60;frame&#62;</h3>
-                        <ul>
-                            <li>framset 요소에 포함되는 하나의 프레임을 정의할 때 사용한다.</li>
-                            <li>framset 요소는 border, 스크롤, 크기 재조정 가능 여부 등 서로 다른 속성값을 가진다.</li>
-                            <li>HTML5에선 지원하지 않는다. <br>
-                                더 이상 지원되지 않는 frame 요소를 사용하면서 HTML 유효성 검사를 통과하기 위해서는 다음의 두 가지 방법처럼 DOCTYPE을 선언해야 한다.<br>
-                                &#60;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-                                "http://www.w3.org/TR/html4/loose.dtd"&#62;<br>
-                                &#60;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN"
-                                "http://www.w3.org/TR/html4/frameset.dtd"&#62;
-                            </li>
-                            <li>HTML에서는 frame 태그를 닫지 않지만, XHTML에서는 태그를 반드시 닫아야 한다.</li>
-                        </ul>
-                        <pre class='code code-html'><label>HTML</label><code>&#60;frameset cols="25%,*,25%"&#62;
-    &#60;frame name="left" src="/ex1/intro" /&#62;
-    &#60;frame name="center" src="/ex2/intro" /&#62;
-    &#60;frame name="right" src="/ex3/intro" /&#62;
-&#60;/frameset&#62; </code></pre>
-                        <div class="testArea">
-                            <frameset cols="25%,*,25%">
-                                <frame name="left" src="http://tcpschool.com/html/intro" />
-                                <frame name="center" src="http://tcpschool.com/css/intro" />
-                                <frame name="right" src="http://tcpschool.com/php/intro" />
-                            </frameset>
-                        </div>
-                        <table class="table">
-                            <caption>필수 속성</caption>
-                            <colgroup>
-                                <col style="width:20%">
-                                <col style="width:20%">
-                                <col>
-                            </colgroup>
-                            <thead>
-                                <tr>
-                                    <th>속성명</th>
-                                    <th>속성값</th>
-                                    <th>설명</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>frameborder</td>
-                                    <td>0, 1</td>
-                                    <td>
-                                        프레임(frame) 주위에 테두리(border)를 보여줄지 여부를 명시함.<br>
-                                        HTML5에서는 더 이상 지원하지 않음.
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>longdesc</td>
-                                    <td>URL</td>
-                                    <td>
-                                        프레임에 보일 콘텐츠에 대한 설명을 담고 있는 페이지를 명시함.<br>
-                                        HTML5에서는 더 이상 지원하지 않음.<br>
-                                        ex) &#60;frame longdesc="URL"&#62;<br>
-                                        <a href="http://www.w3bai.com/ko/tags/att_frame_longdesc.html">참고 :
-                                            http://www.w3bai.com/ko/tags/att_frame_longdesc.html</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>marginheight</td>
-                                    <td>픽셀</td>
-                                    <td>프레임의 위아래 마진값<br>
-                                        HTML5에서는 더 이상 지원하지 않음.<br>
-                                        ex) &#60;frame marginheight="pixels"&#62;<br>
-                                        <a href="http://www.w3bai.com/ko/tags/att_frame_marginheight.html">참고 :
-                                            http://www.w3bai.com/ko/tags/att_frame_marginheight.html</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>marginwidth</td>
-                                    <td>픽셀</td>
-                                    <td>프레임의 좌우 마진값<br>
-                                        HTML5에서는 더 이상 지원하지 않음.<br>
-                                        ex) &#60;frame marginwidth="pixels"&#62;<br>
-                                        <a href="http://www.w3bai.com/ko/tags/att_frame_marginwidth.html">참고 :
-                                            http://www.w3bai.com/ko/tags/att_frame_marginwidth.html</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>name</td>
-                                    <td>텍스트</td>
-                                    <td>프레임의 이름(name)을 명시함.<br>
-                                        HTML5에서는 더 이상 지원하지 않음.
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>noresize</td>
-                                    <td>noresize</td>
-                                    <td>사용자가 프레임의 크기를 조절할 수 있는지 여부를 명시함.<br>
-                                        HTML5에서는 더 이상 지원하지 않음.
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>scrolling</td>
-                                    <td>yes, no, auto</td>
-                                    <td>프레임에 스크롤바(scrollbar)를 표시할지 여부를 명시함.<br>
-                                        HTML5에서는 더 이상 지원하지 않음.
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>src</td>
-                                    <td>URL</td>
-                                    <td>
-                                        프레임에 보일 문서의 URL를 명시함.<br>
-                                        HTML5에서는 더 이상 지원하지 않음.
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <table class="table table-left">
-                            <caption>브라우저 지원</caption>
-                            <colgroup>
-                                <col>
-                                <col>
-                                <col>
-                                <col>
-                                <col>
-                                <col>
-                            </colgroup>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <img src="img/chrome.gif" alt="chrome icon">
-                                    </td>
-                                    <td>
-                                        <img src="img/edge.png" alt="edge icon">
-                                    </td>
-                                    <td>
-                                        <img src="img/ie.png" alt="ie icon">
-                                    </td>
-                                    <td>
-                                        <img src="img/firefox.png" alt="firefox icon">
-                                    </td>
-                                    <td>
-                                        <img src="img/safari.gif" alt="safari icon">
-                                    </td>
-                                    <td>
-                                        <img src="img/opera.gif" alt="opera icon">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>지원하지만, 더 이상 사용하지 않는다.</td>
-                                    <td>지원하지만, 더 이상 사용하지 않는다.</td>
-                                    <td>지원하지만, 더 이상 사용하지 않는다.</td>
-                                    <td>지원하지만, 더 이상 사용하지 않는다.</td>
-                                    <td>지원하지만, 더 이상 사용하지 않는다.</td>
-                                    <td>지원하지만, 더 이상 사용하지 않는다.</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <p class="reference">참조</p>
-                        <ul>
-                            <li>
-                                <a href="https://www.w3schools.com/tags/tag_frame.asp">w3schools frame -
-                                    https://www.w3schools.com/tags/tag_frame.asp</a>
-                            </li>
-                            <li>
-                                <a href="http://tcpschool.com/html-tags/frame">tcp school frame -
-                                    http://tcpschool.com/html-tags/frame</a>
-                            </li>
-                            <li>
-                                <a href="https://developer.mozilla.org/ko/docs/Web/HTML/Element/frame">MDN frame -
-                                    https://developer.mozilla.org/ko/docs/Web/HTML/Element/frame</a>
-                            </li>
-                            <li>
-                                <a href="https://caniuse.com/?search=frame">Can I Use frame -
-                                    https://caniuse.com/?search=frame</a>
-                            </li>
-                        </ul>
-
-                        <!-- frameset -->
-                        <h3>&#60;frameset&#62;</h3>
-                        <ul>
-                            <li>문서의 레이아웃을 구성하기 위해 사용되는 프레임(frame)들의 집합을 정의할 때 사용</li>
+                            <li>해당 문서에 대한 정보인 메타데이터의 집합을 정의할 때 사용한다.</li>
+                            <li>HTML의 head는 페이지를 열 때 웹 브라우저에 표시되지 않는다. head의 내용이 하는 일은 페이지에 대한 metadate를 포함하는 것이다.</li>
                             <li></li>
+                            <li></li>
+                            <li>&#60;title&#62;에서 사용하는 태그들은 다음과 같다.<br>
+                                &#60;style&#62;<br>
+                                &#60;base&#62;<br>
+                                &#60;link&#62;<br>
+                                &#60;meta&#62;<br>
+                                &#60;script&#62;<br>
+                                &#60;noscript&#62;<br>
+                                &#60;favicon&#62;<br>
+                            </li>
+                            <li>script와 noscript는 body 안에 들어갈 수 있다.</li>
+                        </ul>
+                        <pre class='code code-html'><label>HTML</label><code>&#60;head&#62;
+    &#60;title&#62;문서의 제목&#60;title&#62;
+&#60;/head&#62; </code></pre>
+                        <p class="reference">참조</p>
+                        <ul>
+                            <li>
+                                <a href="https://www.w3schools.com/tags/tag_head.asp">w3schools head -
+                                    https://www.w3schools.com/tags/tag_head.asp</a>
+                            </li>
+                            <li>
+                                <a href="http://tcpschool.com/html-tags/head">tcp school head -
+                                    http://tcpschool.com/html-tags/head</a>
+                            </li>
+                            <li>
+                                <a href="https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML"> MDN head -
+                                    https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML</a>
+                            </li>
+                            <li>
+                                <a href="https://caniuse.com/?search=head">Can i use head -
+                                    https://caniuse.com/?search=head</a>
+                            </li>
+                        </ul>
+
+                        <!-- hr -->
+                        <h3>&#60;hr&#62;</h3>
+                        <ul>
+                            <li>HTML 문서에서 내용을 구분하거나 주제의 변화를 정의한다.</li>
+                            <li>주제가 바뀔 때 수평 가로선으로 정의할 때 사용한다.</li>
+                        </ul>
+                        <pre class='code code-html'><label>HTML</label><code>&#60;div&#62;
+    &#60;p&#62;hr은 수평 가로선으로 정의합니다.&#60;/p&#62;
+    &#60;hr&#62;
+    &#60;p&#62;hr은 수평 가로선으로 정의합니다.&#60;/p&#62;
+&#60;/div&#62; </code></pre>
+                        <div class="testArea">
+                            <div>
+                                <p>hr은 수평 가로선으로 정의합니다.</p>
+                                <hr>
+                                <p>hr은 수평 가로선으로 정의합니다.</p>
+                            </div>
+                        </div>
+                        <table class="table table-left">
+                            <caption>브라우저 지원</caption>
+                            <colgroup>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="img/chrome.gif" alt="chrome icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/edge.png" alt="edge icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/ie.png" alt="ie icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/firefox.png" alt="firefox icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/safari.gif" alt="safari icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/opera.gif" alt="opera icon">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p class="reference">참조</p>
+                        <ul>
+                            <li>
+                                <a href="https://www.w3schools.com/tags/tag_hr.asp">w3schools hr -
+                                    https://www.w3schools.com/tags/tag_hr.asp</a>
+                            </li>
+                            <li>
+                                <a href="http://tcpschool.com/html-tags/hr">tcp school hr -
+                                    http://tcpschool.com/html-tags/hr</a>
+                            </li>
+                            <li>
+                                <a href="https://developer.mozilla.org/ko/docs/Web/HTML/Element/hr">MDN hr -
+                                    https://developer.mozilla.org/ko/docs/Web/HTML/Element/hr</a>
+                            </li>
+                            <li>
+                                <a href="https://caniuse.com/?search=hr">Can I Use hr -
+                                    https://caniuse.com/?search=hr</a>
+                            </li>
+                        </ul>
+
+                        <!-- html -->
+                        <h3>&#60;html&#62;</h3>
+                        <ul>
+                            <li>HTML 문서의 루트 요소(root element)를 정의할 때 사용</li>
+                            <li>DOCTYPE 선언을 제외한 모든 다른 HTML 요소를 포함하기 위한 컨테이너이며, 브라우저에게 해당 문서가 HTML 문서임을 알려주는 역할을 한다.</li>
                         </ul>
                         <pre class='code code-html'><label>HTML</label><code>&#60;frameset cols="25%,*,25%"&#62;
     &#60;frame name="left" src="/ex1/intro" /&#62;
@@ -505,11 +266,15 @@
     &#60;frame name="right" src="/ex3/intro" /&#62;
 &#60;/frameset&#62; </code></pre>
                         <div class="testArea">
-                            <frameset cols="25%,*,25%">
-                                <frame name="left" src="http://tcpschool.com/html/intro" />
-                                <frame name="center" src="http://tcpschool.com/css/intro" />
-                                <frame name="right" src="http://tcpschool.com/php/intro" />
-                            </frameset>
+                            <!DOCTYPE html>
+                            <html lang="ko">
+                                <head>
+                                    <title>HTML 문서의 제목입니다.</title>
+                                </head>
+                                <body>
+                                    HTML 문서의 콘텐츠(contents) 영역입니다.
+                                </body>
+                            </html>
                         </div>
                         <table class="table">
                             <caption>필수 속성</caption>

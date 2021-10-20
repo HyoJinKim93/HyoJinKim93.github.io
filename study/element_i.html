@@ -124,12 +124,179 @@
                             </li>
                             <li>XHTML에서는 name 속성을 더 이상 지원하지 않으므로, id 속성을 대신 사용한다.</li>
                         </ul>
-                        <pre class='code code-html'><label>HTML</label><code>&#60;iframe src="http://tcpschool.com"&#62;
-&#60;/iframe&#62; </code></pre>
+                        <pre
+                            class='code code-html'><label>HTML</label><code>&#60;iframe src="http://tcpschool.com"&#62;&#60;/iframe&#62; </code></pre>
                         <div class="testArea">
                             <iframe id="inlineFrameExample" title="Inline Frame Example" width="300" height="200"
                                 src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik">
                             </iframe>
+                        </div>
+                        <table class="table">
+                            <caption>필수 속성</caption>
+                            <colgroup>
+                                <col style="width:20%">
+                                <col style="width:20%">
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>속성명</th>
+                                    <th>속성값</th>
+                                    <th>설명</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>align</td>
+                                    <td>left, right, top, middle, bottom</td>
+                                    <td>주변 요소에 따라 iframe 요소가 정렬되는 방법을 명시한다 <br>HTML5에서는 더 이상 지원하지 않음</td>
+                                </tr>
+                                <tr>
+                                    <td>frameborder</td>
+                                    <td>0, 1</td>
+                                    <td>테두리(border)를 보여줄지 여부를 명시함 <br>HTML5에서는 더 이상 지원하지 않음</td>
+                                </tr>
+                                <tr>
+                                    <td>height</td>
+                                    <td>픽셀</td>
+                                    <td>높이를 명시함</td>
+                                </tr>
+                                <tr>
+                                    <td>longdesc</td>
+                                    <td>URL</td>
+                                    <td>보일 콘텐츠에 대한 설명을 담고 있는 페이지를 명시함 <br>HTML5에서는 더 이상 지원하지 않음</td>
+                                </tr>
+                                <tr>
+                                    <td>marginheight</td>
+                                    <td>픽셀</td>
+                                    <td>콘텐츠의 위아래 마진(margin)을 명시함<br>HTML5에서는 더 이상 지원하지 않음</td>
+                                </tr>
+                                <tr>
+                                    <td>marginwidth</td>
+                                    <td>픽셀</td>
+                                    <td>콘텐츠의 좌우 마진(margin)을 명시함<br>HTML5에서는 더 이상 지원하지 않음</td>
+                                </tr>
+                                <tr>
+                                    <td>name</td>
+                                    <td>텍스트</td>
+                                    <td>iframe 요소의 이름을 명시함</td>
+                                </tr>
+                                <tr>
+                                    <td>sandbox</td>
+                                    <td>
+                                        비어 놓음 : 모든 제한 사항(restrictions)을 적용함
+                                        allow-forms : 리소스가 폼 데이터를 제출할 수 있도록 허용<br>
+                                        allow-modals : 리소스가 모달 윈도우를 열 수 있도록 허용<br>
+                                        allow-orientation-lock : 리소스가 화면 방향 전환을 잠글 수 있도록 허용<br>
+                                        allow-pointer-lock : 리소스가 Pointer Lock API를 사용할 수 있도록 허용<br>
+                                        allow-popups : window.open()이나 target=“_blank”, showModalDialog() 등의 팝업(popup)을
+                                        허용<br>
+                                        allow-popups-to-escape-sandbox : 모든 제한 사항이 적용된 문서에서 새로운 창을 열 때 제한 사항을 상속받지 않은 창을
+                                        열 수 있도록 허용<br>
+                                        allow-presentation : 리소스가 프리젠테이션 세션을 시작할 수 있도록 허용<br>
+                                        allow-same-origin : <br>
+                                        allow-scripts : 리소스가 스크립트를 실행할 순 있지만, 팝업은 생성하지 못 함<br>
+                                        allow-storage-access-by-user-activation : 리소스가 Storage Access API를 사용하여 상위 스토리지
+                                        기능에 접근 요청을 할 수 있도록 허용<br>
+                                        allow-top-navigation : 리소스가 최상위 브라우징 컨텍스트 (_top)을 탐색할 수 있도록 허용<br>
+                                        allow-top-navigation-by-user-activation : 리소스가 사용자의 요청이 있을 때만 최상위 브라우징
+                                        컨텍스트(_top)를 탐색할 수 있도록 허용
+                                    </td>
+                                    <td>콘텐츠에 대한 추가적인 제한 사항(restrictions)들의 집합을 명시함</td>
+                                </tr>
+                                <tr>
+                                    <td>scrolling</td>
+                                    <td>yes, no, auto</td>
+                                    <td>scrollbar를 표시할지 여부를 명시<br>HTML5에서는 더 이상 지원하지 않는다.</td>
+                                </tr>
+                                <tr>
+                                    <td>src</td>
+                                    <td>URL</td>
+                                    <td>iframe 요소에 보인 문서의 URL을 명시</td>
+                                </tr>
+                                <tr>
+                                    <td>srcdoc</td>
+                                    <td>HTML 코드</td>
+                                    <td>iframe 요소에 보일 웹 페이지의 HTML 코드를 명시</td>
+                                </tr>
+                                <tr>
+                                    <td>width</td>
+                                    <td>픽셀</td>
+                                    <td>iframe 요소의 너비</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="table table-left">
+                            <caption>브라우저 지원</caption>
+                            <colgroup>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="img/chrome.gif" alt="chrome icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/edge.png" alt="edge icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/ie.png" alt="ie icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/firefox.png" alt="firefox icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/safari.gif" alt="safari icon">
+                                    </td>
+                                    <td>
+                                        <img src="img/opera.gif" alt="opera icon">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1.0</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                    <td>지원</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p class="reference">참조</p>
+                        <ul>
+                            <li>
+                                <a href="https://www.w3schools.com/tags/tag_i.asp">w3schools iframe -
+                                    https://www.w3schools.com/tags/tag_i.asp</a>
+                            </li>
+                            <li>
+                                <a href="http://tcpschool.com/html-tags/iframe">tcpschool iframe-
+                                    http://tcpschool.com/html-tags/iframe</a>
+                            </li>
+                            <li>
+                                <a href="https://developer.mozilla.org/ko/docs/Web/HTML/Element/iframe"> MDN iframe -
+                                    https://developer.mozilla.org/ko/docs/Web/HTML/Element/iframe</a>
+                            </li>
+                            <li>
+                                <a href="https://caniuse.com/?search=iframe">Can I Use iframe -
+                                    https://caniuse.com/?search=iframe</a>
+                            </li>
+                        </ul>
+
+                        <!-- img -->
+                        <h3>&#60;img&#62;</h3>
+                        <ul>
+                            <li>HTML 문서에 이미지를 정의할 때 사용</li>
+                            <li>img 요소에는 src 속성과 alt 속성을 반드시 명시해야 한다.</li>
+                            <li></li>
+                        </ul>
+                        <pre class='code code-html'><label>HTML</label><code>&#60;img src="img/miff2y.png" alt="미피"&#62;</code></pre>
+                        <div class="testArea">
+                            <img src="img/miff2y.png" alt="미피">
                         </div>
                         <table class="table">
                             <caption>필수 속성</caption>

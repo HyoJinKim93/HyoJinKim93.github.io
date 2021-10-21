@@ -411,11 +411,38 @@
                                     <td>srcset</td>
                                     <td>텍스트</td>
                                     <td>
-                                        각각 다른 환경에서 사용될 이미지 소스를 명시<br>
+                                        <ul>
+                                            <li>
+                                                이미지 소스를 나타내는 하나 이상의 문자열을 콤마로 결합한 리스트를 속성값으로 가진다.
+                                                <ul>
+                                                    <li>이미지에 대한 URL</li>
+                                                    <li>옵션으로 공백 문자(whitespace)를 추가한 후</li>
+                                                    <li>width descriptor 또는 뒤에 'w' 문자가 추가된 양의 정수 : </li>
+                                                </ul>
+                                            </li>
+                                            <li>이미지 소스의 세트
+                                                <ul class="sub-li">
+                                                    <li>같은 비율의 다양한 크기를 가지는 동일 이미지들을 최소 2개 이상 명시하는 속성</li>
+                                                    <li>만약 1개 이미지 소스만 명시하려면 src 속성을 사용한다.</li>
+                                                </ul>
+                                            </li>
+                                            <li>다른 비율의 다양한 크기의 다른 이미지들을 사용하고 싶다면, img 요소의 srcset 속성이 아닌 css의 @media 사용을
+                                                권장한다.</li>
+                                        </ul>
+                                        <pre class='code code-html'><label>XHTML</label><code>&#60;img srcset="/examples/images/people_960.jpg 960w,
+                                                /examples/images/people_575.jpg 575w"
+                                        sizes="(min-width: 960px) 50vw,
+                                               (min-width: 575px) 75vw,
+                                               100vw"
+                                        src="/examples/images/people_575.jpg" alt="people" /&#62;</code></pre>
                                         출처 :
                                         <p>
                                             <a
-                                                href="https://developer.mozilla.org/ko/docs/Web/HTML/CORS_enabled_image">https://developer.mozilla.org/ko/docs/Web/HTML/CORS_enabled_image</a>
+                                                href="http://tcpschool.com/html-tag-attrs/img-srcset">http://tcpschool.com/html-tag-attrs/img-srcset</a>
+                                        </p>
+                                        <p>
+                                            <a
+                                                href="https://heropy.blog/2019/06/16/html-img-srcset-and-sizes/">hhttps://heropy.blog/2019/06/16/html-img-srcset-and-sizes/</a>
                                         </p>
                                     </td>
                                 </tr>
@@ -468,12 +495,12 @@
                                     </td>
                                 </tr>
                                 <tr>
+                                    <td>34.0</td>
                                     <td>지원</td>
-                                    <td>지원</td>
-                                    <td>지원</td>
-                                    <td>지원</td>
-                                    <td>지원</td>
-                                    <td>지원</td>
+                                    <td>지원하지 않음</td>
+                                    <td>38.0</td>
+                                    <td>8.0</td>
+                                    <td>21.0</td>
                                 </tr>
                             </tbody>
                         </table>

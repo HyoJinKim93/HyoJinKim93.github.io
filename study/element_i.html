@@ -677,15 +677,35 @@ src="/examples/images/people_575.jpg" alt="people" /&#62;</code></pre>
                                                 accept="image/*" capture="camera" 두 방법이 있는데<br>
                                                 안드로이드는 둘 다 가능하지만, 아이폰일 경우, 후자의 경우에만 카메라로 연결된다. 전자의 경우 카메라 및 비디오로 연결된다.
                                             </li>
-                                            <li></li>
-                                            <li></li>
+                                            <li>files : 선택한 모든 파일을 나열하는 FileList 객체. multiple 특성을 지정하지 않았다면 두 개 이상의 파일을
+                                                포함하지 않는다.<br>사용자가 파일을 선택하면, 선택된 파일의 목록이 FileList 객체 형태로 files 속성에
+                                                저장된다.<br>
+                                                즉, 선택된 파일 목록을 가져오려면 files 속성을 참조하면 된다.
+                                            </li>
+                                            <li>multiple : 사용자가 파일 선택 창에서 복수의 파일을 선택할 수 있다.</li>
+                                            <li>webkitdirectory : 원래 WebKit 기반 브라우저에서만 구현했었으나, Microsoft Edge와
+                                                Firefox(50 이상)도 지원. <br>상대적으로 널리 사용하고 있으나, 여전히 비표준 속성. 대안이 없는 경우에만 사용해야
+                                                한다.<br>사용자의 파일 선택 창에서 디렉토리만 선택 가능해야 함
+                                            </li>
+                                            <li>required : form이 submit 될때, 반드시 파일이 선택되어야 하는지 여부를 지정하는 속성.<br>
+
+                                                'required' 속성이 지정되었는데, 파일을 선택하지 않고, submit 하게 되면,
+
+                                                파일을 선택하라는 메세지가 나온다.</li>
+                                            <li>value : 사용자가 선택한 파일의 경로 값을 가진다. 파일을 선택하면 alert 창이 띄워진다. <br>단, 악의적인 사용을
+                                                방지하기 위해 모든 파일의 경로 앞에
+                                                'C:\fakepath\' 가 포함된다.</li>
                                         </ul>
                                         <p>참조 : <a
                                                 href="https://developer.mozilla.org/ko/docs/Web/HTML/Element/Input/file">https://developer.mozilla.org/ko/docs/Web/HTML/Element/Input/file</a><br>
+                                            <a href="https://hianna.tistory.com/346">caption -
+                                                https://hianna.tistory.com/346</a><br>
                                             <a
-                                                href="https://hianna.tistory.com/346">https://hianna.tistory.com/346</a><br>
-                                            <a
-                                                href="https://fimtrus.tistory.com/entry/HTML5-%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EB%B0%8F-%EC%95%84%EC%9D%B4%ED%8F%B0%EC%97%90%EC%84%9C-input-file-%EC%82%AC%EC%9A%A9%EC%8B%9C-%EC%B9%B4%EB%A9%94%EB%9D%BC-%ED%98%B8%EC%B6%9C%ED%95%98%EA%B8%B0">https://fimtrus.tistory.com/entry/HTML5-%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EB%B0%8F-%EC%95%84%EC%9D%B4%ED%8F%B0%EC%97%90%EC%84%9C-input-file-%EC%82%AC%EC%9A%A9%EC%8B%9C-%EC%B9%B4%EB%A9%94%EB%9D%BC-%ED%98%B8%EC%B6%9C%ED%95%98%EA%B8%B0</a>
+                                                href="https://fimtrus.tistory.com/entry/HTML5-%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EB%B0%8F-%EC%95%84%EC%9D%B4%ED%8F%B0%EC%97%90%EC%84%9C-input-file-%EC%82%AC%EC%9A%A9%EC%8B%9C-%EC%B9%B4%EB%A9%94%EB%9D%BC-%ED%98%B8%EC%B6%9C%ED%95%98%EA%B8%B0">caption
+                                                -
+                                                https://fimtrus.tistory.com/entry/HTML5-%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EB%B0%8F-%EC%95%84%EC%9D%B4%ED%8F%B0%EC%97%90%EC%84%9C-input-file-%EC%82%AC%EC%9A%A9%EC%8B%9C-%EC%B9%B4%EB%A9%94%EB%9D%BC-%ED%98%B8%EC%B6%9C%ED%95%98%EA%B8%B0</a><br>
+                                            <a href="https://coco-log.tistory.com/161">files -
+                                                https://coco-log.tistory.com/161</a>
                                         </p>
                                     </td>
                                     <td>
@@ -695,17 +715,22 @@ src="/examples/images/people_575.jpg" alt="people" /&#62;</code></pre>
                                     <td></td>
                                 </tr>
                                 <tr>
+                                    <td>hidden</td>
+                                    <td>사용자가 보거나 수정할 수 없는 데이터를 포함. 숨겨진 input은 렌더링된 페이지에서 완전히 보이지 않으며 페이지의 콘텐츠에서 보이게 할
+                                        방법이 없다. 값은 서버로 전송하는 컨트롤 한다.</td>
+                                    <td>
+                                        <input type="file" hidden>
+                                    </td>
                                     <td></td>
-                                    <td></td>
-                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>image</td>
+                                    <td>텍스트가 아닌 이미지 형식을 취하는 제출 버튼을 만드는 데 사용된다. <br>value 값을 허용하지 않는다.</td>
+                                    <td><input type="image" id="image" alt="Login" src="img/login-button.png"></td>
                                     <td></td>
                                 </tr>
                             </tbody>
                         </table>
-                        <div class="testArea">
-                            <p><i>타이타닉호</i>는 영국의 화이트 스타 라인이 운영한 북대서양 횡단 여객선이다.</p>
-                            <p><i>카르페 디엠(Carpe diem)</i>은 오늘을 즐기라는 뜻이다.</p>
-                        </div>
                         <table class="table table-left">
                             <caption>브라우저 지원</caption>
                             <colgroup>

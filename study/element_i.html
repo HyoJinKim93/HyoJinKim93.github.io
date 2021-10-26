@@ -672,18 +672,25 @@ src="/examples/images/people_575.jpg" alt="people" /&#62;</code></pre>
                                                 </pre>
                                             </li>
                                             <li>capture : 모바일 디바이스에 적용되는 속성. accpet 속성에이미지 또는 비디오를 입력받는 경우, 기기의 어떤 카메라를
-                                                이용할지 지정한다. user(전면 카메라), environment(후면 카메라)</li>
+                                                이용할지 지정한다. user(전면 카메라), environment(후면 카메라)<br>
+                                                input type="file" accept="image/*;capture=camera"/와 input type="file"
+                                                accept="image/ capture=camera"/ 두 방법이 있는데<br>
+                                                안드로이드는 둘 다 가능하지만, 아이폰일 경우, 후자의 경우에만 카메라로 연결된다. 전자의 경우 카메라 및 비디오로 연결된다.
+                                            </li>
                                             <li></li>
                                             <li></li>
                                         </ul>
                                         <p>참조 : <a
-                                                href="https://developer.mozilla.org/ko/docs/Web/HTML/Element/Input/file">https://developer.mozilla.org/ko/docs/Web/HTML/Element/Input/file</a>
-                                            <a href="https://hianna.tistory.com/346">https://hianna.tistory.com/346</a>
+                                                href="https://developer.mozilla.org/ko/docs/Web/HTML/Element/Input/file">https://developer.mozilla.org/ko/docs/Web/HTML/Element/Input/file</a><br>
+                                            <a
+                                                href="https://hianna.tistory.com/346">https://hianna.tistory.com/346</a><br>
+                                            <a
+                                                href="https://fimtrus.tistory.com/entry/HTML5-%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EB%B0%8F-%EC%95%84%EC%9D%B4%ED%8F%B0%EC%97%90%EC%84%9C-input-file-%EC%82%AC%EC%9A%A9%EC%8B%9C-%EC%B9%B4%EB%A9%94%EB%9D%BC-%ED%98%B8%EC%B6%9C%ED%95%98%EA%B8%B0">https://fimtrus.tistory.com/entry/HTML5-%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EB%B0%8F-%EC%95%84%EC%9D%B4%ED%8F%B0%EC%97%90%EC%84%9C-input-file-%EC%82%AC%EC%9A%A9%EC%8B%9C-%EC%B9%B4%EB%A9%94%EB%9D%BC-%ED%98%B8%EC%B6%9C%ED%95%98%EA%B8%B0</a>
                                         </p>
                                     </td>
                                     <td>
                                         <label for="file"></label>
-                                        <input type="file" id="file" accept=".gif" capture="environment">
+                                        <input type="file" id="file" accept=".gif" capture="camera">
                                     </td>
                                     <td></td>
                                 </tr>

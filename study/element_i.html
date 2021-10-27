@@ -729,6 +729,86 @@ src="/examples/images/people_575.jpg" alt="people" /&#62;</code></pre>
                                     <td><input type="image" id="image" alt="Login" src="img/login-button.png"></td>
                                     <td></td>
                                 </tr>
+                                <tr>
+                                    <td>month</td>
+                                    <td>month 사용자가 월과 연도를 쉽게 입력할 수 있도록 하는 월과 연도를 입력할 수 있는 입력 필드를 만든다.</td>
+                                    <td><input type="month" min="2021-09-01" value="2021-10-27"></td>
+                                    <td>HTML5</td>
+                                </tr>
+                                <tr>
+                                    <td>number</td>
+                                    <td>숫자를 입력하기 위한 컨트롤. 몇몇 디바이스에서는 숫자 키패드를 표시한다. 숫자가 아닌 항목을 거부하는 기본 제공 유효성 검사가 포함된다.
+                                    </td>
+                                    <td><input type="number" min="10" max="100"></td>
+                                    <td>HTML5</td>
+                                </tr>
+                                <tr>
+                                    <td>password</td>
+                                    <td>값이 가려진 한 줄 텍스트 필드. 사이트가 안전하지 않으면 사용자에게 경고한다.</td>
+                                    <td><input type="password"></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>radio</td>
+                                    <td>서로 관련된 옵션을 나타내는 컬렉션. 임의의 그룹 내에서는 하나의 라디오 버튼만 클릭할 수 있다.
+                                        <ul class="sub-li">
+                                            <li>checked : 현재 선택된 것</li>
+                                        </ul>
+                                    </td>
+                                    <td><input type="radio"></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>range</td>
+                                    <td>슬라이드 바를 조정하여 범위 내의 숫자를 선택할 수 있는 입력 필드를 정의. 다이얼 컨트롤을 사용하여 표시
+                                        <br>기본 범위는 0부터 100까지지만, 다음 속성들과 함께 사용하면 범위를 설정할 수 있다.
+                                        <ul class="sub-li">
+                                            <li>max : 최댓값</li>
+                                            <li>min : 최솟값</li>
+                                            <li>step : 입력할 수 있는 숫자들 사이의 간격을 명시</li>
+                                            <li>value : 초깃값</li>
+                                        </ul>
+                                        <p>참조 : <a
+                                                href="http://tcpschool.com/html-input-types/range">http://tcpschool.com/html-input-types/range</a>
+                                        </p>
+                                    </td>
+                                    <td><input type="range" min="-10" max="10"></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>reset</td>
+                                    <td>폼의 내용을 초기화하는 버튼
+                                        <p>참조 : <a
+                                                href="http://tcpschool.com/html-input-types/reset">http://tcpschool.com/html-input-types/reset</a>
+                                        </p>
+                                    </td>
+                                    <td><input type="reset"></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>search</td>
+                                    <td>검색어를 입력할 수 있는 텍스트 필드. 반드시 name 속성을 설정해야 하며, 설정되어 있지 않다면 서버로 제출되지 않을 것이다.
+                                        <br>이때 가장 자주 사용되는 대표적인 name 속성값은 ‘q’
+                                    </td>
+                                    <td><input type="search"></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>submit</td>
+                                    <td>폼 핸들러로 폼 데이터를 전송하는 제출 버튼을 정의한다.
+                                        <p>참조 : <a
+                                                href="http://tcpschool.com/html-input-types/submit">http://tcpschool.com/html-input-types/submit</a>
+                                        </p>
+                                    </td>
+                                    <td><input type="submit"></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>tel</td>
+                                    <td></td>
+                                    <td><input type="tel"></td>
+                                    <td></td>
+                                </tr>
                             </tbody>
                         </table>
                         <table class="table table-left">

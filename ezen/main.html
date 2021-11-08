@@ -219,8 +219,8 @@
         </section>
     </section>
     <script src="./assets/js/swiper.min.js"></script>
-    <!-- <script type="text/javascript"
-        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=bac760ff4e3b090f8fd054ffab3a4e70"></script> -->
+    <script type="text/javascript"
+        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=bac760ff4e3b090f8fd054ffab3a4e70"></script>
     <script>
         var swiper = new Swiper('.main-visual', {
             speed: 1000,
@@ -239,14 +239,14 @@
         });
     </script>
     <script>
-        var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
-            mapOption = {
+        var container = document.getElementById('map'), // 지도를 표시할 div 
+            option = {
                 center: new kakao.maps.LatLng(37.48607864046659, 126.89728968419402), // 지도의 중심좌표
                 level: 3 // 지도의 확대 레벨
             };
 
         // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
-        var map = new kakao.maps.Map(mapContainer, mapOption);
+        var map = new kakao.maps.Map(container, option);
     </script>
 </body>
 

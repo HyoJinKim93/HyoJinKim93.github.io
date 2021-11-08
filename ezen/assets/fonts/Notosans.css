@@ -1,0 +1,37 @@
+
+  @charset "utf-8";
+
+  /* 웹폰트 Notosans cjk*/
+@font-face {
+    font-family: 'NotoSansKR';
+    font-weight: 700;
+    src: local('NotoSansKR-Bold'),
+    url(./NotoSansKr-Bold.eot) format('eot'),
+    url(./NotoSansKr-Bold.woff) format('woff'),
+    url(./NotoSansKr-Bold.otf) format('opentype');
+}
+@font-face {
+    font-family: 'NotoSansKR';
+    font-weight: 500;
+    src: local('NotoSansKR-Medium'),
+    url(./NotoSansKR-Medium.eot) format('eot'),
+    url(./NotoSansKR-Medium.woff) format('woff'),
+    url(./NotoSansKR-Medium.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'NotoSansKR';
+    font-weight:normal;
+    src: local('NotoSansKR-Regular'),
+    url(./NotoSansKR-Regular.eot) format('eot'),
+    url(./NotoSansKR-Regular.woff) format('woff'),
+    url(./NotoSansKR-Regular.otf) format('opentype');
+}
+@font-face {
+    font-family: 'NotoSansKR';
+    font-weight: 300;
+    src: local('NotoSansKR-Light'),
+    url(./NotoSansKR-Light.eot) format('eot'),
+    url(./NotoSansKR-Light.woff) format('woff'),
+    url(./NotoSansKR-Light.otf) format('opentype');
+}

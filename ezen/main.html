@@ -265,11 +265,11 @@
         window.setTimeout(function () {
             map.relayout();
         }, 0);
-        // setTimeout(function () {
-        //     map.relayout();
-        //     // map.setCenter(new kakao.maps.LatLng(lat, lng));
-        //     // map.setLevel(2); 필요하면 레벨조정
-        // }, 100);
+        setTimeout(function () {
+          map.relayout();
+          map.setCenter(new kakao.maps.LatLng(lat, lng));
+          map.setLevel(2); 필요하면 레벨조정
+         }, 100);
     </script>
 </body>
 

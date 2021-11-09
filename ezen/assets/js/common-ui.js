@@ -18,8 +18,6 @@ $(function(){
             btnAll.classList.toggle("on")  
             allMenu.classList.toggle("on")  
         });  
-        map.relayout();
-        map.setCenter(new kakao.maps.LatLng(33.450701, 126.570667))
     }
     allMenuEvent();
 })

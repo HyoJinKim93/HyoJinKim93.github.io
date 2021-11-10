@@ -2,7 +2,7 @@
 @import url(layout.css);
 
 .main-visual{overflow: hidden;position: relative;min-width: 1280px;width: 100%;}
-.main-visual .swiper-wrapper{z-index:0;}
+/* .main-visual .swiper-wrapper{z-index:0;} */
 .main-visual .swiper-button-next,
 .main-visual .swiper-button-prev{z-index: 1;}
 .main-visual .swiper-button-next::after{overflow:hidden;font-family: "Roboto";background: url(../images/temp/arrow-visual-next.png) no-repeat;background-size:21px auto;}

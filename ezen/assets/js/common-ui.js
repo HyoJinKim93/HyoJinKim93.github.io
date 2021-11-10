@@ -18,6 +18,10 @@ $(function(){
             btnAll.classList.toggle("on")  
             allMenu.classList.toggle("on")  
         });  
+        setTimeout(function(){
+            map2.relayout();
+            map2.setCenter(new daum.maps.LatLng(37.48685337098062, 126.89734333067844));
+          }, 0);  
     }
     allMenuEvent();
 })

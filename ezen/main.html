@@ -296,6 +296,11 @@
 
         map2.relayout();
 
+        setTimeout(function () {
+            map2.relayout();
+            // map.setCenter(new kakao.maps.LatLng(lat, lng));
+            // map.setLevel(2); 필요하면 레벨조정
+        }, 1000);
     
     </script>
 </body>

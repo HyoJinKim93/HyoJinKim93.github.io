@@ -1,86 +1,308 @@
-@import url(common.css);
-@import url(layout.css);
+<!DOCTYPE html>
+<html lang="ko">
 
-.main-visual{overflow: hidden;position: relative;min-width: 1280px;width: 100%;}
-.main-visual .swiper-wrapper{z-index:0;}
-.main-visual .swiper-button-next,
-.main-visual .swiper-button-prev{z-index: 1;}
-.main-visual .swiper-button-next::after{overflow:hidden;font-family: "Roboto";background: url(../images/temp/arrow-visual-next.png) no-repeat;background-size:21px auto;}
-.main-visual .swiper-button-prev::after{overflow:hidden;font-family: "Roboto";background: url(../images/temp/arrow-visual-prev.png) no-repeat;background-size:21px auto;}
-.main-visual.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{bottom:42px;}
-.main-visual .swiper-pagination{z-index: 1;}
-.main-visual .swiper-pagination-bullets{margin:0 7px;}
-.main-visual .swiper-pagination-bullet{background:#CACACA;opacity:1;}
-.main-visual .swiper-pagination-bullet-active{background:#2E8ADF}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width = device-width, initial-scale = 1, maximum-scale = 1, user-scalable = 0" />
+    <title>(주)이젠솔루션</title>
+    <meta name="title" content="(주)이젠솔루션" />
+    <meta name="author" content="(주)이젠솔루션" />
+    <meta name="keywords" content="(주)이젠솔루션, 이젠솔루션" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <script src="assets/js/jquery-1.12.4.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/common-ui.js"></script>
+</head>
 
-.notice{position:relative;height:56px;margin-top:-20px;background:#fff;}
-.notice .inner-wrapper{display: flex;align-items: center;}
-.notice .title{color:#222;font-size:14px;font-weight:700;line-height:56px;}
-.notice ul {display: flex;width: calc(100% - 55px);}
-.notice ul li{display: flex;width:48%;padding:0 48px;align-items: center;justify-content: space-between;}
-.notice ul li .tit{overflow:hidden;width:70%;color:#666;font-size:13px;line-height:56px;white-space: nowrap;text-overflow: ellipsis;}
-.notice ul li .tit::before{content:"·";display:inline-block;margin-right:9px;}
-.notice ul li .date{color:#666;font-size:13px;}
+<body>
+    <div class="skipTo">
+        <a href="#menu">메뉴 바로가기</a>
+        <a href="#contents">본문 바로가기</a>
+    </div>
+    <section class="wrap">
+        <!-- <div class="blue-bar-left"></div>
+        <div class="blue-bar-right"></div>
+        <div class="blue-bar-bottom"></div> -->
+        <header>
+            <div class="inner-wrapper d-flex">
+                <h1 class="logo">
+                    <a href="main.html">(주)이젠솔루션</a>
+                </h1>
+                <nav id="menu" class="menu">
+                    <ul class="gnb">
+                        <li>
+                            <a href="about.html">About Us</a>
+                        </li>
+                        <li>
+                            <a href="business.html">Business</a>
+                        </li>
+                        <li>
+                            <a href="news.html">News</a>
+                        </li>
+                        <li>
+                            <a href="careers.html">Careers</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button type="button" class="btn-all">전체메뉴</button>
+            </div>
+            <div class="all-menu">
+                <div class="d-flex inner-wrapper">
+                    <ul class="list">
+                        <li>
+                            <a href="about.html">About Us</a>
+                            <div class="depth2">
+                                <ul>
+                                    <li><a href="intro.html">회사소개</a></li>
+                                    <li><a href="history.html">회사연혁</a></li>
+                                    <li><a href="ci.html">CI</a></li>
+                                    <li><a href="investorInfo.html">투자자정보</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="business.html">Business</a>
+                        </li>
+                        <li>
+                            <a href="news.html">News
+                                <span class="label-new">New</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="careers.html">Careers</a>
+                        </li>
+                    </ul>
+                    <div class="contactArea">
+                        <div class="d-flex">
+                            <h3 class="title">Contact Us</h3>
+                            <button type="button" class="btn btn-link">문의하기</button>
+                        </div>
+                        <ul class="info">
+                            <li>
+                                <p class="tit">Company.<span class="txt">주식회사 이젠솔루션</span></p>
+                            </li>
+                            <li>
+                                <p class="tit">Contact.<span class="txt">02.2082.0460</span></p>
+                            </li>
+                            <li>
+                                <p class="tit">Office.<span class="txt">서울시 구로구 구로동 182-13 대륭포스트타워 2차 601호</span>
+                                </p>
+                            </li>
+                        </ul>
+                        <div id="map2" class="map" style="width:580px;height:203px;"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section id="contents" class="main">
+            <div class="visual main-visual">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                        <a href="#">
+                            <img src="./assets/images/temp/pc-main-visual01.png" alt="" class="pcBox">
+                            <img src="./assets/images/temp/" alt="" class="tabletBox">
+                            <img src="./assets/images/temp/" alt="" class="mobileBox">
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="#">
+                            <img src="./assets/images/temp/pc-main-visual01.png" alt="" class="pcBox">
+                            <img src="./assets/images/temp/" alt="" class="tabletBox">
+                            <img src="./assets/images/temp/" alt="" class="mobileBox">
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="#">
+                            <img src="./assets/images/temp/pc-main-visual01.png" alt="" class="pcBox">
+                            <img src="./assets/images/temp/" alt="" class="tabletBox">
+                            <img src="./assets/images/temp/" alt="" class="mobileBox">
+                        </a>
+                    </li>
+                </ul>
+                <button type="button" class="swiper-button-next"></button>
+                <button type="button" class="swiper-button-prev"></button>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="notice">
+                <div class="inner-wrapper">
+                    <p class="title">공지사항</p>
+                    <ul>
+                        <li>
+                            <p class="tit">2021년 추석연휴 휴무 안내
+                                <span class="label-new">New</span>
+                            </p>
+                            <span class="date">2021.09.16</span>
+                        </li>
+                        <li>
+                            <p class="tit">이젠솔루션 홈페이지가 새롭게 리뉴얼 되었습니다.</p>
+                            <span class="date">2021.09.16</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="global-section">
+                <div class="inner-wrapper">
+                    <div class="d-flex">
+                        <div class="img-wrap"></div>
+                        <div class="txt-wrap">
+                            <p class="desc">빠르게 변화하고 있는 디지털 기술을 통한 경영 혁신은 기업의 모든 영역에 전방위적인 영향을
+                                미치고 있으며, 경쟁력 있는 많은 글로벌 기업들은 디지털 기술을 기업의 변화와 성장을 위한
+                                근원적인 역량으로 활용하고 있습니다.
+                            </p>
+                            <p class="desc">이러한 변화와 기회의 시기에 이젠솔루션은 고객사의 비즈니스 성공을 위해
+                                글로벌 디지털 서비스를 최상의 품질로 제공하기 위해 최선을 다하고 있습니다.
+                            </p>
+                        </div>
+                    </div>
+                    <ul class="ico-wrap">
+                        <li class="since">
+                            <span class="tit">Since.</span>
+                            <p class="num">2004</p>
+                        </li>
+                        <li class="clients">
+                            <span class="tit">Our Clients.</span>
+                            <p class="num">327</p>
+                        </li>
+                        <li class="project">
+                            <span class="tit">Project.</span>
+                            <p class="num">841</p>
+                        </li>
+                        <li class="award">
+                            <span class="tit">Award.</span>
+                            <p class="num">8</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contact-section">
+                <div class="inquire">
+                    <div class="inner-wrapper">
+                        <p class="tit">빠르고 합리적인 비용으로 <br><span class="blue">꿈꿔온 비즈니스</span>를 지금 바로 시작하세요</p>
+                        <p class="txt">이젠솔루션은 모두가 만족할 수 있는 결과를 창출합니다</p>
+                        <button type="button" class="btn btn-link">문의하기</button>
+                    </div>
+                </div>
+                <div class="detail">
+                    <div class="inner-wrapper">
+                        <p class="tit">다양한 기업이 선택한 비즈니스 파트너 <br><span class="blue">최신 기술과 산업변화 </span>대응에 앞장섭니다</p>
+                        <p class="txt">최고의 IT 서비스를 제공하기 위해 끊임없이 연구합니다.</p>
+                        <button type="button" class="btn btn-link">자세히 보기</button>
+                    </div>
+                </div>
+                <div class="contact">
+                    <p class="title">Contact Us</p>
+                    <p class="txt">시작부터 완료까지 모든 단계에 걸쳐 비즈니스를 지원하고 고객의 성공적인 꿈을 위해 이젠솔루션이 함께합니다.</p>
+                    <div id="map" class="map" style="width:580px;height:203px;"></div>
+                    <ul class="info">
+                        <li>
+                            <p class="tit">Company.</p>
+                            <span class="txt">주식회사 이젠솔루션</span>
+                        </li>
+                        <li>
+                            <p class="tit">Contact.</p>
+                            <span class="txt">02.2082.0460</span>
+                        </li>
+                        <li>
+                            <p class="tit">Business number.</p>
+                            <span class="txt">211-87-59507</span>
+                        </li>
+                        <li>
+                            <p class="tit">Office.</p>
+                            <span class="txt">서울시 구로구 구로동 182-13 대륭포스트타워 2차 601호</span>
+                        </li>
+                    </ul>
+                    <p class="copyright">COPYRIGHT 2021. Ezen Corp. All Rights Reserved.</p>
+                </div>
+            </div>
+        </section>
+    </section>
+    <script src="./assets/js/swiper.min.js"></script>
+    <script type="text/javascript"
+        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=bac760ff4e3b090f8fd054ffab3a4e70"></script>
+    <script>
 
-.global-section{padding:118px 0 101px 0;background:url(../images/bg-map.png) no-repeat;background-size:619px auto;}
-.global-section .img-wrap{overflow:hidden;width:100%;padding-top:173px;background:url(../images/main-txt.png) no-repeat;background-size:540px auto;}
-.global-section .desc{margin:19px 0;color:#888;font-size:15px;line-height:26px;}
-.global-section .desc:first-of-type{margin-top:0;}
-.global-section .ico-wrap{display: flex;margin-top:113px;}
-.global-section .ico-wrap li{margin:0 127px;text-align:left;}
-.global-section .ico-wrap .since{margin-left:0;padding-left:70px;background:url(../images/ico-since.png) no-repeat center left;background-size: 50px;}
-.global-section .ico-wrap .project{padding-left:70px;background:url(../images/ico-project.png) no-repeat center left;background-size: 50px;}
-.global-section .ico-wrap .clients{padding-left:70px;background:url(../images/ico-clients.png) no-repeat center left;background-size: 50px;}
-.global-section .ico-wrap .award{margin-right:0;padding-left:70px;background:url(../images/ico-award.png) no-repeat center left;background-size: 50px;}
-.global-section .txt-wrap .desc:first-of-type{width:86%;}
-.global-section .txt-wrap .desc:last-of-type{width:73.5%;word-break: keep-all;}
-.global-section .ico-wrap .tit{margin-bottom:4px;font-size:14px;font-weight:900;}
-.global-section .ico-wrap .num{font-size:30px;font-weight: 300;}
 
-.contact-section{position: relative;}
-.contact-section .inquire{height:360px;padding:83px 0;background:url(../images/img-require.png) no-repeat left center;}
-.contact-section .inquire .tit{color:#fff;font-size:32px;letter-spacing:-1px;line-height:40px;}
-.contact-section .inquire .txt{margin-top:20px;color:#fff;font-size:12px;}
-.contact-section .inquire .blue{font-weight:700;}
-.contact-section .inquire .btn-link{margin-top:20px;}
-.contact-section .detail{height:360px;padding:83px 0;background:url(../images/bg-partner.png) no-repeat left center;}
-.contact-section .detail .tit{color:#000;font-size:32px;}
-.contact-section .detail .txt{margin-top:20px;color:rgba(0,0,0,0.6);font-size:18px;letter-spacing: -1px;}
-.contact-section .detail .blue{font-weight:700;}
-.contact-section .detail .btn-link{margin-top:25px;}
-.contact-section .contact{position:absolute;top:0;right:0;width:685px;height:720px;padding:55px 56px 44px 46px;background:#11151E;}
-.contact-section .contact .title{display:inline-block;margin-bottom:14px;padding-right:36px;color:#fff;font-size:52px;font-weight:700;letter-spacing:-0.6px;background:url(../images/common/arrow-right.png) no-repeat right center;}
-.contact-section .contact .txt{width:70%;margin-bottom:43px;color:#fff;font-size:18px;letter-spacing: -0.6px;line-height: 24px;}
-.contact-section .contact .map{width:100%;height:202px;}
-.contact-section .contact .info{display: flex;margin-top:49px;flex-wrap:wrap;}
-.contact-section .contact .info li{width:36%;margin-bottom:16px;}
-.contact-section .contact .info li:nth-of-type(even){width:calc(100% - 36%)}
-.contact-section .contact .info .tit{color:#fff;font-size:13px;font-weight: 700;}
-.contact-section .contact .info .txt{color:#A1A1A1;font-size:11px;letter-spacing: -0.4px;line-height: 18px;}
-.contact-section .contact .copyright{margin-top:26px;color:#888888;font-size:12px;letter-spacing: -0.6px;}
+        var swiper = new Swiper('.main-visual', {
+            speed: 1000,
+            // autoplay:{
+            // 	delay:5000
+            // },
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            },
+        });
+        var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+            mapOption = {
+                center: new kakao.maps.LatLng(37.48685337098062, 126.89734333067844), // 지도의 중심좌표
+                level: 3 // 지도의 확대 레벨
+            };
 
-@media screen and (max-width: 1279px) {
-    .global-section{padding:68px 0;background:url(../images/bg-map-m.png) no-repeat;}
-    .global-section .d-flex{display: block;}
-    .global-section .img-wrap{background:url(../images/main-txt-m.png) no-repeat center;}
-    .global-section .txt-wrap{margin-top:31px;margin-bottom:45px;color:#888;font-size:13px;line-height: 20px;}
-    .global-section .txt-wrap .desc:first-of-type{width:100%;}
-    .global-section .txt-wrap .desc:last-of-type{width:100%;margin-top:14px;}
-    .global-section .ico-wrap{}
-    .global-section .ico-wrap li{width:50%;margin:0 35px;}
-    .global-section .ico-wrap li:first-of-type{margin-left:0;}
-    .global-section .ico-wrap li:last-of-type{margin-right:0;}
-    .global-section .ico-wrap .since{margin-left:0;padding-left:54px;background:url(../images/ico-since-m.png) no-repeat center left;background-size: 36px;}
-    .global-section .ico-wrap .project{padding-left:54px;background:url(../images/ico-project.png) no-repeat center left;background-size: 36px;}
-    .global-section .ico-wrap .clients{padding-left:54px;background:url(../images/ico-clients.png) no-repeat center left;background-size: 36px;}
-    .global-section .ico-wrap .award{margin-right:0;padding-left:54px;background:url(../images/ico-award.png) no-repeat center left;background-size: 36px;}
-    .global-section .ico-wrap .tit{margin-bottom:2px;font-size:12px;}
-    .global-section .ico-wrap .num{font-size:22px;}
+        var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
 
-    .contact-section .inner-wrapper{padding:0 15px;}
-    .contact-section .inquire{height:220px;padding:43px 0;background: url(../images/img-require-m.png) no-repeat left center;}
-    .contact-section .inquire .tit{margin-bottom:15px;color:#fff;font-size:16px;letter-spacing: -1px;line-height: 22px;}
-    .contact-section .inquire .txt{color:rgba(255,255,255,0.8);font-size:13px;}
-    .contact-section .contact{position: relative;}
-    .contact-section .detail{height:220px;padding:43px 0;background: url(../images/bg-partner-m.png) no-repeat left center;}
-}
+        // 마커가 표시될 위치입니다 
+        var markerPosition = new kakao.maps.LatLng(37.48685337098062, 126.89734333067844);
+
+        // 마커를 생성합니다
+        var marker = new kakao.maps.Marker({
+            position: markerPosition
+        });
+
+        // 마커가 지도 위에 표시되도록 설정합니다
+        marker.setMap(map);
+
+
+        mapContainer.style.width = '583px';
+        mapContainer.style.height = '206px';
+
+        map.relayout();
+
+        setTimeout(function () {
+            map.relayout();
+            // map.setCenter(new kakao.maps.LatLng(lat, lng));
+            // map.setLevel(2); 필요하면 레벨조정
+        }, 0);
+
+
+        var mapContainer2 = document.getElementById('map2'), // 지도를 표시할 div 
+            mapOption2 = {
+                center: new kakao.maps.LatLng(37.48685337098062, 126.89734333067844), // 지도의 중심좌표
+                level: 3 // 지도의 확대 레벨
+            };
+
+        var map2 = new kakao.maps.Map(mapContainer2, mapOption2); // 지도를 생성합니다
+
+        // 마커가 표시될 위치입니다 
+        var markerPosition2 = new kakao.maps.LatLng(37.48685337098062, 126.89734333067844);
+
+        // 마커를 생성합니다
+        var marker2 = new kakao.maps.Marker({
+            position: markerPosition2
+        });
+
+        // 마커가 지도 위에 표시되도록 설정합니다
+        marker2.setMap(map2);
+
+
+        mapContainer2.style.width = '583px';
+        mapContainer2.style.height = '206px';
+
+        map2.relayout();
+
+        setTimeout(function () {
+            map2.relayout();
+            // map.setCenter(new kakao.maps.LatLng(lat, lng));
+            // map.setLevel(2); 필요하면 레벨조정
+        }, 5000);
+
+    </script>
+</body>
+
+</html>

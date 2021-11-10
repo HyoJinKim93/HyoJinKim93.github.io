@@ -49,3 +49,8 @@ input[type="checkbox"] + label::before{content:'';display:inline-block;width:26p
 .label-new{padding:0 6px;color:#fff;font-size:12px;font-weight: 700;border-radius:30px;background:#FF9D0B}
 .btn{color:#fff;font-size:16px;font-weight:700;line-height:46px;}
 .btn-link{padding-left:26px;padding-right:77px;text-align:center;border-radius:300px;background:#2E8ADF url(../images/common/arrow-right.png) no-repeat 78% 50%;background-size:20px auto}
+
+@media screen and (max-width: 1279px) {
+    .btn{font-size:13px;line-height: 42px;}
+    .btn-link{background:#2E8ADF url(../images/common/arrow-right-m.png) no-repeat 83% 50%;background-size:14px auto}
+}

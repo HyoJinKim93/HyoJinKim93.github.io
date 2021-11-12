@@ -22,9 +22,6 @@
         <a href="#contents">본문 바로가기</a>
     </div>
     <section class="wrap">
-        <!-- <div class="blue-bar-left"></div>
-        <div class="blue-bar-right"></div>
-        <div class="blue-bar-bottom"></div> -->
         <header>
             <div class="inner-wrapper d-flex">
                 <h1 class="logo">
@@ -49,6 +46,9 @@
                 <button type="button" class="btn-all">전체메뉴</button>
             </div>
             <div class="all-menu">
+                <div class="blue-bar-left"></div>
+                <div class="blue-bar-right"></div>
+                <div class="blue-bar-bottom"></div>
                 <div class="d-flex inner-wrapper">
                     <ul class="list">
                         <li>
@@ -97,49 +97,60 @@
             </div>
         </header>
         <section id="contents" class="main">
-            <div class="visual main-visual">
-                <ul class="swiper-wrapper">
-                    <li class="swiper-slide">
-                        <a href="#">
-                            <img src="./assets/images/temp/pc-main-visual01.png" alt="" class="pcBox">
-                            <img src="./assets/images/temp/" alt="" class="tabletBox">
-                            <img src="./assets/images/temp/" alt="" class="mobileBox">
-                        </a>
-                    </li>
-                    <li class="swiper-slide">
-                        <a href="#">
-                            <img src="./assets/images/temp/pc-main-visual01.png" alt="" class="pcBox">
-                            <img src="./assets/images/temp/" alt="" class="tabletBox">
-                            <img src="./assets/images/temp/" alt="" class="mobileBox">
-                        </a>
-                    </li>
-                    <li class="swiper-slide">
-                        <a href="#">
-                            <img src="./assets/images/temp/pc-main-visual01.png" alt="" class="pcBox">
-                            <img src="./assets/images/temp/" alt="" class="tabletBox">
-                            <img src="./assets/images/temp/" alt="" class="mobileBox">
-                        </a>
-                    </li>
-                </ul>
-                <button type="button" class="swiper-button-next"></button>
-                <button type="button" class="swiper-button-prev"></button>
-                <div class="swiper-pagination"></div>
-            </div>
-            <div class="notice">
-                <div class="inner-wrapper">
-                    <p class="title">공지사항</p>
-                    <ul>
-                        <li>
-                            <p class="tit">2021년 추석연휴 휴무 안내
-                                <span class="label-new">New</span>
-                            </p>
-                            <span class="date">2021.09.16</span>
+            <div class="container">
+                <div class="blue-bar-left"></div>
+                <div class="blue-bar-right"></div>
+                <div class="blue-bar-bottom"></div>
+                <div class="visual main-visual">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide slide01">
+                            <a href="" class="swiper-button-prev">
+                                <span></span>
+                                <p>사이렌 오더 개선</p>
+                            </a>
+                            <a href="#">
+                                <img src="./assets/images/temp/pc-main-visual01.png" alt="" class="pcBox">
+                                <img src="./assets/images/temp/" alt="" class="mobileBox">
+                            </a>
+                            <a href="" class="swiper-button-next">
+                                <span>LG유플러스</span>
+                                <p>전자결제 고도화</p>
+                            </a>
+                            <a href=""></a>
                         </li>
-                        <li>
-                            <p class="tit">이젠솔루션 홈페이지가 새롭게 리뉴얼 되었습니다.</p>
-                            <span class="date">2021.09.16</span>
+                        <li class="swiper-slide slide02">
+                            <a href="#">
+                                <img src="./assets/images/temp/pc-main-visual01.png" alt="" class="pcBox">
+                                <img src="./assets/images/temp/" alt="" class="mobileBox">
+                            </a>
+                        </li>
+                        <li class="swiper-slide slide03">
+                            <a href="#">
+                                <img src="./assets/images/temp/pc-main-visual01.png" alt="" class="pcBox">
+                                <img src="./assets/images/temp/" alt="" class="mobileBox">
+                            </a>
                         </li>
                     </ul>
+                    <!-- <button type="button" class="swiper-button-next"></button>
+                    <button type="button" class="swiper-button-prev"></button> -->
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="notice">
+                    <div class="inner-wrapper">
+                        <p class="title">공지사항</p>
+                        <ul>
+                            <li>
+                                <p class="tit">2021년 추석연휴 휴무 안내
+                                    <span class="label-new">New</span>
+                                </p>
+                                <span class="date">2021.09.16</span>
+                            </li>
+                            <li>
+                                <p class="tit">이젠솔루션 홈페이지가 새롭게 리뉴얼 되었습니다.</p>
+                                <span class="date">2021.09.16</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="global-section">
@@ -219,11 +230,9 @@
         </section>
     </section>
     <script src="./assets/js/swiper.min.js"></script>
-    <script type="text/javascript"
-        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=bac760ff4e3b090f8fd054ffab3a4e70"></script>
+    <!-- <script type="text/javascript"
+        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=bac760ff4e3b090f8fd054ffab3a4e70"></script> -->
     <script>
-
-
         var swiper = new Swiper('.main-visual', {
             speed: 1000,
             // autoplay:{
@@ -260,7 +269,7 @@
 
 
         mapContainer.style.width = '583px';
-        mapContainer.style.height = '206px';
+        mapContainer.style.height = '203px';
 
         map.relayout();
 
@@ -292,7 +301,7 @@
 
 
         mapContainer2.style.width = '583px';
-        mapContainer2.style.height = '206px';
+        mapContainer2.style.height = '203px';
 
         map2.relayout();
 

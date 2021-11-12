@@ -1,17 +1,24 @@
 @import url(common.css);
 @import url(layout.css);
 
+.main .container{position:relative;}
+.main .blue-bar-left{display: inline-block;z-index:1;position:absolute;top:0;left:-55px;width:56px;height:360px;background:#2E8ADF}
+.main .blue-bar-right{display: inline-block;z-index:1;position:absolute;top:0;right:-55px;width:56px;height:100%;background:#2E8ADF}
+.main .blue-bar-bottom{display: inline-block;z-index:1;position:absolute;bottom:0;right:-55px;width:386px;height:56px;background:#2E8ADF}
+
 .main-visual{overflow: hidden;position: relative;min-width: 1280px;width: 100%;}
 .main-visual .swiper-wrapper{z-index:0;}
 .main-visual .swiper-button-next,
 .main-visual .swiper-button-prev{z-index: 1;}
-.main-visual .swiper-button-next::after{overflow:hidden;font-family: "Roboto";background: url(../images/temp/arrow-visual-next.png) no-repeat;background-size:21px auto;}
-.main-visual .swiper-button-prev::after{overflow:hidden;font-family: "Roboto";background: url(../images/temp/arrow-visual-prev.png) no-repeat;background-size:21px auto;}
+.main-visual .swiper-button-next::after{overflow:hidden;content:"";width:21px;height:12px;font-family: "Roboto";background: url(../images/temp/arrow-visual-next.png) no-repeat;background-size:21px auto;}
+.main-visual .swiper-button-prev::after{overflow:hidden;content:"";width:21px;height:12px;font-family: "Roboto";background: url(../images/temp/arrow-visual-prev.png) no-repeat;background-size:21px auto;}
 .main-visual.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{bottom:42px;}
 .main-visual .swiper-pagination{z-index: 1;}
 .main-visual .swiper-pagination-bullets{margin:0 7px;}
 .main-visual .swiper-pagination-bullet{background:#CACACA;opacity:1;}
 .main-visual .swiper-pagination-bullet-active{background:#2E8ADF}
+
+.main-visual .slide01 a{}
 
 .notice{position:relative;height:56px;margin-top:-20px;background:#fff;}
 .notice .inner-wrapper{display: flex;align-items: center;}
@@ -59,7 +66,7 @@
 .contact-section .contact .info .txt{color:#A1A1A1;font-size:11px;letter-spacing: -0.4px;line-height: 18px;}
 .contact-section .contact .copyright{margin-top:26px;color:#888888;font-size:12px;letter-spacing: -0.6px;}
 
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: 768px) {
     .global-section{padding:68px 0;background:url(../images/bg-map-m.png) no-repeat;}
     .global-section .d-flex{display: block;}
     .global-section .img-wrap{background:url(../images/main-txt-m.png) no-repeat center;}

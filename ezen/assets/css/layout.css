@@ -7,7 +7,8 @@
 .wrap{max-width:1808px;min-width:1280px;margin:0 auto}
 .inner-wrapper{position:relative;width:1280px;margin:0 auto}
 
-.scroll-none{position: fixed;width: 100%;height: 100%;overflow: hidden;}
+.scroll-none{width: 100%;height: 100%;overflow: hidden;}
+.scroll-block{overflow:visible;}
 
 header{position: absolute;left:0;width:100%;}
 header .logo{z-index: 20;}
@@ -25,7 +26,7 @@ header .btn-all{overflow:hidden;z-index:20;position:absolute;right:0;width:45px;
 header .btn-all.on{background:#2E8ADF url(../images/common/btn-close-pc.png) no-repeat center}
 header .all-menu{display:none;z-index:10;overflow:hidden;position: absolute;top:0;left:0;width:100%;height:100vh;background:#fff;}
 header .all-menu.on{display: block;}
-header .all-menu .inner-wrapper{z-index:10;padding:220px 0 266px 0;background:#fff;}
+header .all-menu .inner-wrapper{z-index:10;padding:220px 0 266px 0;background:#fff;align-items: flex-start;}
 header .all-menu .list{position:relative;width:60%;}
 header .all-menu .list li{margin:15px 0;}
 header .all-menu .list li:first-of-type{margin-top:0;}

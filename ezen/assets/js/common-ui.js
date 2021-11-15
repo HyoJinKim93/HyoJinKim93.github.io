@@ -1,4 +1,9 @@
-
+var screenMode = "";
+function setScreenMode(){ 
+	var screen = $(window).width();
+	if(screen > 768) screenMode = "pc";
+	else screenMode = "mobile";
+}
 $(function(){
     function gnbEvent(){
         $(".all-menu .list > li").on("mouseover", function () {
@@ -12,7 +17,7 @@ $(function(){
     gnbEvent();
     
     function allMenuEvent(){
-        document.body.style.overflow = 'visible';
+        // document.body.style.overflow = 'visible';
         const btnAll = document.querySelector(".btn-all");  
         const allMenu = document.querySelector(".all-menu");
         btnAll.addEventListener('click', () => {  
@@ -32,43 +37,55 @@ $(function(){
     allMenuEvent();
 
 
-    function scrollEvent(){
-        const screen = $(window).width();
-        $('header').on('click', '.btn-all', function () {
-            $('html, body').removeClass('scroll-none');
-            // window.addEventListener('scroll', noScroll);
-        });
-        $('header').on('click', '.btn-all.on', function () {
-            $('html, body').addClass('scroll-none');
-            // window.removeEventListener('scroll', noScroll);
-        });
+    // function scrollEvent(){
+    //     const screen = $(window).width();
+    //     $('header').on('click', '.btn-all', function () {
+    //         $('html, body').removeClass('scroll-none');
+    //         // window.addEventListener('scroll', noScroll);
+    //     });
+    //     $('header').on('click', '.btn-all.on', function () {
+    //         $('html, body').addClass('scroll-none');
+    //         // window.removeEventListener('scroll', noScroll);
+    //     });
         
-        if(screen > 1280){
-            $('html, body').removeClass('scroll-none');
-        }
-    }
-    scrollEvent();
+    //     if(screen > 1280){
+    //         $('html, body').removeClass('scroll-none');
+    //     }
+    // }
+    // scrollEvent();
+    
+    
+	// setScreenMode();
+	// 	var savedWidth = $(window).width();
+	// gnbEvent();
+	
+	// $(window).resize(function(){ 
+	// 	var newWidth = $(window).width();
+	// 	if(savedWidth == newWidth) return ; 
+	// 	savedWidth = newWidth;
+	// 	$("body").removeClass('scroll-none');
+	// 	setScreenMode();
+	// 	// $("body").off('mouseleave mouseenter click',".gnb > li");
+	// 	gnbEvent();
+	// });
 
 	// $(window).resize(function(){ 
     //     function scrollEvent(){
     //         const screen = $(window).width();
     //         $('header').on('click', '.btn-all', function () {
-    //             $('body').removeClass('scroll-none');
+    //             $('body').addClass('scroll-none');
     //             // window.addEventListener('scroll', noScroll);
     //             if(screen > 768){
     //                 console.log('pc')
-    //                 $('body').removeClass('scroll-none');
-    //                 document.body.style.position = 'fixed';
+    //                 $('body').addClass('scroll-none');
     //             } else {
     //                 console.log('mobile')
     //                 $('body').removeClass('scroll-none');
-    //                 document.body.style.overflow = 'visible';
-    //                 document.body.style.position = 'static';
-    //                 document.getElementsByClassName('all-menu').style.overflow = 'visible';
+    //                 // document.getElementsByClassName('all-menu').style.overflow = 'visible';
     //             }
     //         });
     //         $('header').on('click', '.btn-all.on', function () {
-    //             $('body').addClass('scroll-none');
+    //             $('body').removeClass('scroll-none');
     //             // window.removeEventListener('scroll', noScroll);
     //             // if(screen > 1280){
     //             //     document.body.style.overflow = 'visible';
@@ -76,5 +93,37 @@ $(function(){
     //             // }
     //         });
     //     }
-    // })
+    //     scrollEvent();
+    // });
+
+    function bodyEvent(){
+        $('header').on('click', '.btn-all', function () {
+            $('body').removeClass('scroll-none');
+            // window.addEventListener('scroll', noScroll);
+        });
+        $('header').on('click', '.btn-all.on', function () {
+            $('body').addClass('scroll-none');
+            // window.removeEventListener('scroll', noScroll);
+        });
+    }
+    bodyEvent();
+
+    window.onresize = function(){ 
+        console.log('test')
+        function scrollEvent(){
+            var screen = $(window).width();
+            if(screen > 768){
+                console.log('pc')
+                $('body').addClass('scroll-none');
+            } else {
+                console.log('mobile')
+                $('body').removeClass('scroll-none');
+            }
+            if(!$('.all-menu').hasClass('on')){
+                $('body').removeClass('scroll-none')
+            }
+        }
+        scrollEvent();
+    };
+    
 })

@@ -9,7 +9,7 @@ $(function(){
     window.onload = function(){
         setTimeout(function(){
             scrollTo(0,0)
-        }, 50)
+        }, 0)
     }
 
     function gnbEvent(){

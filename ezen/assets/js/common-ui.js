@@ -5,6 +5,13 @@ function setScreenMode(){
 	else screenMode = "mobile";
 }
 $(function(){
+    //새로고침 시 맨 위로
+    window.onload = function(){
+        setTimeout(function(){
+            scrollTo(0,0)
+        }, 100)
+    }
+
     function gnbEvent(){
         $(".all-menu .list > li").on("mouseover", function () {
             $(this).children(".depth2").addClass("on");
@@ -17,7 +24,6 @@ $(function(){
     gnbEvent();
     
     function allMenuEvent(){
-        // document.body.style.overflow = 'visible';
         const btnAll = document.querySelector(".btn-all");  
         const allMenu = document.querySelector(".all-menu");
         btnAll.addEventListener('click', () => {  

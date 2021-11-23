@@ -1,0 +1,10 @@
+$(function(){
+	$('.btn-all').on('click',function(){
+		$(this).addClass('openMenu');
+        $(".all-menu").addClass("on")
+	});
+	$('.btn-all.openMenu').on('click',function(){
+		$(this).removeClass('openMenu');
+        $(".all-menu").removeClass("on")
+	});
+})

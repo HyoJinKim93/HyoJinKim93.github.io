@@ -15,7 +15,7 @@ header .logo{z-index: 20;}
 header .logo a{overflow:hidden;display:block;width:45px;height:0;padding-top:51px;background:url(../images/common/logo-pc.png) no-repeat 0 0}
 
 header .inner-wrapper.d-flex{justify-content: space-between;}
-header .menu{display: flex;width:100%;height:97px;align-items:center;justify-content: center;}
+header .menu{z-index:9;display: flex;width:100%;height:97px;align-items:center;justify-content: center;}
 header .gnb{z-index:1;display: flex;align-items: center;}
 header .gnb li{margin:0 39px;}
 header .gnb li:first-of-type{margin-left:0;}
@@ -26,11 +26,11 @@ header .btn-all{overflow:hidden;z-index:20;position:absolute;right:0;width:45px;
 header .btn-all.on{background:#2E8ADF url(../images/common/btn-close-pc.png) no-repeat center}
 header .all-menu{display:none;z-index:10;overflow:hidden;position: absolute;top:0;left:0;width:100%;height:100vh;background:#fff;}
 header .all-menu.on{display: block;}
-header .menu-wrap{position:relative;max-width:1920px;margin:0 auto;}
+header .menu-wrap{position:relative;}
 header .all-menu .inner-wrapper{z-index:10;height:100vh;padding:220px 0 266px 0;background:#fff;align-items: flex-start;}
-header .menu-wrap::before{content:'';display: inline-block;z-index:1;position:absolute;top:0;left:0;width:56px;height:360px;background:#2E8ADF}
-header .menu-wrap::after{content:'';display: inline-block;z-index:1;position:absolute;top:0;right:0;width:56px;height:100%;background:#2E8ADF}
-header .all-menu .blue-bar-bottom::after{content:'';display: inline-block;z-index:1;position:absolute;bottom:0;right:0;width:386px;height:56px;background:#2E8ADF}
+/* header .menu-wrap::before{content:'';display: inline-block;z-index:1;position:absolute;top:0;left:0;width:56px;height:360px;background:#2E8ADF}
+header .menu-wrap::after{content:'';display: inline-block;z-index:1;position:absolute;top:0;right:0;width:56px;height:100%;background:#2E8ADF} */
+/* header .all-menu .blue-bar-bottom::after{content:'';display: inline-block;z-index:1;position:absolute;bottom:0;right:0;width:386px;height:56px;background:#2E8ADF} */
 header .all-menu .list{position:relative;width:60%;}
 header .all-menu .list li{margin:15px 0;}
 header .all-menu .list li:first-of-type{margin-top:0;}
@@ -55,11 +55,40 @@ header .contactArea .info li:first-of-type{margin-left:0;}
 header .contactArea .info li:last-of-type{margin-right:0;}
 header .contactArea .info .tit{color:#444;font-size:13px;font-weight:700;}
 header .contactArea .info .txt{display:block;margin-top:5px;color:#666;font-size:11px;font-weight:300;line-height:18px;letter-spacing: -0.4px;}
-header .contactArea .map{height:203px;} 
+header .contactArea .map{height:203px;background:#222} 
 
-@media screen and (max-width: 768px) {
-    .inner-wrapper{width:100%;padding:0 15px;}
-    header .btn-all{right:15px;}
-    header .menu{width:100%;}
+@media screen and (min-width: 901px) and (max-width: 1600px) {
+    header .all-menu .blue-bar-left,
+    header .all-menu .blue-bar-right,
+    header .all-menu .blue-bar-bottom{display: none;}
+}
+
+@media screen and (max-width: 900px) {
+    .wrap{min-width:320px;}
+    .inner-wrapper{width:100%;padding:0 30px;}
+    .main{margin:0 auto}
+    .main .container::after{content:'';display: block;width:16px;height:100%;background-color: #2E8ADF;}
+    header{padding:13px 0;height:34px;}
+    header .inner-wrapper{padding:0 32px;}
+    header .menu{display: none;}
     header .gnb{display: none;}
+    header .btn-all{right:32px;width:33px;padding-top:33px;background:#2E8ADF url(../images/common/btn-all-m.png) no-repeat center;background-size:18px auto;}
+    header .logo a{width:30px;height:0;padding-top:33px;background:url(../images/common/logo-m.png) no-repeat 0 0;background-size:30px auto;}
+    header .all-menu .inner-wrapper{padding:74px 32px;}
+    header .all-menu .blue-bar-left{width:16px;}
+    header .all-menu .blue-bar-right{width:16px;}
+    header .all-menu .blue-bar-bottom{width:151px;height:16px;}
+    header .all-menu .list{width:100%;padding-bottom:33px;}
+    header .all-menu .list li > a{font-size:32px;}
+    header .all-menu .d-flex{display: block;}
+    header .all-menu .list .depth2{position: relative;top:19px;left:0;transition:all;}
+    header .all-menu .list .depth2 ul li:last-of-type{margin-bottom:30px}
+    header .all-menu .list .depth2 a{font-size:16px;}
+    header .all-menu .list .label-new{top:6px;}
+    header .contactArea{width:100%;padding-top:32px;border-top:1px solid #d6d6d6;}
+    header .contactArea .title{font-size:32px;margin-bottom:15px;}
+    header .contactArea .info{display: block;}
+    header .contactArea .info li{margin:0;}
+    header .contactArea .info .tit{margin-bottom:15px;}
+    header .contactArea .map{height:280px;}
 }

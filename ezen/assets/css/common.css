@@ -5,7 +5,7 @@
 *{ margin: 0; padding:0;border:0;box-sizing: border-box;}
 html,body{width: 100%;height:100%;}
 html{-webkit-text-size-adjust: none;-moz-text-size-adjust: none;-ms-text-size-adjust: none; }
-img{ max-width: 100%; }
+img{ max-width: 100%;image-rendering: auto; }
 ul,ol{ list-style: none }
 img, li	{vertical-align:top;}
 blockquote, q { quotes: none }
@@ -48,10 +48,10 @@ input[type="checkbox"] + label::before{content:'';display:inline-block;width:26p
 .blue{color:#2E8ADF}
 .label-new{padding:0 6px;color:#fff;font-size:12px;font-weight: 700;border-radius:30px;background:#FF9D0B}
 .btn{color:#fff;font-size:16px;font-weight:700;line-height:46px;}
-.btn-link{padding-left:26px;padding-right:77px;text-align:center;border-radius:300px;background:#2E8ADF url(../images/common/arrow-right.png) no-repeat 78% 50%;background-size:20px auto;transition: 0.5s;}
+.btn-link{padding-left:26px;padding-right:57px;text-align:center;border-radius:300px;background:#2E8ADF url(../images/common/arrow-right.png) no-repeat 86% 50%;background-size:20px auto;transition: 0.5s;}
 .btn-link:hover{color: #fff;box-shadow: 180px 0 0 0 rgb(255 255 255 / 15%) inset, -180px 0 0 0 rgb(255 255 255 / 15%) inset;}
 
-@media screen and (max-width: 768px) {
-    .btn{font-size:13px;line-height: 42px;}
-    .btn-link{background:#2E8ADF url(../images/common/arrow-right-m.png) no-repeat 83% 50%;background-size:14px auto}
+@media screen and (max-width: 900px) {
+    .btn{font-size:13px;font-weight:700;line-height: 42px;border-radius: 42px;}
+    .btn-link{padding-right:58px;background:#2E8ADF url(../images/common/arrow-right-m.png) no-repeat 83% 50%;background-size:14px auto}
 }

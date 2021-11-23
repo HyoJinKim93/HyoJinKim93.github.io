@@ -143,7 +143,7 @@
     .contact-section .detail .txt{margin-top:0;margin-bottom:25px;color:rgba(0,0,0,0.6);font-size:13px;}
     .contact-section .detail .btn-link{margin-top:0;}
     .contact-section .contact .title{display:flex;font-size:26px;letter-spacing: -0.6px;background:url(../images/common/arrow-right-content-m.png) no-repeat right center;background-size:20px}
-    .contact-section .contact .map{width:100%;height:280px;margin-bottom:30px;}
+    .contact-section .contact .map{width:100% !important;height:280px;margin-bottom:30px;}
     .contact-section .contact .info{display: block;margin-top:0;}
     .contact-section .contact .info li:nth-of-type(even){width:100%;}
     .contact-section .contact .txt{width:100%;margin-bottom:15px;font-size:13px;letter-spacing: -0.6px;line-height: 20px;}

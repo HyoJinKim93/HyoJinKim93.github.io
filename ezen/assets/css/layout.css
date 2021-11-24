@@ -90,5 +90,5 @@ header .contactArea .map{height:203px;background:#222}
     header .contactArea .info{display: block;}
     header .contactArea .info li{margin:0;}
     header .contactArea .info .tit{margin-bottom:15px;}
-    header .contactArea .map{height:280px;}
+    header .contactArea .map{width: 100% !important;height:280px;}
 }

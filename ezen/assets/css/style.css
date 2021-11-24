@@ -96,7 +96,7 @@
     .main .blue-bar-right{right:-16px;width:151px;height:102%;}
     .main-visual .mobileBox{display: block;}
     .main-visual .pcBox{display: none;}
-    .main-visual{min-width:320px}
+    .main-visual{min-width:288px}
     .main-visual img{width:100%}
     .main-visual .btn-prev,
     .main-visual .btn-next{display: none;}
@@ -134,11 +134,11 @@
     .global-section .ico-wrap .tit{margin-bottom:2px;font-size:12px;}
     .global-section .ico-wrap .num{font-size:22px;}
 
-    .contact-section .inquire{height:auto;padding:43px 0;background: url(../images/img-require-m.png) no-repeat left center;background-size:100%;}
+    .contact-section .inquire{height:auto;padding:43px 0;background: url(../images/img-require-m.png) no-repeat right center;background-size:cover;}
     .contact-section .inquire .tit{margin-bottom:15px;color:#fff;font-size:16px;letter-spacing: -1px;line-height: 22px;}
     .contact-section .inquire .txt{color:rgba(255,255,255,0.8);font-size:13px;}
     .contact-section .contact{position: relative;width:100%;height:auto;padding:34px;}
-    .contact-section .detail{height:auto;padding:43px 0;background: url(../images/bg-partner-m.png) no-repeat left center;background-size:100%;}
+    .contact-section .detail{height:auto;padding:43px 0;background: url(../images/bg-partner-m.png) no-repeat left center;background-size:cover;}
     .contact-section .detail .tit{margin-bottom:14px;font-size:16px;line-height:22px;letter-spacing: -0.6px;}
     .contact-section .detail .txt{margin-top:0;margin-bottom:25px;color:rgba(0,0,0,0.6);font-size:13px;}
     .contact-section .detail .btn-link{margin-top:0;}

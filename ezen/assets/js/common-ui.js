@@ -1,7 +1,7 @@
 var screenMode = "";
 function setScreenMode(){ 
 	var screen = $(window).width();
-	if(screen > 768) screenMode = "pc";
+	if(screen > 900) screenMode = "pc";
 	else screenMode = "mobile";
 }
 $(function(){

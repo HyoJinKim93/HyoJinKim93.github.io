@@ -1,15 +1,4 @@
-window.addEventListener('DOMContentLoaded', function () {
 
-
-
-    /* scroll event section */
-    container.addListener((e) => {
-
-        let scrollTop = container.scrollTop;
-        $('.posNum').html(scrollTop)
-
-    });
-    
     // 리스트공통 - 숨김영역열기
 	$('.direction').on('click', '.accordion li a', function (e) {
 		e.stopPropagation();
@@ -24,10 +13,4 @@ window.addEventListener('DOMContentLoaded', function () {
 			$(this).children('.hide-area').slideDown();
 		}
 	});
-
-
-
-
-})
-
 

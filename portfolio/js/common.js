@@ -9,27 +9,37 @@ window.addEventListener('DOMContentLoaded', function () {
         $('.posNum').html(scrollTop)
 
     });
-    function gnb(){
+
+    function gnb() {
         $(".gnb").hide();
-        $(".all-menu a").on("click",function(){
+        $(".all-menu a").on("click", function () {
             $(".header .gnb").show();
         })
-        $(".gnb .close").on("click",function(){
+        $(".gnb .close").on("click", function () {
             $(".header .gnb").hide();
         })
     }
     gnb()
     // gnb 메뉴인터랙션
-    function gnbInterac(){
+    function gnbInterac() {
         $('.all-menu').on('mouseover', function () {
             $(this).addClass('on').removeClass('off');
         })
     }
     gnbInterac()
     
-    function selectUi(){
+    $(".all-menu").on("click", function() {
+        var that = $(this);    
+        if (that.hasClass("is-open")) {
+          that.removeClass("is-open").addClass("is-closed");      
+        } else {
+          that.removeClass("is-closed").addClass("is-open");      
+        }    
+      });
+
+    function selectUi() {
         const label = document.querySelectorAll('.label');
-        label.forEach(function(lb){
+        label.forEach(function (lb) {
             lb.addEventListener('click', e => {
                 let optionList = lb.nextElementSibling;
                 let optionItems = optionList.querySelectorAll('.item');
@@ -37,7 +47,7 @@ window.addEventListener('DOMContentLoaded', function () {
             })
         });
         const clickLabel = (lb, optionItems) => {
-            if(lb.parentNode.classList.contains('active')) {
+            if (lb.parentNode.classList.contains('active')) {
                 lb.parentNode.classList.remove('active');
                 optionItems.forEach((opt) => {
                     opt.removeEventListener('click', () => {
@@ -58,12 +68,8 @@ window.addEventListener('DOMContentLoaded', function () {
             label.parentNode.classList.remove('active');
         }
     }
-    selectUi()
-
-
-
+    selectUi();
 
 
 })
-
 

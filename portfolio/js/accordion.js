@@ -21,9 +21,13 @@ window.addEventListener('DOMContentLoaded', function () {
 
 		if(!check){
 			$(this).addClass('on');
-			$(this).siblings('.hide-area').slideDown();
+			$(this).children('.hide-area').slideDown();
 		}
 	});
+
+
+
+
 })
 
 

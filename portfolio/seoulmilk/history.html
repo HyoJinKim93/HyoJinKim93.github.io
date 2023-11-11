@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>서울우유</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/plugin/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <script src="js/plugin/jquery-1.8.1.min.js"></script>
+    <script src="js/plugin/easing.js"></script>
+
+</head>
+
+
+<body>
+
+<!--<div class="posNum"></div>-->
+
+<button class="startPoint"></button>
+
+<div class="header">
+    <h1 class="logo">
+        <a href="index.html">
+            <img src="images/logo.png" alt="서울우유 로고">
+        </a>
+    </h1>
+    <div class="all-menu">
+        <a href="javascript:void(0)" class="hamburger">
+            <!-- <img src="images/all-menu-red.png" alt="전체 메뉴"> -->
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+    </div>
+    <div class="gnb">
+        <div class="top">
+            <ul class="util">
+                <li><a href="">서울우유 공식 쇼핑몰 - 나 100%샵</a></li>
+                <li><a href="">고객지원실</a></li>
+                <li><a href="">ENGLISH</a></li>
+                <li><a href="">中國語</a></li>
+            </ul>
+            <div class="search">
+                <input type="text">
+            </div>
+        </div>
+
+        <nav class="nav">
+            <ul>
+                <li class="content">
+                    <h3>ABOUT 서울우유</h3>
+                    <div class="list">
+                        <p>조합현황</p>
+                        <ul>
+                            <li class="active"><a href="cooperate.html">협동조합소개</a></li>
+                            <li class="active"><a href="history.html">연혁</a></li>
+                            <li class="active"><a href="copartner.html">조합원</a></li>
+                            <li class="active"><a href="organization.html">조직도</a></li>
+                            <li><a href="">주요사업</a></li>
+                            <li><a href="">조직원</a></li>
+                            <li><a href="">경영이념체계</a></li>
+                            <li><a href="">CI 소개</a></li>
+                            <li><a href="">전용서체 소개</a></li>
+                            <li><a href="">경영고시</a></li>
+                            <li><a href="">조합공고</a></li>
+                            <li><a href="">운영의 공개</a></li>
+                            <li><a href="">정관</a></li>
+                        </ul>
+                    </div>
+                    <div class="list">
+                        <p>중앙연구소</p>
+                        <ul>
+                            <li><a href="">중앙연구소 소개</a></li>
+                            <li><a href="">연구분야 및 조직</a></li>
+                        </ul>
+                    </div>
+                    <div class="list">
+                        <p>채용정보</p>
+                        <ul>
+                            <li><a href="">직원채용</a></li>
+                            <li><a href="">고객센터 모집</a></li>
+                        </ul>
+                    </div>
+                    <div class="list">
+                        <p>입찰정보</p>
+                        <ul>
+                            <li><a href="">입찰정보</a></li>
+                            <li><a href="">매각공고</a></li>
+                            <li><a href="">연간구매품목</a></li>
+                            <li><a href="">전자입찰</a></li>
+                        </ul>
+                    </div>
+                    <div class="list">
+                        <p><a href="">외국원산지공지</a></p>
+                    </div>
+                    <div class="list">
+                        <p>CONTACT US</p>
+                        <ul>
+                            <li class="active"><a href="direction.html">찾아오시는 길</a></li>
+                            <li><a href="">고객센터 검색</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="content">
+                    <h3>제품소개</h3>
+                    <div class="list">
+                        <p>우유류</p>
+                        <ul>
+                            <li class="active"><a href="list.html">프리미엄 우유</a></li>
+                            <li><a href="">흰우유</a></li>
+                            <li><a href="">가공우유</a></li>
+                            <li><a href="">멸균우유</a></li>
+                        </ul>
+                    </div>
+                    <div class="list">
+                        <p>발효우유</p>
+                        <ul>
+                            <li><a href="">마시는 요구르트</a></li>
+                            <li><a href="">떠먹는 요구르트</a></li>
+                            <li><a href="">퍼먹는 요구르트</a></li>
+                        </ul>
+                    </div>
+                    <div class="list">
+                        <p>유음료류</p>
+                        <ul>
+                            <li><a href="">냉장음료</a></li>
+                            <li><a href="">상온음료</a></li>
+                            <li><a href="">두유음료</a></li>
+                            <li><a href="">기타음료</a></li>
+                        </ul>
+                    </div>
+                    <div class="list">
+                        <p>커피우유</p>
+                        <ul>
+                            <li><a href="">스폐셜티</a></li>
+                            <li><a href="">카페오레</a></li>
+                            <li><a href="">스타벅스</a></li>
+                            <li><a href="">커피빈</a></li>
+                            <li><a href="">커피</a></li>
+                        </ul>
+                    </div>
+                    <div class="list">
+                        <p>치즈류</p>
+                        <ul>
+                            <li><a href="">슬라이스치즈</a></li>
+                            <li><a href="">피자치즈</a></li>
+                            <li><a href="">자연치즈</a></li>
+                            <li><a href="">기타&amp;<br>수입치즈</a></li>
+                        </ul>
+                    </div>
+                    <div class="list">
+                        <p>가공식품류</p>
+                        <ul>
+                            <li><a href="direction.html">크림 <br>&amp; 버터</a></li>
+                            <li><a href="">분유<br> &amp;연유</a></li>
+                            <li><a href="">기타</a></li>
+                        </ul>
+                    </div>
+                    <div class="list">
+                        <p>가공식품류</p>
+                        <ul>
+                            <li><a href="">디저트류</a></li>
+                            <li><a href="">아이스크림</a></li>
+                            <li><a href="">기타</a></li>
+                        </ul>
+                    </div>
+                    <div class="list">
+                        <p>반려동물제품</p>
+                        <ul>
+                            <li><a href="">아이펫밀크</a></li>
+                        </ul>
+                    </div>
+                    <div class="list">
+                        <p>수입제품</p>
+                        <ul>
+                            <li><a href="">반려동물제품</a></li>
+                            <li><a href="">아이펫밀크</a></li>
+                            <li><a href="">가공식품</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="content">
+                    <h3>홍보 &amp; 이벤트</h3>
+                    <div class="list">
+                        <p class="active"><a href="notice.html">공지사항</a></p>
+                        <p>보도자료</p>
+                        <p>광고자료</p>
+                        <p>홍보자료</p>
+                        <p>품질인증</p>
+                        <p class="active"><a href="event.html">이벤트</a></p>
+                        <p>당첨자 발표</p>
+                        <p>인플루언서 REVIEW</p>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="close">
+            <a href="javascript:void(0)">닫기 버튼</a>
+        </div>
+    </div>
+</div>
+
+<section id="container" class="history">
+
+    <section id="section01">
+
+        <div class="container">
+            <h2 class="title">연혁</h2>
+            <ul class="tabmenu">
+                <li class="tabmenu01">
+                    <a href="cooperate.html">
+                        <span class="red">COOPERATE</span>
+                        협동조합<br>소개
+                    </a>
+                </li>
+                <li class="tabmenu02">
+                    <a href="copartner.html">
+                        <span class="red">COPARTNER</span>
+                        조합원
+                    </a>
+                </li>
+                <li class="on tabmenu03">
+                    <a href="history.html">서울우유의<br>역사
+                        <span class="icon-arrowdown bounce"></span>
+                    </a>
+                </li>
+                <li class="tabmenu04">
+                    <a href="organization.html">
+                        <span class="red">ORGANIZATION</span>
+                        조직도
+                    </a>
+                </li>
+                <li class="tabmenu05">
+                    <a href="direction.html">
+                        <span class="red">DIRECTIONS</span>
+                        찾아오시는 길
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <section id="area01" class="contents">
+            <div class="trigger-this-01">
+                <div class="fix-this-01">
+                    <div class="history-list">
+
+                        <section class="box-wrap con01">
+                            <div class="box box01">
+                                <div class="intro">
+                                    <div class="inner-box">
+                                        <p class="sub-tit">여명기 ~ 성장기</p>
+                                        <h2 class="tit">한국 낙농발전의 초석을 놓다.</h2>
+                                        <p class="desc">
+                                            <span>서울우유협동조합은 1937년 7월 11일 경성우유동업조합으로 창립하였으며,</span>
+                                            <span>해방 후 1945년 서울우유동업조합으로 개칭하고 본격적인 우유 판매에 나섰습니다.</span>
+                                            <span>1962년에는 중랑교에 제1공장을 준공하여 생산기반을 마련하고,</span>
+                                            <span>연유와 분유 제품을 출시하였습니다.</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="scene">
+                                    <ol class="scene-list">
+                                        <li>
+                                            <p class="year">1930's</p>
+                                            <ul>
+                                                <li>청량리농유조합 조직</li>
+                                                <li>경성우유동업조합 창립</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p class="year">1940's</p>
+                                            <ul>
+                                                <li>경성우유동업조합을 서울우유동업조합으로 개칭</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p class="year">1950's</p>
+                                            <ul>
+                                                <li>빙과사업 실시</li>
+                                                <li>ICA 무상원조에 의한 살균조, 충병충진기 도입</li>
+                                                <li>화물자동차에 의한 집유업무 개시</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p class="year">1960's</p>
+                                            <ul>
+                                                <li>서울우유동업조합 설립준비회 개최</li>
+                                                <li>서울우유동업조합 해체</li>
+                                                <li>서울우유협동조합 창립총회 개최</li>
+                                                <li>남대문 국민학교 등 6개 급식시범학교우유급식 시작</li>
+                                                <li>농협중앙회 가입, 국내 최초 균질우유 생산</li>
+                                                <li>제1공장 준공(중랑교)</li>
+                                                <li>초등학교 아동 우유 급식 실시</li>
+                                                <li>최초 국산 연유 ‘서울우유’ 생산</li>
+                                                <li>국내 최초 HTST살균기 도입 설치</li>
+                                                <li>버터, 서울분유(유아용 조제분유) 쵸코우유 생산</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p class="year">1970's</p>
+                                            <ul>
+                                                <li>탈지분유 생산</li>
+                                                <li>본조합 이전(정동에서 상봉동)</li>
+                                                <li>초고온순간살균기(UHT) 설치</li>
+                                                <li>서울낙우신용조합 설립</li>
+                                                <li>유지방자동측정기(Milko tester MK-Ⅱ) 덴마크로부터 도입</li>
+                                                <li>제2공장 준공 (용인)</li>
+                                                <li>집유선고정화 조치(서울우유)</li>
+                                                <li>유지방률에 의한 유대 지급</li>
+                                                <li>치즈, 커피우유, 발효유(요구르트) 생산</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p class="year">1980's</p>
+                                            <ul>
+                                                <li>농협중앙회에서 축협중앙회로 회원 소속 변경</li>
+                                                <li>군 우유 급식 실시</li>
+                                                <li>국내 최초 콜드체인시스템 실시</li>
+                                                <li>모짜렐라 치즈, 체다슬라이스치즈 생산</li>
+                                                <li>제1공장 이전 준공(양주)</li>
+                                                <li>본조합 종합 사무동 준공(서울 상봉동)</li>
+                                                <li>상호금융업무 개설, 기술연구소 설립</li>
+                                                <li>1일 원유 집유량 1,000톤 돌파</li>
+                                                <li>제3공장 준공, 안산지도소 설치</li>
+                                            </ul>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="box box02">
+                                <div class="intro">
+                                    <div class="inner-box">
+                                        <p class="sub-tit">성장기</p>
+                                        <h2 class="tit">창의와 열정, 최고의 품질로 시장을 선도하다</h2>
+                                        <p class="desc">
+                                            <span>창립 60주년을 기점으로 새로운 변화를 모색하고자,</span>
+                                            <span>심벌마크와 로고타입 등 CI를 새롭게 변경하였습니다.</span>
+                                            <span>또한, 2005년 9월 품질과 디자인을 최고급화한 '1등급 A우유'를 출시하였으며,</span>
+                                            <span>2006년 12월에는 '아이러브 우유(乳)' 캠페인을 전개하며 시장을 선도하였습니다.</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="scene">
+                                    <ol class="scene-list">
+                                        <li>
+                                            <p class="year">1991</p>
+                                            <ul>
+                                                <li>정동부지 영화진흥공사에 매각</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p class="year">1992</p>
+                                            <ul>
+                                                <li>낙농헬퍼 발대식</li>
+                                                <li>어린이치즈 앙팡 출시</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p class="year">1993</p>
+                                            <ul>
+                                                <li>서울우유 제3공장 멸균유 생산동 준공</li>
+                                                <li>아침에주스 생산</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p class="year">1994</p>
+                                            <ul>
+                                                <li>어린이 우유 앙팡 출시</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p class="year">1997</p>
+                                            <ul>
+                                                <li>서울우유 로고 변경</li>
+                                                <li>신용사업 10주년 기념식(예수금 1,637억원)</li>
+                                                <li>발효유 칸21 출시</li>
+                                                <li>산업체 최초로 젖소에서 한우·젖소 쌍둥이 탄생 (왕대포목장)</li>
+                                                <li>조합 창립 60주년 기념식</li>
+                                                <li>&#8249;서울우유 60년사&#8250; 편찬</li>
+                                                <li>제1회 서울우유 홀스타인 경진대회 (수원가축시장/96두 출품)</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p class="year">1998</p>
+                                            <ul>
+                                                <li>1999년 동계아시아경기대회 공식 후원업체로 선정</li>
+                                                <li>낙농산업의 위기 극복을 위한 간담회 (임직원 25명 참석)</li>
+                                                <li>3개 공장 HACCP 사업장 지정 : 1공장(시유), 2공장</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p class="year">1999</p>
+                                            <ul>
+                                                <li>전공장 HACCP적용 사업장 인증</li>
+                                                <li>가정배달 전용 ‘홈 밀크’ 출시</li>
+                                            </ul>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+
+                            <div class="box box03">
+                                <div class="intro">
+                                    <div class="inner-box">
+                                        <p class="sub-tit">도약기 ~</p>
+                                        <h2 class="tit">제2창업정신으로 새로운 도약시대를 열고, 효율적 경영체제로 지속가능경영을 추진하다</h2>
+                                        <p class="desc">
+                                            <span>2008년 통합 신공장 건설 추진본부를 구성하여</span>
+                                            <span>미래 도약기반 구축 행보를 시작하였고,</span>
+                                            <span>전체 집유장에 대한 HACCP 인증을 완료하였습니다.</span>
+                                            <span>또한, 거창공장이 유가공업계 최초로 환경친화기업으로 지정되었습니다.</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="scene">
+                                    <ol class="scene-list">
+                                        <li>
+                                            <p class="year">2000</p>
+                                            <ul>
+                                                <li>서울우유 목표 및 비전선포(성균관대, 150명 참석)</li>
+                                                <li>CS-Call(고객만족통화) 제도 시행</li>
+                                                <li>짜요짜요 출시(딸기, 포도)</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p class="year">2001</p>
+                                            <ul>
+                                                <li>신용카드(BC) 업무개시</li>
+                                                <li>OK캐쉬백 쿠폰 제휴 조인(4개 업체)</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p class="year">2002</p>
+                                            <ul>
+                                                <li>ERP 프로젝트 선포식(44명)</li>
+                                                <li>1일 우유판매량 1,000만 개 돌파</li>
+                                                <li>원유수급 안정 위해 젖소 8,469두 도태 (전국 2만 4,421두/04.22~)</li>
+                                                <li>구제역발생지역 가축살처분 완료 (총 16만 147두/젖소 1,086두)</li>
+                                                <li>조합 낙농진흥회 탈퇴(총회의결)</li>
+                                                <li>폰테라협동조합(NZMP)과 전략적 제휴</li>
+                                                <li>서울우유, 원유수급 안정관리규정 시행</li>
+                                                <li>서울우유-퍼트컴퍼니 공동마케팅 협약식</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p class="year">2003</p>
+                                            <ul>
+                                                <li>ERP 시스템 병행 시험 가동</li>
+                                                <li>윤리경영 선포식</li>
+                                                <li>거창공장 기공식</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p class="year">2004</p>
+                                            <ul>
+                                                <li>멸균유 몽골 수출(22만 5,000팩)</li>
+                                                <li>비요뜨 출시(초코링, 씨리얼)</li>
+                                                <li>우유소비실태 조사 시작(~07.26)</li>
+                                                <li>동남부낙농지원센터 준공식</li>
+                                                <li>D-마트개장</li>
+                                                <li>중앙회 시행 출자증대 우수조합상 수상</li>
+                                                <li>서울우유 MBP 출시</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p class="year">2005</p>
+                                            <ul>
+                                                <li>서울우유 MBP 출시</li>
+                                                <li>동북부낙농지원센터 준공</li>
+                                                <li>1등급A우유 출시</li>
+                                                <li>삼각커피우유 미국 수출(4만 8,000개)</li>
+                                                <li>거창공장 준공식</li>
+                                                <li>아름다운 목장 가꾸기 사진 콘테스트(123점 응모)</li>
+                                                <li>전자결재 시스템 도입</li>
+                                                <li>서울우유홈밀크 리뉴얼</li>
+                                                <li>목장의 신선함이 살아있는 우유 출시</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p class="year">2006</p>
+                                            <ul>
+                                                <li>거창공장 HACCP 인증</li>
+                                                <li>서울우유 홍보대사 1만 명 선정 및 활동 시작</li>
+                                                <li>365 유기농 아침 오렌지, 토마토 출시</li>
+                                                <li>보라매역지점 개점식</li>
+                                                <li>창립 70주년기념 ‘아이 러브 유(乳) 캠페인’ 전개 (~2007.03.31.)</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p class="year">2007</p>
+                                            <ul>
+                                                <li>MILK VlSION 선포(올림픽 컨벤션센터)</li>
+                                                <li>고객만족헌장 선포</li>
+                                                <li>거창공장 내 치즈 전문공장 준공식</li>
+                                                <li>제6회 서울우유 홀스타인 경진대회 개최</li>
+                                                <li>스타벅스 라떼 냉장 컵 커피 출시</li>
+                                                <li>언니몰래 먹는 딸기오레 출시</li>
+                                                <li>서울우유, 로하스(LOHAS) 인증 획득</li>
+                                                <li>응암동지점 개점식</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p class="year">2008</p>
+                                            <ul>
+                                                <li>다솜(DASOM)운동 전개</li>
+                                                <li>멸균유 중국 수출 개시</li>
+                                                <li>농협중앙회 젖소개량사업소와 우수 후보씨수소 생산 협력 사업</li>
+                                                <li>우유 증정행사 중단</li>
+                                                <li>요하임 저지방 요구르트 2종(딸기, 사과) 출시</li>
+                                                <li>프랑스 벨사와 유통협약서 체결</li>
+                                                <li>중국 최초 살균유 수출</li>
+                                                <li>전 집유장 HACCP 인증 획득</li>
+                                                <li>목장의 신선함이 살아있는 우유 저지방 출시</li>
+                                                <li>개화산역지점 개점식</li>
+                                                <li>거창공장 유가공업체 최초 환경친화기업 지정</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p class="year">2009</p>
+                                            <ul>
+                                                <li>조합 이천축산농협과 한우 체내수정란 공동생산 계약 체결</li>
+                                                <li>지방을 줄인 고칼슘치즈 출시</li>
+                                                <li>서울우유 노사 대화합 선언식</li>
+                                                <li>업계 최초 제조일자 표기제 시행</li>
+                                                <li>업계 최초 녹색경영 선포</li>
+                                                <li>프로젝트 관리 시스템(PMS) 운영</li>
+                                            </ul>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+
+                            <div class="box box04">
+                                <div class="intro">
+                                    <div class="inner-box">
+                                        <p class="sub-tit">신 경영체제와 선진 조직문화로 신성장동력을 창출하다</p>
+                                        <h2 class="tit">식품안전경영 시스템 인증을 획득, 국산 원유 사용을 공식화, '제7회 한국낙농대상
+                                            낙농조합 부문 대상'을 수상</h2>
+                                        <p class="desc">
+                                            <span>2008년 통합 신공장 건설 추진본부를 구성하여</span>
+                                            <span>미래 도약기반 구축 행보를 시작하였고,</span>
+                                            <span>전체 집유장에 대한 HACCP 인증을 완료하였습니다.</span>
+                                            <span>또한, 거창공장이 유가공업계 최초로 환경친화기업으로 지정되었습니다.</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="scene">
+                                    <ol class="scene-list">
+                                        <li>
+                                            <p class="year">2010</p>
+                                            <ul>
+                                                <li>화랑대역지점 개점식</li>
+                                                <li>신당역지점 개점식</li>
+                                                <li>아침에주스 제주감귤 출시</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p class="year">2011</p>
+                                            <ul>
+                                                <li>ISO22000(식품안전경영 시스템) 인증 획득</li>
+                                                <li>SCM 공급망관리 시스템 구축</li>
+                                                <li>유기농 앙팡 아기/어린이치즈 STEP 1~4 출시</li>
+                                                <li>장충동지점 개점식</li>
+                                                <li>소이밀크 씨리얼, 플레인 출시</li>
+                                                <li>유가공업 최초 전 사업장 녹색기업 인증</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p class="year">2012</p>
+                                            <ul>
+                                                <li>국산 원유 사용 선언</li>
+                                                <li>서울우유 행복 마케팅 실시</li>
+                                                <li>목장의 신선함이 살아있는 요구르트 4종 출시 <br>(플레인, 딸기, 복숭아, 블루베리)</li>
+                                                <li>바리스타즈밀크 출시</li>
+                                                <li>제1회 국제학술 심포지엄 후원</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p class="year">2013</p>
+                                            <ul>
+                                                <li>서경지점 개점식</li>
+                                                <li>원유가격연동제 시행</li>
+                                                <li>양주공장 희나리 동아리 전국품질분임조 경진대회 <br>대통령상 은상 수상</li>
+                                                <li>에스엠트랜스포㈜ 소고기 판매사업 시행</li>
+                                                <li>미얀마 농림식품부와 ‘낙농 및 유가공 프로젝트’에 <br>관한 양해각서(MOU) 체결</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p class="year">2014</p>
+                                            <ul>
+                                                <li>스페셜티 카페라떼(마일드, 다크) 출시</li>
+                                                <li>‘국산우유 사용 인증(K-MILK) 제도’ 본격 시행 제도 마련</li>
+                                                <li>중앙연구소 신축 준공식</li>
+                                                <li>안산공장 드림동아리 전국 품질분임조 경진대회 대통령상 금상 수상</li>
+                                                <li>서울우유농협 예수금 1조 원 달성</li>
+                                                <li>서울우유 화성조사료유통센터 준공식 개최</li>
+                                                <li>프렌치즈 과일·아몬드 출시</li>
+                                                <li>낙농정책 심포지엄 개최</li>
+                                                <li>제51회 무역의 날’ 300만 불 수출의 탑 수상</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p class="year">2015</p>
+                                            <ul>
+                                                <li>밀크랩 고단백저지방, 요하임 플레인 400g, 아침에주스 자몽, 딸기 꿀딴지, 바나나 꿀딴지 출시</li>
+                                                <li>제19대 조합장 선거</li>
+                                                <li>생명공학연구소, 고능력 수정란으로 생산한 첫 한국형 씨수소 탄생</li>
+                                                <li>말레이시아 할랄식품 인증</li>
+                                                <li>전국 품질분임조 경진대회 대통령상 금상 수상 <br>서울우유 한마음대회 성료</li>
+                                                <li>동남부사료기지 준공식</li>
+                                                <li>양주공장 국가품질경영대회 대통령상 수상</li>
+                                                <li>아랍에미리트연합(UAE)에서 할랄 식품 인증</li>
+                                                <li>가족친화기업 인증 획득</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p class="year">2016</p>
+                                            <ul>
+                                                <li>초코 꿀딴지 출시</li>
+                                                <li>국산 모짜렐라 슬라이스치즈 플레인 마늘 &amp; 양파 출시</li>
+                                                <li>장건강프로바이오틱 요거트 3종 출시<br>(플레인, 블루베리, 딸기)</li>
+                                                <li>서울우유 가치제고 프로젝트 ‘나100%’ 출시</li>
+                                                <li>아침에주스 젤리 3종(오렌지, 포도, 사과) 출시</li>
+                                                <li>목장의 신선함이 살아있는 플레인 요구르트 출시</li>
+                                                <li>앙팡치즈 까요까요(플레인, 딸기, 바나나) 출시</li>
+                                                <li>양주공장 글로벌 산업혁신 컨퍼런스 한국 TPM 대상 수상</li>
+                                                <li>칼슘쏙쏙 블랙슬라이스치즈, 담백한 구워먹는 치즈 출시</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p class="year">2017</p>
+                                            <ul>
+                                                <li>반려동물 전용우유 ‘아이펫밀크(I Pet Milk)’ 출시</li>
+                                                <li>대출금 1조 원 달성</li>
+                                                <li>요미고 요구르트 2종 출시</li>
+                                                <li>양주 통합 신공장 기공식</li>
+                                                <li>서울우유농협, 2년 연속 ‘NH농협생명 연도대상’ 우수상 수상</li>
+                                                <li>조합 창립 80주년 기념식</li>
+                                                <li>맛단지 바나나우유 출시</li>
+                                                <li>테이스티 치즈 270g 출시</li>
+                                                <li>검은콩 호두 아몬드 우유 출시</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p class="year">2018</p>
+                                            <ul>
+                                                <li>치즈큐빅 출시</li>
+                                                <li>아침에주스 유기농 900 3종 출시</li>
+                                                <li>아침에주스 유기농 190 2종 출시</li>
+                                                <li>비요뜨 쿠키앤크림, 후르트링 출시</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p class="year">2019</p>
+                                            <ul>
+                                                <li>치즈의정석 아몬드 출시</li>
+                                                <li>옥수수우유죽/견과우유죽 출시</li>
+                                                <li>듀오안 출시</li>
+                                                <li>늘어나는 체다치즈 출시</li>
+                                                <li>흑임자우유 750ml 출시</li>
+                                            </ul>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+
+                            <div class="box box05">
+                                <div class="intro">
+                                    <div class="inner-box">
+                                        <p class="sub-tit">새 역사창조의 눈을 뜨다!</p>
+                                        <h2 class="tit">앞으로도 고객가치 중시, 지속적인 혁신, 핵심역량 강화, 기업가 정신을 바탕으로
+                                        힘찬 전진을 계속해 나갈 것입니다</h2>
+                                        <p class="desc">
+                                            <span>2008년 통합 신공장 건설 추진본부를 구성하여</span>
+                                            <span>미래 도약기반 구축 행보를 시작하였고,</span>
+                                            <span>전체 집유장에 대한 HACCP 인증을 완료하였습니다.</span>
+                                            <span>또한, 거창공장이 유가공업계 최초로 환경친화기업으로 지정되었습니다.</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="scene">
+                                    <ol class="scene-list">
+                                        <li>
+                                            <p class="year">2020</p>
+                                            <ul>
+                                                <li>귀리우유 750ml 출시</li>
+                                                <li>강릉커피 2종 출시</li>
+                                                <li>83주년 서울우유 레트로 1000ml 출시</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p class="year">2021</p>
+                                            <ul>
+                                                <li>ISO22000(식품안전경영 시스템) 인증 획득</li>
+                                                <li>SCM 공급망관리 시스템 구축</li>
+                                                <li>유기농 앙팡 아기/어린이치즈 STEP 1~4 출시</li>
+                                                <li>장충동지점 개점식</li>
+                                                <li>소이밀크 씨리얼, 플레인 출시</li>
+                                                <li>유가공업 최초 전 사업장 녹색기업 인증</li>
+                                            </ul>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+
+                        </section>
+                        <div class="progress">
+                            <ul>
+                                <li class="theme on">
+                                    <div class="bar">
+                                        <div class="pg_bar"></div>
+                                    </div>
+                                    <a href="javascript:void(0)">1930 ~ 1980</a>
+                                </li>
+                                <li class="theme">
+                                    <div class="bar">
+                                        <div class="pg_bar"></div>
+                                    </div>
+                                    <a href="javascript:void(0)">1990</a>
+                                </li>
+                                <li class="theme">
+                                    <div class="bar">
+                                        <div class="pg_bar"></div>
+                                    </div>
+                                    <a href="javascript:void(0)">2000</a>
+                                </li>
+                                <li class="theme">
+                                    <div class="bar">
+                                        <div class="pg_bar"></div>
+                                    </div>
+                                    <a href="javascript:void(0)">2010</a>
+                                </li>
+                                <li class="theme">
+                                    <div class="bar">
+                                        <div class="pg_bar"></div>
+                                    </div>
+                                    <a href="javascript:void(0)">2020</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <div class="footer">
+        <ul class="footer-link">
+            <li><a href="javascript:void(0)">이용약관</a></li>
+            <li><a href="javascript:void(0)">개인정보처리방침</a></li>
+            <li><a href="javascript:void(0)">이메일무단수집거부</a></li>
+            <li><a href="javascript:void(0)">공정거래 자율준수 프로그램</a></li>
+            <li><a href="javascript:void(0)">신용정보활용체제</a></li>
+            <li><a href="javascript:void(0)">금융소비자보호</a></li>
+        </ul>
+        <ul class="footer-link">
+            <li>조합장 : 문진성</li>
+            <li>사업자번호 : 216-82-00028</li>
+            <li>통신판매업 : 신고번호 중랑 제 2007-0086호</li>
+            <li>T : 080-021-5656</li>
+            <li>E : seoulmilk@seoulmilk.co.kr(발신전용)</li>
+            <li>Copyright © 2022 Seoulmilk. All Rights Reserved.</li>
+        </ul>
+        <div class="content">
+            <div class="select-wrap">
+                <button class="label">패밀리 사이트</button>
+                <ul class="option-list">
+                    <li class="item">서울우유 쇼핑몰(나 100샵)</li>
+                    <li class="item">치즈 브랜드 사이트</li>
+                    <li class="item">서울우유 가정배달 서비스</li>
+                </ul>
+            </div>
+            <div class="img-wrap">
+                <img src="images/main/btn-nonghyup.png" alt="서울우유협동조합은 농협중앙회 회원조합입니다.">
+            </div>
+            <ul class="sns">
+                <li class="facebook"><a href="https://www.facebook.com/SeoulMilk"><img
+                        src="images/main/ico-facebook.png" alt="페이스북 바로가기"></a></li>
+                <li class="instagram"><a href="https://www.instagram.com/seoulmilk_official/"><img
+                        src="images/main/ico-instagram.png" alt="인스타그램 바로가기"></a></li>
+                <li class="youtube"><a href="https://www.youtube.com/user/seoulmilk2010"><img
+                        src="images/main/ico-youtube.png" alt="유튜브 바로가기"></a></li>
+                <li class="story"><a href="https://story.kakao.com/ch/seoulmilk"><img src="images/main/ico-story.png"
+                                                                                      alt="카카오스토리 바로가기"></a></li>
+                <li class="blog"><a href="http://www.seoulmilkblog.co.kr/"><img src="images/main/ico-blog.png"
+                                                                                alt="블로그 바로가기"></a></li>
+            </ul>
+        </div>
+    </div>
+
+
+</section>
+
+
+<script src="js/plugin/gsap.js"></script>
+<script src="js/plugin/scrollTrigger.js"></script>
+<script src="js/scrollbar.js"></script>
+<script src="js/setting.js"></script>
+<script src="js/story.js"></script>
+
+</body>
+
+</html>

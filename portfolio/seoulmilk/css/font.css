@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: 'SEOULMILK_500';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: semi-condensed;
+  src: url('../fonts/SEOULMILK_500mL.woff'),
+       url('../fonts/SEOULMILK_500mL.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SEOULMILK_1000';
+  font-style: bold;
+  font-weight: 1000;
+  font-stretch: semi-condensed;
+  src: url('../fonts/SEOULMILK_1000mL.woff'),
+       url('../fonts/SEOULMILK_1000mL.ttf') format('truetype');
+}
+  
+  
+  
+  

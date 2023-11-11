@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Thanks" xmlns="http://www.w3.org/2000/svg" width="2000" height="861" viewBox="0 0 2000 861">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #f8d349;
+        stroke-miterlimit: 10;
+        stroke-width: 800px;
+      }
+    </style>
+  </defs>
+  <line class="cls-1" x1="-549" y1="807" x2="2108" y2="47"/>
+</svg>

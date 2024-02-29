@@ -70,3 +70,13 @@ body{
     background-size: cover;
     transition: all 2s;
 }
+
+.wrap .slp.on a{
+    color:#101010;
+} 
+
+.wrap .slp.on{
+    background: url(../images/apartment-2179337_1920.jpg) no-repeat center center;
+    background-size: cover;
+    transition: all 2s;
+}

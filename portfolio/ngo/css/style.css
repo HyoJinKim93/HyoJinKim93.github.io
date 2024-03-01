@@ -521,7 +521,6 @@ h2 {
 }
 #section05 .contents{
     position: relative;
-    height: 100vh;
     padding: 120px 0;
     text-align: left;
     opacity: 0;
@@ -680,7 +679,6 @@ h2 {
 }
 #section06 .contents{
     position: relative;
-    height: 100vh;
     padding: 110px 0;
     text-align: left;
     opacity: 0;
@@ -741,7 +739,6 @@ h2 {
 }
 #section07 .contents{
     position: relative;
-    height: 100vh;
     padding: 110px 0;
     text-align: left;
     opacity: 0;
@@ -1344,7 +1341,6 @@ h2 {
 }
 #section11 .contents{
     position: relative;
-    height: 100vh;
     padding: 123px 0 162px 0;
     text-align: left;
     opacity: 0;

@@ -69,13 +69,13 @@ h2 {
 #section01 .phone01 {
     z-index: 10;
     position: absolute;
-    top: 118px;
+    top: 138px;
     left: 198px;
 }
 
 #section01 .phone02 {
     position: absolute;
-    top: 138px;
+    top: 118px;
     left: 560px;
     padding-top: 122px;
     padding-left: 52px;

@@ -80,3 +80,13 @@ body{
     background-size: cover;
     transition: all 2s;
 }
+
+.wrap .pdf.on a{
+    color:#101010;
+} 
+
+.wrap .pdf.on{
+    background: url(../images/student-849825_1280.jpg) no-repeat center center;
+    background-size: cover;
+    transition: all 2s;
+}

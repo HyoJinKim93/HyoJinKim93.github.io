@@ -936,6 +936,10 @@ h2 {
     transform: translateY(0);
 }
 
+#section09 .contents .wrap{
+    text-align:center;
+}
+
 #section09 .diagram {
     position: relative;
     width: 1460px;

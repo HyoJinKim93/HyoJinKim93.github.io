@@ -180,6 +180,7 @@ body {
 .sec02 .profile .img {
     width: 360px;
     height: 140px;
+    border:1px solid #111;
     border-radius: 50%;
     background: url('../images/me.jpg') no-repeat center;
     background-size: contain;

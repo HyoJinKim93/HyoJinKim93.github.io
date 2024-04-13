@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    background:url('../images/wave.jpg') no-repeat;
+    background:url('../images/wave.jpg') center center no-repeat;
     background-size:cover;
 }
 

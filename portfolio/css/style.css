@@ -113,6 +113,8 @@ body {
 .all-wrap {
     width: 1120px;
     margin: 100px auto 0;
+    background:url('../images/wave.jpg') no-repeat;
+    background-size:cover;
 }
 
 .all-wrap h1 {

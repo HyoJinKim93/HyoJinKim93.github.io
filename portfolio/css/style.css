@@ -111,6 +111,7 @@ body {
 .all-wrap {
     width: 1120px;
     margin: 100px auto 0;
+    padding-bottom:40px;
 }
 
 .all-wrap h1 {

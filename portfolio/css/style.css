@@ -9,9 +9,8 @@ html {
 }
 
 body {
-    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-    transition: all 2s;
-    overscroll-behavior: contain;
+    background:url('../images/wave.jpg') no-repeat;
+    background-size:cover;
 }
 
 #button {
@@ -113,8 +112,6 @@ body {
 .all-wrap {
     width: 1120px;
     margin: 100px auto 0;
-    background:url('../images/wave.jpg') no-repeat;
-    background-size:cover;
 }
 
 .all-wrap h1 {

@@ -285,17 +285,6 @@ body {
     width: 90%;
     animation-delay: 3.25s;
 }
-
-.sec02 .graph div:nth-child(8) span:nth-child(2) {
-    width: 90%;
-    animation-delay: 3.3s;
-}
-
-.sec02 .graph div:nth-child(9) span:nth-child(2) {
-    width: 40%;
-    animation-delay: 3.35s;
-}
-
 .sec02 .skills {
     animation: skills 2s cubic-bezier(0.17, 0.67, 0, 1);
 }

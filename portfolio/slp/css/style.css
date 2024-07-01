@@ -34,6 +34,42 @@ h2 {
     text-align: center;
     letter-spacing: 0.75px;
 }
+.section{
+    position: relative;
+}
+
+.section img{
+    position: relative;
+    z-index: 10;
+}
+
+.section .video{
+    overflow: hidden;
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    width: 332px;
+    height: 720px;
+    border-radius: 35px;
+    transform: translateX(-50%);
+}
+
+.section .video video {
+    overflow: hidden;
+    width: 332px;
+    height: 752px;
+    clip-path: inset(4% 0 0 0 round 25px);
+    border-radius: 25px;
+}
+
+.section .video.market video {
+    overflow: hidden;
+    width: 332px;
+    height: 730px;
+    clip-path: inset(4% 0 0 0 round 25px);
+    border-radius: 25px;
+}
+
 
 .sub-tit {
     margin-bottom: 120px;

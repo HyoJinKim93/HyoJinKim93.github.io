@@ -71,7 +71,7 @@ h2 {
 }
 
 
-.sub-tit {
+//.sub-tit {
     margin-bottom: 120px;
     color: #fff;
     font-size: 20px;
@@ -4225,4 +4225,4 @@ h2 {
     animation: flash 1s forwards infinite;
     -webkit-animation-timing-function: ease-in-out;
     animation-timing-function: ease-in-out;
-}
+}//

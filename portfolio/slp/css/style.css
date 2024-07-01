@@ -32,6 +32,7 @@ h2 {
 }
 .section{
     position: relative;
+    text-align:center;
 }
 
 .section img{

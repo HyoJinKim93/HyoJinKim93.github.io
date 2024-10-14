@@ -1,0 +1,18 @@
+.productList .table-wrap{padding: 0 0 30px}
+.productList .table01 {table-layout: fixed;}
+.productList .table01 + .table01{margin:20px 0 0}
+.productList .table01 thead th:first-child{width:120px}
+
+.adminCodeManagement .box_flow{padding-bottom:20px}
+.adminCodeManagement .table01 td{text-align:center;padding:5px 22px}
+.adminCodeManagement .tab li ,
+.adminCodeManagement .tab li a{width:auto}
+
+@media screen and (max-width:1000px){
+    .adminCodeManagement .table01 td .btn{width:100%;margin:0}
+    .adminCodeManagement .btn_wrap .btn{width:100%;margin:0}
+
+    .salesActivityCalendar#contents .container,
+    .salesEventCalendar#contents .container{padding:15px}
+
+}

@@ -1,0 +1,564 @@
+@charset "utf-8";
+@import url('common.css');
+@import url('jquery-ui.css');
+.btn-big.btn-excel{min-width:86px;margin-right:0;}
+.wd100{width:100% !important;}
+.wauto{width:auto !important;}
+
+.order_inquiry .headline{margin-bottom:29px;border-bottom: 2px solid #2a3d4e;}
+
+.login{overflow:hidden;position:relative;min-width:auto;height:100vh;background:rgba(0,0,0,4) url('../images/login_bg.png') no-repeat center center;background-size:cover;}
+.login .login_wrap{position: absolute;top:50%;left:50%;width:100%;max-width:386px;padding:66px 45px 58px 37px;border-radius:30px;background:#fff;transform:translate(-50%,-50%);} 
+.login .logo{margin-bottom:46px;}
+.login .login_form .id input{padding:0 10px 0 50px;background:url('../images/icon_id.png') no-repeat left 18px center;}
+.login .login_form .id input:focus,
+.login .login_form .id input:active{outline:none;border:1px solid #dc0000;background:url('../images/icon_id_on.png') no-repeat left 18px center;background-size:18px auto;}
+.login .login_form .pwd{margin-top:12px;}
+.login .login_form .pwd input{padding:0 10px 0 50px;background:url('../images/icon_pwd.png') no-repeat left 18px center;}
+.login .login_form .pwd input:focus,
+.login .login_form .pwd input:active{outline:none;border:1px solid #dc0000;background:url('../images/icon_pwd_on.png') no-repeat left 18px center;background-size:18px auto;}
+.login .login_form label{position: absolute;opacity: 0;}
+.login .chk_area{margin:16px 0;}
+.login .btn_login{width:100%;height:48px;color:#fff;font-size:16px;font-weight:700;border-radius:3px;background:#dc0000;}
+
+ /* 내역 없음 */
+.none{margin:30px 0 0;width:100%;padding-top:85px;text-align:center;background:url(../images/icon_notice.png) no-repeat center 0 }
+.none span{display:block;color:#555;font-size:15px;text-align: center;}
+ /* 수주내역 있을 때 페이징 */
+/* .order_inquiry form > div{display: flex;padding-bottom:13px;align-items: center;}
+.order_inquiry form input{width:240px;margin:0 10px;}
+.order_inquiry .select_area{display:flex;justify-content: space-between;align-items: center;}
+.order_inquiry .select_area select{width:auto;min-width:140px;}
+.order_inquiry .select_area select:nth-of-type(2){margin-left:8px;margin-right:8px;}
+.order_inquiry input{margin-top:12px;margin-bottom:12px;} */
+
+.order_inquiry .search-box{position:relative;display: flex;align-items: center;flex-direction: row;flex-wrap: wrap;align-items: center;/*border-bottom:1px solid #D6D6D6;margin:0 0 25px*/padding:0 160px 12px 0;}
+.order_inquiry .search-box .select_area + input[type="text"]{width:240px;margin:0 0 13px;}
+.order_inquiry .search-box .btn{margin:0 10px 13px;}
+.order_inquiry .search-box .select_area{display:flex;justify-content: space-between;align-items: center;margin:0 10px 13px 0}
+.order_inquiry .select_area select{width:auto;min-width:140px;}
+.order_inquiry .select_area select +select{margin:0 0 0 8px}
+.order_inquiry .search-box  .chk_area{position:absolute;top:8px;right:0}
+.order_inquiry .search-box  .chk_area label{font-size:14px;font-weight:500;color:#666;line-height:22px}
+
+.item_area .txt_area{display:inline-block;width:33.333333%;margin-top:12px;margin-bottom:12px;margin-right:20px;border:1px solid #979797;border-radius:5px;}
+.item_area .txt_area:last-of-type{margin-right:0;}
+.item_area .txt_area > a{display:flex;padding:18px 24px 24px 24px;justify-content: space-between;}
+.item_area .txt_area .date{color:#666;font-size:11px;}
+.item_area .txt_area .tit{margin-top:7px;color:#000;font-size:13px;font-weight:700;}
+.item_area .txt_area .price{font-weight:300;font-size:12px;}
+.item_area .txt_area .price strong{color:#555;font-weight: 700;}
+.item_area .txt_area .label{width:44px;height:44px;margin-top:12px;padding-top:5px;padding-left:6px;padding-right:6px;color:#fff;font-size:11px;text-align:center;border-radius:5px;}
+.item_area .txt_area .label_blue{background:#0F5BB5;}
+.item_area .txt_area .label_black{background:#101B28;}
+.order-detail .info_form .detail_wrap .list ol:first-of-type{margin-top:18px;padding-top:10px;}
+.order-detail .btn-blue{margin-left:7px;}
+
+.order_inquiry .table01{border:0;}
+.order_inquiry .table01 td{text-align:center;}
+.order_inquiry .list-style{display:none;}
+.order_inquiry .list-style .info{padding:0;}
+
+/* .list-style {display:flex;margin:-10px;width:100%;flex-wrap: wrap;}
+.list-style > li{display:inline-block;position:relative;margin:10px;width:354px}
+.list-style > li > a{display:block;border:1px solid #979797;border-radius:5px;padding:20px}
+.list-style .date{font-size:13px;line-height:18px;color:#666}
+.list-style .info{position:relative;padding-right:30%}
+.list-style .tit{width:70%;margin-top:15px;color:#222;font-size:14px;font-weight:700;}
+.list-style .price{position:absolute;bottom:0;right:0;width:30%;font-size:14px;font-weight:700;color:#8D8D8D;text-align:right;}
+.list-style .label{width:44px;height:44px;margin-top:12px;padding-top:5px;padding-left:6px;padding-right:6px;color:#fff;font-size:11px;text-align:center;border-radius:5px;}
+.list-style .label_blue{background:#0F5BB5;}
+.list-style .label_black{background:#101B28;}
+.list-style .status{position:absolute;top:20px;right:25px;font-size:13px;line-height:18px;color:#333}
+.list-style .status-date{margin-right:6px;color:#222;} */
+
+.orderRegister #productList .btn-delete{display:block;margin-right:0;}
+.orderRegister #productList .btn-add{display:none;}
+.orderRegister #productList .active .btn.btn-delete{display:none;margin-right:0;margin-left:10px;}
+.orderRegister #productList .active .btn.btn-add{display:block;margin-right:0;}
+.orderRegister .info_form .detail_wrap .list .row.row-col > *{margin:0;}
+.orderRegister .chk_area{margin-top:10px;}
+.orderRegister .info_form .list select{min-width: 100%;}
+.orderRegister .info_form .detail_wrap .list .row.row-col{width:100%;}
+.orderRegister .info_form .result-box{position:relative;overflow:visible;margin-top:0;}
+.orderRegister .info_form .result-box .searchList{display:none;position:absolute;top:100%;margin-top:-1px;left:0;width:100%;border:1px solid #979797;border-radius:3px;background:#F2F2F2}
+.orderRegister .info_form .result-box .searchList .searchList-box{position:relative;width:100%;height:100px;overflow:hidden;overflow-y:auto}
+.orderRegister .info_form .result-box .searchList ul {padding:10px 15px;}
+.orderRegister .info_form .result-box .searchList ul li button{font-size:12px;line-height:24px;color:#bbb}
+.orderRegister .info_form .result-box .searchList ul li button strong{font-weight:700;color:#222}
+/* .orderRegister .info_form select{width:100%;min-width:auto;} */
+.orderRegister .info_form .select-wrap select,
+.orderRegister .info_form .select-wrap input{width:33.333%;}
+.orderRegister .info_form .detail_wrap .list .row.row-col{margin:0;}
+.orderRegister .btn_wrap{padding:0;}
+/* .info_form .detail_wrap .list .row{margin:0;}
+.info_form .detail_wrap .list .row > *{margin:0;} */
+.info_form .detail_wrap .list ol{display: flex;justify-content: space-between;align-items: center;}
+.info_form .detail_wrap .list ol:first-of-type{padding-top:39px;}
+.info_form .detail_wrap .list ol:last-of-type{padding-bottom:18px;}
+.info_form .detail_wrap .list ol dt,
+.info_form .detail_wrap .list ol dd{padding-top:0;padding-bottom:0;line-height:34px;}
+.info_form .detail_wrap .list ol dd{width:100%;text-align:right;}
+.info_form .detail_wrap .list .total{background:#f4f4f4;}
+.info_form .detail_wrap .list .total dt{font-weight:900;}
+.info_form .detail_wrap .list .total dd{font-size:18px;font-weight:900;text-align: right;}
+.info_form .detail_wrap .list ol:first-of-type{padding-top:20px;border-top:0;}
+
+/* .returnDetail .info_form .detail_wrap .list dl dd{padding:22px 22px 22px 0;} */
+.returnDetail .row .mCalc{min-width: 0;width: calc(33.3% - 10px);max-width: 100%;}
+
+.returnRegister .select-wrap select,
+.returnRegister .select-wrap input{margin:0 5px;}
+.returnRegister .select-wrap select:first-of-type,
+.returnRegister .select-wrap input:first-of-type{margin-left:0;}
+.returnRegister .select-wrap select:last-of-type,
+.returnRegister .select-wrap input:last-of-type{margin-right:0;}
+.returnDetail .select-wrap{margin-bottom:20px;}
+
+/* .info_form .detail_wrap .result-box{margin-bottom:10px;} */
+
+/* 업장 조회 관리 - 피피티 8페이지 */
+.businessManage .info{margin-bottom:26px;}
+.businessManage .btn_wrap{display:flex;justify-content: space-between;}
+.businessManage .btn_wrap .btn{margin-right:10px;}
+.businessDetail .radio_form{margin-top:30px;}
+.businessDetail .btn_wrap .btn:first-of-type{margin-right:10px;}
+/* .businessDetail  */
+.businessDetail .name,
+.businessDetail .tel{display:inline-block;width:49%;padding-left:0;vertical-align: top;}
+.businessRegister .info_form .detail_wrap .list .txtarea,
+.businessDetail .info_form .detail_wrap .list .txtarea,
+.newbusinessRegister .info_form .detail_wrap .list .txtarea{min-height:581px;}
+.businessRegister .info_form .detail_wrap .list .txtarea textarea,
+.businessDetail .info_form .detail_wrap .list .txtarea textarea,
+.newbusinessRegister .info_form .detail_wrap .list .txtarea textarea{min-height: 531px;}
+.businessDetail .info_form .detail_wrap .list .txtarea dd{vertical-align: top;}
+.businessRegister .btn_wrap .btn:first-of-type{margin-right:10px;}
+.newbusinessRegister .btn_wrap .btn:first-of-type{margin-right:10px;}
+.businessManage .result-box{position: relative;overflow: visible;margin-top: 0;}
+.businessManage .result-box .searchList{display:none;position:absolute;top:100%;margin-top:-1px;left:0;width:100%;max-width:402px;border:1px solid #979797;border-radius:3px;background:#F2F2F2}
+.businessManage .result-box .searchList .searchList-box{position:relative;width:100%;height:100px;overflow:hidden;overflow-y:auto}
+.businessManage .result-box .searchList ul {padding:10px 15px;}
+.businessManage .result-box .searchList ul li button{font-size:12px;line-height:24px;color:#bbb}
+.businessManage .result-box .searchList ul li button strong{font-weight:700;color:#222}
+.businessManage .searchManager .searchList{max-width:190px;}
+.businessManage .searchManager{max-width: 190px;width: 100%;}
+.businessManage .searchManager input{margin-top:5px;}
+.businessRegister .info_form .list .col02.col_btn02 input,
+.newbusinessRegister .info_form .list .col02.col_btn02 input{width:192px;}
+
+.businessRegister .result-box{position: relative;overflow: visible;margin-top: 0;}
+.businessRegister .result-box .searchList{display:none;z-index:5;position:absolute;top:100%;margin-top:-1px;left:0;width:100%;border:1px solid #979797;border-radius:3px;background:#F2F2F2}
+.businessRegister .result-box .searchList .searchList-box{position:relative;width:100%;height:100px;overflow:hidden;overflow-y:auto}
+.businessRegister .result-box .searchList ul {padding:10px 15px;}
+.businessRegister .result-box .searchList ul li button{font-size:12px;line-height:24px;color:#bbb}
+.businessRegister .result-box .searchList ul li button strong{font-weight:700;color:#222}
+.businessRegister .popup_wrap .list.input-col3 input.calender{padding:0 5px;background:url('../images/icon_calender.png') no-repeat right 5px center;}
+.businessRegister .popup_wrap .list.input-col2 input{max-width:165px;}
+
+.newbusinessRegister .result-box{position: relative;overflow: visible;margin-top: 0;}
+.newbusinessRegister .result-box .searchList{display:none;z-index:5;position:absolute;top:100%;margin-top:-1px;left:0;width:100%;border:1px solid #979797;border-radius:3px;background:#F2F2F2}
+.newbusinessRegister .result-box .searchList .searchList-box{position:relative;width:100%;height:100px;overflow:hidden;overflow-y:auto}
+.newbusinessRegister .result-box .searchList ul {padding:10px 15px;}
+.newbusinessRegister .result-box .searchList ul li button{font-size:12px;line-height:24px;color:#bbb}
+.newbusinessRegister .result-box .searchList ul li button strong{font-weight:700;color:#222}
+.newbusinessRegister .searchManager .searchList{max-width:190px;}
+/* .businessDetail .popup .btn-area.between button{width:100%;} */
+
+/* td내 결과를 나눌 경우  */
+td.div-td{padding:0 !important}
+.div-td .row{width:100%;padding:5px 10px}
+.div-td .row + .row{border-top:1px solid #d6d6d6}
+
+.salesActivityList .table01 th{height:auto;line-height:30px}
+.salesActivityList .table01 td a{font-weight:700;}
+.salesActivityList .table01 td a:hover{text-decoration:underline}
+
+/* td내 결과를 나눌 경우  */
+/* td.div-td{padding:0 !important}
+.div-td .row{width:100%;padding:5px 10px}
+.div-td .row + .row{border-top:1px solid #d6d6d6}
+
+.salesActivityList .table01 th{height:auto;line-height:30px}
+.salesActivityList .table01 td a{font-weight:700;}
+.salesActivityList .table01 td a:hover{text-decoration:underline} */
+
+.result-box {display:flex;flex-wrap:wrap;flex-direction:row;margin:30px 0 0;width:100%;overflow:hidden}
+.result-box  > .scroll-box {display:flex;flex-wrap:wrap;flex-direction:row;max-height:1000px;}
+.result-box .scroll-box .ps__rail-y{top:auto !important;bottom:0 !important}
+.result-box .sum{width:100%;margin:0 0 10px}
+.result-box > table{min-width:1160px}
+.result-box table{width:100%}
+.result-box tfoot th,
+.result-box tfoot td{background:#f9f9f9;font-weight:700}
+
+.result-box .lBox table{min-width:0}
+.result-box .rBox table th,
+.result-box .rBox table td,
+.result-box .lBox table th,
+.result-box .lBox table td{min-width:60px;padding-left:5px;padding-right:5px}
+.result-box  .rBox .scroll-box{height:auto;max-height:none}
+.result-box  .rBox .scroll-box .ps__rail-y{opacity:0}
+.result-box .gray01 th,
+.result-box .gray01 td{background:#e1e1e1}
+.result-box .gray02 th,
+.result-box .gray02 td{background:#f9f9f9}
+.result-box .fontBold th,
+.result-box .fontBold td{font-weight:700}
+.redTxt{color:#f00 !important}
+
+.salesActivityCallList tfoot {display:table-header-group}
+.salesActivityCallList tfoot td{font-weight:bold;background:#e1e1e1}
+.salesActivityCallList tbody tr:first-child {background:#efefef}
+.salesActivityCallList .btn-area,
+.salesActivityMonthlyListing .btn-area,
+.salesActivityPartListing .btn-area,
+.salesActivitySegListing .btn-area,
+.salesActivityResultListing .btn-area,
+.salesActivitySegListing .btn-area,
+.posmList .btn-area,
+.brandSalesReportListing .btn-area,
+.salesReportListing .btn-area,
+.salesReportListing .btn-area{width:100%;}
+
+
+.salesActivityList .result-box,
+.wholesaleManagement .result-box{position: relative;overflow: visible;margin-top: 0;}
+.salesActivityList .result-box .searchList,
+.wholesaleManagement .result-box .searchList{display:none;z-index:5;position:absolute;top:100%;margin-top:-1px;left:0;width:100%;max-width:402px;border:1px solid #979797;border-radius:3px;background:#F2F2F2}
+.salesActivityList .result-box .searchList .searchList-box,
+.wholesaleManagement .result-box .searchList .searchList-box{position:relative;width:100%;height:100px;overflow:hidden;overflow-y:auto}
+.salesActivityList .result-box .searchList ul,
+.wholesaleManagement .result-box .searchList ul{padding:10px 15px;}
+.salesActivityList .result-box .searchList ul li button,
+.wholesaleManagement .result-box .searchList ul li button{font-size:12px;line-height:24px;color:#bbb}
+.salesActivityList .result-box .searchList ul li button strong,
+.wholesaleManagement .result-box .searchList ul li button strong{font-weight:700;color:#222}
+.salesActivityList .searchManager .searchList,
+.wholesaleManagement .searchManager .searchList{max-width:190px;}
+.salesActivityList .searchManager,
+.wholesaleManagement .searchManager{max-width: 190px;width: 100%;}
+.salesActivityList .searchManager input,
+.wholesaleManagement .searchManager input{margin-top:5px;}
+.salesActivityList .result-box .sum{margin-bottom:28px;}
+.salesActivityList .result-box .box .list select{margin:5px -5px 5px 5px;}
+
+.salesActivitySegListing .lBox table thead th,
+.salesActivityPartListing .lBox table thead th{height:104px}
+.salesActivityPartListing .result-box .sum{margin-bottom:28px;}
+
+.salesActivityResultListing .result-box > table{min-width:2000px}
+.salesActivityResultListing tbody th{min-width:100px;padding: 0 5px;font-size:1em}
+.salesActivityResultListing tbody td{min-width:60px;padding: 0 5px}
+.salesActivityResultListing .sum .btn{padding:0 10px}
+.salesActivityResultListing .result-box .sum{margin-bottom:30px;}
+.salesActivityResultListing .result-box .box .list select{ margin: 5px -5px 5px 5px;}
+
+.salesActivityGoalRegister .info_form .detail_wrap .list dl dt{line-height:normal;vertical-align:middle}
+
+.posmList .box_flow .lBox{width:600px}
+.posmList .box_flow .rBox{width:calc(100% - 600px);}
+
+.brandSalesReportListing .lBox{width:700px}
+.brandSalesReportListing .box_flow .rBox{width:calc(100% - 700px);}
+.brandSalesReportListing .result-box td{text-align:center}
+.brandSalesReportListing  .result-box thead th{height:80px}
+.brandSalesReportListing  .result-box .rBox thead th{font-size:0.9em}
+.brandSalesReportListing  .result-box td a {font-weight:700;}
+.brandSalesReportListing  .result-box td a:hover {text-decoration:underline}
+
+.salesReportListing .lBox{width:200px}
+.salesReportListing .rBox{width:calc(100% - 200px)}
+.salesReportListing .lBox thead th{height:104px}
+.salesReportListing  .result-box .rBox thead tr:first-child th{font-size:0.9em}
+
+.productList .table-wrap{padding: 0 0 30px}
+.productList .table01 {table-layout: fixed;}
+.productList .table01 + .table01{margin:20px 0 0}
+.productList .table01 thead th:first-child{width:120px}
+
+.adminCodeManagement .box_flow{padding-bottom:20px}
+.adminCodeManagement .table01 td{text-align:center;padding:5px 22px}
+.adminCodeManagement .table01 .td-radio{padding:5px 0;}
+.adminCodeManagement .table01 .td-btn{padding:5px 10px;}
+/* .adminCodeManagement .tab li ,
+.adminCodeManagement .tab li a{width:auto} */
+.adminCodeManagement .tab li a{padding:0 18px;}
+
+.wholesaleManagement .box{justify-content: flex-end;} 
+.wholesaleManagement .box .row{margin:0;}
+.wholesaleManagement .box .list select{margin-right:0;}
+.wholesaleDetail .info_form{margin-bottom:36px;}
+.wholesaleDetail .info_form .name,
+.wholesaleDetail .info_form .tel{display:inline-block;width:49%;padding:0;}
+.wholesaleDetail .info_form .detail_wrap .list .txtarea{min-height: 528px;}
+.wholesaleDetail .box_flow.mb57{margin-bottom:57px;}
+.wholesaleStockSearch .rBox .table01 td,
+.partwholesaleStock .rBox .table01 td,
+.wholesaleAllStockSearch .rBox .table01 td{text-align: right;}
+.wholesaleStockSearch .btn-area.right{width:100%;}
+.wholesaleAllStockSearch .btn-area.right{width:100%;}
+.partwholesaleStock  .btn-area.right{width:100%;}
+
+
+.posmList .result-box .sum .list .row .btn{margin-right:7px !important;}
+.posmList .result-box .sum{margin-bottom:30px;}
+
+.partwholesaleStock .lBox{width:140px;}
+.partwholesaleStock .box_flow .rBox{width:calc(100% - 140px);}
+.partwholesaleStock .table01 tr th{border:0;}
+.partwholesaleStock .lBox .table01 thead th{height:156px;border:1px solid #d6d6d6; border-right:1px solid #d6d6d6;}
+.partwholesaleStock .lBox .table01 tbody th{font-weight:700;border-left:1px solid #d6d6d6;border-right:1px solid #d6d6d6;}
+.partwholesaleStock .lBox .table01 tbody td{text-align:center;}
+.partwholesaleStock .lBox .table01 tfoot th{border:1px solid #d6d6d6;border-right:1px solid #d6d6d6;}
+/* .partwholesaleStock .rBox .table01 th{position:relative;} */
+.partwholesaleStock .rBox .table01 tbody th{text-align:right;border:1px solid #d6d6d6;}
+.partwholesaleStock .rBox .table01 th.gray04{border-top:1px solid #d6d6d6;}
+.partwholesaleStock .rBox .table01 th.gray05 span{position:relative;display:block;}
+.partwholesaleStock .rBox .table01 th.gray05 span::before{content:'';display:block;position:absolute;top:-45px;left:-5px;width:116%;height:6px;background: #f0f0f0;}
+.partwholesaleStock .rBox .table01 tr th{border-right:1px solid #d6d6d6;font-weight:700;}
+.partwholesaleStock .rBox .table01 tfoot th{text-align:right;border-bottom:1px solid #d6d6d6}
+.wholesaleStockSearch .btn.btn-big{margin-right:10px;}
+.wholesaleStockSearch .popup .info_form .detail_wrap .list dl dt{line-height:22px;}
+.wholesaleStockSearch .popup .info_form .list .col02 dd select{min-width:130px;}
+
+
+ @media screen and (max-width:1320px) {
+    .info_form .detail_wrap .list .calendar-picker dt,
+    .info_form .detail_wrap .list .calendar-picker dd{display: block;}
+    .returnRegister .info_form .select-wrap{display:block;}
+    .returnRegister .info_form .select-wrap select,
+    .returnRegister .info_form .select-wrap input{width:100%;margin-left:0;margin-right:0;margin-bottom:10px;}
+ }
+@media screen and (max-width:1000px) {
+    input{font-size:12px;}
+    #contents.order_inquiry .container{padding:13px 13px 30px}
+    .businessRegister .info_form .list .col02.col_btn02 input,
+    .newbusinessRegister .info_form .list .col02.col_btn02 input{width:100%;}
+
+    .orderRegister .info_form .detail_wrap .list dl dt, 
+    .orderRegister .info_form .detail_wrap .list dl dd,
+    .returnRegister .info_form .detail_wrap .list dl dt,
+    .returnRegister .info_form .detail_wrap .list dl dd,
+    .returnDetail .info_form .detail_wrap .list dl dt,
+    .returnDetail .info_form .detail_wrap .list dl dd{padding:0;border:0;}
+
+    .order_inquiry .search-box{border:0;margin:0 0 10px ;padding:0}
+    .order_inquiry .search-box .select_area + input[type="text"]{width:100%;margin:0 0 13px;font-size:13px}
+    .order_inquiry .search-box .btn{margin:0;font-size:13px }
+    .order_inquiry .search-box .select_area{width:100%;margin:0 0 13px 0}
+    .order_inquiry .select_area select{width:33.3333333333%;min-width:auto;font-size:13px}
+    .order_inquiry .select_area select +select{margin:0 0 0 8px}
+    .order_inquiry .search-box  .chk_area{position:static;margin: 0 0 14px}
+    .order_inquiry .search-box  .chk_area label{font-size:12px}
+    .order_inquiry .table01{display:none;}
+    .order_inquiry .list-style{display:block;}
+
+    .list-style {display:flex;margin:-10px;width:100%;flex-wrap: wrap;}
+    .list-style > li{display:inline-block;position:relative;margin:10px;width:354px}
+    .list-style > li > a{display:block;border:1px solid #979797;border-radius:5px;padding:20px}
+    .list-style .date{font-size:13px;line-height:18px;color:#666}
+    .list-style .info{position:relative;padding-right:30%}
+    .list-style .tit{width:70%;margin-top:15px;color:#222;font-size:14px;font-weight:700;}
+    .list-style .price{position:absolute;bottom:0;right:0;width:30%;font-size:14px;font-weight:700;color:#8D8D8D;text-align:right;}
+    .list-style .label{width:44px;height:44px;margin-top:12px;padding-top:5px;padding-left:6px;padding-right:6px;color:#fff;font-size:11px;text-align:center;border-radius:5px;}
+    .list-style .label_blue{background:#0F5BB5;}
+    .list-style .label_black{background:#101B28;}
+    .list-style .status{position:absolute;top:20px;right:25px;font-size:13px;line-height:18px;color:#333}
+    .list-style .status-date{margin-right:6px;color:#222;}
+    .list-style {margin: -5px 0;}
+    .list-style > li{margin:5px 0;width:100%}
+    .list-style .date{font-size:11px;line-height:16px}
+    .list-style .info{padding-right:30%}
+    .list-style .tit{width:70%;margin-top:10px;font-size:13px;}
+    .list-style .price{width:30%;font-size:14px;}
+    .list-style .status{top:20px;right:20px;font-size:12px;line-height:1.2em}
+    .order-detail .btn-blue{margin-top:10px;}
+    .order-detail #productList{padding-bottom:10px;border-bottom:1px solid #dcdcdc;}
+    .order-detail #productList:last-of-type{padding-bottom:0;border-bottom:0;}
+    .order-detail .info_form .detail_wrap .list ol:first-of-type{border-top:1px solid #dcdcdc;}
+    .order-detail .btn-blue{margin-left:0;}
+    .order-detail .info_form .detail_wrap .list dl,
+    .order-detail .info_form .detail_wrap .list dd{padding-bottom:0;border:0;}
+    .order-detail .info_form .detail_wrap .list dl.total{border-top:1px solid #DCDCDC;border-bottom:1px solid #dcdcdc;}
+    .order-detail .btn_wrap{padding:0;}
+    
+
+    .orderRegister .info_form select{width:100%}
+    /* .orderRegister .info_form .detail_wrap .list .row,
+    .orderRegister .info_form .detail_wrap .list .row > *{margin:0} */
+    .orderRegister .info_form .detail_wrap .btn-area{padding:15px;border-bottom:1px solid #efefef;}
+    .orderRegister .info_form .detail_wrap .list .row.row-col > *{margin:5px;}
+    .orderRegister .info_form .detail_wrap .list .row.row-col{margin:-5px;width:calc(100% + 10px);}
+    .orderRegister .info_form .detail_wrap .list dl{padding-bottom:0;border-bottom:0;}
+    /*.info_form .detail_wrap .list .row,
+    .info_form .detail_wrap .list .row > *{margin-top:6px;}*/
+    /* .info_form .detail_wrap .list dl{margin-top:10px;} */
+    .orderRegister .info_form .detail_wrap .btn-area{padding:15px;border-bottom:1px solid #efefef;}
+    /* .info_form .detail_wrap .list .calendar-picker{padding-bottom:20px;border-bottom:1px solid #efefef;} */
+    .orderRegister .info_form .calendar-box{max-width:100%;}
+    .orderRegister .info_form .detail_wrap .list dl.total{margin-bottom:0;padding:0 25px;}
+
+    .info_form .detail_wrap .list .row dl {width:calc(50% - 5px)}
+    .info_form .detail_wrap .list .row dl + dl{margin-left:10px}
+    .info_form .detail_wrap .list ol{padding-left:25px;padding-right:25px;}
+    .info_form .detail_wrap .list ol:first-of-type{margin-top: 20px;border-top: 1px solid #efefef;padding-top: 12px;}
+    .info_form .detail_wrap .list ol:last-of-type{padding-bottom:0;}
+    .info_form .detail_wrap .list ol dt{width:50%;}
+    .info_form .detail_wrap .list ol dd{width:50%;text-align:right;font-size:12px;}
+    .info_form .detail_wrap .list ol dd em{font-size:14px;}
+    .info_form .detail_wrap .list .btn-area{margin-top:10px;margin-bottom:10px;padding:0;border:0;width:100%}
+    /* .info_form #productList{padding-top:10px;} */
+    /* .returnRegister .row{display:block;} */
+    .returnRegister .info_form .select-wrap{display: flex;}
+    /* .returnRegister .info_form .detail_wrap .list .row dl{width:100%;} */
+    .returnRegister .info_form .select-wrap select,
+    .returnRegister .info_form .select-wrap input{margin-left:5px;margin-right:5px;}
+    .returnRegister .select-wrap select:first-of-type,
+    .returnRegister .select-wrap input:first-of-type{margin-left:0;}
+    .returnRegister .select-wrap select:last-of-type,
+    .returnRegister .select-wrap input:last-of-type{margin-right:0;}
+    /* .returnRegister .info_form .detail_wrap .list .row dl + dl{margin-left:0;} */
+    .orderRegister #productList > div{margin-top: 20px;border-top:1px solid #dcdcdc;}
+    .returnRegister #productList > div{margin-top:0;border-top:0;}
+    /* .returnRegister #productList > div{margin-top: 10px;} */
+    .returnRegister #productList .btn-area{margin-bottom:0;}
+    .returnRegister .info_form .txtarea textarea{margin-top:0;}
+    /* .returnDetail #productList .btn-area{padding-bottom: 20px;border-bottom: 1px solid #dcdcdc;} */
+    /* .returnDetail .info_form .select-wrap{margin-bottom:10px;} */
+    .returnDetail .info_form .detail_wrap .list dl.total{padding:0 25px;}
+    .returnDetail .txtarea.bt0 textarea{margin-bottom:10px;}
+    .returnDetail .btn_wrap{padding:0;}
+
+    .businessManage .info{margin-bottom:0;}
+    .businessManage .box_flow{margin-top:0;}
+    .businessManage .btn_wrap{display:block;}
+    .businessManage .import{margin-bottom: 10px;text-align: left;}
+    .businessManage .result-box{padding:0;}
+    .businessManage .result-box .searchList{max-width:100%;}
+    .businessManage .searchManager{min-width: calc(50% - 10px);max-width: 0;width: auto;margin-top:5px;}
+    .businessManage .searchManager input{max-width:100%;margin-top:0;}
+
+    .businessRegister .popup_wrap .list.input-col2 input {max-width: 140px;}
+
+    .businessRegister .info_form .detail_wrap .list .txtarea,
+    .businessDetail .info_form .detail_wrap .list .txtarea,
+    .newbusinessRegister .info_form .detail_wrap .list .txtarea{min-height:auto;}
+    .businessRegister .info_form .detail_wrap .list .txtarea textarea,
+    .businessDetail .info_form .detail_wrap .list .txtarea textarea,
+    .newbusinessRegister .info_form .detail_wrap .list .txtarea textarea,
+    .wholesaleDetail .info_form .detail_wrap .list .txtarea{min-height: 170px;}
+
+    .newbusinessRegister .result-box{padding:0;}
+    .businessRegister .result-box{padding:0;}
+
+    .orderRegister .info_form .result-box{padding:0;}
+    .result-box{padding: 0 15px}
+    .result-box table td,
+    .result-box table th{font-size:0.8em}
+
+    .salesActivityGoalRegister .info_form .list .col02 dd select {max-width: 100%;}
+    .salesActivityGoalRegister .info_form .product-list dl dd{margin:8px 0 0}
+
+    .posmList .box_flow .rBox{width:100%;padding:0}
+    .posmList .box .list.btn-area .btn-save{min-width:100%;margin:5px 0}
+    
+    .salesActivityResultListing .box .list.btn-area .btn-register{min-width:100%;}
+    
+    .salesActivityList .result-box,
+    .wholesaleManagement .result-box{padding:0;}
+    .salesActivityList .result-box .searchList,
+    .wholesaleManagement .result-box .searchList{max-width:100%;}
+    .salesActivityList .result-box .row,
+    .wholesaleManagement .result-box .row{padding:0 15px;justify-content: center;}
+    .salesActivityList .result-box .box .list select,
+    .wholesaleManagement .result-box .box .list select{margin:5px 0 15px;}
+    .salesActivityList .searchManager,
+    .wholesaleManagement .searchManager{min-width: calc(50% - 10px);max-width: 0;width: auto;margin-top:5px;}
+    .salesActivityList .searchManager input,
+    .wholesaleManagement .searchManager input{max-width:100%;margin-top:0;}
+
+    .brandSalesReportListing .box_flow .rBox{width:100%}
+
+    .result-box .sum{padding:0}
+    .result-box .sum.box .list{padding:0}
+    .result-box .scroll-box .ps__rail-x{left:15px !important}
+    .result-box .rBox .scroll-box{max-height:500px}
+    .result-box  .rBox .scroll-box .ps__rail-y{opacity:1}
+
+    #contents.salesActivityList .container,
+    #contents.salesActivityMonthlyListing .container,
+    #contents.salesActivityPartListing .container,
+    #contents.salesActivitySegListing .container,
+    #contents.salesActivityResultListing .container,
+    #contents.brandSalesReportListing .container,
+    #contents.salesReportListing .container,
+    #contents.posmList .container{padding: 0 0 15px}
+
+    .salesActivityMonthlyListing .btn-excel, 
+    .salesActivityCallList .btn-excel, 
+    .salesActivityList .btn-excel,
+    .salesActivityPartListing .btn-excel,
+    .salesActivitySegListing .btn-excel,
+    .salesActivityResultListing .btn-excel,
+    .posmList .btn-excel,
+    .brandSalesReportListing .btn-excel,
+    .salesReportListing .btn-excel,
+    .salesActivityMonthlyListing .btn-excel,
+    .wholesaleStockSearch .btn-excel,
+    .wholesaleAllStockSearch .btn-excel,
+    .partwholesaleStock .btn-excel,
+    .wholesaleManagement .btn-excel{min-width:100%}
+
+    .salesReportListing .rBox{width:100%}
+    .salesReportListing .tab.tab02 li,
+    .salesReportListing .tab.tab02 li a{width:auto}
+
+    .salesActivityGoalRegister .info_form .detail_wrap .list dl dt{line-height:34px;}
+    .salesActivityGoalRegister .btn{min-width:calc(50% - 5px);}
+
+
+    .adminCodeManagement .table01 td .btn{width:100%;margin:0}
+    .adminCodeManagement .btn_wrap .btn{width:100%;margin:0}
+
+    .salesActivityCalendar#contents .container,
+    .salesEventCalendar#contents .container{padding:15px}
+    
+    .wholesaleManagement .box_flow{margin-top:10px;}
+    .wholesaleDetail .btn02{min-width:100%;margin:0;}
+    .wholesaleDetail .info_form .detail_wrap .list dl{padding-bottom:5px;}
+    .wholesaleStockSearch .btn.btn-big{min-width:100%;margin-bottom:10px;}
+    .wholesaleAllStockSearch .btn.btn-big{min-width:100%;margin-bottom:10px;}
+    .wholesaleStockSearch .popup .pop_tit + .pop_contents{margin-top:47px;}
+    .wholesaleStockSearch .popup .pop_contents{max-height:calc(100% - 47px);}
+    .wholesaleStockSearch .info_form .detail_wrap{padding:0;}
+    .wholesaleStockSearch .btn_wrap{padding:0;}
+    .wholesaleStockSearch .btn_wrap .btn_white{margin-bottom:0;}
+    .wholesaleStockSearch .popup .info_form .detail_wrap .list dl dt{line-height:34px;}
+    .wholesaleStockSearch .info_form .detail_wrap .list .row > *{margin-left:0;margin-right:0;}
+    .wholesaleStockSearch .popup .info_form .list .col02 dd select{min-width:140px;}
+    .wholesaleStockSearch .popup .info_form .list .col02 dd select:first-of-type{margin-left: 0;}
+    .wholesaleStockSearch .popup .info_form .list .col02 dd select:last-of-type{margin-right:0;}
+    .wholesaleStockSearch .popup .info_form .detail_wrap .list .row{width:auto;margin:0;}
+    .partwholesaleStock .btn.btn-big{min-width:100%;margin-bottom:10px;}
+    .wholesaleStockSearch .rBox .table01 tbody .fix-data, 
+    .wholesaleAllStockSearch .rBox .table01 tbody .fix-data{text-align:left;}
+    .wholesaleStockSearch .rBox .table01 tbody .fix-data.center,
+    .wholesaleAllStockSearch .rBox .table01 tbody .fix-data.center,
+    .partwholesaleStock .rBox .table01 tbody .fix-data.center,
+    .partwholesaleStock .rBox .table01 tfoot .fix-data.center{text-align:center;}
+    .partwholesaleStock .box_flow .rBox{width:100%;}
+    .partwholesaleStock .rBox .table01 tfoot th{border-left:1px solid #d6d6d6;} 
+    .partwholesaleStock .rBox .table01 tbody .fix-data{text-align:center;}
+
+    .adminCodeManagement .table01 .td-radio{min-width:100px;}
+}
+@media screen and (max-width:640px) {/* mobile */
+    .fix{min-width:1000px;overflow:auto}
+    .login .login_wrap{width: 90%;max-width:345px;padding: 56px 45px 56px 37px;}
+    .login .logo{margin-bottom: 37px;}
+    .none {margin:40px 0 0;}
+
+}
+@media screen and (max-width:360px){
+}

@@ -8,13 +8,9 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 	<link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon.ico" />
-    <link rel="stylesheet" href="assets/css/common.css">
-    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+    <link rel="stylesheet" href="../assets/css/pages.css">
+    <link rel="stylesheet" href="../assets/css/pages-temp.css">
     <title>BeerK</title>
-    <script src="assets/js/jquery-1.12.4.js"></script>
-    <script src="assets/js/jquery-ui.js"></script>
-    <script src="assets/js/perfect-scrollbar.min.js"></script>
-    <script src="assets/js/common.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -37,9 +33,10 @@
                     <a href="javascript:void(0)" class="btn btn_logout">로그아웃</a>
                 </nav>
             </div>
-            <div class="mobile-wrap">
-                <h2 class="title">업소 조회 관리</h2>
-                <button class="btn btn-menu" type="button">메뉴 열기</button>
+            <div class="mobile-wrap center">
+                <h2 class="title">파트 별 도매장 제품 명 구분</h2>
+                <!-- <button class="btn btn-menu" type="button">메뉴 열기</button> -->
+                <button class="btn btn-back" type="button">뒤로가기</button>
             </div>
         </header>
         <nav id="nav">
@@ -124,18 +121,83 @@
                 </li>
             </ul>
         </nav>
-        <section id="contents">
+        <section id="contents" class="productList">
            <div class="container">
-            <div class="headline clear">
-                <h1 class="title-style">업소 조회 관리</h1>
-                <!-- <ul class="location">
-                    <li><a href="javascript:void(0)">홈</a></li>
-                    <li><a href="javascript:void(0)">거래처관리</a></li>
-                    <li><a href="javascript:void(0)" class="on">업소조회관리</a></li>
-                </ul> -->
-            </div>
+                <div class="headline clear">
+                    <h1 class="title-style">파트 별 도매장 제품 명 구분 </h1>
+                    <!-- <ul class="location">
+                        <li><a href="javascript:void(0)">홈</a></li>
+                        <li><a href="javascript:void(0)">수주 관리</a></li>
+                        <li><a href="javascript:void(0)" class="on">수주 조회</a></li>
+                    </ul> -->
+                </div>
+                <div class="box_flow">
+                    <div class="scroll-box">
+                        <div class="table-wrap">
+                            <table class="table01 chk">
+                                <caption>파트 별 도매장 제품 명 구분</caption>
+                                <thead>
+                                    <tr>
+                                        <th rowspan="2">Listing 구분 명</th>
+                                        <th colspan="12">칭따오</th>
+                                    </tr>
+                                   <tr>
+                                        <th colspan="1">640</th>
+                                        <th colspan="11">Others</th>
+                                   </tr>
+                                </thead>
+                                <tbody>
+                                   <tr>
+                                       <th>Listing 실 제품명</th>
+                                       <td>640㎖ BTL</td>
+                                       <td>BTL</td>
+                                       <td>Can</td>
+                                       <td>500㎖ Can</td>
+                                       <td>640㎖ BTL</td>
+                                       <td>Wheat BTL</td>
+                                       <td>Wheat Can </td>
+                                       <td>Stout BTL </td>
+                                       <td>Stout Can</td>
+                                       <td>PureDraft BTL</td>
+                                       <td>PureDraft Can</td>
+                                       <td>20ℓ KEG</td>
+                                   </tr>
+                                </tbody>
+                            </table>
+                            <table class="table01 chk">
+                                <caption>파트 별 도매장 제품 명 구분</caption>
+                                <thead>
+                                    <tr>
+                                        <th rowspan="2">Listing 구분 명 </th>
+                                        <th colspan="7">에딩거</th>
+                                    </tr>
+                                   <tr>
+                                        <th colspan="2">BTL</th>
+                                        <th colspan="5">KEG</th>
+                                   </tr>
+                                </thead>
+                                <tbody>
+                                   <tr>
+                                       <th>Listing 실 제품명</th>
+                                      <td>Hefe BTL</td>
+                                      <td>Dunkel BTL</td>
+                                      <td>Hefe 20ℓ</td>
+                                      <td>Hefe 30ℓ</td>
+                                      <td>Dunkel Can</td>
+                                      <td>Dunkel 20ℓ</td>
+                                      <td>Urw. 30ℓ</td>
+                                   </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div> 
            </div>
         </section> <!--// contents -->
     </div> <!--// wrapper -->
+    <script src="../assets/js/jquery-1.12.4.js"></script>
+    <script src="../assets/js/jquery-ui.js"></script>
+    <script src="../assets/js/perfect-scrollbar.min.js"></script>
+    <script src="../assets/js/common.js"></script>
 </body>
 </html>

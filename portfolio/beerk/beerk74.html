@@ -8,13 +8,8 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 	<link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon.ico" />
-    <link rel="stylesheet" href="assets/css/common.css">
-    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+    <link rel="stylesheet" href="../assets/css/pages.css">
     <title>BeerK</title>
-    <script src="assets/js/jquery-1.12.4.js"></script>
-    <script src="assets/js/jquery-ui.js"></script>
-    <script src="assets/js/perfect-scrollbar.min.js"></script>
-    <script src="assets/js/common.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -37,9 +32,10 @@
                     <a href="javascript:void(0)" class="btn btn_logout">로그아웃</a>
                 </nav>
             </div>
-            <div class="mobile-wrap">
-                <h2 class="title">업소 조회 관리</h2>
-                <button class="btn btn-menu" type="button">메뉴 열기</button>
+            <div class="mobile-wrap center">
+                <h2 class="title">순위 등록</h2>
+                <!-- <button class="btn btn-menu" type="button">메뉴 열기</button> -->
+                <button class="btn btn-back" type="button">뒤로가기</button>
             </div>
         </header>
         <nav id="nav">
@@ -124,18 +120,109 @@
                 </li>
             </ul>
         </nav>
-        <section id="contents">
+        <section id="contents" class="rankingEnroll">
            <div class="container">
-            <div class="headline clear">
-                <h1 class="title-style">업소 조회 관리</h1>
-                <!-- <ul class="location">
-                    <li><a href="javascript:void(0)">홈</a></li>
-                    <li><a href="javascript:void(0)">거래처관리</a></li>
-                    <li><a href="javascript:void(0)" class="on">업소조회관리</a></li>
-                </ul> -->
-            </div>
+                <div class="headline clear">
+                    <h1 class="title-style">순위 등록</h1>
+                    <!-- <ul class="location">
+                        <li><a href="javascript:void(0)">홈</a></li>
+                        <li><a href="javascript:void(0)">수주 관리</a></li>
+                        <li><a href="javascript:void(0)" class="on">수주 조회</a></li>
+                    </ul> -->
+                </div>
+                <div class="box_flow">
+                    <div class="scroll-box">
+                        <table class="table01 chk">
+                            <caption>순위 등록 테이블의 도매장명, 구분, 순위 테이블 입니다.</caption>
+                            <colgroup>
+                                <col>
+                                <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>
+                                        <span class="star"></span>도매장명
+                                    </th>
+                                    <td>
+                                        <div class="result-box">
+                                            <input type="text" value="" onkeyup="searchUser(this)" title="도매장명">
+                                            <div class="searchList">
+                                                <div class="searchList-box">
+                                                    <ul class="managerList"> </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <span class="star"></span>구분
+                                    </th>
+                                    <td>
+                                        <div class="row">
+                                            <select name="" id="">
+                                                <option value="">선택</option>
+                                                <option value="">수도권도매1파트</option>
+                                                <option value="">수도권도매2파트</option>
+                                                <option value="">수도권도매3파트</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th> 
+                                        <span class="star"></span>순위
+                                    </th>
+                                    <td>
+                                        <input type="number" value="" placeholder="1~50" title="순위">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="btn_wrap right">
+                    <div class="row">
+                        <button type="button" class="btn btn_white">취소</button>
+                        <button type="button" class="btn btn_white">등록</button>
+                    </div>
+                </div>
            </div>
         </section> <!--// contents -->
     </div> <!--// wrapper -->
+    <script src="../assets/js/jquery-1.12.4.js"></script>
+    <script src="../assets/js/jquery-ui.js"></script>
+    <script src="../assets/js/perfect-scrollbar.min.js"></script>
+    <script src="../assets/js/common.js"></script>
+    <script>
+        var userData = [ //  임시 데이터
+           {'name':'수도권 업장2파트'},
+           {'name':'수도권 업장2파트'},
+           {'name':'수도권 업장2파트'},
+           {'name':'수도권 업장2파트'}
+       ];
+        function searchUser(event){
+            var $this = $(event),
+                $container = $this.parent(),
+                $listContainer = $container.find('.searchList');
+                $list = $listContainer.find('.managerList');
+            if($this.val() =="" || $this.val() == null) alert('[입력값]을 입력해 주세요');
+            else{
+                $list.html('');
+                var keyword = "수";
+                $.each(userData,function(i,item){
+                    var broken = item.name.split(keyword);
+                    var result = broken[0] + "<strong>"+keyword+"</strong>" + broken[1];
+                    var temp = '<li><button type="button" class="btn-put">'+result+'</button></li>';
+                    $list.append(temp);
+                })
+                $listContainer.show();
+            }
+            $list.find('.btn-put').on('click',function(){
+                $this.val($(this).text());
+                $listContainer.hide();
+            });
+        }
+    </script>
 </body>
 </html>

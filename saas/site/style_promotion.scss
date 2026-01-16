@@ -1,0 +1,214 @@
+@charset "UTF-8";
+@import "mixset";
+
+/* 버튼 랩 */
+.wrap_btn {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+  justify-content: center;
+}
+
+/* 공통 영역 */
+.contents_centered {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.contents_col2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  > div {
+    width: calc(100% / 2);
+  }
+}
+
+// 선택 영역
+.select_area {
+  height: auto;
+
+  .only_pc {
+    .service_list {
+      border-radius: 3rem;
+      background-color: $color_bg_lightblue;
+      padding: 3.6rem 8rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+
+      li {
+        width: auto;
+      }
+
+      .service_item {
+        display: inline-block;
+        width: auto;
+        height: 46px;
+        line-height: 44px;
+        border-radius: 23px;
+        padding: 0 59px;
+        background-color: $color_white;
+        border: 1px solid $color_ccc;
+        font-size: 2rem;
+        font-family: $font_bold;
+        color: $color_111;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+          color: $color_brand_main;
+          border: 1px solid $color_brand_main;
+        }
+      }
+    }
+  }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/* 반응형 시작 */ ////////////////
+
+@media all and (max-width: 1420px) {
+  /* 공통 ******************************/
+
+  .page {
+
+    .wrap_breadcrumb {
+      width: 100%;
+      padding: 0 2%;
+    }
+  }
+
+  .wrap_slide_service {
+    width: 100%;
+
+    .slide_box {
+      border-radius: 0;
+      padding: 3.5rem 6rem;
+
+      .wrap-slide-box {
+        .swiper-button-prev {
+          left: 1.6rem;
+        }
+        .swiper-button-next {
+          right: 1.6rem;
+        }
+      }
+    }
+  }
+  //컨텐츠 탑 소개 + 서비스 목록 슬라이드
+
+  /* 05_사이트맵 *******************************/
+  .page_sitemap {
+    .shadow_box {
+      .wrap_all_menu {
+        gap: 6rem 4rem;
+
+        .wrap_menu {
+          width: calc((100% - 8rem) / 3);
+        }
+      }
+    }
+  }
+
+}
+
+@media all and (max-width: 1024px) {
+
+  .wrap_breadcrumb {
+    display: none;
+  }
+  
+
+  /* 공통 ***************************************/
+
+  // 콤보박스
+  .select_area {
+    width: 100%;
+    padding: 0 2%;
+
+    .combo_box_wrap {
+      background-color: $color_bg_lightblue;
+      padding: 3rem 6rem;
+      border-radius: 3rem;
+
+      h3 {
+        font-size: 2rem;
+        font-family: $font_bold;
+        text-align: center;
+        margin-bottom: 2.4rem;
+      }
+
+      select {
+        width: 100%;
+        height: 4.8rem;
+        font-size: 1.8rem;
+        font-family: $font_medium;
+        position: relative;
+        position: relative;
+      }
+    }
+  }
+
+}
+
+@media all and (max-width: 768px) {
+
+  // 콤보박스
+  .select_area {
+    padding: 0 4%;
+
+    .combo_box_wrap {
+      padding: 2rem 3rem;
+      border-radius: 2rem;
+
+      h3 {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+      }
+
+      select {
+        height: 4rem;
+        font-size: 1.6rem;
+        padding: 0 2rem;
+        background-position: center right 2rem;
+        background-size: 18px 8px;
+      }
+    }
+  }
+
+
+}
+
+@media all and (max-width: 480px) {
+
+
+  // 콤보박스
+  .select_area {
+    .combo_box_wrap {
+      padding: 2rem 1.6rem;
+
+      select {
+        height: 3.6rem;
+        font-size: 1.6rem;
+        padding: 0 4.5rem 0 2rem;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+    }
+  }
+
+}

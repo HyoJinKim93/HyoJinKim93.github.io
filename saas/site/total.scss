@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+@import "../css/swiper-5.4.3.css";
+@import "../css/swiper.11.0.6-bundle.css";
+@import "../css/aos.css";
+@import "../css/fontset.css";
+
+// normalize
+@import "base.css";
+// button style 등 common
+@import "style.css";
+// navigation
+@import "nav.css";
+// layout
+@import "layout.css";
+// footer
+@import "footer.css";
+// layout2
+@import "style_promotion.css";
+// 상세페이지 커스텀
+@import "style_saas.css";
+
+// 1차 추가 부가 요소 - 스와이퍼 슬라이드 추가 커스텀
+// krds 와 충돌로 추가 수정해야함
+@import "site/new.css";
+
+// 게시판
+@import "board.css";
+// 약관
+@import "terms_sass.css";
+// 검색
+@import "search.css";
+
+// 2026 수정 
+// 추가 부가 요소 여기에 작성
+@import 'new_total.css';
+
+// 커스텀 스타일
+// @import '../css/total_custom';

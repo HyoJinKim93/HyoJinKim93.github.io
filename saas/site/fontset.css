@@ -1,0 +1,75 @@
+@font-face {
+    font-family: "NotoSansBold";
+    src:
+        url(../fonts/NotoSansKR-Bold.woff2) format("woff2"),
+        url(../fonts/NotoSansKR-Bold.woff) format("woff"),
+        url(../fonts/NotoSansKR-Bold.otf) format("opentype");
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "NotoSansMedium";
+    src:
+        url(../fonts/NotoSansKR-Medium.woff2) format("woff2"),
+        url(../fonts/NotoSansKR-Medium.woff) format("woff"),
+        url(../fonts/NotoSansKR-Medium.otf) format("opentype");
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "NotoSansRegular";
+    src:
+        url(../fonts/NotoSansKR-Regular.woff2) format("woff2"),
+        url(../fonts/NotoSansKR-Regular.woff) format("woff"),
+        url(../fonts/NotoSansKR-Regular.otf) format("opentype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "NotoSansLight";
+    src:
+        url(../fonts/NotoSans-Light.woff2) format("woff2"),
+        url(../fonts/NotoSans-Light.woff) format("woff"),
+        url(../fonts/NotoSans-Light.otf) format("opentype");
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "SUITBold";
+    src:
+        url(../fonts/SUIT-Bold.otf) format("opentype");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SUITMedium";
+    src:
+        url(../fonts/SUIT-Medium.otf) format("opentype");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SUITRegular";
+    src:
+        url(../fonts/SUIT-Regular.otf) format("opentype");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SUITLight";
+    src:
+        url(../fonts/SUIT-Light.otf) format("opentype");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "NanumBarunGothic";
+    src:
+        url(../fonts/NanumBarunGothicSubset.woff2) format("woff2");
+    font-style: normal;
+    font-weight: normal;
+}

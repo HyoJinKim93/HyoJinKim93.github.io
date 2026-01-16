@@ -14,7 +14,7 @@
   padding: 0;
 }
 .page_notice .wrap_result_table .search-list-top .sch-info li {
-  font-weight: var(--krds-typo-font-weight-bold);
+  font-weight: 700;
 }
 .page_notice .wrap_result_table .search-list-top .sch-info li .point {
   color: #1953D5;
@@ -26,7 +26,7 @@
   display: none;
 }
 .page_notice .wrap_result_table .krds-table-wrap .krds-btn.icon .svg-icon {
-  background-color: var(--krds-light-color-background-white);
+  background-color: #fff;
 }
 .page_notice .wrap_result_table .krds-table-wrap .ico-attach {
   cursor: pointer;
@@ -36,7 +36,7 @@
   background-size: cover;
 }
 .page_notice .wrap_result_table .krds-pagination .page-link.active {
-  background-color: var(--krds-color-light-secondary-50);
+  background-color: #063A74;
 }
 .page_notice .wrap_result_table .krds-pagination .next {
   width: auto;
@@ -44,7 +44,7 @@
 
 @media (max-width: 767px) {
   .page_notice .sch-info li {
-    font-size: var(--krds-mobile-font-size-body-large);
+    font-size: 1.8rem;
   }
   .page_notice .krds-table-wrap .tbl.data {
     min-width: 100%;
@@ -62,33 +62,33 @@
     align-items: stretch;
   }
   .page_notice .krds-table-wrap .tbl.data tbody tr:first-of-type {
-    border-top: var(--krds-table--data-border-width) solid var(--krds-light-color-border-gray-darker);
+    border-top: 1px solid #1E2124;
   }
   .page_notice .krds-table-wrap .tbl.data tbody td {
     overflow: hidden;
     display: flex;
-    padding-top: var(--krds-number-2);
-    color: var(--krds-table--data-tbody-color-text);
+    padding-top: 10px;
+    color: #464C53;
     border: 0;
     white-space: nowrap;
     text-overflow: ellipsis;
   }
   .page_notice .krds-table-wrap .tbl.data tbody td:first-of-type {
-    padding-top: var(--krds-number-6);
+    padding-top: 1rem;
     gap: 0;
   }
   .page_notice .krds-table-wrap .tbl.data tbody td:first-of-type::before {
     min-width: 0;
   }
   .page_notice .krds-table-wrap .tbl.data tbody td:last-of-type {
-    border-bottom: var(--krds-table--data-border-width) solid var(--krds-light-color-border-gray-light);
+    border-bottom: 1px solid #CDD1D5;
   }
   .page_notice .krds-table-wrap .tbl.data tbody td::before {
     display: block;
     min-width: 8rem;
     content: attr(data-label);
-    color: var(--krds-table--data-thead-color-text);
-    font-weight: var(--krds-font-weight-bold);
+    color: #131416;
+    font-weight: 700;
   }
   .page_notice .krds-table-wrap .tbl.data tbody td div {
     overflow: hidden;

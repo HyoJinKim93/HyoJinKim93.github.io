@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title>공지사항&lt;사용자지원&lt;민간 Sass 연계공통기반 통합관리포털</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/output.css" />
+
+    <!-- JS -->
+    <script src="../js/jquery-3.6.3/jquery.min.js"></script>
+    <script src="../js/swiper-5.4.3.min.js"></script>
+    <script src="../js/aos.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/app.js"></script>
+    
+</head>
+
+<body>
+    <div id="wrapper" class="wrapper sub_pages">
+        <!-- 바로가기 메뉴 -->
+        <nav id="skip"></nav>
+
+        <!-- 헤더 -->
+        <header id="header" class="header"></header>
+
+        <!-- 메인  -->
+        <main class="">
+
+            <!-- 본문 외부 영역 -->
+            <section id="content" class="">
+                <div class="page_inner">
+
+                    <!-- 본문 -->
+                    <article class="page page_notice">
+                        <!-- 브레드크럼 -->
+                        <div class="wrap_breadcrumb">
+                            <ul class="breadcrumbs">
+                                <li class="breadcrumbs_item cat_home"><a href="main.html" target="_self" title="메인 페이지로 이동" class="home"></a></li>
+                                <li class="breadcrumbs_item"><a href="사용자 지원_공지사항.html" target="_self" title="페이지 이동">사용자 지원</a></li>                                
+                                <li class="breadcrumbs_item current_page"><a href="사용자 지원_공지사항.html" target="_self" title="페이지 이동">공지사항</a></li>                                
+                            </ul>
+                        </div>
+
+                        <div class="page_content">
+                            <div class="article_title">
+                                <article class="page_title_area">
+                                    <h2 class="page_title">공지사항</h2>
+                                    <h3 class="page_title_sub">민간 SaaS 연계공통기반 통합관리포털에서 알려드립니다.</h3>
+                                </article>
+                            </div>
+
+                            <div class="article_content" data-aos="fade-up">
+
+                                <!-- 검색 필터  -->
+                                <div class="wrap_search_filter">
+                                    <div class="wrap_select">
+                                        <h3></h3>
+                                        <label for="select01" class="sr_only">검색 필터 목록 선택 열기</label>
+                                        <select name="select01" id="select01" class="select_searchbar">
+                                            <option value="" selected>전체</option>
+                                            <option value="">제목</option>
+                                            <option value="">내용</option>
+                                        </select>
+                                    </div>
+                                    <div class="box_input">
+                                        <label for="inputSearch" class="sr_only">검색어 입력</label>
+                                        <input type="text" id="inputSearch" class="input_text input_searchbar" placeholder="검색어를 입력해주세요.">
+                                    </div>
+                                    <button type="submit" class="btn_submit btn_search">검색</button>
+                                </div>
+
+                                <!-- 검색 결과 -->
+                                <div class="wrap_result_table">
+
+                                    <!-- 테이블 상단 -->
+                                    <div class="box_table_top">
+                                        <div class="area_left">
+                                            <div class="result_num">
+                                                <p>총 <span>23</span>건이 조회되었습니다.</p>
+                                            </div>
+                                        </div>
+                                        <div class="area_right">
+                                            <div class="wrap_select">
+                                                <label for="select02" class="sr_only">항목 표시 개수 선택 목록 열기</label>
+                                                <select name="select02" id="select02" class="select_sort">
+                                                    <option value="" selected>10 개씩</option>
+                                                    <option value="">20 개씩</option>
+                                                    <option value="">30 개씩</option>
+                                                </select>
+                                            </div>
+                                            <button name="" class="btn_submit btn_sort" onclick="">정렬</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="pc_table">
+                                        <!--table -->
+                                        <div class="wrap_table" data-aos="fade-up" data-aos-delay="300">
+                                            <table class="table table_user_manage" summary="공지사항 게시물 목록">
+                                                <caption>공지사항 게시물 목록</caption>
+                                                <colgroup>
+                                                    <col style="width: 155px;">
+                                                    <col style="width: auto;">
+                                                    <col style="width: 180px;">
+                                                    <col style="width: 155px;">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">번호</th>
+                                                        <th scope="col">제목</th>
+                                                        <th scope="col">첨부</th>
+                                                        <th scope="col">등록일</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="post_title_top">
+                                                        <td>
+                                                            <span class="badge filled">TOP</span>
+                                                        </td>
+                                                        <td>
+                                                            <div class="post_title">
+                                                                <div class="wrap_title_anchor">
+                                                                    <a href="사용자 지원_공지사항_상세.html" target="_self" title="페이지 이동" class="post_title_anchor">클라우드바리스타 커뮤니티 제10차 컨퍼런스클라우드바리스타 커뮤니티 제10차 컨퍼런스클라우드바리스타 커뮤니티 제10차 컨퍼런스클라우드바리스타 커뮤니티 제10차 컨퍼런스클라우드바리스타 커뮤니티 제10차 컨퍼런스</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <p class="icon_file"></p>
+                                                        </td>
+                                                        <td>
+                                                            <span>2025-01-12</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="post_title_top">
+                                                        <td>
+                                                            <span class="badge filled">TOP</span>
+                                                        </td>
+                                                        <td>
+                                                            <div class="post_title">
+                                                                <div class="wrap_title_anchor">
+                                                                    <a href="사용자 지원_공지사항_상세.html" target="_self" title="페이지 이동" class="post_title_anchor">2025 디지털서비스 전문계약제도 온라인설명회 개최</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+
+                                                        </td>
+                                                        <td>
+                                                            <span>2025-01-12</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>18</span>
+                                                        </td>
+                                                        <td>
+                                                            <div class="post_title">
+                                                                <div class="wrap_title_anchor">
+                                                                    <a href="사용자 지원_공지사항_상세.html" target="_self" title="페이지 이동" class="post_title_anchor">사용자 지원_공지사항_상세</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <p class="icon_file"></p>
+                                                        </td>
+                                                        <td>
+                                                            <span>2025-01-12</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>17</span>
+                                                        </td>
+                                                        <td>
+                                                            <div class="post_title">
+                                                                <div class="wrap_title_anchor">
+                                                                    <a href="사용자 지원_공지사항_상세.html" target="_self" title="페이지 이동" class="post_title_anchor">2025 공공 SaaS 도입 성공전략 컨퍼런스 안내</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <p class="icon_file"></p>
+                                                        </td>
+                                                        <td>
+                                                            <span>2025-01-12</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>16</span>
+                                                        </td>
+                                                        <td>
+                                                            <div class="post_title">
+                                                                <div class="wrap_title_anchor">
+                                                                    <a href="사용자 지원_공지사항_상세.html" target="_self" title="페이지 이동" class="post_title_anchor">「2025년도 디지털서비스 이용·확산 지원 사업 2차 수요조사 안내」</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <p class="icon_file"></p>
+                                                        </td>
+                                                        <td>
+                                                            <span>2025-01-12</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>15</span>
+                                                        </td>
+                                                        <td>
+                                                            <div class="post_title">
+                                                                <div class="wrap_title_anchor">
+                                                                    <a href="사용자 지원_공지사항_상세.html" target="_self" title="페이지 이동" class="post_title_anchor">[행사] 정부 공통시스템과 민간 SaaS 간 연계 개통식 개최</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <p class="icon_file"></p>
+                                                        </td>
+                                                        <td>
+                                                            <span>2025-01-12</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>14</span>
+                                                        </td>
+                                                        <td>
+                                                            <div class="post_title">
+                                                                <div class="wrap_title_anchor">
+                                                                    <a href="사용자 지원_공지사항_상세.html" target="_self" title="페이지 이동" class="post_title_anchor">2025년 클라우드 사업 통합설명회 안내</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <p class="icon_file"></p>
+                                                        </td>
+                                                        <td>
+                                                            <span>2025-01-12</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>13</span>
+                                                        </td>
+                                                        <td>
+                                                            <div class="post_title">
+                                                                <div class="wrap_title_anchor">
+                                                                    <a href="사용자 지원_공지사항_상세.html" target="_self" title="페이지 이동" class="post_title_anchor">「2025년도 디지털서비스 이용·확산 지원 사업 수요조사 및 공모 안내」</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <p class="icon_file"></p>
+                                                        </td>
+                                                        <td>
+                                                            <span>2025-01-12</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>12</span>
+                                                        </td>
+                                                        <td>
+                                                            <div class="post_title">
+                                                                <div class="wrap_title_anchor">
+                                                                    <a href="사용자 지원_공지사항_상세.html" target="_self" title="페이지 이동" class="post_title_anchor">「2025년도 디지털서비스 이용·확산 지원 사업 1차 수요조사 안내」</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <p class="icon_file"></p>
+                                                        </td>
+                                                        <td>
+                                                            <span>2025-01-12</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>11</span>
+                                                        </td>
+                                                        <td>
+                                                            <div class="post_title">
+                                                                <div class="wrap_title_anchor">
+                                                                    <a href="사용자 지원_공지사항_상세.html" target="_self" title="페이지 이동" class="post_title_anchor">서비스 정보변경 기능 제공 안내</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <p class="icon_file"></p>
+                                                        </td>
+                                                        <td>
+                                                            <span>2025-01-12</span>
+                                                        </td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="mob_board">
+                                        <div class="wrap_board_list">
+                                            <ul class="board_list">
+                                                <li class="board_item">
+                                                    <a href="사용자 지원_공지사항_상세.html" target="_self" title="페이지 이동" class="board_anchor">
+                                                        <div class="type_board_post">
+                                                            <div class="board_cnt">
+                                                                <div class="post_title">
+                                                                    <div class="post_num">
+                                                                        <span class="badge filled">TOP</span>
+                                                                    </div>
+                                                                    <div class="post_title_item">
+                                                                        <p class="post_title_txt">제10차 컨퍼런스 안내 안내안내안내안내안내안내안내안내안내안내안내안내안내안내안내안내안내안내안내안내안내안내안내안내안내안내안내안내안내안내안내안내안내안내안내안내</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="post_info">
+                                                                    <span class="post_txt">첨부</span>
+                                                                    <span class="icon_file"></span>
+                                                                </div>
+                                                                <div class="post_info">
+                                                                    <span class="post_txt">등록일</span>
+                                                                    <span class="post_date">2022-09-18</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="board_item">
+                                                    <a href="사용자 지원_공지사항_상세.html" target="_self" title="페이지 이동" class="board_anchor">
+                                                        <div class="type_board_post">
+                                                            <div class="board_cnt">
+                                                                <div class="post_title">
+                                                                    <div class="post_num">
+                                                                        <span class="badge filled">TOP</span>
+                                                                    </div>
+                                                                    <div class="post_title_item">
+                                                                        <p class="post_title_txt">2025 디지털서비스 온라인설명회</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="post_info">
+                                                                    <span class="post_txt">첨부</span>
+                                                                    <span class="icon_file"></span>
+                                                                </div>
+                                                                <div class="post_info">
+                                                                    <span class="post_txt">등록일</span>
+                                                                    <span class="post_date">2025-01-12</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="board_item">
+                                                    <a href="사용자 지원_공지사항_상세.html" target="_self" title="페이지 이동" class="board_anchor">
+                                                        <div class="type_board_post">
+                                                            <div class="board_cnt">
+                                                                <div class="post_title">
+                                                                    <div class="post_title_item">
+                                                                        <p class="post_title_txt">2025년 산업발전 유공 표창 공모 내안내안내안내안내안내안내안내안내안내안내안내내안내안내안내안내안내안내안내안내안내안내안내내안내안내안내안내안내안내안내안내안내안내안내</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="post_info">
+                                                                    <span class="post_txt">첨부</span>
+                                                                </div>
+                                                                <div class="post_info">
+                                                                    <span class="post_txt">등록일</span>
+                                                                    <span class="post_date">2025-01-12</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="board_item">
+                                                    <a href="사용자 지원_공지사항_상세.html" target="_self" title="페이지 이동" class="board_anchor">
+                                                        <div class="type_board_post">
+                                                            <div class="board_cnt">
+                                                                <div class="post_title">
+                                                                    <div class="post_title_item">
+                                                                        <p class="post_title_txt">사용자 지원_공지사항_상세</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="post_info">
+                                                                    <span class="post_txt">첨부</span>
+                                                                </div>
+                                                                <div class="post_info">
+                                                                    <span class="post_txt">등록일</span>
+                                                                    <span class="post_date">2025-01-12</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="board_item">
+                                                    <a href="사용자 지원_공지사항_상세.html" target="_self" title="페이지 이동" class="board_anchor">
+                                                        <div class="type_board_post">
+                                                            <div class="board_cnt">
+                                                                <div class="post_title">
+                                                                    <div class="post_title_item">
+                                                                        <p class="post_title_txt">사용자 지원_공지사항_상세</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="post_info">
+                                                                    <span class="post_txt">첨부</span>
+                                                                </div>
+                                                                <div class="post_info">
+                                                                    <span class="post_txt">등록일</span>
+                                                                    <span class="post_date">2025-01-12</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="board_item">
+                                                    <a href="사용자 지원_공지사항_상세.html" target="_self" title="페이지 이동" class="board_anchor">
+                                                        <div class="type_board_post">
+                                                            <div class="board_cnt">
+                                                                <div class="post_title">
+                                                                    <div class="post_title_item">
+                                                                        <p class="post_title_txt">사용자 지원_공지사항_상세</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="post_info">
+                                                                    <span class="post_txt">첨부</span>
+                                                                </div>
+                                                                <div class="post_info">
+                                                                    <span class="post_txt">등록일</span>
+                                                                    <span class="post_date">2025-01-12</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="board_item">
+                                                    <a href="사용자 지원_공지사항_상세.html" target="_self" title="페이지 이동" class="board_anchor">
+                                                        <div class="type_board_post">
+                                                            <div class="board_cnt">
+                                                                <div class="post_title">
+                                                                    <div class="post_title_item">
+                                                                        <p class="post_title_txt">사용자 지원_공지사항_상세</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="post_info">
+                                                                    <span class="post_txt">첨부</span>
+                                                                </div>
+                                                                <div class="post_info">
+                                                                    <span class="post_txt">등록일</span>
+                                                                    <span class="post_date">2025-01-12</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="board_item">
+                                                    <a href="사용자 지원_공지사항_상세.html" target="_self" title="페이지 이동" class="board_anchor">
+                                                        <div class="type_board_post">
+                                                            <div class="board_cnt">
+                                                                <div class="post_title">
+                                                                    <div class="post_title_item">
+                                                                        <p class="post_title_txt">사용자 지원_공지사항_상세</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="post_info">
+                                                                    <span class="post_txt">첨부</span>
+                                                                </div>
+                                                                <div class="post_info">
+                                                                    <span class="post_txt">등록일</span>
+                                                                    <span class="post_date">2025-01-12</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="board_item">
+                                                    <a href="사용자 지원_공지사항_상세.html" target="_self" title="페이지 이동" class="board_anchor">
+                                                        <div class="type_board_post">
+                                                            <div class="board_cnt">
+                                                                <div class="post_title">
+                                                                    <div class="post_title_item">
+                                                                        <p class="post_title_txt">사용자 지원_공지사항_상세</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="post_info">
+                                                                    <span class="post_txt">첨부</span>
+                                                                </div>
+                                                                <div class="post_info">
+                                                                    <span class="post_txt">등록일</span>
+                                                                    <span class="post_date">2025-01-12</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="board_item">
+                                                    <a href="사용자 지원_공지사항_상세.html" target="_self" title="페이지 이동" class="board_anchor">
+                                                        <div class="type_board_post">
+                                                            <div class="board_cnt">
+                                                                <div class="post_title">
+                                                                    <div class="post_title_item">
+                                                                        <p class="post_title_txt">사용자 지원_공지사항_상세</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="post_info">
+                                                                    <span class="post_txt">첨부</span>
+                                                                </div>
+                                                                <div class="post_info">
+                                                                    <span class="post_txt">등록일</span>
+                                                                    <span class="post_date">2025-01-12</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <!-- pagenation -->
+                                    <div class="wrap_pagenation">
+                                        <ul class="pagination_list">
+                                            <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor page_arrow first" title="이전"></a></li>
+                                            <!-- <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor page_arrow prev"></a></li> -->
+                                            <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor currently">1</a></li>
+                                            <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor">2</a></li>
+                                            <!-- <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor">3</a></li> -->
+                                            <!-- <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor">4</a></li> -->
+                                            <!-- <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor">5</a></li>           -->
+                                            <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor page_arrow next" title="다음"></a></li>
+                                            <!-- <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor page_arrow next last"></a></li> -->
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <!-- 본문 end  -->
+            </section>
+            <!-- 본문 외부 영역 end-->
+        </main>
+        <!-- 전체 영역 end  -->
+
+        <footer id="footer" class="footer"></footer>
+
+    </div>
+
+  <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

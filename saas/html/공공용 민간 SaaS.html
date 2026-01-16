@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title>공공용 민간 SaaS&lt;민간 Sass 연계공통기반 통합관리포털</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/output.css" />
+
+    <!-- JS -->
+    <script src="../js/jquery-3.6.3/jquery.min.js"></script>
+    <script src="../js/swiper-5.4.3.min.js"></script>
+    <script src="../js/aos.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/service_searchSaaS.js"></script>
+
+</head>
+
+<body>
+    <div id="wrapper" class="wrapper sub_pages">
+        <!-- 바로가기 메뉴 -->
+        <nav id="skip"></nav>
+
+        <!-- 헤더 -->
+        <header id="header" class="header"></header>
+
+        <!-- 메인  -->
+        <main class="">
+
+            <!-- 본문 외부 영역 -->
+            <section id="content" class="">
+                <div class="page_inner">
+
+                    <!-- 본문 -->
+                    <article class="page page_saas_search">
+                        <!-- 브레드크럼 -->
+                        <div class="wrap_breadcrumb">
+                            <ul class="breadcrumbs">
+                                <li class="breadcrumbs_item cat_home"><a href="main.html" target="_self" title="메인 페이지로 이동" class="home"></a></li>
+                                <li class="breadcrumbs_item current_page"><a href="공공용 민간 SaaS.html" target="_self" title="페이지 이동">공공용 민간 SaaS</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="page_content">
+                            <div class="article_title">
+                                <article class="page_title_area">
+                                    <h2 class="page_title">공공용 민간 SaaS</h2>
+                                    <h3 class="page_title_sub">공공 업무를 지원하는 민간 SaaS를 도입하여 <br class="only_mob" />업무 효율을 높이세요.</h3>
+                                </article>
+                            </div>
+
+                            <div class="article_content">
+
+                                <!-- 검색 필터  -->
+                                <div class="wrap_search_filter">
+                                    <h3 class="search_filter_tit">공공용 민간 SaaS를 찾아보세요</h3>
+                                    <div class="wrap_select">
+                                        <label for="select01" class="sr_only">검색 필터 목록 선택 열기</label>
+                                        <select name="select01" id="select01" class="select_searchbar">
+                                            <option value="" selected>전체</option>
+                                            <option value="">제목</option>
+                                            <option value="">내용</option>
+                                        </select>
+                                    </div>
+                                    <div class="box_input">
+                                        <label for="inputSearch" class="sr_only">검색어 입력</label>
+                                        <input type="text" id="inputSearch" class="input_text input_searchbar" placeholder="검색어를 입력해주세요.">
+                                    </div>
+                                    <button type="submit" class="btn_submit btn_search">검색</button>
+                                </div>
+                                <!-- 모바일 상세 검색 필터 -->
+                                <div class="mob_srch_filter_btn">
+                                    <button type="button">상세 검색 필터</button>
+                                </div>
+                                <!-- 모바일 상세 검색 필터 end -->
+
+                                <!-- 상세 검색 필터  -->
+                                <div class="wrap_search_service" data-aos="fade-up">
+                                    <div class="wrap_btn_toggle">
+                                        <h3 class="filter_title">상세 검색 필터</h3>
+                                        <div class="wrap_arrow">
+                                            <input type="checkbox" id="toggle" class="toggle_checked">
+                                            <label for="toggle" class="btn_toggle"></label>
+                                        </div>
+                                        <button class="wrap_srch_close" type="button">닫기</button>
+                                    </div>
+                                    <div class="area_detail_filter">
+                                        <div class="wrap_filter_group">
+                                            <div class="wrap_filter group01">
+                                                <div class="wrap_group_name">
+                                                    <p>연계공통기반 사용</p>
+                                                </div>
+                                                <div class="wrap_checkbox_group">
+                                                    <div class="wrap_radio">
+                                                        <div class="box_checkbox">
+                                                            <input type="checkbox" class="checkbox" id="group01_ck01" name="govSaas">
+                                                            <label for="group01_ck01" class="label_txt">모바일 공무원증</label>
+                                                        </div>
+                                                        <div class="box_checkbox">
+                                                            <input type="checkbox" class="checkbox" id="group01_ck02" name="govSaas">
+                                                            <label for="group01_ck02" class="label_txt">행정표준코드</label>
+                                                        </div>
+                                                        <div class="box_checkbox">
+                                                            <input type="checkbox" class="checkbox" id="group01_ck03" name="govSaas">
+                                                            <label for="group01_ck03" class="label_txt">GPKI (행정전자서명)</label>
+                                                        </div>
+                                                        <div class="box_checkbox">
+                                                            <input type="checkbox" class="checkbox" id="group01_ck04" name="govSaas">
+                                                            <label for="group01_ck04" class="label_txt">LDAP (정부디렉터리)</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="wrap_filter group02">
+                                                <div class="wrap_group_name">
+                                                    <p>인증</p>
+                                                </div>
+                                                <div class="wrap_checkbox_group">
+                                                    <div class="wrap_radio">
+                                                        <div class="box_checkbox">
+                                                            <input type="checkbox" class="checkbox" id="group02_ck01" name="certificate">
+                                                            <label for="group02_ck01" class="label_txt">국가정보원 인증</label>
+                                                        </div>
+                                                        <div class="box_checkbox">
+                                                            <input type="checkbox" class="checkbox" id="group02_ck02" name="certificate">
+                                                            <label for="group02_ck02" class="label_txt">CSAP 인증</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="wrap_filter group03">
+                                                <div class="wrap_group_name">
+                                                    <p>이용중인 인프라</p>
+                                                </div>
+                                                <div class="wrap_checkbox_group">
+                                                    <div class="wrap_radio">
+                                                        <div class="box_checkbox">
+                                                            <input type="checkbox" class="checkbox" id="group03_ck01" name="infra">
+                                                            <label for="group03_ck01" class="label_txt">가비아</label>
+                                                        </div>
+                                                        <div class="box_checkbox">
+                                                            <input type="checkbox" class="checkbox" id="group03_ck02" name="infra">
+                                                            <label for="group03_ck02" class="label_txt">네이버 (공공기관용)</label>
+                                                        </div>
+                                                        <div class="box_checkbox">
+                                                            <input type="checkbox" class="checkbox" id="group03_ck03" name="infra">
+                                                            <label for="group03_ck03" class="label_txt">카카오</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="wrap_filter group04">
+                                                <div class="wrap_group_name">
+                                                    <p>인증 시기</p>
+                                                </div>
+                                                <div class="wrap_checkbox_group">
+                                                    <div class="wrap_radio wrap_textbox">
+                                                        <div class="box_input">
+                                                            <i></i>
+                                                            <label class="sr_only">시작 연도 입력</label>
+                                                            <input type="number" class="textbox year" name="date">년
+                                                            <label class="sr_only">시작 월 입력</label>
+                                                            <input type="number" class="textbox month" name="date">월
+                                                            <span>~</span>
+                                                            <i></i>
+                                                            <label class="sr_only">종료 연도 입력</label>
+                                                            <input type="number" class="textbox year" name="date">년
+                                                            <label class="sr_only">종료 월 입력</label>
+                                                            <input type="number" class="textbox month" name="date">월
+                                                        </div>
+                                                        <div class="box_checkbox">
+                                                            <input type="checkbox" class="checkbox" id="group04_ck01" name="date">
+                                                            <label for="group04_ck01" class="label_txt">최근 12개월</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="wrap_filter group05">
+                                                <div class="wrap_group_name">
+                                                    <p>계약 및 등록</p>
+                                                </div>
+                                                <div class="wrap_checkbox_group">
+                                                    <div class="wrap_radio half">
+                                                        <div class="box_checkbox">
+                                                            <input type="checkbox" class="checkbox" id="group05_ck01" name="contract">
+                                                            <label for="group05_ck01" class="label_txt">디지털서비스 이용지원시스템 등록</label>
+                                                        </div>
+                                                        <div class="box_checkbox">
+                                                            <input type="checkbox" class="checkbox" id="group05_ck02" name="contract">
+                                                            <label for="group05_ck02" class="label_txt">디지털서비스 카탈로그 계약</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="wrap_filter group06">
+                                                <div class="wrap_group_name">
+                                                    <p>서비스 구분</p>
+                                                </div>
+                                                <div class="wrap_checkbox_group">
+                                                    <div class="wrap_radio">
+                                                        <div class="box_checkbox">
+                                                            <input type="checkbox" class="checkbox" id="group06_ck01" name="service_type">
+                                                            <label for="group06_ck01" class="label_txt">메일</label>
+                                                        </div>
+                                                        <div class="box_checkbox">
+                                                            <input type="checkbox" class="checkbox" id="group06_ck02" name="service_type">
+                                                            <label for="group06_ck02" class="label_txt">협업 도구 </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="wrap_filter group07">
+                                                <div class="wrap_group_name">
+                                                    <p>대표 서비스 카테고리</p>
+                                                </div>
+                                                <div class="wrap_checkbox_group">
+                                                    <div class="wrap_radio">
+                                                        <div class="box_checkbox">
+                                                            <input type="checkbox" class="checkbox" id="group07_ck01" name="service_cate">
+                                                            <label for="group07_ck01" class="label_txt">개발지원</label>
+                                                        </div>
+                                                        <div class="box_checkbox">
+                                                            <input type="checkbox" class="checkbox" id="group07_ck02" name="service_cate">
+                                                            <label for="group07_ck02" class="label_txt">관제 · IoT · 시설물 관리</label>
+                                                        </div>
+                                                        <div class="box_checkbox">
+                                                            <input type="checkbox" class="checkbox" id="group07_ck03" name="service_cate">
+                                                            <label for="group07_ck03" class="label_txt">교육</label>
+                                                        </div>
+                                                        <div class="box_checkbox">
+                                                            <input type="checkbox" class="checkbox" id="group07_ck04" name="service_cate">
+                                                            <label for="group07_ck04" class="label_txt">데이터 분석</label>
+                                                        </div>
+                                                        <div class="box_checkbox">
+                                                            <input type="checkbox" class="checkbox" id="group07_ck05" name="service_cate">
+                                                            <label for="group07_ck05" class="label_txt">도서관 관리</label>
+                                                        </div>
+                                                        <div class="box_checkbox">
+                                                            <input type="checkbox" class="checkbox" id="group07_ck06" name="service_cate">
+                                                            <label for="group07_ck06" class="label_txt">마케팅</label>
+                                                        </div>
+                                                        <div class="box_checkbox">
+                                                            <input type="checkbox" class="checkbox" id="group07_ck07" name="service_cate">
+                                                            <label for="group07_ck07" class="label_txt">매칭</label>
+                                                        </div>
+                                                        <div class="box_checkbox">
+                                                            <input type="checkbox" class="checkbox" id="group07_ck08" name="service_cate">
+                                                            <label for="group07_ck08" class="label_txt">메일</label>
+                                                        </div>
+                                                        <div class="box_checkbox">
+                                                            <input type="checkbox" class="checkbox" id="group07_ck09" name="service_cate">
+                                                            <label for="group07_ck09" class="label_txt">모니터링</label>
+                                                        </div>
+                                                        <div class="box_checkbox">
+                                                            <input type="checkbox" class="checkbox" id="group07_ck10" name="service_cate">
+                                                            <label for="group07_ck10" class="label_txt">보안 관리</label>
+                                                        </div>
+                                                        <div class="box_checkbox">
+                                                            <input type="checkbox" class="checkbox" id="group07_ck11" name="service_cate">
+                                                            <label for="group07_ck11" class="label_txt">복지</label>
+                                                        </div>
+                                                        <div class="box_checkbox">
+                                                            <input type="checkbox" class="checkbox" id="group07_ck12" name="service_cate">
+                                                            <label for="group07_ck12" class="label_txt">사업평가 관리</label>
+                                                        </div>
+                                                        <div class="box_checkbox">
+                                                            <input type="checkbox" class="checkbox" id="group07_ck13" name="service_cate">
+                                                            <label for="group07_ck13" class="label_txt">상담</label>
+                                                        </div>
+                                                        <div class="box_checkbox">
+                                                            <input type="checkbox" class="checkbox" id="group07_ck14" name="service_cate">
+                                                            <label for="group07_ck14" class="label_txt">성과 관리</label>
+                                                        </div>
+                                                        <div class="box_checkbox">
+                                                            <input type="checkbox" class="checkbox" id="group07_ck15" name="service_cate">
+                                                            <label for="group07_ck15" class="label_txt">의료</label>
+                                                        </div>
+                                                        <div class="box_checkbox">
+                                                            <input type="checkbox" class="checkbox" id="group07_ck16" name="service_cate">
+                                                            <label for="group07_ck16" class="label_txt">자료 관리 (아카이브)</label>
+                                                        </div>
+                                                        <div class="box_checkbox">
+                                                            <input type="checkbox" class="checkbox" id="group07_ck17" name="service_cate">
+                                                            <label for="group07_ck17" class="label_txt">전자 계약</label>
+                                                        </div>
+                                                        <div class="box_checkbox">
+                                                            <input type="checkbox" class="checkbox" id="group07_ck18" name="service_cate">
+                                                            <label for="group07_ck18" class="label_txt">전자 행정 서식</label>
+                                                        </div>
+                                                        <div class="box_checkbox">
+                                                            <input type="checkbox" class="checkbox" id="group07_ck19" name="service_cate">
+                                                            <label for="group07_ck19" class="label_txt">차량 관리</label>
+                                                        </div>
+                                                        <div class="box_checkbox">
+                                                            <input type="checkbox" class="checkbox" id="group07_ck20" name="service_cate">
+                                                            <label for="group07_ck20" class="label_txt">채용 · 인사 관리</label>
+                                                        </div>
+                                                        <div class="box_checkbox">
+                                                            <input type="checkbox" class="checkbox" id="group07_ck21" name="service_cate">
+                                                            <label for="group07_ck21" class="label_txt">출입 관리</label>
+                                                        </div>
+                                                        <div class="box_checkbox">
+                                                            <input type="checkbox" class="checkbox" id="group07_ck22" name="service_cate">
+                                                            <label for="group07_ck22" class="label_txt">협업</label>
+                                                        </div>
+                                                        <div class="box_checkbox">
+                                                            <input type="checkbox" class="checkbox" id="group07_ck23" name="service_cate">
+                                                            <label for="group07_ck23" class="label_txt">화상</label>
+                                                        </div>
+                                                        <div class="box_checkbox">
+                                                            <input type="checkbox" class="checkbox" id="group07_ck24" name="service_cate">
+                                                            <label for="group07_ck24" class="label_txt">AI · 챗봇</label>
+                                                        </div>
+                                                        <div class="box_checkbox">
+                                                            <input type="checkbox" class="checkbox" id="group07_ck25" name="service_cate">
+                                                            <label for="group07_ck25" class="label_txt">IT 인프라 관리</label>
+                                                        </div>
+                                                        <div class="box_checkbox">
+                                                            <input type="checkbox" class="checkbox" id="group07_ck26" name="service_cate">
+                                                            <label for="group07_ck26" class="label_txt">PaaS</label>
+                                                        </div>
+                                                        <div class="box_checkbox">
+                                                            <input type="checkbox" class="checkbox" id="group07_ck27" name="service_cate">
+                                                            <label for="group07_ck27" class="label_txt">기타</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="wrap_filter group08">
+                                                <div class="wrap_group_name">
+                                                    <p>CSAP 인증 종류</p>
+                                                </div>
+                                                <div class="wrap_checkbox_group">
+                                                    <div class="wrap_radio">
+                                                        <div class="box_checkbox">
+                                                            <input type="radio" class="radio" id="group08_ck01" name="certificate_type">
+                                                            <label for="group08_ck01" class="label_txt">전체</label>
+                                                        </div>
+                                                        <div class="box_checkbox">
+                                                            <input type="radio" class="radio" id="group08_ck02" name="certificate_type">
+                                                            <label for="group08_ck02" class="label_txt">간편</label>
+                                                        </div>
+                                                        <div class="box_checkbox">
+                                                            <input type="radio" class="radio" id="group08_ck03" name="certificate_type">
+                                                            <label for="group08_ck03" class="label_txt">표준</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="wrap_filter group09">
+                                                <div class="wrap_group_name">
+                                                    <p>CSAP 인증 현황</p>
+                                                </div>
+                                                <div class="wrap_checkbox_group">
+                                                    <div class="wrap_radio">
+                                                        <div class="box_checkbox">
+                                                            <input type="radio" class="radio" id="group09_ck01" name="current_certificate">
+                                                            <label for="group09_ck01" class="label_txt">전체</label>
+                                                        </div>
+                                                        <div class="box_checkbox">
+                                                            <input type="radio" class="radio" id="group09_ck02" name="current_certificate">
+                                                            <label for="group09_ck02" class="label_txt">유지</label>
+                                                        </div>
+                                                        <div class="box_checkbox">
+                                                            <input type="radio" class="radio" id="group09_ck03" name="current_certificate">
+                                                            <label for="group09_ck03" class="label_txt">취소</label>
+                                                        </div>
+                                                        <div class="box_checkbox">
+                                                            <input type="radio" class="radio" id="group09_ck04" name="current_certificate">
+                                                            <label for="group09_ck04" class="label_txt">만료</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="wrap_selected_filter">
+                                            <div class="selected_filters">
+                                                <h3 class="selected_counter">선택된 필터 (<span>0</span>)</h3>
+                                                <ul class="list_selected_filters">
+                                                    <!-- <li class="item_selected_filter"></li>-->
+                                                </ul>
+                                                <button class="btn_clear_filter">초기화</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wrap_btn">
+                                        <button type="submit" class="btn_submit">필터 적용</button>
+                                    </div>
+                                </div>
+
+                                <!-- 검색 결과 -->
+                                <div class="wrap_result_table wrap_result_card" data-aos="fade-up">
+
+                                    <!-- 테이블 상단 -->
+                                    <div class="box_table_top">
+                                        <div class="area_left">
+                                            <div class="result_num">
+                                                <p><span>18</span>개의 상품이 조회되었습니다</p>
+                                            </div>
+                                        </div>
+                                        <div class="area_right">
+                                            <div class="wrap_select count">
+                                                <p>항목 표시 개수</p>
+                                                <label for="select02" class="sr_only">항목 표시 개수 선택 목록 열기</label>
+                                                <select name="select02" id="select02" class="select_sort">
+                                                    <option value="" selected>10 개씩</option>
+                                                    <option value="">20 개씩</option>
+                                                    <option value="">30 개씩</option>
+                                                </select>
+                                            </div>
+                                            <div class="wrap_select array">
+                                                <p>정렬 기준</p>
+                                                <label for="select_array" class="sr_only">정렬 기준 선택 목록 열기</label>
+                                                <select name="select_" id="select_array" class="select_sort">
+                                                    <option value="" selected>인증최신순</option>
+                                                    <option value="">조회순 오름차순</option>
+                                                    <option value="">조회순 내림자순</option>
+                                                    <option value="">가나다 오름차순</option>
+                                                    <option value="">가나다 내림자순</option>
+                                                    <option value="">민간 SaaS 출시일 오름차순</option>
+                                                    <option value="">민간 SaaS 출시일 내림자순</option>
+                                                    <option value="">공공기관 이용 사례 개수 오름차순</option>
+                                                    <option value="">공공기관 이용 사례 개수 내림자순</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="box_table_contents">
+                                        <div class="product_card product_01"></div>
+                                        <div class="product_card product_02"></div>
+                                        <div class="product_card product_03"></div>
+                                        <div class="product_card product_04"></div>
+                                        <div class="product_card product_05"></div>
+                                        <div class="product_card product_06"></div>
+                                        <div class="product_card product_07"></div>
+                                        <div class="product_card product_08"></div>
+                                        <div class="product_card product_09"></div>
+                                        <div class="product_card product_10"></div>
+                                    </div>
+
+                                    <!-- pagenation -->
+                                    <div class="wrap_pagenation">
+                                        <ul class="pagination_list">
+                                            <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor page_arrow first" title="이전"></a></li>
+                                            <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor currently">1</a></li>
+                                            <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor">2</a></li>
+                                            <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor">3</a></li>
+                                            <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor">4</a></li>
+                                            <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor">5</a></li>
+                                            <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor">6</a></li>
+                                            <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor">7</a></li>
+                                            <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor">8</a></li>
+                                            <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor">9</a></li>
+                                            <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor">10</a></li>
+                                            <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor page_arrow next" title="다음"></a></li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- 모바일 더보기 버튼 -->
+                                    <div class="btn_more_list">
+                                        <button type="button" class="">더보기</button>
+                                    </div>
+                                    <!-- 모바일 더보기 버튼 end -->
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- 본문 end  -->
+            </section>
+            <!-- 본문 외부 영역 end-->
+        </main>
+        <!-- 전체 영역 end  -->
+
+        <footer id="footer" class="footer"></footer>
+    </div>
+
+    <script>
+        AOS.init();
+    </script>
+    <a href="" class="" target="_blank" title="새 창 열림-사이트로 이동"></a>
+    <a href="javascript:;" target="_blank" class="link_service_anchor" title="새 창 열림 - 공식 홈페이지로 이동"></a>
+    <!-- <script>
+			$(document).ready(function () {
+					$(".checkbox").change(function () {
+							const selectedId = $(this).attr("id");
+							const selectedLabel = $(`label[for="${selectedId}"]`).text();
+	
+							if ($(this).is(":checked")) {
+									if ($(`.selected_filters ul li[data-id="${selectedId}"]`).length === 0) {
+											$(".selected_filters ul").append(
+													`<li data-id="${selectedId}">${selectedLabel} <button class="btn_remove_filter" data-id="${selectedId}">x</button></li>`
+											);
+									}
+							} else {
+									$(`.selected_filters ul li[data-id="${selectedId}"]`).remove();
+							}
+					});
+	
+					$(".selected_filters").on("click", ".btn_remove_filter", function () {
+							const id = $(this).data("id");
+							$(`#${id}`).prop("checked", false);
+							$(this).parent().remove();
+					});
+	
+					$(".btn_clear_filter").click(function () {
+							$(".checkbox").prop("checked", false);
+							$(".selected_filters ul").empty();
+					});
+			}); -->
+    <!-- </script>-->
+
+    <!-- <script>
+    $(document).ready(function () {
+        function updateFilterCount() {
+            const count = $(".selected_filters ul li").length;
+            $(".selected_filters h3 span").text(count);
+        }
+
+        $(".checkbox").change(function () {
+            const selectedId = $(this).attr("id");
+            const selectedLabel = $(`label[for="${selectedId}"]`).text();
+
+            if ($(this).is(":checked")) {
+                if ($(`.selected_filters ul li[data-id="${selectedId}"]`).length === 0) {
+                    $(".selected_filters ul").append(
+                        `<li data-id="${selectedId}">${selectedLabel} <button class="btn_remove_filter" data-id="${selectedId}">x</button></li>`
+                    );
+                }
+            } else {
+                $(`.selected_filters ul li[data-id="${selectedId}"]`).remove();
+            }
+
+            updateFilterCount();
+        });
+
+        $(".selected_filters").on("click", ".btn_remove_filter", function () {
+            const id = $(this).data("id");
+            $(`#${id}`).prop("checked", false);
+            $(this).parent().remove();
+            updateFilterCount();
+        });
+
+        $(".btn_clear_filter").click(function () {
+            $(".checkbox").prop("checked", false);
+            $(".selected_filters ul").empty();
+            updateFilterCount();
+        });
+
+				$(".btn_toggle").click(function () {
+            $(".wrap_radio").slideToggle();
+        });
+    });
+</script>-->
+
+    <!-- <script>
+	$(document).ready(function () {
+			function updateFilterCount() {
+					const count = $(".list_selected_filters .item_selected_filter").length;
+					$(".selected_filters h3 span").text(count);
+			}
+
+			$(".checkbox").change(function () {
+					const selectedId = $(this).attr("id");
+					const selectedLabel = $(`label[for="${selectedId}"]`).text();
+
+					if ($(this).is(":checked")) {
+							if ($(`.list_selected_filters .item_selected_filter[data-id="${selectedId}"]`).length === 0) {
+									$(".list_selected_filters").append(
+											`<li class="item_selected_filter" data-id="${selectedId}">${selectedLabel} <button class="btn_remove_filter" data-id="${selectedId}"></button></li>`
+									);
+							}
+					} else {
+							$(`.list_selected_filters .item_selected_filter[data-id="${selectedId}"]`).remove();
+					}
+
+					updateFilterCount();
+			});
+
+			$(".list_selected_filters").on("click", ".btn_remove_filter", function () {
+					const id = $(this).data("id");
+					$(`#${id}`).prop("checked", false);
+					$(this).parent().remove();
+					updateFilterCount();
+			});
+
+			$(".btn_clear_filter").click(function () {
+					$(".checkbox").prop("checked", false);
+					$(".list_selected_filters").empty();
+					updateFilterCount();
+			});
+
+			$(".btn_toggle").click(function () {
+					$(".wrap_radio").slideToggle();
+			});
+	}); -->
+    <!-- </script>-->
+
+
+    <script>
+        $(document).ready(function() {
+            function updateFilterCount() {
+                const count = $(".list_selected_filters .item_selected_filter").length;
+                $(".selected_filters h3 span").text(count);
+            }
+
+            $(".checkbox").change(function() {
+                const selectedId = $(this).attr("id");
+                const selectedLabel = $(`label[for="${selectedId}"]`).text();
+
+                if ($(this).is(":checked")) {
+                    if ($(`.list_selected_filters .item_selected_filter[data-id="${selectedId}"]`).length === 0) {
+                        $(".list_selected_filters").append(
+                            `<li class="item_selected_filter" data-id="${selectedId}">${selectedLabel} <button class="btn_remove_filter" data-id="${selectedId}"></button></li>`
+                        );
+                    }
+                } else {
+                    $(`.list_selected_filters .item_selected_filter[data-id="${selectedId}"]`).remove();
+                }
+
+                updateFilterCount();
+            });
+
+            $(".list_selected_filters").on("click", ".btn_remove_filter", function() {
+                const id = $(this).data("id");
+                $(`#${id}`).prop("checked", false);
+                $(this).parent().remove();
+                updateFilterCount();
+            });
+
+            $(".btn_clear_filter").click(function() {
+                $(".checkbox").prop("checked", false);
+                $(".list_selected_filters").empty();
+                updateFilterCount();
+            });
+
+            $(".btn_toggle").click(function() {
+                $(".wrap_filter_group").slideToggle();
+            });
+
+            $('.mob_srch_filter_btn button').on('click', function(){
+                $('.wrap_search_service').show();
+            });
+            $('.wrap_srch_close').on('click', function(){
+                $('.wrap_search_service').hide();
+            });
+
+            const myWinW = $(window).width();
+            if (myWinW >= 1024) {
+                $('.wrap_search_service').show();
+            } else {
+                $('.wrap_search_service').hide();
+                $('.page_saas_search .wrap_filter_group').css({
+                    'display':'block'
+                });
+            }
+
+            $(window).on('resize', function(){
+                const myWinW = $(window).width();
+                if (myWinW >= 1024) {
+                    $('.wrap_search_service').show();
+                } else {
+                    $('.wrap_search_service').hide();
+                    $('.page_saas_search .wrap_filter_group').css({
+                        'display':'block'
+                    });
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
+
+

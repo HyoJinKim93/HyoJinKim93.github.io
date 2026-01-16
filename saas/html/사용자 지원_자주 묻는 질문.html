@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title>자주 묻는 질문&lt;사용자지원&lt;민간 Sass 연계공통기반 통합관리포털</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/output.css" />
+
+    <!-- JS -->
+    <script src="../js/jquery-3.6.3/jquery.min.js"></script>
+    <script src="../js/swiper-5.4.3.min.js"></script>
+    <script src="../js/aos.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/app.js"></script>
+    
+</head>
+
+<body>
+    <div id="wrapper" class="wrapper sub_pages">
+        <!-- 바로가기 메뉴 -->
+        <nav id="skip"></nav>
+
+        <!-- 헤더 -->
+        <header id="header" class="header"></header>
+
+        <!-- 메인  -->
+        <main class="">
+
+            <!-- 본문 외부 영역 -->
+            <section id="content" class="">
+                <div class="page_inner">
+
+                    <!-- 본문 -->
+                    <article class="page page_answer">
+                        <!-- 브레드크럼 -->
+                        <div class="wrap_breadcrumb">
+                            <ul class="breadcrumbs">
+                                <li class="breadcrumbs_item cat_home"><a href="main.html" target="_self" title="메인 페이지로 이동" class="home"></a></li>
+                                <li class="breadcrumbs_item"><a href="사용자 지원_공지사항.html" target="_self" title="페이지 이동">사용자 지원</a></li>
+                                <li class="breadcrumbs_item current_page"><a href="사용자 지원_자주 묻는 질문.html" target="_self" title="페이지 이동">자주 묻는 질문</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="page_content" data-aos="fade-up">
+                            <div class="article_title">
+                                <article class="page_title_area">
+                                    <h2 class="page_title">자주 묻는 질문</h2>
+                                    <h3 class="page_title_sub">민간 SaaS 연계공통기반과 클라우드 정책에 관련된 자료를 공유합니다.</h3>
+                                </article>
+                            </div>
+
+                            <div class="article_content">
+
+                                <!-- 검색 필터  -->
+                                <div class="wrap_search_filter">
+                                    <div class="wrap_select">
+                                        <h3></h3>
+                                        <label for="select01" class="sr_only">검색 필터 목록 선택 열기</label>
+                                        <select name="select01" id="select01" class="select_searchbar">
+                                            <option value="" selected>전체</option>
+                                            <option value="">제목</option>
+                                            <option value="">내용</option>
+                                        </select>
+                                    </div>
+                                    <div class="box_input">
+                                        <label for="inputSearch" class="sr_only">검색어 입력</label>
+                                        <input type="text" id="inputSearch" class="input_text input_searchbar" placeholder="검색어를 입력해주세요.">
+                                    </div>
+                                    <button type="submit" class="btn_submit btn_search">검색</button>
+                                </div>
+
+                                <!-- 검색 결과 -->
+                                <div class="wrap_result_table">
+
+                                    <!-- 테이블 상단 -->
+                                    <div class="box_table_top">
+                                        <div class="area_left">
+                                            <div class="result_num">
+                                                <p>총 <span>18</span>건이 조회되었습니다.</p>
+                                            </div>
+                                        </div>
+                                        <div class="area_right">
+                                            <div class="wrap_select">
+                                                <label for="select02" class="sr_only">항목 표시 개수 선택 목록 열기</label>
+                                                <select name="select02" id="select02" class="select_sort">
+                                                    <option value="" selected>10 개씩</option>
+                                                    <option value="">20 개씩</option>
+                                                    <option value="">30 개씩</option>
+                                                </select>
+                                            </div>
+                                            <button name="" class="btn_submit btn_sort" onclick="">정렬</button>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="pc_table">
+                                        <!--table -->
+                                        <div class="wrap_table" data-aos="fade-up" data-aos-delay="300">
+                                            <table class="table table_user_manage" summary="자주 묻는 질문 게시물 목록">
+                                                <caption>자주 묻는 질문 게시물 목록</caption>
+                                                <colgroup>
+                                                    <col style="width: 162px;">
+                                                    <col style="width: auto;">
+                                                </colgroup>
+                                                <!-- <thead>
+                                                        <tr>
+                                                            <th scope="col">번호</th>
+                                                            <th scope="col">제목</th>
+                                                            <th scope="col">첨부</th>
+                                                            <th scope="col">등록일</th>
+                                                        </tr>
+                                                    </thead> -->
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <span class="badge filled">회원</span>
+                                                        </td>
+                                                        <td>
+                                                            <div class="post_title">
+                                                                <div class="wrap_title_anchor">
+                                                                    <a href="사용자 지원_자주 묻는 질문_상세.html" class="post_title_anchor"><span>Q. </span>[민간 SaaS 기업] 회원가입 시, 서비스 확인 및 입력란에 회사가 없으면 어떻게 하나요?</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span class="badge filled">회원</span>
+                                                        </td>
+                                                        <td>
+                                                            <div class="post_title">
+                                                                <div class="wrap_title_anchor">
+                                                                    <a href="사용자 지원_자주 묻는 질문_상세.html" class="post_title_anchor"><span>Q. </span>아이디/비밀번호가 기억나지 않습니다. 어떻게 하나요?</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span class="badge filled">서비스</span>
+                                                        </td>
+                                                        <td>
+                                                            <div class="post_title">
+                                                                <div class="wrap_title_anchor">
+                                                                    <a href="사용자 지원_자주 묻는 질문_상세.html" class="post_title_anchor"><span>Q. </span>전자정부 연계 SaaS 이용 계획이 없거나, 계약 체결이 안 된 경우 회원 가입이 가능한가요?</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span class="badge filled">운영지원</span>
+                                                        </td>
+                                                        <td>
+                                                            <div class="post_title">
+                                                                <div class="wrap_title_anchor">
+                                                                    <a href="사용자 지원_자주 묻는 질문_상세.html" class="post_title_anchor"><span>Q. </span>'고객 확인 대상자' 라는 알림을 받았어요, 어떤 내용인가요?</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="mob_board">
+                                        <div class="wrap_board_list">
+                                            <ul class="board_list">
+                                                <li class="board_item">
+                                                    <a href="사용자 지원_자주 묻는 질문_상세.html" target="_self" title="페이지 이동" class="board_anchor">
+                                                        <div class="type_board_post">
+                                                            <div class="board_cnt">
+                                                                <div class="post_title">
+                                                                    <div class="post_num">
+                                                                        <span class="badge filled">회원</span>
+                                                                    </div>
+                                                                    <div class="post_title_item">
+                                                                        <p class="post_title_txt">Q. [민간 SaaS 기업] 회원가입 시, 서비스 확인 및 입력란에 회사가 없으면 어떻게 하나요?</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="board_item">
+                                                    <a href="사용자 지원_자주 묻는 질문_상세.html" target="_self" title="페이지 이동" class="board_anchor">
+                                                        <div class="type_board_post">
+                                                            <div class="board_cnt">
+                                                                <div class="post_title">
+                                                                    <div class="post_num">
+                                                                        <span class="badge filled">회원</span>
+                                                                    </div>
+                                                                    <div class="post_title_item">
+                                                                        <p class="post_title_txt">Q. 아이디/비밀번호가 기억나지 않습니다. 어떻게 하나요?</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="board_item">
+                                                    <a href="사용자 지원_자주 묻는 질문_상세.html" target="_self" title="페이지 이동" class="board_anchor">
+                                                        <div class="type_board_post">
+                                                            <div class="board_cnt">
+                                                                <div class="post_title">
+                                                                    <div class="post_num">
+                                                                        <span class="badge filled">서비스</span>
+                                                                    </div>
+                                                                    <div class="post_title_item">
+                                                                        <p class="post_title_txt">Q. 전자정부 연계 SaaS 이용 계획이 없거나, 계약 체결이 안 된 경우 회원 가입이 가능한가요?</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="board_item">
+                                                    <a href="사용자 지원_자주 묻는 질문_상세.html" target="_self" title="페이지 이동" class="board_anchor">
+                                                        <div class="type_board_post">
+                                                            <div class="board_cnt">
+                                                                <div class="post_title">
+                                                                    <div class="post_num">
+                                                                        <span class="badge filled">서비스</span>
+                                                                    </div>
+                                                                    <div class="post_title_item">
+                                                                        <p class="post_title_txt">	
+                                                                            Q. '고객 확인 대상자' 라는 알림을 받았어요, 어떤 내용인가요?</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <!-- pagenation -->
+                                    <div class="wrap_pagenation">
+                                        <ul class="pagination_list">
+                                            <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor page_arrow prev first"></a></li>
+                                            <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor currently">1</a></li>
+                                            <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor">2</a></li>
+                                            <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor page_arrow next last"></a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="wrap_box_info">
+                            <div class="box_info">
+                                <div class="box_top">
+                                    <h2>이용 안내</h2>
+                                    <p>찾는 내용이 없으셨나요?<br>
+                                        더 궁금한 사항이 있으시면 <br class="only_mob" />통합관리포털 운영지원센터로 연락주세요.</p>
+                                </div>
+                                <div class="box_bottom">
+                                    <div class="box_tel">
+                                        <p>통합관리포털 운영지원센터</p>
+                                        <h3>070-7893-5158</h3>
+                                    </div>
+                                    <div class="box_time">
+                                        <p>운영시간</p>
+                                        <h3>월~금: 오전 9시~오후 5시</h3>
+                                        <h3>토, 일, 공휴일: 휴무</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <!-- 본문 end  -->
+            </section>
+            <!-- 본문 외부 영역 end-->
+        </main>
+        <!-- 전체 영역 end  -->
+
+        <footer id="footer" class="footer"></footer>
+    </div>
+
+  <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

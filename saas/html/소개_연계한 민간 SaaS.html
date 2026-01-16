@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title>연계한 민간 SaaS&lt;소개&lt;민간 Sass 연계공통기반 통합관리포털</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/output.css" />
+
+    <!-- JS -->
+    <script src="../js/jquery-3.6.3/jquery.min.js"></script>
+    <script src="../js/swiper-5.4.3.min.js"></script>
+    <script src="../js/aos.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/service_card.js"></script>
+    
+</head>
+
+<body>
+    <div id="wrapper" class="wrapper sub_pages">
+        <!-- 바로가기 메뉴 -->
+        <nav id="skip"></nav>
+
+        <!-- 헤더 -->
+        <header id="header" class="header"></header>
+
+        <!-- 메인  -->
+        <main class="">
+
+            <!-- 본문 외부 영역 -->
+            <section id="content" class="page_centered page_connetedPrSaas">
+
+                <!-- 본문 -->
+                <article class="page">
+                    <!-- 브레드크럼 -->
+                    <div class="wrap_breadcrumb">
+                        <ul class="breadcrumbs">
+                            <li class="breadcrumbs_item cat_home"><a href="main.html" target="_self" title="메인 페이지로 이동" class="home"></a></li>
+                            <li class="breadcrumbs_item"><a href="소개_민간SaaS연계공통기반이란.html" target="_self" title="페이지 이동">소개</a></li>
+                            <li class="breadcrumbs_item current_page"><a href="소개_민간SaaS연계공통기반이란.html" target="_self" title="페이지 이동">민간 SaaS 연계공통기반이란?</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="page_content">
+                        <div class="article_title">
+                            <article class="page_title_area">
+                                <h2 class="page_title">연계한 민간 SaaS</h2>
+                                <h3 class="page_title_sub">민간 SaaS 연계공통기반에서 전자정부 연계 SaaS와<br class="block_768"/> 연계한 공공용 민간 SaaS를 소개합니다.</h3>
+                            </article>
+                        </div>
+
+                        <div class="article_content">
+
+                            <div class="wrap_article select_area">
+                                <article class="contents_wrap">    
+                                    <div class="wrap_select_box">
+                                        <h3>전자정부 연계 SaaS와 연계한 민간 SaaS를 찾아보세요</h3>
+                                        <label for="select_govSaas_name" class="sr_only">전자정부 연계 SaaS 선택 목록 열기 : </label>                          
+                                        <select name="select_govSaas" id="select_govSaas_name" class="select_govSaas_name">
+                                            <option value="all_case" selected>전체</option>
+                                            <option value="idCard">모바일 공무원증</option>
+                                            <option value="dirSys">정부디렉터리(LDAP)</option>
+                                            <option value="codeSys">행정표준코드</option>
+                                            <option value="gpki">행정전자서명(GPKI)</option>                                         
+                                        </select>
+                                    </div>                                             
+                                </article>
+                            </div>
+
+                            <div class="wrap_article card_grid" data-aos="fade-down" data-aos-delay="200">
+                                <article class="contents_wrap">    
+                                    <div class="service_list">
+                                        <div class="case_card card_dooray idCard codeSys dirSys"></div>
+                                        <div class="case_card card_videoHelpMe idCard"></div>
+                                        <div class="case_card card_nlobby codeSys"></div>
+                                        <div class="case_card card_eCheckForm codeSys"></div>
+                                        <div class="case_card card_eFormSign dirSys"></div>
+                                        <div class="case_card card_crinityGMail codeSys"></div>
+                                        <div class="case_card card_mailplugGMail codeSys"></div>
+                                        <div class="case_card card_GSmartlink dirSys"></div>
+                                        <div class="case_card card_ktAiContact dirSys"></div>
+                                        <div class="case_card card_ktBizmeet codeSys"></div>
+                                        <div class="case_card card_ktBizworkspro idCard dirSys"></div>
+                                        <div class="case_card card_naverworks idCard dirSys"></div>   
+                                        <div class="case_card card_pams idCard"></div>   
+                                        <div class="case_card card_sgate idCard dirSys"></div>   
+                                        <div class="case_card card_zeniusEms idCard dirSys"></div>   
+                                    </div>
+
+                                <!-- 카드별 애니메이션 적용시: 셀렉트 박스로 조건 선택 시 카드가 표시되지 않음 --> 
+                                <!--   <div class="service_list">
+                                        <div class="case_card card_dooray idCard codeSys dirSys" data-aos="fade-down" data-aos-delay="100"></div>
+                                        <div class="case_card card_videoHelpMe idCard" data-aos="fade-down" data-aos-delay="100"></div>
+                                        <div class="case_card card_nlobby codeSys" data-aos="fade-down" data-aos-delay="100"></div>
+                                        <div class="case_card card_eCheckForm codeSys" data-aos="fade-down" data-aos-delay="100"></div>
+                                        <div class="case_card card_eFormSign dirSys" data-aos="fade-down" data-aos-delay="300"></div>
+                                        <div class="case_card card_crinityGMail codeSys" data-aos="fade-down" data-aos-delay="300"></div>
+                                        <div class="case_card card_mailplugGMail codeSys" data-aos="fade-down" data-aos-delay="300"></div>
+                                        <div class="case_card card_GSmartlink dirSys" data-aos="fade-down" data-aos-delay="300"></div>
+                                        <div class="case_card card_ktAiContact dirSys" data-aos="fade-down" data-aos-delay="300"></div>
+                                        <div class="case_card card_ktBizmeet codeSys" data-aos="fade-down" data-aos-delay="300"></div>
+                                        <div class="case_card card_ktBizworkspro idCard dirSys" data-aos="fade-down" data-aos-delay="300"></div>
+                                        <div class="case_card card_naverworks idCard dirSys" data-aos="fade-down" data-aos-delay="300"></div>   
+                                        <div class="case_card card_pams idCard" data-aos="fade-down" data-aos-delay="300"></div>   
+                                        <div class="case_card card_sgate idCard dirSys" data-aos="fade-down" data-aos-delay="300"></div>   
+                                        <div class="case_card card_zeniusEms idCard dirSys" data-aos="fade-down" data-aos-delay="300"></div>   
+                                    </div> -->
+                                </article>
+                            </div>
+
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 본문 end  -->
+            </section>
+            <!-- 본문 외부 영역 end-->
+        </main>
+        <!-- 전체 영역 end  -->
+
+        <footer id="footer" class="footer"></footer>
+
+    </div>
+
+    <script>
+        AOS.init();
+        // 콤보 박스 기업명 선택
+        $('select[name="select_govSaas"]').on('change', function () {
+            var value = $(this).val();
+            $('.idCard, .dirSys, .codeSys, .gpki').css({ 'display': 'none' });
+
+            if (value != 'all_case') {
+                $('.' + value).css({ 'display': 'block' });
+                var scrollTop = $('.' + value).offset().top - 100;
+                $('html, body').animate({ scrollTop: scrollTop }, 500); // 스크롤 애니메이션
+            } else {
+                $('.idCard, .dirSys, .codeSys, .gpki').css({ 'display': 'block' });
+            }
+        });
+    </script>
+</body>
+
+</html>

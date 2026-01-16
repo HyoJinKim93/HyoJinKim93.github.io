@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title>자료실&lt;사용자지원&lt;민간 Sass 연계공통기반 통합관리포털</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/output.css" />
+
+    <!-- JS -->
+    <script src="../js/jquery-3.6.3/jquery.min.js"></script>
+    <script src="../js/swiper-5.4.3.min.js"></script>
+    <script src="../js/aos.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/app.js"></script>
+
+</head>
+
+<body>
+    <div id="wrapper" class="wrapper sub_pages">
+        <!-- 바로가기 메뉴 -->
+        <nav id="skip"></nav>
+
+        <!-- 헤더 -->
+        <header id="header" class="header"></header>
+
+        <!-- 메인  -->
+        <main class="">
+
+            <!-- 본문 외부 영역 -->
+            <section id="content" class="">
+                <div class="page_inner">
+
+                    <!-- 본문 -->
+                    <article class="page page_notice">
+                        <!-- 브레드크럼 -->
+                        <div class="wrap_breadcrumb">
+                            <ul class="breadcrumbs">
+                                <li class="breadcrumbs_item cat_home"><a href="main.html" target="_self" title="메인 페이지로 이동" class="home"></a></li>
+                                <li class="breadcrumbs_item"><a href="사용자 지원_공지사항.html" target="_self" title="페이지 이동">사용자 지원</a></li>
+
+                            </ul>
+                        </div>
+
+                        <div class="page_content">
+                            <div class="article_title">
+                                <article class="page_title_area">
+                                    <h2 class="page_title">자료실</h2>
+                                    <h3 class="page_title_sub">민간 SaaS 연계공통기반과 클라우드 정책에 관련된 자료를 공유합니다.</h3>
+                                </article>
+                            </div>
+
+                            <div class="article_content">
+
+                                <!-- 검색 필터  -->
+                                <div class="wrap_search_filter">
+                                    <div class="wrap_select">
+                                        <h3></h3>
+                                        <label for="select01" class="sr_only">검색 필터 목록 선택 열기</label>
+                                        <select name="select01" id="select01" class="select_searchbar">
+                                            <option value="" selected>전체</option>
+                                            <option value="">제목</option>
+                                            <option value="">내용</option>
+                                        </select>
+                                    </div>
+                                    <div class="box_input">
+                                        <label for="inputSearch" class="sr_only">검색어 입력</label>
+                                        <input type="text" id="inputSearch" class="input_text input_searchbar" placeholder="검색어를 입력해주세요.">
+                                    </div>
+                                    <button type="submit" class="btn_submit btn_search">검색</button>
+                                </div>
+
+                                <!-- 검색 결과 -->
+                                <div class="wrap_result_table">
+
+                                    <!-- 테이블 상단 -->
+                                    <div class="box_table_top">
+                                        <div class="area_left">
+                                            <div class="result_num">
+                                                <p>총 <span>23</span>건이 조회되었습니다.</p>
+                                            </div>
+                                        </div>
+                                        <div class="area_right">
+                                            <div class="wrap_select">
+                                                <label for="select02" class="sr_only">항목 표시 개수 선택 목록 열기</label>
+                                                <select name="select02" id="select02" class="select_sort">
+                                                    <option value="" selected>10 개씩</option>
+                                                    <option value="">20 개씩</option>
+                                                    <option value="">30 개씩</option>
+                                                </select>
+                                            </div>
+                                            <button name="" class="btn_submit btn_sort" onclick="">정렬</button>
+                                        </div>
+                                    </div>
+
+                                    <!--table -->
+                                    <div class="wrap_table" data-aos="fade-up" data-aos-delay="300">
+                                        <table class="table table_user_manage" summary="자료실 목록">
+                                            <caption>자료실 목록</caption>
+                                            <colgroup>
+                                                <col style="width: 155px;">
+                                                <col style="width: auto;">
+                                                <col style="width: 180px;">
+                                                <col style="width: 155px;">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">번호</th>
+                                                    <th scope="col">제목</th>
+                                                    <th scope="col">첨부</th>
+                                                    <th scope="col">등록일</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <span>20</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="post_title">
+                                                            <div class="wrap_title_anchor">
+                                                                <a class="post_title_anchor">[행정·공공기관 클라우드전환] CSAP 인증을 받은 SaaS 목록 안내(‘24.11)</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <p class="icon_file"></p>
+                                                    </td>
+                                                    <td>
+                                                        <span>2025-01-12</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span>19</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="post_title">
+                                                            <div class="wrap_title_anchor">
+                                                                <a class="post_title_anchor">[행정·공공기관 클라우드전환] CSAP 인증을 받은 SaaS 목록 안내(‘24.10)</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+
+                                                    </td>
+                                                    <td>
+                                                        <span>2025-01-12</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span>18</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="post_title">
+                                                            <div class="wrap_title_anchor">
+                                                                <a class="post_title_anchor">[행정·공공기관 클라우드전환] CSAP 인증을 받은 SaaS 목록 안내(‘24.09)</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <p class="icon_file"></p>
+                                                    </td>
+                                                    <td>
+                                                        <span>2025-01-12</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span>17</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="post_title">
+                                                            <div class="wrap_title_anchor">
+                                                                <a class="post_title_anchor">[행정·공공기관 클라우드전환] CSAP 인증을 받은 SaaS 목록 안내(‘24.08)</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <p class="icon_file"></p>
+                                                    </td>
+                                                    <td>
+                                                        <span>2025-01-12</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span>16</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="post_title">
+                                                            <div class="wrap_title_anchor">
+                                                                <a class="post_title_anchor">민간 SaaS 연계공통기반 이용 가이드</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <p class="icon_file"></p>
+                                                    </td>
+                                                    <td>
+                                                        <span>2025-01-12</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span>15</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="post_title">
+                                                            <div class="wrap_title_anchor">
+                                                                <a class="post_title_anchor">공공용 민간 SaaS 발굴·공개 발표 자료</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <p class="icon_file"></p>
+                                                    </td>
+                                                    <td>
+                                                        <span>2025-01-12</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span>14</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="post_title">
+                                                            <div class="wrap_title_anchor">
+                                                                <a class="post_title_anchor">2025년 클라우드 사업 통합설명회 안내</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <p class="icon_file"></p>
+                                                    </td>
+                                                    <td>
+                                                        <span>2025-01-12</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span>13</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="post_title">
+                                                            <div class="wrap_title_anchor">
+                                                                <a class="post_title_anchor">서비스 신청서 양식</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <p class="icon_file"></p>
+                                                    </td>
+                                                    <td>
+                                                        <span>2025-01-12</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span>12</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="post_title">
+                                                            <div class="wrap_title_anchor">
+                                                                <a class="post_title_anchor">근거자료 확인서</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <p class="icon_file"></p>
+                                                    </td>
+                                                    <td>
+                                                        <span>2025-01-12</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span>11</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="post_title">
+                                                            <div class="wrap_title_anchor">
+                                                                <a class="post_title_anchor">근거자료 확인서</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <p class="icon_file"></p>
+                                                    </td>
+                                                    <td>
+                                                        <span>2025-01-12</span>
+                                                    </td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <!-- pagenation -->
+                                    <div class="wrap_pagenation">
+                                        <ul class="pagination_list">
+                                            <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor page_arrow prev first"></a></li>
+                                            <!-- <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor page_arrow prev"></a></li> -->
+                                            <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor currently">1</a></li>
+                                            <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor">2</a></li>
+                                            <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor page_arrow next last"></a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <!-- 본문 end  -->
+            </section>
+            <!-- 본문 외부 영역 end-->
+        </main>
+        <!-- 전체 영역 end  -->
+
+        <footer id="footer" class="footer">
+            <footer id="footer" class="footer">
+                <div class="area_sites">
+                    <div class="inner">
+                        <div class="wrap_select_family"><a href="javascript:;" class="rel_link_sel" title="관련기관 목록 열기">관련기관</a>
+                            <ul>
+                                <li><a href="https://www.gov.kr/portal/main/nologin" target="_blank" title="새 창 열림- 정부24">정부24</a></li>
+                                <li><a href="https://www.ips.go.kr/pot/forwardMain.do" target="_blank" title="새 창 열림- 국민비서">국민비서</a></li>
+                                <li><a href="https://www.nia.or.kr/site/nia_kor/main.do" target="_blank" title="새 창 열림- <li><a href=" https:="" www.dpg.go.kr="" dpg="" main="" index.do"="" www.mois.go.kr="" frt="" a01="" frtmain.do"="">행정안전부</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="area_info">
+                    <div class="inner">
+                        <div class="wrap_logo"><img src="../img/logo/Ministry_of_the_Interior_and_Safety_of_the_Republic_of_Korea_Logo_(horizontal).png" alt="행정안전부"><img src="../img/logo/logo_nia_" alt="한국지능정보사회진흥원"></div>
+                        <div class="wrap_address">
+                            <ul class="list_address">
+                                <li class="list_address_item">(30112) 세종특별자치시 도움6로 42</li>
+                                <li class="list_address_item">문의 070-7893-5158 (월~금 09:00~17:00 / 토,일 공휴일 휴무)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="area_links">
+                    <div class="inner">
+                        <div class="wrap_links"><a href="javascript:;" class="rel_link" target="_blank" title="새 창 열림-포털 이용약관">포털 이용약관</a><a href="javascript:;" class="rel_link color_blue_light" target="_blank" title="새 창 열림-개인정보처리방침">개인정보처리방침</a><a href="javascript:;" class="rel_link" target="_blank" title="새 창 열림-웹 접근성 품질인증 마크 획득">웹 접근성 품질인증 마크 획득</a></div>
+                        <div class="wrap_copyright"><p>© Ministry of the Interior and Safety. All rights reserved.</p></div>
+                    </div>
+                </div>
+            </footer><!-- 최상단 이동 -->
+            <div class="wrap_side_btn"><a href="사용자 지원_기술지원.html" aria-label="기술지원 바로가기" class="btn_side_sup btn_side_sup01"><p>기술지원</p></a><a href="javascript:;" aria-label="챗봇 문의, 검색 바로가기" class="btn_side_sup btn_side_sup02"><p>챗봇 문의 · 검색</p></a><a href="#wrapper" aria-label="최상단으로 이동" class="btn_side_sup btn_side_sup03 btn_top show"><span class="sr_only">최상단으로 이동</span></a></div>
+        </footer>
+
+    </div>
+
+
+
+
+    let header = "";
+
+    <div class="header_inner">
+        <div class="nav_dim"></div>
+        <div class="wrap_gnb">
+            <div class="area_top">
+                <div class="area_top_inner">
+                    <div class="top_line_bnr">
+                        <div class="top_link_wrap top_link_wrap_inner">
+                            <div class="top_inner">
+                                <div class="top_flag_wrap"><p class="top_flag_in">이 누리집은 대한민국 공식 전자정부 누리집입니다.</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="box_btns">
+                        <li><a href="javascript:;" target="_self" class="user_anchor" title="로그인 페이지로 이동">로그인</a></li>
+                        <li><a href="javascript:;" target="_self" class="user_anchor" title="회원가입 페이지로 이동">회원가입</a></li>
+                        <li><a href="누리집 이용 안내_누리집안내지도.html" target="_self" class="user_anchor" title="누리집안내지도 페이지로 이동">누리집안내지도</a></li>
+                        <li class="box_btn_zoom"><span>화면크기</span>
+                            <button onclick="javascript:zoomControl.zoomIn()" class="btn_zoom in" aria-label="화면 확대"></button>
+                            <button onclick="javascript:zoomControl.zoomOut()" class="btn_zoom out" aria-label="화면 축소"></button>
+                            <button onclick="javascript:zoomControl.zoomReset()" class="btn_zoom reset" aria-label="화면크기 초기화"></button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="area_menu">
+                <div class="area_menu_inner">
+                    <div class="wrap_logo">
+                        <div class="logo"><a class="logo_anchor" aria-label="메인페이지 이동" href="main.html"></a></div>
+                    </div>
+                    <div class="wrap_menus">
+                        <div class="area_state">
+                            <button type="button" class="btn_close_menu" aria-label="메뉴 닫기"></button>
+                            <div class="user_info">
+                                <div class="logo_lnb"><img src="../img/logo/logo_saas.png" alt="민간 SaaS 연계공통기반 통합관리포털 플랫폼 로고" /></div>
+                                <div class="box_state state_login_before">
+                                    <!-- 로그인 전 -->
+                                    <div class="user_info">
+                                        <p class="user_greet">김길동님 안녕하세요</p>
+                                        <div class="mob_login_btn_wrap">
+                                            <a class="white" href="javascript:;">회원가입</a>
+                                            <a class="navy" href="javascript:;">로그인</a>
+                                        </div>
+                                    </div>
+                                    <!-- 로그인 전 end -->
+                                </div>
+                            </div>
+                        </div>
+                        <nav id="gnb" class="wrap_group menu_text">
+                            <div class="lnb_drop_menu">
+                                <h2 class="sr_only">주메뉴</h2>
+                                <ul class="lnb_list">
+                                    <li class="depth01">
+                                        <div class="depth01_item"><a href="javascript:;" class="depth01_item_anchor" target="_self">소개</a></div>
+                                        <div class="depth02_content">
+                                            <div class="depth02_inner">
+                                                <div class="depth02_title">
+                                                    <h3>소개</h3>
+                                                </div>
+                                                <ul class="depth02">
+                                                    <li class="depth02_item"><a href="소개_민간SaaS연계공통기반이란.html" class="depth02_item_anchor" target="_self">민간 SaaS 연계공통기반이란?</a></li>
+                                                    <li class="depth02_item"><a href="소개_연계한 민간 SaaS.html" class="depth02_item_anchor" target="_self">연계한 민간 SaaS</a></li>
+                                                    <li class="depth02_item"><a href="소개_통합관리포털소개.html" class="depth02_item_anchor" target="_self">통합관리포털 소개</a></li>
+                                                    <li class="depth02_item"><a href="소개_이용절차.html" class="depth02_item_anchor" target="_self">연계 서비스 이용 절차</a></li>
+                                                    <li class="depth02_item"><a href="소개_이용신청.html" class="depth02_item_anchor" target="_self">연계 서비스 이용 신청</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="depth01">
+                                        <div class="depth01_item"><a href="javascript:;" class="depth01_item_anchor" target="_self">전자정부 연계 SaaS</a></div>
+                                        <div class="depth02_content">
+                                            <div class="depth02_inner">
+                                                <div class="depth02_title">
+                                                    <h3>전자정부 연계 SaaS</h3>
+                                                </div>
+                                                <ul class="depth02">
+                                                    <li class="depth02_item"><a href="전자정부 연계 SaaS_모바일 공무원증.html" class="depth02_item_anchor" target="_self">모바일공무원증</a></li>
+                                                    <li class="depth02_item"><a href="전자정부 연계 SaaS_정부디렉터리LDAP.html" class="depth02_item_anchor" target="_self">정부디렉터리 (LDAP)</a></li>
+                                                    <li class="depth02_item"><a href="전자정부 연계 SaaS_행정표준코드.html" class="depth02_item_anchor" target="_self">행정표준코드</a></li>
+                                                    <li class="depth02_item"><a href="전자정부 연계 SaaS_행정전자서명(GPKI).html" class="depth02_item_anchor" target="_self">행정전자서명(GPKI)</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="depth01">
+                                        <div class="depth01_item"><a href="javascript:;" class="depth01_item_anchor" target="_self">공공용 민간 SaaS</a></div>
+                                        <div class="depth02_content">
+                                            <div class="depth02_inner">
+                                                <div class="depth02_title">
+                                                    <h3>공공용 민간 SaaS</h3>
+                                                </div>
+                                                <ul class="depth02">
+                                                    <li class="depth02_item"><a href="공공용 민간 SaaS.html" class="depth02_item_anchor" target="_self">공공용 민간 SaaS</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="depth01">
+                                        <div class="depth01_item"><a href="javascript:;" class="depth01_item_anchor" target="_self">사용자 지원</a></div>
+                                        <div class="depth02_content">
+                                            <div class="depth02_inner">
+                                                <div class="depth02_title">
+                                                    <h3>사용자 지원</h3>
+                                                </div>
+                                                <ul class="depth02">
+                                                    <li class="depth02_item"><a href="사용자 지원_공지사항.html" class="depth02_item_anchor" target="_self">공지사항</a></li>
+                                                    <li class="depth02_item"><a href="사용자 지원_자주 묻는 질문.html" class="depth02_item_anchor" target="_self">자주묻는 질문</a></li>
+                                                    <li class="depth02_item"><a href="사용자 지원_자료실.html" class="depth02_item_anchor" target="_self">자료실</a></li>
+                                                    <li class="depth02_item"><a href="사용자 지원_기술지원.html" class="depth02_item_anchor" target="_self">기술지원</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="box_btn_util">
+                        <div class="box_btn_item">
+                            <button type="button" id="btn_util_search" class="btn_util_search" aria-label="홈페이지 내 검색 열기"></button>
+                        </div>
+                        <div class="box_btn_item"><a class="btn_util_ham" aria-label="메뉴 열기"></a></div>
+                    </div>
+                    <!-- <div class="wrap_gnb_search">
+<div class="gnb_search">
+<input type="text" name="searchWord" class="input_search_gnb" placeholder="검색어를 입력해 주세요." aria-label="검색어" title="통합 검색어를 입력해주세요." value="">
+<button type="submit" class="btn_search_gnb" aria-label="홈페이지 내 검색"></button>
+</div>
+</div> -->
+                    <div class="wrap_search">
+                        <form name="" id="" method="" action="" class="search_form">
+                            <fieldset class="search_fieldset">
+                                <legend>통합검색</legend>
+                                <p>검색어를 입력해 주세요.</p>
+                                <input type="search" name="" id="" class="search_input" title="검색어입력창" placeholder="검색어를 입력해보세요.">
+                                // <button type="submit" class="search_submit" aria-label="홈페이지 내 검색" onclick="location.href=\'통합검색.html\'"></button>
+                                <button type="button" class="search_submit" aria-label="홈페이지 내 검색" onclick="location.href=\'통합검색.html\'"></button>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <!-- 모바일 검색 영역 -->
+                    <div class="mob_wrap_search">
+                        <div class="search_top">
+                            <h1>민간 SaaS 연계공통기반 통합관리포털</h1>
+                            <button type="button">닫기</button>
+                        </div>
+                        <strong class="mob_wrap_srch_ttl">통합검색</strong>
+                        <fieldset>
+                            <label for="srchIn">검색어를 입력해 주세요.</label>
+                            <p class="mob_wrap_srch_input">
+                                <input id="srchIn" name="" type="text" />
+                                <button type="button"></button>
+                            </p>
+                        </fieldset>
+                    </div>
+                    <!-- 모바일 검색 영역 end -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    let footer = "";
+    // <footer id="footer" class="footer">
+        <div class="area_sites">
+            <div class="inner">
+                <div class="wrap_select_family">
+                    <a href="javascript:;" class="rel_link_sel" title="관련기관 목록 열기">관련기관</a>
+                    <ul>
+                        <li><a href="https://www.gov.kr/portal/main/nologin" target="_blank" title="새 창 열림- 정부24">정부24</a></li>
+                        <li><a href="https://www.ips.go.kr/pot/forwardMain.do" target="_blank" title="새 창 열림- 국민비서">국민비서</a></li>
+                        <li><a href="https://www.nia.or.kr/site/nia_kor/main.do" target="_blank" title="새 창 열림- 한국지능정보사회진흥원">한국지능정보사회진흥원</a></li>
+                        <li><a href="https://www.dpg.go.kr/DPG/main/index.do" target="_blank" title="새 창 열림- 디지털플랫폼정부위원회">디지털플랫폼정부위원회</a></li>
+                        <li><a href="https://www.mois.go.kr/frt/a01/frtMain.do" target="_blank" title="새 창 열림- 행정안전부">행정안전부</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="area_info">
+            <div class="inner">
+                <div class="wrap_logo">
+                    <img src="../img/logo/Ministry_of_the_Interior_and_Safety_of_the_Republic_of_Korea_Logo_(horizontal).png" alt="행정안전부">
+                    <img src="../img/logo/logo_nia_wt.svg" alt="한국지능정보사회진흥원">
+                </div>
+                <div class="wrap_address">
+                    <ul class="list_address">
+                        <li class="list_address_item">(30112) 세종특별자치시 도움6로 42</li>
+                        <li class="list_address_item">문의 070-7893-5158 (월~금 09:00~17:00 / 토,일 공휴일 휴무)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="area_links">
+            <div class="inner">
+                <div class="wrap_links">
+                    <a href="누리집 이용 안내_포털이용약관.html" class="rel_link" target="_self" title="포털 이용약관 페이지로 이동">포털 이용약관</a>
+                    <a href="누리집 이용 안내_개인정보처리방침.html" class="rel_link color_blue_light" target="_self" title="개인정보처리방침 페이지로 이동">개인정보처리방침</a>
+                    <a href="javascript:;" class="rel_link" target="_self" title="웹 접근성 품질인증 마크 획득 페이지로 이동">웹 접근성 품질인증 마크 획득</a>
+                </div>
+                <div class="wrap_copyright">
+                    <p>Copyright@ 한국지능정보사회진흥원 All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        //
+    </footer>
+
+    let sideBtn = "";
+    <!-- 최상단 이동 -->
+    <div class="wrap_side_btn" id="quick">
+        <a href="사용자 지원_기술지원.html" aria-label="기술지원 바로가기" class="btn_side_sup btn_side_sup01"><p>기술지원</p></a>
+        <a href="javascript:;" aria-label="챗봇 문의, 검색 바로가기" class="btn_side_sup btn_side_sup02"><p>챗봇 문의 · 검색</p></a>
+        <a href="#wrapper" aria-label="최상단으로 이동" class="btn_side_sup btn_side_sup03 btn_top"><span class="sr_only">최상단으로 이동</span></a>
+    </div>
+
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

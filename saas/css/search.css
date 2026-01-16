@@ -1,0 +1,478 @@
+@charset "UTF-8";
+/* opacity color */
+/* font color */
+/* Bg, border color */
+.flex_center {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* font size */
+.page_search .area_left {
+  display: flex;
+}
+.page_search .area_left .wrap_result_num {
+  padding-left: 5.8rem;
+  position: relative;
+  margin-left: 0;
+  font-size: initial;
+}
+.page_search .area_left .wrap_result_num::before {
+  content: "/";
+  display: block;
+  position: absolute;
+  width: 1rem;
+  height: 1.8rem;
+  left: 3.2rem;
+}
+.page_search .result_keyword {
+  background-color: #bff0f5;
+}
+
+.wrap_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrap_title .btn_action {
+  width: 13rem;
+}
+.wrap_title .result_num {
+  color: #2d3981;
+}
+
+.area_tab {
+  position: relative;
+}
+.area_tab .wrap_tab_button {
+  display: flex;
+  width: 100%;
+  padding: 4rem 3.9rem;
+  border-radius: 2rem;
+  background-color: #e7ebf7;
+  font-family: "NotoSansBold", "나눔바른고딕", "NanumBarunGothic", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  margin-bottom: 6rem;
+}
+.area_tab .wrap_tab_button .tab_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  height: 6rem;
+  text-align: center;
+  font-size: 22px;
+  border: 1px solid #ededed;
+  cursor: pointer;
+  background-color: #fff;
+}
+.area_tab .wrap_tab_button .tab_button:nth-of-type(1) {
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+.area_tab .wrap_tab_button .tab_button:nth-last-of-type(1) {
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+.area_tab .wrap_tab_button .tab_button:nth-of-type(3) {
+  border-left: none;
+}
+.area_tab .wrap_tab_button .tab_button:nth-of-type(4) {
+  border-left: none;
+}
+.area_tab .wrap_tab_button .tab_button:nth-of-type(5) {
+  border-left: none;
+}
+.area_tab .wrap_tab_button .tab_button.active {
+  background-color: #303984;
+  border-color: #303984;
+  color: #fff;
+}
+.area_tab .wrap_tab_content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 16rem;
+}
+.area_tab .wrap_tab_content .tab_content {
+  width: 100%;
+  position: relative;
+  display: none;
+}
+.area_tab .wrap_tab_content .tab_content.active {
+  display: block;
+}
+
+/* 검색결과 box */
+.wrap_title {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 3rem;
+}
+.wrap_title .title_leftCircle {
+  margin-bottom: 0;
+}
+
+.wrap_result_num {
+  margin-left: 2rem;
+  font-size: 1.8rem;
+  font-family: "NotoSansRegular", "나눔바른고딕", "NanumBarunGothic", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.btn_more {
+  width: 13rem;
+  height: 3.4rem;
+  border-radius: 1.7rem;
+  font-size: 1.6rem;
+  font-family: "NotoSansMedium", "나눔바른고딕", "NanumBarunGothic", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  text-indent: 1.9rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  line-height: 3.2rem;
+  color: #2e3a84;
+  border: 1px solid #2e3a84;
+  margin-left: auto;
+}
+.btn_more::after {
+  content: "";
+  position: absolute;
+  right: 1.6rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0.9rem;
+  height: 1.6rem;
+  background-image: url("../img/icon/icon_chevron_right_navy.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.list_notice .result_content_box {
+  display: flex;
+  align-items: center;
+}
+
+.list_archive .result_content_box .wrap_content_txt .result_content_cnt {
+  margin-top: 2.5rem;
+}
+
+.wrap_result_content {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.wrap_result_content .wrap_result_table {
+  padding-top: 0;
+}
+.wrap_result_content .result_content_box {
+  padding: 2.9rem 4rem 2.9rem 3.9rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(37, 53, 121, 0.1);
+}
+.wrap_result_content .result_content_box .wrap_content_txt .result_content_tit {
+  font-size: 2.4rem;
+  font-family: "NotoSansBold", "나눔바른고딕", "NanumBarunGothic", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+.wrap_result_content .result_content_box .wrap_content_txt .result_content_tit .notice_day {
+  font-size: 1.6rem;
+  color: #777777;
+  margin-left: 2rem;
+  font-family: "NotoSansRegular", "나눔바른고딕", "NanumBarunGothic", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+.wrap_result_content .result_content_box .wrap_content_txt .result_content_cnt {
+  font-size: 1.8rem;
+  font-family: "NotoSansLight", "나눔바른고딕", "NanumBarunGothic", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  margin-bottom: 1.7rem;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  line-height: 1.5;
+  text-align: left;
+  word-wrap: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  width: 100%;
+}
+.wrap_result_content .result_content_box .wrap_thumb {
+  flex-shrink: 0;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 2rem;
+  width: 24rem;
+  height: 18rem;
+  border: 1px solid #ccc;
+  margin-left: 3.2rem;
+}
+.wrap_result_content .result_content_box .wrap_thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.wrap_result_content .result_content_box .result_content_attached {
+  padding: 1.3rem 2rem;
+  border-radius: 0.8rem;
+  background-color: #e7ebf7;
+  margin-bottom: 1.1rem;
+}
+.wrap_result_content .result_content_box .result_content_attached .attached_viewer {
+  display: flex;
+  width: 100%;
+}
+.wrap_result_content .result_content_box .result_content_attached .attached_viewer .attached_file_counter {
+  color: #111;
+  width: 15.2rem;
+}
+.wrap_result_content .result_content_box .result_content_attached .attached_viewer .attached_file_list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.wrap_result_content .result_content_box .result_content_attached .attached_viewer .attached_file_list .attached_file_item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 3.4rem;
+}
+.wrap_result_content .result_content_box .result_content_attached .attached_viewer .attached_file_list .attached_file_item:not(:nth-last-of-type(1)) {
+  margin-bottom: 1.7rem;
+}
+.wrap_result_content .result_content_box .result_content_attached .attached_viewer .attached_file_list .attached_file_txt,
+.wrap_result_content .result_content_box .result_content_attached .attached_viewer .attached_file_list .attached_file_btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.wrap_result_content .result_content_box .result_content_attached .attached_viewer .attached_file_list .attached_file_txt {
+  width: calc(100% - 14rem);
+}
+.wrap_result_content .result_content_box .result_content_attached .attached_viewer .attached_file_list .attached_file_txt p {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.wrap_result_content .result_content_box .result_content_attached .attached_viewer .btn_attached_download {
+  width: 13rem;
+  height: 3.4rem;
+  line-height: 3.2rem;
+  border-radius: 1.7rem;
+  font-size: 1.6rem;
+  font-family: "NotoSansMedium", "나눔바른고딕", "NanumBarunGothic", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  position: relative;
+  display: flex;
+  align-items: center;
+  line-height: 3.2rem;
+  color: #fff;
+  background-color: #0f174d;
+  transition: all 0.1s;
+  text-align: left;
+  padding-left: 2rem;
+}
+.wrap_result_content .result_content_box .result_content_attached .attached_viewer .btn_attached_download::after {
+  display: block;
+  content: "";
+  width: 1.8rem;
+  height: 1.8rem;
+  background-image: url("../img/icon/icon_download_white.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: absolute;
+  right: 1.6rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.wrap_result_content .result_content_box .result_content_step {
+  font-family: "NotoSansRegular", "나눔바른고딕", "NanumBarunGothic", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 1.6rem;
+  color: #777;
+  margin-bottom: 1.1rem;
+}
+
+.wrap_select_category {
+  display: none;
+  background-color: #e7ebf7;
+  border-radius: 1rem;
+  padding: 2rem 1.4rem;
+  margin-bottom: 8rem;
+}
+.wrap_select_category select {
+  width: 100%;
+  height: 3rem;
+}
+
+@media all and (max-width: 1420px) {
+  .page_search .area_tab .wrap_tab_button .tab_button {
+    font-size: 1.8rem;
+  }
+  .result_content_box .wrap_content_txt .result_content_tit {
+    font-size: 2.2rem;
+  }
+}
+@media all and (max-width: 1024px) {
+  .page_search .area_tab .wrap_tab_button {
+    padding: 3rem;
+  }
+  .page_search .area_tab .wrap_tab_button .tab_button {
+    font-size: 1.6rem;
+  }
+  .page_search .result_content_box .wrap_thumb {
+    width: 20rem;
+    height: 14rem;
+  }
+  .page_search .result_content_box .wrap_content_txt .result_content_tit {
+    font-size: 2rem;
+  }
+  .page_search .result_content_box .wrap_content_txt .result_content_cnt {
+    font-size: 1.6rem;
+  }
+}
+@media all and (max-width: 768px) {
+  .page_search .area_tab .wrap_tab_button {
+    display: none;
+  }
+  .page_search .wrap_select_category {
+    display: block;
+  }
+  .page_search .wrap_result_table {
+    padding-top: 5rem;
+  }
+  .page_search .wrap_title {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 2.6rem;
+  }
+  .page_search .wrap_title .title_leftCircle::after {
+    left: 0.9rem;
+    top: -0.8rem;
+  }
+  .page_search .wrap_title .wrap_result_num {
+    display: inline-block;
+    width: 100%;
+    margin-left: 0;
+    font-size: 1.4rem;
+    margin-top: 0.8rem;
+  }
+  .page_search .wrap_title .btn_more {
+    width: 11rem;
+    height: 3rem;
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: -6rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .page_search .wrap_title .btn_more::after {
+    top: 50%;
+    right: 1.1rem;
+    height: 0.6rem;
+    background-image: url("../img/icon/icon_chevron_down_navy.svg");
+    transform: translateY(-50%);
+  }
+  .page_search .area_tab .wrap_tab_content {
+    gap: 14.4rem;
+  }
+  .page_search .list_notice .result_content_box .wrap_content_txt .result_content_cnt {
+    margin-bottom: 0;
+  }
+  .page_search .wrap_result_content {
+    gap: 2rem;
+  }
+  .page_search .wrap_result_content .result_content_box {
+    padding: 2rem 1.4rem 2rem 1.4rem;
+  }
+  .page_search .result_content_box .wrap_content_txt {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%; /* 최대 너비 설정 */
+    overflow: hidden; /* 넘치는 부분 숨김 */
+  }
+  .page_search .result_content_box .wrap_content_txt .result_content_tit {
+    font-size: 1.4rem;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-bottom: 0;
+  }
+  .page_search .result_content_box .wrap_content_txt .result_content_tit .notice_day {
+    font-size: 1.2rem;
+    margin-left: 0;
+    width: 100%;
+    display: block;
+    margin-top: 1.2rem;
+  }
+  .page_search .result_content_box .wrap_content_txt .result_content_cnt {
+    font-size: 1.2rem;
+    margin-top: 1.4rem;
+    margin-bottom: 1.7rem;
+  }
+  .page_search .result_content_box .wrap_thumb {
+    width: 9rem;
+    height: 9rem;
+    border-radius: 0.5rem;
+    margin-left: 1.2rem;
+  }
+  .page_search .result_content_box .result_content_attached {
+    padding: 1rem 0.3rem 1.2rem 1.2rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0;
+  }
+  .page_search .result_content_box .result_content_attached .attached_viewer .attached_file_counter {
+    width: 100%;
+  }
+  .page_search .result_content_box .result_content_attached .attached_viewer .attached_file_list .attached_file_item {
+    height: 1.2rem;
+  }
+  .page_search .result_content_box .result_content_attached .attached_viewer .attached_file_list .attached_file_item:not(:nth-last-of-type(1)) {
+    margin-bottom: 2.4rem;
+  }
+  .page_search .result_content_box .result_content_attached .attached_viewer .attached_file_list .attached_file_txt,
+  .page_search .result_content_box .result_content_attached .attached_viewer .attached_file_list .attached_file_btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .page_search .result_content_box .result_content_attached .attached_viewer .attached_file_list .attached_file_txt {
+    width: calc(100% - 3rem);
+  }
+  .page_search .result_content_box .result_content_attached .attached_viewer .attached_file_list .attached_file_txt p {
+    font-size: 1.2rem;
+  }
+  .page_search .result_content_box .result_content_attached .attached_viewer .btn_attached_download {
+    text-indent: -9999px;
+    width: 3rem;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    background-color: transparent;
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
+    border: none;
+  }
+  .page_search .result_content_box .result_content_attached .attached_viewer .btn_attached_download::after {
+    background-image: url("../img/icon/icon_download_navy.svg");
+    display: block;
+    width: 1.2rem;
+    height: 1.2rem;
+    top: 50%;
+    right: unset;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .page_search .result_content_box .result_content_step {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+  }
+}

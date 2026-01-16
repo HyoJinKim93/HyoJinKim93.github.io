@@ -1,0 +1,12 @@
+/* opacity color */
+/* font color */
+/* Bg, border color */
+.flex_center {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* font size */

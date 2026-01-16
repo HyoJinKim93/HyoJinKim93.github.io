@@ -1,0 +1,519 @@
+@charset "UTF-8";
+/* opacity color */
+/* font color */
+/* Bg, border color */
+.flex_center {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* font size */
+/****************** 페이지 본문 영역 시작 ******************/
+/*******************************************************/
+/*******************************************************/
+/*******************************************************/
+/*******************************************************/
+.page_policy {
+  line-height: 1.5;
+  /* 목차 */
+  /* 개인정보처리방침 개별 상세 */
+  /* 테이블 */
+}
+.page_policy .page_title {
+  margin-bottom: 5.8rem;
+}
+.page_policy .sub_tit {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.8rem;
+  font-family: "NotoSansBold", "나눔바른고딕", "NanumBarunGothic", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+.page_policy .policy_sub_tit {
+  font-size: 2.8rem;
+  font-family: "NotoSansBold", "나눔바른고딕", "NanumBarunGothic", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.page_policy .txt {
+  margin-bottom: 6rem;
+  padding: 0 2rem;
+}
+.page_policy .policy_list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 4rem 5rem;
+  margin-top: 4rem;
+  margin-bottom: 5rem;
+  border-radius: 15px;
+  background-color: #e3e9f5;
+  gap: 3rem 2rem;
+}
+.page_policy .policy_list .policy_item {
+  width: calc((100% - 2rem) / 2);
+  font-family: "NotoSansMedium", "나눔바른고딕", "NanumBarunGothic", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 18px;
+}
+.page_policy .policy_list .policy_item .policy_item_anchor {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+}
+.page_policy .policy_list .policy_item .policy_item_anchor::before {
+  content: "";
+  display: block;
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 18px;
+  background-position: left center;
+  background-size: 8px 12px;
+  background-image: url("../../img/icon/icon_chevron_right_blue.svg");
+}
+.page_policy .policy_list .policy_item .policy_item_anchor:hover span {
+  text-decoration: underline;
+}
+.page_policy .policy_list .policy_item .policy_item_anchor p {
+  flex-shrink: 0;
+  height: 100%;
+  margin-right: 4px;
+  line-height: 1.4;
+}
+.page_policy .policy_list .policy_item .policy_item_anchor span {
+  margin-right: 4px;
+  line-height: 1.4;
+}
+.page_policy .policy_detail {
+  word-break: keep-all;
+}
+.page_policy .policy_detail:not(:nth-last-of-type(1)) {
+  margin-bottom: 5rem;
+}
+.page_policy .policy_detail p {
+  position: relative;
+  margin-bottom: 1.4rem;
+  padding-left: 3rem;
+}
+.page_policy .policy_detail .text_notice {
+  margin-top: 1.6rem;
+  margin-bottom: 1.2rem;
+}
+.page_policy .policy_detail .right_line {
+  border-right: 1px solid #ddd;
+}
+.page_policy .policy_detail li .wrap_table {
+  margin-left: 0;
+  padding-left: 0;
+}
+.page_policy .policy_detail .policy_detail_tit {
+  position: relative;
+  font-size: 24px;
+  font-family: "NotoSansBold", "나눔바른고딕", "NanumBarunGothic", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  padding-left: 2.2rem;
+  margin-bottom: 1.4rem;
+}
+.page_policy .policy_detail .policy_detail_tit::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 6px;
+  background-repeat: no-repeat;
+  width: 22px;
+  height: 24px;
+  background-position: left center;
+  background-size: 14px 20px;
+  background-image: url("../../img/icon/icon_chevron_right_blue.svg");
+}
+.page_policy .policy_detail .policy_detail_list {
+  padding-left: 3rem;
+}
+.page_policy .policy_detail .policy_detail_list li {
+  margin-bottom: 0.8rem;
+  line-height: 1.5;
+  padding-left: 20px;
+  text-indent: -20px;
+}
+.page_policy .policy_detail .pl30 {
+  padding-left: 3rem;
+}
+.page_policy .policy_detail .policy_list_inner {
+  padding-left: 2rem;
+  padding-top: 0.8rem;
+}
+.page_policy .policy_detail .policy_list_inner li {
+  padding-left: 2rem;
+  line-height: 1.5;
+}
+.page_policy .policy_detail .policy_list_inner li p {
+  padding-left: 2rem;
+  margin-bottom: 8px;
+}
+.page_policy .policy_detail .policy_list_inner a {
+  display: inline;
+}
+.page_policy .policy_detail .personal_inner_txt a {
+  display: inline;
+}
+.page_policy .wrap_table {
+  margin-top: 1.6rem;
+  margin-bottom: 2rem;
+  border-top: 1px solid #111;
+  border-bottom: 1px solid #111;
+}
+.page_policy .wrap_table .table_detail tbody tr td {
+  height: 6.6rem;
+}
+.page_policy .table {
+  table-layout: fixed;
+  text-align: center;
+  width: 100%;
+}
+.page_policy .table thead {
+  background-color: #f5f5f5;
+  width: 100%;
+}
+.page_policy .table tbody tr {
+  border-top: 1px solid #ddd;
+}
+.page_policy .table th {
+  font-family: "NotoSansMedium", "나눔바른고딕", "NanumBarunGothic", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-weight: normal;
+  vertical-align: middle;
+  height: 6.6rem;
+}
+.page_policy .table th:not(:nth-last-of-type(1)) {
+  border-right: 1px solid #ddd;
+}
+.page_policy .table td {
+  overflow: visible;
+  text-overflow: unset;
+  white-space: normal;
+  font-size: 1.6rem;
+  line-height: 1.3;
+  padding: 1rem 2rem;
+  text-align: center;
+  vertical-align: middle;
+}
+.page_policy .table td:not(:nth-last-of-type(1)) {
+  border-right: 1px solid #ddd;
+}
+.page_policy .table td.colspan_last {
+  border-right: 1px solid #ddd;
+}
+.page_policy .table td.align_left {
+  text-align: start;
+}
+.page_policy .table td.word_break {
+  word-wrap: break-word;
+}
+.page_policy .table td span {
+  display: block;
+}
+.page_policy .table td .box_text {
+  border: 1px solid #ddd;
+  min-height: 23.9rem;
+  padding: 1.5rem;
+  line-height: 1.5;
+}
+.page_policy .table th p {
+  font-family: "NotoSansMedium", "나눔바른고딕", "NanumBarunGothic", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+.page_policy .table .bullet {
+  padding-left: 1rem;
+  position: relative;
+  margin-left: 1rem;
+}
+.page_policy .table .bullet::after {
+  content: "";
+  position: absolute;
+  background-color: #111;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  left: 0;
+  top: 8px;
+}
+.page_policy .table .pocket {
+  padding-left: 1.8rem;
+  position: relative;
+}
+.page_policy .table .pocket::after {
+  content: "※";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/****************** 페이지 본문 영역 끝 ******************/
+/*******************************************************/
+/*******************************************************/
+/*******************************************************/
+/*******************************************************/
+/*********************************************************************************************************
+**********************************************************************************************************
+**********************************************************************************************************
+***********************************************  1421px  *************************************************
+**********************************************************************************************************
+**********************************************************************************************************
+*********************************************************************************************************/
+@media all and (max-width: 1421px) {
+  .none_1420 {
+    display: none;
+  }
+  .block_1420 {
+    display: block;
+  }
+  .page .wrap_breadcrumb {
+    width: 100%;
+    padding: 0 2%;
+  }
+  .page .wrap_article .contents_wrap {
+    width: 100%;
+    padding: 0 2rem;
+  }
+  .page .wrap_title {
+    display: flex;
+    justify-content: center;
+  }
+  .page .wrap_title .title_leftCircle {
+    display: inline-block;
+    width: auto;
+    text-align: center;
+    line-height: 1.5;
+  }
+  .page .wrap_title .title_leftCircle::after {
+    left: -1.4rem;
+    top: -0.6rem;
+  }
+  /****************** 템플릿 공통 *******************/
+  .page_centered .article_title .page_title_area {
+    width: 100%;
+  }
+  .page_centered .wrap_breadcrumb .breadcrumbs {
+    width: 100%;
+  }
+  .page_centered .wrap_article .contents_wrap {
+    width: 100%;
+  }
+}
+/*********************************************************************************************************
+**********************************************************************************************************
+**********************************************************************************************************
+***********************************************  1025px  *************************************************
+**********************************************************************************************************
+**********************************************************************************************************
+*********************************************************************************************************/
+@media all and (max-width: 1024px) {
+  .none_1025 {
+    display: none !important;
+  }
+  .block_1025 {
+    display: block !important;
+  }
+  .page_saas_detailPage .block_1025 {
+    display: flex !important;
+  }
+  .wrap_breadcrumb {
+    display: none;
+  }
+  .page .wrap_article .contents_wrap {
+    padding: 0 1.6rem;
+  }
+  /****************** 약관, 정책 본문 *******************/
+  .page_policy {
+    /* 목차 */
+    /* 테이블 */
+  }
+  .page_policy .policy_list .policy_item {
+    width: 100%;
+  }
+  .page_policy .policy_list .policy_item .policy_item_anchor p {
+    font-size: 1.8rem;
+  }
+  .page_policy .policy_detail .pl30 {
+    padding-left: 2rem;
+  }
+  .page_policy .table th {
+    font-size: 1.6rem;
+  }
+  .page_policy .table td {
+    padding: 1rem;
+    font-size: 1.5rem;
+  }
+  .page_policy .table .bullet {
+    margin-left: 0.6rem;
+  }
+}
+/*********************************************************************************************************
+**********************************************************************************************************
+**********************************************************************************************************
+***********************************************  769px  **************************************************
+**********************************************************************************************************
+**********************************************************************************************************
+*********************************************************************************************************/
+@media all and (max-width: 769px) {
+  .block_768 {
+    display: block !important;
+  }
+  .none_768 {
+    display: none !important;
+  }
+  .page .wrap_article {
+    margin-bottom: 8rem;
+  }
+  .page .wrap_article.select_area {
+    margin-bottom: 4rem;
+  }
+  .page p, .page li {
+    font-size: 1.5rem;
+  }
+  .page .box_shadow {
+    border-radius: 1rem;
+    padding: 3.6rem 2rem;
+  }
+  .page .title_leftCircle {
+    font-size: 2rem;
+  }
+  .page .title_leftCircle::after {
+    left: -1.4rem;
+    top: -1.4rem;
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+  .page_centered .wrap_article {
+    margin-bottom: 8rem;
+  }
+  .page_centered .wrap_article:last-of-type {
+    margin-bottom: 10rem;
+  }
+  .page_centered .page {
+    padding-top: 13rem;
+  }
+  .page_centered .article_title {
+    margin-top: 0;
+    margin-bottom: 4rem;
+  }
+  .page_centered .article_title.content_has_bg {
+    margin-bottom: 2rem;
+  }
+  .page_centered .article_title .page_title_area .page_title {
+    font-size: 2.2rem;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+  .page_centered .article_title .page_title_area .page_title + h3 {
+    font-size: 1.4rem;
+    font-family: "NotoSansLight", "나눔바른고딕", "NanumBarunGothic", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+  /****************** 약관, 정책 본문 *******************/
+  .page_policy {
+    /* 테이블 */
+  }
+  .page_policy .policy_sub_tit {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+  .page_policy .sub_tit {
+    font-size: 2rem;
+  }
+  .page_policy .policy_list {
+    padding: 3rem;
+    margin-top: 0;
+    gap: 2rem;
+    margin-bottom: 0;
+    border-radius: 1rem;
+  }
+  .page_policy .policy_list .policy_item .policy_item_anchor p, .page_policy .policy_list .policy_item .policy_item_anchor span {
+    font-size: 1.6rem;
+  }
+  .page_policy .policy_list .policy_item .policy_item_anchor::before {
+    height: 1.6rem;
+    margin-top: 3px;
+  }
+  .page_policy .txt {
+    margin-bottom: 2.4rem;
+    font-size: 1.4rem;
+    padding: 0 1.4rem;
+  }
+  .page_policy .policy_detail .policy_detail_tit {
+    font-size: 1.8rem;
+    padding-left: 1.8rem;
+  }
+  .page_policy .policy_detail .policy_detail_tit::before {
+    width: 18px;
+    height: 18px;
+    background-size: 10px 16px;
+  }
+  .page_policy .policy_detail .pl30 {
+    padding-left: 0;
+  }
+  .page_policy .policy_detail p {
+    padding-left: 2rem;
+  }
+  .page_policy .policy_detail .policy_detail_list {
+    padding-left: 2rem;
+  }
+  .page_policy .policy_detail .policy_list_inner {
+    padding-left: 0.6rem;
+  }
+  .page_policy .table th {
+    font-size: 1.4rem;
+    word-wrap: break-word;
+  }
+  .page_policy .table td {
+    padding: 1rem 0.6rem;
+    font-size: 1.4rem;
+    word-wrap: break-word;
+  }
+  .page_policy .table .bullet {
+    margin-left: 0.6rem;
+  }
+}
+/*********************************************************************************************************
+**********************************************************************************************************
+**********************************************************************************************************
+***********************************************  481px  **************************************************
+**********************************************************************************************************
+**********************************************************************************************************
+*********************************************************************************************************/
+@media all and (max-width: 481px) {
+  .none_480 {
+    display: none !important;
+  }
+  .block_480 {
+    display: block !important;
+  }
+  .page .box_shadow {
+    padding: 2rem 1.4rem;
+  }
+  /****************** 약관, 정책 본문 *******************/
+  .page_policy .policy_list {
+    padding: 2rem 1.4rem;
+    gap: 1.6rem;
+  }
+  .page_policy .policy_list .policy_item .policy_item_anchor p, .page_policy .policy_list .policy_item .policy_item_anchor span {
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+  .page_policy .policy_detail p {
+    padding-left: 0;
+  }
+  .page_policy .policy_detail .policy_detail_list {
+    padding-left: 0;
+  }
+  .page_policy .policy_detail .policy_detail_list li {
+    padding-left: 1.2rem;
+    text-indent: -1.2rem;
+  }
+  .page_policy .policy_detail .policy_list_inner {
+    padding-left: 0;
+  }
+  .page_policy .policy_detail .policy_list_inner li {
+    padding-left: 1.2rem;
+    text-indent: -1.2rem;
+  }
+}
